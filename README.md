@@ -7,6 +7,8 @@ In a world where every soul's luck floats above its head as a number, a nameless
 | Document | What's in it |
 |---|---|
 | [`docs/ZERO-SUM_OMEN_World_and_Art_Bible.pdf`](docs/ZERO-SUM_OMEN_World_and_Art_Bible.pdf) | **The bible in one designed PDF**: every document below plus concept art, land colour scripts and character model pages. Rebuild with `python3 tools/build_bible.py` |
+| [`docs/ARTBOOK_PRODUCTION.md`](docs/ARTBOOK_PRODUCTION.md) | How to reach Cyberpunk-2077-art-book level: spread-by-spread analysis, gap analysis, the two art registers, the 3D-base → paint → overpaint pipeline (Meshy, Higgsfield, Hugging Face), design brief template, art book spread list, first 12 images, quality checklist |
+| [`docs/ZERO-SUM_OMEN_Artbook_Draft.pdf`](docs/ZERO-SUM_OMEN_Artbook_Draft.pdf) | 16-spread art book layout draft with art slots and briefs. Rebuild with `python3 tools/build_artbook.py` |
 | [`docs/CHARACTER_BIBLE.md`](docs/CHARACTER_BIBLE.md) | Every character's look, voice, sample lines, bond arc, animation personality and canon locks; relationship map |
 | [`docs/LORE_LEXICON.md`](docs/LORE_LEXICON.md) | Glossary, idioms, timeline (TR years), factions, world rules, naming conventions |
 | [`docs/LOCATIONS.md`](docs/LOCATIONS.md) | One page per land: districts, key locations, little things, sound, battle stages |

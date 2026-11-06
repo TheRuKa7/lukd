@@ -4,11 +4,17 @@ const { chromium } = require('playwright');
 const path = require('path');
 
 (async () => {
-  const [input, output] = process.argv.slice(2);
+  const [input, output, mode] = process.argv.slice(2);
   const browser = await chromium.launch();
   const page = await browser.newPage();
   await page.goto('file://' + path.resolve(input), { waitUntil: 'networkidle', timeout: 120000 });
   await page.evaluate(() => document.fonts.ready);
+  if (mode === 'landscape') {
+    await page.pdf({ path: output, preferCSSPageSize: true, printBackground: true, margin: { top: 0, bottom: 0, left: 0, right: 0 } });
+    await browser.close();
+    console.log('PDF:', output);
+    return;
+  }
   await page.pdf({
     path: output,
     format: 'A4',

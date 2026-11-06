@@ -1,0 +1,1011 @@
+<title>Zero-Sum Omen Sandbox</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Barlow+Semi+Condensed:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a bolted-down combat console. The Nixie reel is the sticky masthead; field, dice tray, squad and motherboard sit below it like instrument panels. Single deliberate dark look (occult acid-noir). */
+:root{
+  color-scheme: dark;
+  --bg:#0e0b10; --panel:#18131a; --panel-2:#211a22; --line:#3b3036;
+  --brass:#caa45d; --brass-dim:#6b5530;
+  --nixie:#ff7a2c; --nixie-glow:rgba(255,122,44,.55); --tube:#1b1110;
+  --blood:#e2455c; --blood-glow:rgba(226,69,92,.5);
+  --ice:#88d2e0; --gold:#ffd27a; --ink:#efe5d4; --muted:#a49688; --shadow:rgba(0,0,0,.55);
+  --f-display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --f-body:"Barlow Semi Condensed","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:radial-gradient(1200px 500px at 50% -10%, #2a1820 0%, transparent 60%), var(--bg); color:var(--ink); font-family:var(--f-body); font-size:15px; line-height:1.45; min-height:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--panel-2)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:disabled{cursor:not-allowed;opacity:.38}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;letter-spacing:.02em}
+h2{font-size:20px;font-weight:800;text-transform:uppercase;color:var(--brass)}
+.num{font-variant-numeric:tabular-nums}
+
+/* masthead */
+.mast{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:linear-gradient(var(--panel-2),var(--panel));border-bottom:2px solid var(--brass-dim);box-shadow:0 10px 30px var(--shadow)}
+.mast-in{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding-block:10px}
+.brand h1{font-size:30px;font-weight:900;line-height:1}
+.brand h1 em{font-style:normal;color:var(--nixie);text-shadow:0 0 14px var(--nixie-glow)}
+.ledger{display:flex;flex-direction:column;align-items:center;gap:4px}
+.tubes{display:flex;gap:10px;position:relative}
+.tube{width:58px;height:78px;border-radius:29px 29px 10px 10px;background:radial-gradient(ellipse at 50% 35%,#2b1712,var(--tube) 70%);border:1px solid #4a3a2a;box-shadow:inset 0 0 14px rgba(0,0,0,.85),0 3px 0 var(--brass-dim);position:relative;display:grid;place-items:center;overflow:hidden;transition:transform .08s}
+.tube .glyph{font-family:var(--f-display);font-weight:800;font-size:58px;line-height:1;color:rgba(255,122,44,.07)}
+.tube.on .glyph{color:var(--nixie);text-shadow:0 0 6px var(--nixie-glow),0 0 18px var(--nixie-glow),0 0 34px rgba(255,90,20,.35)}
+.tube.on.e .glyph{color:var(--blood);text-shadow:0 0 6px var(--blood-glow),0 0 18px var(--blood-glow)}
+.tube .mesh{position:absolute;inset:0;pointer-events:none;background-image:repeating-linear-gradient(60deg,rgba(255,255,255,.035) 0 1px,transparent 1px 6px),repeating-linear-gradient(-60deg,rgba(255,255,255,.035) 0 1px,transparent 1px 6px)}
+.tube .who{position:absolute;bottom:4px;font-family:var(--f-mono);font-size:9px;letter-spacing:.1em;color:var(--muted)}
+.tube.thock{transform:translateY(3px) scale(.97)}
+.reel-label{font-family:var(--f-mono);font-size:10px;letter-spacing:.18em;color:var(--brass)}
+.mast-stats{justify-self:end;display:grid;grid-template-columns:repeat(2,auto);gap:2px 14px;font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.mast-stats b{color:var(--ink);font-weight:600}
+.iconbtn{background:none;border:1px solid var(--line);border-radius:4px;padding:2px 8px;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+
+main{display:flex;flex-direction:column;gap:16px;padding-block:18px 48px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px;min-width:0}
+.howto{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;font-size:14px;color:var(--muted)}
+.howto b{color:var(--ink)}
+.howto span{font-family:var(--f-display);font-size:22px;color:var(--brass);margin-right:6px}
+
+/* field */
+.field{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:16px}
+.stage{position:relative;min-height:84px;display:flex;align-items:center;gap:14px}
+.sigil{width:72px;height:72px;flex:none;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-weight:900;font-size:42px;border:2px solid var(--blood);color:var(--blood);box-shadow:0 0 22px var(--blood-glow) inset}
+.party .sigil{border-color:var(--ice);color:var(--ice);box-shadow:0 0 22px rgba(136,210,224,.35) inset;font-size:22px;letter-spacing:.04em}
+.who-name{font-family:var(--f-display);font-size:24px;font-weight:800;line-height:1.05}
+.rule{font-size:13px;color:var(--muted)}
+.bar{height:10px;background:#07050a;border:1px solid var(--line);border-radius:2px;overflow:hidden;margin-top:8px}
+.bar i{display:block;height:100%;transition:width .35s ease}
+.enemy .bar i{background:linear-gradient(90deg,#8e1f33,var(--blood))}
+.party .bar i{background:linear-gradient(90deg,#3c8496,var(--ice))}
+.hpline{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:12px;margin-top:4px;color:var(--muted)}
+.hpline b{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;align-items:center}
+.chip{font-family:var(--f-mono);font-size:11px;padding:3px 8px;border-radius:3px;border:1px solid var(--line);color:var(--muted)}
+.chip.shield{border-color:var(--ice);color:var(--ice)}
+.chip.warn{border-color:var(--blood);color:var(--blood)}
+.intent{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px;padding:8px 10px;border:1px solid rgba(226,69,92,.4);border-radius:4px;background:rgba(226,69,92,.06)}
+.intent .eyebrow{color:var(--blood)}
+.intent-hits{font-family:var(--f-display);font-size:24px;font-weight:800}
+.pp{display:flex;gap:4px;align-items:center}
+.pp i{width:12px;height:12px;border-radius:50%;border:1px solid var(--gold)}
+.pp i.full{background:var(--gold);box-shadow:0 0 8px rgba(255,210,122,.6)}
+.pop{position:absolute;right:8px;top:-6px;font-family:var(--f-display);font-weight:900;font-size:46px;color:var(--ink);text-shadow:0 2px 0 #000,0 0 18px rgba(255,255,255,.25);pointer-events:none;animation:pop 1.3s ease-out forwards;white-space:nowrap}
+.pop.gold{color:var(--gold)}
+.pop.hurt{color:var(--blood);left:90px;right:auto}
+.pop .last{display:inline-block;color:var(--nixie);text-shadow:0 0 12px var(--nixie-glow)}
+@keyframes pop{0%{transform:scale(.4);opacity:0}12%{transform:scale(1.25);opacity:1}30%{transform:scale(1)}100%{transform:translateY(-34px);opacity:0}}
+.shake{animation:shake .28s}
+@keyframes shake{20%{transform:translate(-5px,2px)}40%{transform:translate(4px,-3px)}60%{transform:translate(-3px,1px)}80%{transform:translate(2px,-1px)}}
+
+/* forecast */
+.forecast{border-left:3px solid var(--brass);background:var(--panel-2)}
+.forecast ol{margin:8px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:3px;font-family:var(--f-mono);font-size:12.5px}
+.forecast li.p{color:var(--nixie)} .forecast li.e{color:var(--blood)} .forecast li.pat{color:var(--gold);font-weight:600} .forecast li.n{color:var(--muted)}
+
+/* tray */
+.tray-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.dice{display:flex;gap:10px;flex-wrap:wrap;min-height:56px;align-items:center}
+.die,.slot{width:54px;height:54px;border-radius:8px;display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:34px;line-height:1}
+.die{background:linear-gradient(#2d2327,#191316);border:1px solid var(--brass-dim);box-shadow:0 3px 0 #000;transition:transform .12s}
+.die.sel{outline:2px solid var(--nixie);outline-offset:2px;transform:translateY(-4px)}
+.die.lucky{color:var(--gold);text-shadow:0 0 12px rgba(255,210,122,.6);border-color:var(--gold)}
+.die.roll{animation:roll .45s ease-out}
+@keyframes roll{0%{transform:rotate(-200deg) scale(.4);opacity:0}100%{transform:none;opacity:1}}
+.ops{display:flex;flex-wrap:wrap;gap:8px}
+.op{background:var(--panel-2);border:1px solid var(--line);border-radius:4px;padding:8px 12px;font-family:var(--f-mono);font-size:12px;display:flex;flex-direction:column;align-items:flex-start;gap:1px;min-width:86px}
+.op small{color:var(--muted);font-size:10px}
+.op:not(:disabled):hover{border-color:var(--gold)}
+
+/* squad */
+.squad{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.hero{display:flex;flex-direction:column;gap:10px;transition:box-shadow .2s,transform .2s}
+.hero.acting{box-shadow:0 0 0 2px var(--nixie),0 0 30px var(--nixie-glow);transform:translateY(-3px)}
+.hero-head{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.hero-name{font-family:var(--f-display);font-weight:800;font-size:22px}
+.lucky-tag{font-family:var(--f-mono);font-size:11px;color:var(--gold)}
+.hero p{margin:0;font-size:13px;color:var(--muted)}
+.slots{display:flex;gap:8px}
+.slot{border:1px dashed var(--brass-dim);background:#0b080c;color:var(--muted);font-size:12px;font-family:var(--f-mono);letter-spacing:.08em;flex-direction:column}
+.slot.filled{border:1px solid var(--brass);background:linear-gradient(#2d2327,#191316);color:var(--ink);font-family:var(--f-display);font-size:34px}
+.slot.filled.lucky{color:var(--gold);border-color:var(--gold)}
+.slot.sel{outline:2px solid var(--nixie);outline-offset:2px}
+.slot.target{border-color:var(--nixie);color:var(--nixie)}
+.result{display:flex;align-items:center;gap:10px;min-height:44px}
+.result .big{font-family:var(--f-display);font-weight:900;font-size:34px;line-height:1}
+.mini-tube{width:30px;height:40px;border-radius:15px 15px 5px 5px;background:var(--tube);border:1px solid #4a3a2a;display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:28px;color:var(--nixie);text-shadow:0 0 10px var(--nixie-glow)}
+.trace{display:flex;flex-wrap:wrap;gap:4px;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.trace span{padding:1px 5px;border:1px solid var(--line);border-radius:3px}
+.trace span.hot{color:var(--ink);border-color:var(--brass-dim)}
+.res{color:var(--gold);font-family:var(--f-mono);font-size:11px;letter-spacing:.1em}
+
+.exec-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.exec{background:linear-gradient(#e2bb6b,#a9832f);color:#1a1206;border:none;border-radius:6px;padding:14px 30px;font-family:var(--f-display);font-weight:900;font-size:24px;letter-spacing:.08em;box-shadow:0 4px 0 #5c4317,0 0 24px rgba(202,164,93,.25)}
+.exec:not(:disabled):active{transform:translateY(3px);box-shadow:0 1px 0 #5c4317}
+.hint{color:var(--muted);font-size:14px;flex:1;min-width:200px}
+
+/* motherboard */
+.mobo{display:grid;grid-template-columns:repeat(var(--slots,5),minmax(0,1fr));gap:10px;margin-top:10px;padding:12px;border-radius:6px;background:repeating-linear-gradient(0deg,rgba(202,164,93,.05) 0 1px,transparent 1px 16px),repeating-linear-gradient(90deg,rgba(202,164,93,.05) 0 1px,transparent 1px 16px),#0b0f0d;border:1px solid #2e3a33}
+.cart{position:relative;background:linear-gradient(#262028,#1a161c);border:1px solid var(--brass-dim);border-radius:4px;padding:8px 8px 8px 10px;display:flex;flex-direction:column;gap:4px;min-height:112px;text-align:left}
+.cart .cn{font-family:var(--f-display);font-weight:800;font-size:16px;line-height:1.05}
+.cart .cd{font-size:12px;color:var(--muted);line-height:1.3}
+.tag{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:1px 5px;border-radius:2px;align-self:flex-start}
+.tag.safe{color:var(--ice);border:1px solid rgba(136,210,224,.5)}
+.tag.risk{color:var(--nixie);border:1px solid rgba(255,122,44,.5)}
+.tag.pass{color:var(--gold);border:1px solid rgba(255,210,122,.5)}
+.cart .ctl{display:flex;gap:6px;margin-top:auto}
+.cart .ctl button{background:none;border:1px solid var(--line);border-radius:3px;font-family:var(--f-mono);font-size:11px;padding:1px 7px;color:var(--muted)}
+.cart .order{position:absolute;top:6px;right:8px;font-family:var(--f-mono);font-size:10px;color:var(--brass)}
+.cart.empty{border-style:dashed;border-color:#2e3a33;background:none;display:grid;place-items:center;color:#4d5c53;font-family:var(--f-mono);font-size:11px}
+.rack{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.rack .cart{min-height:0;width:210px;max-width:100%;cursor:pointer}
+.rack .cart:not(:disabled):hover{border-color:var(--gold)}
+.board-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+
+/* legend + log */
+.lower{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:16px}
+.legend{overflow-x:auto}
+.legend table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.legend th,.legend td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.legend th{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.legend td:first-child{font-family:var(--f-display);font-weight:800;font-size:16px;white-space:nowrap;color:var(--gold)}
+.legend td:nth-child(2){font-family:var(--f-mono);white-space:nowrap}
+.log ul{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:4px;font-family:var(--f-mono);font-size:12px;max-height:260px;overflow:auto}
+.log li{color:var(--muted)} .log li.p{color:var(--nixie)} .log li.e{color:var(--blood)} .log li.g{color:var(--gold)}
+
+/* overlays */
+.modal{position:fixed;inset:0;z-index:50;background:rgba(6,3,7,.86);display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.sheet{width:100%;max-width:880px;max-height:100%;overflow:auto;background:var(--panel);border:1px solid var(--brass-dim);border-radius:8px;padding:22px;box-shadow:0 20px 80px #000}
+.sheet h2{font-size:30px;color:var(--ink)}
+.sheet .voice{font-family:var(--f-mono);color:var(--nixie);letter-spacing:.06em;font-size:13px;margin:6px 0 4px}
+.sheet p{color:var(--muted);max-width:65ch}
+.fates{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:14px}
+.fate{background:var(--panel-2);border:1px solid var(--line);border-radius:6px;padding:10px;text-align:left;display:flex;flex-direction:column;gap:4px}
+.fate:hover{border-color:var(--gold)}
+.fate .fn{font-family:var(--f-display);font-weight:900;font-size:44px;line-height:1;color:var(--nixie);text-shadow:0 0 12px var(--nixie-glow)}
+.fate .ft{font-family:var(--f-display);font-weight:800;font-size:18px}
+.fate .fx{font-size:12.5px;color:var(--ink)}
+.fate .fl{font-size:11.5px;color:var(--muted)}
+.offers{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.offers .cart{width:240px;max-width:100%;cursor:pointer;min-height:130px}
+.offers .cart:hover{border-color:var(--gold)}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.btn{background:var(--panel-2);border:1px solid var(--brass-dim);border-radius:4px;padding:10px 16px;font-family:var(--f-display);font-weight:800;font-size:18px;letter-spacing:.04em}
+.btn.primary{background:linear-gradient(#e2bb6b,#a9832f);color:#1a1206;border:none}
+.banner{position:fixed;left:50%;top:42%;transform:translate(-50%,-50%);z-index:40;pointer-events:none;text-align:center;width:min(92vw,720px)}
+.banner .bn{font-family:var(--f-display);font-weight:900;font-size:clamp(44px,9vw,96px);line-height:.95;color:var(--gold);text-shadow:0 0 30px rgba(255,210,122,.6),0 4px 0 #000}
+.banner.e .bn{color:var(--blood);text-shadow:0 0 30px var(--blood-glow),0 4px 0 #000}
+.banner .bt{font-family:var(--f-mono);font-size:14px;color:var(--ink);background:rgba(0,0,0,.7);display:inline-block;padding:6px 12px;margin-top:10px;border-radius:3px}
+.banner.show{animation:slam .35s cubic-bezier(.2,1.6,.4,1)}
+@keyframes slam{0%{transform:translate(-50%,-50%) scale(2.4);opacity:0}100%{transform:translate(-50%,-50%) scale(1);opacity:1}}
+.crack{position:fixed;inset:0;z-index:39;pointer-events:none;opacity:0}
+.crack.show{animation:crack 1.2s ease-out}
+@keyframes crack{0%{opacity:0}8%{opacity:.95}70%{opacity:.6}100%{opacity:0}}
+.fly{position:fixed;z-index:45;pointer-events:none;font-family:var(--f-display);font-weight:900;font-size:40px;color:var(--nixie);text-shadow:0 0 14px var(--nixie-glow),0 0 30px var(--nixie-glow)}
+.fly.e{color:var(--blood);text-shadow:0 0 14px var(--blood-glow)}
+
+@media (max-width:860px){
+  .squad{grid-template-columns:1fr}
+  .lower{grid-template-columns:1fr}
+  .howto{grid-template-columns:1fr}
+  .mobo{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .mast-in{grid-template-columns:1fr auto;gap:8px 12px}
+  .brand .eyebrow{display:none}
+  .brand h1{font-size:22px}
+  .mast-stats{grid-column:1/-1;justify-self:stretch;display:flex;flex-wrap:wrap;gap:4px 12px;font-size:11px}
+  .tube{width:44px;height:60px}
+  .tube .glyph{font-size:44px}
+  .field{grid-template-columns:1fr}
+  .reel-label{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+</style>
+
+<header class="mast">
+  <div class="wrap mast-in">
+    <div class="brand">
+      <div class="eyebrow">Combat sandbox · theme: Lucky Number</div>
+      <h1>ZERO-SUM: <em>OMEN</em></h1>
+    </div>
+    <div class="ledger">
+      <div class="tubes" id="tubes">
+        <div class="tube" data-i="0"><span class="glyph">0</span><span class="mesh"></span><span class="who"></span></div>
+        <div class="tube" data-i="1"><span class="glyph">0</span><span class="mesh"></span><span class="who"></span></div>
+        <div class="tube" data-i="2"><span class="glyph">0</span><span class="mesh"></span><span class="who"></span></div>
+      </div>
+      <div class="reel-label">KARMIC REEL</div>
+    </div>
+    <div class="mast-stats" id="stats"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="panel howto" aria-label="How to play">
+    <div><span>1</span><b>Place dice.</b> Tap an Omen Die, then tap a hero's slot. Dice you leave in the tray become Shield.</div>
+    <div><span>2</span><b>Rig the numbers.</b> Spend Parity Points to bump, flip or reroll a die, or clamp the enemy's attack to its last digit.</div>
+    <div><span>3</span><b>Execute.</b> Each hit's last digit drops into the reel. When the third digit lands, a pattern fires for whoever placed it.</div>
+  </section>
+
+  <section class="field">
+    <div class="panel party" id="party">
+      <div class="stage" id="partyStage">
+        <div class="sigil">NaN</div>
+        <div style="flex:1;min-width:0">
+          <div class="eyebrow">Your squad</div>
+          <div class="who-name">Ledger HP</div>
+          <div class="bar"><i id="partyBar"></i></div>
+          <div class="hpline"><span><b class="num" id="partyHP">100</b> / <span id="partyMax">100</span></span><span id="fateLine"></span></div>
+        </div>
+      </div>
+      <div class="chips">
+        <span class="chip shield" id="shieldChip">Shield 0</span>
+        <span class="pp" id="pp" aria-label="Parity Points"></span>
+        <span class="chip" id="ppText">PP</span>
+        <span class="chip warn" id="debuff" hidden></span>
+      </div>
+    </div>
+    <div class="panel enemy" id="enemy">
+      <div class="stage" id="enemyStage">
+        <div class="sigil" id="sigil">4</div>
+        <div style="flex:1;min-width:0">
+          <div class="eyebrow" id="enemyFaction">Tetrad</div>
+          <div class="who-name" id="enemyName">Enemy</div>
+          <div class="bar"><i id="enemyBar"></i></div>
+          <div class="hpline"><span><b class="num" id="enemyHP">0</b> / <span class="num" id="enemyMax">0</span></span><span id="waveLine"></span></div>
+        </div>
+      </div>
+      <div class="rule" id="enemyRule"></div>
+      <div class="intent">
+        <span class="eyebrow">Intent</span>
+        <span class="intent-hits num" id="intentHits"></span>
+        <span class="rule" id="intentNote"></span>
+        <button class="op" data-op="clamp" id="clampBtn" style="margin-left:auto">MOD 10 CLAMP<small>2 PP · keeps only the last digit</small></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel forecast" id="forecast" aria-live="polite"></section>
+
+  <section class="panel">
+    <div class="tray-row">
+      <div>
+        <h2>Omen Dice</h2>
+        <div class="dice" id="dice"></div>
+      </div>
+      <div class="ops">
+        <button class="op" data-op="inc">BUMP +1<small>1 PP · 9 wraps to 0</small></button>
+        <button class="op" data-op="dec">BUMP −1<small>1 PP · 0 wraps to 9</small></button>
+        <button class="op" data-op="flip">SEGMENT FLIP<small>1 PP · 2↔5, 6↔9</small></button>
+        <button class="op" data-op="reroll">REROLL<small>1 PP · random 0–9</small></button>
+        <button class="op" data-op="unslot">RETURN<small>free · back to tray</small></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="squad" id="squad"></section>
+
+  <section class="exec-row">
+    <button class="exec" id="execBtn">EXECUTE</button>
+    <div class="hint" id="hint">Heroes strike left to right: NIL, then Vesper, then Madame Ba. The forecast above is exact, because nothing after the roll is random.</div>
+  </section>
+
+  <section class="panel">
+    <div class="board-head">
+      <h2>Decoder Motherboard</h2>
+      <span class="rule">Cartridges run left to right on every hero hit. <b style="color:var(--ice)">Keeps digit</b> means safe scaling. <b style="color:var(--nixie)">Rewrites digit</b> means more power but a new reel digit.</span>
+    </div>
+    <div class="mobo" id="mobo"></div>
+    <div class="board-head" style="margin-top:14px">
+      <span class="eyebrow" id="rackLabel">Rack</span>
+      <button class="iconbtn" id="unlockAll">Unlock all cartridges (sandbox)</button>
+    </div>
+    <div class="rack" id="rack"></div>
+  </section>
+
+  <section class="lower">
+    <div class="panel legend">
+      <h2>Reel patterns</h2>
+      <table>
+        <thead><tr><th>Pattern</th><th>Example</th><th>If you place the 3rd digit</th><th>If the enemy does</th></tr></thead>
+        <tbody>
+          <tr><td>Lucky Triple</td><td>your digit ×3</td><td>Pot × digit × 3 true damage</td><td>—</td></tr>
+          <tr><td>Triple</td><td>7-7-7</td><td>Pot × digit (min ×2)</td><td>Pot × 2 to your squad</td></tr>
+          <tr><td>Cascade</td><td>3-4-5, 9-8-7, 2-3-5</td><td>Extra turn; the enemy waits</td><td>Enemy strikes again</td></tr>
+          <tr><td>Null Void</td><td>0-0-0</td><td>Erase the enemy's action</td><td>You roll 3 dice next turn</td></tr>
+          <tr><td>Reaper's Toll</td><td>4-4-4</td><td colspan="2">Every unit whose HP contains a 4 loses 44% of max HP</td></tr>
+          <tr><td>Zero-Sum</td><td>3-3-4 (sums to 10)</td><td>Cancel the enemy's action</td><td>0 Parity Points next turn</td></tr>
+          <tr><td>Prime Trio</td><td>2-7-3</td><td>Pot × 3</td><td>Pot to your squad</td></tr>
+          <tr><td>Pair</td><td>7-1-7</td><td>Pot × 1</td><td>Half pot to your squad</td></tr>
+        </tbody>
+      </table>
+      <p class="rule">Pot is the sum of the three hits that fed the reel. Blocked enemy hits deal 0 and drop a 0, so Shield is also how you break an enemy's pattern.</p>
+    </div>
+    <div class="panel log">
+      <h2>Ledger log</h2>
+      <ul id="log"></ul>
+    </div>
+  </section>
+</main>
+
+<div class="banner" id="banner" hidden><div class="bn" id="bannerName"></div><div class="bt" id="bannerText"></div></div>
+<svg class="crack" id="crack" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+  <g fill="none" stroke="#fff" stroke-width="1.6" stroke-opacity=".85">
+    <path d="M500 80 L470 160 L520 230 L455 320 L500 400 L430 520 L460 600"/>
+    <path d="M500 80 L560 150 L610 140 L680 210 L760 200 L860 260 L1000 250"/>
+    <path d="M470 160 L380 190 L300 170 L190 240 L0 230"/>
+    <path d="M520 230 L600 300 L660 290 L720 380 L820 420"/>
+    <path d="M455 320 L360 350 L300 420 L180 450"/>
+    <path d="M500 80 L520 0"/>
+  </g>
+</svg>
+
+<div class="modal" id="fateModal" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="fateTitle">
+    <div class="eyebrow">New Babylon · Rain Alley 9 · Omen Index: NaN</div>
+    <p class="voice">THE BASILICA: SUBJECT UNDEFINED. STATE YOUR LUCKY NUMBER.</p>
+    <h2 id="fateTitle">Pick your lucky number</h2>
+    <p>It becomes NIL's Lucky Digit and changes the rules of the whole run. In the full game this is the first thing the city asks you, before the title card.</p>
+    <div class="fates" id="fates"></div>
+  </div>
+</div>
+
+<div class="modal" id="shopModal" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="shopTitle">
+    <div class="eyebrow" id="shopEyebrow">Wave cleared</div>
+    <h2 id="shopTitle">Pawnshop of Probabilities</h2>
+    <p>Take one Logic Cartridge. It goes onto the Motherboard if a slot is free, otherwise into the rack.</p>
+    <div class="offers" id="offers"></div>
+  </div>
+</div>
+
+<div class="modal" id="overModal" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="overTitle">
+    <div class="eyebrow">Ledger closed</div>
+    <h2 id="overTitle">Your account was settled</h2>
+    <p id="overText"></p>
+    <div class="btnrow">
+      <button class="btn primary" id="againBtn">Run it back</button>
+      <button class="btn" id="refateBtn">Change lucky number</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+const RM = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+const $ = s => document.querySelector(s);
+const $$ = s => Array.from(document.querySelectorAll(s));
+const sleep = ms => new Promise(r => setTimeout(r, RM ? Math.min(ms, 80) : ms));
+const fmt = n => Math.round(n).toLocaleString('en-US');
+const rnd10 = () => Math.floor(Math.random() * 10);
+const isPrime = n => { if (n < 2) return false; if (n % 2 === 0) return n === 2; for (let i = 3; i * i <= n; i += 2) if (n % i === 0) return false; return true; };
+const isPal = n => { const s = String(n); return s.length > 1 && s === s.split('').reverse().join(''); };
+const digitSum = n => String(n).split('').reduce((a, c) => a + Number(c), 0);
+const FIBS = new Set([1]); { let a = 1, b = 2; while (b < 1e12) { FIBS.add(b); const t = a + b; a = b; b = t; } }
+const FLIP = { 2: 5, 5: 2, 6: 9, 9: 6 };
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+
+/* ---------- data ---------- */
+const FATES = [
+  { n: 0, name: 'Null', fx: 'Your 0s are wild when you complete the reel.', lore: 'The number the Basilica cannot divide by.' },
+  { n: 1, name: 'Ace', fx: '+1 Parity Point every turn.', lore: 'First place, first light.' },
+  { n: 2, name: 'Pair', fx: 'Pairs you land pay pot × 3.', lore: '好事成双: good things come in pairs.' },
+  { n: 3, name: 'Trinity', fx: 'Roll 6 Omen Dice instead of 5.', lore: 'Cantonese 三 (saam) echoes 生 (saang), life.' },
+  { n: 4, name: 'Defiance', fx: "Reaper's Toll never touches your squad. Your hits ending in 4 gain +40.", lore: '四 sounds like 死, death. Wear it anyway.' },
+  { n: 5, name: 'Hamsa', fx: 'Unused dice give double Shield.', lore: 'The five-fingered hand that wards off the evil eye.' },
+  { n: 6, name: 'Flow', fx: 'Runs count in any order (5-3-4 is a Cascade).', lore: '六六大顺: may everything go smoothly.' },
+  { n: 7, name: 'Jackpot', fx: 'Every triple you land pays ×7 (×21 on 7-7-7).', lore: 'Lucky seven, three in a row.' },
+  { n: 8, name: 'Prosperity', fx: '6 Motherboard slots. The Pawnshop offers 4.', lore: '八 (bā) rhymes with 发 (fā), to prosper.' },
+  { n: 9, name: 'Longevity', fx: 'Heal 9 every turn. Enemy hits ending in 9 deal +9.', lore: '九 (jiǔ) echoes 久, lasting. In Japanese, 9 (ku) echoes 苦, suffering.' }
+];
+const HEROES = [
+  { id: 'nil', name: 'NIL', role: 'Splicer', slots: ['TENS', 'ONES'], lucky: null, desc: 'Splices two dice into one number. Tens 4 + ones 7 = 47. Ones alone deals that die; tens alone deals die × 10.' },
+  { id: 'ves', name: 'VESPER SETTE', role: 'Adder', slots: ['+', '+', '+'], lucky: 7, desc: 'Fan the Hammer: up to three dice. Damage = sum + 10.' },
+  { id: 'ba', name: 'MADAME BA', role: 'Multiplier', slots: ['×', '×'], lucky: 8, desc: 'Compound Interest: damage = die × die. One die alone deals die × 2.' }
+];
+const CARTS = {
+  mirror:   { name: 'Mirror Bus', tag: 'safe', desc: 'Copies the ones digit into the tens place. 47 becomes 77, 7 becomes 77.',
+              fn: c => { const o = c.dmg % 10, t = Math.floor(c.dmg / 10) % 10; if (o === t) return false; c.dmg += (o - t) * 10; return true; } },
+  overclock:{ name: 'Seven-Segment Overclock', tag: 'safe', desc: '+70 if the hit ends in 7.',
+              fn: c => { if (c.dmg % 10 === 7) { c.dmg += 70; return true; } return false; } },
+  interest: { name: 'Interest Bus', tag: 'safe', desc: '+10 for each digit already sitting on the reel.',
+              fn: c => { if (c.reelLen > 0) { c.dmg += 10 * c.reelLen; return true; } return false; } },
+  charm:    { name: 'Lucky Charm', tag: 'safe', desc: '+100 if your lucky number appears anywhere in the hit.',
+              fn: c => { if (String(c.dmg).includes(String(c.lucky))) { c.dmg += 100; return true; } return false; } },
+  siphon:   { name: 'Digit-Sum Siphon', tag: 'safe', desc: "Adds 10 × the sum of the hit's digits.",
+              fn: c => { const s = digitSum(c.dmg); if (s > 0) { c.dmg += 10 * s; return true; } return false; } },
+  palin:    { name: 'Palindrome Engine', tag: 'safe', desc: '×11 if the hit reads the same backwards (77, 141). ×11 never changes the last digit.',
+              fn: c => { if (isPal(c.dmg)) { c.dmg *= 11; return true; } return false; } },
+  roundup:  { name: "Actuary's Round-Up", tag: 'risk', desc: 'Rounds the hit up to the next multiple of 10, so it drops a 0.',
+              fn: c => { if (c.dmg % 10) { c.dmg = Math.ceil(c.dmg / 10) * 10; return true; } return false; } },
+  prime:    { name: 'Prime Amplifier', tag: 'risk', desc: '×3 if the hit is prime.',
+              fn: c => { if (isPrime(c.dmg)) { c.dmg *= 3; return true; } return false; } },
+  fib:      { name: 'Fibonacci Gear', tag: 'risk', desc: '×8 if the hit is a Fibonacci number (13, 21, 34, 55, 89, 144…).',
+              fn: c => { if (FIBS.has(c.dmg)) { c.dmg *= 8; return true; } return false; } },
+  double:   { name: 'Double Down', tag: 'risk', desc: '×2 on every hit. Every digit it touches turns even.',
+              fn: c => { if (c.dmg > 0) { c.dmg *= 2; return true; } return false; } },
+  parity:   { name: 'Spare Parity', tag: 'pass', desc: '+1 Parity Point at the start of each turn.', fn: null }
+};
+const TAGTEXT = { safe: 'Keeps digit', risk: 'Rewrites digit', pass: 'Passive' };
+const FACTIONS = {
+  tetrad:   { label: 'The Tetrad · 4', sigil: '4', rule: 'Every hit it throws ends in 4: it is building toward 4-4-4. Your hits ending in 4 gain +40.' },
+  prime:    { label: 'The Prime Synod · 2 3 5 7', sigil: 'Π', rule: 'Synod plate: hits that are not prime numbers are halved (rounded down).' },
+  ouro:     { label: 'The Ouroboros · 8 9', sigil: '∞', rule: 'Loop: if an 8 or 9 sits on the reel when it acts, it strikes twice.' },
+  basilica: { label: 'The Basilica', sigil: '◉', rule: 'It has learned your lucky number. Every hit it throws ends in your digit.' }
+};
+const WAVES = [
+  { name: 'Cutpurse of the Fourth Gate', faction: 'tetrad', hp: 160, intents: [[14], [24], [34]] },
+  { name: 'Fourfold Assassin', faction: 'tetrad', hp: 320, intents: [[4, 4, 4], [24], [14, 4]] },
+  { name: 'Sieve Knight', faction: 'prime', hp: 460, intents: [[13], [17], [23]] },
+  { name: 'Loop Hound', faction: 'ouro', hp: 760, intents: [[18], [29], [38]] },
+  { name: 'Cardinal Seventeen', faction: 'prime', hp: 1700, boss: true, intents: [[17], [37], [7, 7]] },
+  { name: 'The House', faction: 'ouro', hp: 3300, boss: true, intents: [[28], [39], [8, 9]] },
+  { name: 'The Basilica', faction: 'basilica', hp: 9999, boss: true, intents: 'basilica' }
+];
+const RANK = { LUCKY: 0, TRIPLE: 1, CASCADE: 2, VOID: 3, REAPER: 4, ZERO: 5, PRIME: 6, PAIR: 7, BUST: 8 };
+const NAMES = { LUCKY: 'LUCKY TRIPLE', TRIPLE: 'TRIPLE', CASCADE: 'CASCADE', VOID: 'NULL VOID', REAPER: "REAPER'S TOLL", ZERO: 'ZERO-SUM', PRIME: 'PRIME TRIO', PAIR: 'PAIR', BUST: 'BUST' };
+const FIBSETS = [[1, 1, 2], [1, 2, 3], [2, 3, 5], [3, 5, 8]];
+
+/* ---------- state ---------- */
+let S = null;
+
+function makeWave(i, L) {
+  const last = WAVES.length - 1, base = WAVES[Math.min(i, last)], over = Math.max(0, i - last);
+  let intents = base.intents === 'basilica' ? [[20 + L], [40 + L], [10 + L, 10 + L]] : base.intents.map(h => h.slice());
+  let name = base.name, hp = base.hp;
+  if (over > 0) { name = 'The Basilica · Recursion ' + over; hp = Math.round(base.hp * Math.pow(2.5, over)); intents = intents.map(h => h.map(x => x + 20 * over)); }
+  return { name, faction: base.faction, boss: !!base.boss, hp, max: hp, intents };
+}
+
+function newGame(lucky) {
+  S = {
+    lucky, party: { hp: 100, max: 100 }, wave: 0, enemy: makeWave(0, lucky), intentIdx: 0, reel: [],
+    dice: [], pp: 3, sel: null, clamped: false, board: ['mirror', 'overclock'], unlocked: ['mirror', 'overclock', 'interest'],
+    turn: 0, nextPP0: false, nextDice3: false, cancelNext: false, busy: false, freshRoll: true,
+    stats: { maxHit: 0, best: null, patterns: 0 }, log: []
+  };
+  log('The Basilica cannot compute you. Lucky number ' + lucky + ' (' + FATES[lucky].name + ') accepted.', 'g');
+  startTurn();
+  render();
+}
+const boardSize = () => (S.lucky === 8 ? 6 : 5);
+
+function startTurn() {
+  S.turn++;
+  const n = S.nextDice3 ? 3 : (S.lucky === 3 ? 6 : 5);
+  S.dice = Array.from({ length: n }, () => ({ v: rnd10(), loc: null }));
+  S.pp = S.nextPP0 ? 0 : 3 + (S.lucky === 1 ? 1 : 0) + (S.board.includes('parity') ? 1 : 0);
+  S.debuff = S.nextPP0 ? 'Ledger lock: 0 PP this turn' : (S.nextDice3 ? 'Null Void: only 3 dice' : '');
+  S.nextDice3 = false; S.nextPP0 = false; S.clamped = false; S.sel = null; S.freshRoll = true;
+  if (S.lucky === 9 && S.turn > 1 && S.party.hp < S.party.max) { S.party.hp = Math.min(S.party.max, S.party.hp + 9); }
+}
+
+function slotVals(h) {
+  const a = Array(HEROES[h].slots.length).fill(null);
+  S.dice.forEach(d => { if (d.loc && d.loc.h === h) a[d.loc.s] = d.v; });
+  return a;
+}
+function currentHits() {
+  const base = S.enemy.intents[S.intentIdx % S.enemy.intents.length];
+  return S.clamped ? base.map(x => x % 10) : base.slice();
+}
+
+/* ---------- rules core (pure: reads S, never mutates it) ---------- */
+function resolveHero(h, vals, reelLen) {
+  const H = HEROES[h], f = vals.filter(v => v != null);
+  if (!f.length) return null;
+  let dmg;
+  if (H.id === 'nil') { const t = vals[0], o = vals[1]; dmg = (t != null && o != null) ? t * 10 + o : (o != null ? o : t * 10); }
+  else if (H.id === 'ves') dmg = f.reduce((a, b) => a + b, 0) + 10;
+  else dmg = f.length >= 2 ? f[0] * f[1] : f[0] * 2;
+  const steps = [{ label: 'Base', v: dmg }];
+  const L = H.id === 'nil' ? S.lucky : H.lucky;
+  const res = f.filter(v => v === L).length;
+  if (res) { dmg += 10 * res; steps.push({ label: 'Resonance ×' + res, v: dmg }); }
+  for (const id of S.board) {
+    const C = CARTS[id]; if (!C.fn) continue;
+    const c = { dmg, reelLen, lucky: S.lucky };
+    if (C.fn(c)) { dmg = c.dmg; steps.push({ label: C.name, v: dmg }); }
+  }
+  if (dmg % 10 === 4 && (S.lucky === 4 || S.enemy.faction === 'tetrad')) { dmg += 40; steps.push({ label: 'Fourth Gate +40', v: dmg }); }
+  if (S.enemy.faction === 'prime' && !isPrime(dmg)) { dmg = Math.floor(dmg / 2); steps.push({ label: 'Synod plate ½', v: dmg }); }
+  return { h, steps, final: dmg, digit: dmg % 10, resonant: res > 0 };
+}
+
+function classify(ds, side) {
+  const [a, b, c] = ds, L = S.lucky;
+  if (a === b && b === c) {
+    if (a === 0) return { key: 'VOID', d: 0 };
+    if (a === 4) return { key: 'REAPER', d: 4 };
+    if (side === 'p' && a === L) return { key: 'LUCKY', d: a };
+    return { key: 'TRIPLE', d: a };
+  }
+  const sorted = ds.slice().sort((x, y) => x - y);
+  const eq = (p, q) => p.every((v, i) => v === q[i]);
+  const asc = b === a + 1 && c === b + 1, desc = b === a - 1 && c === b - 1;
+  const anyRun = sorted[1] === sorted[0] + 1 && sorted[2] === sorted[1] + 1;
+  const fibOrdered = FIBSETS.some(f => eq(f, ds) || eq(f.slice().reverse(), ds));
+  const fibAny = FIBSETS.some(f => eq(f, sorted));
+  if (asc || desc || fibOrdered || (L === 6 && side === 'p' && (anyRun || fibAny))) return { key: 'CASCADE' };
+  if ((a + b + c) % 10 === 0) return { key: 'ZERO' };
+  if (ds.every(x => x === 2 || x === 3 || x === 5 || x === 7)) return { key: 'PRIME' };
+  if (a === b || b === c || a === c) return { key: 'PAIR', d: a === b || a === c ? a : b };
+  return { key: 'BUST' };
+}
+
+function evalReel(ds, side) {
+  let cands = [ds];
+  if (side === 'p' && S.lucky === 0 && ds.includes(0)) {
+    cands = [[]];
+    for (const x of ds) { const opts = x === 0 ? [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] : [x]; cands = cands.flatMap(c => opts.map(o => c.concat(o))); }
+  }
+  let best = null;
+  for (const c of cands) {
+    const p = classify(c, side); p.ds = c;
+    const wild = c.join('') !== ds.join('');
+    if (wild && (p.key === 'REAPER' || p.key === 'VOID')) continue;
+    if (!best || RANK[p.key] < RANK[best.key] || (RANK[p.key] === RANK[best.key] && (p.d || 0) > (best.d || 0))) best = p;
+  }
+  best.name = NAMES[best.key];
+  best.wild = best.ds.join('') !== ds.join('');
+  return best;
+}
+
+function applyPattern(sim, pat, side, pot) {
+  const L = S.lucky, you = side === 'p';
+  let text = '', bonus = 0, big = false;
+  switch (pat.key) {
+    case 'LUCKY':
+    case 'TRIPLE': {
+      if (you) { let f = L === 7 ? 7 : Math.max(2, pat.d); if (pat.key === 'LUCKY') f *= 3; bonus = pot * f; sim.enemyHP -= bonus; text = 'Pot ' + fmt(pot) + ' × ' + f + ' = ' + fmt(bonus) + ' true damage.'; }
+      else { bonus = pot * 2; sim.partyHP -= bonus; text = 'The enemy landed the triple: pot ' + fmt(pot) + ' × 2 = ' + fmt(bonus) + ' to your squad.'; }
+      big = true; break;
+    }
+    case 'CASCADE':
+      if (you) { sim.extraTurn = true; text = 'Extra turn. You roll again before the enemy moves.'; }
+      else { sim.enemyExtra = true; text = 'Enemy Cascade. It strikes again.'; }
+      big = you; break;
+    case 'VOID':
+      if (you) { sim.cancelEnemy = true; text = "The enemy's next action is erased."; }
+      else { sim.nextDice3 = true; text = 'You roll only 3 dice next turn.'; }
+      break;
+    case 'REAPER': {
+      const parts = [];
+      if (String(Math.max(0, sim.enemyHP)).includes('4')) { const l = Math.floor(S.enemy.max * 0.44); sim.enemyHP -= l; bonus += l; parts.push('enemy −' + fmt(l)); }
+      if (L !== 4 && String(Math.max(0, sim.partyHP)).includes('4')) { const l = Math.floor(S.party.max * 0.44); sim.partyHP -= l; parts.push('squad −' + l); }
+      text = parts.length ? 'Every unit whose HP contains a 4 loses 44% of max HP: ' + parts.join(', ') + '.' : 'No HP contains a 4. The Reaper passes by.';
+      big = true; break;
+    }
+    case 'ZERO':
+      if (you) { sim.cancelEnemy = true; text = "The digits sum to a multiple of 10. The enemy's action is cancelled."; }
+      else { sim.nextPP0 = true; text = 'The ledger balances against you: 0 Parity Points next turn.'; }
+      break;
+    case 'PRIME':
+      if (you) { bonus = pot * 3; sim.enemyHP -= bonus; text = 'All prime. Pot ' + fmt(pot) + ' × 3 = ' + fmt(bonus) + '.'; }
+      else { bonus = pot; sim.partyHP -= bonus; text = 'Enemy Prime Trio: ' + fmt(bonus) + ' to your squad.'; }
+      break;
+    case 'PAIR':
+      if (you) { const f = L === 2 ? 3 : 1; bonus = pot * f; sim.enemyHP -= bonus; text = 'Pot ' + fmt(pot) + ' × ' + f + ' = ' + fmt(bonus) + '.'; }
+      else { bonus = Math.floor(pot / 2); sim.partyHP -= bonus; text = 'Enemy Pair: ' + bonus + ' to your squad.'; }
+      break;
+    default: text = 'No pattern. The reel clears.';
+  }
+  return { text, bonus, big };
+}
+
+function pushDigit(sim, d, dmg, side) {
+  sim.reel.push({ d, dmg, side });
+  sim.ev.push({ t: 'digit', d, side, idx: sim.reel.length - 1 });
+  if (sim.reel.length < 3) return;
+  const pat = evalReel(sim.reel.map(x => x.d), side);
+  const pot = sim.reel.reduce((a, x) => a + x.dmg, 0);
+  const out = applyPattern(sim, pat, side, pot);
+  sim.ev.push(Object.assign({ t: 'pattern', pat, side, pot, enemyHP: sim.enemyHP, partyHP: sim.partyHP }, out));
+  sim.reel = [];
+}
+
+function simulate() {
+  const L = S.lucky;
+  const sim = { enemyHP: S.enemy.hp, partyHP: S.party.hp, reel: S.reel.map(x => Object.assign({}, x)), shield: 0, ev: [], hits: [],
+    cancelEnemy: S.cancelNext, extraTurn: false, enemyExtra: false, nextPP0: false, nextDice3: false, defeated: false, enemyActed: false };
+  for (let h = 0; h < 3; h++) {
+    const vals = slotVals(h);
+    if (vals.every(v => v == null)) continue;
+    if (sim.enemyHP <= 0 || sim.partyHP <= 0) { sim.hits[h] = { skipped: true }; continue; }
+    const r = resolveHero(h, vals, sim.reel.length);
+    sim.hits[h] = r;
+    sim.enemyHP -= r.final;
+    sim.ev.push({ t: 'hit', h, r, enemyHP: sim.enemyHP });
+    pushDigit(sim, r.digit, r.final, 'p');
+  }
+  const unused = S.dice.filter(d => !d.loc).reduce((a, d) => a + d.v, 0);
+  sim.shield = unused * (L === 5 ? 2 : 1);
+  if (sim.shield) sim.ev.push({ t: 'shield', v: sim.shield });
+  if (sim.enemyHP <= 0) { sim.defeated = true; sim.ev.push({ t: 'defeat' }); return sim; }
+  if (sim.partyHP <= 0) return sim;
+  if (sim.extraTurn) { sim.ev.push({ t: 'note', text: 'Cascade: you act again before the enemy.' }); return sim; }
+  sim.enemyActed = true;
+  if (sim.cancelEnemy) { sim.ev.push({ t: 'note', text: "The ledger balances. The enemy's action is erased." }); sim.cancelEnemy = false; return sim; }
+  let hits = currentHits();
+  if (S.enemy.faction === 'ouro' && sim.reel.some(x => x.d === 8 || x.d === 9)) { hits = hits.concat(hits); sim.ev.push({ t: 'note', text: 'Ouroboros loop: an 8 or 9 is on the reel, so it strikes twice.' }); }
+  const queue = hits.slice(); let extraUsed = false;
+  while (queue.length && sim.partyHP > 0 && sim.enemyHP > 0) {
+    let dmg = queue.shift();
+    if (L === 9 && dmg % 10 === 9) dmg += 9;
+    const absorbed = Math.min(sim.shield, dmg); sim.shield -= absorbed;
+    const hp = dmg - absorbed; sim.partyHP -= hp;
+    sim.ev.push({ t: 'strike', dmg, absorbed, hp, partyHP: sim.partyHP, shield: sim.shield });
+    pushDigit(sim, hp % 10, hp, 'e');
+    if (sim.enemyExtra && !extraUsed) { extraUsed = true; queue.push.apply(queue, hits); }
+  }
+  if (sim.enemyHP <= 0) { sim.defeated = true; sim.ev.push({ t: 'defeat' }); }
+  return sim;
+}
+
+/* ---------- audio ---------- */
+let AC = null, muted = store.get('zso-muted', false);
+function ac() {
+  if (!AC) { try { AC = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { AC = null; } }
+  if (AC && AC.state === 'suspended') AC.resume();
+  return AC;
+}
+function tone(freq, dur, type, gain, when) {
+  const a = ac(); if (!a || muted) return;
+  const t = a.currentTime + (when || 0), o = a.createOscillator(), g = a.createGain();
+  o.type = type; o.frequency.setValueAtTime(freq, t);
+  g.gain.setValueAtTime(gain, t); g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  o.connect(g); g.connect(a.destination); o.start(t); o.stop(t + dur + 0.02);
+}
+function thock() {
+  const a = ac(); if (!a || muted) return;
+  const t = a.currentTime, o = a.createOscillator(), g = a.createGain();
+  o.type = 'sine'; o.frequency.setValueAtTime(190, t); o.frequency.exponentialRampToValueAtTime(55, t + 0.12);
+  g.gain.setValueAtTime(0.55, t); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.16);
+  o.connect(g); g.connect(a.destination); o.start(t); o.stop(t + 0.18);
+  const len = Math.floor(a.sampleRate * 0.03), buf = a.createBuffer(1, len, a.sampleRate), ch = buf.getChannelData(0);
+  for (let i = 0; i < len; i++) ch[i] = (Math.random() * 2 - 1) * (1 - i / len);
+  const n = a.createBufferSource(), f = a.createBiquadFilter(), ng = a.createGain();
+  n.buffer = buf; f.type = 'bandpass'; f.frequency.value = 2400; ng.gain.value = 0.3;
+  n.connect(f); f.connect(ng); ng.connect(a.destination); n.start(t);
+}
+const chime = step => tone(523.25 * Math.pow(2, step / 12), 0.35, 'triangle', 0.16);
+const hitSfx = () => tone(110, 0.18, 'square', 0.08);
+const hurtSfx = () => tone(82, 0.3, 'sawtooth', 0.09);
+const fanfare = () => [0, 4, 7, 12, 16].forEach((s, i) => tone(392 * Math.pow(2, s / 12), 0.5, 'triangle', 0.14, i * 0.07));
+const sting = () => [0, -1, -6].forEach((s, i) => tone(196 * Math.pow(2, s / 12), 0.45, 'sawtooth', 0.07, i * 0.09));
+
+/* ---------- rendering ---------- */
+function log(text, cls) { if (!S) return; S.log.unshift({ text, cls: cls || '' }); S.log = S.log.slice(0, 40); }
+
+function setTube(i, d, side) {
+  const t = $$('.tube')[i]; if (!t) return;
+  t.classList.toggle('on', d != null);
+  t.classList.toggle('e', side === 'e');
+  t.querySelector('.glyph').textContent = d == null ? '0' : d;
+  t.querySelector('.who').textContent = d == null ? '' : (side === 'e' ? 'ENEMY' : 'YOU');
+}
+function renderReel() { for (let i = 0; i < 3; i++) { const r = S.reel[i]; setTube(i, r ? r.d : null, r ? r.side : null); } }
+function setEnemyHP(v) { v = Math.max(0, v); $('#enemyHP').textContent = fmt(v); $('#enemyBar').style.width = (100 * v / S.enemy.max) + '%'; }
+function setPartyHP(v) { v = Math.max(0, v); $('#partyHP').textContent = fmt(v); $('#partyBar').style.width = (100 * v / S.party.max) + '%'; }
+function setShield(v) { $('#shieldChip').textContent = 'Shield ' + v; }
+
+function cartHTML(id, extra) {
+  const C = CARTS[id];
+  return '<span class="cn">' + C.name + '</span><span class="tag ' + C.tag + '">' + TAGTEXT[C.tag] + '</span><span class="cd">' + C.desc + '</span>' + (extra || '');
+}
+
+function render() {
+  if (!S) return;
+  const L = S.lucky, sim = simulate(), busy = S.busy;
+  // stats
+  const best = store.get('zso-best', { wave: 0, hit: 0 });
+  $('#stats').innerHTML =
+    '<span>Wave <b class="num">' + (S.wave + 1) + '</b></span><span>Turn <b class="num">' + S.turn + '</b></span>' +
+    '<span>Lucky <b>' + L + ' · ' + FATES[L].name + '</b></span><span>Max hit <b class="num">' + fmt(S.stats.maxHit) + '</b></span>' +
+    '<span>Best wave <b class="num">' + Math.max(best.wave, S.wave + 1) + '</b></span><span><button class="iconbtn" id="muteBtn">' + (muted ? 'Sound off' : 'Sound on') + '</button></span>';
+  renderReel();
+  // party
+  setPartyHP(S.party.hp); $('#partyMax').textContent = S.party.max;
+  $('#fateLine').textContent = 'NIL resonates on ' + L;
+  setShield(sim.shield);
+  const totalPP = Math.max(S.pp, 3 + (L === 1 ? 1 : 0) + (S.board.includes('parity') ? 1 : 0));
+  $('#pp').innerHTML = Array.from({ length: totalPP }, (_, i) => '<i class="' + (i < S.pp ? 'full' : '') + '"></i>').join('');
+  $('#ppText').textContent = S.pp + ' Parity Point' + (S.pp === 1 ? '' : 's');
+  const db = $('#debuff'); db.hidden = !S.debuff; db.textContent = S.debuff || '';
+  // enemy
+  const F = FACTIONS[S.enemy.faction];
+  $('#sigil').textContent = F.sigil;
+  $('#enemyFaction').textContent = F.label + (S.enemy.boss ? ' · Boss' : '');
+  $('#enemyName').textContent = S.enemy.name;
+  setEnemyHP(S.enemy.hp); $('#enemyMax').textContent = fmt(S.enemy.max);
+  $('#waveLine').textContent = 'Wave ' + (S.wave + 1);
+  $('#enemyRule').textContent = F.rule;
+  const hits = currentHits();
+  $('#intentHits').textContent = S.cancelNext ? 'Erased' : hits.join(' + ');
+  $('#intentNote').textContent = S.cancelNext ? 'Your Null Void or Zero-Sum still holds.' : (S.clamped ? 'Clamped to its last digit.' : 'Exact damage before your Shield.');
+  $('#clampBtn').disabled = busy || S.pp < 2 || S.clamped || S.cancelNext || hits.every(x => x < 10);
+  // forecast
+  const lines = [];
+  for (const e of sim.ev) {
+    if (e.t === 'hit') lines.push(['p', HEROES[e.h].name + ' hits for ' + fmt(e.r.final) + ', dropping a ' + e.r.digit]);
+    else if (e.t === 'strike') lines.push(['e', 'Enemy hits ' + e.dmg + (e.absorbed ? ' − ' + e.absorbed + ' Shield = ' + e.hp : '') + ', dropping a ' + (e.hp % 10)]);
+    else if (e.t === 'pattern') lines.push(['pat', '★ ' + e.pat.name + (e.pat.wild ? ' (wild 0s as ' + e.pat.ds.join('-') + ')' : '') + ' for ' + (e.side === 'p' ? 'you' : 'the enemy') + '. ' + e.text]);
+    else if (e.t === 'note') lines.push(['n', e.text]);
+    else if (e.t === 'defeat') lines.push(['pat', 'The enemy falls.']);
+  }
+  if (sim.partyHP <= 0) lines.push(['e', 'Your squad falls. Change the plan.']);
+  $('#forecast').innerHTML = '<h2>Exact forecast</h2>' + (lines.length ? '<ol>' + lines.map(l => '<li class="' + l[0] + '">' + l[1] + '</li>').join('') + '</ol>' : '<p class="rule">Place a die to see the outcome.</p>');
+  // dice
+  $('#dice').innerHTML = S.dice.map((d, i) => d.loc ? '' :
+    '<button class="die ' + (S.sel === i ? 'sel ' : '') + (d.v === L ? 'lucky ' : '') + (S.freshRoll ? 'roll' : '') + '" data-die="' + i + '" aria-label="Die ' + d.v + '"' + (busy ? ' disabled' : '') + '>' + d.v + '</button>').join('') ||
+    '<span class="rule">All dice placed. No Shield this turn.</span>';
+  S.freshRoll = false;
+  // ops
+  const sd = S.sel != null ? S.dice[S.sel] : null;
+  $$('.op[data-op]').forEach(b => {
+    const op = b.dataset.op; if (op === 'clamp') return;
+    let ok = !busy && sd;
+    if (op === 'unslot') ok = ok && !!sd.loc;
+    else ok = ok && S.pp >= 1 && (op !== 'flip' || FLIP[sd.v] != null);
+    b.disabled = !ok;
+  });
+  // squad
+  $('#squad').innerHTML = HEROES.map((H, h) => {
+    const vals = slotVals(h), r = sim.hits[h], Ld = H.id === 'nil' ? L : H.lucky;
+    const slots = H.slots.map((lab, s) => {
+      const di = S.dice.findIndex(d => d.loc && d.loc.h === h && d.loc.s === s);
+      if (di >= 0) { const v = S.dice[di].v; return '<button class="slot filled ' + (v === Ld ? 'lucky ' : '') + (S.sel === di ? 'sel' : '') + '" data-slot="' + h + ':' + s + '"' + (busy ? ' disabled' : '') + '>' + v + '</button>'; }
+      return '<button class="slot ' + (S.sel != null ? 'target' : '') + '" data-slot="' + h + ':' + s + '"' + (busy ? ' disabled' : '') + '>' + lab + '</button>';
+    }).join('');
+    let result;
+    if (r && r.skipped) result = '<span class="rule">The enemy falls before this hero acts.</span>';
+    else if (r) result = '<span class="big num">' + fmt(r.final) + '</span><span class="mini-tube">' + r.digit + '</span>' + (r.resonant ? '<span class="res">RESONANT</span>' : '');
+    else result = '<span class="rule">No dice placed. This hero rests.</span>';
+    const trace = r && r.steps ? '<div class="trace">' + r.steps.map((s, i) => '<span class="' + (i ? 'hot' : '') + '">' + s.label + ' ' + fmt(s.v) + '</span>').join('') + '</div>' : '';
+    return '<article class="panel hero" data-h="' + h + '"><div class="hero-head"><span class="hero-name">' + H.name + '</span><span class="lucky-tag">' + H.role + ' · Lucky ' + Ld + '</span></div>' +
+      '<p>' + H.desc + ' A die showing ' + Ld + ' adds +10.</p><div class="slots">' + slots + '</div><div class="result">' + result + '</div>' + trace + '</article>';
+  }).join('');
+  // exec
+  $('#execBtn').disabled = busy;
+  $('#execBtn').textContent = S.dice.some(d => d.loc) ? 'EXECUTE' : 'HOLD (ALL SHIELD)';
+  // board
+  const size = boardSize();
+  $('#mobo').style.setProperty('--slots', size);
+  let mob = '';
+  for (let i = 0; i < size; i++) {
+    const id = S.board[i];
+    mob += id ? '<div class="cart"><span class="order">#' + (i + 1) + '</span>' + cartHTML(id, '<span class="ctl">' + (i > 0 ? '<button data-left="' + i + '" aria-label="Move left"' + (busy ? ' disabled' : '') + '>◀ earlier</button>' : '') + '<button data-unplug="' + i + '"' + (busy ? ' disabled' : '') + '>Unplug</button></span>') + '</div>'
+      : '<div class="cart empty">Slot ' + (i + 1) + ' · empty</div>';
+  }
+  $('#mobo').innerHTML = mob;
+  const rack = S.unlocked.filter(id => !S.board.includes(id));
+  const locked = Object.keys(CARTS).length - S.unlocked.length;
+  $('#rackLabel').textContent = 'Rack · tap to plug in' + (locked ? ' · ' + locked + ' more unlock as you clear waves' : '');
+  $('#unlockAll').hidden = !locked;
+  $('#rack').innerHTML = rack.length ? rack.map(id => '<button class="cart" data-plug="' + id + '"' + (busy || S.board.length >= size ? ' disabled' : '') + '>' + cartHTML(id) + '</button>').join('') : '<span class="rule">Every unlocked cartridge is plugged in.</span>';
+  // log
+  $('#log').innerHTML = S.log.map(l => '<li class="' + l.cls + '">' + l.text + '</li>').join('');
+}
+
+/* ---------- juice / playback ---------- */
+function shake(el) { if (RM || !el) return; el.classList.remove('shake'); void el.offsetWidth; el.classList.add('shake'); }
+function popDamage(container, n, cls) {
+  const el = document.createElement('div'); el.className = 'pop ' + (cls || '');
+  const s = fmt(n); el.innerHTML = '<span>' + s.slice(0, -1) + '</span><span class="last">' + s.slice(-1) + '</span>';
+  container.appendChild(el); setTimeout(() => el.remove(), 1400);
+  return el.querySelector('.last');
+}
+async function fly(d, fromEl, idx, side) {
+  const tube = $$('.tube')[idx];
+  if (RM || !fromEl || !tube || !fromEl.animate) return;
+  const a = fromEl.getBoundingClientRect(), b = tube.getBoundingClientRect();
+  const el = document.createElement('div'); el.className = 'fly' + (side === 'e' ? ' e' : ''); el.textContent = d;
+  const x0 = a.left + a.width / 2, y0 = a.top + a.height / 2, dx = b.left + b.width / 2 - x0, dy = b.top + b.height / 2 - y0;
+  el.style.left = x0 + 'px'; el.style.top = y0 + 'px';
+  document.body.appendChild(el);
+  const anim = el.animate([
+    { transform: 'translate(-50%,-50%) scale(1.5) rotate(0deg)', offset: 0 },
+    { transform: 'translate(calc(-50% + ' + dx * 0.15 + 'px), calc(-50% + ' + (dy * 0.15 - 40) + 'px)) scale(1.3) rotate(' + (side === 'e' ? -90 : 90) + 'deg)', offset: 0.25 },
+    { transform: 'translate(calc(-50% + ' + dx + 'px), calc(-50% + ' + dy + 'px)) scale(1) rotate(' + (side === 'e' ? -720 : 720) + 'deg)', offset: 1 }
+  ], { duration: 340, easing: 'cubic-bezier(.55,0,.85,.35)' });
+  try { await anim.finished; } catch (e) {}
+  el.remove();
+}
+async function showPattern(e) {
+  const bn = $('#banner');
+  $('#bannerName').textContent = e.pat.name;
+  $('#bannerText').textContent = (e.side === 'p' ? 'You' : 'Enemy') + ' · ' + e.text;
+  bn.classList.toggle('e', e.side === 'e');
+  bn.hidden = false; bn.classList.remove('show'); void bn.offsetWidth; bn.classList.add('show');
+  if (e.big) {
+    const c = $('#crack'); c.classList.remove('show'); void c.getBoundingClientRect(); c.classList.add('show');
+    shake($('.mast')); shake(document.querySelector('main'));
+    if (e.side === 'p') fanfare(); else sting();
+    await sleep(320);
+  } else if (e.pat.key !== 'BUST') { if (e.side === 'p') chime(12); else sting(); }
+  await sleep(e.pat.key === 'BUST' ? 650 : 1300);
+  bn.hidden = true;
+}
+
+async function playback(sim) {
+  let chain = 0, lastFrom = null;
+  for (const e of sim.ev) {
+    if (e.t === 'hit') {
+      const card = document.querySelector('.hero[data-h="' + e.h + '"]');
+      if (card) card.classList.add('acting');
+      setEnemyHP(e.enemyHP);
+      lastFrom = popDamage($('#enemyStage'), e.r.final, e.r.digit === S.lucky ? 'gold' : '');
+      shake($('#enemy')); hitSfx();
+      S.stats.maxHit = Math.max(S.stats.maxHit, e.r.final);
+      log(HEROES[e.h].name + ' hits ' + fmt(e.r.final) + ', dropping a ' + e.r.digit + '.', 'p');
+      await sleep(420);
+      if (card) card.classList.remove('acting');
+    } else if (e.t === 'digit') {
+      await fly(e.d, lastFrom, e.idx, e.side);
+      setTube(e.idx, e.d, e.side);
+      const t = $$('.tube')[e.idx]; if (t) { t.classList.add('thock'); setTimeout(() => t.classList.remove('thock'), 90); }
+      chain++; thock(); chime(chain);
+      await sleep(40 * Math.min(chain, 6));
+    } else if (e.t === 'strike') {
+      setPartyHP(e.partyHP); setShield(e.shield);
+      lastFrom = popDamage($('#partyStage'), e.hp, 'hurt');
+      shake($('#party')); hurtSfx();
+      log('Enemy hits ' + e.dmg + (e.absorbed ? ', Shield absorbs ' + e.absorbed : '') + ', dropping a ' + (e.hp % 10) + '.', 'e');
+      await sleep(420);
+    } else if (e.t === 'pattern') {
+      S.stats.patterns++;
+      if (e.side === 'p' && (!S.stats.best || RANK[e.pat.key] < RANK[S.stats.best])) S.stats.best = e.pat.key;
+      if (e.side === 'p' && e.bonus) S.stats.maxHit = Math.max(S.stats.maxHit, e.bonus);
+      log('★ ' + e.pat.name + ' (' + (e.side === 'p' ? 'you' : 'enemy') + '): ' + e.text, e.side === 'p' ? 'g' : 'e');
+      await showPattern(e);
+      setEnemyHP(e.enemyHP); setPartyHP(e.partyHP);
+      if (e.bonus && e.side === 'p') { popDamage($('#enemyStage'), e.bonus, 'gold'); shake($('#enemy')); }
+      for (let i = 0; i < 3; i++) setTube(i, null, null);
+      await sleep(250);
+    } else if (e.t === 'shield') {
+      setShield(e.v); log('Unused dice become ' + e.v + ' Shield.'); await sleep(180);
+    } else if (e.t === 'note') {
+      log(e.text, 'g'); await sleep(520);
+    } else if (e.t === 'defeat') {
+      log(S.enemy.name + ' falls.', 'g'); await sleep(450);
+    }
+  }
+}
+
+async function execute() {
+  if (!S || S.busy) return;
+  ac();
+  S.sel = null; S.busy = true; render();
+  const sim = simulate();
+  await playback(sim);
+  S.enemy.hp = Math.max(0, sim.enemyHP);
+  S.party.hp = Math.max(0, Math.min(S.party.max, sim.partyHP));
+  S.reel = sim.reel;
+  if (sim.nextPP0) S.nextPP0 = true;
+  if (sim.nextDice3) S.nextDice3 = true;
+  S.cancelNext = sim.extraTurn ? sim.cancelEnemy : false;
+  if (sim.enemyActed) S.intentIdx++;
+  const best = store.get('zso-best', { wave: 0, hit: 0 });
+  store.set('zso-best', { wave: Math.max(best.wave, S.wave + 1), hit: Math.max(best.hit, S.stats.maxHit) });
+  S.busy = false;
+  if (S.party.hp <= 0) { render(); gameOver(); return; }
+  if (sim.defeated) { await shop(); nextWave(); }
+  startTurn();
+  render();
+}
+
+function nextWave() {
+  S.wave++;
+  S.enemy = makeWave(S.wave, S.lucky);
+  S.intentIdx = 0; S.cancelNext = false;
+  S.party.hp = Math.min(S.party.max, S.party.hp + 40);
+  log('Wave ' + (S.wave + 1) + ': ' + S.enemy.name + ' steps out of the rain. Squad heals 40.', 'g');
+}
+
+function shop() {
+  return new Promise(resolve => {
+    const locked = Object.keys(CARTS).filter(id => !S.unlocked.includes(id));
+    if (!locked.length) { resolve(); return; }
+    for (let i = locked.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); const t = locked[i]; locked[i] = locked[j]; locked[j] = t; }
+    const offers = locked.slice(0, S.lucky === 8 ? 4 : 3);
+    $('#shopEyebrow').textContent = S.enemy.name + ' defeated · wave ' + (S.wave + 1) + ' cleared';
+    $('#offers').innerHTML = offers.map(id => '<button class="cart" data-offer="' + id + '">' + cartHTML(id) + '</button>').join('');
+    const m = $('#shopModal'); m.hidden = false;
+    const onPick = ev => {
+      const b = ev.target.closest('[data-offer]'); if (!b) return;
+      const id = b.dataset.offer;
+      S.unlocked.push(id);
+      if (S.board.length < boardSize()) S.board.push(id);
+      log('Took ' + CARTS[id].name + '.', 'g');
+      m.hidden = true; $('#offers').removeEventListener('click', onPick); resolve();
+    };
+    $('#offers').addEventListener('click', onPick);
+  });
+}
+
+function gameOver() {
+  const best = S.stats.best ? NAMES[S.stats.best] : 'none';
+  $('#overText').textContent = 'You reached wave ' + (S.wave + 1) + ' (' + S.enemy.name + ') on turn ' + S.turn + '. Largest single number: ' + fmt(S.stats.maxHit) + '. Best pattern you landed: ' + best + '. Lucky number: ' + S.lucky + ' (' + FATES[S.lucky].name + ').';
+  $('#overModal').hidden = false;
+}
+
+function openFates() {
+  $('#fates').innerHTML = FATES.map(f => '<button class="fate" data-fate="' + f.n + '"><span class="fn">' + f.n + '</span><span class="ft">' + f.name + '</span><span class="fx">' + f.fx + '</span><span class="fl">' + f.lore + '</span></button>').join('');
+  $('#fateModal').hidden = false;
+}
+
+/* ---------- input ---------- */
+function spend(n) { if (S.pp < n) return false; S.pp -= n; return true; }
+document.addEventListener('click', ev => {
+  const t = ev.target;
+  const fate = t.closest('[data-fate]');
+  if (fate) { ac(); $('#fateModal').hidden = true; newGame(Number(fate.dataset.fate)); return; }
+  if (t.closest('#muteBtn')) { muted = !muted; store.set('zso-muted', muted); render(); return; }
+  if (!S || S.busy) return;
+  const die = t.closest('[data-die]');
+  if (die) { const i = Number(die.dataset.die); S.sel = S.sel === i ? null : i; render(); return; }
+  const slot = t.closest('[data-slot]');
+  if (slot) {
+    const parts = slot.dataset.slot.split(':'), h = Number(parts[0]), s = Number(parts[1]);
+    const occ = S.dice.findIndex(d => d.loc && d.loc.h === h && d.loc.s === s);
+    if (S.sel != null) {
+      if (occ === S.sel) { S.sel = null; render(); return; }
+      const prev = S.dice[S.sel].loc;
+      if (occ >= 0) S.dice[occ].loc = prev ? { h: prev.h, s: prev.s } : null;
+      S.dice[S.sel].loc = { h, s }; S.sel = null; ac(); thock();
+    } else if (occ >= 0) S.sel = occ;
+    render(); return;
+  }
+  const op = t.closest('[data-op]');
+  if (op && !op.disabled) {
+    const k = op.dataset.op;
+    if (k === 'clamp') { if (spend(2)) { S.clamped = true; log('Mod 10 Clamp: the enemy attack keeps only its last digit.', 'g'); thock(); } render(); return; }
+    const d = S.sel != null ? S.dice[S.sel] : null; if (!d) return;
+    if (k === 'unslot') { d.loc = null; S.sel = null; render(); return; }
+    if (!spend(1)) return;
+    const before = d.v;
+    if (k === 'inc') d.v = (d.v + 1) % 10;
+    else if (k === 'dec') d.v = (d.v + 9) % 10;
+    else if (k === 'flip') d.v = FLIP[d.v];
+    else if (k === 'reroll') d.v = rnd10();
+    log(op.textContent.split(/\d PP|free/)[0].trim().replace(/\s+/g, ' ') + ': ' + before + ' → ' + d.v);
+    chime(d.v); render(); return;
+  }
+  const plug = t.closest('[data-plug]');
+  if (plug && S.board.length < boardSize()) { S.board.push(plug.dataset.plug); thock(); render(); return; }
+  const un = t.closest('[data-unplug]');
+  if (un) { S.board.splice(Number(un.dataset.unplug), 1); render(); return; }
+  const left = t.closest('[data-left]');
+  if (left) { const i = Number(left.dataset.left); const b = S.board; const x = b[i]; b[i] = b[i - 1]; b[i - 1] = x; render(); return; }
+});
+$('#execBtn').addEventListener('click', execute);
+$('#unlockAll').addEventListener('click', () => { if (!S || S.busy) return; S.unlocked = Object.keys(CARTS); log('Sandbox: every cartridge unlocked.'); render(); });
+$('#againBtn').addEventListener('click', () => { $('#overModal').hidden = true; newGame(S.lucky); });
+$('#refateBtn').addEventListener('click', () => { $('#overModal').hidden = true; openFates(); });
+
+/* ---------- boot ---------- */
+function start(data) {
+  const saved = data && data.S;
+  if (saved && !saved.busy) { S = saved; render(); }
+  else { newGame(7); openFates(); }
+}
+if (window.claude && window.claude.hot && window.claude.hot.snapshot) window.claude.hot.snapshot(() => ({ S: S && !S.busy ? S : null }));
+if (window.claude && window.claude.hot && window.claude.hot.ready) window.claude.hot.ready(start);
+else start((window.claude && window.claude.hot && window.claude.hot.data) || {});
+})();
+</script>

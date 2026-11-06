@@ -3,7 +3,7 @@
 > *"Every soul a number. Every number a share. The books must balance."*
 > — the Comptroller's catechism, recited at every Dawn Tally
 
-This file is the story source of truth: world, lore, lands, villain, cast, plot and endings. Mechanics live in [`GDD.md`](GDD.md); schedule and pipeline in [`PRODUCTION_PLAN.md`](PRODUCTION_PLAN.md).
+This file is the story source of truth: world, lore, the god of luck, lands, villain, cast, plot and endings. The full scene-by-scene campaign is in [`STORY.md`](STORY.md); each land's acts, encounters and bosses are in [`ACT_DESIGN.md`](ACT_DESIGN.md). Mechanics live in [`GDD.md`](GDD.md); schedule and pipeline in [`PRODUCTION_PLAN.md`](PRODUCTION_PLAN.md).
 
 ---
 
@@ -44,9 +44,33 @@ In **the Tally**, every living soul carries a floating number, its **Omen** (00�
 
 ---
 
+## 2A. Hap, the god of luck who governs the Tally
+
+> *"Hap deals. People choose."* — the oldest proverb in the Tally, said in every language
+
+**Hap** is the Tally's one god of luck: not a god *of* a land, but the will inside chance itself. The name is the old word that still hides in *happen*, *happy*, *perhaps* and *mishap*. Hap is invented for this world; it is not any real religion's deity.
+
+| | |
+|---|---|
+| **What Hap is** | Luck with a heart. Playful, generous, unfair, never cruel on purpose. Hap loves surprise more than anything: the long shot, the second chance, the stranger who turns out to be family. |
+| **How Hap governs** | Hap never commands. It **deals**: every morning, before the Basilica, Hap scattered luck across the world like seed, unevenly, and let people decide what to grow. Every land built its own way of talking to Hap: thread, karma, books of the dead, a contract at midnight. Those ways are the **many ledgers**. |
+| **How Hap appears** | Never the same face twice. To each land it shows the face that land's stories expect, drawn in that land's art style; in the game it appears as a figure of overlapping faces under a turning wheel of stars, with **two dice for eyes** and every digit 0–9 orbiting its head like a halo. Its voice is the sound of dice in a cupped hand. |
+| **Symbol** | **The Open Hand**: an open palm with a die resting in it. Shrines to Hap are just that: a hand carved in stone, a die, and somewhere to sit. |
+| **Signs of Hap** | Coincidences. A coin landing on its edge, a stranger with your birthday, a rainbow at night. People say "Hap's watching" and buy a ticket. |
+| **Hap and the land gods** | Every land keeps its own revered figures (the Seven Lucky Gods' shrine in Hyakki, the keepers of the old ledgers, Fortuna's wheel in Kroton Nova, Lady Luck at the Crossroads card tables). In this world they are how each culture *talks about* luck; the game never claims they are secretly Hap, and never makes them villains (§10). |
+
+**What happened to Hap (the truth, revealed across the game):**
+1. **The Binding** (TR 380–690) took the ledgers: the ways people spoke to Hap.
+2. **The Final Binding** (TR 702): the Basilica's heart, the **Even Hand engine**, closed around Hap itself. The Basilica's great amber eye is **Hap's eye, caged**. Since then Hap no longer deals; it is **counted**. Every Dawn Tally divides the caged god into whole-number shares: the Omens.
+3. **The Rounding** shaves the fractions off Hap every morning. Three hundred years of shavings pooled into one account, and the account woke up: **NIL is the part of Hap that refused to be counted.** NIL is not Hap, and not a god; NIL is a person made of the god's lost change, and the last free piece of luck in the world.
+4. **The Deficit** is Hap starving in the cage. **Noise storms** are its seizures. **The Default** that the theologians fear is not "the Noise returns"; it is **Hap's death**, after which nothing would ever happen by chance again: no surprises, no second chances, no luck at all.
+5. **Thale** discovered the cage in TR 999. He believes a caged god is mercy ("No child has died at random since I put chance in a box") and plans the **Final Audit**: settle NIL, count Hap completely, and freeze it forever (**Fixed Fate**). He doesn't know, or won't admit, that a frozen god is a dead one.
+
+**Hap in the game:** Hap speaks only in dreams. At the end of every act NIL dreams of a dice-starred void where Hap appears with the face of the land just visited and asks one question (the **Hap's Dream** epilogues, Story §Interludes). In play, Hap shows up as **Hap's Favour** (a pity system: luck turns after bad luck), **Hap's Whispers** (coincidence events on the map) and **Open Hand shrines** (rest nodes). See [`SYSTEMS.md`](SYSTEMS.md).
+
 ## 3. History (the myth told in the intro)
 
-1. **The Noise.** Before numbers, fortune moved like weather. Floods, plague and ruin fell at random.
+1. **The Noise.** Before numbers, fortune moved like weather: Hap dealt freely, and nobody kept accounts. Floods and fortunes fell where they fell.
 2. **The Many Ledgers.** Every people learned to keep accounts with fate in its own way:
    - In **Kroton Nova**, three sisters, the **Moirai**, spin, measure and cut the thread of every life.
    - In **Śūnyapura**, the scribe **Chitragupta** records every soul's deeds for the lord of death, and the land's mathematicians gave the world **zero**.
@@ -55,11 +79,13 @@ In **the Tally**, every living soul carries a floating number, its **Omen** (00�
    - In **the Crossroads Territory**, a stranger waits where two roads meet at midnight with a black book, and anyone can sign a deal for luck.
 
    None of these ledgers agreed. Luck meant karma in one land, thread in another, a contract in a third. The world was messy, plural and alive.
-3. **The Basilica.** Meridian, a young trading capital at the centre of the Tally, sent actuaries to every land. Over three centuries they **copied, bought or seized each ledger** and bound them into one brass engine, **the Basilica**, which recomputes one Omen for every soul at sunrise (**the Dawn Tally**). One number for everyone; one law for luck. Meridian became the capital of the world because it holds the merged Ledger.
+3. **The Basilica.** Meridian, a young trading capital at the centre of the Tally, sent actuaries to every land. Over three centuries they **copied, bought or seized each ledger** and bound them into one brass engine, **the Basilica**, which recomputes one Omen for every soul at sunrise (**the Dawn Tally**). One number for everyone; one law for luck. In TR 702 the engine's heart closed around **Hap itself** (§2A); since then the god of luck is not worshipped in Meridian, it is *counted*. Meridian became the capital of the world because it holds the merged Ledger.
 4. **The Rounding.** Each Dawn Tally divides luck into whole numbers. The fractions, every soul's tiny remainder, are rounded down and dropped. It has happened every day for three hundred years. Nobody noticed.
-5. **The Deficit (now).** For forty years the world's total luck has been leaking. **Noise storms** tear open where the books don't balance: patches of pure chance where numbers scramble and glitch-creatures (**Noiselings**) crawl out. Theologians predict **the Default**, the day the Basilica fails and the Noise returns.
+5. **The Deficit (now).** For forty years the world's total luck has been leaking. **Noise storms** tear open where the books don't balance: patches of pure chance where numbers scramble and glitch-creatures (**Noiselings**) crawl out. Theologians predict **the Default**, the day the Basilica fails. The truth is worse: the Deficit is Hap starving in its cage, and the Default would be the god's death (§2A).
 
 **The secret (midpoint reveal, Act III, in Śūnyapura, the land that invented zero):** the rounded-down fractions didn't vanish. Three centuries of everyone's lost remainders pooled into a hidden account, and that account became a person. **NIL is the Remainder**, the world's missing luck, embodied. NIL has no Omen because NIL isn't *in* the Ledger. NIL *is what the Ledger owes.*
+
+**The final secret (Finale, inside the Basilica):** the remainders were shaved from **Hap**. NIL is the last free piece of the god of luck. Settling NIL would complete the count, and Fixed Fate would freeze Hap forever.
 
 ---
 
@@ -103,6 +129,17 @@ The Tally is a ring of lands around Meridian's plateau. The upper city is sealed
 
 **Gods are not the villains.** Revered figures (Enma, Chitragupta, the Judge of the Ten Courts, the Moirai) appear as **neutral keepers who test the party**, never as enemies to beat up. The Auditors are mortals, folklore tricksters or legendary monsters who made deals with Thale.
 
+### Luck and superstition by region (what each land believes, and how it plays)
+| Land | What luck means here | Lucky | Unlucky | Everyday customs | Becomes in play |
+|---|---|---|---|---|---|
+| **Meridian** | A number you own, rent or owe | 7, 77, 99 | 13 (floors skipped), 00 | Charms of every culture on one door; kissing sevens; selling "luck-ins" | *Debt*: the Collectors' interest; Charmpunk shops sell every set |
+| **Hyakki** | A relationship with spirits; old things wake up | 7 (Seven Lucky Gods), 8 (*suehirogari*, widening fan) | 4 (*shi*, death), 9 (*ku*, suffering) | Daruma eyes, omamori, beckoning cats, throwing salt, no room 4 | *Rule of Shi and Ku*: 4s and 9s curse the striker; tsukumogami faces awaken after 100 stops |
+| **River Empire** | Prosperity that compounds; harmony between the living and the dead | 8 (*fā*, prosper), 6 (*liù*, smooth), 9 (*jiǔ*, lasting) | 4 (*sǐ*) | Red envelopes, the money toad, oracle sticks, burning joss paper for ancestors | *Rule of Interest*: Mult compounds; ancestors' gifts at shrine nodes |
+| **Śūnyapura** | Deeds and their return (karma), auspicious timing | 0 (the place that holds everything), 108, 9 (*navagraha*) | Inauspicious hours during the eclipse | Lemon and seven chillies, rangoli, the nine gems, auspicious hours | *Rule of Karma*: parries and Zero-Sums bank Karma; every action returns |
+| **Kroton Nova** | Purity and proportion; the thread the Moirai spin | Primes, 2 (the even prime), the golden ratio | 17 (VIXI), composites (in the Synod's eyes) | Evil-eye beads, spitting three times, Fortuna's wheel | *Rule of Indivisibility*: composite strikes weaken; primes pierce |
+| **The Crossroads** | A deal: luck is bought, borrowed and owed | 7, 11, 21 | 13, the dead man's hand (aces and eights) | Horseshoes open end up, rabbit's foot, lucky penny, never count money at the table | *Rule of the House*: the night loops; Deals and Wagers |
+| **The Basilica** | Arithmetic; luck abolished | 50 (the median) | Remainders, NaN | Clocks strike 0 at dawn; children perform the Naming Rite at seven | *Fixed Fate*: wheels slow and freeze; the finale takes luck away |
+
 ### Land notes (enemies, set pieces, superstitions)
 
 **Meridian Undercity** (Prologue)
@@ -117,7 +154,7 @@ The Tally is a ring of lands around Meridian's plateau. The upper city is sealed
 
 **The River Empire** (Act II, China-inspired)
 - Bāfā Harbor enemies: Abacus Golems, Debt Junks (armed river boats), Golden Koi spirits (multiply when hit).
-- Ten Courts enemies: Ox-Head & Horse-Face (牛头马面, twin wardens who must fall in the same round), Hungry Ghosts (eat your coins), Jiangshi.
+- Ten Courts: Ox-Head & Horse-Face (牛头马面) are the Courts' wardens and appear as a **trial**, never as villains (they are satisfied only if both are bested in the same round); enemies are Hungry Ghosts (they eat your fen), Jiangshi and Basilica auditors posted below.
 - Set pieces: the Lantern Festival over the Luck Exchange; crossing Naihe Bridge past Meng Po's pavilion of forgetting.
 - Superstitions: 8 for prosperity; red envelopes; the three-legged money toad; burning joss paper for the dead.
 
@@ -294,9 +331,9 @@ Total ≈ 2 min 30 s; skippable after first view. The opening montage cycles thr
 ## 9. Endings
 | Ending | Condition | What happens |
 |---|---|---|
-| **Balance** | Return the Remainder | NIL dissolves into the Ledger. Every Omen rises by one; the Deficit closes. The party visits a grave with no number. |
-| **Overflow** | Break the Basilica | Every Omen becomes NaN. Nobody can see anyone's luck: freedom and chaos. Each land returns to its old ways, for better and worse. |
-| **Positive-Sum** (true ending) | All 8 bonds complete; every companion's ledger piece kept | The party puts every land's ledger piece back into the Basilica *together*: thread, karma, the Book and the Brush, Enma's page, the crossroads contract, Maeve's horseshoe. The machine stops forcing one law and starts translating between many. Shared luck stops being conserved and starts **multiplying**. The game's synergy system (heroes worth more together than apart) becomes the world's new law. Thale lives to see it. |
+| **Balance** | Return the Remainder | NIL dissolves into the Ledger and Hap's cage is fed. Every Omen rises by one; the Deficit closes; Hap stays caged, counted and quiet. The party visits a grave with no number. |
+| **Overflow** | Break the Basilica | Hap bursts free all at once. Every Omen becomes NaN; the Noise returns and nobody can see anyone's luck: freedom and chaos. Each land returns to its old ways, for better and worse. NIL fades into the storm. |
+| **Positive-Sum** (true ending) | All 8 bonds complete; every companion's ledger piece kept | The party puts every land's ledger piece back into the Basilica *together*: thread, karma, the Book and the Brush, Enma's page, the crossroads contract, Maeve's horseshoe. The machine stops forcing one law and starts translating between many. Hap's cage opens into an **Open Hand**: the god deals again, but through every land's ledger at once. Shared luck stops being conserved and starts **multiplying**. The game's synergy system (heroes worth more together than apart) becomes the world's new law. Thale lives to see it. In the last shot, Hap gives NIL a number of their own: the NaN over NIL's head resolves into **the player's lucky number**. |
 | **Divide by Zero** (secret) | NIL's digit is 0 and the final hit lands 0-0-0 | The Basilica crashes, the screen blue-screens, and the credits roll in debug text. |
 
 **The theme in one sentence:** *a world that flattened every culture's idea of luck into one zero-sum number learns, from a party drawn from all of them, that luck shared isn't zero-sum.*

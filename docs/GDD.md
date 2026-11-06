@@ -26,6 +26,8 @@ An anime 2.5D party RPG across lands inspired by **Japanese, Chinese, Indian, Gr
 ### 1.1 One round
 1. **Your three strikes.** Tap a hero (or press 1/2/3) to choose who strikes next. Their **Fate Wheel** appears overhead: tens fixed, the ones digit spinning. **Tap to stop.** The hero attacks (cut-in, dash, hit-stop), and the stopped digit tears off the damage number and slams into the **reel** (3 tubes).
    - Party of 1: NIL strikes 3 times. Party of 2: choose an order, and one hero strikes twice. Party of 3: each strikes once.
+   - **Read the reel.** The third striker sees the first two digits. **Pattern Sight** makes every face that would complete a pattern shimmer in that pattern's colour, so the last tap is always a decision, never a guess. (Simulation: this alone cuts Busts from ~57% to ~45% for an average player; [`TUNING.md`](TUNING.md).)
+   - **Starter wheels have 8 faces.** Each hero's wheel leaves out two digits listed in their kit (§2.2); wheel crafting adds, removes and enhances faces from there.
 2. **The reel resolves** into a pattern that multiplies the round (§1.3), with a full-screen cinematic.
 3. **The enemy strikes.** Its wheel spins over it. Stop on **0** to parry, on your lucky digit to reflect; anything else hurts.
 
@@ -47,7 +49,7 @@ Strikes land as small white numbers; then the pattern title slams in and a **× 
 | Zero-Sum | 3-3-4 (sums to 10/20) | ×2 | Enemy's next action cancelled | Mirror wipe, ledger chime |
 | Cascade | 3-4-5, 9-8-7 | ×3 | Extra round (the enemy waits) | Time-slow bands |
 | Jackpot | 7-7-7 | ×digit (min ×2) | — | Squad panels slash down, screen crack |
-| **Omen Overwrite** | your digit ×3 | ×3·digit | Charges every ultimate | Gold everything; bells ring your number of times |
+| **Omen Overwrite** | your digit ×3 | ×21, whatever your digit (so no lucky number is stronger than another) | Charges every ultimate | Gold everything; bells ring your number of times |
 | Reaper's Toll | 4-4-4 | ×4 | Every Omen containing a 4 loses 44% of its Balance, **yours included** | Four bells toll, red wash |
 
 ### 1.4 Defence
@@ -57,6 +59,9 @@ The enemy's wheel shows its odds by cell size. **0 → Parry** (no damage, count
 A wheel is a strip of **faces**, and a face's height is its odds. Players read probability by looking.
 
 **Pattern priority.** A reel matches the first pattern in this order: Omen Overwrite → Reaper's Toll → Jackpot → Cascade → Zero-Sum → Pair → Bust. So 4-4-4 is an Overwrite for a player whose digit is 4, and a Reaper's Toll for everyone else. (Same order as `evaluate()` in the prototype.)
+
+### 1.5b Luck turns: Hap's Favour
+A Bust warms the **Open Hand** sigil on the reel frame: next round every wheel spins 20% slower and faces matching a digit already on the reel are 50% wider. After two Busts in a row, **Hap's Hand** guarantees the next round is at least a Pair. The sigil cools after any pattern. Players experience it as "my luck turned", which is exactly the fantasy; measured, it removes every three-Bust streak (full rules and numbers in [`SYSTEMS.md`](SYSTEMS.md) §2.4).
 
 ### 1.6 Omen and Balance (how a two-digit number can be a health bar)
 An Omen is always two digits, 00–99 (World Bible §2). In an Audit, each side stakes a **Balance**: the luck it puts on the table. Damage drains the Balance, and the Omen over the combatant's head shows the share that's left, from 99 down to 00. At 00 the combatant is Settled.
@@ -84,6 +89,9 @@ Fate Wheel (speed + faces) · base tens · a passive · an **ultimate** (charged
 | Bai Si | 4 | River Empire | Medium; 4 triple-wide | *Fourfold*: every 4th strike of a fight marks the enemy (×1.44 damage taken) | *Four Lanterns Out*: Reaper's Toll that spares the party |
 | Shunya | 0 | Śūnyapura | Slow; 0 triple-wide | *Pūrṇa (fullness)*: 0s on the reel are wild for every pattern | *Place Value*: move any reel digit into the tens of every strike next round (×10 its weight) |
 | Prima of Kroton | 2 | Kroton Nova | Only 2-3-5-7 plus one 0 | *Indivisible*: prime strikes pierce armour; +1 Mult per prime on the reel | *Sieve of Light*: shatter every composite number on screen (enemy shields and armour) |
+| *Secret:* Varro Kade | 1 | Meridian | Medium; 1 triple-wide | *First and Only*: strikes first; on a Bust his digit fills the empty slots | *Debt Collector*: steal the enemy's last reel digit into a jar, then smash it for ×6 |
+| *Secret:* Kyūsuke the Kappa | 5 | Hyakki | Slow; 5 double-wide | *Bow*: once per fight, if a 5 lands right after his bow, the enemy skips a strike | *Cucumber Tide*: the river rises; every 5 on the reel heals the party's Balance by 5% |
+| *Secret:* Granny Liu Shun | 6 | River Empire | Medium; 6 double-wide; Jade faces | *Six-Six Smooth*: two 6s make the rest of the round's strikes land in order (a free Cascade) | *Thirteen Orphans*: the reel becomes 13 mahjong tiles for one round; any pair pays ×13 |
 | Fibi Leone | Fibonacci | Crossroads | Her lucky digit **advances every round** (1, 1, 2, 3, 5, 8, 3, 1…) | *Golden Ratio*: Cascades give ×1.618; Fibonacci triples count as Cascade | *Spiral Deal*: the reel extends to 5 tubes this round (Full House, Five-Run…) |
 
 ### 2.3 Synergy is number theory (no trait UI)
@@ -112,6 +120,10 @@ These are the trailer moments and the reward for team-building.
 
 ---
 
+**Every lucky number has partners.** With the secret recruits, each digit NIL can choose has a Twin (same digit) and a Complement (sums to 10) among the 11 companions: 0↔Shunya, 1↔Varro/Hina, 2↔Prima/Ba, 3↔Maeve/Vesper, 4↔Bai Si/Liu Shun, 5↔Kyūsuke, 6↔Liu Shun/Bai Si, 7↔Vesper/Maeve, 8↔Ba/Prima, 9↔Hina/Varro.
+
+Full kits, all ultimates, every Awakening branch and the Link Art for every pair are in [`SYSTEMS.md`](SYSTEMS.md) §4–§6.
+
 ## 3. Build systems (the Balatro layer), and the land each comes from
 
 | System | Balatro analogue | What it is | Land that teaches it |
@@ -126,6 +138,9 @@ These are the trailer moments and the reward for team-building.
 | **Crossroads Deals** | Risky vouchers | A powerful boon with a price ("+2 charm slots, but your Omen max is 77") | Crossroads |
 | **Wagers** | Stakes | Bet fen or Balance before a fight for bigger rewards | Crossroads |
 | **Omen Levels** | Stakes | Difficulty tiers 1–8 | Post-game |
+| **Hap's Favour, Hap's Whispers, Open Hand shrines** | — | Luck turns after bad luck; coincidence events on the map; rest nodes where you can re-deal an offer | Everywhere (the god of luck) |
+| **Land Laws** | Boss blinds | Each land's superstition is a rule on every fight there (curses on 4/9, interest, karma, the sieve, the loop) | Each land |
+| **Tsukumogami faces** | Card editions | A face stopped 100 times wakes up with a small soul (an extra effect) | Hyakki |
 
 ### 3.1 Charms of the World (jam needs 12, full game ~90)
 Organised in **sets by land**. Holding several from one set grants a set bonus, so collecting is a build axis.

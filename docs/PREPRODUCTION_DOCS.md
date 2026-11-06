@@ -188,32 +188,38 @@ These matter for the full game, but they need what the jam teaches us. Writing t
 
 ## 5. One-page checklist
 
-**Gate A (blocks the jam build)**
-- [ ] A1 Game Feel Spec
-- [ ] A2 Tuning Sheet + simulation
-- [ ] A3 Jam Slice Spec + Cut List
-- [ ] A4 First 10 Minutes Beat Sheet
-- [ ] A5 UX, Diegetic UI and Accessibility Spec
-- [ ] A6 Asset List and Specs
-- [ ] A7 Audio Direction and Sound List
-- [ ] A8 Jam Script and Storyboards
-- [ ] A9 Playtest Plan and Fun Metrics (+ first session logged)
-- [ ] A10 Quality Bar and Definition of Done
-- [ ] A11 Technical Design Doc (+ empty WebGL build live)
+**Written** means the document exists and answers its questions. Each doc's **"done when"** check (a playtest, a build, a sign-off) still has to happen in production; those are tracked in the right-hand column.
 
-**Gate B (after the jam)**
-- [ ] B1 Player Experience and Emotional Arc
-- [ ] B2 Systems Design docs + interaction matrix
-- [ ] B3 Economy and Progression Model
-- [ ] B4 Act and Encounter Design (×5 lands + Meridian)
-- [ ] B5 Enemy and Boss Sheets
-- [ ] B6 Full Script, Bond Arcs, Dialogue Database
-- [ ] B7 Cultural Consultation Plan and Review Log
-- [ ] B8 Localisation Guide
-- [ ] B9 Accessibility Plan (full game)
-- [ ] B10 Telemetry and Balancing Plan
-- [ ] B11 QA and Test Plan
-- [ ] B12 Market, Audience and Positioning
-- [ ] B13 Marketing Beat Plan and Trailer Script
-- [ ] B14 Legal, IP and AI Policy
-- [ ] B15 Team, Pipeline and Tools Handbook
+**Gate A (blocks the jam build)**
+| | Doc | Written | "Done when" still needs |
+|---|---|---|---|
+| A1 | [Game Feel Spec](GAME_FEEL.md) | ✅ | Prototype implements §2–§4; 4 of 5 testers say it feels good |
+| A2 | [Tuning](TUNING.md) + [`jam_tuning.csv`](../tuning/jam_tuning.csv) + `tools/sim_patterns.py` | ✅ (simulated) | Unity loads the CSV; two playtest rounds confirm §3 |
+| A3 | [Jam Slice + Cut List](JAM_SLICE.md) | ✅ | Team signatures |
+| A4 | [First 10 Minutes](FIRST_10_MINUTES.md) | ✅ | 5 testers reach Varro without help |
+| A5 | [UX, Menus, Diegetic UI, Accessibility](UX_SPEC.md) | ✅ | Wireframes in `art/ui/wireframes/`; settings in build |
+| A6 | [Asset List and Specs](ASSET_LIST.md) | ✅ | Owners assigned; status kept daily |
+| A7 | [Audio Direction + Sound List](AUDIO.md) | ✅ | Temp music on the beat clock |
+| A8 | [Jam Script + Storyboards](JAM_SCRIPT.md) | ✅ script | Thumbnails in `art/storyboards/`; intro animatic |
+| A9 | [Playtest Plan](PLAYTEST.md) | ✅ | First session logged |
+| A10 | [Quality Bar](QUALITY_BAR.md) | ✅ | Used at the Tue 10 freeze review |
+| A11 | [Technical Design](TECH_DESIGN.md) | ✅ | Empty WebGL build live; Core tests pass |
+
+**Gate B (after the jam; written now so production starts from a full plan)**
+| | Doc | Written |
+|---|---|---|
+| B1 | [Player Experience, Loops, Emotional Arc](PLAYER_EXPERIENCE.md) | ✅ |
+| B2 | [Systems Design](SYSTEMS.md) (luck and fantasy mechanics, kits, ultimates, Awakenings, Link Arts, 63 charms, interaction matrix) | ✅ |
+| B3 | [Economy and Progression](ECONOMY_PROGRESSION.md) | ✅ (run simulator still to build) |
+| B4 | [Act and Encounter Design](ACT_DESIGN.md) (all lands) | ✅ |
+| B5 | [Bestiary: Enemies, Elites, Keepers, Bosses](BESTIARY.md) | ✅ |
+| B6 | [Full Story](STORY.md) + [Bond Arcs and Dialogue Database](BOND_ARCS.md) | ✅ (outline + key lines; full line-by-line script per act still to write) |
+| B7 | [Cultural Consultation Plan](CULTURAL_CONSULTATION.md) | ✅ (reviewers to hire) |
+| B8 | [Localisation Guide](LOCALISATION.md) | ✅ |
+| B9 | [Accessibility Plan](ACCESSIBILITY.md) | ✅ |
+| B10 | [Telemetry and Balancing](TELEMETRY.md) | ✅ |
+| B11 | [QA and Test Plan](QA_TEST_PLAN.md) | ✅ |
+| B12 | [Market and Positioning](MARKET_POSITIONING.md) | ✅ (update with jam data) |
+| B13 | [Marketing Plan + Trailer Script](MARKETING_PLAN.md) | ✅ |
+| B14 | [Legal, IP and AI Policy](LEGAL_IP_AI.md) | ✅ (lawyer review before Steam) |
+| B15 | [Team Handbook](TEAM_HANDBOOK.md) | ✅ |

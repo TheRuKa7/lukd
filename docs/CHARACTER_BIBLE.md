@@ -208,3 +208,52 @@ The single reference for how every character looks, talks, moves and changes. St
 3. Villains are never cartoonishly evil; every Auditor's motive is understandable in one sentence.
 4. Cultural characters speak as people, not as tour guides; no fake accents in text.
 5. No one comments on NIL's gender.
+
+---
+
+## 13. Secret recruits (digits 1, 5 and 6)
+
+The core roster leaves three digits without a companion. Three optional recruits fill them, so every lucky number the player can pick has a Twin and a Complement somewhere in the game. Each needs a side quest; none are needed for the true ending.
+
+| Recruit | Digit | Found | Look | Kit in one line | Why they join |
+|---|---|---|---|---|---|
+| **Varro Kade** | 1 | Act V (guest), recruitable after the finale or on a second playthrough | Hound-skull mask pushed up on his head, rust trench armour with the debt jars smashed | *First and Only*: his strike always lands first and its digit is copied to the reel's empty slots on a Bust | Thale broke his promise about Varro's sister; he owes NIL one |
+| **Kyūsuke the Kappa** | 5 | Act I side quest (the tired kappa selling cucumbers on the river) | Small green river imp, water dish on his head, straw hat, a cucumber cart | *Bow*: once per fight he bows; if the enemy bows back (land a 5), the enemy loses its next strike | NIL buys every cucumber; he's never had a full day's sales |
+| **Granny Liu Shun** | 6 | Act II side quest (the mahjong tables of Bāfā Harbor) | Tiny, 80-ish, jade bangles, cardigan over a qipao, a mahjong tile purse | *Six-Six Smooth* (六六大顺): two 6s on the reel make every remaining strike this round land in order | She won the party in a mahjong game and refuses to give them back |
+
+Canon locks: Kyūsuke's water dish is always full (if it spills he naps); Liu Shun never loses at mahjong on screen; Varro never wears the mask over his face again after Act V.
+
+## 14. Side characters by region
+
+Side characters carry the regions' stories and quests. Each has one want, one number habit and one quest (Act Design per land).
+
+| Region | Character | Role | Want | Number habit | Quest / payoff |
+|---|---|---|---|---|---|
+| Meridian | **Ama Okoro** and her son **Tobi** (age 9) | The mother whose Omen drops to 01 in the intro; her son | Ama: to see Tobi grow up. Tobi: to be NIL's first follower | Tobi counts NIL's wins on his fingers | Tobi appears in every act's epilogue letter; in the true ending he is the first child to perform the new Naming Rite |
+| Meridian | **Brother Nought** | Defrocked Ledger-priest who runs the black-market Naming shrine; secret member of the Open Hand | To see Hap free before he dies | Rounds everything up out of spite | Gives NIL the first charm slot; reveals the Open Hand faith in Act II's interlude |
+| Meridian | **Livia Kade** | Varro's younger sister, Omen 06, bedridden | For her brother to stop | Counts the cracks in the ceiling | Saving her in Act V turns Varro into an ally |
+| Meridian | **Gus Mendoza** | Charm Bazaar fixer from the Crossroads, sells every culture's charms | Profit; secretly, to go home | Haggles in sevens | Runs the Prologue market; later found in Lucky Strike |
+| Meridian | **Clerk Ivo Marr** | Thale's quiet assistant, Ledgerist | To be noticed | Files everything in triplicate | Defects in the finale and opens the Upper Gate's service door |
+| Hyakki | **Ofuku** | Elderly keeper of the Seven Lucky Gods' shrine | That people still come to the shrine | Paints one daruma eye a day | Teaches charms; her shrine is the Act I charm hub |
+| Hyakki | **Tetsu** | Ferryman between the islands, a former Collector | To forget Meridian | Counts strokes of the oar | Ferry nodes; his story foreshadows the Basilica's reach |
+| Hyakki | **Kitsune twins Ao and Aka** | Tamamo's foxfire retainers | To protect their mistress | Speak only in pairs | Elite fight; after Tamamo's defeat they guard Hina's shrine |
+| River Empire | **Judge Cui** (keeper) | Holder of the Brush in the Ten Courts | A true count of the dead | Writes every number twice | Grants NIL the Rewrite verb |
+| River Empire | **Little Lantern (Xiao Deng)** | Festival orphan who runs messages across Bāfā | A family | Counts lanterns | Leads the party to Jinling's pawnshop; adopted by Jinling in the epilogue |
+| Śūnyapura | **Acharya Vidya Rao** | Shunya's old teacher at the observatory | To finish his star catalogue | Counts in Sanskrit numerals | Gives the party the observatory dials; his catalogue's last entry is NIL |
+| Śūnyapura | **Meera** | Stepwell guide and diver | To find her drowned brother's karma record | Counts steps (there are 1,001) | The stepwell dungeon; payoff in Chitragupta's Hall |
+| Śūnyapura | **Baital** | A Vetāla who riddles travellers from a banyan tree | A riddle nobody can answer | Answers only in questions | Riddle encounters; NIL's answer to his last riddle is "zero" |
+| Kroton Nova | **Mother Kallisto** | Leader of the undercity of the "composite" people under the Sieve | Her people back on the surface | Counts in composites, proudly | Undercity hub; the Sieve's fall reunites the city |
+| Kroton Nova | **Niko** | Goat-herd kid who keeps falling through the Sieve | To be a hero | Counts goats (always one short) | Running gag; saved by Prima in her defection scene |
+| Kroton Nova | **The Moirai** (keepers) | Clotho, Lachesis and Atropos | That every thread is spun, measured and cut honestly | Speak in turns | Three trials; Lachesis gives Prima her strand of thread |
+| Crossroads | **The Stranger** (keeper) | The figure at the midnight crossroads with the black book | A fair deal | Shuffles constantly | Offers NIL's Deal verb; never a villain |
+| Crossroads | **Penny** | Ghost girl on the railway who collects lucky pennies | To spend one | Counts pennies (1,596 of them) | Ghost Train quest; her 1,597th penny frees her, echoing Fibi |
+| Crossroads | **Sheriff Dolores Vance** | Lucky Strike's sheriff, half-aware of the loop | To arrest the House | Notches her badge each night | Loop puzzles; helps in the House fight |
+| Everywhere | **Hap** | The god of luck (World Bible §2A) | To deal again | — | Hap's Dream epilogues; the finale's Open Hand |
+
+## 15. Hap: depiction rules
+
+- **Never the same face twice.** In each act's dream, Hap wears the face that land's stories would expect, drawn in that land's art style; the dice eyes, the orbiting digits and the star-wheel behind it never change.
+- **Scale and warmth.** Vast but gentle; it crouches to talk to NIL. It laughs often, and its laughter makes dice rattle.
+- **Voice.** Short, playful lines; questions more than answers. It never explains the plot. Sample lines: "Pick a number. Any number. …Oh, *that* one. Interesting." · "I don't play fair. I play *everyone*." · "You're the change I never got back."
+- **Never** a monster, a villain, a boss or a stand-in for any real religion's deity.
+- **Colour:** star-black, warm dice-ivory eyes, and the orbiting digits in every land's accent colour in turn.

@@ -495,7 +495,7 @@ async function resolveReel(ds, roundDamage) {
   setTimeout(() => $('#tubes').classList.remove('win'), 900);
   if (p.key === 'LUCKY' || p.key === 'JACKPOT') {
     const lucky = p.key === 'LUCKY';
-    const mult = ((L === 7 ? 7 : Math.max(2, p.d)) + compound) * (lucky ? 3 : 1);
+    const mult = lucky ? 21 + compound * 3 : Math.max(2, p.d) + compound; // Overwrite is ×21 for every digit (GDD §1.3)
     const bonus = roundDamage * mult;
     setTubes(ds, lucky);
     if (lucky) { sfx.fanfare(); sfx.bells(L || 3); } else { sfx.fanfare(); }

@@ -197,19 +197,21 @@ def build_html():
   <div class="cover-title">ZERO&#8209;SUM:<br><span>OMEN</span></div>
   <div class="cover-sub">The World &amp; Art Bible</div>
   <div class="cover-nan">NaN</div>
-  <div class="cover-bottom">World · Lore · Lands · Characters · Art Direction · Gameplay · Production<br>Version 2 · TR 1002 · Living document: the Markdown files in <code>docs/</code> are the source of truth.</div>
+  <div class="cover-bottom">World · Lore · Lands · Characters · Art Direction · Gameplay · Production<br>Version 3 · TR 1002 · Living document: the Markdown files in <code>docs/</code> are the source of truth.</div>
 </section>
 <section class="toc">
   <h1>Contents</h1>
   <ol>
     <li><b>The game in one page</b></li>
-    <li><b>The world</b>: why numbers matter, history, the villain, the lands, the cast, plot and endings</li>
+    <li><b>The world</b>: why numbers matter, Hap the god of luck, history, the villain, the lands, the cast, endings</li>
+    <li><b>The story</b>: the whole campaign, act design for every land, the bestiary, bond arcs</li>
     <li><b>Lore lexicon</b>: glossary, idioms, timeline, factions, world rules, naming</li>
     <li><b>The lands</b>: colour scripts, concept plates, locations guide</li>
-    <li><b>Characters</b>: model pages (silhouette, palette, canon locks) and the character bible</li>
+    <li><b>Characters</b>: model pages and the character bible, side characters, secret recruits</li>
     <li><b>Art direction</b>: painted world, inked people; lessons from the Cyberpunk 2077 art book</li>
-    <li><b>Gameplay</b>: the game design document</li>
-    <li><b>Production</b>: plan, art status, prompt pack</li>
+    <li><b>Gameplay</b>: GDD, systems, tuning, economy, game feel, first ten minutes, UX, player experience</li>
+    <li><b>Production</b>: plan, pre-production docs, jam slice, assets, audio, script, tech, playtests, quality, QA</li>
+    <li><b>Care, launch and policy</b>: cultures, localisation, accessibility, telemetry, market, marketing, legal, team</li>
     <li><b>Appendix</b>: narrative style guide, AI disclosure</li>
   </ol>
   <p class="note">How to use this bible: when two documents disagree, the order of authority is Art Direction (for visuals) → Character Bible (for characters) → World Bible (for story) → GDD (for mechanics).</p>
@@ -225,27 +227,35 @@ def build_html():
 <div><h3>The look</h3><p><b>Painted world, inked people.</b> Hand-painted, sunlit, lived-in lands in the spirit of Studio Ghibli's backgrounds; graphic, neon-edged characters and fights in the spirit of <i>Cyberpunk: Edgerunners</i>.</p></div>
 <div><h3>The theme</h3><p>A world that believes luck is zero-sum learns, from a party drawn from every culture, that luck shared isn't.</p></div>
 </div></div>""")
-    body.append(part("II", "The world", "Why numbers matter, where they came from, and who wants to freeze them forever."))
+    body.append(part("II", "The world", "Why numbers matter, the god of luck, and who wants to freeze fate forever."))
     body.append(md_file("docs/WORLD_BIBLE.md"))
-    body.append(part("III", "Lore lexicon", "Every word, date and rule, kept consistent."))
+    body.append(part("III", "The story", "From a NaN in the rain to the Open Hand: every act, every boss, every bond."))
+    for f in ["STORY", "ACT_DESIGN", "BESTIARY", "BOND_ARCS"]:
+        body.append(md_file(f"docs/{f}.md"))
+    body.append(part("IV", "Lore lexicon", "Every word, date and rule, kept consistent."))
     body.append(md_file("docs/LORE_LEXICON.md"))
-    body.append(part("IV", "The lands", "Seven places, seven palettes. Travelling between them should feel like changing countries."))
+    body.append(part("V", "The lands", "Seven places, seven palettes. Travelling between them should feel like changing countries."))
     body.append(land_pages())
     body.append(md_file("docs/LOCATIONS.md"))
-    body.append(part("V", "Characters", "Model pages first, then the full character bible."))
+    body.append(part("VI", "Characters", "Model pages first, then the full character bible."))
     body.append(character_pages())
     body.append(md_file("docs/CHARACTER_BIBLE.md"))
-    body.append(part("VI", "Art direction", "Painted world, inked people."))
+    body.append(part("VII", "Art direction", "Painted world, inked people."))
     body.append(md_file("docs/ART_DIRECTION.md"))
     body.append(motion_and_layouts())
-    body.append(part("VII", "Gameplay", "One verb, deep consequences."))
-    body.append(md_file("docs/GDD.md"))
-    body.append(part("VIII", "Production", "From jam slice to full game."))
+    body.append(part("VIII", "Gameplay", "One verb, deep consequences."))
+    for f in ["GDD", "SYSTEMS", "TUNING", "ECONOMY_PROGRESSION", "GAME_FEEL", "FIRST_10_MINUTES", "UX_SPEC", "PLAYER_EXPERIENCE"]:
+        body.append(md_file(f"docs/{f}.md"))
+    body.append(part("IX", "Production", "From jam slice to full game."))
     body.append(md_file("docs/PRODUCTION_PLAN.md"))
-    body.append(md_file("docs/PREPRODUCTION_DOCS.md"))
     body.append(ART_STATUS)
+    for f in ["PREPRODUCTION_DOCS", "JAM_SLICE", "ASSET_LIST", "AUDIO", "JAM_SCRIPT", "TECH_DESIGN", "PLAYTEST", "QUALITY_BAR", "QA_TEST_PLAN"]:
+        body.append(md_file(f"docs/{f}.md"))
     body.append(md_file("art/HIGGSFIELD_PROMPTS.md"))
-    body.append(part("IX", "Appendix", "Writing rules and disclosures."))
+    body.append(part("X", "Care, launch and policy", "Cultures, players, data, the market and the rules."))
+    for f in ["CULTURAL_CONSULTATION", "LOCALISATION", "ACCESSIBILITY", "TELEMETRY", "MARKET_POSITIONING", "MARKETING_PLAN", "LEGAL_IP_AI", "TEAM_HANDBOOK"]:
+        body.append(md_file(f"docs/{f}.md"))
+    body.append(part("XI", "Appendix", "Writing rules and disclosures."))
     body.append(md_file("docs/NARRATIVE_STYLE.md"))
     body.append(md_file("docs/AI_DISCLOSURE.md"))
 

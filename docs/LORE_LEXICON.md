@@ -8,6 +8,10 @@ Use this file to keep every word, date and rule consistent across writing, art, 
 
 | Term | Meaning | Usage notes |
 |---|---|---|
+| **Hap** | The Tally's one god of luck: the will inside chance. Caged in the Basilica since TR 702 | "Hap" (never "the Hap"). It/its, or whatever the speaker's culture prefers. Invented for this world |
+| **The Open Hand** | Hap's symbol (an open palm holding a die); also the outlawed faith that still leaves offerings to Hap | Shrines are called "Open Hands" |
+| **The Even Hand engine** | The Basilica's heart, which closed around Hap and divides it into Omens every dawn | Only Thale and the Ledger-priests know the name |
+| **Hap's Favour / Hap's Whisper** | Gameplay: luck turning after bad luck; coincidence events on the map | In dialogue: "Hap's watching" |
 | **The Tally** | The known world: Meridian plus the ring of lands around it | "Across the Tally"; never "the world map" in dialogue |
 | **Omen** | A soul's share of luck, 00–99, visible as a number floating over the head | Always two digits: "Omen 07", not "Omen 7". Plural: Omens. |
 | **Balance** | The luck a soul stakes in an Audit; damage drains it, and the Omen shows the share left | Gameplay term; in dialogue, "you're running low", never "HP" |
@@ -37,6 +41,8 @@ Use this file to keep every word, date and rule consistent across writing, art, 
 | **Overwrite** | Landing your own lucky digit three times | Gameplay and in-world slang for a miracle |
 
 ## 2. Idioms and slang
+- "Hap deals, people choose": the oldest proverb; said before any big decision.
+- "Hap's watching": said at a coincidence; also a gambler's excuse to keep playing.
 - "Rounded down": cheated, or killed.
 - "In the black": safe, lucky. "In the red": in debt, unlucky.
 - "Lucky as a ninety-nine": very lucky (Meridian); in Hyakki it's an insult, since 9 means suffering.
@@ -54,14 +60,14 @@ Use this file to keep every word, date and rule consistent across writing, art, 
 | ~1,000 years before TR | Zero formalised in Śūnyapura |
 | TR 0 | Meridian founded as a trading city at the centre of the Tally |
 | TR 380–690 | **The Binding**: Meridian's actuaries copy, buy or seize each land's ledger |
-| TR 702 | **The Basilica** completed; first Dawn Tally; the Rounding begins |
+| TR 702 | **The Basilica** completed; **the Final Binding** cages Hap in the Even Hand engine; first Dawn Tally; the Rounding begins. Worship of Hap is outlawed in Meridian |
 | TR 760→ | **Ledgerism**: the Basilica's brass-and-steel style spreads through Meridian's offices and uniforms |
 | TR 850→ | **Charmpunk**: immigrant quarters fill Meridian; every culture's charms worn at once on the street |
 | TR 960 | A Noise storm destroys Lucan Thale's street; he is 12. **Remainder** style begins in the Undercity as Omens fall |
 | TR 962 | The Deficit is first measured by Śūnyapura's observatory |
 | TR 985 | Thale becomes Comptroller |
 | TR 990→ | **Gilded Fortune**: the 99s and Exchange magnates flaunt gold leaf, jade and gardens |
-| TR 999 | Thale proves the Rounding; drafts the Final Audit; signs the Seal-holders' pacts |
+| TR 999 | Thale proves the Rounding and finds Hap in the engine; drafts the Final Audit; signs the Seal-holders' pacts |
 | TR 1001 | Varro Kade becomes a Collector |
 | TR 1002 (present) | NIL wakes; the Naming Rite; REMAINDER DETECTED. The game begins. |
 
@@ -71,6 +77,7 @@ The present year is **TR 1002**, deliberately just past the round 1000.
 
 | Faction | Seat | Wants | Symbol |
 |---|---|---|---|
+| **The Open Hand** (outlawed faith of Hap) | Everywhere, quietly | To free Hap; second chances for everyone | An open palm holding a die |
 | **The Basilica** (Comptroller, clerks, Ledger-priests) | Meridian | Order, the Final Audit | A brass gear around the Basilica's eye (which reads as a 0) |
 | **The Collectors** | Meridian | Debts paid; bounties | A hound skull over a ledger seal |
 | **The Charm Bazaar guilds** | Meridian | Trade, survival, folk luck | A ring of mixed charms |
@@ -83,6 +90,7 @@ The present year is **TR 1002**, deliberately just past the round 1000.
 
 ## 5. World rules (canon locks)
 1. Omens are always two digits and always visible to everyone, except NIL's NaN.
+1a. Hap never speaks in daylight and never appears as an enemy. It appears only in dreams, coincidences and the finale.
 2. Only Auditors can stop their own wheel. Most people can't.
 3. Luck is conserved under the Basilica. Nothing creates luck except the true ending.
 4. Settlement is not instant death; misfortune finds you within days.

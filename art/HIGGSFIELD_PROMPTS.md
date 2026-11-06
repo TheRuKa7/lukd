@@ -1,5 +1,7 @@
 # ZERO-SUM: OMEN — Higgsfield prompt pack
 
+> **Superseded style rules:** the art direction changed to *painted world, inked people* (Ghibli-inspired painted backgrounds + Edgerunners-inspired cel characters and action). Use the prompt grammar in [`docs/ART_DIRECTION.md`](../docs/ART_DIRECTION.md) §6 instead of the style suffix in §1.2 below. Subject descriptions below are still valid.
+
 Paste-ready prompts for character sketches, key art, environments and video cutscenes across every land of the Tally: Meridian (modern capital), Hyakki (Japanese folklore), the River Empire (Chinese folk religion), Śūnyapura (Indian myth and mathematics), Kroton Nova (Greek myth) and the Crossroads Territory (American folklore). Priorities: **[JAM]** = needed for the Nov 13 slice; **[LATER]** = demo and beyond.
 
 ## 1. How to use

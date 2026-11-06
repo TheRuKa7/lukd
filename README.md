@@ -7,6 +7,7 @@ In a world where every soul's luck floats above its head as a number, a nameless
 | Document | What's in it |
 |---|---|
 | [`docs/WORLD_BIBLE.md`](docs/WORLD_BIBLE.md) | World, lore, why numbers matter, lucky numbers across cultures, villain, the lands and their mythologies, cast and backstories, plot, intro, endings, cultural care |
+| [`docs/ART_DIRECTION.md`](docs/ART_DIRECTION.md) | Art direction v2, "painted world, inked people": diagnosis of pass 1, rules for backgrounds, characters, effects, colour script by land, QC checklist, prompt grammar, sources |
 | [`docs/GDD.md`](docs/GDD.md) | Combat, scoring, party and synergy, talismans, wheel crafting, acts and bosses, complexity ladder, NIL's growth, jam scope |
 | [`docs/PRODUCTION_PLAN.md`](docs/PRODUCTION_PLAN.md) | Phases, jam day-by-day plan, Higgsfield art/animation/cinematic pipeline, tech, risks, next 24 hours |
 | [`art/HIGGSFIELD_PROMPTS.md`](art/HIGGSFIELD_PROMPTS.md) | Paste-ready prompts for characters, environments, enemies and the intro cinematic |

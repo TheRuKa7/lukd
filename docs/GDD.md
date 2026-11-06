@@ -1,334 +1,295 @@
-# ZERO-SUM: OMEN
-### Game design document · Official Unity Game Jam 2026 · Theme: **Lucky Number**
+# ZERO-SUM: OMEN — Game Design Document
 
-> *"Every number in this city is spinning. You're the only one who can stop them."*
+> *"Every number in this world is spinning. You're the only one who can stop them."*
 
-A cinematic 2.5D squad roguelite with **one verb**. Every number in New Babylon spins like a slot reel, and you **tap to stop it**. Your heroes' attacks, the enemy's blows, even the city's judgement of you: you stop them all. Land three matching digits on the giant neon **Karmic Reel** and the screen explodes into a full-squad cinematic.
+An anime 2.5D party RPG where every number spins like a slot reel and you **tap to stop it**. Travel seven lands of the Tally with NIL and two of eight companions, build Balatro-style synergies between heroes, talismans and wheel faces, and break the seven seals on the road to the Comptroller.
 
-Playable feel prototype: [`prototype/index.html`](../prototype/index.html). Open it in any browser. Tap or Space to stop, tap a hero (or press 1/2/3) to choose who acts.
-
----
-
-## 0. Design pillars (in priority order)
-
-1. **Spectacle drives the game.** Animation, motion graphics and cinematics *are* the feedback. If something can be shown with a camera move, a cut-in or a number flying through the air, it is never shown as text or a panel.
-2. **Minimum cognitive load.** One verb (**stop**), one light choice (**who acts next**), five patterns that announce themselves on screen. A new player understands the game after one round, without reading.
-3. **No HUD. Everything is diegetic.**
-   - **HP is the Omen Index**, the number that floats over every character's head. It already exists in the fiction.
-   - The **Karmic Reel is a neon sign** hanging in the world, not a UI widget.
-   - The only screen-space elements are cinematic overlays (letterbox, cut-ins, pattern titles) and a sound toggle.
-4. **The theme is in every frame.** Numbers are characters, set dressing, sound and story. Theme counts double in judging (§1).
-5. **Fun first, math hidden.** Damage is always *tens + the digit you stopped* (40 + 7 = 47), so the number you stop is literally the number that flies to the reel. No arithmetic is ever asked of the player.
-
-### What changed from the previous draft, and why
-| Previous draft | Now | Why |
-|---|---|---|
-| Dice tray, operator buttons, motherboard grid, forecast panel | **Gone.** One timing verb plus picking a hero by tapping them | Minimum UI, maximum visuals. Judges play for 5–15 minutes and must "get it" by watching. |
-| 8 reel patterns plus faction modifiers in a table | **5 patterns**, each with its own cinematic: Jackpot, Omen Overwrite, Cascade, Zero-Sum, Reaper's Toll (+ a small Pair flourish) | Each pattern is a *spectacle reward*, not a rule to memorise. |
-| Shield and parity points | **Defence uses the same verb.** The enemy's attack number spins; stop it on **0** to parry, or on **your lucky number** to reflect it | One verb for offence and defence makes the game learnable in seconds. |
-| Factions as rule text | **Factions have readable wheels you see.** The Tetrad's 4 is wide and red; the Prime Synod's wheel has *only* 2, 3, 5, 7 (no 0, so no parry); the Ouroboros wheel speeds up every loop | Enemy identity through motion, not tooltips. |
-| 18 cartridges with left-to-right ordering | **Charms as tarot cards** between fights (pick 1 of 3). Each one changes how the wheels *look and move* (wider 7s, slower spin, wider 0 on enemy wheels) | The upgrade is visible on the next spin. |
-
-Kept from the original pitch: the lucky number chosen by the player, the Nixie reel, digits detaching from damage numbers and slamming into tubes, hit-stop and pitch-up chimes, New Babylon, the factions, and the story.
+- Story, world and characters: [`WORLD_BIBLE.md`](WORLD_BIBLE.md)
+- Phases, schedule, art/animation pipeline: [`PRODUCTION_PLAN.md`](PRODUCTION_PLAN.md)
+- Higgsfield prompt pack: [`../art/HIGGSFIELD_PROMPTS.md`](../art/HIGGSFIELD_PROMPTS.md)
+- Feel prototype (core verb only): [`../prototype/index.html`](../prototype/index.html)
 
 ---
 
-## 1. The jam: facts that shape every decision
+## 0. Pillars (in priority order)
 
-Source: [itch.io/jam/official-unity-game-jam-2026](https://itch.io/jam/official-unity-game-jam-2026). The page links an official rules PDF on Google Drive. **Read it before submitting.**
-
-| Item | Value |
-|---|---|
-| Theme | **Lucky Number.** "A number that a person believes brings them good fortune" / "a number that holds positive cultural, religious or symbolic meaning." Prompt: *"How will you bring luck, fate, or superstition into your game's mechanics, art, and sound?"* |
-| Recommended finish | End of jam day 7 (~12 Nov 00:00 UTC). The buffer after it is for packaging only. |
-| **Hard deadline** | **Sat 14 Nov 2026, 12:00 UTC.** No late submissions. |
-| Community rating | 14–21 Nov. Categories: Fun, Art, Sound, Uniqueness/Creativity, **Narrative**. |
-| Build | **A WebGL build playable in the browser is required to be eligible.** Upload cap 1 GB. |
-| Generative AI | Allowed, **but it must be disclosed on the page, including how it was used.** Otherwise no prizes. |
-| Other rules | Original work only; credit all assets; no file changes after the deadline; teams of 1–5. |
-
-### Unity panel judging (decides prizes)
-| Criterion | Weight | How this design wins it |
-|---|---|---|
-| **Jam Theme** | **×2 (10 pts)** | The player states their lucky number; every number in the world spins and is rigged; lucky and unlucky numbers are the factions, the patterns and the story. |
-| Design Implementation | ×1 | One verb, readable wheels, instant cinematic feedback. Nothing to misunderstand. |
-| Art & Audio Coherence | ×1 | Single neon-noir palette; every sound is a mechanical tick, relay thock, bell or slot chime tied to digits. |
-| Concept & Cohesion | ×1 | "Zero-Sum" is the title, a pattern, and the story's twist. |
+1. **Anime spectacle drives the game.** Cut-ins, camera, animation and motion graphics *are* the feedback. Every system pays out in something you watch.
+2. **One verb, deep consequences.** Stop the number. Everything else (who acts, what's on your wheels, which talismans you hold, who's in your party) changes *what that one action can do*.
+3. **Complexity is earned, one layer at a time.** The game starts with a single wheel and ends with a team-synergy engine. Each act adds one or two systems, introduced through story and taught by doing (§5).
+4. **Diegetic first.** Omen (HP) floats over heads; the reel is an in-world object styled per region; menus are in-world objects (map scroll, market stall, teahouse table).
+5. **The theme is the math.** Lucky numbers, superstition, number theory and the zero-sum law drive the story, the mechanics and team-building. Theme counts double in jam judging.
 
 ---
 
-## 2. The first 90 seconds (this is what the judges see)
+## 1. Core combat (the Audit)
 
-| Time | What happens on screen | Player does |
-|---|---|---|
-| 0:00 | Rain, black. Title logo flickers on like a Nixie tube. | Taps to enter |
-| 0:03 | **Kinetic-type cold open** (≤ 15 s, skippable by tap). "NEW BABYLON." → "EVERY CITIZEN WEARS A NUMBER." → "IT DECIDES WHO LIVES." → "YOURS READS" → glitching **NaN**. | Watches |
-| 0:20 | The Basilica's voice: **"STATE YOUR LUCKY NUMBER."** Ten Nixie tubes. Hovering shows the number's cultural meaning. | Picks one (the only menu in the game) |
-| 0:30 | Logo slam with their digit burned in gold. Camera drops into Rain Alley. Three heroes, one enemy, a neon reel sign overhead. | — |
-| 0:35 | Heroes glow. Floating hint: **TAP A HERO.** | Taps |
-| 0:37 | Camera punches in, letterbox in, **Persona-style diagonal cut-in** with the hero's name. Over their head a giant number appears, the tens fixed and **the ones digit spinning like a slot reel**. Hint: **TAP TO STOP.** | Stops it on 7 |
-| 0:40 | The lock-in flashes, the hero dashes across the screen and hits; **hit-stop**; the damage pops as "4**7**". The **7 tears off, spins through the air and slams into the neon sign** with a thock and a chime. | — |
-| 0:50 | Two more heroes. If the three digits match: **JACKPOT**. The screen cracks, three hero panels slash down, the multiplier counts up, and the enemy takes a giant number. | Gets hooked |
-| 1:10 | The enemy winds up; *its* number spins. Hint: **STOP ON 0 TO PARRY.** | Learns defence with the same verb |
+### 1.1 One round
+1. **Your three strikes.** Tap a hero (or press 1/2/3) to choose who strikes next. Their **Fate Wheel** appears over their head: tens fixed, the ones digit spinning. **Tap to stop.** The hero attacks (anime cut-in, dash, hit-stop) and the stopped digit tears off the damage number and slams into the **reel** (3 tubes).
+   - Party of 1 (the opening): NIL strikes 3 times. Party of 2: choose an order, and one hero strikes twice. Party of 3: each strikes once.
+2. **The reel resolves** into a pattern, which multiplies the round (§1.3) with a full-screen cinematic.
+3. **The enemy strikes.** Its wheel spins over it. Stop on **0** to parry; stop on your lucky digit to reflect; anything else hurts.
 
-Every instruction in the whole game is one of those three floating hints, shown once.
-
----
-
-## 3. Core loop
-
-| Loop | Length | Beats |
-|---|---|---|
-| **Round** | 20–30 s, mostly cinematic | Pick a hero → stop their wheel → attack cinematic → digit flies to the reel. ×3. Then the reel resolves (a pattern cinematic or a bust). Then the enemy attacks, and you stop its wheel to defend. |
-| **Fight** | 1.5–3 min | 2–4 rounds. The enemy enters with a cut-in, exits with a shatter and "SETTLED". |
-| **Run** | 15–20 min | 3 districts × (2 fights + boss) → The Basilica. Between fights: **tarot pick** (1 of 3 charms) as a short card-deal animation. |
-| **Meta** | across runs | 10 lucky numbers × difficulty tiers, charm unlocks, 3 endings, Daily Omen seed. |
-
-**The one strategic layer:** *which hero acts next.* Each hero's wheel spins at a different speed and favours a different digit, so chasing 7-7-7 or a 7-8-9 run means sending the right hero at the right time. You can *see* this. Vesper's 7s are wide on her fast wheel; Ba's 8s are wide on her slow one.
-
----
-
-## 4. Rules (implemented in the prototype)
-
-### 4.1 The wheel
-- A vertical strip of digits scrolls in a window above the actor. **Each digit's cell height is its odds**, so a "weighted" digit is literally a bigger number that stays in the window longer. Players read the odds by eye.
-- Tap (or Space) to stop. The strip eases into the nearest cell; lock flash; relay thock.
-- Each passing digit plays a pitched tick (digit 0 lowest, 9 highest). The rhythm is a timing aid. **In the Unity build, sync the tick rate to the music's 8th notes** so stopping feels like hitting a beat.
-- **Your lucky number is gold on every wheel.**
-
-### 4.2 Heroes (3)
-| Hero | Lucky | Wheel | Hits for |
-|---|---|---|---|
-| **NIL** (you) | *yours* | Medium speed; your digit is double-wide ("magnetic") | 40 + digit |
-| **Vesper Sette**, ex-croupier gunslinger | 7 | **Fast**; 7 double-wide | 30 + digit |
-| **Madame Ba**, fortune-teller and loan shark | 8 | **Slow**, precise; 8 double-wide | 20 + digit |
-
-Bases grow by +10 after each fight ("your Omen rises"). Tens never change the last digit, so the reel game stays the same while the numbers get bigger.
-
-### 4.3 The Karmic Reel: five patterns, five cinematics
-The three digits from a round's three attacks land on the sign. Then:
-
-| Pattern | Example | Payoff | Cinematic |
-|---|---|---|---|
-| **Omen Overwrite** | your number ×3 | Round damage × digit × 3 | Gold everything: bells ring your number of times, full-squad slash panels, screen crack, slow count-up |
-| **Jackpot** | 7-7-7 | Round damage × digit (min ×2) | Squad panels slash down, screen crack, count-up |
-| **Cascade** | 3-4-5 / 9-8-7 | Extra round; the enemy waits | Time-slow, teal bands, "THE SEQUENCE HOLDS" |
-| **Zero-Sum** | sums to 10 or 20 | Enemy's next move erased + squad heals | Mirror-wipe transition, ledger-balance chime |
-| **Reaper's Toll** | 4-4-4 | Every Omen *containing a 4* loses 44%, yours included | Four bells toll, red wash. It is a gamble, and Fate 4 is immune. |
-| Pair | 7-1-7 | Round damage again | Small flourish, no letterbox |
-| Bust | — | Nothing | The tubes flicker out |
-
-### 4.4 Defence (the same verb)
-The enemy's attack number spins over it. Stop it on:
-- **0 → PARRY**: no damage, teal flash.
-- **Your lucky number → FORTUNE**: the blow is reflected onto the enemy.
-- Anything else → take *tens + digit*.
-
-### 4.5 Factions you read by their wheel
-| Faction | Numerology | Wheel | Effect |
-|---|---|---|---|
-| **The Tetrad** | 4 (四 *sì* sounds like 死 *sǐ*, death) | The 4 is triple-wide and red | Landing it = **DEATHMARK ×2** |
-| **The Prime Synod** | 2, 3, 5, 7 | Only primes on the wheel | No 0, so you can't parry. Hit hard first. |
-| **The Ouroboros** | 8 & 9 | Speeds up every loop | Stop early or lose control |
-| **The Basilica** (final boss) | *yours* | **Your** lucky number is triple-wide and red | It learned your number: landing it hits ×3 |
-
-### 4.6 Lucky numbers (Fates)
-The player's pick sets NIL's digit, the gold digit on every wheel, and the Omen Overwrite target. In the jam build each also gets **one** visible perk (keep it to one line each). The prototype implements all of them except Trinity's re-spin.
-
-| # | Name | Perk | Note shown at pick |
-|---|---|---|---|
-| 0 | Null | Secret-ending route; 0-0-0 becomes Omen Overwrite | The number the Basilica cannot divide by |
-| 1 | Ace | Your wheels start 15% slower | First place, first light |
-| 2 | Pair | Pairs pay ×3 | 好事成双: good things come in pairs |
-| 3 | Trinity | One free re-spin per fight | Cantonese 三 echoes 生, life |
-| 4 | Defiance | Reaper's Toll spares you and counts as Overwrite | 四 sounds like 死. Wear it anyway. |
-| 5 | Hamsa | Your 0s on enemy wheels are double-wide | The hand that wards off the evil eye |
-| 6 | Flow | Runs count in any order | 六六大顺: may everything go smoothly |
-| 7 | Jackpot | All Jackpots pay ×7 | Lucky seven |
-| 8 | Prosperity | Tarot shows 4 cards | 八 rhymes with 发, to prosper |
-| 9 | Longevity | Heal 9 after every round | 九 echoes 久, lasting; in Japanese, 九 *ku* echoes 苦, suffering |
-
-### 4.7 Charms (tarot between fights)
-Each changes what the wheels **look like**, so the upgrade is felt on the next spin. Jam pool: 12. The prototype has 8 (✅).
-
-✅ **Loaded Seven** (7s twice as wide) · ✅ **Slow Hand** (your wheels −25% speed) · ✅ **Ward of Zero** (enemy 0 ×3 wide) · ✅ **Golden Ratio** (Fibonacci triples are Cascades) · ✅ **Compound Interest** (+3 to Jackpot multipliers) · ✅ **Mirror Bus** (your first digit each round widens on the next two wheels) · ✅ **Omen Bond** (+10 to every hero) · ✅ **Scales of the Ledger** (Zero-Sum also deals round damage ×2) · Black Cat (first bust each fight becomes a Pair) · Thirteenth Floor (13 on enemy wheels hurts them) · Second Sight (see the enemy's next wheel during your round) · Double or Nothing (×2 damage, but your wheels speed up 30%)
-
----
-
-## 5. Story & cinematics
-
-### 5.1 Premise
-New Babylon runs on **The Basilica**, a cathedral-mainframe that floats an **Omen Index** (00–99) over every citizen's head. It decides loans, jobs and who survives the night. Its hidden law is **zero-sum**: every lucky index is paid for by an unlucky one. **NIL**, a Basilica actuary who found that clause, was "rounded to zero" and wakes in Rain Alley 9 reading **NaN**. Incomputable, NIL can stop the spinning numbers everyone else is subject to. The Basilica asks for the one input it is missing: **your lucky number.**
-
-### 5.2 Cast
-NIL (yours) · **Vesper Sette** (7, ex-croupier) · **Madame Ba** (8, profits from the zero-sum; mid-game reveal) · **Shiro of the Fourth Gate** (4, Tetrad executioner, Act 1 boss) · **Cardinal Seventeen** (Prime Synod, Act 2 boss) · **The House / Mr. Eighty-Nine** (Ouroboros, Act 3 boss) · **The Basilica** (your number, final boss).
-
-### 5.3 How cinematics *are* the game
-There are three tiers of cinematic, and the player sees Tier 1 every few seconds:
-
-| Tier | Length | Used for | Built with |
-|---|---|---|---|
-| **1 · Combat cinematics** | 0.5–2.5 s | Every hero pick (cut-in), every stop (lock-in), every hit (dash, hit-stop, digit flight), every pattern (full-screen motion graphics) | Cinemachine impulse + camera blends, Timeline-free code sequences (async/coroutines + PrimeTween) |
-| **2 · Story beats** | 15–40 s | Fight intros and outros, recruits, boss entrances | **Motion comic**: painted layers at depth in 3D, Cinemachine dolly, kinetic typography, diagonal cut-ins. Timeline. |
-| **3 · Set pieces** | 40–60 s | Cold open, midpoint reveal, finale and endings | Same toolkit, longer, with one fully animated character moment each |
-
-| ID | When | Length | Beats |
-|---|---|---|---|
-| C0 | Cold open | 15 s + lucky-number pick | Kinetic type over rain, then NaN glitch, then **STATE YOUR LUCKY NUMBER** |
-| C1 | After fight 1 | 20 s | Vesper cornered, her index ticking toward 44; NIL stops it. She joins. |
-| C2 | Act 1 boss | 25 s | Shiro: four lanterns go out one by one; his wheel appears with a giant red 4 |
-| C3 | Midpoint | 40 s | Madame Ba shows the ledger: every Jackpot you hit lowered strangers' numbers. The camera pans across a crowd whose indices tick down. |
-| C4 | Act 3 boss | 25 s | The House deals your own digits back to you |
-| C5 | Finale | 40 s | The Basilica speaks in your number; its wheel shows your digit in red. Choice: **BALANCE** or **OVERFLOW**, made by stopping one last wheel. |
-| C6a/b/c | Endings | 30 s each | Balance (NIL becomes 00 so the city rises by one) · Overflow (every index reads NaN) · **Divide by Zero** (secret: Lucky 0 plus a 0-0-0 finisher crashes the Basilica into a blue-screen credits roll) |
-
-Even the final choice uses the core verb. **There are no dialogue menus in the game.**
-
----
-
-## 6. Art & motion direction: "Occult Acid-Noir 2.5D"
-
-### 6.1 Look
-Wet asphalt, brass, obsidian, sodium-orange Nixie glow against cold teal rain. Hand-painted 2D characters with strong silhouettes and neon rim light, standing in shallow 3D dioramas.
-
-Palette: obsidian `#0E0B10`, Nixie amber `#FF7A2C`, blood `#FF3D5A`, rain teal `#5FE3F0`, lucky gold `#FFD27A`, violet `#B77BFF`. Each hero owns one neon colour and every cut-in, trail and spark uses it, so colour alone identifies the actor.
-
-### 6.2 Motion-graphics language (Persona 5 / Reverse: 1999 inspired, our own grammar)
-- **Diagonal everything.** Cut-ins, bands and panels enter at −6° to −14°. Never use a horizontal wipe.
-- **Kinetic numbers.** Digits are the stars: they scale in with overshoot, tear off, spin and slam. A number is never just displayed; it always arrives.
-- **Three-speed timing.** Snap (80–120 ms) for impacts, glide (300–550 ms) for camera, hang (hit-stop 40–120 ms) before payoffs.
-- **Letterbox = "this matters."** Bars slide in for every cinematic beat and out for the decision moment.
-- **Colour budget per beat.** At most 2 neon colours on screen during a cinematic, plus white for impacts.
-
-### 6.3 Juice timing spec (from the prototype, tuned)
-| Moment | Spec |
-|---|---|
-| Hero picked | Camera blend to the hero (0.55 s, scale 1.35) + letterbox + diagonal cut-in (0.95 s total, holding at 22–78%) + whoosh |
-| Wheel | Pops in with overshoot (0.25 s); motion blur while spinning; tick per digit |
-| Stop | Ease to cell centre (8 frames); lock flash and scale 1.18; relay thock |
-| Hit | Dash 230 ms ease-in → flash 0.35 → **hit-stop 40 ms × reel slot** → sparks in the hero colour → damage pops (scale 0.3 → 1.3 → 1) |
-| Digit flight | The ones digit detaches and arcs to its tube (520 ms, 720° spin); the tube depresses; chime pitched **+2 semitones per filled tube** |
-| Pattern | Letterbox; full-width diagonal bands; title letters stagger in (35 ms apart, overshoot); count-up with ticks; Jackpot/Overwrite adds screen crack, white flash, shake and squad panels |
-| Enemy defeat | Brightness 5×, blur, scale 1.3, spark burst, kinetic "SETTLED" |
-| Accessibility | Reduced-motion mode (no zoom/shake, short anims); max 3 full-screen flashes per second; optional "Assist" (all wheels −30% speed) |
-
-### 6.4 Building it in Unity, WebGL-safe
-| Layer | How |
-|---|---|
-| Pipeline | URP. HDRP does not run on the web. |
-| Characters | Painted PSB → **2D Animation** bones; idle, wind-up, dash, hit, hurt, victory. On quads with a Shader Graph Lit alpha-clip material + a rim-light term in the hero's colour. |
-| World | 3 shallow dioramas (alley, cathedral, casino) + the Basilica, built from one ProBuilder kit; **baked lightmaps**; emissive neon; Shuriken rain and sparks. VFX Graph needs compute shaders, which plain WebGL 2 lacks. |
-| The neon reel sign | A world-space mesh with 3 Nixie tube meshes; digits are TextMeshPro with a glow material. It is the most important asset in the game: give it an extra day. |
-| Camera | **Cinemachine 3**: one virtual camera per framing (wide, hero close-up, enemy close-up, sign), blend presets for snap and glide; Impulse for shake |
-| Overlays | One screen-space canvas for letterbox bars, cut-ins and pattern titles: prefabs animated with **PrimeTween**. Kinetic type uses TMP with per-character vertex animation. |
-| Post | Bloom (carries the neon), ACES + a custom LUT, vignette, grain, chromatic-aberration pulse on hits |
-| Story beats | **Timeline** + Cinemachine dolly + a `MotionComicPanel` prefab (painted layer stack with parallax) + `KineticText` signal track |
-
-### 6.5 Art production & AI policy
-- Lock a **style frame** on Day 2: one finished combat screenshot. Judge every asset against it.
-- Generative AI is allowed. Use it for concept, backgrounds or texture plates, then **paint over to the palette** for coherence. Log every use in `docs/AI_DISCLOSURE.md` and paste it into the submission page.
-- Spend human art time on the **3 hero sprites, the cut-in portraits and the reel sign**, the things on screen every second.
-
----
-
-## 7. Audio: the reel is the score
-- **Adaptive music in 4 stems.** The base loop always plays; **stems 2–4 enter as each reel tube fills**; a pattern triggers a stinger in key; a bust cuts to the base loop.
-- **Wheel ticks are on the beat grid** (8th notes at the track BPM), so stopping a number feels like playing an instrument.
-- **SFX vocabulary:** relay thock (lock), Nixie hum (sign), slot bell ×N (Jackpot rings N bells), cathedral bells (Overwrite), four low tolls (Reaper), crystal ping (parry), whoosh (cut-ins).
-- **Voices:** per-character pitched blips. One processed Basilica line: "STATE YOUR LUCKY NUMBER."
-- WebGL: audio starts on the title tap.
-
----
-
-## 8. Technical plan (Unity)
-
-**Engine:** Unity 6 LTS (6000.3) is the safe choice. Unity 6.6 reportedly makes WebGPU production-ready for web builds (check Unity's release notes), but **design for WebGL 2.** Everyone installs the exact same version on Day 1.
-
+### 1.2 The number (Balatro's chips × mult, made visible)
 ```
-Assets/_Project/
-  Core/          # pure C#, no UnityEngine: Wheel odds, PatternEvaluator, Round/Fight/Run state, deterministic RNG. EditMode tests.
-  Sequencing/    # Async beat sequences: HeroAttackSequence, EnemyAttackSequence, PatternSequence. The game "script".
-  Presentation/  # WheelView, ReelSignView, ActorView (2D Animation), FloatingOmen, Cutin, Letterbox, KineticText
-  Cameras/       # Cinemachine rigs + CameraDirector (named shots: Wide, Hero(i), Enemy, Sign)
-  Data/          # ScriptableObjects: HeroDef, EnemyDef (wheel digits/weights/speed/accel), CharmDef, FateDef
-  Cutscenes/     # Timeline assets, MotionComicPanel prefab
-  Audio/         # MusicStemController (reel-driven), BeatClock (wheel ticks), SfxBank
+Strike value  = Tens (hero level + gear) + Digit stopped + face bonus
+Round damage  = (Σ strike values + flat bonuses)  ×  Mult
+Mult          = Pattern mult  + additive mult (talismans, faces)  then  × each ×Mult talisman
 ```
-- **The game is a sequence of beats.** `async` methods (Awaitable in Unity 6) chain camera shots, tweens and waits, exactly like the prototype's `heroAttack()` / `enemyTurn()` / `resolveReel()`. The rules in `Core` only decide outcomes; the sequences decide how they look.
-- **Input:** one action ("Stop/Confirm": mouse, touch, Space) plus picking a hero (click the sprite, or 1/2/3). Input System package.
-- **Skip and speed:** tap during any Tier 1 cinematic after its first play to fast-forward ×2. Long runs stay snappy for repeat players and judges.
-- **Save:** PlayerPrefs (IndexedDB on web) for unlocks, endings and best run.
+On screen: strikes land as small white numbers as they happen. Then the reel resolves, the pattern title slams in, and a **× Mult** counts up into one huge gold number that crashes into the enemy. That gives a small payoff every 3 seconds and a big one every round.
 
-### WebGL build checklist
-- [ ] WebGL 2; **Gzip + Decompression Fallback ON** (itch.io has not reliably served Brotli headers), or Disabled
-- [ ] IL2CPP "Optimize size", stripping High; sprite atlases with Crunch; music streamed Vorbis; **< 60 MB**
-- [ ] No VFX Graph / compute / threads / HDRP; at most 1 realtime light
-- [ ] 1280×720 embed + fullscreen button; title tap gates audio
-- [ ] 60 fps on an integrated-GPU laptop in Chrome; test the *uploaded* build daily from Day 1
+**Design rule: tens are safe, ones are fate.** Everything that adds to the *tens* (levels, gear, flat bonuses) never changes the digit you stopped. Players scale freely without breaking their reel plans.
 
----
+### 1.3 Reel patterns (base mult)
+| Pattern | Example | Base mult | Extra effect | Cinematic |
+|---|---|---|---|---|
+| Bust | 2-9-5 | ×1 | — | Tubes flicker out |
+| Pair | 7-1-7 | ×2 | — | Small flourish |
+| Zero-Sum | 3-3-4 (sums to 10/20) | ×2 | Enemy's next action cancelled | Mirror wipe, ledger chime |
+| Cascade | 3-4-5, 9-8-7 | ×3 | Extra round (the enemy waits) | Time-slow teal bands |
+| Jackpot | 7-7-7 | ×digit (min ×2) | — | Squad panels slash down, screen crack |
+| **Omen Overwrite** | your digit ×3 | ×3·digit | Charges every ultimate | Gold everything, bells ring your number of times |
+| Reaper's Toll | 4-4-4 | ×4 | Every Omen *containing a 4* loses 44%, **yours included** | Four bells toll, red wash |
 
-## 9. Why it's addictive (and fair)
-1. **Skill + luck in every second.** The wheel is fair and readable; getting better at stopping numbers is real mastery, and the weighted cells give you just enough luck to hope.
-2. **Constant, escalating spectacle.** A small cinematic every 3 seconds, a big one every round, a massive one on Jackpots.
-3. **Chasing patterns.** After the first digit lands, players instantly start chasing the next two. That is the "one more spin" feeling without any real gambling.
-4. **Numbers go up.** Bases climb every fight, multipliers stack, and the Basilica's Omen is 4,444 (on purpose).
-5. **Short runs, instant restart, 10 lucky numbers** to try. Daily Omen seed with a copyable result line for sharing.
-6. **No real money, no loot boxes, no gacha.** The casino is the aesthetic, not the business model. Balatro was initially rated PEGI 18 for gambling imagery, so keep real-money language out.
+### 1.4 Defence
+The enemy's wheel shows its odds by cell size. Stop on **0 → Parry** (no damage, counter flash); on **your digit → Fortune** (reflect); otherwise take tens + digit. Some enemies have no 0 on their wheel (Prime Synod), so the party must win the race instead.
 
----
-
-## 10. Jam scope (cut lines)
-| Area | Must | Should | Could |
-|---|---|---|---|
-| Heroes | 3, with idle/attack/hurt | Victory poses, Resonance glow | — |
-| Enemies | 4 (one per faction + Basilica) | 6 + 3 bosses | Second boss phases |
-| Patterns | All 5 cinematics | Unique Overwrite per lucky digit (bell count, colour) | — |
-| Charms | 8 | 12 | — |
-| Story | C0 + C5 + 1 ending | C1–C4, 2 endings | Secret ending |
-| Dioramas | 1 (alley) + Basilica | 3 districts | — |
-| Music | 1 track in 4 stems | Boss track | — |
+### 1.5 Wheels show the odds
+A wheel is a strip of **faces**. A face's height is its odds. Players read probability by looking, never by reading a number.
 
 ---
 
-## 11. 7-day schedule
-Dates are UTC. **Feature freeze end of Day 5 · content lock end of Day 6 · submit Nov 13.** More time goes to motion than to systems.
+## 2. The party
 
-| Day | Date | Code / Sequencing | Art / Motion | Audio / Story | Exit test |
-|---|---|---|---|---|---|
-| **1** | Fri 6 Nov | Project + version lock; `Core` (wheel odds, patterns) with tests; **empty WebGL build on a private itch page** | Mood board, palette, hero silhouettes | Script outline | Build loads on itch |
-| **2** | Sat 7 Nov | WheelView + stop input; HeroAttackSequence with greybox; reel sign; CameraDirector shots | **Style frame locked**; reel sign model | BeatClock + tick SFX on the beat | Stopping a number and seeing it fly to the sign feels great *with greybox* |
-| **3** | Sun 8 Nov | Enemy defence sequence; PatternSequence (all 5); fight loop | 3 hero rigs (idle/attack/hurt); cut-in portraits | Music stems v1, thock/chime/bells | A full fight with a Jackpot cinematic |
-| **4** | Mon 9 Nov | Run flow, tarot, lucky-number pick; faction wheels | Alley diorama; enemy sprites; motion-graphics pass (bands, kinetic text) | C0 cold open in Timeline | Someone outside the team plays a full run without instructions |
-| **5** | Tue 10 Nov | Basilica boss; endings; skip/fast-forward; save. **FEATURE FREEZE** | Basilica + boss art; pattern-specific VFX | C5 finale, ending(s) | A new player understands the game in 1 round |
-| **6** | Wed 11 Nov | Balance (wheel speeds/weights) with 5 playtests; perf on a low-end laptop. **CONTENT LOCK** | Polish: hit sparks, rim light, title screen; capture GIFs | Final mix | 60 fps; zero blockers |
-| **7** | Thu 12 Nov | Bugs only; reduced-motion and assist options; release candidate | itch page art | Credits + AI disclosure | RC on the private page |
-| Buffer | Fri 13 Nov | **Submit.** Rate your 3-game queue. | — | — | Submitted |
-| Deadline | **Sat 14 Nov 12:00 UTC** | | | | |
+**NIL plus 2 of 8 companions.** You can swap companions at a Teahouse node or before a boss.
 
-Team of 3: Sequencing/Code · Art/Motion · Audio/Story/Design. Team of 5: add a motion-graphics/UI animator and an environment artist. Solo: the "Must" column only, and C0 + C5 as kinetic type with no painted panels.
-
----
-
-## 12. Risks
-| Risk | Mitigation |
+### 2.1 What every hero has
+| Element | Example (Vesper Sette, 7) |
 |---|---|
-| Cinematics get repetitive | Vary camera angles per hero (3 shot variants each); fast-forward after first view; big cinematics only for patterns |
-| Timing feels unfair | Odds are visible (cell size), the tick is on the beat, Assist mode exists, and the first spin is slowed |
-| Too easy with button-mashing | Weighted cells only *help*; balance enemy wheel speeds so random stops lose by the Basilica |
-| Animation scope | The motion-graphics grammar (§6.2) is reusable: one cut-in prefab, one band prefab, one kinetic-text component drive every beat |
-| WebGL performance | Baked lighting, no compute, test on itch daily |
-| Cultural notes | Present beliefs as folklore, never mockery; have native speakers check the Chinese and Japanese notes |
+| **Fate Wheel** (speed + faces) | Fast; 7 double-wide |
+| **Base tens** | 30, grows with level |
+| **Passive** | *Lucky Seven*: each 7 on the reel adds +7 to every strike this round |
+| **Ultimate** (charged when their digit lands on the reel ×3, or by an Overwrite) | *Seven-Chamber Requiem*: 7 rapid auto-stopping mini-wheels; each 7 doubles the shot |
+| **Synergy digit** | 7 |
+| **Awakening** (Act IV, choose one of two) | *Dead Man's Hand* (crits on 8s and As) or *Blackjack* (bonus when a round's strikes total 21, 210, 2,100…) |
+| **Bond arc** (4 Teahouse scenes) | Unlocks a second passive and the true ending |
+
+### 2.2 Roster kits
+| Hero | Digit | Wheel | Passive | Ultimate |
+|---|---|---|---|---|
+| **NIL** | yours | Medium; your digit double-wide; **Splice** (two wheels: tens *and* ones) | Grows by act (§6) | *Remainder Release*: the reel gains a 4th tube for this round |
+| Vesper Sette | 7 | Fast | Lucky Seven (+7 per 7) | Seven-Chamber Requiem |
+| Ling | 0 | Slow; 0 triple-wide | *Emptiness*: 0s on the reel are wild for Pairs and Jackpots | *Ensō*: cancel the enemy's action and set one reel tube to 0 |
+| Bai Si | 4 | Medium; 4 triple-wide | *Fourfold*: every 4th strike of a fight marks the enemy (×1.44 damage taken) | *Four Lanterns Out*: Reaper's Toll that spares the party |
+| Ba Jinling | 8 | Slow; 8 double-wide; Gold faces | *Compound*: +0.8 Mult per consecutive patterned round | *Eight Bells*: ×1.1 Mult per bell (×2.14) and +8 coins each |
+| San | 3 | Fast; has a *Steal* face | *Third Time Lucky*: the round's 3rd strike counts double if San made it | *Three Moons Heist*: put the enemy's next wheel result onto your reel |
+| Meng Lan | 9 | Medium | *Long Life*: heal 9 when a 9 lands; soups cleanse curses | *Soup of Forgetting*: the enemy forgets its buffs and last pattern; your reel refunds |
+| Sister Prima | 2 | Only 2-3-5-7 + one 0 | *Indivisible*: prime strikes pierce armour; +1 Mult per prime on the reel | *Sieve of Light*: shatter all composite numbers on screen (enemy shields, armour) |
+| Fibi Leone | Fibonacci | Her lucky digit **advances every round** (1, 1, 2, 3, 5, 8, 3, 1…) | *Golden Ratio*: Cascades give ×1.618; Fibonacci triples count as Cascade | *Spiral Deal*: the reel extends to 5 tubes this round (Full House, Five-Run…) |
+
+### 2.3 Synergy is number theory (no trait UI)
+Team synergies come from the **relationships between lucky digits**. The party-select screen draws constellation lines between the heroes' digits; that's the whole interface.
+
+| Bond | Rule | Effect | Example comps |
+|---|---|---|---|
+| **Complements** | Digits sum to 10 | Zero-Sum becomes ×4 and triggers their **Link Art** (duo cinematic) | Vesper 7 + San 3 · Ba 8 + Prima 2 · Meng Lan 9 + Fibi (when on 1) · Bai Si 4 + NIL 6 |
+| **Neighbours** | Consecutive digits | Two-digit runs count as a Cascade | Vesper 7 + Ba 8 · Ba 8 + Meng Lan 9 · Prima 2 + San 3 · San 3 + Bai Si 4 |
+| **Twins** | Same digit (NIL picked a companion's digit) | That digit's Jackpot ×2, plus a shared ultimate gauge | NIL 7 + Vesper |
+| **Prime Party** | All three digits prime | Every strike pierces; Prime Trio pattern unlocked (×5) | Prima 2 + San 3 + Vesper 7 |
+| **Powers of Two** | Digits are powers of two (1/2/4/8) | Each pattern *doubles* the next round's mult | Prima 2 + Bai Si 4 + Ba 8 |
+| **Void** | Ling in the party | 0 is wild for every bond above | Ling + anyone |
+
+**Why it's deep:** the player picks NIL's lucky number in the intro *before knowing any of this*. That choice quietly decides which companions will synergise with NIL all game: pick 3 and Vesper is your Complement; pick 2 and you're Ba's; pick 6 and only Bai Si completes you. It gives a strong reason to replay.
+
+### 2.4 Link Arts (duo anime cinematics)
+Every Complement and Neighbour pair has a 3–5 s combination attack that fires when its bond triggers. Examples: Vesper + San *Hat Trick* (she tosses San the hat, and three shots from three angles); Ba + Prima *Golden Sieve* (coins fall through Prima's shield as golden spears); Bai Si + Meng Lan *Last Rites* (lanterns float down a river of soup). These are the game's big trailer moments and the reward for team-building.
 
 ---
 
-## 13. Submission checklist
-- [ ] WebGL build, "playable in browser"
-- [ ] First sentence of the description: *"Every number in the city spins. Tap to stop them, and tell the game your lucky number first."*
-- [ ] Controls: tap/click/Space to stop · tap a hero or press 1/2/3 to choose who acts
-- [ ] Credits, team, **generative AI disclosure**
-- [ ] Cover image of the neon reel sign; a GIF of a Jackpot cinematic; 5 screenshots
-- [ ] No file changes after the deadline
+## 3. Build systems (the Balatro layer)
 
-## 14. After the jam
-A jam build can win the jam and prove the hook. The path to something bigger: a Steam page within 2 weeks of results, built around the Jackpot cinematics as the trailer; then more heroes and factions (13, 666, 108), a 100-floor Babel Spire mode, and a premium price with no gacha.
+| System | Balatro analogue | What it is here | Introduced |
+|---|---|---|---|
+| **Fu Talismans** (符) | Jokers | Paper talismans with passive rules. Slots 3 → 6. Ordered left to right. | Act I |
+| **Wheel crafting** | Deck building + card enhancements | Remove, duplicate or **enhance** faces on each hero's wheel | Act II |
+| **Oracle sticks** (求签) | Tarot / planet cards | Shake the cylinder and a fortune stick falls: a one-shot effect plus a fortune poem | Act II |
+| **Ink** | Spectral cards | Rewrite one reel digit after it lands (Judge's Brush) | Act III |
+| **Wagers** | Stakes / skip tags | Bet Omen or coins before a fight for bigger rewards | Act V |
+| **Omen Levels** | Stakes | Difficulty tiers 1–8 (post-game) | Post-game |
+
+### 3.1 Fu Talismans: sample pool (jam needs 12, full game ~80)
+East and West superstitions side by side, which is the jam prompt in miniature.
+
+| Talisman | Type | Rule |
+|---|---|---|
+| Seven Stars of the Dipper (北斗七星) | +Mult | +7 Mult if any 7 is on the reel |
+| Door God (门神) | Defence | The first enemy strike each fight is parried |
+| Red Envelope (红包) | Economy | +8 coins on a Jackpot |
+| Lucky Cat (招财猫) | Economy | +1 coin per strike ending in your digit |
+| Peach-Wood Sword (桃木剑) | ×Mult | ×2 Mult against ghosts and Noiselings |
+| Paper Effigy (纸人) | Defence | Once per fight, survive Settlement at 1 |
+| Kitchen God's Report (灶神) | Economy | End of act: coins for every fight won without damage |
+| Mirror of Yin and Yang | Rule | Pairs also count as Zero-Sum |
+| Four-Leaf Clover | Wheel | One free re-spin per fight |
+| Horseshoe | Wheel | Your digit's cells +50% wider |
+| Black Cat | Rule | The first Bust each fight becomes a Pair |
+| Broken Mirror | ×Mult | ×3 Mult, but your wheels spin 30% faster |
+| Thirteenth Floor | ×Mult | ×13 Mult if the round total ends in 13 |
+| Zodiac set (12) | Mixed | Each triggers on its zodiac turn (round number mod 12); collect several for chains |
+| Abacus Bead | Chips | +10 tens per Wealth talisman owned |
+| Ladder of Knives | Risk | +4 Mult per point of Omen below 44 |
+
+### 3.2 Wheel crafting (faces)
+Every hero's wheel starts as 0–9. At Markets and Shrines you can:
+- **Remove** a face: removing 1 and 2 from Vesper makes her 7 even more likely.
+- **Duplicate** a face: two 8s, three 8s.
+- **Enhance** a face:
+
+| Face | Look on the wheel | Effect when stopped |
+|---|---|---|
+| Gold | Gold-leaf digit | +3 coins |
+| Jade | Green glow | +4 Mult |
+| Glass | Translucent | ×2 strike; 1-in-4 chance it shatters and is removed |
+| Iron | Riveted plate | +20 tens to every strike *while it's on the wheel but not stopped* |
+| Lantern | Glowing red | The wheel slows while passing it |
+| Ink (Act III) | Black brush stroke | Wild: becomes the digit you need when it lands |
+| Cursed (risk) | Black-red | +50 tens, but curses the striker |
+
+All of this is visible on the wheel itself, so upgrades are *seen* on the next spin.
+
+### 3.3 Economy
+Coins (*fen*) come from fights (plus interest: 1 per 5 held, capped), talismans and gold faces. They buy talismans, oracle sticks, face crafting and rerolls at Markets. Bāfā Harbor (Act II) teaches the economy through the story.
+
+---
+
+## 4. Structure: acts, levels and bosses
+
+### 4.1 An act is a map of ~8 nodes ending in a boss (Balatro's antes)
+The map is an unrolled scroll in the region's art style. Paths branch:
+
+| Node | Purpose |
+|---|---|
+| **Small Audit** | Regular fight |
+| **Big Audit** | Harder fight, better reward |
+| **Elite** | Named enemy with a modifier (a "Noise storm" fight) |
+| **Market** | Buy talismans, sticks; craft faces |
+| **Shrine** | Free talisman or free face enhancement (choose 1 of 3) |
+| **Teahouse** | Swap party, bond scenes, rest |
+| **Story** | Cutscene + choice |
+| **Boss Audit** | The region's Auditor and its unique rule |
+
+Each act ≈ 25–35 minutes. The full campaign ≈ 6–8 hours.
+
+### 4.2 Difficulty curve (exponential, like Balatro's blinds)
+| Act | Small / Big / Boss target Omen |
+|---|---|
+| Prologue | 300 / 500 / 1,200 |
+| I | 1,500 / 2,500 / 6,000 |
+| II | 8,000 / 14,000 / 35,000 |
+| III | 50k / 90k / 200k |
+| IV | 300k / 600k / 1.5M |
+| V | 2.5M / 5M / 12M |
+| Finale | 99,999,999 ("the whole Ledger") |
+
+Linear growth (tens) can't keep up past Act II. Players **must** build multiplier engines (talismans, Jade faces, bonds, Overwrites), exactly like Balatro. Losing a fight returns you to the act start with the build you had there, so you rebuild differently with new offers.
+
+### 4.3 Bosses: each changes the rules
+| Boss | Rule (the "boss blind") | Counter-play it teaches |
+|---|---|---|
+| Varro, the Ledgerhound | Steals your last reel digit into a debt jar; 3 parries shatter it | Defence matters |
+| Bai Si, the White Executioner | Every 4th spin is a Death Spin; 4 lanterns count down to an execution | Plan around a timer; curses |
+| Jin Chan, the Golden Toad | His Omen gains interest every round; he taxes your Jackpots; phase 2 he swallows a hero (land a Pair to free them) | Burst damage; economy |
+| Judge Cui | Declares a required pattern each round (3 verdicts); his wheels replay your past digits | Flexibility over one combo |
+| Cardinal Seventeen | Strikes digits off *your* wheels each round (Sieve of Eratosthenes: 2s, then 3s…) | Wheel crafting; Prima's primes |
+| The House | Time rewinds every 3 rounds, but your reel and talismans persist; he copies your last pattern | Finish within one loop |
+| Comptroller Thale | P1 Regression to the Mean (wheels compress toward 5); P2 Fixed Fate (wheels don't spin: a puzzle); P3 Zero (NIL alone; companions return as Link Arts) | Everything you've learned |
+
+### 4.4 Variability
+- Enemy pools per region, each with a distinct wheel (Jiangshi wheels *skip* digits, Golden Koi multiply when hit, Ox-Head and Horse-Face must die in the same round).
+- Random talisman, stick and face offers; branching maps; Elite modifiers ("Noise storm: all wheels reversed").
+- Party composition: 28 possible pairs of companions, times 10 possible NIL digits.
+- Post-game **Endless Ledger**: all regions shuffled into a true roguelike, Omen Levels 1–8, and a Daily Omen seed.
+
+---
+
+## 5. The complexity ladder (what unlocks when)
+
+New systems arrive one at a time, through the story, taught by doing, with at most one floating hint each.
+
+| When | New | How it's introduced |
+|---|---|---|
+| Prologue, fight 1 | Stop the wheel; reel; Jackpot/Pair/Bust; Parry | NIL alone vs Debt Hounds |
+| Prologue, fight 2 | Choose who strikes; hero wheels differ; Cascade, Zero-Sum | Vesper joins |
+| Prologue, boss | Ultimates | Vesper's first Requiem saves NIL |
+| Act I | **Fu Talismans** (3 slots); curses; Reaper's Toll | The Tetrad's mountain shrines are full of talismans |
+| Act I, end | **Party of 3; bonds and Link Arts** | Ling + Bai Si; the first Link Art plays in a cutscene |
+| Act II | **Coins, Markets, Wheel crafting, Oracle sticks**; talisman slots 4 | The Luck Exchange: Jinling teaches the economy |
+| Act III | **Ink** (Judge's Brush); NIL's **Ledger Tree** | The Brush is the story's MacGuffin |
+| Act IV | **Awakenings** (hero class branches); number properties (prime, square, palindrome) | Synod trials |
+| Act V | **Wagers**; loops | The casino |
+| Finale | Everything, then taken away | Thale freezes your wheels |
+| Post-game | Endless Ledger, Omen Levels, Daily Omen | — |
+
+---
+
+## 6. NIL's growth (the most important progression)
+
+NIL gains **a new verb every act**, plus a **Ledger Tree** (Act III+) fed by the memory digits recovered from each boss.
+
+| Act | Verb | What it does |
+|---|---|---|
+| Prologue | **Splice** | NIL's wheel shows two strips (tens and ones); stopping both gives high-variance, high-control strikes |
+| I | **Carry** | A strike over 50 carries +1 to the next hero's digit (lets you "nudge" the reel) |
+| II | **Borrow** | Once per fight, take the enemy's stopped digit onto *your* reel instead of parrying |
+| III | **Rewrite** | Free Ink each fight (rewrite one reel digit) |
+| IV | **Factor** | Split one strike into two reel digits (56 → 7 and 8) |
+| V | **Loop** | Replay last round's reel once per fight |
+| Finale | **Divide by Zero** | Ultimate: NIL's digit becomes wild on every wheel for a round |
+
+The Ledger Tree has 7 branches (one per memory digit) with 3–4 nodes each. Example nodes: *Remainder +1* (reel gains a 4th tube permanently, late), *Audit Eye* (see the enemy's next wheel), *Compound Remainder* (+Mult equal to the number of Settled enemies this act).
+
+---
+
+## 7. Hero progression
+- **Levels** (shared XP): +10 tens per level, so digits never change. Cap 30.
+- **Bond arcs:** 4 Teahouse scenes per hero → second passive, Link Art upgrades, and true-ending flags.
+- **Awakening** (Act IV): choose one of two class branches per hero. This is the Cyberpunk-style "build identity" moment.
+- **Gear:** one *Charm* slot per hero (hero-specific talismans, e.g. Vesper's *Marked Deck*).
+
+---
+
+## 8. Minimal UI, still
+
+| Screen | In-world object | Interaction |
+|---|---|---|
+| Combat | Diorama + region-styled reel (neon sign, stone stele, golden abacus, ghost ledger, rose window, slot machine, Basilica clock) | Tap heroes, tap to stop |
+| Map | Unrolled scroll in the region's art style | Tap a node |
+| Market | A stall with wares on the table | Tap to buy; drag a face onto a wheel |
+| Teahouse | A table with tea cups; heroes sit around it | Drag heroes into the 2 seats beside NIL; constellation lines show bonds |
+| Talismans | Pinned to the reel frame, left to right | Drag to reorder |
+| Lucky-number choice | The Naming terminal | Ten Nixie tubes |
+
+The only screen-space HUD is cinematic: letterbox bars, cut-ins, pattern titles, and a single coin counter on the map.
+
+---
+
+## 9. Jam slice scope (what ships Nov 13)
+Full detail and schedule in `PRODUCTION_PLAN.md` §3.
+
+**"Chapter 0–I: The Remainder and the Fourth Gate"**: the intro cinematic, the Prologue (Remainder Wards, 3 nodes + Varro) and Act I (Sì Shan, ~6 nodes + Bai Si), then an ending cinematic teasing Bāfā Harbor and Thale.
+
+| System | In the jam slice |
+|---|---|
+| Core verb, reel, patterns, parry | ✅ all |
+| Heroes | NIL + Vesper + Ling (+ Bai Si as a post-boss join and teaser) |
+| Bonds / Link Arts | Complements + Neighbours; 2 Link Arts (Vesper + NIL Twins/Complement depending on digit; Ling's Void) |
+| Ultimates | ✅ each hero |
+| Fu Talismans | 12, 3 slots |
+| Wheel crafting | Remove + Gold/Jade/Glass at one Shrine |
+| NIL verbs | Splice + Carry |
+| Bosses | Varro, Bai Si (both with unique rules) |
+| Not in jam | Economy beyond coins-on-map, Oracle sticks, Ink, Awakenings, Acts II–V |
+
+---
+
+## 10. Build & tech summary
+Unity 6 LTS · URP · WebGL 2 (WebGPU optional) · Unity 2D Animation (PSB rigs) + Cinemachine 3 + Timeline + PrimeTween · VideoPlayer for cinematic clips from StreamingAssets · pure C# rules core with EditMode tests · ScriptableObject data for heroes, wheels, faces, talismans, enemies, bosses and maps. Details in `PRODUCTION_PLAN.md` §5.

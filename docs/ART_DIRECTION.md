@@ -142,6 +142,43 @@ Describe the **medium and technique**, not "premium anime key art". Studio names
 
 ---
 
+## 8. Lessons from *The Official Digital Artbook of Cyberpunk 2077*
+Studied from the 61-page digital art book (styles chapter, district spreads, character line-ups). We take its **methods**, not its look. Night City's yellow-and-black trade dress, logos and designs stay theirs.
+
+### 8.1 What the book teaches
+1. **Every style is grounded in the world's history.** CD PROJEKT RED wanted styles that are "interesting, colorful, distinctive and, most importantly of all, plausible". Wars, crises and booms each leave "a logical and perceivable impact" on design. Four eras coexist on the same street: *Kitsch* ("style over substance", street rebellion), *Entropism* ("necessity over style", poverty, crude and durable), *Neomilitarism* ("substance over style", cold corporate elegance) and *Neokitsch* ("style and substance", the ultra-rich: gold, real wood, natural fur).
+2. **A visible design system.** The "Comparison" spread draws the same character type, phone and drink in each style, so artists and players can tell the eras apart at a glance.
+3. **Districts are mixes of styles, and travelling should feel like changing countries.** "When traveling between them, you should feel as if you're visiting different countries." And: "above all Night City is about contrasts."
+4. **Lived-in logic.** In Little China, people live whole lives in one repurposed office building: they sleep on the balcony, repair limbs in a supply closet and cook in a former office kitchen. In Kabuki, "Far East meets Wild West", with low shacks that let the sun through. Every space answers *who lives here, and what happened to this place?*
+5. **Status through scarcity.** In North Oak, "green is the new gold": a bonsai on a balcony is a luxury watch.
+6. **Contrast as storytelling.** Pacifica's abandoned resort pairs "funhouse signs riddled with bullet holes" with "luxury pools filled with chemical sludge".
+7. **Graphic identity is part of the art.** The book's pages are one loud base colour with black type, overlaid with spray-paint tags, marker crosses, stickers and collage, so the presentation itself feels like the street.
+
+### 8.2 Applied to the Tally: Meridian's four eras of luck
+Meridian gets its own history-grounded style system, built on our lore (the Basilica, the Rounding, the Deficit). Each era has a motto, materials and its own way of **showing your Omen**, because in our world the number is the status symbol.
+
+| Era | Motto | Who | Materials and shapes | How the Omen is shown |
+|---|---|---|---|---|
+| **Charmpunk** (street) | *Luck over sense* | Gamblers, kids, gangs, small shops | Every culture's charms worn at once, hand-painted lucky numbers, plastic gold, neon, stickers | Gaudy holo-halos, numbers painted on jackets, fake Omen projectors |
+| **Remainder** (poverty) | *Survival over luck* | The Undercity, the Settled | Scrap brass from old Basilica parts, patched cloth, salvaged Nixie tubes, rope | A cracked tube on a cord; often hidden out of shame |
+| **Ledgerism** (power) | *Order over chance* | The Basilica, Auditors, Collectors | Brass, steel, white enamel, cathedral arches, clockwork, uniforms | Steel numerals, stamped seals, never glowing |
+| **Gilded Fortune** (the 99s elite) | *Fortune and order* | Old money, Exchange magnates | Real gold leaf, jade, living plants (in Meridian, **a garden is luck you can see**), silk | Embroidered or gold-leaf numerals, discreet |
+
+**The comparison sheet:** for each era, draw the same three things, *a person, a lucky charm and an Omen display*, side by side (in the manner of the book's Comparison spread). It's the first concept-art task for Meridian.
+
+**Districts of Meridian** mix eras: the Remainder Wards (Remainder + Charmpunk), the Exchange (Gilded Fortune over Ledgerism), the Basilica Ring (pure Ledgerism), and the Charm Bazaar (pure Charmpunk, "every culture meets on one street").
+
+### 8.3 Applied to the other lands
+Each land has its **own traditional style** (the painted world, §2.1). **Meridian's eras intrude** wherever the Basilica's influence reaches: Ledgerist toll gates on a Hyakki shrine road, Charmpunk stalls in Bāfā's festival, Remainder shanties under Kroton Nova's sieve. Those collisions are where our "contrast storytelling" lives.
+
+### 8.4 Graphic identity (menus, title, marketing)
+Borrow the **energy**, not the trade dress: one confident base colour, heavy type, hand-made overlays.
+- **Our base:** ledger-paper cream `#F2E8D5` with ink black `#141018` and Nixie orange `#FF7A2C`. Not Cyberpunk yellow.
+- **Overlays:** lucky-charm stickers, hand-stamped ledger seals, red-ink corrections and tally marks (||||), ink brush strokes from the lands, and spray tags for Charmpunk screens.
+- Every land's map, menus and cut-ins use that land's medium for overlays (woodblock stamps in Hyakki, gold leaf in Bāfā, palm-leaf script in Śūnyapura).
+
+---
+
 ## Sources
 - [What Kazuo Oga Thinks About When He Thinks About Backgrounds (Animation Obsessive)](https://animationobsessive.substack.com/p/what-kazuo-oga-thinks-about-when)
 - [Painting in Ghibli style (Gurney Journey)](https://gurneyjourney.blogspot.com/2018/05/painting-in-ghibli-style.html)
@@ -152,4 +189,4 @@ Describe the **medium and technique**, not "premium anime key art". Studio names
 - [Cyberpunk: Edgerunners, a vibrant ode to retro anime (AWN)](https://www.awn.com/animationworld/cyberpunk-edgerunners-vibrant-ode-retro-anime)
 - [Review of *The Art of Cyberpunk: Edgerunners* (Reframe)](https://buttondown.com/reframe/archive/cyberpunk-edgerunners-artbook-review/)
 - [Rendering of Orbitals, a retro-anime-inspired game (Unreal Engine tech blog)](https://www.unrealengine.com/tech-blog/stepping-inside-a-retro-anime-inspired-game-a-look-into-the-rendering-of-orbitals)
-- The official Cyberpunk 2077 digital art book (https://www.cyberpunk.net/artbook/en/) is behind a CD Projekt account sign-in, so it could not be reviewed for this pass.
+- *The Official Digital Artbook of Cyberpunk 2077* (CD PROJEKT RED, 2020; [cyberpunk.net/artbook](https://www.cyberpunk.net/artbook/en/)), provided by the team as a PDF and studied for §8. Not stored in this repo.

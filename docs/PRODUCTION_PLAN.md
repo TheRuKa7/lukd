@@ -58,7 +58,7 @@ The full vision (a capital plus five lands inspired by Japanese, Chinese, Indian
 |---|---|---|---|---|---|---|
 | **1** | Fri 6 | Unity 6 project, URP, WebGL; **empty build on a private itch page**; port the prototype's rules to the C# `Core` with tests | Higgsfield look-dev: style anchor, **NIL key art**, Vesper, Maeve, Hina, Tamamo concepts (§4) | Meridian Undercity + Hyakki establishing concepts | Intro script and shot list final; temp music | Build loads on itch; style anchor chosen |
 | **2** | Sat 7 | Combat greybox with wheels, reel, patterns, parry, hero picking, scoring formula | NIL / Vesper / Maeve / Hina: turnarounds, expressions, **layered PSDs** | Meridian battle stage split into parallax layers; in-world neon reel | Intro storyboard frames (stills); generate intro video shots batch 1 | A fight is fun with greybox art |
-| **3** | Sun 8 | Map scroll + nodes; talismans (ordered effect pipeline); bonds | **Rig** NIL / Vesper / Maeve / Hina (2D Animation); attack key poses ×3 each | Hyakki stages ×2 (layers); ukiyo-e woodblock VFX (flat wave and cloud shapes); torii-and-lantern reel | Intro shots batch 2; edit intro v1 | Prologue playable start-to-finish |
+| **3** | Sun 8 | Map scroll + nodes; charms (ordered effect pipeline); bonds | **Rig** NIL / Vesper / Maeve / Hina (2D Animation); attack key poses ×3 each | Hyakki stages ×2 (layers); ukiyo-e woodblock VFX (flat wave and cloud shapes); torii-and-lantern reel | Intro shots batch 2; edit intro v1 | Prologue playable start-to-finish |
 | **4** | Mon 9 | Ultimates and Link Arts (video + in-engine); NIL's Splice and Carry; enemy wheel profiles | Varro + Tamamo boss rigs (Tamamo's nine tails on spring bones); 7 enemies (3-pose sprite animation) | Land-styled cut-in bands (neon glitch vs woodblock print); hit sparks; foxfire | Ultimate clips; Link Art clips; music stems v1 | Act I playable with placeholder bosses |
 | **5** | Tue 10 | Boss rules (debt jar; nine tails; foxfire illusion faces); shrine face crafting; Maeve's forge; Teahouse party select. **FEATURE FREEZE** | Secondary motion (hair/cloth springs), blinks, reactions to the reel | Lighting pass, post-processing, weather | Prologue-end (world map) + Act I-end cinematics; SFX pass | Full slice playable |
 | **6** | Wed 11 | Balance (wheel speeds, targets) with 5 playtests; WebGL perf + size. **CONTENT LOCK** | Polish poses, victory animations | Polish, optimisation (atlases, compression) | Final mix; subtitles; credits | 60 fps; < 250 MB; no blockers |
@@ -124,7 +124,7 @@ Paid generations spend Higgsfield credits. Rough counts for the slice: **~150–
 | Characters | Unity 2D Animation (PSB importer, bones, Sprite Skin), spring bones for hair and cloth |
 | Camera & cutscenes | Cinemachine 3, Timeline, VideoPlayer (StreamingAssets URLs) |
 | Tweening | PrimeTween |
-| Code layout | `Core/` (pure C#: wheels, reel, patterns, scoring, bonds, talisman pipeline, deterministic RNG; EditMode tests) · `Sequencing/` (async beat scripts: HeroStrike, EnemyStrike, PatternPayoff, LinkArt, Ultimate) · `Data/` (ScriptableObjects: HeroDef, WheelDef, FaceDef, TalismanDef, EnemyDef, BossRuleDef, ActMapDef) · `Presentation/` · `Audio/` (stem controller, beat clock) |
+| Code layout | `Core/` (pure C#: wheels, reel, patterns, scoring, bonds, charm pipeline, deterministic RNG; EditMode tests) · `Sequencing/` (async beat scripts: HeroStrike, EnemyStrike, PatternPayoff, LinkArt, Ultimate) · `Data/` (ScriptableObjects: HeroDef, WheelDef, FaceDef, CharmDef, EnemyDef, BossRuleDef, ActMapDef) · `Presentation/` · `Audio/` (stem controller, beat clock) |
 | Save | PlayerPrefs (IndexedDB on web): act checkpoints, bonds, codex |
 | WebGL budget | < 250 MB total; character atlases ≤ 2048²; Crunch compression; music streamed Vorbis; videos 720p H.264 at ~2.5 Mbps; Gzip with decompression fallback; first fight playable within 20 s of load |
 | Accessibility | Reduced motion, assist (slower wheels), subtitles, colour-independent signals |
@@ -148,12 +148,12 @@ The **rules core comes straight from the prototype** (`prototype/index.html`: wh
 ---
 
 ## 7. Step-by-step: the next 24 hours
-1. **Approve Higgsfield spending.** Claude was blocked from paid generation in this session (see the note below). Either approve it in this session, or run the Day 1 prompts yourself from `art/HIGGSFIELD_PROMPTS.md` §2–§4.
-2. **Pick the style anchor**: generate the 4 "style anchor" variations, choose 1, and save it as `art/lookdev/style_anchor.png`.
-3. **NIL key art → Element**, then Vesper, Maeve, Hina and Tamamo.
-4. **Unity:** project, URP, WebGL settings; upload an empty build to a private itch page; confirm it loads.
-5. **Port `Core`** from the prototype with tests (wheel, reel, patterns, scoring formula from GDD §1.2).
-6. **Lock the intro script** (World Bible §8) and generate its storyboard stills, including one still per culture for the ledger montage.
-7. End-of-day review: one screenshot-quality mock of a Hyakki battle (Night Parade bridge) made from the approved art. If it doesn't look like a AAA trailer frame, fix the style before anything is mass-produced.
+Status at the end of Day 1 (Fri 6 Nov): story, systems, art direction v2, the World & Art Bible PDF and the art book draft are done; the prototype matches the canon; 3D bases and colour keys exist for the Remainder Wards and the Hyakki Moon Pier; the vector identity kit (emblems, Omen displays, charm icons, reel objects, cast figures) is in `art/graphics/`.
 
-> **Note on Higgsfield in this session:** the 3D Jutsu layouts were built and rendered for free. The first paid image generation (NIL key art) was refused by the session's safety check because it spends credits. Nothing was charged. If you want Claude to run the generations, say so explicitly (and ideally give a credit budget). Otherwise the prompt pack is written so anyone on the team can paste it into Higgsfield directly.
+1. **Unblock image generation.** Higgsfield has 6 paint passes stuck in "submission unknown" (check credits and job history on higgsfield.ai; don't resubmit blindly, it may double-charge). Alternatives: enable Hugging Face Spaces invoke for this connector, or connect Meshy.
+2. **Paint the style frames** over the existing 3D bases: the Wards street, the Moon Pier, NIL in action, and one battle frame (Art Book Production Guide §7, images 1, 4 and 9 first).
+3. **Lock NIL**: key art → Higgsfield Element → turnaround, checked against the canon locks and the figure-kit silhouette in the art book.
+4. **Unity:** project, URP, WebGL settings; upload an empty build to a private itch page; confirm it loads.
+5. **Port `Core`** from the prototype with tests (wheel, reel, pattern priority, Balance/Omen readout, scoring formula from GDD §1.2 and §1.6).
+6. **Lock the intro script** (World Bible §8) and generate its storyboard stills, including one still per culture for the ledger montage.
+7. End-of-day review: one screenshot-quality mock of a Hyakki battle on the Moon Pier made from the approved art. If it doesn't look like a trailer frame, fix the style before anything is mass-produced.

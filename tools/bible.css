@@ -94,6 +94,9 @@ tbody tr:nth-child(even) td { background: #F6EFE1; }
 .meta-row span { color: var(--muted); font-family: var(--mono); font-size: 7.5pt; text-transform: uppercase; letter-spacing: .1em; }
 .shape-box { display: flex; align-items: center; gap: 4mm; margin: 4mm 0; }
 .shape { width: 26mm; height: 26mm; }
+.fig-col svg { width: 34mm; height: 62mm; }
+.fig-ink svg { width: 12mm; height: 22mm; }
+.shape-box .meta-small { max-width: 40mm; }
 .meta-small { font-family: var(--mono); font-size: 7pt; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; }
 .locks ul { margin: 1mm 0 0; padding-left: 4.5mm; font-size: 9pt; }
 .locks li::marker { color: var(--red-ink); }

@@ -151,7 +151,7 @@ canvas{position:absolute;left:0;top:0}
       <div class="floor"></div>
       <canvas id="rain" width="1280" height="720"></canvas>
       <div class="sign"><div class="title">KARMIC REEL</div><div class="tubes" id="tubes"><div class="tube"><b>0</b></div><div class="tube"><b>0</b></div><div class="tube"><b>0</b></div></div></div>
-      <div class="squad-omen" id="squadOmen">300<small>SQUAD OMEN</small></div>
+      <div class="squad-omen" id="squadOmen">99<small>PARTY OMEN · BALANCE 300</small></div>
       <div id="actors"></div>
       <div id="fx"></div>
     </div>
@@ -261,7 +261,7 @@ $('#sound').addEventListener('click', e => { e.stopPropagation(); muted = !muted
 const HEROES = [
   { id: 'nil', name: 'NIL', sub: 'THE SPLICER', color: '#5fe3f0', x: 250, base: 40, speed: 430, lucky: null },
   { id: 'ves', name: 'VESPER SETTE', sub: 'LUCKY SEVEN', color: '#ff3d5a', x: 390, base: 30, speed: 640, lucky: 7 },
-  { id: 'ba', name: 'MADAME BA', sub: 'LUCKY EIGHT', color: '#b77bff', x: 520, base: 20, speed: 330, lucky: 8 }
+  { id: 'ba', name: 'MAEVE TRISKEL', sub: 'THIRD TIME LUCKY', color: '#d9822b', x: 520, base: 20, speed: 330, lucky: 3 }
 ];
 function heroSVG(h) {
   const c = h.color;
@@ -284,9 +284,9 @@ const FACTIONS = {
   basilica: { color: '#5fe3f0', glyph: '◉', wheel: { digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], w: { lucky: 3 }, speed: 560 }, line: 'IT HAS LEARNED YOUR LUCKY NUMBER' }
 };
 const ENEMIES = [
-  { name: 'CUTPURSE OF THE FOURTH GATE', faction: 'tetrad', hp: 240, base: 20 },
+  { name: 'COLLECTOR OF THE FOURTH WARD', faction: 'tetrad', hp: 240, base: 20 },
   { name: 'SIEVE KNIGHT', faction: 'prime', hp: 560, base: 20 },
-  { name: 'LOOP HOUND', faction: 'ouro', hp: 1000, base: 30 },
+  { name: 'LOOP ECHO', faction: 'ouro', hp: 1000, base: 30 },
   { name: 'THE BASILICA', faction: 'basilica', hp: 4444, base: 40, boss: true }
 ];
 function enemySVG(e) {
@@ -311,8 +311,11 @@ function setTubes(ds, gold) {
   const t = $('#tubes').children;
   for (let i = 0; i < 3; i++) { const d = ds[i]; t[i].classList.toggle('on', d != null); t[i].classList.toggle('gold', !!gold && d != null); t[i].firstChild.textContent = d == null ? '0' : d; }
 }
-function setSquad(v) { G.squad = Math.max(0, Math.round(v)); $('#squadOmen').innerHTML = fmt(G.squad) + '<small>SQUAD OMEN</small>'; }
-function setEnemyHP(v) { G.enemy.hp = Math.max(0, Math.round(v)); const o = enemyEl && enemyEl.querySelector('.omen'); if (o) o.innerHTML = fmt(G.enemy.hp) + '<small>OMEN INDEX</small>'; }
+/* Omen is always two digits (World Bible §2); in an Audit it reads the share of the Balance left (GDD §1.6). */
+function omenOf(v, max) { return v <= 0 ? 0 : Math.max(1, Math.min(99, Math.ceil(v / max * 99))); }
+function omenStr(v, max) { return String(omenOf(v, max)).padStart(2, '0'); }
+function setSquad(v) { G.squad = Math.max(0, Math.round(v)); $('#squadOmen').innerHTML = omenStr(G.squad, G.squadMax) + '<small>PARTY OMEN · BALANCE ' + fmt(G.squad) + '</small>'; }
+function setEnemyHP(v) { G.enemy.hp = Math.max(0, Math.round(v)); const o = enemyEl && enemyEl.querySelector('.omen'); if (o) o.innerHTML = omenStr(G.enemy.hp, G.enemy.max) + '<small>BALANCE ' + fmt(G.enemy.hp) + '</small>'; }
 function enemyPos() { return { x: 1010, y: 560, top: G.enemy.faction === 'basilica' ? 140 : 240 }; }
 
 /* ---------------- fx helpers ---------------- */
@@ -503,9 +506,9 @@ async function resolveReel(ds, roundDamage) {
   } else if (p.key === 'REAPER') {
     sfx.toll();
     await bigMoment("REAPER'S TOLL", '#ff3d5a', null, 'EVERY OMEN THAT CONTAINS A 4 LOSES 44%', 2);
-    if (String(G.enemy.hp).includes('4')) await strikeEnemy(Math.floor(G.enemy.max * 0.44), 'red');
+    if (omenStr(G.enemy.hp, G.enemy.max).includes('4')) await strikeEnemy(Math.floor(G.enemy.max * 0.44), 'red');
     else tag(ep.x, 380, 'NO 4 IN ITS OMEN', '#8d8094');
-    if (L !== 4 && String(G.squad).includes('4')) { const l = Math.floor(G.squadMax * 0.44); setSquad(G.squad - l); pop(385, 560, l, 'red'); heroEls.forEach(h => { h.classList.remove('hurt'); void h.offsetWidth; h.classList.add('hurt'); }); await wait(600); }
+    if (L !== 4 && omenStr(G.squad, G.squadMax).includes('4')) { const l = Math.floor(G.squadMax * 0.44); setSquad(G.squad - l); pop(385, 560, l, 'red'); heroEls.forEach(h => { h.classList.remove('hurt'); void h.offsetWidth; h.classList.add('hurt'); }); await wait(600); }
   } else if (p.key === 'CASCADE') {
     sfx.bells(3);
     await bigMoment('CASCADE', '#5fe3f0', null, 'THE SEQUENCE HOLDS. YOU ACT AGAIN.', 1);
@@ -779,13 +782,13 @@ async function run() {
 
 async function boot() {
   spawnHeroes();
-  showScene('<div><div class="logo">ZERO-SUM: <em>OMEN</em></div><div class="tapline">TAP TO ENTER NEW BABYLON</div></div>');
+  showScene('<div><div class="logo">ZERO-SUM: <em>OMEN</em></div><div class="tapline">TAP TO ENTER MERIDIAN</div></div>');
   await waitTap(0);
   ac();
   await kinetic([
-    { t: 'NEW BABYLON.', ms: 1300 },
-    { t: 'EVERY CITIZEN WEARS A NUMBER.', ms: 1500 },
-    { t: 'IT DECIDES WHO LIVES.', ms: 1400 },
+    { t: 'MERIDIAN.', ms: 1300 },
+    { t: 'EVERY SOUL WEARS A NUMBER.', ms: 1500 },
+    { t: 'IT DECIDES WHO SETTLES.', ms: 1400 },
     { t: 'YOURS READS', ms: 900 },
     { t: 'NaN', cls: 'glitch', ms: 1500, sfx: () => sfx.sting() }
   ]);

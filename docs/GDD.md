@@ -16,7 +16,7 @@ An anime 2.5D party RPG across lands inspired by **Japanese, Chinese, Indian, Gr
 1. **Anime spectacle drives the game.** Cut-ins, camera, animation and motion graphics *are* the feedback. Every system pays out in something you watch.
 2. **One verb, deep consequences.** Stop the number. Everything else (who acts, what's on your wheels, which charms you carry, who's in your party) changes *what that one action can do*.
 3. **Complexity is earned, one land at a time.** Each land's culture contributes the system it is famous for (§5). The game starts with one wheel and ends with a team-synergy engine.
-4. **Diegetic first.** Omen (HP) floats over heads; the reel is an in-world object styled per land; menus are in-world objects.
+4. **Diegetic first.** Every combatant's Omen floats over its head and doubles as its health readout (§1.6); the reel is an in-world object styled per land; menus are in-world objects.
 5. **The theme is the math, and the math is multicultural.** Lucky numbers and superstitions from every land drive story, mechanics and team-building. Theme counts double in jam judging.
 
 ---
@@ -48,13 +48,21 @@ Strikes land as small white numbers; then the pattern title slams in and a **× 
 | Cascade | 3-4-5, 9-8-7 | ×3 | Extra round (the enemy waits) | Time-slow bands |
 | Jackpot | 7-7-7 | ×digit (min ×2) | — | Squad panels slash down, screen crack |
 | **Omen Overwrite** | your digit ×3 | ×3·digit | Charges every ultimate | Gold everything; bells ring your number of times |
-| Reaper's Toll | 4-4-4 | ×4 | Every Omen containing a 4 loses 44%, **yours included** | Four bells toll, red wash |
+| Reaper's Toll | 4-4-4 | ×4 | Every Omen containing a 4 loses 44% of its Balance, **yours included** | Four bells toll, red wash |
 
 ### 1.4 Defence
 The enemy's wheel shows its odds by cell size. **0 → Parry** (no damage, counter flash); **your digit → Fortune** (reflect); otherwise take tens + digit. Some enemies (the Prime Synod) have no 0 on their wheel, so the party must win the race instead.
 
 ### 1.5 Wheels show the odds
 A wheel is a strip of **faces**, and a face's height is its odds. Players read probability by looking.
+
+**Pattern priority.** A reel matches the first pattern in this order: Omen Overwrite → Reaper's Toll → Jackpot → Cascade → Zero-Sum → Pair → Bust. So 4-4-4 is an Overwrite for a player whose digit is 4, and a Reaper's Toll for everyone else. (Same order as `evaluate()` in the prototype.)
+
+### 1.6 Omen and Balance (how a two-digit number can be a health bar)
+An Omen is always two digits, 00–99 (World Bible §2). In an Audit, each side stakes a **Balance**: the luck it puts on the table. Damage drains the Balance, and the Omen over the combatant's head shows the share that's left, from 99 down to 00. At 00 the combatant is Settled.
+- Enemy Balances grow exponentially by act (§4.2), so damage numbers get huge while the number over every head stays a readable two-digit Omen.
+- The party shares one Balance (300 in the Prologue), shown as the party's Omen over NIL's NaN.
+- Rules that read an Omen (Reaper's Toll, Hina's *Ninety-Nine*, "13" charms) read the displayed two-digit value; rules that deal damage hit the Balance.
 
 ---
 
@@ -72,7 +80,7 @@ Fate Wheel (speed + faces) · base tens · a passive · an **ultimate** (charged
 | Vesper Sette | 7 | Meridian / Crossroads | Fast | *Lucky Seven*: each 7 on the reel adds +7 to every strike this round | *Seven-Chamber Requiem*: 7 rapid auto-stopping mini-wheels; each 7 doubles the shot |
 | Maeve Triskel | 3 | Meridian (Celtic quarter) | Medium; has **Horseshoe** faces | *Third Time Lucky*: the round's 3rd strike counts double if Maeve made it; she upgrades charms at forge nodes | *Triskele*: three spinning horseshoes each land a free 3 on the reel (an instant Jackpot of 3s, or a Twins pattern with NIL 3) |
 | Hina of the Ninety-Nine | 9 | Hyakki | Bouncy: it reverses direction at random | *Ninety-Nine*: 9s don't curse her party; each 9 landed gives +9 Mult while her Omen is 99 or below… which it always is | *Hundred-Year Night*: her umbrella opens with one eye; for one round every wheel shows only the party's lucky digits |
-| Ba Jinling | 8 | River Empire | Slow; 8 double-wide; Gold faces | *Compound*: +0.8 Mult per consecutive patterned round | *Eight Bells*: ×1.1 Mult per bell (×2.14) and +8 coins each |
+| Ba Jinling | 8 | River Empire | Slow; 8 double-wide; Gold faces | *Compound*: +0.8 Mult per consecutive patterned round | *Eight Bells*: ×1.1 Mult per bell (×2.14) and +8 fen each |
 | Bai Si | 4 | River Empire | Medium; 4 triple-wide | *Fourfold*: every 4th strike of a fight marks the enemy (×1.44 damage taken) | *Four Lanterns Out*: Reaper's Toll that spares the party |
 | Shunya | 0 | Śūnyapura | Slow; 0 triple-wide | *Pūrṇa (fullness)*: 0s on the reel are wild for every pattern | *Place Value*: move any reel digit into the tens of every strike next round (×10 its weight) |
 | Prima of Kroton | 2 | Kroton Nova | Only 2-3-5-7 plus one 0 | *Indivisible*: prime strikes pierce armour; +1 Mult per prime on the reel | *Sieve of Light*: shatter every composite number on screen (enemy shields and armour) |
@@ -116,7 +124,7 @@ These are the trailer moments and the reward for team-building.
 | **Navaratna gems** (the nine planetary gems) | Planet cards | Permanently level up a pattern (Ruby → Jackpot, Pearl → Pair, Emerald → Cascade…) | Śūnyapura |
 | **Awakenings** (the Moirai's thread) | — | Each hero picks one of two class branches | Kroton Nova |
 | **Crossroads Deals** | Risky vouchers | A powerful boon with a price ("+2 charm slots, but your Omen max is 77") | Crossroads |
-| **Wagers** | Stakes | Bet coins or Omen before a fight for bigger rewards | Crossroads |
+| **Wagers** | Stakes | Bet fen or Balance before a fight for bigger rewards | Crossroads |
 | **Omen Levels** | Stakes | Difficulty tiers 1–8 | Post-game |
 
 ### 3.1 Charms of the World (jam needs 12, full game ~90)
@@ -124,11 +132,11 @@ Organised in **sets by land**. Holding several from one set grants a set bonus, 
 
 | Charm | Set | Rule |
 |---|---|---|
-| Beckoning Cat (*maneki-neko*) | Hyakki | +1 coin per strike ending in your digit |
+| Beckoning Cat (*maneki-neko*) | Hyakki | +1 fen per strike ending in your digit |
 | Daruma | Hyakki | When you land your digit three times in a fight, paint the second eye: ×2 Mult for the rest of the fight |
 | Seven Lucky Gods (7 charms: Ebisu, Daikokuten, Bishamonten, Benzaiten, Fukurokuju, Jurōjin, Hotei) | Hyakki | Each has a small effect; holding all 7 makes every 7 a Jackpot by itself |
 | Ofuda ward | Hyakki | The first enemy strike each fight is parried |
-| Red Envelope (红包) | River Empire | +8 coins on a Jackpot |
+| Red Envelope (红包) | River Empire | +8 fen on a Jackpot |
 | Door God (门神) | River Empire | Parries also deal the enemy's strike back |
 | Peach-Wood Sword (桃木剑) | River Empire | ×2 Mult vs ghosts and Noiselings |
 | Lemon and Seven Chillies (*nimbu-mirchi*) | Śūnyapura | Cancels one enemy curse per fight; +7 tens per 7 on the reel |
@@ -138,17 +146,17 @@ Organised in **sets by land**. Holding several from one set grants a set bonus, 
 | Owl Coin | Kroton Nova | +1 Mult per prime strike |
 | Horseshoe | Crossroads | Your digit's cells are 50% wider |
 | Rabbit's Foot | Crossroads | One free re-spin per fight |
-| Lucky Penny | Crossroads | +1 coin when you land a 1 |
+| Lucky Penny | Crossroads | +1 fen when you land a 1 |
 | Seven-Come-Eleven Dice | Crossroads | If a round's strikes total 7 or 11 (or 70/110/700…), ×7 Mult |
 | Four-Leaf Clover | Meridian (Celtic) | 1-in-4 chance per strike to duplicate its digit on the reel |
 | Thirteenth Floor | Meridian | ×13 Mult if the round total ends in 13 |
 | Black Cat | Meridian | The first Bust each fight becomes a Pair |
 
 ### 3.2 Wheel crafting (faces)
-Remove · Duplicate · Enhance: **Gold** (+3 coins) · **Jade** (+4 Mult) · **Glass** (×2 strike; 1-in-4 chance it shatters) · **Iron** (+20 tens while *not* stopped) · **Lantern** (the wheel slows passing it) · **Ink** (wild) · **Horseshoe** (Maeve: lands as your digit 1 time in 4) · **Cursed** (+50 tens, curses the striker). Every enhancement is visible on the wheel itself.
+Remove · Duplicate · Enhance: **Gold** (+3 fen) · **Jade** (+4 Mult) · **Glass** (×2 strike; 1-in-4 chance it shatters) · **Iron** (+20 tens while *not* stopped) · **Lantern** (the wheel slows passing it) · **Ink** (wild) · **Horseshoe** (Maeve: lands as your digit 1 time in 4) · **Cursed** (+50 tens, curses the striker). Every enhancement is visible on the wheel itself.
 
 ### 3.3 Economy
-Coins come from fights (with interest: 1 per 5 held, capped), charms and gold faces. They buy charms, sticks, gems, crafting and rerolls at Markets.
+**Fen** (the Tally's small coins; Lore Lexicon §1) come from fights (with interest: 1 per 5 held, capped), charms and gold faces. They buy charms, sticks, gems, crafting and rerolls at Markets.
 
 ---
 
@@ -170,7 +178,7 @@ The map is an in-world object in the land's style: a hand-scroll (Hyakki, River 
 Each act ≈ 25–35 minutes. The full campaign ≈ 6–8 hours.
 
 ### 4.2 Difficulty curve (exponential, like Balatro's blinds)
-| Act | Small / Big / Boss target Omen |
+| Act | Small / Big / Boss enemy Balance |
 |---|---|
 | Prologue (Meridian) | 300 / 500 / 1,200 |
 | I (Hyakki) | 1,500 / 2,500 / 6,000 |
@@ -180,15 +188,15 @@ Each act ≈ 25–35 minutes. The full campaign ≈ 6–8 hours.
 | V (Crossroads) | 2.5M / 5M / 12M |
 | Finale | 99,999,999 ("the whole Ledger") |
 
-Linear growth (tens) can't keep up past Act II. Players **must** build multiplier engines. Losing a fight returns you to the act start with the build you had there.
+These are Balances, not Omens (§1.6). Linear growth (tens) can't keep up past Act II. Players **must** build multiplier engines. Losing a fight returns you to the act start with the build you had there.
 
 ### 4.3 Bosses: each changes the rules
 | Boss | Rule | Counter-play it teaches |
 |---|---|---|
 | Varro, the Ledgerhound | Steals your last reel digit into a debt jar; 3 parries shatter it | Defence matters |
-| Tamamo, the Nine-Tailed | 9 tails, each its own small Omen; foxfire **illusion faces** on your wheels (show one digit, land as another); 9s curse you unless Hina is in the party | Read carefully; the Hina synergy |
-| Jin Chan, the Golden Toad | His Omen gains interest each round; taxes your Jackpots; phase 2 swallows a hero (land a Pair to free them) | Burst damage; economy |
-| Rahu & Ketu, the Eclipse | Two bodies: Rahu darkens one reel tube each round; Ketu strikes with a blind random wheel; if their Omens drift >10% apart they rejoin and heal | **Balance damage between two targets**: Zero-Sum hits both equally |
+| Tamamo, the Nine-Tailed | 9 tails, each with its own small Balance; foxfire **illusion faces** on your wheels (show one digit, land as another); 9s curse you unless Hina is in the party | Read carefully; the Hina synergy |
+| Jin Chan, the Golden Toad | His Balance gains interest each round; taxes your Jackpots; phase 2 swallows a hero (land a Pair to free them) | Burst damage; economy |
+| Rahu & Ketu, the Eclipse | Two bodies: Rahu darkens one reel tube each round; Ketu strikes with a blind random wheel; if their Balances drift >10% apart they rejoin and heal | **Balance damage between two targets**: Zero-Sum hits both equally |
 | Archon Seventeen | Strikes digits off *your* wheels each round (Sieve of Eratosthenes); composite strikes halved | Wheel crafting; Prima's primes |
 | The House | Rewinds time every 3 rounds (your reel and charms persist); copies your last pattern; offers a mid-fight deal | Finish within one loop; read the deal |
 | Comptroller Thale | P1 Regression to the Mean · P2 Fixed Fate (wheels don't spin: a puzzle) · P3 Zero (NIL alone; companions return as Link Arts) | Everything |
@@ -206,7 +214,7 @@ Enemy pools per land with distinct wheels (kasa-obake wheels hop; Golden Koi mul
 | Prologue, fight 2 | Choose who strikes; hero wheels differ; Cascade, Zero-Sum | Vesper joins |
 | Prologue, boss | Ultimates | Vesper's Requiem saves NIL |
 | **Act I, Hyakki** | **Charms** (3 slots) and charm sets; curses (4 *shi*, 9 *ku*); Reaper's Toll; **party of 3, bonds, Link Arts** | The Seven Lucky Gods' shrine; Hina joins |
-| **Act II, River Empire** | **Coins, Markets, wheel crafting, oracle sticks, Ink** | The Luck Exchange; Judge Cui's Brush |
+| **Act II, River Empire** | **Fen economy, Markets, wheel crafting, oracle sticks, Ink** | The Luck Exchange; Judge Cui's Brush |
 | **Act III, Śūnyapura** | **Karma; Navaratna gems (pattern levels)**; NIL's **Ledger Tree** | Chitragupta's Hall; Shunya |
 | **Act IV, Kroton Nova** | **Awakenings**; number properties (prime, perfect 6 and 28, golden ratio) | The Moirai's three trials |
 | **Act V, Crossroads** | **Crossroads Deals; Wagers; loops** | The midnight crossroads |
@@ -265,7 +273,7 @@ The **Ledger Tree** (from Act III) has one branch per Seal (7), with 3–4 nodes
 | NIL verbs | Splice + Carry |
 | Bosses | Varro, Tamamo (nine tails, foxfire illusions) |
 | Keeper's Trial | Enma (optional elite) |
-| Not in jam | Economy beyond coins, oracle sticks, Ink, Karma, gems, Awakenings, Acts II–V |
+| Not in jam | Economy beyond fen, oracle sticks, Ink, Karma, gems, Awakenings, Acts II–V |
 
 ---
 

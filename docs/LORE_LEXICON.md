@@ -10,6 +10,7 @@ Use this file to keep every word, date and rule consistent across writing, art, 
 |---|---|---|
 | **The Tally** | The known world: Meridian plus the ring of lands around it | "Across the Tally"; never "the world map" in dialogue |
 | **Omen** | A soul's share of luck, 00–99, visible as a number floating over the head | Always two digits: "Omen 07", not "Omen 7". Plural: Omens. |
+| **Balance** | The luck a soul stakes in an Audit; damage drains it, and the Omen shows the share left | Gameplay term; in dialogue, "you're running low", never "HP" |
 | **NaN** | NIL's non-number glitch | Written exactly "NaN"; characters pronounce it "nan" |
 | **The Basilica** | The brass clockwork cathedral-engine in Meridian that computes every Omen | "The Basilica" (capitalised). Never "the machine" in formal speech. |
 | **The Ledger** | The merged record of every Omen held by the Basilica | Distinct from the older, local ledgers (Enma's ledger, the Book of Life and Death, Chitragupta's records, the Moirai's thread, the Black Book) |
@@ -54,9 +55,12 @@ Use this file to keep every word, date and rule consistent across writing, art, 
 | TR 0 | Meridian founded as a trading city at the centre of the Tally |
 | TR 380–690 | **The Binding**: Meridian's actuaries copy, buy or seize each land's ledger |
 | TR 702 | **The Basilica** completed; first Dawn Tally; the Rounding begins |
-| TR 960 | A Noise storm destroys Lucan Thale's street; he is 12 |
+| TR 760→ | **Ledgerism**: the Basilica's brass-and-steel style spreads through Meridian's offices and uniforms |
+| TR 850→ | **Charmpunk**: immigrant quarters fill Meridian; every culture's charms worn at once on the street |
+| TR 960 | A Noise storm destroys Lucan Thale's street; he is 12. **Remainder** style begins in the Undercity as Omens fall |
 | TR 962 | The Deficit is first measured by Śūnyapura's observatory |
 | TR 985 | Thale becomes Comptroller |
+| TR 990→ | **Gilded Fortune**: the 99s and Exchange magnates flaunt gold leaf, jade and gardens |
 | TR 999 | Thale proves the Rounding; drafts the Final Audit; signs the Seal-holders' pacts |
 | TR 1001 | Varro Kade becomes a Collector |
 | TR 1002 (present) | NIL wakes; the Naming Rite; REMAINDER DETECTED. The game begins. |
@@ -67,15 +71,15 @@ The present year is **TR 1002**, deliberately just past the round 1000.
 
 | Faction | Seat | Wants | Symbol |
 |---|---|---|---|
-| **The Basilica** (Comptroller, clerks, Ledger-priests) | Meridian | Order, the Final Audit | A gear inside a circle with a 0 |
+| **The Basilica** (Comptroller, clerks, Ledger-priests) | Meridian | Order, the Final Audit | A brass gear around the Basilica's eye (which reads as a 0) |
 | **The Collectors** | Meridian | Debts paid; bounties | A hound skull over a ledger seal |
 | **The Charm Bazaar guilds** | Meridian | Trade, survival, folk luck | A ring of mixed charms |
 | **The Yokai Courts** | Hyakki | To keep existing | Nine foxfire flames |
-| **The Luck Exchange** | Bāfā Harbor | Profit | The three-legged toad |
+| **The Luck Exchange** | Bāfā Harbor | Profit | The three-legged toad with a coin |
 | **The Ten Courts** (keepers) | Under the River Empire | The true count of the dead | The Judge's brush |
 | **The Observatory** | Śūnyapura | Truth by measurement | An astrolabe around a 0 |
-| **The Pythagorean Synod** | Kroton Nova | Purity of number | The sieve |
-| **The House** | Lucky Strike, Crossroads | The night never ending | The ouroboros |
+| **The Pythagorean Synod** | Kroton Nova | Purity of number | The tetractys (ten dots) inside a sieve ring |
+| **The House** | Lucky Strike, Crossroads | The night never ending | The ouroboros around 89 |
 
 ## 5. World rules (canon locks)
 1. Omens are always two digits and always visible to everyone, except NIL's NaN.

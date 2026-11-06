@@ -51,8 +51,10 @@ EMBLEMS = {
     "observatory": ("The Observatory", svg(f'<circle cx="60" cy="60" r="44" fill="#3F3D99"/><circle cx="60" cy="60" r="30" fill="none" stroke="{PAPER}" stroke-width="4"/>'
                                            f'<path d="M16 60 h88 M60 16 v88" stroke="#F4A300" stroke-width="3"/>'
                                            f'<ellipse cx="60" cy="60" rx="10" ry="14" fill="none" stroke="#F4A300" stroke-width="6"/>')),
-    "synod": ("The Pythagorean Synod", svg(f'<circle cx="60" cy="60" r="46" fill="#1F6FB2"/>' + "".join(
-        f'<circle cx="{x}" cy="{y}" r="5" fill="{PAPER}"/>' for x, y in [(60, 30), (45, 55), (75, 55), (30, 80), (60, 80), (90, 80), (60, 95)]))),
+    "synod": ("The Pythagorean Synod", svg(f'<circle cx="60" cy="60" r="48" fill="#1F6FB2"/>' + "".join(
+        f'<circle cx="{60 + 41 * __import__("math").cos(2 * __import__("math").pi * k / 24):.1f}" cy="{60 + 41 * __import__("math").sin(2 * __import__("math").pi * k / 24):.1f}" r="2.6" fill="#DDE6EE" stroke="none"/>'
+        for k in range(24)) + "".join(
+        f'<circle cx="{60 + (i - row / 2) * 13:.1f}" cy="{30 + row * 14}" r="5" fill="{PAPER}"/>' for row in range(4) for i in range(row + 1)))),
     "house": ("The House", svg(f'<circle cx="60" cy="60" r="42" fill="none" stroke="#C0392B" stroke-width="12"/>'
                                f'<path d="M96 40 l12 -4 l-6 12z" fill="#C0392B"/><circle cx="60" cy="60" r="22" fill="#D4AF37"/>'
                                f'<text x="60" y="69" text-anchor="middle" font-family="Big Shoulders Display,Impact" font-weight="900" font-size="24" fill="{INK}" stroke="none">89</text>')),
@@ -118,6 +120,38 @@ CHARMS = {
                      f'<path d="M86 100 q22 -6 14 -30" fill="none" stroke-width="7"/>'),
 }
 
+# ---------------------------------------------------------------- the reel, styled per land (GDD §8)
+def _tubes(x0, y0, w, h, gap, fill, digits, dfill, size=22):
+    out = ""
+    for i, d in enumerate(digits):
+        x = x0 + i * (w + gap)
+        out += f'<rect x="{x}" y="{y0}" width="{w}" height="{h}" rx="4" fill="{fill}"/>'
+        out += (f'<text x="{x + w / 2}" y="{y0 + h / 2 + size * 0.36}" text-anchor="middle" font-family="Big Shoulders Display,Impact" '
+                f'font-weight="900" font-size="{size}" fill="{dfill}" stroke="none">{d}</text>')
+    return out
+
+
+REELS = {
+    "meridian": ("Neon sign", svg(f'<rect x="8" y="30" width="104" height="54" rx="6" fill="#2E3A4B"/>' + _tubes(16, 38, 26, 38, 6, INK, "777", "#FF2E88")
+                                  + f'<path d="M30 30 v-14 M90 30 v-14" stroke-width="2"/><path d="M14 92 l8 -8 M106 92 l-8 -8" stroke="#00E5FF" stroke-width="3"/>')),
+    "hyakki": ("Torii with three lanterns", svg(f'<path d="M6 22 q54 -12 108 0 v8 q-54 -8 -108 0z" fill="#E34234"/><rect x="14" y="36" width="92" height="6" fill="#E34234"/>'
+                                               f'<rect x="20" y="30" width="8" height="84" fill="#E34234"/><rect x="92" y="30" width="8" height="84" fill="#E34234"/>'
+                                               + _tubes(31, 48, 17, 30, 4, "#F2B33D", "777", INK, 18))),
+    "river": ("Golden abacus", svg(f'<rect x="8" y="22" width="104" height="76" rx="4" fill="#B22222"/><rect x="14" y="28" width="92" height="64" fill="#E9E2D0"/>'
+                                   f'<path d="M14 46 h92" stroke-width="3"/>' + "".join(f'<path d="M{26 + k * 34} 28 v64" stroke-width="2"/>' for k in range(3))
+                                   + "".join(f'<ellipse cx="{26 + k * 34}" cy="{y}" rx="9" ry="5" fill="#D4AF37"/>' for k in range(3) for y in (38, 60, 70, 80)))),
+    "sunyapura": ("Observatory dials", svg("".join(f'<circle cx="{24 + k * 36}" cy="64" r="16" fill="#D8A86B"/><path d="M{24 + k * 36} 64 l{10 - k * 8} -12" stroke="#4B2A6B" stroke-width="3"/>'
+                                                   f'<path d="M{8 + k * 36} 64 a16 16 0 0 1 32 0" fill="none" stroke="#B5893B" stroke-width="2"/>' for k in range(3))
+                                           + f'<path d="M6 92 h108 v8 h-108z" fill="#B5893B"/><path d="M60 14 l10 18 h-20z" fill="#F4A300"/>')),
+    "kroton": ("Marble columns", svg("".join(f'<rect x="{12 + k * 36}" y="26" width="24" height="76" fill="#F4F1EA"/><rect x="{8 + k * 36}" y="18" width="32" height="8" fill="#F4F1EA"/>'
+                                             f'<rect x="{8 + k * 36}" y="102" width="32" height="8" fill="#F4F1EA"/>'
+                                             f'<text x="{24 + k * 36}" y="72" text-anchor="middle" font-family="Big Shoulders Display,Impact" font-weight="900" font-size="22" fill="#1F6FB2" stroke="none">{"257"[k]}</text>' for k in range(3)))),
+    "crossroads": ("Slot machine", svg(f'<rect x="16" y="14" width="80" height="96" rx="10" fill="#C0392B"/><rect x="22" y="20" width="68" height="14" rx="3" fill="#F2B33D"/>'
+                                       + _tubes(24, 44, 18, 32, 4, "#F4F1EA", "777", "#C0392B", 20)
+                                       + f'<path d="M96 40 h8 v-20" stroke-width="4" fill="none"/><circle cx="104" cy="16" r="6" fill="{INK}"/>')),
+    "basilica": ("The Basilica clock", svg(gear(60, 60, 52, 18, "#B5A642") + f'<circle cx="60" cy="60" r="38" fill="#E8E6E1"/>' + _tubes(27, 46, 19, 28, 3, INK, "050", NIXIE, 18))),
+}
+
 if __name__ == "__main__":
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     out = os.path.join(root, "art", "graphics")
@@ -128,4 +162,6 @@ if __name__ == "__main__":
         open(os.path.join(out, f"omen_{k}.svg"), "w").write(s)
     for k, s in CHARMS.items():
         open(os.path.join(out, f"charm_{k}.svg"), "w").write(s)
-    print("wrote", len(EMBLEMS) + len(OMENS) + len(CHARMS), "SVGs to", out)
+    for k, (_, s) in REELS.items():
+        open(os.path.join(out, f"reel_{k}.svg"), "w").write(s)
+    print("wrote", len(EMBLEMS) + len(OMENS) + len(CHARMS) + len(REELS), "SVGs to", out)

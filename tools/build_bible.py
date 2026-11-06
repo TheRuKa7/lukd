@@ -13,6 +13,8 @@ import sys
 import markdown
 from PIL import Image
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD = os.path.join(ROOT, "build")
 IMG = os.path.join(BUILD, "img")
@@ -71,107 +73,8 @@ def swatches(colors, label=None):
     return f'<div class="swatches">{head}<div class="sw-row">{cells}</div></div>'
 
 
-SHAPES = {
-    "rect_circle": '<rect x="38" y="20" width="44" height="90" rx="2"/><path d="M60 4 a14 14 0 1 1 -12 7" fill="none" stroke-width="5"/>',
-    "triangles": '<polygon points="60,8 100,70 20,70"/><polygon points="40,70 80,70 60,112"/>',
-    "circles": '<circle cx="60" cy="40" r="24"/><path d="M28 112 a32 32 0 0 1 64 0" fill="none" stroke-width="10"/>',
-    "dome": '<path d="M14 58 a46 46 0 0 1 92 0 z"/><rect x="58" y="58" width="4" height="40"/><circle cx="60" cy="104" r="10"/>',
-    "fan": '<path d="M60 108 L10 40 A70 70 0 0 1 110 40 Z"/>',
-    "vertical": '<rect x="44" y="6" width="32" height="108"/><rect x="30" y="20" width="60" height="10"/>',
-    "astrolabe": '<circle cx="60" cy="60" r="44" fill="none" stroke-width="10"/><circle cx="60" cy="60" r="8"/><line x1="16" y1="60" x2="104" y2="60" stroke-width="5"/>',
-    "shield": '<circle cx="60" cy="58" r="44"/><circle cx="60" cy="58" r="30" fill="#F2E8D5"/>',
-    "spiral": '<path d="M60 60 m0 0 a6 6 0 0 1 12 0 a12 12 0 0 1 -24 0 a20 20 0 0 1 40 0 a30 30 0 0 1 -60 0 a42 42 0 0 1 84 0" fill="none" stroke-width="6"/>',
-    "block": '<rect x="20" y="20" width="80" height="84"/>',
-    "crescent": '<path d="M90 20 a44 44 0 1 0 0 80 a34 34 0 1 1 0 -80z"/>',
-    "sphere": '<circle cx="60" cy="62" r="46"/>',
-    "column": '<rect x="48" y="4" width="24" height="112"/><rect x="36" y="4" width="48" height="8"/><rect x="36" y="108" width="48" height="8"/>',
-    "ouroboros": '<circle cx="60" cy="60" r="44" fill="none" stroke-width="10"/><circle cx="60" cy="60" r="20" fill="none" stroke-width="6"/>',
-    "arch": '<path d="M20 116 V50 a40 40 0 0 1 80 0 V116 h-16 V52 a24 24 0 0 0 -48 0 V116z"/>',
-    "eclipse": '<circle cx="54" cy="60" r="38"/><circle cx="72" cy="56" r="34" fill="#F2E8D5"/>',
-}
-
-
-def shape_svg(key, color):
-    return (
-        f'<svg class="shape" viewBox="0 0 120 120" fill="{color}" stroke="{color}" xmlns="http://www.w3.org/2000/svg">'
-        f"{SHAPES[key]}</svg>"
-    )
-
-
-CHARACTERS = [
-    # name, role, digit, land, shape, colours, art (repo path or None), locks
-    ("NIL", "Protagonist · the Remainder", "Player's choice", "Meridian Undercity", "rect_circle",
-     [("Nixie orange", "#FF7A2C"), ("Ink black", "#141018"), ("Bone white", "#EDE6DA"), ("Rim cyan", "#00E5FF")],
-     "art/concepts/nil_keyart.jpg",
-     ["Decoder on the RIGHT wrist", "One orange streak in white hair", "Halo reads exactly \"NaN\"", "Coat's left tail is longer", "Amber eyes"]),
-    ("Vesper Sette", "Gunslinger · companion", "7", "Meridian / Crossroads", "triangles",
-     [("Crimson", "#E5243B"), ("Black", "#141018"), ("Brass", "#B5A642"), ("Shirt white", "#F4F1EA")],
-     "art/concepts/vesper_keyart.jpg",
-     ["Exactly 7 chambers", "Scar on the lip", "Braid over the LEFT shoulder", "Crimson + black + brass only"]),
-    ("Maeve Triskel", "Charm-smith · companion", "3", "Meridian, Celtic quarter", "circles",
-     [("Copper", "#D9822B"), ("Clover", "#3BB273"), ("Leather", "#6B4226"), ("Red hair", "#C0392B")],
-     "art/concepts/maeve_keyart.jpg",
-     ["Exactly 3 braids", "Triskele on the hammer", "Clover pin on the collar"]),
-    ("Hina of the Ninety-Nine", "Tsukumogami · companion", "9", "Hyakki", "dome",
-     [("Vermilion", "#E34234"), ("Indigo", "#26428B"), ("Paper", "#F2E6C9"), ("Gold", "#F2B33D")],
-     "art/concepts/hina_keyart.jpg",
-     ["The umbrella has ONE eye and a tongue", "Kimono numbers stop at 99", "Never reaches 100 before the finale"]),
-    ("Ba Jinling", "Financier · companion", "8", "River Empire", "fan",
-     [("Jade", "#00A86B"), ("Gold", "#F4C430"), ("Lacquer red", "#B22222"), ("Violet eyes", "#5D3A7A")],
-     None, ["Exactly 8 bells", "Abacus-rib fan", "Jade + gold palette"]),
-    ("Bai Si", "Executioner · companion", "4", "River Empire (Ten Courts)", "vertical",
-     [("Mourning white", "#F4F1EA"), ("Ink", "#1B1B1B"), ("Talisman yellow", "#E8C547"), ("Lantern", "#F2B33D")],
-     None, ["Always 4 lanterns, 4 talismans", "White robes only", "Never smiles before Act IV"]),
-    ("Shunya", "Astronomer · companion", "0", "Śūnyapura", "astrolabe",
-     [("Indigo", "#3F3D99"), ("Saffron", "#F4A300"), ("Brass", "#B5893B"), ("Mirror silver", "#C9CED6")],
-     None, ["The brass astrolabe", "Mirror-work embroidery", "\"Zero isn't nothing.\""]),
-    ("Prima of Kroton", "Paladin · companion", "2", "Kroton Nova", "shield",
-     [("Aegean blue", "#1F6FB2"), ("White gold", "#E9DDB3"), ("Chalk", "#F4F1EA"), ("Glass blue", "#6FB7E9")],
-     None, ["Sieve shield", "2-3-5-7 halo", "Short hair"]),
-    ("Fibi Leone", "Dealer · companion", "Fibonacci", "Crossroads", "spiral",
-     [("Gold", "#F2B33D"), ("Midnight", "#1D1A3A"), ("Card white", "#F4F1EA"), ("Neon pink", "#FF2E88")],
-     None, ["1,597 nights", "Spiral irises", "Her digit changes every round"]),
-    ("Varro Kade", "Prologue boss → ally", "61", "Meridian", "block",
-     [("Rust", "#B7410E"), ("Gunmetal", "#4A4E54"), ("Debt-jar glow", "#FF7A2C"), ("Mask bone", "#E3DCCB")],
-     "art/concepts/varro_keyart.jpg", ["Hound-skull mask", "Glass debt jars", "\"61\" in red"]),
-    ("Tamamo", "Act I boss", "Nine tails", "Hyakki", "crescent",
-     [("Violet", "#8E44AD"), ("Gold", "#F4C430"), ("Foxfire cyan", "#7FDBFF"), ("White", "#F4F1EA")],
-     "art/concepts/tamamo_keyart.jpg", ["Nine tails, each tipped with a digit", "Foxfire is cold cyan-violet", "Modest court robes (paint-over)"]),
-    ("Chancellor Jin Chan", "Act II boss", "88", "River Empire", "sphere",
-     [("Gold", "#D4AF37"), ("Toad green", "#6B8E23"), ("Red", "#B22222")], None,
-     ["Three-legged toad throne", "Coins spill from his mouth"]),
-    ("Rahu & Ketu", "Act III boss", "Eclipse", "Śūnyapura", "eclipse",
-     [("Eclipse purple", "#4B2A6B"), ("Corona gold", "#F4A300"), ("Night", "#141018")], None,
-     ["Awe-inspiring, never grotesque", "Two bodies, one fight", "Cultural review required"]),
-    ("Archon Seventeen", "Act IV boss", "17", "Kroton Nova", "column",
-     [("Bronze", "#8C6A3F"), ("Chalk", "#F4F1EA"), ("Sieve white", "#DDE6EE")], None,
-     ["Bronze laurel", "Sieve staff", "Cold \"17\""]),
-    ("The House", "Act V boss", "89", "Crossroads", "ouroboros",
-     [("Ivory", "#F4F1EA"), ("Casino red", "#C0392B"), ("Gold", "#D4AF37")], None,
-     ["White suit", "Ouroboros tattoo", "Backwards pocket watch"]),
-    ("Comptroller Lucan Thale", "Final antagonist", "50 (steel)", "Meridian", "arch",
-     [("Steel white", "#E8E6E1"), ("Brass", "#B5A642"), ("Nixie", "#FF7A2C"), ("Steel", "#8E9196")],
-     "art/concepts/thale_keyart.jpg", ["Gear monocle", "Steel, never glowing, \"50\"", "Never shouts"]),
-]
-
-LANDS = [
-    ("Meridian Undercity", "Prologue · cosmopolitan capital · cyber-noir painted city",
-     [("Wet slate", "#2E3A4B"), ("Window amber", "#E8A04B"), ("Moss", "#5E7D4A"), ("Nixie", "#FF7A2C"), ("Neon yellow", "#F5E400"), ("Neon magenta", "#FF2E88"), ("Neon cyan", "#00E5FF")],
-     ["art/concepts/env_meridian_establishing.jpg", "art/concepts/env_meridian_battle_alley.jpg"]),
-    ("Hyakki", "Act I · Japanese folklore · ukiyo-e + painted night",
-     [("Indigo", "#1B2440"), ("Ink blue", "#2E4A7A"), ("Paper", "#F2E6C9"), ("Vermilion", "#E34234"), ("Lantern gold", "#F2B33D"), ("Firefly", "#9BD15A")],
-     ["art/concepts/env_hyakki_establishing.jpg", "art/concepts/env_hyakki_battle_deck.jpg", "art/concepts/env_hyakki_battle_mock.jpg"]),
-    ("The River Empire", "Act II · Chinese folk religion · gongbi gold + ink-wash underworld",
-     [("Jade", "#00A86B"), ("Ochre", "#C8963E"), ("Red lacquer", "#B22222"), ("Gold leaf", "#D4AF37"), ("Rice paper", "#E9E2D0"), ("Ink green", "#3A4A3F")], []),
-    ("Śūnyapura", "Act III · Indian myth & mathematics · miniature painting + monsoon light",
-     [("Sandstone", "#D8A86B"), ("Peacock", "#1E7B6F"), ("Saffron", "#F4A300"), ("Indigo", "#3F3D99"), ("Brass", "#B5893B"), ("Eclipse", "#4B2A6B")], []),
-    ("Kroton Nova", "Act IV · Greek myth · marble, mosaic, Aegean noon",
-     [("Chalk", "#F4F1EA"), ("Aegean", "#1F6FB2"), ("Olive", "#7A8B4A"), ("Bronze", "#8C6A3F"), ("Sky", "#D6E6F2")], []),
-    ("The Crossroads Territory", "Act V · American folklore · desert sunset + casino neon",
-     [("Rust", "#B7410E"), ("Sage", "#9CAF88"), ("Dusk violet", "#5B3E73"), ("Sunset", "#F28C28"), ("Midnight", "#1D1A3A"), ("Neon pink", "#FF2E88")], []),
-    ("The Basilica", "Finale · the machine · brass and steel",
-     [("Brass", "#B5A642"), ("Steel", "#8E9196"), ("Steel white", "#E8E6E1"), ("Nixie", "#FF7A2C"), ("Ink", "#141018")], []),
-]
+from canon import CHARACTERS, FIGURE_KEYS, LANDS  # noqa: E402  (shared with the art book)
+import figures as FIG  # noqa: E402
 
 PASS1_NOTE = "Pass 1 exploration art, in the superseded style. Kept for reference; to be redone under Art Direction v2."
 
@@ -192,7 +95,7 @@ def strong_color(colors):
 
 def character_pages():
     out = []
-    for name, role, digit, land, shape, colors, art, locks in CHARACTERS:
+    for fkey, (name, role, digit, land, shape, colors, art, locks) in zip(FIGURE_KEYS, CHARACTERS):
         sig = strong_color(colors)
         art_html = (
             f'<figure class="char-art"><img src="{web_image(art)}" alt="{html.escape(name)} concept art"><figcaption>{PASS1_NOTE}</figcaption></figure>'
@@ -211,7 +114,7 @@ def character_pages():
     {art_html}
     <div class="char-side">
       <div class="meta-row"><span>From</span><b>{html.escape(land)}</b></div>
-      <div class="shape-box">{shape_svg(shape, sig)}<div class="meta-small">Silhouette shape</div></div>
+      <div class="shape-box"><div class="fig-col">{FIG.figure(fkey)}</div><div class="fig-ink">{FIG.figure(fkey, "ink")}</div><div class="meta-small">Design figure and its silhouette (tools/figures.py). Shape language: {html.escape(shape.replace("_", " + "))}</div></div>
       {swatches(colors, "Palette")}
       <div class="locks"><div class="sw-label">Canon locks</div><ul>{lock_items}</ul></div>
     </div>
@@ -226,8 +129,13 @@ def land_pages():
         figs = "".join(
             f'<figure class="plate"><img src="{web_image(a)}" alt="{html.escape(name)} concept"></figure>' for a in arts
         )
+        keys = {"Meridian Undercity": ["art/base3d/wards_base_clay.png", "art/base3d/wards_colorkey_v1.png"],
+                "Hyakki": ["art/base3d/hyakki_pier_base_v1.png", "art/base3d/hyakki_pier_colorkey_v1.png"]}.get(name, [])
         if arts:
             figs += f'<p class="note">{PASS1_NOTE} The Hyakki pier deck plate is the usable layout for the battle stage.</p>'
+        if keys:
+            figs += "".join(f'<figure class="plate half"><img src="{web_image(k, 1200)}" alt=""></figure>' for k in keys)
+            figs += '<p class="note">3D base (clay) and flat colour key for the v2 paint pass (Art Book Production Guide §4).</p>'
         else:
             figs = '<div class="pending wide"><div class="pending-label">Environment art pending</div><p>Establishing shot and battle stage to be generated with the background suffix in Art Direction §6, using this land\'s palette and the Locations Guide.</p></div>'
         out.append(f"""
@@ -261,16 +169,18 @@ def motion_and_layouts():
 
 
 ART_STATUS = """
-<h2>Art status</h2>
+<h2>Art status (end of Nov 6)</h2>
 <table>
 <thead><tr><th>Asset</th><th>Status</th><th>Next step</th></tr></thead>
 <tbody>
-<tr><td>Art Direction v2 style frames (NIL action, Meridian dawn, Hyakki pier, battle frame)</td><td>Submitted; Higgsfield reports "submission unknown"</td><td>Reconcile with Higgsfield, then regenerate</td></tr>
+<tr><td>Art Direction v2 style frames (NIL action, Meridian dawn, Hyakki pier, battle frame)</td><td>6 paint passes stuck in Higgsfield "submission unknown"</td><td>Check credits; reconcile; then paint over the 3D bases</td></tr>
+<tr><td>3D bases and colour keys</td><td>Done: Remainder Wards, Moon Pier, line-up base</td><td>Paint pass (register A)</td></tr>
+<tr><td>Design figures for all 16 characters + 4 Meridian eras</td><td>Done (vector stand-ins, art book and model pages)</td><td>Replace with key art and turnarounds</td></tr>
+<tr><td>Graphic identity: emblems, Omen displays, charm icons, reel objects</td><td>Done (art/graphics/)</td><td>Refine by hand; reuse as UI icons</td></tr>
 <tr><td>Character key art, v2 style (16 characters)</td><td>Pending</td><td>Generate after the style frames are approved</td></tr>
-<tr><td>Meridian era comparison sheet (person / charm / Omen display × 4 eras)</td><td>Pending</td><td>First Meridian concept task</td></tr>
-<tr><td>Environment establishing + battle stage per land (7 lands)</td><td>Meridian and Hyakki explored in pass 1</td><td>Redo in v2; then the five remaining lands</td></tr>
+<tr><td>Environment establishing + battle stage per land (7 lands)</td><td>Meridian and Hyakki explored in pass 1; colour scripts for all</td><td>Redo in v2; then the five remaining lands</td></tr>
 <tr><td>Enemy sheets (Meridian, Hyakki)</td><td>Pending</td><td>3-pose sprites per enemy</td></tr>
-<tr><td>Intro cinematic shots</td><td>1 test shot done</td><td>Storyboard stills, then video</td></tr>
+<tr><td>Intro cinematic shots</td><td>2 test shots done</td><td>Storyboard stills, then video</td></tr>
 <tr><td>Turnarounds and attack key poses for jam heroes</td><td>Pending</td><td>Needed for rigs</td></tr>
 </tbody></table>
 """
@@ -287,7 +197,7 @@ def build_html():
   <div class="cover-title">ZERO&#8209;SUM:<br><span>OMEN</span></div>
   <div class="cover-sub">The World &amp; Art Bible</div>
   <div class="cover-nan">NaN</div>
-  <div class="cover-bottom">World · Lore · Lands · Characters · Art Direction · Gameplay · Production<br>Version 1 · TR 1002 · Living document: the Markdown files in <code>docs/</code> are the source of truth.</div>
+  <div class="cover-bottom">World · Lore · Lands · Characters · Art Direction · Gameplay · Production<br>Version 2 · TR 1002 · Living document: the Markdown files in <code>docs/</code> are the source of truth.</div>
 </section>
 <section class="toc">
   <h1>Contents</h1>

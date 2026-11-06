@@ -123,10 +123,11 @@ Landscape spreads, like the reference. Template: `tools/build_artbook.py` (draft
 - [ ] Hands, faces and props correct after overpaint
 - [ ] Consistent with the Character Bible's canon locks
 
-## 9. Tool status (Nov 6)
+## 9. Tool status (end of Nov 6)
 | Tool | Status |
 |---|---|
-| Higgsfield 3D Jutsu (renders) | Working (free) |
-| Higgsfield image/video generation | **Blocked**: 5 requests stuck in "submission unknown"; check credits and reconcile with Higgsfield |
+| Higgsfield 3D Jutsu (renders) | Working (free). Clay bases and colour keys done for the Remainder Wards and the Moon Pier, plus a six-figure line-up base (`art/base3d/`) |
+| Higgsfield image/video generation | **Blocked**: 6 paint passes stuck in "submission unknown"; check credits and reconcile with Higgsfield |
 | Hugging Face Spaces (FLUX Krea, Kontext, Qwen Angles, SAM3) | Available but invoke is disabled in this session's connector headers (`gradio=none`) |
+| Vector kit (`tools/graphics.py`, `tools/figures.py`) | Working: faction emblems, Omen displays, charm icons, reel objects, and flat model-sheet figures for all 16 characters and the four eras. These fill the art book's design pages until paintings land |
 | Meshy | Not connected in this session; connect via claude.ai connector settings or use the Meshy web app |

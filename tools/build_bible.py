@@ -242,6 +242,7 @@ def build_html():
     body.append(md_file("docs/GDD.md"))
     body.append(part("VIII", "Production", "From jam slice to full game."))
     body.append(md_file("docs/PRODUCTION_PLAN.md"))
+    body.append(md_file("docs/PREPRODUCTION_DOCS.md"))
     body.append(ART_STATUS)
     body.append(md_file("art/HIGGSFIELD_PROMPTS.md"))
     body.append(part("IX", "Appendix", "Writing rules and disclosures."))

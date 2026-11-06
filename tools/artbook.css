@@ -88,3 +88,11 @@ body { font-family:var(--b); color:var(--ink); font-size:10.5pt; line-height:1.4
 .charm b { font-family:var(--d); font-size:13pt; }
 .charm .land { font-family:var(--m); font-size:7.5pt; color:var(--red); letter-spacing:.1em; text-transform:uppercase; }
 .charm .eff { font-size:9pt; }
+
+.omen-svg svg { width:22mm; height:22mm; }
+.cmp-row.omen { align-items:center; }
+.charm .icon svg { width:18mm; height:18mm; flex:none; }
+.emblems { display:grid; grid-template-columns:repeat(5,1fr); gap:6mm 7mm; }
+.emblem { text-align:left; }
+.emblem .em-svg svg { width:30mm; height:30mm; }
+.emblem b { display:block; font-family:var(--d); font-size:13pt; margin-top:1mm; }

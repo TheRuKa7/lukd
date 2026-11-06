@@ -12,6 +12,9 @@ import sys
 
 from PIL import Image
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import graphics as G  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD = os.path.join(ROOT, "build", "artbook")
 IMG = os.path.join(BUILD, "img")
@@ -91,6 +94,15 @@ def tally_map():
 </svg>"""
 
 
+BASES = [
+    ("art/base3d/wards_base_clay.png", "BASE · REMAINDER WARDS", "The Wards as a canyon of stacked tenements: balconies, pipes, rope bridges, laundry lines and signs, with the Basilica's eye at the end of the street.", "STAGE 1 · 3D BASE"),
+    ("art/base3d/wards_colorkey_v1.png", "KEY · REMAINDER WARDS", "Colour key over the same base: overcast dawn after rain. Slate, ochre and moss walls, warm windows, mixed-culture laundry, brass Basilica. Nixie orange, magenta and cyan live only on the signs.", "STAGE 1b · COLOUR KEY"),
+    ("art/base3d/hyakki_pier_base_v1.png", "BASE · MOON PIER", "Hyakki's arrival pier at night: torii with the three lantern reels, stone lanterns, the moon over the sea. Deck is the battle floor; the lanterns become the reel.", "STAGE 1 · 3D BASE"),
+    ("art/base3d/hyakki_pier_colorkey_v1.png", "KEY · MOON PIER", "Colour key: indigo night, vermilion torii, lantern gold, moon cream. The paint pass adds mist, fireflies, sea glints and the night parade on the ridge.", "STAGE 1b · COLOUR KEY"),
+    ("art/base3d/lineup_base_v1.png", "BASE · LINE-UP", "Six figures of different heights and builds, slightly low camera, ready for the Remainder Wards line-up paint pass.", "STAGE 1 · 3D BASE"),
+]
+
+
 def build():
     with open(os.path.join(ROOT, "tools", "artbook.css"), encoding="utf-8") as f:
         css = f.read()
@@ -139,9 +151,9 @@ def build():
     # comparison
     cols = "".join(
         f'<div class="cmp"><div class="cmp-head" style="background:{c}">{E(n)}</div>{figure_slots(1, [86])}'
-        f'<div class="cmp-row"><span>Charm</span><div class="mini-slot"></div></div><div class="cmp-row"><span>Omen display</span><div class="mini-slot"></div></div>'
+        f'<div class="cmp-row"><span>Charm</span><div class="mini-slot"></div></div><div class="cmp-row omen"><span>Omen display</span><div class="omen-svg">{G.OMENS[k][1]}</div></div>'
         f'<div class="cmp-cap">{E(m)}</div></div>'
-        for n, m, c, *_ in eras)
+        for (n, m, c, *_), k in zip(eras, ["charmpunk", "remainder", "ledgerism", "gilded"]))
     P.append(page(f'{tab("COMPARISON")}<div class="cmp-grid">{cols}</div>'
                   f'<div class="cmp-note">Same three slots per era (a person, a charm, an Omen display), drawn side by side so the eras read as one system. First Meridian concept task.</div>', "padded"))
 
@@ -189,14 +201,34 @@ def build():
   <div class="sub">Props</div><div class="expr">{''.join('<div class="mini-slot"></div>' for _ in range(3))}</div></div>
 </div>""", "padded"))
 
+    # factions & symbols
+    meanings = {"basilica": "A gear around the Basilica's eye. Order, the Ledger, Fixed Fate.",
+                "collectors": "A hound skull on a ledger seal. Debts and bounties.",
+                "bazaar": "A ring of mixed charms around a lucky 7. Folk luck, trade, survival.",
+                "yokai": "Nine foxfire flames around a violet heart. The spirits of Hyakki.",
+                "exchange": "The three-legged money toad with a coin. Luck as profit.",
+                "ten_courts": "The Judge's brush over the river of the dead.",
+                "observatory": "An astrolabe around a zero. Truth by measurement.",
+                "synod": "The tetractys of ten dots on Aegean blue. Purity of number.",
+                "house": "The ouroboros around 89. The night that never ends."}
+    em = "".join(f'<div class="emblem"><div class="em-svg">{svg}</div><b>{E(name)}</b><div class="eff">{E(meanings[k])}</div></div>' for k, (name, svg) in G.EMBLEMS.items())
+    P.append(page(f'{tab("FACTIONS & SYMBOLS")}<div class="emblems">{em}</div>', "padded"))
+
+    # stage 1: 3D bases
+    for rel, title, text, stage in BASES:
+        if os.path.exists(os.path.join(ROOT, rel)):
+            P.append(page(f"""
+<div class="col-text">{tab(title)}<p>{E(text)}</p><p class="small"><b>Pipeline {stage.lower()}.</b> Perspective, scale and light are solved in 3D before any painting. Stage 2 paints over this render; stage 3 is the artist's overpaint (Art Book Production Guide §4).</p></div>
+<div class="col-art bleed" style="background-image:url('{img(rel)}')">{stamp(stage, "ph")}</div>""", "split"))
+
     # charms catalog
-    charms = [("Beckoning Cat", "Hyakki", "+1 fen per strike ending in your digit."), ("Daruma", "Hyakki", "Paint the second eye for ×2 Mult."),
-              ("Red Envelope", "River Empire", "+8 fen on a Jackpot."), ("Door God", "River Empire", "Parries strike back."),
-              ("Lemon & Seven Chillies", "Śūnyapura", "Cancels one curse; +7 per 7."), ("108 Beads", "Śūnyapura", "Every 108th point counts double."),
-              ("Evil-Eye Bead", "Kroton Nova", "See the enemy's next digit."), ("Fortuna's Wheel", "Kroton Nova", "Re-roll the reel once."),
-              ("Horseshoe", "Crossroads", "Your digit's cells 50% wider."), ("Seven-Come-Eleven Dice", "Crossroads", "×7 Mult on 7 or 11."),
-              ("Four-Leaf Clover", "Meridian", "1 in 4: duplicate a digit."), ("Black Cat", "Meridian", "First Bust becomes a Pair.")]
-    cards = "".join(f'<div class="charm"><div class="mini-slot"></div><div><b>{E(n)}</b><div class="land">{E(l)}</div><div class="eff">{E(e)}</div></div></div>' for n, l, e in charms)
+    charms = [("Beckoning Cat", "Hyakki", "+1 fen per strike ending in your digit.", "beckoning_cat"), ("Daruma", "Hyakki", "Paint the second eye for ×2 Mult.", "daruma"),
+              ("Red Envelope", "River Empire", "+8 fen on a Jackpot.", "red_envelope"), ("Door God", "River Empire", "Parries strike back.", "door_god"),
+              ("Lemon & Seven Chillies", "Śūnyapura", "Cancels one curse; +7 per 7.", "lemon_chillies"), ("108 Beads", "Śūnyapura", "Every 108th point counts double.", "beads_108"),
+              ("Evil-Eye Bead", "Kroton Nova", "See the enemy's next digit.", "evil_eye"), ("Fortuna's Wheel", "Kroton Nova", "Re-roll the reel once.", "fortuna_wheel"),
+              ("Horseshoe", "Crossroads", "Your digit's cells 50% wider.", "horseshoe"), ("Seven-Come-Eleven Dice", "Crossroads", "×7 Mult on 7 or 11.", "dice"),
+              ("Four-Leaf Clover", "Meridian", "1 in 4: duplicate a digit.", "clover"), ("Black Cat", "Meridian", "First Bust becomes a Pair.", "black_cat")]
+    cards = "".join(f'<div class="charm"><div class="icon">{G.CHARMS[k]}</div><div><b>{E(n)}</b><div class="land">{E(l)}</div><div class="eff">{E(e)}</div></div></div>' for n, l, e, k in charms)
     P.append(page(f'{tab("CHARMS OF THE WORLD")}<div class="charms">{cards}</div>', "padded"))
 
     P.append(page(f"""<div class="opener">{tab("DRAFT")}<div class="opener-title">ART PENDING</div>

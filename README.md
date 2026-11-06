@@ -6,6 +6,11 @@ In a world where every soul's luck floats above its head as a number, a nameless
 
 | Document | What's in it |
 |---|---|
+| [`docs/ZERO-SUM_OMEN_World_and_Art_Bible.pdf`](docs/ZERO-SUM_OMEN_World_and_Art_Bible.pdf) | **The bible in one designed PDF**: every document below plus concept art, land colour scripts and character model pages. Rebuild with `python3 tools/build_bible.py` |
+| [`docs/CHARACTER_BIBLE.md`](docs/CHARACTER_BIBLE.md) | Every character's look, voice, sample lines, bond arc, animation personality and canon locks; relationship map |
+| [`docs/LORE_LEXICON.md`](docs/LORE_LEXICON.md) | Glossary, idioms, timeline (TR years), factions, world rules, naming conventions |
+| [`docs/LOCATIONS.md`](docs/LOCATIONS.md) | One page per land: districts, key locations, little things, sound, battle stages |
+| [`docs/NARRATIVE_STYLE.md`](docs/NARRATIVE_STYLE.md) | Tone, voice rules, formatting, sample scene, UI copy, cultural care in writing |
 | [`docs/WORLD_BIBLE.md`](docs/WORLD_BIBLE.md) | World, lore, why numbers matter, lucky numbers across cultures, villain, the lands and their mythologies, cast and backstories, plot, intro, endings, cultural care |
 | [`docs/ART_DIRECTION.md`](docs/ART_DIRECTION.md) | Art direction v2, "painted world, inked people": diagnosis of pass 1, rules for backgrounds, characters, effects, colour script by land, QC checklist, prompt grammar, sources |
 | [`docs/GDD.md`](docs/GDD.md) | Combat, scoring, party and synergy, talismans, wheel crafting, acts and bosses, complexity ladder, NIL's growth, jam scope |

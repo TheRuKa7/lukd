@@ -18,12 +18,15 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import canon as C  # noqa: E402
 import figures as F  # noqa: E402
 import graphics as G  # noqa: E402
+import artbook_v1 as V  # noqa: E402
+from cast import CAST, GROUP_ORDER  # noqa: E402
+import types  # noqa: E402
 
 ROOT = C.ROOT
 BUILD = os.path.join(ROOT, "build", "artbook")
 IMG = os.path.join(BUILD, "img")
 OUT = os.path.join(ROOT, "docs", "ZERO-SUM_OMEN_Artbook_Draft.pdf")
-VERSION = "v0.4"
+VERSION = "v1.0"
 os.makedirs(IMG, exist_ok=True)
 
 E = html.escape
@@ -205,11 +208,11 @@ def build():
 
     # cover
     add(page(f"""
-<div class="cover-art" style="background-image:url('{img("art/concepts/env_meridian_establishing.jpg")}')"></div>
+<div class="cover-art" style="background-image:url('{img("art/envs/meridian_iso.png")}')"></div>
 <div class="cover-block"></div>
 <div class="cover-text"><div class="kicker">THE OFFICIAL ART BOOK OF</div><div class="title">ZERO&#8209;SUM:<br><span>OMEN</span></div><div class="kicker">DRAFT LAYOUT · {VERSION}</div>
 <div class="cover-cast">{''.join(F.figure(k, "ink") for k in HERO_KEYS)}</div></div>
-{stamp("NaN", "big")}{placeholder_note()}""", "cover"))
+{stamp("NaN", "big")}{stamp("FIRST DRAFT · 3D BLOCKOUTS", "ph")}""", "cover"))
 
     # foreword
     add(page(f"""
@@ -224,9 +227,22 @@ def build():
     contents_index = len(P)
     add("")
     sections = []
+    H = types.SimpleNamespace(img=img, tab=tab, page=page, folio=folio, chips=chips, stamp=stamp)
+
+    # Part I: fixed art spec; Part II: the world
+    sections.append(("Part I · Fixed art spec", n[0] + 1))
+    for pg in V.spec_pages(H, n[0]):
+        add(pg)
+    sections.append(("Part II · The world: Hap, luck, power, history, politics, jobs, stores", n[0] + 1))
+    wp = V.world_pages(H, n[0])
+    fac_at = len(wp) - 11
+    for i, pg in enumerate(wp):
+        if i == fac_at:
+            sections.append(("Factions and their styles", n[0] + 1))
+        add(pg)
 
     # styles
-    sections.append(("Styles: the four eras of luck", n[0] + 1))
+    sections.append(("Meridian's four eras of luck", n[0] + 1))
     add(page(f"""<div class="opener">{tab("STYLES")}<div class="opener-title">THE FOUR<br>ERAS OF LUCK</div>
 <p class="opener-sub">Meridian's styles come from its history: the binding of the ledgers, the Rounding, the Deficit. Every street mixes them; every outfit tells you which side of the Zero-Sum Law its owner lives on.</p>
 <div class="tl"><div><b>TR 702</b>Basilica completed</div><div><b>TR 760→</b>Ledgerism</div><div><b>TR 850→</b>Charmpunk</div><div><b>TR 960→</b>Remainder</div><div><b>TR 990→</b>Gilded Fortune</div><div><b>TR 1002</b>Today</div></div>
@@ -263,8 +279,12 @@ def build():
 <div class="col-art">{tally_map()}{stamp("SEALED", "red")}</div>{folio(n[0] + 1, "The Tally")}""", "split"))
 
     # Meridian
+    sections.append(("Part III · The lands", n[0] + 1))
+    add(V.part_opener(H, "III", "THE LANDS", "Seven places, seven palettes. Every land: its colour-script opener, then its 3D blockout from above, in 2.5D and from the battle camera.",
+                      [l[1] for l in V.LANDS]))
     sections.append(("Meridian · Prologue", n[0] + 1))
     add(land_page("meridian", n[0] + 1))
+    add(V.env_spread(H, "meridian", n[0] + 1))
     add(page(f"""
 <div class="col-text">{tab("MERIDIAN · REMAINDER WARDS")}<p>Stacked in the drains and cliffs beneath the plateau. The Wards began as workers' housing for the Basilica's builders and became the place where low Omens end up. Remainder scrap meets Charmpunk colour: every door wears a different culture's charm.</p>
 <p class="small"><b>What happened here:</b> the Rounding. Every fraction of luck dropped since TR 702 flowed downhill, and so did everyone who lost theirs.</p></div>
@@ -289,6 +309,7 @@ def build():
     # Hyakki
     sections.append(("Hyakki · Act I", n[0] + 1))
     add(land_page("hyakki", n[0] + 1))
+    add(V.env_spread(H, "hyakki", n[0] + 1))
     add(page(f"""
 <div class="col-text">{tab("HYAKKI · MOON PIER")}<p>Volcanic islands where humans and yokai share festivals. The pier is where the party lands: lanterns, fireflies, and the Night Parade crossing the far ridge. Its deck is the Act I battle floor; the torii's three lanterns are the reel.</p>
 <p class="small"><b>Meridian intrusion:</b> a Ledgerist toll gate on the shrine road.</p></div>
@@ -303,6 +324,7 @@ def build():
                        ("crossroads", "The Crossroads · Act V"), ("basilica", "The Basilica · Finale")]:
         sections.append((label, n[0] + 1))
         add(land_page(key, n[0] + 1))
+        add(V.env_spread(H, key, n[0] + 1))
 
     # the reel, land by land
     reels = "".join(f'<div class="reel"><div class="reel-svg">{s}</div><b>{E(nm)}</b><div class="eff">{E(C.LANDS[LAND_KEYS[k]][0])}</div></div>'
@@ -311,7 +333,9 @@ def build():
              f'<div class="reels">{reels}</div>{folio(n[0] + 1, "The lands")}', "padded"))
 
     # cast
-    sections.append(("Characters", n[0] + 1))
+    sections.append(("Part IV · The cast: 56 models, four views each", n[0] + 1))
+    add(V.part_opener(H, "IV", "THE CAST", "Every character, outfit, boss, keeper, story character and faction archetype as a first-draft 3D model, front, left, right and back at one scale.",
+                      GROUP_ORDER))
     def cast_row(keys, h_mm):
         cells = ""
         for k in keys:
@@ -326,11 +350,15 @@ def build():
     add(page(f"""
 <div class="col-art bleed full" style="background-image:url('{img("art/concepts/nil_keyart.jpg")}')"></div>
 <div class="kf-overlay">{tab("KEYFRAME · NIL")}<div class="spray">NaN?</div></div>{placeholder_note()}""", "kf"))
-    for i, k in enumerate(HERO_KEYS, start=1):
-        add(hero_sheet(k, i, n[0] + 1))
+    add(V.nil_outfits(H, n[0] + 1))
+    for group in GROUP_ORDER:
+        add(V.group_divider(H, group, n[0] + 1))
+        for c in CAST:
+            if c["group"] == group:
+                add(V.cast_page(H, c, n[0] + 1))
 
     # Auditors and keepers
-    sections.append(("Auditors and Keepers", n[0] + 1))
+    sections.append(("Part V · Reference: Auditors, symbols, charms, pipeline", n[0] + 1))
     rules = {r[0].split(",")[0]: r[1] for r in C.md_table("docs/GDD.md", "### 4.3")}
     boss_rule_key = {"varro": "Varro", "tamamo": "Tamamo", "jin_chan": "Jin Chan", "rahu_ketu": "Rahu & Ketu", "archon": "Archon Seventeen",
                      "house": "The House", "thale": "Comptroller Thale"}
@@ -343,7 +371,6 @@ def build():
 <div class="keepers"><b>Keepers, not villains.</b> Enma (Hyakki) · Judge Cui (the Ten Courts) · Chitragupta (Śūnyapura) · the Moirai (Kroton Nova) · the Stranger (the Crossroads). Shown with reverence, never as monsters; they test the party and are never "defeated", only satisfied (World Bible §10).</div>{folio(n[0] + 1, "Auditors")}""", "padded"))
 
     # factions & symbols
-    sections.append(("Factions, symbols and charms", n[0] + 1))
     meanings = {"basilica": "A brass gear around the Basilica's eye, which reads as a 0. Order, the Ledger, Fixed Fate.",
                 "collectors": "A hound skull on a ledger seal. Debts and bounties.",
                 "bazaar": "A ring of mixed charms around a lucky 7. Folk luck, trade, survival.",
@@ -366,7 +393,6 @@ def build():
     add(page(f'{tab("CHARMS OF THE WORLD")}<div class="charms">{cards}</div><div class="cmp-note">Rules quoted from GDD §3.1. Twelve of the ~90 planned; sets by land grant set bonuses.</div>{folio(n[0] + 1, "Charms")}', "padded"))
 
     # pipeline
-    sections.append(("How an image is made", n[0] + 1))
     def stage_cell(rel, label):
         if rel:
             return f'<div class="pl-cell"><div class="pl-img" style="background-image:url(\'{img(rel, 1000)}\')"></div><div class="cap">{E(label)}</div></div>'
@@ -386,7 +412,7 @@ def build():
     items = "".join(f'<li><span>{E(t.rstrip("."))}</span><em>{E("stand-in: " + standins[i]) if i in standins else "pass-1 placeholder"}</em></li>'
                     for i, t in enumerate(first12))
     add(page(f"""<div class="opener">{tab("DRAFT " + VERSION)}<div class="opener-title">ART PENDING</div>
-<p class="opener-sub">This draft sets the layout grammar and the design system. The paintings fill in as register-A concept art is produced, starting with these twelve (Art Book Production Guide §7). Rebuild with python3 tools/build_artbook.py.</p>
+<p class="opener-sub">v1.0 is complete as a design bible: every character and land exists as a first-draft 3D blockout at true scale with fixed specs. The register-A paintings fill in over these exact models and cameras, starting with these twelve (Art Book Production Guide §7). Rebuild: python3 tools/build_artbook.py (renders: tools/render_cast.py, tools/build_envs.py, tools/postprocess_renders.py).</p>
 <ol class="first12">{items}</ol></div>""", "dark"))
 
     # contents page

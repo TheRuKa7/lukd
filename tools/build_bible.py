@@ -229,6 +229,7 @@ def build_html():
 </div></div>""")
     body.append(part("II", "The world", "Why numbers matter, the god of luck, and who wants to freeze fate forever."))
     body.append(md_file("docs/WORLD_BIBLE.md"))
+    body.append(md_file("docs/WORLD_ENCYCLOPEDIA.md"))
     body.append(part("III", "The story", "From a NaN in the rain to the Open Hand: every act, every boss, every bond."))
     for f in ["STORY", "ACT_DESIGN", "BESTIARY", "BOND_ARCS"]:
         body.append(md_file(f"docs/{f}.md"))
@@ -242,6 +243,7 @@ def build_html():
     body.append(md_file("docs/CHARACTER_BIBLE.md"))
     body.append(part("VII", "Art direction", "Painted world, inked people."))
     body.append(md_file("docs/ART_DIRECTION.md"))
+    body.append(md_file("docs/ART_SPEC.md"))
     body.append(motion_and_layouts())
     body.append(part("VIII", "Gameplay", "One verb, deep consequences."))
     for f in ["GDD", "SYSTEMS", "TUNING", "ECONOMY_PROGRESSION", "GAME_FEEL", "FIRST_10_MINUTES", "UX_SPEC", "PLAYER_EXPERIENCE"]:

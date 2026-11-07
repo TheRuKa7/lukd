@@ -17,8 +17,10 @@ VIEWS = ["front", "left", "right", "back"]
 
 
 def bbox(im):
+    """Content box, ignoring the outermost 4 px (the render frame's edge can carry a 1 px outline)."""
     diff = ImageChops.difference(im, Image.new("RGB", im.size, BG)).convert("L").point(lambda v: 255 if v > 12 else 0)
-    return diff.getbbox()
+    inner = diff.crop((4, 4, im.width - 4, im.height - 4)).getbbox()
+    return None if inner is None else (inner[0] + 4, inner[1] + 4, inner[2] + 4, inner[3] + 4)
 
 
 def quant(im, colours=192):
@@ -58,5 +60,30 @@ def main():
             quant(im, 256).save(path, optimize=True)
 
 
+def refit_full_width():
+    """Re-trim views that hit the full cell width (from the frame-edge line) and rebuild their turnaround rows."""
+    vdir = os.path.join(ROOT, "art", "cast", "views")
+    keys = sorted({os.path.basename(p).rsplit("_", 1)[0] for p in glob.glob(os.path.join(vdir, "*_front.png"))})
+    for key in keys:
+        ims = [Image.open(os.path.join(vdir, f"{key}_{v}.png")).convert("RGB") for v in VIEWS]
+        if max(im.width for im in ims) < 620:
+            continue
+        out = []
+        for v, im in zip(VIEWS, ims):
+            b = bbox(im)
+            crop = im.crop((max(0, b[0] - 16), 0, min(im.width, b[2] + 16), im.height - 4)) if b else im
+            quant(crop).save(os.path.join(vdir, f"{key}_{v}.png"), optimize=True)
+            out.append(crop)
+        gap = 24
+        row = Image.new("RGB", (sum(v.width for v in out) + gap * 3, out[0].height), BG)
+        x = 0
+        for v in out:
+            row.paste(v, (x, 0))
+            x += v.width + gap
+        quant(row).save(os.path.join(ROOT, "art", "cast", "turnarounds", f"{key}.png"), optimize=True)
+        print("refit", key)
+
+
 if __name__ == "__main__":
     main()
+    refit_full_width()

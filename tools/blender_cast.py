@@ -371,9 +371,9 @@ def prop(b, p, A, c):
             b.sph(0.02, (ox + s * W * 0.19, oy - 0.02, 0.16), col)
     elif t == "guandao":
         x = ox - W * 0.8
-        b.rod((x, oy, 0.02), (x, oy, H + 0.3), 0.022, "#3A2E28")
-        b.box((0.07, 0.03, 0.42), (x - 0.07, oy, H + 0.42), col, rot=(0, 0.25, 0))
-        b.sph(0.05, (x, oy, H + 0.18), "#B22222")
+        b.rod((x, oy, 0.02), (x, oy, H + 0.12), 0.022, "#3A2E28")
+        b.box((0.07, 0.03, 0.38), (x - 0.07, oy, H + 0.22), col, rot=(0, 0.25, 0))
+        b.sph(0.05, (x, oy, H + 0.02), "#B22222")
         for k in range(4):
             b.box((0.05, 0.004, 0.12), (x + 0.05, oy - 0.02, H - 0.05 - k * 0.15), "#E8C547")
     elif t == "lanterns4":
@@ -528,8 +528,8 @@ def build(b, c):
             cc["look"] = dict(L, props=[["guandao", "#8C6A3F"]] if head == "ox" else [])
             A = human(b, cc, ox=x, H=c["h"], W=c["w"], head=head)
             if head == "horse":
-                b.rod((A["LH"][0] + 0.15, 0, 0.02), (A["LH"][0] + 0.15, 0, c["h"] + 0.25), 0.022, "#3A2E28")
-                b.box((0.06, 0.03, 0.35), (A["LH"][0] + 0.2, 0, c["h"] + 0.4), "#8C6A3F")
+                b.rod((A["LH"][0] + 0.15, 0, 0.02), (A["LH"][0] + 0.15, 0, c["h"] + 0.1), 0.022, "#3A2E28")
+                b.box((0.06, 0.03, 0.3), (A["LH"][0] + 0.2, 0, c["h"] + 0.22), "#8C6A3F")
     elif body == "hap":
         H = c["h"]
         b.cyl(0.62, 0.3, 0.0, H * 0.82, "#141026", sy=0.7, seg=28)

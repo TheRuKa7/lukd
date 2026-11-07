@@ -123,7 +123,11 @@ Landscape spreads, like the reference. Template: `tools/build_artbook.py` (draft
 - [ ] Hands, faces and props correct after overpaint
 - [ ] Consistent with the Character Bible's canon locks
 
-## 9. Tool status (end of Nov 6)
+## 9. Tool status
+
+**Nov 7 update:** Blender 5.2 now runs locally (`pip install bpy==5.2.3`, headless via Mesa EGL), so 3D blockouts no longer depend on 3D Jutsu: all 56 character models and 7 lands are built and rendered by `tools/render_cast.py` and `tools/build_envs.py` and laid out in art book v1.0. Higgsfield paid paint passes are still blocked (6 requests in "submission unknown").
+
+### Nov 6
 | Tool | Status |
 |---|---|
 | Higgsfield 3D Jutsu (renders) | Working (free). Clay bases and colour keys done for the Remainder Wards and the Moon Pier, plus a six-figure line-up base (`art/base3d/`) |

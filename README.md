@@ -10,7 +10,7 @@ Hard deadline: **Sat 14 Nov 2026, 12:00 UTC.** A WebGL build is required.
 | | |
 |---|---|
 | [`docs/ZERO-SUM_OMEN_World_and_Art_Bible.pdf`](docs/ZERO-SUM_OMEN_World_and_Art_Bible.pdf) | **Everything in one designed PDF.** Rebuild with `python3 tools/build_bible.py` |
-| [`docs/ZERO-SUM_OMEN_Artbook_Draft.pdf`](docs/ZERO-SUM_OMEN_Artbook_Draft.pdf) | 39-page art book draft (v0.4). Rebuild with `python3 tools/build_artbook.py` |
+| [`docs/ZERO-SUM_OMEN_Artbook_Draft.pdf`](docs/ZERO-SUM_OMEN_Artbook_Draft.pdf) | **Art book v1.0** (~130 pages): fixed art spec; the world (Hap, logic of luck, schools of power, history, politics, jobs, stores, 11 faction style pages); every land as a 3D blockout from above, in 2.5D and from the battle camera; all 56 character models front/left/right/back. Rebuild with `python3 tools/build_artbook.py` |
 | [`docs/PREPRODUCTION_DOCS.md`](docs/PREPRODUCTION_DOCS.md) | Which docs exist, what each must answer, and what is still to verify in production |
 | [`prototype/index.html`](prototype/index.html) | Browser prototype of the core verb: tap/Space to stop a number; tap a hero or press 1/2/3 |
 
@@ -23,6 +23,7 @@ Hard deadline: **Sat 14 Nov 2026, 12:00 UTC.** A WebGL build is required.
 | [`BESTIARY.md`](docs/BESTIARY.md) | Every enemy, elite, keeper and boss: wheels, rules, phases, telegraphs, ultimates |
 | [`CHARACTER_BIBLE.md`](docs/CHARACTER_BIBLE.md) | Every character's look, voice, arc and canon locks; secret recruits; side characters by region; Hap's depiction rules |
 | [`BOND_ARCS.md`](docs/BOND_ARCS.md) | 4-scene bond arcs for 11 companions, Hap's Dreams, the dialogue database format |
+| [`WORLD_ENCYCLOPEDIA.md`](docs/WORLD_ENCYCLOPEDIA.md) | How the world works: the logic of luck, the six schools of power and how people use them, factions and their styles, jobs, money, law, transport, stores, politics, full timeline |
 | [`LORE_LEXICON.md`](docs/LORE_LEXICON.md) | Glossary, idioms, timeline, factions, world rules, naming |
 | [`LOCATIONS.md`](docs/LOCATIONS.md) | One page per land: districts, locations, little things, sound |
 | [`NARRATIVE_STYLE.md`](docs/NARRATIVE_STYLE.md) | Tone, voice, formatting, UI copy |
@@ -42,9 +43,11 @@ Hard deadline: **Sat 14 Nov 2026, 12:00 UTC.** A WebGL build is required.
 ## Art
 | Doc | What's in it |
 |---|---|
+| [`ART_SPEC.md`](docs/ART_SPEC.md) | **Fixed art spec**: scale, proportions, turnaround standard, line/shading/colour numbers, faction costume keys, cameras, battle stage, light per land, 3D pipeline, QC |
 | [`ART_DIRECTION.md`](docs/ART_DIRECTION.md) | "Painted world, inked people"; colour scripts; QC; prompt grammar; the four eras of luck |
 | [`ARTBOOK_PRODUCTION.md`](docs/ARTBOOK_PRODUCTION.md) | How to reach art-book quality: the 3D base → paint → overpaint pipeline, spread list, first 12 images |
 | [`ASSET_LIST.md`](docs/ASSET_LIST.md) | Every jam asset with specs, owners and due days |
+| [`art/cast/`](art/cast/) · [`art/envs/`](art/envs/) | **3D blockouts**: 56 character models (front/left/right/back renders + `zso_cast_blockout.blend`, from `tools/cast.py` via `tools/render_cast.py`) and 7 lands (top/2.5D/front renders + `zso_envs_blockout.blend`, `tools/build_envs.py`). Needs `pip install bpy==5.2.3` |
 | [`art/graphics/`](art/graphics/) · [`art/base3d/`](art/base3d/) | Vector identity kit and design figures; 3D bases and colour keys |
 | [`art/HIGGSFIELD_PROMPTS.md`](art/HIGGSFIELD_PROMPTS.md) | Prompt pack |
 

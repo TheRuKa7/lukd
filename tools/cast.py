@@ -160,7 +160,7 @@ CAST = [
          spec="A tall figure at the midnight crossroads with a long dusty coat, a wide hat and the black book. Fair, patient, never a devil.",
          locks=["Never a villain", "American consultant review of the blues crossroads legend"]),
     dict(key="oxhead_horseface", group="Keepers", name="Ox-Head and Horse-Face", role="Wardens of the Ten Courts (trial)", land="River Empire", digit="—", omen="—",
-         h=2.15, w=0.60, skin="#6B4226", eyes="#B22222", palette=[("Bronze", "#8C6A3F"), ("Ink", "#1B1B1B"), ("Lacquer", "#B22222")],
+         h=2.05, w=0.60, skin="#6B4226", eyes="#B22222", palette=[("Bronze", "#8C6A3F"), ("Ink", "#1B1B1B"), ("Lacquer", "#B22222")],
          look=dict(body="duo", top=["armor", "#1B1B1B", 0.7, 1.1], inner="#B22222", legs="#1B1B1B", shoes=INK, belt="#8C6A3F", props=[["guandao", "#8C6A3F"]]),
          spec="Two towering wardens with an ox's head and a horse's head, in black lamellar armour, carrying halberds. A trial, not villains.",
          locks=["Always a pair", "Shown as guardians, never demons"]),

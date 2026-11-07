@@ -1,67 +1,61 @@
-# ZERO-SUM: OMEN — Economy and Progression (Gate B3)
+# ZERO-SUM: OMEN — Economy and Progression
 
-The full-game model behind [`TUNING.md`](TUNING.md) (jam). Build power must grow faster than linear stats so that synergy, not grinding, wins (GDD §4.2).
+Updated 7 November 2026 IST. [DECISIONS.md](DECISIONS.md) D 06 is adopted policy. Full-game numbers below are **hypotheses**, not a validated economy. Jam has one free charm choice, no fen/shop/crafting/act reset.
 
----
+## 1. Persistent and transient layers
 
-## 1. Progression layers
+| Layer | Progression | Carryover |
+|---|---|---|
+|Party level |Shared XP, +10 fixed strike base/level, cap 30 |Permanent; level 2 at jam Varro |
+|Roster |Eight core+three secret companions+NIL |Unlock journal; required recruits get catch-up route |
+|NIL verbs/tree |Story milestones/memory IDs |Permanent; each ability separately gated |
+|Narrative bonds |Four authored stages/companion |Permanent stage flags; not mathematical resonance bonds |
+|Awakening |Act IV branch, respec at shrines |Chosen branch saved |
+|Wheel modifications |Validated face removals/enhancements |Keep across acts |
+|Gem levels |Authored pattern upgrades |Keep across acts |
+|Party charms |Owned IDs; slots 3→6 |Select 3 active at act transition, stash all other owned charms; later camps may re-equip to unlocked slots |
+|Personal gear |One authored item/hero |Separate from party slots and set counts |
+|Fen |Node rewards and bounded interest |floor (fen/2) per act |
+|Karma |Defence/Zero-Sum resource after unlock |floor (0.75×Karma) per act |
 
-| Layer | Grows by | Resets? | Where |
-|---|---|---|---|
-| Party level | XP from fights (cap 30) | No | Tens +10 per level |
-| NIL's verbs | Story (one per act) | No | GDD §6 |
-| Companions | Story + secret quests | No | 8 core + 3 secret |
-| Bonds | Teahouse scenes (4 per hero) | No | Second passive, Link Art upgrade, true-ending flag |
-| Awakenings | Act IV choice per hero | No (respec at Act IV shrines) | SYSTEMS §5 |
-| Ledger Tree | Memory digits from Seals and side quests | No | 7 branches |
-| Charms, faces, gems | Fen, rewards, shrines | **Per act** (see §4) | The build |
-| Fen | Fights, interest, gold faces | Per act (half carries) | Markets |
-| Karma | Parries, Zero-Sums | Decays 25% per act | Śūnyapura+ |
+Choosing ferry keeps is an equipment choice, not permanent deletion. No gem/face reset is implied by shorthand “mini-run.” Endless mode is a separate future mode with explicit per-run reset and no campaign save mutation.
 
-## 2. Enemy Balance curve (GDD §4.2, exponential)
+## 2. Power curve and validation requirements
 
-| Act | Small | Big | Boss | Party level (expected) | Expected Mult needed |
-|---|---|---|---|---|---|
-| Prologue | 300 | 500 | 1,200 | 1–2 | ~2.5 |
-| I | 1,500 | 2,500 | 6,000 | 3–4 | ~4 |
-| II | 8,000 | 14,000 | 35,000 | 6–8 | ~10 |
-| III | 50k | 90k | 200k | 10–12 | ~35 |
-| IV | 300k | 600k | 1.5M | 14–17 | ~150 |
-| V | 2.5M | 5M | 12M | 19–22 | ~700 |
-| Finale | — | — | 99,999,999 | 24–26 | ~3,000 (over Phase 3 with Link Arts) |
+| Segment |Small/Big/Boss Balance |Expected level |
+|---|---|---|
+|Prologue |300/500/1200 |1–2 |
+|Hyakki |1500/2500/6000 |3–4 |
+|River |8000/14000/35000 |6–8 |
+|Śūnyapura |50000/90000/200000 |10–12 |
+|Kroton |300000/600000/1500000 |14–17 |
+|Crossroads |2500000/5000000/12000000 |19–22 |
+|Finale |99,999,999 totalphasepool hypothesis |24–26 |
 
-Linear tens alone give ~5× damage from Prologue to finale; Balances grow ~80,000×. The rest must come from Mult: patterns × gems × charms × bonds × Link Arts. That is the Balatro curve and the reason builds matter.
+At level 25, three bases near 250 do not by themselves prove that Mult 3000 defeats a 99,999,999 pool in ten rounds:750×3000≈2.25 million/round before mechanics. A full fight/phase model is required. No “synergy build must pass, plain build must fail” result is claimed. Test legal parties including NIL, all chosen digits, ordinary/strong/poor offers, actual passives, defence and encounter retry. Treat Hina/wilds/extra turns, permanent face changes and next-round boosts as priority outliers.
 
-## 3. Fen economy (per act)
+## 3. Future fen budget
 
-| Source | Fen |
-|---|---|
-| Small / Big / Elite / Boss | 8 / 15 / 25 / 40 (+50% per act) |
-| Interest | 1 per 5 held, cap 5 (Jinling's Bank of Bells removes the cap) |
-| Gold faces | +3 per stop |
-| Whispers, side quests | 5–30 |
+Candidate first-act rewards: Small 8, Big 15, Elite 25, Boss 40. Prices: common 6, rare 12, legendary 25; remove 5, duplicate 8, enhance 8, gem 10, stick 4; reroll 3+reroll index. Gate F-ECON must fix node availability, payout order and per-node limits before activation. Candidate interest=floor (held Fen/5), cap 5, once after a rewarded combat node; upgrades may change explicit caps but never pay on UI reopen, retry or wall-clock ticks.
 
-| Sink | Price (Act I → V) |
-|---|---|
-| Common / rare / legendary charm | 6 / 12 / 25 → ×1.5 per act |
-| Re-roll a Market | 3, +1 each re-roll in the same Market |
-| Face removal / duplicate / enhancement | 5 / 8 / 8 |
-| Oracle stick | 4 |
-| Gem | 10 |
-| Wager | any |
+The old 45 fen “rare OR two enhancements” example was false:12+8+8=28. Do not imply scarcity from it. Example budget trace at 20 fen: rare 12 leaves 8, two enhancements 16 leaves 4, both cost 28 and are unavailable together. This is illustrative arithmetic, not a measured route. Before enabling markets, enumerate every guaranteed/optional faucet and sink in the act and expose the opportunity cost of the actual offer.
 
-**Rule of thumb:** each Market should offer one thing the player wants and can't quite afford. Expected fen at each Market ≈ 1.2× the price of one rare item.
+Inflation candidate is×1.5 per later act for reward and base-price schedules, floor once per transaction. Keep price/reward tables explicit to avoid ambiguous “+50%per act” compounding. Market reroll price resets only on a new market ID; offers/deductions are transactional. Gold-face and charm income cannot retrigger their own source. Wagers require visible stakes and a safe decline; no real-money gambling or purchases are required.
 
-## 4. What resets between acts (the roguelite spine)
-Within the **story campaign**, each act is a mini-run: your **charms and face enhancements carry over**, but you choose which **3 charms** to keep at each act's end ("pack light: the ferry only takes three"); fen halves; Karma decays 25%. This keeps each act's build fresh and each new land's charm set relevant, without throwing away the player's work. In the **Endless Ledger**, everything resets per run.
+## 4. Save, defeat and idempotence
 
-## 5. Difficulty and losing
-- **Losing a fight** returns you to the act's start **with the build you had there** plus any memory digits earned (never a total loss).
-- **Assist mode** (any time): wheels −30%, enemy Balance −25%.
-- **Omen Levels 1–8** (post-game): +25% enemy Balance per level, faster enemy wheels, harsher Land Laws, fewer Shops, no Hap's Hand at level 8.
+Campaign defeat restores **complete act-start gameplay snapshot**: active/equipped/owned/stashed items, face modifications, gems, fen, Karma, levels/XP, tree spending, active party and RNG state. Permanent narrative/unlock journal evidence is reconciled idempotently by unique event/reward IDs. A story unlock may remain known without paying the same memory/XP/fen reward twice. Reconciliation must define each retained event's gameplay consequence; no generic “keep all rewards” exception.
 
-## 6. Unlock cadence (something new every ~15 minutes)
-Prologue: patterns, parry, charms · Act I: party of 3, bonds, Link Arts, curses · Act II: fen economy, wheel crafting, sticks, Ink · Act III: Karma, gems, Ledger Tree · Act IV: Awakenings, number properties · Act V: Deals, Wagers, loops · Finale: everything, then taken away · Post-game: Endless Ledger, Omen Levels, Daily Omen, Hap's Gallery, New Game+.
+A snapshot is versioned, immutable and checksummed. Retry does not regenerate offers, earn repeated entry rewards or duplicate recruits. Provide a safe restart/catch-up route after migration failure. Jam instead restores its encounter checkpoint, selected charm and full stake; no act boundary economy exists.
 
-## 7. Validation
-Extend `tools/sim_patterns.py` into a run simulator (party + charms + gems) and check that a "no synergy" build fails the Act III boss while a "synergy" build passes it with ~10 rounds. Tune boss Balances, not pattern mults, first.
+## 5. Difficulty and accessibility
+
+Jam assist baseline slows wheels×0.7; any enemy-Balance reduction must be separately specified, visible and tested before being offered. Full-game Story Mode may reduce enemy stake and retry a round without loss, but uses a distinct save/mode flag; it cannot corrupt normal-mode achievements. Future Omen Levels 1–8 require explicit per-level data and testing. Removing Hap's Hand at a top challenge tier is opt-in challenge design, not an accessible default.
+
+## 6. Unlock cadence and campaign time
+
+Critical path 315 minutes:35/45/50/50/45/50/40 by segment. Optional content 45–105 minutes gives 6–7 hours as a hypothesis. Jam 10–15 minutes is separate. Measure learn/test/combine beats, rest scenes and optional-character interruptions; do not promise a universal new mechanic every 15 minutes. Each new companion/region must prove its F-KIT/content/save gates before another is mass-produced.
+
+## 7. Balance-check findings and gates
+
+Health: **CONCERNS — specified curve without fight/economy validation**. Corrected defects: invalid affordability example, unclear act resets, illegal non-NIL comps and duplicated baseline upgrades. Remaining production evidence: XP/reward node table, full fight simulator, legal-party win/round distributions, market budget trace, player difficulty and carryover UX. No parameter is declared balanced from a pattern-only Monte Carlo model. Current reproducible checks are TUNING §4 and tests/; no full-game balance certificate exists.

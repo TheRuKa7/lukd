@@ -1,40 +1,33 @@
-# ZERO-SUM: OMEN — Accessibility Plan (Gate B9)
+# ZERO-SUM: OMEN — Accessibility plan
 
-A timing game must be playable by everyone. The jam baseline is in [`UX_SPEC.md`](UX_SPEC.md) §6–§7; this is the full-game plan, checked against the Game Accessibility Guidelines and the Xbox Accessibility Guidelines.
+Updated 7 November 2026 IST. This is a **specified testable contract**, not a claim of guideline certification or completed accessibility testing. Jam baseline is UX_SPEC §6; broader features are gated expansion. No AI-only production rule removes player validation.
 
----
+## 1. Motor and input
 
-## 1. Motor
-| Option | What it does |
-|---|---|
-| **Assist speed** | Wheels −30% / −50% / −70% |
-| **Hold-to-stop** | Press and release instead of a tap; stop on release |
-| **Auto-stop on your digit** | Wheels stop themselves on the hero's lucky digit (pure strategy mode); patterns still matter |
-| **Input remapping** | Every action rebindable; one-switch mode (a single button cycles heroes and stops) |
-| **No simultaneous inputs** | Nothing in the game needs two buttons at once |
-| **Timing window display** | Optional: a soft ring shows when the aimed face is under the stop line |
+Jam: mouse-only/touch-only/keyboard-only path; no simultaneous inputs; assist speed×0.7; hold-to-stop (press/release) alternative; pausing during spin; visible Skip/Fast controls during presentation. No essential action requires a long hold or hover. Focusloss freezes the gameplay clock and clears stale presses. Resume waits for deliberate input. Verify button targets at actual embedded size and repeated/tremor input.
 
-## 2. Vision
-- **Colour-safe digits**: every pattern colour also has a shape (dot, ring, chevron, star) and a word.
-- Colour-blind presets (protanopia, deuteranopia, tritanopia) for land palettes' key cues; tested with simulators.
-- Text size 100–200%; high-contrast UI mode; damage-number size option.
-- Screen-reader support for menus (Unity accessibility plugin / OS text-to-speech) post-launch.
+Expansion gate A-MOTOR: rebind all actions, slower tiers×0.5/0.3, one-switch scanning and an explicit strategy stop mode. Strategy mode lets the player select an available face from the actual wheel, rather than always stopping the hero's own digit (which can produce worse patterns). It uses the same scoring and no hidden probability boost. Acceptance: independent players can complete the critical path in the chosen mode; exact accepted outcomes/replays remain valid. Settings unavailable in a build are not advertised as working.
+
+## 2. Vision and reading
+
+Patterns use word+shape+colour; party/identity frames distinguish NaN, resonance and Audit stake. Textscale 100/125/150%jam;200%and high-contrast palette expansion. Preserve layout/focus without obscuring the stop line. Information available on hover is also available through focus and a visible Help route. Test tabular digits, small screens, colour simulators and actual low-vision feedback when available; a simulator is not community sign-off.
+
+Screen-reader support is an explicit expansion gate A-READER: selected Unity accessibility API/package validated against the installed Editor/platform, named controls, focusorder, live combat/result announcements and no repeated speech every scrolling face. It is not promised as implemented at launch without platform tests. Do not insert an unverified third-party plugin into required jam scope.
 
 ## 3. Hearing
-- Subtitles on by default, with speaker names and [sound captions] for meaningful sounds ("[four bells toll]").
-- Every audio cue has a visual cue (pattern banners, the Open Hand sigil lights, telegraph icons).
-- Separate volume sliders; mono audio option.
 
-## 4. Cognitive
-- **Codex** with a GIF for every mechanic; **recap** card when resuming a save.
-- Hold on any object for its rule (two lines); never timed text.
-- **Story mode**: assist speed + enemy Balance −50% + no game over (Settle → retry the round).
-- Pause anywhere, including during cinematics.
+Subtitles on by default, speaker names and captions for rule-relevant sounds. Every telegraph has a visual label/icon; the stop/result is understandable muted. Separate master/music/SFXcontrols for jam; voice and mono controls become required only when those assets/routes exist. Subtitles survive skip/fastmode without changing story flags.
 
-## 5. Photosensitivity and motion
-- No more than 3 flashes per second; full-screen flashes below the luminance threshold; validated with a PEAT-style tool on every cinematic.
-- **Reduced Motion** turns off camera shake, slow-mo, full-screen flashes and parallax wobble; shortens cinematics.
-- Screen-shake intensity slider.
+## 4. Cognitive and timing
 
-## 6. Testing
-Include disabled players in playtests from the full slice onward (motor, low vision, deaf/hard of hearing). Log issues in the QA tracker with the tag `a11y`.
+Teach one rule at a time, demonstrate and test before combination. No timed reading/choice, no mandatory manual before the first action. Pause anywhere safe including cinematics; checkpoint retry and short resume recap. Explain Varro's stored digit/substitution/counter numerically. Assistance can change during a fight as a recorded settings event, with no mid-input silent phase jump.
+
+Future Story Mode uses explicit data: slower selectable speeds, enemy stake reduction and loss→roundretry; separate mode flag and tested save/reward policy. No central story resolution requires perfect timing or a secret post-ending recruit. A codex is useful only after entries and accessible navigation are implemented.
+
+## 5. Motion and photosensitivity
+
+Reduced Motion disables shake, full-screen flashes, camera spins, parallax wobble and slow-motion; shortens noninteractive reveals. Screen-shake/flash intensity can be adjusted independently. Effects cannot hide accepted digits. Do not treat “≤3 flashes/second” as sufficient safety validation: area/luminance/contrast/pattern also matter. Record analysis tool/version/settings and capture results for each final effect/cutscene. Until performed, status is unverified; no medical/safety certification is claimed.
+
+## 6. Acceptance evidence
+
+QA records input mode, device/browser, setting values, capture and failure/recovery steps. Cover 150%text, muted play, reduced motion, held input/focus loss, repeats, slow-frame conditions and iframe embedding. Invite relevant disabled-player feedback as validation when possible, without outsourcing required asset/code production. Log gaps precisely; do not infer accessibility from a written checkbox. QUALITY_BAR controls release evidence.

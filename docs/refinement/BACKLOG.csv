@@ -1,0 +1,36 @@
+id,phase,priority,work_item,depends_on,acceptance_evidence
+J01,Jam,P0,Reconcile scoring priority defence Favour legal wheels and lucky-zero rules,,One versioned decision table resolves each conflict and identifies authoritative values
+J02,Jam,P0,Correct reference fixtures and simulator model,J01,Exact expected state for all patterns overlaps and legal-face boundary cases; documented model limits
+J03,Jam,P0,Create Unity project using verified installed editor,J01,ProjectVersion and package lock committed; clean import has no compile errors
+J04,Jam,P0,Prove Unity Web build in itch embed,J03,Fresh-browser boot audio input and fonts verified; build command and logs retained
+J05,Jam,P0,Implement pure deterministic combat core,J02;J03,Fixtures pass for scoring Omen lucky0 defence Favour and replay; no Unity dependencies in Core
+J06,Jam,P0,Stage one correct readable Audit,J04;J05,NIL Vesper and Debt Hound fight completes in Web build with exact accepted digits and responsive feedback
+J07,Jam,P0,Add pause settings skip restart and storage fallback,J06,Mid-sequence skip/pause/restart preserve rules; keyboard and pointer work; blocked save does not crash
+J08,Jam,P0,Validate first fight and lock game-frame style,J06;J07,Measured input/frame/load data and one coherent gameplay capture; first-player feedback labeled separately
+J09,Jam,P0,Implement interactive Rain Alley and Naming,J08,First action within20s and lucky choice within60s from Start; Remainder reveal by3min; Ama01to07 visibly debits an existing luck share
+J10,Jam,P0,Build three-charms reward choice,J05;J08,Each choice has a visible unique effect and applies once in correct pipeline order
+J11,Jam,P0,Implement Varro jar phases and recovery,J05;J08,Boss completes with both heroes every lucky digit; defence recovery works without optional content
+J12,Jam,P0,Create final Meridian actors stage and audio,J08,Runtime art and sounds pass asset contracts; no critical identity or legibility defect
+J13,Jam,P0,Integrate complete Prologue and rooftop ending,J09;J10;J11;J12,Title-to-results10to15min candidate plays end to end with replay and credits
+J14,Jam,P0,Run browser accessibility and performance checks,J13,Named-hardware results for cold load frame time settings and critical path; no blocking defect
+J15,Jam,P0,Package provenance credits and AI disclosure,J12;J13,Every shipping asset accounted for; actual AI use accurately described; no future manual-work claim
+J16,Jam,P0,Submit and verify uploaded build,J14;J15,Submission receipt and fresh-browser completion of exact uploaded build; archive hash and tag
+J17,Jam,P2,Add optional Maeve or Hyakki only after extension gate,J13;J14,Core target already complete by9NovIST; new scope cannot compromise frozen candidate
+F01,Foundation,P0,Create canon and rules registry,J01,IDs for heroes digits Omens Balance history Seals and ending predicates; conflict report clean
+F02,Foundation,P0,Implement narrative flag scheduler and validation,F01,Reachability no duplicate reward no blocked core recruit and all-ending paths verified
+F03,Foundation,P0,Implement content/provenance import validation,F01,Missing IDs stale schema absent license note bad glyph and oversize asset fail import visibly
+F04,Foundation,P1,Measure repeatable AI asset production,J12,Accepted hero enemy stage and story-minute throughput cost retries and defect rate recorded
+F05,Hyakki,P1,Implement Hina party swap bonds and one Link Art,F01;F02;F03;F04,Player can preview relation and trigger it; no dependence on non-complement mislabeled rules
+F06,Hyakki,P1,Build coherent Hyakki act and Tamamo,F05,Start-to-finish act with consistent Hina age curse logic readable illusion tell and accessible counter
+F07,Systems,P1,Build legal party charm economy and carryover simulator,J02;F05,All10lucky digits all legal reward paths and three build policies reported per act
+F08,River,P1,Implement crafting economy and oracle/Ink loop,F06;F07,Shop costs and rewards simulated; no duplicate-face exploit softlock or rollback duplication
+F09,Narrative,P1,Script and validate Hap NIL Thale reveal chain,F01;F02,Each reveal has earlier clues changed action and aftermath; chronology and source facts agree
+F10,Progression,P1,Implement recoverable core/secret recruitment,F02;F06,All required companions catch up; secrets have hints and return routes; true ending cannot silently lock
+F11,Campaign,P1,Build Shunyapura Kroton and Crossroads in sequence,F07;F08;F09;F10,Each act adds one validated decision layer and pays off a prior story consequence; late-recruit bonds fit the authored schedule
+F12,Campaign,P1,Implement finale and four ending paths,F09;F10;F11,Predicates visible before commitment; all endings complete including lucky0 and skipped side quests
+F13,Customization,P2,Add authored cosmetic and Awakening choices,F04;F10,Variants preserve canon silhouette identity balance and save compatibility
+F14,Customization,P3,Prototype bounded player-created recruits,F12;F13,Finite tested archetypes and offline validated content; no arbitrary runtime code or canon generation
+F15,Quality,P1,Run recurring technical and fresh-player reviews,J08;F06,Measured confusion timing retry and preference evidence drives fixes; no claimed study without sessions
+F16,Release,P1,Implement localization accessibility and save migrations,F03;F06,Text expansion fonts assist modes and old-save upgrades pass named platform checks
+F17,Release,P1,Set commercial scope date and store evidence,F04;F12;F15,Forecast uses measured accepted throughput; trailer screenshots match playable content
+F18,Postgame,P3,Consider Endless Ledger daily seeds and leaderboards,F12;F16;F17,Standalone deterministic run model and service costs validated before public commitments

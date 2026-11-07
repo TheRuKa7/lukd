@@ -2,11 +2,13 @@
 
 The single reference for how every character looks, talks, moves and changes. Story context lives in [`WORLD_BIBLE.md`](WORLD_BIBLE.md); visual rules in [`ART_DIRECTION.md`](ART_DIRECTION.md). **Canon locks** are details that must never change between artists, writers or animators.
 
+Updated 7 November 2026 under [DECISIONS.md](DECISIONS.md). **Specified character designs, not accepted runtime rigs or reviewed cultural depictions.** Jam playable cast is NIL and Vesper; Varro and a Debt Hound supply encounters. Other actors below are campaign/expansion scope. Eight core companions + three secret companions + NIL =12 authored playable characters across campaign/postgame. NPCs, bosses and Thale's hypothetical NG+ cameo do not add persistent roster slots.
+
 ---
 
 ## 0. Cast at a glance
 
-| Character | Role | Digit | From | Shape | Signature colour | Recruited / met |
+| Character | Role | Resonance / separately labelled Civic badge | From | Shape | Signature colour | Recruited / met |
 |---|---|---|---|---|---|---|
 | NIL | Protagonist, the Remainder | player's choice | Meridian Undercity | Tall rectangle + broken circle | Nixie orange `#FF7A2C` | — |
 | Vesper Sette | Companion, gunslinger | 7 | Meridian / Crossroads | Triangles | Crimson `#E5243B` | Prologue |
@@ -17,15 +19,15 @@ The single reference for how every character looks, talks, moves and changes. St
 | Shunya | Companion, astronomer | 0 | Śūnyapura | Circle (the astrolabe) | Indigo `#3F3D99` + saffron `#F4A300` | Act III |
 | Prima of Kroton | Companion, paladin | 2 | Kroton Nova | Shield circle on a sturdy frame | Aegean blue `#1F6FB2` + white-gold | Act IV |
 | Fibi Leone | Companion, dealer | Fibonacci | Crossroads | Spiral | Gold `#F2B33D` + midnight `#1D1A3A` | Act V |
-| Varro Kade | Boss (Prologue), later ally | 61 | Meridian | Square block | Rust `#B7410E` | Prologue |
-| Tamamo | Boss (Act I) | 99 (tails) | Hyakki | Fan and crescents | Violet `#8E44AD` + gold | Act I |
-| Chancellor Jin Chan | Boss (Act II) | 88 | River Empire | Sphere | Gold `#D4AF37` | Act II |
-| Rahu & Ketu | Boss (Act III) | eclipse | Śūnyapura | Circle + serpent line | Eclipse purple `#4B2A6B` | Act III |
-| Archon Seventeen | Boss (Act IV) | 17 | Kroton Nova | Tall narrow column | Bronze `#8C6A3F` + chalk | Act IV |
-| The House (Octavian Nine) | Boss (Act V) | 89 | Crossroads | Circle within a circle (ouroboros) | Ivory white + casino red | Act V |
-| Comptroller Lucan Thale | Final antagonist | 50 (steel) | Meridian | Cathedral arch | Steel white `#E8E6E1` + brass `#B5A642` | Intro (voice), Finale |
+| Varro Kade | Boss (Prologue), later ally | Resonance 1; Civic 61 | Meridian | Square block | Rust `#B7410E` | Prologue |
+| Tamamo | Boss (Act I) | Civic 99; tail Audit readouts separate | Hyakki | Fan and crescents | Violet `#8E44AD` + gold | Act I |
+| Chancellor Jin Chan | Boss (Act II) | Civic 88 | River Empire | Sphere | Gold `#D4AF37` | Act II |
+| Eclipse Engines “Rahu” and “Ketu” | Invented machine bosses (Act III), not celestial beings | Machine Audit stakes, no Civic soul | Śūnyapura | Bolted disc + articulated rail | Eclipse purple `#4B2A6B` + Basilica brass | Act III |
+| Archon Seventeen | Boss (Act IV) | Civic 17 | Kroton Nova | Tall narrow column | Bronze `#8C6A3F` + chalk | Act IV |
+| The House (Octavian Nine) | Boss (Act V) | Civic 89 | Crossroads | Circle within a circle (ouroboros) | Ivory white + casino red | Act V |
+| Comptroller Lucan Thale | Final antagonist | Civic 50 (steel) | Meridian | Cathedral arch | Steel white `#E8E6E1` + brass `#B5A642` | Campaign myth voice, Finale |
 
-**Readability rule:** every character must be identifiable as a solid black silhouette at 64 px tall, and by colour alone (Imaishi's principle: in 2D animation, characters are told apart mainly by colour).
+**Readability rule:** distinguish each character in a 64 px silhouette test and in grayscale; palette reinforces identity but never carries it alone. Test in an actual combat frame at target display size. This is an acceptance target, not a measured pass.
 
 ---
 
@@ -45,7 +47,7 @@ The single reference for how every character looks, talks, moves and changes. St
 | **Sample lines** | "Fourteen steps. You've rounded down two of them." · "Everyone here has a number. I just have a question." · "If I'm what the world lost… I'd like to be returned carefully." |
 | **Animation personality** | Economical movement; snaps into action. Idle: turns the decoder wrist, digits drift up. Victory: closes a fist on a locked digit, small exhale. On their lucky digit: halo stabilises for one frame. On a Bust: tilts their head, recalculating. |
 | **Growth** | One new verb per act (GDD §6) and one memory flashback per Seal, each drawn in that land's art style |
-| **Canon locks** | Decoder on the RIGHT wrist · one orange streak in white hair · halo reads "NaN" exactly · the coat's left tail is longer · amber eyes |
+| **Canon locks** | Decoder RIGHT wrist · one orange streak in white hair · halo “NaN” throughout the journey, separately framed from party Audit Omen · longer left coat tail · amber eyes · they/them. Positive-Sum gives chosen stable resonance and positive Civic Omen; resonance 0 is never healthy Civic 00 |
 
 ## 2. Vesper Sette (7)
 
@@ -59,7 +61,7 @@ The single reference for how every character looks, talks, moves and changes. St
 | **Want → need** | Wants to stay one step ahead of her past. Needs to deal one honest hand. |
 | **Secret** | Dealt the rigged hand at the House that Settled a twelve-year-old boy |
 | **Voice** | Drawl, card and dice slang, calls NIL "Kid" until Act III, then by name |
-| **Sample lines** | "Need a hand? Seven bucks." · "Luck's just math somebody else is hiding from you." · "I always flip. I never look." |
+| **Sample lines** | “Need a hand? Seven fen.” · “Luck's just math somebody else is hiding from you.” · “I always flip. I never look.” |
 | **Animation** | Fan-the-hammer shooting; reloads by spinning the cylinder like a roulette wheel; idle hat tip; grins and spins the cylinder when a 7 lands |
 | **Bond arc** | (1) Teaches NIL to read tells · (2) admits the rigged hand · (3) faces the House · (4) deals an honest hand to Fibi |
 | **Canon locks** | Exactly 7 chambers · scar on the lip · crimson + black + brass only · braid over the LEFT shoulder |
@@ -74,8 +76,8 @@ The single reference for how every character looks, talks, moves and changes. St
 | **Personality** | Loud, warm, superstitious about everything and proud of it; adopts every stray |
 | **Flaw** | Stubborn; believes charms can fix things that need words |
 | **Want → need** | Wants to make her grandmother's charms work again. Needs to accept that luck is something people make together. |
-| **Backstory** | Her family's homeland luck was "rounded" into the Basilica; the day it happened, her grandmother's charms stopped working. She makes new ones. |
-| **Voice** | Fast, warm, a little Irish-inflected; touches wood; says "third time's the charm" at every opportunity |
+| **Backstory** | A TR 990 tightening of the old Rounding system stopped her grandmother's charms; the family fled to Meridian. Neither experienced the original TR 702 Binding. Maeve makes new charms and later finds a historical first gear. |
+| **Voice** | Fast and warm; touches wood; uses “third time's the charm” at most once per scene. No phonetic imitation of an accent; no unverified heritage claim by a generated voice. |
 | **Sample lines** | "Horseshoe goes open end UP, or the luck falls out. Honestly." · "Three braids, three tries, three hits. That's just maths." |
 | **Animation** | Swings with her whole body; kisses her clover pin when a 3 lands; hammer-on-anvil sparks as a victory pose |
 | **Canon locks** | Exactly 3 braids · triskele on the hammer · clover pin on the collar |
@@ -94,7 +96,7 @@ The single reference for how every character looks, talks, moves and changes. St
 | **Sample lines** | "One more year and Hina would've been a *real* spirit. Don't you dare freeze me now." · "You smell like a hundred wishes." |
 | **Animation** | Rides the umbrella; the umbrella reacts separately (blinks, sticks its tongue out on a 9); twirls on a Jackpot |
 | **Cultural note** | Based on *tsukumogami* and *kasa-obake* folklore; keep her playful, never creepy-cute fan service |
-| **Canon locks** | The umbrella has ONE eye · kimono numbers stop at 99 · she never reaches 100 before the finale |
+| **Canon locks** | Umbrella ONE eye · kimono numbers stop at 99 · Hina remains 99 through every Awakening and finale; only the true-ending epilogue one year later shows her birthday. Accepting herself is not literal age progression. |
 
 ## 5. Ba Jinling (八金铃, 8)
 
@@ -164,13 +166,13 @@ The single reference for how every character looks, talks, moves and changes. St
 | **Age / build** | 18; 1.60 m; jittery |
 | **Wardrobe** | Tailored croupier tailcoat and headset; golden spiral curls; spiral-patterned irises |
 | **Props** | A deck of glowing cards that flows around her in a golden spiral |
-| **Personality** | Fast-talking, anxious, brilliant; laughs at bad moments; has lived the same night 1,597 times |
+| **Personality** | Fast-talking, anxious, brilliant; laughs at bad moments; current iteration is 1,597 after 1,596 completed repeats |
 | **Want → need** | Wants the night to end. Needs to accept the dawn, even though it may kill her. |
-| **Twist** | Her grandfather, the House, loops the night so she never dies at dawn |
+| **Twist** | Her grandfather believes his loop protects her; its maintenance clause actually drains her at dawn. Cancelling that clause with her consent saves her. The loop began inTR 999; outside time advances one night while local time repeats. NIL anchors the arriving party's retained memories. |
 | **Voice** | Rapid; counts in Fibonacci; finishes other people's sentences (she's heard them before) |
-| **Sample lines** | "You're going to say 'Who are you?' Then you'll trip on the third step. …See?" · "One, one, two, three, five. That's how I breathe." |
+| **Sample lines** | “The third step breaks. It always does.” · “You said something new. Say it again.” · “One, one, two, three, five. That's how I breathe.” |
 | **Animation** | Deals cards in spirals; her lucky digit glows in a different place every round |
-| **Canon locks** | 1,597 nights · spiral irises · her digit changes every round |
+| **Canon locks** | Current night 1,597 · spiral irises · digit changes every combat round per SYSTEMS · predicts repeated local routines, never claims to have met NIL in an earlier iteration |
 
 ---
 
@@ -181,7 +183,7 @@ The single reference for how every character looks, talks, moves and changes. St
 | **Varro Kade** | Hound-skull mask, rust trench armour, glass debt jars on his belt, "61" in red | Buy his sister's exemption | Growls in debt-collector jargon: "Interest is due." | Spared; helps in Act V |
 | **Tamamo** | Nine glowing tails each tipped with a digit, Heian court robes in violet and gold, foxfire | Keep the yokai from fading | Teasing, archaic, kind cruelty | Retreats into legend; blesses Hina |
 | **Jin Chan** | Gold-coin robes, three-legged toad throne, coins spill from his mouth | Hold the world's frozen luck in his bank | Booming, jolly, transactional | Bankrupted; Jinling takes over |
-| **Rahu & Ketu** | A vast crowned celestial head and a headless serpent body with a comet tail; awe-inspiring, never grotesque | Make their stolen immortality permanent | Rahu speaks; Ketu answers only in tremors | Returned to the sky as a passing eclipse |
+| **Eclipse Engines “Rahu” and “Ketu”** | Invented Basilica machines: bolted occluder disc and articulated surveyor rail; operator stamps/cables, no sacred head/body/halo | Suppress observatory measurements under surveyors' orders | Mechanical signal tones and labelled operator messages; no divine voice | Shut down; the revered celestial figures remain outside the enemy roster |
 | **Archon Seventeen** | Gaunt, bronze laurel, sieve staff, cold "17" | Purify the world: only the indivisible should remain | Soft, scholarly, absolute | Falls through his own sieve; Prima saves him |
 | **The House** | White suit, ouroboros tattoo on his throat, backwards pocket watch | Keep his granddaughter alive by looping the night | Old-world charm, gentle menace | Lets the dawn come |
 | **Comptroller Thale** | White-and-brass cathedral vestments, gear monocle, steel "50" | Fixed Fate: end all loss by ending all chance | Calm, kind, exhausted; never shouts | Depends on the ending |
@@ -198,7 +200,7 @@ The single reference for how every character looks, talks, moves and changes. St
 | **Maeve** | Best friend | Hero-worship | — | Makes her charms | Haggles | Forges his new lanterns | Asks too many questions | Fellow loud one | Big-sister energy |
 | **Hina** | "Hundred-wish human" | "Hat lady" | Charm-maker | — | Wants her bells | Scared of him, then adores him | Calls her "the zero girl" | Rides on her shield | Twins in being "not quite real" |
 
-**Party banter rule:** every pair of companions has at least one exchange per act; Complement pairs (digits summing to 10) get an extra bond scene.
+**Party banter budget:** one authored spotlight duo per act plus four short roster-conditioned exchanges, with fallback lines for absent optional recruits. Mathematical Complement means nonzero digits summing 10; zero has no ordinary Complement. Extra duo scenes deepen relationships but are not hidden ending gates. Narrative stages and resonance bonds are separate state. BOND_ARCS owns their schedule; no 55-pair-per-act cinematic promise.
 
 ---
 
@@ -213,13 +215,13 @@ The single reference for how every character looks, talks, moves and changes. St
 
 ## 13. Secret recruits (digits 1, 5 and 6)
 
-The core roster leaves three digits without a companion. Three optional recruits fill them, so every lucky number the player can pick has a Twin and a Complement somewhere in the game. Each needs a side quest; none are needed for the true ending.
+Three optional recruits fill resonance 1,5,6. Eventual Twin coverage does not imply equal early partner access. Zero has no ordinary Complement; Shunya's later bond-wild is a named exception. Varro is only a late guest before postgame/NG+. Each secret has a hinted return route; none gates Positive-Sum.
 
 | Recruit | Digit | Found | Look | Kit in one line | Why they join |
 |---|---|---|---|---|---|
-| **Varro Kade** | 1 | Act V (guest), recruitable after the finale or on a second playthrough | Hound-skull mask pushed up on his head, rust trench armour with the debt jars smashed | *First and Only*: his strike always lands first and its digit is copied to the reel's empty slots on a Bust | Thale broke his promise about Varro's sister; he owes NIL one |
+| **Varro Kade** | 1 | Act V guest after saving Livia; full recruit post-ending/NG+ | Hound-skull mask pushed up, rust armour, debt jars smashed | *First and Only*: first-striker kit; exact conversion payload in SYSTEMS, never undefined empty slots on an already-full reel | Withheld exemption proves Thale broke his promise; he chooses to help |
 | **Kyūsuke the Kappa** | 5 | Act I side quest (the tired kappa selling cucumbers on the river) | Small green river imp, water dish on his head, straw hat, a cucumber cart | *Bow*: once per fight he bows; if the enemy bows back (land a 5), the enemy loses its next strike | NIL buys every cucumber; he's never had a full day's sales |
-| **Granny Liu Shun** | 6 | Act II side quest (the mahjong tables of Bāfā Harbor) | Tiny, 80-ish, jade bangles, cardigan over a qipao, a mahjong tile purse | *Six-Six Smooth* (六六大顺): two 6s on the reel make every remaining strike this round land in order | She won the party in a mahjong game and refuses to give them back |
+| **Granny Liu Shun** | 6 | Act II learn-a-rule or retrieve-purse quest | Tiny,80-ish, jade bangles, cardigan over qipao, tile purse | *Six-Six Smooth*: two 6 s trigger the declared SYSTEMS conversion, not an impossible Cascade label on unchanged 6-6-x | She claims she won the party; they invite her, and she refuses to miss the adventure |
 
 Canon locks: Kyūsuke's water dish is always full (if it spills he naps); Liu Shun never loses at mahjong on screen; Varro never wears the mask over his face again after Act V.
 
@@ -229,11 +231,11 @@ Side characters carry the regions' stories and quests. Each has one want, one nu
 
 | Region | Character | Role | Want | Number habit | Quest / payoff |
 |---|---|---|---|---|---|
-| Meridian | **Ama Okoro** and her son **Tobi** (age 9) | The mother whose Omen drops to 01 in the intro; her son | Ama: to see Tobi grow up. Tobi: to be NIL's first follower | Tobi counts NIL's wins on his fingers | Tobi appears in every act's epilogue letter; in the true ending he is the first child to perform the new Naming Rite |
-| Meridian | **Brother Nought** | Defrocked Ledger-priest who runs the black-market Naming shrine; secret member of the Open Hand | To see Hap free before he dies | Rounds everything up out of spite | Gives NIL the first charm slot; reveals the Open Hand faith in Act II's interlude |
+| Meridian | **Ama Okoro** and **Tobi** (age 9) | Civic 01→07 rescue; her son | Ama: to see Tobi grow up. Tobi: to follow NIL | Counts wins on fingers | Rooftop shows them safe; campaign epilogue letters; Tobi renews his already-completed childhood Rite under new rules, not a belated seventh birthday |
+| Meridian | **Brother Nought** | Defrocked Ledger-priest, Naming shrine, secret Open Hand member | To see Hap free | Rounds up out of spite | Hands NIL a charm frame (SYSTEMS owns slot count); explains Open Hand in Act II |
 | Meridian | **Livia Kade** | Varro's younger sister, Omen 06, bedridden | For her brother to stop | Counts the cracks in the ceiling | Saving her in Act V turns Varro into an ally |
 | Meridian | **Gus Mendoza** | Charm Bazaar fixer from the Crossroads, sells every culture's charms | Profit; secretly, to go home | Haggles in sevens | Runs the Prologue market; later found in Lucky Strike |
-| Meridian | **Clerk Ivo Marr** | Thale's quiet assistant, Ledgerist | To be noticed | Files everything in triplicate | Defects in the finale and opens the Upper Gate's service door |
+| Meridian | **Clerk Ivo Marr** | Thale's quiet assistant, Ledgerist | To make an honest correction | Files in triplicate | Corrected Act II archive notes seed defection; opens an interior service passage after NIL opens the ritual gate |
 | Hyakki | **Ofuku** | Elderly keeper of the Seven Lucky Gods' shrine | That people still come to the shrine | Paints one daruma eye a day | Teaches charms; her shrine is the Act I charm hub |
 | Hyakki | **Tetsu** | Ferryman between the islands, a former Collector | To forget Meridian | Counts strokes of the oar | Ferry nodes; his story foreshadows the Basilica's reach |
 | Hyakki | **Kitsune twins Ao and Aka** | Tamamo's foxfire retainers | To protect their mistress | Speak only in pairs | Elite fight; after Tamamo's defeat they guard Hina's shrine |
@@ -257,3 +259,20 @@ Side characters carry the regions' stories and quests. Each has one want, one nu
 - **Voice.** Short, playful lines; questions more than answers. It never explains the plot. Sample lines: "Pick a number. Any number. …Oh, *that* one. Interesting." · "I don't play fair. I play *everyone*." · "You're the change I never got back."
 - **Never** a monster, a villain, a boss or a stand-in for any real religion's deity.
 - **Colour:** star-black, warm dice-ivory eyes, and the orbiting digits in every land's accent colour in turn.
+
+## 16. Recruitment and customization contract
+
+| Core ID | Entry | Guaranteed recovery / ending access |
+|---|---|---|
+| `vesper` | Campaign/jam rescue before two-hero fight | Main path; remains recruited |
+| `maeve` | Optional campaign forge | Hyakki Teahouse caravan if missed; final camp guarantees recruit and first-gear quest/catch-up |
+| `hina` | Act I parade | Main path; reserve counts for narrative participation |
+| `jinling` | Act II guest, permanent after Exchange | Explicit guest→recruited transition; no gear loss or double recruit reward |
+| `bai_si` | Judge's satisfied trial | Main path, true dead-count proof protected |
+| `shunya` | Observatory | Consent scene and protected equation; publication occurs after pre-ending co-author decision |
+| `prima` | School rescue after escort | Escort is not a playable recruit; defection commits recruitment, later teacher rescue counts as stage 4 |
+| `fibi` | Act V loop investigation | Four distinct main-path stages through dawn before the finale; no four-camp-visit grind |
+
+Recruit states: `unmet → met → guest/recruitable → recruited`; guest transitions are explicit scene events. Story-important objects/characters never vanish because a combat party slot is full. STORY §9 defines protected pieces, all-ending predicates and final-camp catch-up; skip/watch and retry reconcile stable IDs once. Secret routes remain available via Kyūsuke's river contact, Liu Shun's harbor table and Varro/Livia's post-ending shelter notice.
+
+Customization in this release plan means approved outfits/palette parts and defined kit branches. Preserve NIL's pronouns, name/identity reveal, handedness and every authored companion's canonical name/locks. A bounded player-created mercenary system is future scope with separate asset/save/balance gates, not runtime generation or another required core ledger carrier.

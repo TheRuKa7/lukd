@@ -1,52 +1,52 @@
 section,key,value,unit,note
-party,start_balance,300,balance,shared party Balance in the Prologue
-party,balance_per_level,40,balance,added per party level
+party,start_balance,300,balance,Encounter checkpoint restores the stake
+party,balance_per_level,40,balance,Varro checkpoint is level2 and Balance340
 party,start_level,1,level,
-party,tens_per_level,10,tens,GDD §7: +10 tens per level; digits never change
-party,level_cap_jam,4,level,Prologue ends ~L2; Tamamo ~L4
-hero,nil_speed,470,px_per_s,Medium; 1080p reference
-hero,vesper_speed,620,px_per_s,Fast
-hero,maeve_speed,470,px_per_s,Medium
-hero,hina_speed,470,px_per_s,Medium; reverses direction at random (p=0.15 per face)
-hero,lucky_width,2,x,your digit is double-wide on your own wheel
-hero,starter_faces,8,faces,each hero omits two digits (SYSTEMS §2.1)
-hero,assist_speed_mult,0.7,x,assist mode
+party,base_per_level,10,fixed_base,One actual digit added after fixed base
+party,level_cap_jam,2,level,Level1 Hounds and level2 Varro
+hero,nil_speed,470,logical_px_per_s,720p logical stage
+hero,vesper_speed,620,logical_px_per_s,720p logical stage
+hero,cell_height,128,logical_px,Unweighted reference face
+hero,lucky_width,2,ratio,Own resonance only
+hero,assist_speed_mult,0.7,ratio,Specified Unity setting not implemented reference UI
+hero,first_demo_speed_mult,0.6,ratio,Explicit authored first sandbox spin
 pattern,bust,1,mult,
 pattern,pair,2,mult,
-pattern,zero_sum,2,mult,also cancels the enemy's next action
-pattern,cascade,3,mult,also grants an extra round
-pattern,jackpot,max(2;digit),mult,
-pattern,reaper,4,mult,44% of Balance from every Omen containing a 4
-pattern,overwrite,21,mult,flat for every digit
+pattern,zero_sum,2,mult,Sum10or20 and cancel one enemy action
+pattern,cascade,3,mult,Ordered increments plus or minus1 without wrap
+pattern,jackpot_min,2,mult,Formula max minimum or triple digit lives in rules
+pattern,reaper,4,mult,
+pattern,reaper_current_balance_share,0.44,ratio,Snapshot current Balance before ordinary damage and floor once
+pattern,overwrite,21,mult,Same for every chosen resonance
+passive,vesper_bonus_per_actual_seven,7,fixed_base,Added to each of three strikes per actual7
 favour,warm_after_busts,1,count,
-favour,warm_speed_mult,0.8,x,
-favour,warm_match_width,1.5,x,faces matching digits already on the reel
-favour,haps_hand_after_busts,2,count,next round cannot Bust (becomes Pair)
-enemy,debt_hound_balance,300,balance,Small Audit (Prologue)
-enemy,debt_hound_tens,20,tens,
-enemy,collector_balance,500,balance,Big Audit; Iron faces; -50% from Pairs
-enemy,collector_tens,30,tens,
-enemy,varro_balance,1200,balance,Boss; Debt Jar rule
-enemy,varro_tens,40,tens,doubles in phase 2
-enemy,chochin_balance,1500,balance,Act I Small
-enemy,chochin_tens,40,tens,
-enemy,kasa_balance,2500,balance,Act I Big
-enemy,kasa_tens,50,tens,
-enemy,kitsune_twins_balance,2x1800,balance,Elite
-enemy,tamamo_balance,6000,balance,Boss; nine tails x 500 + body 1500
-enemy,tamamo_tens,60,tens,
-economy,fen_small,8,fen,per Small Audit
-economy,fen_big,15,fen,per Big Audit
-economy,fen_elite,25,fen,
-economy,fen_boss,40,fen,
-economy,interest_per,5,fen,1 fen per 5 held
-economy,interest_cap,5,fen,
-economy,charm_price_common,6,fen,
-economy,charm_price_rare,12,fen,
-economy,reroll_price,3,fen,+1 per reroll in the same shop
-economy,face_remove_price,5,fen,
-economy,face_enhance_price,8,fen,
-targets,fight_small_rounds,3-4,rounds,60-90 s
-targets,fight_big_rounds,5-6,rounds,
-targets,fight_boss_rounds,9-12,rounds,3-4 min
-targets,bust_rate_average_player,35%,share,with 8 faces + Pattern Sight + Favour (sim)
+favour,warm_speed_mult,0.8,ratio,
+favour,warm_match_width,1.5,ratio,One factor per matching digit not per duplicate
+favour,haps_hand_after_busts,2,count,Visible third-to-first scoring repair before evaluation
+charm,horseshoe_chosen_width,1.5,ratio,No absent face added
+charm,black_cat_uses_per_fight,1,count,One conversion shared ordering with Favour
+charm,ofuda_uses_per_fight,1,count,AutoParry without accepted face or reflection
+enemy,debt_hound_balance,300,balance,Exactly one in each of two tutorial encounters
+enemy,debt_hound_base,20,fixed_base,
+enemy,varro_balance,1200,balance,
+enemy,varro_base_phase1,40,fixed_base,
+enemy,varro_base_phase2,80,fixed_base,One base40 warning action after transition
+enemy,varro_phase2_share,0.5,ratio,Current Balance at or below half
+enemy,varro_jar_affected_rounds,3,count,Expiry counts completed affected player rounds including extra turns
+enemy,varro_jar_defences,3,count,Parry Fortune Ofuda count one defended action each
+targets,small_rounds_min,3,rounds,Hypothesis requires fight simulation and players
+targets,small_rounds_max,4,rounds,
+targets,small_seconds_min,60,seconds,Hypothesis not measured
+targets,small_seconds_max,90,seconds,
+targets,boss_rounds_min,9,rounds,Hypothesis not measured
+targets,boss_rounds_max,12,rounds,
+targets,boss_seconds_min,180,seconds,Hypothesis not measured
+targets,boss_seconds_max,240,seconds,
+targets,jam_minutes_min,10,minutes,Story path not this reference sandbox
+targets,jam_minutes_max,15,minutes,
+build,total_download_mb,50,decimal_mb,Planning ceiling
+build,initial_download_mb,25,decimal_mb,Planning ceiling
+build,peak_memory_mib,512,mib,Measured named reference device required
+build,desktop_fps,60,fps,Planning target
+build,start_to_first_action_seconds,20,seconds,Excludes cold download
+build,lucky_choice_seconds,60,seconds,From Start

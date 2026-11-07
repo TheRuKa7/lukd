@@ -1,63 +1,52 @@
-# ZERO-SUM: OMEN — UX, Menus, Diegetic UI and Accessibility (Gate A5)
+# ZERO-SUM: OMEN — UX and onboarding contract
 
-Minimal UI only works if every state is still readable. Every screen is an object from the world (GDD §8); every piece of information has one place. Accessibility for the full game is in [`ACCESSIBILITY.md`](ACCESSIBILITY.md); this is the jam-ready baseline.
+Updated 7 November 2026 IST. **Specified, not implemented in Unity.** Current jam is the Meridian Prologue in JAM_SLICE; advanced world-map/market/camp screens are expansion gates.
 
----
+## 1. Principles
 
-## 1. Rules
-1. **Diegetic first.** If it can be an object in the world, it is (the reel is a sign, the map is a scroll, the shop is a stall).
-2. **One glance.** In combat the player can always answer at a glance: whose turn, which hero is next, what the enemy will do, how much Balance is left.
-3. **Two lines max** of text at a time; no tooltips during a spin.
-4. **Colour never carries meaning alone:** every colour cue has a shape or a number.
-5. **Everything is reachable with one hand**: tap/click, Space/Enter, number keys 1–3, Esc.
+At a glance: eligible actor, accepted digit, resolved pattern, enemy intent, party stake and separate NIL identity. Diegetic art supplies framing, while readable semantic UI carries mechanics. Colour is never the only cue. Two lines is a dialogue pacing target, not a ban on accessible help, settings or a readable rules log. Critical information is not hidden behind hover/long-press.
 
-## 2. Screen flow
+## 2. Required jam flow
 
-```
-Title ─► (New game) Intro ─► Naming shrine ─► Combat ⇄ Map ─► Market / Shrine / Teahouse / Story ─► Boss ─► Act end ─► Hap's Dream ─► next act
-  │                                                                                                         │
-  └─► Continue ─► Map              Pause (any time): Resume · Codex · Settings · Quit to title           Results / Game over ─► Retry act / New number
-```
+Title (Settings/Credits) → interactive Rain Alley rescue → Naming → solo Hound → Vesper joins → two-hero Hound → one free charm choice → Varro → mercy/rooftop map ending → Results/Replay. Pause and settings are available throughout. Continue appears only for a valid saved checkpoint. No mandatory myth montage before first input. Targets: Start→first action≤20 s; Start→lucky choice≤60 s; cold download measured separately.
 
-## 3. Screens
+## 3. Required screens and controls
 
-| Screen | In-world object | Always visible | On demand | Input |
-|---|---|---|---|---|
-| **Title** | A rain-wet Nixie sign: ZERO-SUM: OMEN; NaN flickers | Start / Continue / Settings | Credits | Tap |
-| **Naming shrine** | Ten Nixie tubes in a shrine niche | The ten digits | One line per digit on hover | Tap a tube; confirm by tapping again |
-| **Combat** | The diorama stage; the land's reel object at top centre; charms pinned to its frame | Omens over every head (two digits); the reel; whose turn (the active hero steps forward and glows); enemy intent icon over the enemy (one icon); Open Hand sigil; Land Law icon | Hold a hero: their wheel, passive and ultimate gauge. Hold the enemy: its rule. Hold a charm: its rule | Tap hero / 1–3 to choose; tap / Space to stop; hold to fast-forward |
-| **Ultimate ready** | The hero's portrait card flips gold at the screen edge | Gauge as a ring around the portrait | — | Tap the portrait |
-| **Map** | Land-styled (scroll, palm leaf, mosaic, road map) | Nodes as icons; your path; the boss at the end | Hold a node: one line | Tap a node |
-| **Market** | A stall with wares on the table | 3–5 items with price tags | Hold an item: rule + flavour line | Tap to buy; tap the bell to re-roll |
-| **Shrine / Forge** | Ofuku's shrine / Maeve's anvil | One choice of 2–3 | — | Tap |
-| **Open Hand shrine** | A stone hand with a die | Re-deal · Pray · Offer | — | Tap |
-| **Teahouse / Campfire** | Heroes sit around a fire; NIL at centre | Party slots beside NIL; constellation lines between digits (bonds) | Hold a hero: kit card | Drag a hero beside NIL, or tap to cycle |
-| **Story** | Full-screen stills + motion graphics, or video | Speaker name tab + 2 lines | Log (last 20 lines) | Tap to advance; hold to fast-forward |
-| **Results** | A receipt printed by a Basilica terminal | Biggest number, patterns found, rounds, time | — | Tap |
-| **Game over** | Your Omen flips to 00 like a departure board; "SETTLED" stamp | Retry act (keep the build you had at act start) · New number | — | Tap |
-| **Pause** | The ledger book closes over the screen | Resume · Codex · Settings · Quit | — | Esc / tap the corner |
-| **Codex** | NIL's notebook | Patterns, charms seen, enemies met, people met, lore, each with a GIF or sketch | — | Tabs |
+|Screen |Always readable |Mouse/touch |Keyboard |
+|---|---|---|---|
+|Title |Start/validated Continue/Settings/Credits; sandbox label where applicable |Tap/click |Tab/arrows+confirm |
+|Naming |All 10 digits, selected resonance, one-line description, confirm/back |Select thenconfirm |Focusdigit+confirm; Back |
+|Audit |NILNa N identity, shared Audit Omen+Balance, enemy stake/intent, actor eligibility, actual/scoring reel, Favour state |Tapactor, tapstop |1/2 actor, Space/Enterstop |
+|Charm choice |Three names/effects; single choice; no prices |Tapitem+confirm |Focusitem+confirm |
+|Varro jar |Stored digit, active substitution, rounds/defences to expiry, restoration cue, phase warning |On-demand extra help optional |Help binding optional |
+|Story |Speaker, subtitles, advance/skip, readable text |Advance/Skipbuttons |Confirm/Skip |
+|Pause |Resume/Settings/Restartcheckpoint/Title |Tap |Keyboardfocus+Back |
+|Results |Win/loss, biggest finalized damage, encounter outcome, retry/replay/newnumber |Tap |Focus+confirm |
+|Settings |Audio, Reduced Motion, Assist, hold-to-stop, text scale, fast presentation; clear saved state |Standardcontrols |Fullfocuspath |
+|Credits/disclosure |Creators/tools/sources/provenance and AIuse |Scroll |Scroll/back |
 
-## 4. Combat layout (1920×1080 reference; scales to 16:9 and 16:10; safe area 5%)
-- **Top centre:** reel object (3 tubes), Land Law icon left of it, Open Hand sigil right of it, charms along its frame.
-- **Left half:** party (up to 3), standing; Omens over heads; ultimate portraits in the lower-left corner.
-- **Right half:** enemy (or bosses that fill the right two-thirds); its Omen and intent icon above it.
-- **Centre:** the active wheel appears over the striker.
-- **Bottom:** clear (the hit numbers and Link Art bands need it).
+Naming confirmation avoids accidental permanent selection; combat focus never traps the player in an unfocused canvas. Tooltips cannot cover the stop line. Required story advance is user-paced; optional log may scroll. A Restart confirmation names exactly which checkpoint progress resets; it is ordinary product UX, not an assistant approval flow.
 
-## 5. Text and numbers
-- Fonts: display Big Shoulders Display (numbers, banners), body Barlow Semi Condensed, code-ish JetBrains Mono (ledger/receipts); Noto for CJK and Devanagari.
-- Minimum sizes at 1080p: body 28 px, numbers over heads 44 px, damage numbers 64 px+.
-- Numbers: tabular figures; Omens always two digits ("07"); large damage numbers use thin spaces (12 000 000) and switch to short form above a billion (1.2 B) with the full number on hold.
+## 4. Layout and text
 
-## 6. Settings (jam)
-Master/music/SFX/voice volume · **Reduced motion** (no shake, no flashes, short cinematics) · **Assist** (wheels −30%, hold-to-stop) · **Text size** (100/125/150%) · **Colour-safe digits** (shapes on pattern colours) · Subtitles (on by default) · Fast cinematics · Screen shake intensity · Language (English for the jam).
+1920×1080 design with 5%safe area, tested at 1280×720 and common embedded ratios. Top: land reel/Favour and concise intent; left:party/right:enemy; lower unobstructed action prompts and settings/pause access. Keep NILidentity and party Audit in visibly different frames. The chosen resonance digit is not a health value.
 
-## 7. Accessibility baseline (jam must-haves)
-- Reduced motion; flash limit (no more than 3 flashes per second; checked with a photosensitivity tool).
-- Assist mode and hold-to-stop for players who can't time taps.
-- Every pattern has a shape and a sound, not just a colour.
-- All story text is subtitled; speaker names always shown.
-- Full mouse-only, touch-only and keyboard-only play.
+Target minimum body 28 px at 1080 p (about 19 px at 720 p), high-contrast tabular Omens 44 px+, damage 64 px+; test actual visual size, text scales 100/125/150%. Large values use locale-aware grouping and full-value details; never hide the stopped digit in rounding. Big Shoulders Display/Barlow Semi Condensed are candidates, with bundled licensed fonts and complete fallback chains. No critical text baked into generated art.
 
-**Done when:** each screen above has a wireframe in `art/ui/wireframes/` and every setting in §6 works in the jam build.
+## 5. Input states
+
+Only eligible actors can be chosen; two-person round must use both. One stop per active wheel; hold-to-stop releases only that wheel. During presentation, Skip/Fast controls work; during active wheel they do not masquerade as stops. Pause/focus loss freezes Coreclock and clears pending pointer states. Resume shows a short recap and waits for deliberate input. Hover and long-press are optional help, never the only way to learn a counter.
+
+Reference sandbox supports actual rule testing but lacks the complete story/UI/settings/save path. Its plain buttons/placeholder SVG are not final UX acceptance evidence.
+
+## 6. Accessibility baseline
+
+Required implementation: keyboard-only, mouse-only and touch-only critical path; no simultaneous actions; named/focused controls; Reduced Motion/no full-screen flash, assist speed×0.7, hold-to-stop, text scale, non-colour pattern names/shapes, subtitles/speakers, skip and pause. No essential timed text. Actual accepted stop remains visually honest under every setting. ACCESSIBILITY defines broader options and evidence.
+
+## 7. Expansion screen gates
+
+Map, market, shrine/forge, camp swap, bonds, gear, codex, charged ultimate portraits and extended-reel UI are disabled until their SYSTEMS domain gates and corresponding wireframes/interaction tests exist. Market requires transactional prices/offers; camp requires active NIL+two legalslots and separate narrative/mathematical bond readouts; advanced preview must use the same Coreevaluator. Do not expose empty tabs or nonfunctional prompts in jam.
+
+## 8. Acceptance
+
+Required wireframes and final captures belong to accepted asset IDs in ASSET_LIST. Test all 10 chosen digits, one-handed input modes, storage unavailable,150%text, reduced motion, focus loss, first-time player comprehension and rerun/retry. A document or missing wireframe path is not evidence of a finished screen. Record findings under PLAYTEST/QA; no sessions are claimed here.

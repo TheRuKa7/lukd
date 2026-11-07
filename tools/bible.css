@@ -102,3 +102,8 @@ tbody tr:nth-child(even) td { background: #F6EFE1; }
 .locks li::marker { color: var(--red-ink); }
 
 .doc { break-before: page; }
+
+/* Long source-derived civic/resonance labels and URLs must wrap. */
+.digit { max-width:78mm; font-size:22pt; overflow-wrap:anywhere; text-align:right; }
+td,th,a,code { overflow-wrap:anywhere; }
+.char-side,.char-art { min-width:0; }

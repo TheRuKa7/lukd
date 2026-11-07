@@ -1,54 +1,32 @@
-# ZERO-SUM: OMEN — Playtest Plan and Fun Metrics (Gate A9)
+# ZERO-SUM: OMEN — Playtest and observation plan
 
-Playtests find the fun; documents only point at it. We test **every day from Day 2**, starting with the browser prototype.
+Updated 7 November 2026 IST. **No player session has been recorded at this audit date.** AI-generated code, automated inputs and model outputs do not establish fun, cultural approval or accessibility usability.
 
----
+## 1. Staged validation
 
-## 1. Schedule (jam)
-| Day | Build | Testers | Focus |
+|Stage |Artifact |Question |Required record |
 |---|---|---|---|
-| Fri 6 (tonight) | Browser prototype | 3 friends | Does stopping a wheel feel good? Do they want another round? |
-| Sat 7 | Prototype + tuning CSV | 3 new | Pattern Sight, Hap's Favour, Bust feel |
-| Sun 8 | Unity greybox: Prologue | 3–5 new | First 10 minutes (FIRST_10_MINUTES rules) |
-| Mon 9 | Prologue + Act I start | 3–5 new | Charms, party of 3, bonds |
-| Tue 10 | Full slice (freeze) | 5 new + 2 returning | Difficulty curve, Tamamo, pacing |
-| Wed 11 | Content lock | 5 new | Balance; bugs; one cultural reviewer for Hyakki |
-| Thu 12 | Release candidate | 3 new on itch (WebGL, 3 browsers) | Load time, performance, last confusions |
+|Stopproof |Corrected rules sandbox |Can a new player find/understand the stop and pattern? |Build/hash, input mode, notes/capture with consent |
+|Greybox |Unityrequired Prologue |Can they finish without outside explanation? |Route/round/timing/confusions and bugs |
+|Finalpresentation |Hosted Webrequiredpath |Do story, feedback and art read coherently? |Exactplatform, performance, settings, quotes |
+|RC |Frozenrequiredscope |Do priorfixes hold across digits/charms/browsers? |Issueclosures and unresolved gates |
 
-New testers each day (fresh eyes beat returning ones). At least one tester per round who doesn't play games much.
+Use freshplayers where practical; returning players check regressions. The jam plan aims for 3–5 first-time players per meaningful iteration, not mandatory daily calendar sessions when no buildexists. At least one less-experienced gamer helps test onboarding. Disabledplayer feedback, when possible, tests relevant modes; do not claim their participation until recorded.
 
 ## 2. Protocol
-1. Give them the link and **say nothing**. No explanation, no help.
-2. Observe (screen + face if they agree); the observer only takes notes.
-3. Stop at 15 minutes or when they stop on their own.
-4. Five questions afterwards (no leading).
 
-## 3. What we watch (log per tester)
-| Metric | How | Target |
-|---|---|---|
-| Time to first tap | Timestamp | ≤ 20 s |
-| First smile / "oh!" | Observer notes the moment | Before 2:00 |
-| Confusion moments | Any pause > 6 s or a question | ≤ 2 before Varro |
-| Busts that look frustrating | Sighs, "ugh" | Rare; never 3 in a row (Hap's Hand) |
-| Pattern that got the biggest reaction | Observer | Jackpot/Overwrite, then Link Art |
-| Quits | Where and why | No quits before Varro |
-| "One more" | Did they replay or say so? | ≥ 60% |
-| Can explain Pair, Jackpot, Parry | Ask after | ≥ 3 of 5 |
+Share the actuallink/build and controls only as the product presents them. Observe without coaching; after a block, record theconfusion before helping. Let them stop freely; do not require forcedreplay. Record screen/voice only with explicit consent. Limit collected personal data; use local tester IDs rather than names. Ask what worked/confused/bored them and whether they would continue, without suggesting that an effect “felt good.”
 
-## 4. The five questions
-1. What was the best moment?
-2. When were you confused?
-3. When were you bored?
-4. Which character do you want to know more about?
-5. Would you play again? (Yes / maybe / no, and why.)
+## 3. Metrics: hypotheses
 
-## 5. Thresholds that change the plan
-- If fewer than half want "one more": **stop adding content** and fix the core loop (feel, tuning, pacing) the next day.
-- If anyone can't find the tap or the third-striker choice: fix the prompt, not the tutorial text.
-- If a fight takes more than 2× its target rounds for most testers: lower enemy Balance first (TUNING §6).
-- If a cultural reviewer flags something: fix it before release, no exceptions.
+Start→first action≤20 s, Start→luckychoice≤60 s; report cold download separately. Can explain stop/Pair/Jackpot/Parry after playing; finds valid second hero; identifies Varro's storedtoken and counter; notices that Buststilldamages/Favourturns luck. Measure encounters/rounds and time in decisions/animation/story separately. Watch accepted input mismatches, repeatedskip, long hesitation and loss/retry frustration.
 
-## 6. Log
-Keep findings in `playtests/YYYY-MM-DD.md`: tester id (no names), metrics table, quotes, top 3 issues, what we changed.
+Smallfight 3–4 rounds/60–90 s and Varro 9–12 rounds/3–4 minutes are hypotheses, not requirements to force by delayingplay. Jam 10–15 minutes includes narrative; a faster understandable run is preferable to padding. Replayinterest is qualitative early; “60%wantmore” from 3 people is not a robust statistic.
 
-**Done when:** the first session on the browser prototype has happened and its findings are logged.
+## 4. Decisions from evidence
+
+If players cannot identifythe stop, fix control/cue/layout before expanding tutorial text. If pattern/damage feedback misleads, fix theledger/preview before morecontent. If scope/corefun fails, hold Hyakki and other expansion. Change a small set of named variables, record why and rerun regression checks. Do notraise boss Balance merely because one expertwins easily or copy old model rates into difficulty claims.
+
+## 5. Record template
+
+Save `playtests/YYYY-MM-DD-sessionID.md` only after a real session: build/source/content version; participant consent/status; platform/input/settings; timestamps/rounds; observed actions; exact optional quotes; top issues; chosen fixes; follow-up result. Missingdata is “not recorded.” Do not generate plausible tester notes. Cultural/source checking and human community review are separate records with their exactlimits.

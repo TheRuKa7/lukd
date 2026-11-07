@@ -12,6 +12,7 @@ import sys
 
 import markdown
 from PIL import Image
+import canon as C
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -19,29 +20,15 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD = os.path.join(ROOT, "build")
 IMG = os.path.join(BUILD, "img")
 OUT_PDF = os.path.join(ROOT, "docs", "ZERO-SUM_OMEN_World_and_Art_Bible.pdf")
-os.makedirs(IMG, exist_ok=True)
 
 
 # ---------------------------------------------------------------- images
 def web_image(src_rel, max_side=1500, quality=82):
-    """Copy a repo image into build/img as a print-friendly JPEG; return its path relative to build/."""
-    src = os.path.join(ROOT, src_rel)
-    name = os.path.splitext(os.path.basename(src_rel))[0] + ".jpg"
-    dst = os.path.join(IMG, name)
-    if not os.path.exists(dst):
-        im = Image.open(src).convert("RGB")
-        im.thumbnail((max_side, max_side))
-        im.save(dst, quality=quality, optimize=True, progressive=True)
-    return "img/" + name
+    return C.derivative_image(src_rel, BUILD, max_side=max_side, quality=quality)
 
 
 def video_still(src_rel, t=0.6):
-    src = os.path.join(ROOT, src_rel)
-    name = os.path.splitext(os.path.basename(src_rel))[0] + "_still.jpg"
-    dst = os.path.join(IMG, name)
-    if not os.path.exists(dst):
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(t), "-i", src, "-frames:v", "1", "-q:v", "3", dst], check=True)
-    return "img/" + name
+    return C.derivative_video_still(src_rel, BUILD, t=t)
 
 
 # ---------------------------------------------------------------- markdown
@@ -76,7 +63,7 @@ def swatches(colors, label=None):
 from canon import CHARACTERS, FIGURE_KEYS, LANDS  # noqa: E402  (shared with the art book)
 import figures as FIG  # noqa: E402
 
-PASS1_NOTE = "Pass 1 exploration art, in the superseded style. Kept for reference; to be redone under Art Direction v2."
+PASS1_NOTE = "Historical pass-1 concept, not accepted runtime art. Retained as reference; current direction is Art Direction v3."
 
 
 def luminance(hexc):
@@ -98,7 +85,7 @@ def character_pages():
     for fkey, (name, role, digit, land, shape, colors, art, locks) in zip(FIGURE_KEYS, CHARACTERS):
         sig = strong_color(colors)
         art_html = (
-            f'<figure class="char-art"><img src="{web_image(art)}" alt="{html.escape(name)} concept art"><figcaption>{PASS1_NOTE}</figcaption></figure>'
+            f'<figure class="char-art"><img src="{web_image(art)}" alt="{html.escape(name)} concept art"><figcaption>{"Fresh v4 design candidate; visual/lookdev approval does not establish a runtime rig." if "/fresh/" in art else PASS1_NOTE}</figcaption></figure>'
             if art else
             f'<div class="char-art pending" style="border-color:{sig}"><div class="pending-label">Key art pending</div>'
             f'<p>Generate with the character suffix in Art Direction §6 and the description in the Character Bible.</p></div>'
@@ -132,10 +119,10 @@ def land_pages():
         keys = {"Meridian Undercity": ["art/base3d/wards_base_clay.png", "art/base3d/wards_colorkey_v1.png"],
                 "Hyakki": ["art/base3d/hyakki_pier_base_v1.png", "art/base3d/hyakki_pier_colorkey_v1.png"]}.get(name, [])
         if arts:
-            figs += f'<p class="note">{PASS1_NOTE} The Hyakki pier deck plate is the usable layout for the battle stage.</p>'
+            figs += f'<p class="note">{PASS1_NOTE} Future Hyakki plates are composition references; no runtime acceptance or source scene is supplied.</p>'
         if keys:
             figs += "".join(f'<figure class="plate half"><img src="{web_image(k, 1200)}" alt=""></figure>' for k in keys)
-            figs += '<p class="note">3D base (clay) and flat colour key for the v2 paint pass (Art Book Production Guide §4).</p>'
+            figs += '<p class="note">Historical raster base and colour key; source scene/scripts missing at baseline. AI-directed production is specified in ARTBOOK_PRODUCTION.</p>'
         else:
             figs = '<div class="pending wide"><div class="pending-label">Environment art pending</div><p>Establishing shot and battle stage to be generated with the background suffix in Art Direction §6, using this land\'s palette and the Locations Guide.</p></div>'
         out.append(f"""
@@ -155,7 +142,7 @@ def part(num, title, intro):
 def motion_and_layouts():
     stills = [
         (video_still("art/motion/intro_meridian_dawn.mp4"), "Intro shot 5 (8 s): the Basilica's searchlight sweeps the Undercity at dawn. Seedance 2.5 test."),
-        (video_still("art/motion/nil_reveal.mp4"), "NIL reveal (5 s, vertical). Seedance 2.5 test; inherits the \"Nan\" typo from pass 1."),
+        (video_still("art/motion/nil_reveal.mp4"), "NIL reveal (5 s, portrait). Historical generation test; not a current landscape cinematic."),
     ]
     layouts = [
         (web_image("art/lookdev/pose_blockout.png", 900), "Standing pose layout"),
@@ -168,28 +155,15 @@ def motion_and_layouts():
     return f'<h2>Motion tests</h2><div class="grid2">{s}</div><h2>3D layouts used to keep framing consistent</h2><div class="grid4">{l}</div>'
 
 
-ART_STATUS = """
-<h2>Art status (end of Nov 6)</h2>
-<table>
-<thead><tr><th>Asset</th><th>Status</th><th>Next step</th></tr></thead>
-<tbody>
-<tr><td>Art Direction v2 style frames (NIL action, Meridian dawn, Hyakki pier, battle frame)</td><td>6 paint passes stuck in Higgsfield "submission unknown"</td><td>Check credits; reconcile; then paint over the 3D bases</td></tr>
-<tr><td>3D bases and colour keys</td><td>Done: Remainder Wards, Moon Pier, line-up base</td><td>Paint pass (register A)</td></tr>
-<tr><td>Design figures for all 16 characters + 4 Meridian eras</td><td>Done (vector stand-ins, art book and model pages)</td><td>Replace with key art and turnarounds</td></tr>
-<tr><td>Graphic identity: emblems, Omen displays, charm icons, reel objects</td><td>Done (art/graphics/)</td><td>Refine by hand; reuse as UI icons</td></tr>
-<tr><td>Character key art, v2 style (16 characters)</td><td>Pending</td><td>Generate after the style frames are approved</td></tr>
-<tr><td>Environment establishing + battle stage per land (7 lands)</td><td>Meridian and Hyakki explored in pass 1; colour scripts for all</td><td>Redo in v2; then the five remaining lands</td></tr>
-<tr><td>Enemy sheets (Meridian, Hyakki)</td><td>Pending</td><td>3-pose sprites per enemy</td></tr>
-<tr><td>Intro cinematic shots</td><td>2 test shots done</td><td>Storyboard stills, then video</td></tr>
-<tr><td>Turnarounds and attack key poses for jam heroes</td><td>Pending</td><td>Needed for rigs</td></tr>
-</tbody></table>
-"""
+ART_STATUS = '<p class="note">Runtime asset acceptance is recorded in ASSET_LIST/PROJECT_STATUS. Concepts and design figures are candidates; no external job status or finished rig is inferred from them.</p>'
+
 
 
 def build_html():
     css_path = os.path.join(ROOT, "tools", "bible.css")
     with open(css_path, encoding="utf-8") as f:
         css = f.read()
+    os.makedirs(IMG, exist_ok=True)
     body = []
     body.append("""
 <section class="cover">
@@ -197,7 +171,7 @@ def build_html():
   <div class="cover-title">ZERO&#8209;SUM:<br><span>OMEN</span></div>
   <div class="cover-sub">The World &amp; Art Bible</div>
   <div class="cover-nan">NaN</div>
-  <div class="cover-bottom">World · Lore · Lands · Characters · Art Direction · Gameplay · Production<br>Version 3 · TR 1002 · Living document: the Markdown files in <code>docs/</code> are the source of truth.</div>
+  <div class="cover-bottom">Required jam: Meridian Prologue · NIL/Vesper/Varro/Debt Hound · AI-only/free-first<br>Full campaign content is future specification · Specification snapshot · 7 November 2026 · TR 1002 · the Markdown files in <code>docs/</code> are the source of truth.</div>
 </section>
 <section class="toc">
   <h1>Contents</h1>
@@ -208,23 +182,25 @@ def build_html():
     <li><b>Lore lexicon</b>: glossary, idioms, timeline, factions, world rules, naming</li>
     <li><b>The lands</b>: colour scripts, concept plates, locations guide</li>
     <li><b>Characters</b>: model pages and the character bible, side characters, secret recruits</li>
-    <li><b>Art direction</b>: painted world, inked people; lessons from the Cyberpunk 2077 art book</li>
+    <li><b>Art direction</b>: painted world, inked people; original shape, palette and production contracts</li>
     <li><b>Gameplay</b>: GDD, systems, tuning, economy, game feel, first ten minutes, UX, player experience</li>
     <li><b>Production</b>: plan, pre-production docs, jam slice, assets, audio, script, tech, playtests, quality, QA</li>
     <li><b>Care, launch and policy</b>: cultures, localisation, accessibility, telemetry, market, marketing, legal, team</li>
     <li><b>Appendix</b>: narrative style guide, AI disclosure</li>
   </ol>
-  <p class="note">How to use this bible: when two documents disagree, the order of authority is Art Direction (for visuals) → Character Bible (for characters) → World Bible (for story) → GDD (for mechanics).</p>
+  <p class="note">How to use this bible: DECISIONS resolves conflicts; JAM_SLICE controls required content; PROJECT_STATUS distinguishes specification from implementation. Domain documents provide details.</p>
 </section>
 """)
+    body.append(md_file("docs/DECISIONS.md", drop_title=False))
+    body.append(md_file("docs/PROJECT_STATUS.md", drop_title=False))
     body.append(part("I", "The game in one page", "What we are making and why it will feel like nothing else."))
     body.append("""
 <div class="onepage">
 <p class="lede">In a world where every soul's luck floats above its head as a number, a nameless wanderer with no number at all tells the city its lucky number, and becomes the most wanted person alive.</p>
 <div class="grid2 text">
-<div><h3>The fantasy</h3><p>You are NIL, the world's missing luck in human form. Every number in the Tally spins like a slot reel, and you are the only one who can stop them. Travel lands inspired by Japanese, Chinese, Indian, Greek and American myth, gather a party of eight, and break the seals of the machine that flattened every culture's idea of luck into one zero-sum number.</p></div>
-<div><h3>The play</h3><p>One verb: tap to stop the number. Three heroes strike, their digits drop into the reel, and patterns pay out as full-screen anime cinematics. Depth comes from team synergy (heroes whose lucky digits add to 10, run in sequence, or are all prime), charms from every culture, and wheels you reshape like a deck.</p></div>
-<div><h3>The look</h3><p><b>Painted world, inked people.</b> Hand-painted, sunlit, lived-in lands in the spirit of Studio Ghibli's backgrounds; graphic, neon-edged characters and fights in the spirit of <i>Cyberpunk: Edgerunners</i>.</p></div>
+<div><h3>The fantasy</h3><p>You are NIL, the world's missing luck in human form. Every number in the Tally spins like a slot reel, and you are the only one who can stop them. Travel lands inspired by Japanese, Chinese, Indian, Greek and American myth, recruit eight core companions plus three secrets across the full game/postgame, take NIL and up to two companions into an Audit, and break the seals of the machine that flattened every culture's idea of luck into one zero-sum number.</p></div>
+<div><h3>The play</h3><p>One verb: tap to stop the number. Three strikes fill the reel; a solo or two-person party repeats legal actors. Settle damage once; concise in-engine effects explain the pattern. Depth comes from team synergy (heroes whose lucky digits add to 10, run in sequence, or are all prime), charms from every culture, and wheels you reshape like a deck.</p></div>
+<div><h3>The look</h3><p><b>Painted world, inked people.</b> Matte, lived-in painted lands with graphic two-tone cel characters, coloured contours and deliberate neon accents.</p></div>
 <div><h3>The theme</h3><p>A world that believes luck is zero-sum learns, from a party drawn from every culture, that luck shared isn't.</p></div>
 </div></div>""")
     body.append(part("II", "The world", "Why numbers matter, the god of luck, and who wants to freeze fate forever."))
@@ -242,7 +218,11 @@ def build_html():
     body.append(md_file("docs/CHARACTER_BIBLE.md"))
     body.append(part("VII", "Art direction", "Painted world, inked people."))
     body.append(md_file("docs/ART_DIRECTION.md"))
+    body.append(md_file("docs/ARTBOOK_PRODUCTION.md"))
     body.append(motion_and_layouts())
+    for rel in ("art/renders/lookdev/omen_battle_v5.png", "art/renders/lookdev/meridian_empty_v5.png", "art/renders/lookdev/meridian_clay_v5.png"):
+        if os.path.isfile(os.path.join(ROOT, rel)):
+            body.append(f'<figure class="plate"><img src="{web_image(rel)}" alt="Lookdev render"><figcaption>Fresh reproducible lookdev render — not a Unity game screenshot or verified runtime asset.</figcaption></figure>')
     body.append(part("VIII", "Gameplay", "One verb, deep consequences."))
     for f in ["GDD", "SYSTEMS", "TUNING", "ECONOMY_PROGRESSION", "GAME_FEEL", "FIRST_10_MINUTES", "UX_SPEC", "PLAYER_EXPERIENCE"]:
         body.append(md_file(f"docs/{f}.md"))
@@ -259,14 +239,10 @@ def build_html():
     body.append(md_file("docs/NARRATIVE_STYLE.md"))
     body.append(md_file("docs/AI_DISCLOSURE.md"))
 
-    fonts = ("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900"
-             "&family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,700;1,400"
-             "&family=JetBrains+Mono:wght@400;600"
-             "&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700"
-             "&family=Noto+Sans+Devanagari:wght@400;700&display=swap")
+    snapshot = C.write_manifest(BUILD, "bible")
     doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <title>ZERO-SUM: OMEN — World & Art Bible</title>
-<link rel="stylesheet" href="{fonts}">
+<meta name="source-sha256" content="{snapshot}">
 <style>{css}</style></head><body>{''.join(body)}</body></html>"""
     path = os.path.join(BUILD, "bible.html")
     with open(path, "w", encoding="utf-8") as f:
@@ -275,7 +251,16 @@ def build_html():
 
 
 if __name__ == "__main__":
+    args = C.build_options("bible", "ZERO-SUM_OMEN_World_and_Art_Bible.pdf")
+    print(C.validate_sources())
+    if args.check:
+        sys.exit(0)
+    BUILD = str(args.build_dir)
+    IMG = os.path.join(BUILD, "img")
+    OUT_PDF = str(args.pdf_path)
     html_path = build_html()
     print("HTML:", html_path)
-    r = subprocess.run(["node", os.path.join(ROOT, "tools", "render_pdf.js"), html_path, OUT_PDF])
+    if args.html_only:
+        sys.exit(0)
+    r = subprocess.run([args.node, os.path.join(ROOT, "tools", "render_pdf.js"), html_path, OUT_PDF])
     sys.exit(r.returncode)

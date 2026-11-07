@@ -1,44 +1,38 @@
-# ZERO-SUM: OMEN — Cultural Consultation Plan and Review Log (Gate B7)
+# ZERO-SUM: OMEN — Cultural Research and Consultation Record
 
-Five cultures inspire this game. Getting them right is part of the quality bar, not a legal checkbox. Principles are in [`WORLD_BIBLE.md`](WORLD_BIBLE.md) §10.
+Updated 7 November 2026. **No external cultural consultation/community approval completed or recorded.** AI source research is separate and limited. No paid reviewer is assumed hired; no outsourced production requirement. See DECISIONS D02/D07 and WORLD_BIBLE §10.
 
----
+## 1. Depiction rules
 
-## 1. Principles
-1. **Inspired by, never depicting.** Lands are fictional; names are invented or from widely told public folklore.
-2. **Revered figures are keepers, never enemies.** Enma, Judge Cui, Chitragupta, the Moirai, the Courts' wardens Ox-Head and Horse-Face.
-3. **Hap is invented** and never claimed to be any real religion's deity; real gods appear only as shrines, customs and references, handled with care.
-4. **No Indigenous sacred traditions** in the Crossroads.
-5. **Lived, not explained.** Characters live their customs; the Codex explains (Narrative Style §2).
-6. **Paid reviewers**, credited by name if they wish.
+1. Lands are fictional and internally diverse. No culture is one luck belief/costume/number rule; distinguish invented institutions from actual practice.
+2. Enma, Judge Cui, Chitragupta, Moirai and Ox-Head/Horse-Face are respectful keeper/trial references, not disposable monsters. Hap is invented.
+3. Rahu/Ketu are revered celestial figures. **Combat targets are invented Basilica eclipse constructs borrowing those names**, visibly mechanical/sealed and explicitly distinguished in dialogue/captions. Constructs break; no deity is killed/defeated. Apply this to prompts, silhouettes and art.
+4. Crossroads excludes Indigenous sacred material; research Black American roots before specific blues-crossroads references. Casino fiction does not establish source rights.
+5. Folklore tradition does not grant rights to a modern depiction/translation/recording. Track the exact source (LEGAL_IP_AI).
+6. No invented sacred writing, fake accent, generic cultural costume mixture or unverified religious claim. Meaningful scripts are separately checked; otherwise use abstract motifs.
 
-## 2. Reviewers and scope
+## 2. Scope and research questions
 
-| Culture | Lands / characters | Reviewer profile | Scope | When |
-|---|---|---|---|---|
-| Japanese | Hyakki; Hina, Tamamo, Enma, Ofuku, Kyūsuke, Tetsu, the Kitsune twins | Native speaker with folklore knowledge (yokai, shrines) | Names and kanji; shrine depiction; daruma and omamori use; yokai tone; kimono details | Before the jam release (Act I is in the slice) |
-| Chinese | River Empire; Ba Jinling, Bai Si, Liu Shun, Judge Cui, Jin Chan, Little Lantern | Native speakers (Mandarin; ideally one familiar with folk religion and Cantonese festival culture) | Names and hanzi (Simplified + Traditional); the Ten Courts and Meng Po; mourning customs; red envelopes and joss paper | Before any Act II material is public |
-| Indian | Śūnyapura; Shunya, Vidya Rao, Meera, Baital, Chitragupta, Rahu & Ketu | Reviewers with Hindu and Jain traditions, and Indian history of mathematics; a Hindi speaker | Names and Devanagari; Chitragupta and Rahu/Ketu depiction (venerated celestial bodies: cosmic and tragic, never cheap demons); clothing; nimbu-mirchi, rangoli, navaratna | Before any Act III material is public |
-| Greek | Kroton Nova; Prima, Archon Seventeen, the Moirai, Kallisto, Niko | Greek speaker with classics background | Names and Greek script; the Moirai; mati and Fortuna; tone of the Synod | Before Act IV is public |
-| American | Crossroads; Vesper, Fibi, the House, the Stranger, Penny, Sheriff Vance, Gus | Reviewer familiar with the blues crossroads legend and its Black American roots; Italian- and Irish-American heritage | The crossroads legend's origins and respectful framing; immigrant charms; no Indigenous sacred material | Before Act V is public |
-| Irish/Celtic | Maeve | Irish reviewer | Triskele use, name, accent in text (none faked) | Before the jam release |
+| Scope | Check | Gate |
+|---|---|---|
+| Meridian jam: residents/Vesper/stall | Clothing/occupation logic; no fake accents; charm effect is fictional, not a factual cultural claim; Ofuda icon has no invented sacred text | Required source/asset critique; unverified |
+| Hyakki/Hina/Tamamo/keepers | Names/scripts, kimono/umbrella construction, yokai variants, shrine/charm usage; Hina stays 99 until true-ending epilogue | Future extension/post-jam |
+| River Empire/courts | Naming/language variants, mourning/joss/envelope customs and represented region/period | Before Act II public content |
+| Śūnyapura | Mathematics history, names/clothing, distinguish Hindu/Jain traditions, keeper/construct depiction | Before Act III public content |
+| Kroton Nova | Greek names/scripts, Moirai/mati, fictional Synod versus living practice | Before Act IV public content |
+| Crossroads | Blues legend context, immigrant differences; no single 'American folklore' claim | Before Act V public content |
+| Maeve | Irish/Celtic distinctions, name/triskele context, no fabricated accent | Future recruit gate |
 
-## 3. Review process
-1. Owner prepares a **review pack**: character sheets, lines, screenshots, names with scripts, and specific questions.
-2. Reviewer returns notes within a week (paid by the pack).
-3. Every note gets an entry in the log below with a decision and a fix.
-4. Nothing flagged as harmful ships unfixed.
+## 3. AI research workflow
 
-## 4. Known questions to ask
-- Is it acceptable to show Enma as a solemn keeper who tests the living? How should his ledger look?
-- Is Ox-Head and Horse-Face's portrayal as wardens (a trial, not villains) respectful?
-- How should Chitragupta's Hall and his records be shown? Any imagery to avoid?
-- Rahu & Ketu as a boss: what framing is acceptable? Should their defeat be "returned to the sky" (current) or something else?
-- Is "Shunya" appropriate as a personal name for a character?
-- Are the Seven Lucky Gods appropriate as shrine imagery and charm names (Ebisu, Daikokuten…)?
-- Is Lady Luck / crossroads imagery free of appropriation of the blues legend's spiritual roots?
+Prepare exact lines/images/names/scripts. Record factual claim, primary source URL/title, access date, locale/period, relevant excerpt reference and uncertainty. For disputed points seek two independent sources; preserve disagreements. Prefer relevant museums, archives, universities, cultural institutions and first-person/community sources. Primary does not mean universally representative.
 
-## 5. Review log
-| Date | Culture | Item | Note | Decision | Fixed in |
+Separate **source-backed fact**, **fictional invention**, **uncertain**, **external review**. Revise simplifiable uncertain details before use and log changes. If unavailable native/specialist expertise is needed, do not advertise authenticity/approval; simplify/omit the claim or keep it outside the release. User-authorized external feedback is optional validation, not mandatory human art/writing finishing.
+
+## 4. Record
+
+| Date | Content ID | Claim/fictional use | Sources/language/date | Uncertainty/action | Verification |
 |---|---|---|---|---|---|
-| — | — | — | — | — | — |
+| — | — | No completed source pack or external sign-off recorded | — | Prepare jam pack first | Unverified |
+
+External review needs the actual scope, agreed fixes and consent to credit. Never infer sign-off from a citation/agent review/empty log. Document correction/scope decisions for unresolved depictions; no universal authenticity certification.

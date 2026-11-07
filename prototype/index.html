@@ -66,7 +66,9 @@ canvas{position:absolute;left:0;top:0}
 .wheel .cell.lk{color:var(--gold);text-shadow:0 0 18px var(--gold)}
 .wheel .cell.par{color:var(--teal);text-shadow:0 0 18px var(--teal)}
 .wheel .cell.dz{color:var(--blood);text-shadow:0 0 18px var(--blood)}
-.wheel.spin .strip{filter:blur(1.2px)}
+.wheel.spin .strip{filter:blur(.3px)}
+.cell[class*=ps-]::after{font:700 15px var(--f-body);position:absolute;right:3px;color:var(--gold)}
+.cell.ps-PAIR::after{content:'● PAIR'}.cell.ps-ZERO_SUM::after{content:'◎ SUM'}.cell.ps-CASCADE::after{content:'› RUN'}.cell.ps-JACKPOT::after{content:'★ JACKPOT'}.cell.ps-OVERWRITE::after{content:'✦ OMEN'}.cell.ps-REAPER::after{content:'4 TOLL'}
 .wheel.lock .win{animation:lock .3s}
 @keyframes lock{30%{transform:scale(1.18);box-shadow:inset 0 0 0 3px #fff,0 0 60px #fff}}
 
@@ -151,7 +153,7 @@ canvas{position:absolute;left:0;top:0}
       <div class="floor"></div>
       <canvas id="rain" width="1280" height="720"></canvas>
       <div class="sign"><div class="title">KARMIC REEL</div><div class="tubes" id="tubes"><div class="tube"><b>0</b></div><div class="tube"><b>0</b></div><div class="tube"><b>0</b></div></div></div>
-      <div class="squad-omen" id="squadOmen">99<small>PARTY OMEN · BALANCE 300</small></div>
+      <div class="squad-omen" id="squadOmen">99<small>AUDIT OMEN · BALANCE 300</small></div>
       <div id="actors"></div>
       <div id="fx"></div>
     </div>
@@ -167,9 +169,11 @@ canvas{position:absolute;left:0;top:0}
   </div>
 </div>
 
+<script src="rules.js"></script>
 <script>
 (() => {
 'use strict';
+const RULES = OmenRules;
 const RM = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 const $ = s => document.querySelector(s);
 const wait = ms => new Promise(r => setTimeout(r, RM ? Math.min(ms, 120) : ms));
@@ -259,13 +263,13 @@ $('#sound').addEventListener('click', e => { e.stopPropagation(); muted = !muted
 
 /* ---------------- actors ---------------- */
 const HEROES = [
-  { id: 'nil', name: 'NIL', sub: 'THE SPLICER', color: '#5fe3f0', x: 250, base: 40, speed: 430, lucky: null },
-  { id: 'ves', name: 'VESPER SETTE', sub: 'LUCKY SEVEN', color: '#ff3d5a', x: 390, base: 30, speed: 640, lucky: 7 },
-  { id: 'ba', name: 'MAEVE TRISKEL', sub: 'THIRD TIME LUCKY', color: '#d9822b', x: 520, base: 20, speed: 330, lucky: 3 }
+  { id: 'chr_nil', name: 'NIL', sub: 'THE REMAINDER', color: '#ff7a2c', x: 290, base: 10, speed: 470, lucky: null },
+  { id: 'chr_vesper', name: 'VESPER SETTE', sub: 'LUCKY SEVEN', color: '#ff3d5a', x: 470, base: 10, speed: 620, lucky: 7 }
 ];
+function activeHeroIndices() { return G && G.stage === 0 ? [0] : [0, 1]; }
 function heroSVG(h) {
   const c = h.color;
-  const head = h.id === 'ves'
+  const head = h.id === 'chr_vesper'
     ? '<ellipse cx="60" cy="38" rx="44" ry="7" fill="#0a0608" stroke="' + c + '" stroke-width="2"/><path d="M40 38 Q60 6 80 38 Z" fill="#0a0608" stroke="' + c + '" stroke-width="2"/><circle cx="60" cy="50" r="13" fill="#140c10"/>'
     : h.id === 'ba'
       ? '<path d="M38 64 Q60 10 82 64 Q72 54 60 56 Q48 54 38 64Z" fill="#160c1c" stroke="' + c + '" stroke-width="2"/><circle cx="60" cy="50" r="12" fill="#140c10"/><circle cx="60" cy="24" r="6" fill="' + c + '"/>'
@@ -273,8 +277,8 @@ function heroSVG(h) {
   const coat = h.id === 'ba'
     ? '<path d="M30 220 L42 74 Q60 64 78 74 L90 220 Z" fill="#150b1b" stroke="' + c + '" stroke-width="2"/>'
     : '<path d="M34 220 L44 76 Q60 66 76 76 L86 220 L70 220 L64 150 L56 150 L50 220 Z" fill="#0d0a10" stroke="' + c + '" stroke-width="2"/>';
-  const extra = h.id === 'nil' ? '<rect x="80" y="130" width="10" height="8" rx="2" fill="' + c + '"><animate attributeName="opacity" values="1;.3;1" dur="1.2s" repeatCount="indefinite"/></rect>'
-    : h.id === 'ves' ? '<rect x="84" y="128" width="26" height="6" fill="' + c + '" transform="rotate(-12 84 128)"/>' : '<circle cx="34" cy="140" r="9" fill="none" stroke="' + c + '" stroke-width="2"/>';
+  const extra = h.id === 'chr_nil' ? '<rect x="80" y="130" width="10" height="8" rx="2" fill="' + c + '"><animate attributeName="opacity" values="1;.3;1" dur="1.2s" repeatCount="indefinite"/></rect>'
+    : h.id === 'chr_vesper' ? '<rect x="84" y="128" width="26" height="6" fill="' + c + '" transform="rotate(-12 84 128)"/>' : '<circle cx="34" cy="140" r="9" fill="none" stroke="' + c + '" stroke-width="2"/>';
   return '<svg width="120" height="230" viewBox="0 -4 120 234"><ellipse cx="60" cy="224" rx="46" ry="7" fill="' + c + '" opacity=".25"/><g class="body" style="transform-origin:60px 220px">' + coat + head + extra + '</g></svg>';
 }
 const FACTIONS = {
@@ -284,10 +288,9 @@ const FACTIONS = {
   basilica: { color: '#5fe3f0', glyph: '◉', wheel: { digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], w: { lucky: 3 }, speed: 560 }, line: 'IT HAS LEARNED YOUR LUCKY NUMBER' }
 };
 const ENEMIES = [
-  { name: 'COLLECTOR OF THE FOURTH WARD', faction: 'tetrad', hp: 240, base: 20 },
-  { name: 'SIEVE KNIGHT', faction: 'prime', hp: 560, base: 20 },
-  { name: 'LOOP ECHO', faction: 'ouro', hp: 1000, base: 30 },
-  { name: 'THE BASILICA', faction: 'basilica', hp: 4444, base: 40, boss: true }
+  { id: 'enm_debthound', name: 'DEBT HOUND · SOLO PRACTICE', faction: 'tetrad', hp: 300, base: 20 },
+  { id: 'enm_debthound', name: 'DEBT HOUND · WITH VESPER', faction: 'tetrad', hp: 300, base: 20 },
+  { id: 'boss_varro', name: 'VARRO · THE LEDGERHOUND', faction: 'tetrad', hp: 1200, base: 40, boss: true }
 ];
 function enemySVG(e) {
   const F = FACTIONS[e.faction], c = F.color;
@@ -312,9 +315,9 @@ function setTubes(ds, gold) {
   for (let i = 0; i < 3; i++) { const d = ds[i]; t[i].classList.toggle('on', d != null); t[i].classList.toggle('gold', !!gold && d != null); t[i].firstChild.textContent = d == null ? '0' : d; }
 }
 /* Omen is always two digits (World Bible §2); in an Audit it reads the share of the Balance left (GDD §1.6). */
-function omenOf(v, max) { return v <= 0 ? 0 : Math.max(1, Math.min(99, Math.ceil(v / max * 99))); }
+function omenOf(v, max) { return RULES.omen(v, max); }
 function omenStr(v, max) { return String(omenOf(v, max)).padStart(2, '0'); }
-function setSquad(v) { G.squad = Math.max(0, Math.round(v)); $('#squadOmen').innerHTML = omenStr(G.squad, G.squadMax) + '<small>PARTY OMEN · BALANCE ' + fmt(G.squad) + '</small>'; }
+function setSquad(v) { G.squad = Math.max(0, Math.round(v)); $('#squadOmen').innerHTML = omenStr(G.squad, G.squadMax) + '<small>AUDIT OMEN · BALANCE ' + fmt(G.squad) + '</small>'; }
 function setEnemyHP(v) { G.enemy.hp = Math.max(0, Math.round(v)); const o = enemyEl && enemyEl.querySelector('.omen'); if (o) o.innerHTML = omenStr(G.enemy.hp, G.enemy.max) + '<small>BALANCE ' + fmt(G.enemy.hp) + '</small>'; }
 function enemyPos() { return { x: 1010, y: 560, top: G.enemy.faction === 'basilica' ? 140 : 240 }; }
 
@@ -362,7 +365,7 @@ function onTap(heroIdx) {
   if (w.kind === 'pick') {
     if (heroIdx == null || !w.avail.includes(heroIdx)) return;
     waiter = null; w.res(heroIdx);
-  } else { waiter = null; w.res(); }
+  } else { waiter = null; w.res(performance.now()); }
 }
 stage.addEventListener('pointerdown', e => {
   if (e.target.closest('#sound') || e.target.closest('.scene button') || e.target.closest('.card')) return;
@@ -390,22 +393,23 @@ async function spinWheel(x, y, opts) {
   fx.appendChild(el);
   requestAnimationFrame(() => { el.classList.add('show', 'spin'); });
   const strip = el.querySelector('.strip');
-  let pos = Math.random() * cycle, speed = opts.speed * (CELL / 70) * 0.85, last = performance.now(), running = true, lastDigit = -1, travelled = 0;
+  const startedAt = performance.now(), initialPos = G.rng() * cycle;
+  let pos = initialPos, speed = opts.speed, running = true, lastDigit = -1;
   const digitAt = p => { let q = ((p % cycle) + cycle) % cycle; for (const c of cells) { if (q < c.h) return { c, off: q }; q -= c.h; } return { c: cells[0], off: 0 }; };
   const place = p => { const q = ((p % cycle) + cycle) % cycle; strip.style.transform = 'translateY(' + (75 - (q + cycle)) + 'px)'; };
   function frame(t) {
     if (!running) return;
-    const dt = Math.min(0.05, (t - last) / 1000); last = t;
-    pos += speed * dt; travelled += speed * dt;
-    if (opts.accel && travelled > cycle) { travelled -= cycle; speed *= opts.accel; }
+    pos = initialPos + speed * (t - startedAt) / 1000;
     place(pos);
     const cur = digitAt(pos).c.d; if (cur !== lastDigit) { lastDigit = cur; sfx.tick(cur); }
     requestAnimationFrame(frame);
   }
   place(pos); requestAnimationFrame(frame);
-  await waitTap(220);
+  const acceptedAt = await waitTap(180);
   running = false;
+  G.replay.push({ type: 'stop', encounter: G.stage, acceptedAt, displayedPhase: pos, digits: opts.digits.slice() });
   const at = digitAt(pos), target = pos - at.off + at.c.h / 2;
+  G.replay[G.replay.length - 1].acceptedDigit = at.c.d;
   el.classList.remove('spin');
   if (!RM && strip.animate) {
     const from = pos; const steps = 8;
@@ -436,24 +440,7 @@ async function flyDigit(d, x, y, slot, gold) {
 }
 
 /* ---------------- patterns ---------------- */
-const FIBSETS = [[1, 1, 2], [1, 2, 3], [2, 3, 5], [3, 5, 8]];
-function evaluate(ds) {
-  const [a, b, c] = ds, L = G.lucky;
-  if (a === b && b === c) {
-    if (a === L) return { key: 'LUCKY', d: a };
-    if (a === 4) return { key: 'REAPER', d: 4 };
-    return { key: 'JACKPOT', d: a };
-  }
-  const asc = b === a + 1 && c === b + 1, desc = b === a - 1 && c === b - 1;
-  const eq = (p, q) => p.every((v, i) => v === q[i]);
-  const fib = G.charms.includes('golden') && FIBSETS.some(f => eq(f, ds) || eq(f.slice().reverse(), ds));
-  const sorted = ds.slice().sort((x, y) => x - y);
-  const anyRun = L === 6 && sorted[1] === sorted[0] + 1 && sorted[2] === sorted[1] + 1;
-  if (asc || desc || fib || anyRun) return { key: 'CASCADE' };
-  if ((a + b + c) % 10 === 0) return { key: 'ZERO' };
-  if (a === b || b === c || a === c) return { key: 'PAIR' };
-  return { key: 'BUST' };
-}
+function evaluate(ds) { return RULES.evaluate(ds, G.lucky); }
 
 async function bigMoment(name, color, math, line, level) {
   const B = $('#big');
@@ -483,48 +470,43 @@ async function countUp(el, m) {
   }
 }
 
-async function resolveReel(ds, roundDamage) {
-  const p = evaluate(ds), L = G.lucky, ep = enemyPos();
-  const compound = G.charms.includes('compound') ? 3 : 0;
-  let result = { extra: false, cancel: false };
-  if (p.key === 'BUST') {
-    $('#tubes').animate([{ opacity: 1 }, { opacity: 0.3 }, { opacity: 1 }, { opacity: 0.2 }], { duration: 500 });
-    tag(640, 260, 'BUST', '#8d8094'); await wait(700); return result;
+async function resolveReel(ds, bases) {
+  const previousJarState = G.jar.state;
+  const prepared = RULES.jarBeforeRound(ds, G.jar); G.jar = prepared.jar;
+  const scoring = prepared.scoringDigits;
+  if (previousJarState === 'holding') tag(640, 300, 'DEBT JAR · THIRD SLOT → 0', '#ff7a2c');
+  if (previousJarState === 'restoring') tag(640, 300, 'DEBT REPAID · ' + scoring[2], '#5fe3f0');
+  const r = RULES.resolveRound({ actualDigits: ds, scoringDigits: scoring, bases, lucky: G.lucky,
+    party: activeHeroIndices().map(i => HEROES[i].id), charms: G.charms, blackCatUsed: G.blackCatUsed,
+    bustStreak: G.bustStreak, partyBalance: G.squad, partyMax: G.squadMax, enemyBalance: G.enemy.hp, enemyMax: G.enemy.max });
+  G.blackCatUsed = r.blackCatUsed; G.bustStreak = r.bustStreak;
+  G.replay.push({ type: 'round', actualDigits: ds.slice(), result: r });
+  setTubes(r.resolvedDigits, r.pattern.key === 'OVERWRITE');
+  for (const event of r.events) { tag(640, 305, event.type === 'black_cat' ? 'BLACK CAT · LUCK TURNS' : "HAP'S HAND · LUCK TURNS", '#ffd27a'); await wait(600); }
+  const names = { OVERWRITE: 'OMEN OVERWRITE', REAPER: "REAPER'S TOLL", JACKPOT: 'JACKPOT', CASCADE: 'CASCADE', ZERO_SUM: 'ZERO-SUM', PAIR: 'PAIR', BUST: 'BUST' };
+  if (r.pattern.key === 'OVERWRITE' || r.pattern.key === 'JACKPOT') { sfx.fanfare(); await allOut(r.pattern.key === 'OVERWRITE'); }
+  if (r.pattern.key === 'BUST') { tag(640, 260, 'BUST · ×1', '#8d8094'); await wait(400); }
+  else await bigMoment(names[r.pattern.key], r.pattern.key === 'REAPER' ? '#ff3d5a' : '#ffd27a',
+    { pre: r.strikeValues.reduce((a,b) => a+b,0) + ' × ' + r.pattern.mult + ' = ', from: 0, to: r.damage },
+    r.extra ? 'YOU ACT AGAIN' : r.cancel ? 'ENEMY ACTION CANCELLED' : '', r.pattern.key === 'OVERWRITE' || r.pattern.key === 'JACKPOT' ? 2 : 1);
+  // Core computed both balances from the same pre-round snapshot; commit once.
+  setEnemyHP(r.enemyAfter); setSquad(r.partyAfter);
+  pop(1010, enemyPos().top + 60, r.damage + r.enemyReaper, 'gold');
+  G.stats.best = Math.max(G.stats.best, r.damage + r.enemyReaper);
+  if (r.partyReaper) pop(385, 560, r.partyReaper, 'red');
+  if (!r.terminal && G.enemy.id === 'boss_varro') {
+    const before = G.jar.state;
+    G.jar = RULES.jarAfterRound(G.jar, r.resolvedDigits, true, r.terminal);
+    if (before === 'idle') tag(640, 300, 'JAR STORES ' + G.jar.digit + ' · 3 ROUNDS OR DEFENCES', '#ff7a2c');
+    if (before === 'holding' && G.jar.state === 'restoring') tag(640, 300, 'JAR OPENS · DIGIT RETURNS NEXT ROUND', '#5fe3f0');
+    if (G.enemy.hp <= G.enemy.max / 2 && G.enemy.phase === 1) { G.enemy.phase = 2; G.enemy.phaseWarning = true; tag(900, 240, 'PHASE 2 · NEXT 40, THEN 80', '#ff3d5a'); }
   }
-  $('#tubes').classList.add('win');
-  setTimeout(() => $('#tubes').classList.remove('win'), 900);
-  if (p.key === 'LUCKY' || p.key === 'JACKPOT') {
-    const lucky = p.key === 'LUCKY';
-    const mult = lucky ? 21 + compound * 3 : Math.max(2, p.d) + compound; // Overwrite is ×21 for every digit (GDD §1.3)
-    const bonus = roundDamage * mult;
-    setTubes(ds, lucky);
-    if (lucky) { sfx.fanfare(); sfx.bells(L || 3); } else { sfx.fanfare(); }
-    await allOut(lucky);
-    await bigMoment(lucky ? 'OMEN OVERWRITE' : 'JACKPOT', lucky ? '#ffd27a' : '#ff7a2c', { pre: fmt(roundDamage) + ' × ' + mult + ' = ', from: 0, to: bonus }, lucky ? 'YOUR NUMBER, THREE TIMES. THE CITY REWRITES ITSELF.' : 'THREE OF A KIND', 2);
-    await strikeEnemy(bonus, 'gold');
-    G.stats.best = Math.max(G.stats.best, bonus);
-  } else if (p.key === 'REAPER') {
-    sfx.toll();
-    await bigMoment("REAPER'S TOLL", '#ff3d5a', null, 'EVERY OMEN THAT CONTAINS A 4 LOSES 44%', 2);
-    if (omenStr(G.enemy.hp, G.enemy.max).includes('4')) await strikeEnemy(Math.floor(G.enemy.max * 0.44), 'red');
-    else tag(ep.x, 380, 'NO 4 IN ITS OMEN', '#8d8094');
-    if (L !== 4 && omenStr(G.squad, G.squadMax).includes('4')) { const l = Math.floor(G.squadMax * 0.44); setSquad(G.squad - l); pop(385, 560, l, 'red'); heroEls.forEach(h => { h.classList.remove('hurt'); void h.offsetWidth; h.classList.add('hurt'); }); await wait(600); }
-  } else if (p.key === 'CASCADE') {
-    sfx.bells(3);
-    await bigMoment('CASCADE', '#5fe3f0', null, 'THE SEQUENCE HOLDS. YOU ACT AGAIN.', 1);
-    result.extra = true;
-  } else if (p.key === 'ZERO') {
-    sfx.parry();
-    const heal = 40;
-    await bigMoment('ZERO-SUM', '#5fe3f0', null, 'THE LEDGER BALANCES. ITS NEXT MOVE IS ERASED.', 1);
-    setSquad(Math.min(G.squadMax, G.squad + heal)); pop(385, 560, heal, 'teal');
-    if (G.charms.includes('balance')) await strikeEnemy(roundDamage * 2, 'gold');
-    result.cancel = true;
-  } else if (p.key === 'PAIR') {
-    tag(640, 260, L === 2 ? 'PAIR · ×3' : 'PAIR · ×2', '#ffd27a'); sfx.bells(2); await wait(500);
-    await strikeEnemy(roundDamage * (L === 2 ? 2 : 1), '');
-  }
-  return result;
+  return r;
+}
+function creditDefence() {
+  const before = G.jar.state;
+  G.jar = RULES.jarDefence(G.jar, true, null);
+  if (before === 'holding' && G.jar.state === 'restoring') tag(640, 300, 'JAR OPEN · DIGIT RETURNS NEXT ROUND', '#5fe3f0');
 }
 
 async function allOut(lucky) {
@@ -563,12 +545,19 @@ async function heroAttack(hi, slot, roundDigits) {
   await cutin(h.name, h.sub + ' · LUCKY ' + heroLucky(h), h.color);
   const L = heroLucky(h);
   const weights = {}; weights[L] = 2;
-  if (G.charms.includes('loaded7')) weights[7] = (weights[7] || 1) * 2;
-  if (G.charms.includes('mirror') && roundDigits.length) weights[roundDigits[0]] = (weights[roundDigits[0]] || 1) * 2;
+  if (G.charms.includes('charm_horseshoe')) weights[G.lucky] = (weights[G.lucky] || 1) * 1.5;
+  if (G.bustStreak >= 1) for (const d of new Set(roundDigits)) weights[d] = (weights[d] || 1) * 1.5;
   const classes = {}; classes[G.lucky] = 'lk';
+  if (roundDigits.length === 2) for (const d of RULES.facesFor(h.id, G.lucky)) {
+    const candidate = G.jar.state === 'holding' ? 0 : G.jar.state === 'restoring' ? G.jar.digit : d;
+    const preview = [roundDigits[0], roundDigits[1], candidate];
+    let p = evaluate(preview);
+    if (p.key === 'BUST' && (G.bustStreak >= 2 || G.charms.includes('charm_black_cat') && !G.blackCatUsed)) { preview[2] = preview[0]; p = evaluate(preview); }
+    if (p.key !== 'BUST') classes[d] = (classes[d] || '') + ' ps-' + p.key;
+  }
   const base = h.base + G.bonusBase;
   hint('stop', h.x + 40, 196, 'TAP TO STOP THE NUMBER');
-  const { digit, el: wheelEl } = await spinWheel(h.x + 20, 290, { digits: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], weights, speed: h.speed * (G.charms.includes('slowhand') ? 0.75 : 1) * (G.lucky === 1 ? 0.85 : 1) * (G.firstSpin ? 0.6 : 1), tens: String(base / 10), color: h.color, classes });
+  const { digit, el: wheelEl } = await spinWheel(h.x + 20, 290, { digits: RULES.facesFor(h.id, G.lucky), weights, speed: h.speed * (G.bustStreak >= 1 ? 0.8 : 1) * (G.firstSpin ? 0.6 : 1), tens: String(base / 10), color: h.color, classes });
   G.firstSpin = false;
   clearHint();
   const dmg = base + digit;
@@ -581,7 +570,7 @@ async function heroAttack(hi, slot, roundDigits) {
   // impact + hit-stop
   flash(0.35, 120); sfx.hit(); shake();
   sparks(ep.x - 40, ep.top + 120, h.color, 24);
-  setEnemyHP(G.enemy.hp - dmg);
+  // Provisional hit number only; the three-strike total settles once in Core.
   enemyEl.classList.remove('hurt'); void enemyEl.offsetWidth; enemyEl.classList.add('hurt');
   const p = pop(ep.x, ep.top + 40, dmg, digit === G.lucky ? 'gold' : '', true);
   await wait(40 + 40 * slot);
@@ -601,67 +590,48 @@ async function heroAttack(hi, slot, roundDigits) {
 }
 
 async function playerRound() {
-  const digits = []; let total = 0;
-  setTubes([]);
-  const avail = [0, 1, 2];
-  heroEls.forEach(e => e.classList.remove('spent'));
+  const digits = [], bases = [], used = [], active = activeHeroIndices();
+  setTubes([]); heroEls.forEach(e => e.classList.remove('spent'));
   for (let slot = 0; slot < 3; slot++) {
+    const unused = active.filter(i => !used.includes(i));
+    const avail = unused.length === 3 - slot ? unused : active;
     setCam(640, 360, 1); bars(false);
-    avail.forEach(i => heroEls[i].classList.add('pickable'));
-    hint('pick', 390, 230, 'TAP A HERO');
-    const hi = await waitPick(avail.slice());
-    avail.splice(avail.indexOf(hi), 1);
+    avail.forEach(i => { heroEls[i].classList.remove('spent'); heroEls[i].classList.add('pickable'); });
+    hint('pick', 390, 230, 'TAP A HERO · 1 / 2');
+    const hi = await waitPick(avail.slice()); used.push(hi);
     heroEls.forEach(e => e.classList.remove('pickable'));
-    total += await heroAttack(hi, slot, digits);
-    if (G.enemy.hp <= 0) break;
+    bases.push(HEROES[hi].base + G.bonusBase);
+    await heroAttack(hi, slot, digits);
   }
-  setCam(640, 360, 1); bars(false);
-  clearHint();
-  let res = { extra: false, cancel: false };
-  if (digits.length === 3) res = await resolveReel(digits, total);
-  heroEls.forEach(e => e.classList.remove('spent'));
-  bars(false);
-  return res;
+  clearHint(); setCam(640, 360, 1); bars(false);
+  const result = await resolveReel(digits, bases);
+  heroEls.forEach(e => e.classList.remove('spent')); bars(false);
+  return result;
 }
 
 async function enemyTurn() {
-  const E = G.enemy, F = FACTIONS[E.faction], ep = enemyPos(), L = G.lucky;
-  setCam(ep.x - 120, 360, 1.3); bars(true);
-  await cutin(E.name, F.line, F.color);
-  const weights = {}, classes = {};
-  for (const k in F.wheel.w) { if (k === 'lucky') weights[L] = F.wheel.w[k]; else weights[k] = F.wheel.w[k]; }
-  if (G.charms.includes('ward0')) weights[0] = (weights[0] || 1) * 3;
-  if (L === 5) weights[0] = (weights[0] || 1) * 2;
-  classes[0] = 'par'; classes[L] = E.faction === 'basilica' ? 'dz' : 'lk';
-  if (E.faction === 'tetrad') classes[4] = 'dz';
-  hint('parry', ep.x - 160, 196, 'STOP ON 0 TO PARRY');
-  const { digit, el } = await spinWheel(ep.x - 150, 300, { digits: F.wheel.digits, weights, speed: F.wheel.speed, accel: F.wheel.accel, tens: String(E.base / 10), color: F.color, classes });
-  clearHint();
-  el.style.opacity = '0'; setTimeout(() => el.remove(), 300);
-  let dmg = E.base + digit;
-  setCam(500, 380, 1.12);
-  if (!RM) await enemyEl.animate([{ transform: 'translate(-50%,-100%)' }, { transform: 'translate(calc(-50% - 380px),-100%) skewX(10deg)' }], { duration: 240, easing: 'cubic-bezier(.6,0,1,.6)', fill: 'forwards' }).finished.catch(() => {});
-  const back = () => { if (!RM) enemyEl.animate([{ transform: 'translate(calc(-50% - 380px),-100%)' }, { transform: 'translate(-50%,-100%)' }], { duration: 420, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'forwards' }); };
-  if (digit === 0) {
-    sfx.parry(); flash(0.6, 160); sparks(560, 420, '#5fe3f0', 30);
-    tag(520, 300, 'PARRY', '#5fe3f0');
-    back(); await wait(900);
-  } else if (digit === L && E.faction !== 'basilica') {
-    sfx.parry(); sparks(560, 420, '#ffd27a', 30); tag(520, 300, 'FORTUNE · REFLECTED', '#ffd27a');
-    back(); await wait(500); setCam(640, 360, 1);
-    await strikeEnemy(dmg, 'gold');
-  } else {
-    let label = '';
-    if (E.faction === 'tetrad' && digit === 4) { dmg *= 2; label = 'DEATHMARK ×2'; }
-    if (E.faction === 'basilica' && digit === L) { dmg *= 3; label = 'IT KNOWS YOUR NUMBER ×3'; }
-    sfx.hit(); shake(); flash(0.3, 120);
-    heroEls.forEach(h => { h.classList.remove('hurt'); void h.offsetWidth; h.classList.add('hurt'); });
-    setSquad(G.squad - dmg);
-    pop(385, 560, dmg, 'red', true);
-    if (label) tag(520, 250, label, '#ff3d5a');
-    back(); await wait(950);
+  const E = G.enemy, ep = enemyPos();
+  const strikeBase = E.phase === 2 && !E.phaseWarning ? 80 : E.base;
+  if (E.phaseWarning) E.phaseWarning = false;
+  setCam(ep.x - 120, 360, 1.2); bars(true);
+  await cutin(E.name, 'STOP ON 0 · OR YOUR ' + G.lucky + ' · STRIKE ' + strikeBase + '+DIGIT', '#ff3d5a');
+  let digit = null;
+  const ofuda = G.charms.includes('charm_ofuda') && !G.ofudaUsed;
+  if (ofuda) { G.ofudaUsed = true; tag(640, 300, 'OFUDA · AUTOMATIC PARRY', '#5fe3f0'); }
+  else {
+    const classes = { 0: 'par' }; classes[G.lucky] = 'lk';
+    const stopped = await spinWheel(ep.x - 150, 300, { digits: [0,1,2,3,4,5,6,7,8,9], weights: {}, speed: 470, tens: String(strikeBase / 10), color: '#ff3d5a', classes });
+    digit = stopped.digit; stopped.el.remove();
   }
-  setCam(640, 360, 1); bars(false);
+  const r = RULES.defend({ stoppedDigit: digit, lucky: G.lucky, strikeBase, partyBalance: G.squad, partyMax: G.squadMax, enemyBalance: E.hp, enemyMax: E.max, ofuda });
+  setSquad(r.partyAfter); setEnemyHP(r.enemyAfter);
+  G.replay.push({ type: 'defence', stoppedDigit: digit, ofuda, result: r });
+  tag(640, 300, r.kind.replaceAll('_', ' · '), r.defended ? '#5fe3f0' : '#ff3d5a');
+  if (r.defended) { sfx.parry(); if (!r.terminal) creditDefence(); }
+  else { sfx.hit(); shake(); }
+  if (r.reflected) pop(ep.x, ep.top + 60, r.reflected, 'gold');
+  await wait(650); setCam(640, 360, 1); bars(false);
+  return r;
 }
 
 /* ---------------- scenes ---------------- */
@@ -678,7 +648,7 @@ async function kinetic(lines) {
 }
 const FATES = [
   ['NULL', 'The number the Basilica cannot divide by.'], ['ACE', 'First place, first light.'], ['PAIR', '好事成双: good things come in pairs.'],
-  ['TRINITY', 'Cantonese 三 (saam) echoes 生 (saang), life.'], ['DEFIANCE', '四 sounds like 死, death. Wear it anyway. The Reaper spares you.'],
+  ['TRINITY', 'Cantonese 三 (saam) echoes 生 (saang), life.'], ['DEFIANCE', 'Your digit. Overwrite is ×21 for every choice.'],
   ['HAMSA', 'The five-fingered hand that wards off the evil eye.'], ['FLOW', '六六大顺: may everything go smoothly.'],
   ['JACKPOT', 'Lucky seven. Three in a row.'], ['PROSPERITY', '八 (bā) rhymes with 发 (fā), to prosper.'], ['LONGEVITY', '九 (jiǔ) echoes 久, lasting. In Japanese, 9 (ku) echoes 苦, suffering.']
 ];
@@ -696,26 +666,20 @@ function askLucky() {
   });
 }
 const CHARMS = {
-  loaded7: { sym: '7', name: 'Loaded Seven', desc: 'Every 7 on your wheels is twice as wide.' },
-  slowhand: { sym: '⧗', name: 'Slow Hand', desc: 'Your wheels spin 25% slower.' },
-  ward0: { sym: '0', name: 'Ward of Zero', desc: 'The 0 on enemy wheels is three times as wide. Parry more.' },
-  golden: { sym: 'φ', name: 'Golden Ratio', desc: '1-1-2, 1-2-3, 2-3-5 and 3-5-8 count as a Cascade.' },
-  compound: { sym: '×', name: 'Compound Interest', desc: 'Jackpots multiply by 3 more.' },
-  mirror: { sym: '⇄', name: 'Mirror Bus', desc: 'Your first digit each round grows wider on the next two wheels.' },
-  bond: { sym: '+', name: 'Omen Bond', desc: 'Every hero hits 10 harder. Tens never change the last digit.' },
-  balance: { sym: '=', name: 'Scales of the Ledger', desc: 'Zero-Sum also deals your round damage twice.' }
+  charm_horseshoe: { sym: '∩', name: 'Horseshoe', desc: 'Your chosen digit is 50% wider on allied wheels where present.' },
+  charm_black_cat: { sym: '●', name: 'Black Cat', desc: 'First Bust each fight: third digit becomes the first. Re-evaluate the pattern.' },
+  charm_ofuda: { sym: '▯', name: 'Ofuda', desc: 'Automatically parry the first enemy action. No reflected damage.' }
 };
 function tarot() {
   return new Promise(res => {
-    const pool = Object.keys(CHARMS).filter(k => !G.charms.includes(k) || k === 'bond');
-    for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
-    const offer = pool.slice(0, G.lucky === 8 ? 4 : 3);
+    const offer = Object.keys(CHARMS);
     showScene('<div><div class="kin small in">PAWNSHOP OF PROBABILITIES</div><div class="kin in" style="font-size:56px;margin-top:10px">TAKE ONE CHARM</div><div class="cards">' +
       offer.map((k, i) => '<div class="card" role="button" tabindex="0" data-k="' + k + '" style="animation-delay:' + (i * 0.12) + 's"><div class="sym">' + CHARMS[k].sym + '</div><div class="cn">' + CHARMS[k].name + '</div><div class="cd">' + CHARMS[k].desc + '</div></div>').join('') + '</div></div>');
+    let offerTaken = false;
     scene.querySelectorAll('.card').forEach((c, i) => {
       setTimeout(() => { c.classList.add('in'); sfx.whoosh(); }, i * 120);
-      const choose = e => { e.stopPropagation(); if (c.classList.contains('chosen')) return; c.classList.add('chosen'); sfx.bells(2);
-        const k = c.dataset.k; if (k === 'bond') G.bonusBase += 10; else G.charms.push(k); setTimeout(() => { hideScene(); res(); }, 650); };
+      const choose = e => { e.stopPropagation(); if (offerTaken) return; offerTaken = true; c.classList.add('chosen'); sfx.bells(2);
+        const k = c.dataset.k; G.charms.push(k); setTimeout(() => { hideScene(); res(); }, 650); };
       c.addEventListener('click', choose); c.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') choose(e); });
     });
   });
@@ -723,72 +687,65 @@ function tarot() {
 
 /* ---------------- run flow ---------------- */
 function spawnHeroes() {
-  $('#actors').innerHTML = ''; heroEls.length = 0;
-  HEROES.forEach((h, i) => { const el = mkActor(heroSVG(h), h.x, 562, '', h.color); el.dataset.h = i; heroEls.push(el); });
+  $('#actors').innerHTML = ''; heroEls.length = 0; enemyEl = null;
+  HEROES.forEach((h, i) => {
+    if (!activeHeroIndices().includes(i)) return;
+    const identity = h.id === 'chr_nil' ? '<div class="omen">NaN<small>IDENTITY</small></div>' : '';
+    const el = mkActor(heroSVG(h) + identity, h.x, 562, '', h.color); el.dataset.h = i; heroEls[i] = el;
+  });
 }
 async function spawnEnemy() {
   if (enemyEl) enemyEl.remove();
   const ep = enemyPos();
-  enemyEl = mkActor(enemySVG(G.enemy) + '<div class="omen"></div>', ep.x, 566, 'enemy-actor', FACTIONS[G.enemy.faction].color);
+  enemyEl = mkActor(enemySVG(G.enemy) + '<div class="omen"></div>', ep.x, 566, 'enemy-actor', '#ff3d5a');
   setEnemyHP(G.enemy.hp);
-  if (!RM) await enemyEl.animate([{ transform: 'translate(calc(-50% + 400px),-100%)', opacity: 0, filter: 'blur(12px)' }, { transform: 'translate(-50%,-100%)', opacity: 1, filter: 'blur(0)' }], { duration: 700, easing: 'cubic-bezier(.2,.8,.2,1)' }).finished.catch(() => {});
 }
 function makeEnemy(i) {
-  const last = ENEMIES.length - 1, b = ENEMIES[Math.min(i, last)], over = Math.max(0, i - last);
-  const hp = Math.round(b.hp * Math.pow(2.5, over));
-  return { name: over ? 'THE BASILICA · RECURSION ' + over : b.name, faction: b.faction, hp, max: hp, base: b.base + 20 * over, boss: b.boss };
+  const b = ENEMIES[i]; return { ...b, max: b.hp, phase: 1, phaseWarning: false };
 }
 async function fight() {
-  G.enemy = makeEnemy(G.stage);
+  G.enemy = makeEnemy(G.stage); G.rng = RULES.createRng(713 + G.stage * 997);
+  G.jar = RULES.newJar();
+  G.bustStreak = 0; G.blackCatUsed = false; G.ofudaUsed = false;
   await spawnEnemy();
-  setCam(1000, 360, 1.25); bars(true);
-  await cutin(G.enemy.name, G.enemy.boss ? 'THE CITY ITSELF' : 'WAVE ' + (G.stage + 1), FACTIONS[G.enemy.faction].color);
-  setCam(640, 360, 1); bars(false);
+  await cutin(G.enemy.name, G.enemy.boss ? 'AFTER ROUND 1: THIRD SLOT DEBT · 3 ROUNDS OR DEFENCES' : 'THREE STRIKES · ONE PATTERN', '#ff3d5a');
   while (true) {
     const r = await playerRound();
-    if (G.enemy.hp <= 0) return true;
-    if (G.lucky === 9 && G.squad < G.squadMax) { setSquad(Math.min(G.squadMax, G.squad + 9)); pop(385, 560, 9, 'teal'); }
-    if (r.extra) continue;
-    if (r.cancel) { tag(1000, 250, 'ERASED', '#5fe3f0'); await wait(700); continue; }
-    await enemyTurn();
-    if (G.enemy.hp <= 0) return true;
-    if (G.squad <= 0) return false;
+    if (r.terminal) return r.terminal === 'WIN';
+    if (r.extra || r.cancel) continue;
+    const defence = await enemyTurn();
+    if (defence.terminal) return defence.terminal === 'WIN';
   }
 }
-async function run() {
-  G = { lucky: G ? G.lucky : 7, squad: 300, squadMax: 300, stage: 0, charms: [], bonusBase: 0, stats: { best: 0 }, firstSpin: true };
-  setSquad(300); setTubes([]); spawnHeroes(); hideScene();
-  while (true) {
-    const won = await fight();
-    if (!won) break;
-    const ep = enemyPos();
-    sparks(ep.x, 400, FACTIONS[G.enemy.faction].color, 50); flash(0.7, 300); sfx.fanfare();
-    if (!RM) await enemyEl.animate([{ opacity: 1, filter: 'brightness(1)' }, { opacity: 0, filter: 'brightness(5) blur(10px)', transform: 'translate(-50%,-100%) scale(1.3)' }], { duration: 700, fill: 'forwards' }).finished.catch(() => {});
-    await kinetic([{ t: 'SETTLED', ms: 900 }, ...(G.enemy.faction === 'basilica' && G.stage === ENEMIES.length - 1 ? [{ t: 'THE LEDGER BREAKS.', ms: 1500 }, { t: 'BUT IT REBOOTS.', cls: 'glitch', ms: 1300 }] : [])]);
-    hideScene();
+async function results(won) {
+  showScene('<div><div class="kin in">' + (won ? 'REFERENCE COMPLETE' : 'AUDIT SETTLED') + '</div><div class="tapline">RULES SANDBOX · NOT THE STORY BUILD · BIGGEST NUMBER ' + fmt(G.stats.best) + '</div><div class="digits"><button type="button" id="again" style="width:auto;padding:0 20px;font-size:40px">' + (won ? 'REPLAY' : 'RETRY ENCOUNTER') + '</button><button type="button" id="refate" style="width:auto;padding:0 20px;font-size:40px">NEW NUMBER</button></div></div>');
+  $('#again').addEventListener('click', e => { e.stopPropagation(); run(won ? 0 : G.stage, won ? [] : G.charms.slice()); }, { once: true });
+  $('#refate').addEventListener('click', async e => { e.stopPropagation(); G.lucky = await askLucky(); run(); }, { once: true });
+}
+async function run(startStage = 0, charms = []) {
+  const lucky = G ? G.lucky : 7;
+  G = { lucky, squad: 300, squadMax: 300, stage: startStage, charms, bonusBase: 0, stats: { best: 0 }, firstSpin: true, replay: [] };
+  hideScene(); setTubes([]);
+  while (G.stage < ENEMIES.length) {
+    G.bonusBase = G.stage >= 2 ? 10 : 0; G.squadMax = G.stage >= 2 ? 340 : 300; setSquad(G.squadMax); spawnHeroes();
+    const won = await fight(); if (!won) { await results(false); return; }
+    tag(640, 300, 'STAKE SETTLED · PERSON SURVIVES', '#5fe3f0'); await wait(650);
     G.stage++;
-    store.set('zso2-best', Math.max(store.get('zso2-best', 0), G.stage));
-    setSquad(Math.min(G.squadMax, G.squad + 80)); G.bonusBase += 10;
-    await tarot();
+    if (G.stage === 1) { await kinetic([{ t: 'VESPER JOINS THE REFERENCE PARTY.', ms: 1000 }]); hideScene(); }
+    if (G.stage === 2) await tarot();
   }
-  await kinetic([{ t: 'ACCOUNT CLOSED.', cls: 'glitch', ms: 1500 }]);
-  showScene('<div><div class="kin in">ACCOUNT CLOSED</div><div class="tapline">REACHED WAVE ' + (G.stage + 1) + ' · BIGGEST NUMBER ' + fmt(G.stats.best) + ' · BEST EVER WAVE ' + Math.max(store.get('zso2-best', 0), G.stage + 1) + '</div><div class="digits" style="gap:20px"><button type="button" id="again" style="width:auto;padding:0 30px;font-size:44px;height:80px;border-radius:8px">RUN IT BACK</button><button type="button" id="refate" style="width:auto;padding:0 30px;font-size:44px;height:80px;border-radius:8px">NEW NUMBER</button></div></div>');
-  await new Promise(res => {
-    $('#again').addEventListener('click', e => { e.stopPropagation(); res(); });
-    $('#refate').addEventListener('click', async e => { e.stopPropagation(); G.lucky = await askLucky(); res(); });
-  });
-  run();
+  await results(true);
 }
 
 async function boot() {
   spawnHeroes();
-  showScene('<div><div class="logo">ZERO-SUM: <em>OMEN</em></div><div class="tapline">TAP TO ENTER MERIDIAN</div></div>');
+  showScene('<div><div class="logo">ZERO-SUM: <em>OMEN</em></div><div class="tapline">REFERENCE SANDBOX · TAP TO TEST THE RULES</div></div>');
   await waitTap(0);
   ac();
   await kinetic([
     { t: 'MERIDIAN.', ms: 1300 },
     { t: 'EVERY SOUL WEARS A NUMBER.', ms: 1500 },
-    { t: 'IT DECIDES WHO SETTLES.', ms: 1400 },
+    { t: 'CIVIC OMEN IS STATUS. AUDIT OMEN READS YOUR STAKE.', ms: 1400 },
     { t: 'YOURS READS', ms: 900 },
     { t: 'NaN', cls: 'glitch', ms: 1500, sfx: () => sfx.sting() }
   ]);

@@ -211,3 +211,11 @@ svg { display:block; }
 .first12 { columns:2; column-gap:12mm; margin-top:6mm; font-size:10pt; color:#D9CDB7; max-width:250mm; }
 .first12 li { margin-bottom:1.6mm; break-inside:avoid; }
 .first12 em { display:block; font-style:normal; font-family:var(--m); font-size:7pt; color:var(--nixie); }
+
+/* Fresh designs preserve complete contours; captions do not certify runtime acceptance. */
+.hs-front img { width:100%; height:158mm; object-fit:contain; }
+.detail-plate { width:100%; height:100%; object-fit:contain; }
+.tab { max-width:100%; overflow-wrap:anywhere; box-sizing:border-box; }
+.col-text,.hs-right { min-width:0; overflow-wrap:break-word; }
+.toc { font-size:14pt; }
+.toc li { padding:1.2mm 0; }

@@ -1,57 +1,55 @@
-# ZERO-SUM: OMEN — The First 10 Minutes (Gate A4)
+# ZERO-SUM: OMEN — First-session onboarding
 
-Jam players decide in 60 seconds; raters play 10–20 minutes. This is the game they actually judge. Second by second for minute one, then beat by beat to minute ten.
+Updated **7 November 2026** under [DECISIONS.md](DECISIONS.md). Specified targets for **The Remainder**, the 10–15-minute Meridian jam in JAM_SLICE/JAM_SCRIPT. No timings or first-player results have yet been verified. The full campaign's 35-minute Prologue is a different content budget.
 
-**Rules**
-1. The **first tap** happens within **20 s** of pressing Start.
-2. The **lucky number** is chosen in **minute 1**.
-3. The **first Jackpot is guaranteed** in the first fight (scripted wheel), so everyone sees the dream moment early.
-4. No text box over **2 lines**. Every mechanic is taught by **doing it once, safely**.
-5. The **hook** (REMAINDER DETECTED) lands before **minute 3**.
-6. Returning players skip straight to the Naming shrine (title → "Continue" or "New number").
+## 1. Timing and teaching contract
 
----
+1. Measure cold download/startup separately from **Start-to-first-action ≤20 s** and **lucky-digit choice ≤60 s**. Settings, deliberate reading and assist input remain untimed; measure a normally advancing new session without forcing every user to keep that pace.
+2. Detection follows Naming immediately and by minute three in the target path. No mandatory myth montage or video blocks the rescue.
+3. Exactly **three encounters**: one Debt Hound with solo NIL; Vesper joins, then one Debt Hound with both heroes; Varro alone. One charm choice sits between encounter two and the boss.
+4. Teach stopping/reading the reel, choosing striker order, then reading debt/defence. All seven base classifiers exist; a novice need not naturally trigger or memorize all seven during onboarding.
+5. Tutorial exceptions are explicit data: rescue at 07 and a legal first-round Jackpot. Normal play accepts real legal faces; do not force Busts, near-misses or wins covertly.
+6. Use two readable lines per story box; vital colour cues also have shape/text. Pause rules cards explain patterns/Favour without a GIF-production dependency.
 
-## Minute 1, second by second
+## 2. First minute
 
-| t | Player sees | Player does | Learns | Feels |
-|---|---|---|---|---|
-| 0:00 | Black. A single Nixie tube flickers **NaN**. Title card slams: ZERO-SUM: OMEN | Taps "Start" (unlocks audio) | — | Curiosity |
-| 0:03 | Kinetic type over rain: "MERIDIAN." / "EVERY SOUL WEARS A NUMBER." / "IT DECIDES WHO SETTLES." | Watches (tap skips) | The world rule | Intrigue |
-| 0:09 | Rain Alley 9 at dawn. Ama's Omen ticks **03 → 02 → 01**. Tobi stares | Watches | Numbers are life | Unease |
-| 0:14 | Collectors arrive. A hooded figure steps in; **NaN** glitches over their head | — | This is you | "Who is that?" |
-| 0:17 | A wheel of digits spins around Ama's 01. Prompt: **TAP** (one word, pulsing) | **First tap** | Tapping stops the number | Power |
-| 0:18 | The wheel slams on **07** (scripted: any tap lands 07). Ama's Omen rings like a bell. Collector: "That one has no number." | — | Stopping numbers changes fate | Delight |
-| 0:24 | Chase cut (8 s, motion graphics over charm-hung alleys) | — | The world is multicultural | Momentum |
-| 0:32 | Brother Nought's shrine; the Naming terminal: ten Nixie tubes | — | — | Ritual |
-| 0:38 | "Every soul needs a number, child. **STATE YOUR LUCKY NUMBER.**" Hovering a digit shows one line of what it means across the Tally | **Chooses 0–9** | Your number matters | Ownership |
-| 0:55 | The terminal overloads. City-wide screens: **REMAINDER DETECTED**. The Basilica's eye opens | — | You are hunted | Thrill |
+| Target from Start | Beat / input | State and teaching evidence |
+|---|---|---|
+| 0:00 | Start unlocks audio; rain, NaN, short Meridian caption | No film dependency |
+| 0:03–0:14 | Ama's Civic 03→02→01; Tobi; Collector; confiscation jar | Personal stakes; jar holds six units; NIL is unregistered |
+| ~0:17 | Rescue wheel: “STOP THE NUMBER”; tap or Space | First accepted gameplay input by 20 s target |
+| ~0:18–0:24 | Authored 07 stop; jar−6, Ama+6; family escapes | Transfer, no new luck or erased Collector |
+| ~0:24–0:38 | ≤8 s chase and short Naming dialogue | Still/motion fallback and subtitles; no glossary detour |
+| ~0:38–0:55 | Choose 0–9; optional meaning on focus; confirm | Set personal resonance once, separate from Civic/Audit Omen; no secret stat buff |
+| By 1:00 target | REMAINDER DETECTED; “Hap's watching. Run.” | Hunt starts; first mention of Hap stays mysterious |
 
-## Minutes 1–10, beat by beat
+If a player reads a digit meaning, let them. The stopwatch records it; the UI never chooses a personal digit automatically to meet a metric.
 
-| Time | Beat | Teaches | Design notes |
-|---|---|---|---|
-| 1:00 | Logo slam with your digit; Debt Hounds leap from the rooftops | — | Straight into play |
-| 1:10 | **Fight 1**, NIL alone. Round 1: "TAP" prompt; strike; digit flies to the reel. Round 1's reel is scripted to a **Jackpot** of your digit's neighbour (big fanfare) | Stop, strike, the reel, Jackpot | The fanfare is full length the first time |
-| 2:00 | Enemy strike: its wheel shows a wide **0** face. Prompt: "STOP ON 0" | Parry | The first enemy wheel has 0 triple-wide |
-| 2:20 | Round 2: a Pair or Bust happens naturally; one line: "Two match: a PAIR." | Pair; Bust is OK | Bust shows a shrug, not a failure |
-| 2:45 | Win. Results flash: biggest number | Reward | 5 s, skippable |
-| 3:00 | **Vesper drops in**: "Need a hand? Seven bucks." (3 stills + motion graphics, 12 s) | — | Her first line is the game's tone |
-| 3:15 | **Fight 2**: tap a hero to choose who strikes. Third strike: **Pattern Sight** shimmers; one line: "Shimmering faces finish a pattern." | Choose strikers; read the reel; Cascade; Zero-Sum | Vesper's wheel is fast: contrast |
-| 4:30 | A Bust, then a second Bust (likely or scripted): the **Open Hand** sigil lights: "Hap's watching." Next round can't Bust | Hap's Favour | The first mention of Hap; mystery, no explanation |
-| 5:00 | Map appears (in-world: a city map on a wall). Two paths: **Charm stall** or **Maeve's forge** | Choice | Both are good; one is a fight |
-| 5:20 | Charm stall: pick 1 of 3; charm pins onto the reel frame | Charms | One line per charm |
-| 6:00 | (or) Maeve's forge: defend it; Maeve joins | — | |
-| 7:00 | Collectors (Big Audit): armour icon; "Pairs bounce off armour" | Enemy rules; telegraphs | Varro is foreshadowed in the background |
-| 8:00 | Livia's window (5 s, no prompt) | — | A thread for later |
-| 8:15 | **Varro** at the drain gates: debt jar rule shown with one line and a demo | Boss rules | Boss intro card: name, Omen 61, one-line rule |
-| 9:30 | Varro phase 2; Vesper's gauge fills: "**ULTIMATE READY**: tap Vesper's portrait" | Ultimates | The Requiem saves NIL: the second big wow |
-| 10:00 | Varro spared; rooftop map reveal (six lands light up) | The journey ahead | Ends the first session on a promise |
+## 3. Remaining first session
 
-## Teaching rules
-- One new thing per fight. Never teach in a menu.
-- Every first time plays in full; every repeat is shorter (GAME_FEEL §5).
-- If a player hasn't tapped for 6 s, the prompt pulses; at 12 s it adds one line of help.
-- The **Codex** (pause menu) explains everything taught so far, with a GIF each.
+| Target | Beat | Teaches / limits |
+|---|---|---|
+| 1:00–3:00 | Solo Debt Hound Audit | NIL makes all three strikes. First round uses legal authored `j-j-j` Jackpot; first enemy wheel has an honest broad0 face. Miss deals stated damage; if defeated, checkpoint retry restores the attempt. No fabricated Parry or hidden immunity. |
+| 3:00–4:00 | ~12 s Vesper entrance; recruit commits | “Need a hand? Seven fen.” No currency/debt economy. |
+| 4:00–6:00 | Two-hero Debt Hound Audit | Both act; choose who acts twice. Pattern Sight previews legal completions. Explain Cascade/Zero-Sum when relevant; Favour appears only after actual Busts. |
+| 6:00–7:00 | Gus's one-of-three charm reward | Horseshoe widens present chosen faces; Black Cat visibly repairs first Bust; Ofuda auto-parries first enemy action without reflection. One choice, no shop/crafting/extra fight. |
+| 7:00–11:00 | Varro alone; drain-gate lighting variant | Civic 61 is distinct from Audit readout. Debt capture/held 0/restoration visible. “Three defences—or three rounds. Then you get it back.” No optional hero or parry-only soft lock. |
+| 11:00–13:00 target | Mercy, Seal 1, rooftop, safe family, results | Named person survives Audit defeat. Local relationship resolves; map offers the future. Results use actual run values. |
+| Up to 15:00 budget | Reading, ordinary retries and accessibility pacing hypothesis | Do not add content to fill time. Observed completion determines tuning. |
 
-**Done when:** 5 first-time players reach Varro without asking a question, and at least 3 can explain Pair, Jackpot and Parry afterwards ([`PLAYTEST.md`](PLAYTEST.md)).
+Vesper's charged ultimate, Maeve, Hina, party swapping, bonds/Link Arts, crafting, full map exploration and added cinematics are expansion content. A seven-shot defeat flourish is optional presentation without combat state. An Overwrite may be previewed in the rules card or a labelled demonstration; never force a natural rare result to meet a spectacle checklist.
+
+## 4. Prompt and retry behavior
+
+- Six seconds without input emphasizes the existing prompt without flashing; twelve seconds adds one help line. No timed dialogue advance.
+- Mouse, keyboard and assist receive equivalent instructions. Meaning/choice help is available without hover. Show accepted stopped digits immediately.
+- Chosen 0 defence explains one combined Parry/Fortune event and reflection; Ofuda has no reflection. Jar counts a defended enemy action once.
+- Favour visibly repairs slot three and reevaluates before scoring. “Cannot Bust” is not a replacement for showing what changed.
+- Continue resumes a valid checkpoint; Retry encounter restores that encounter; New number confirms a new run. Do not overwrite a valid save to skip the opening.
+- Watch/skip yield identical rescue, Naming, recruit, reward and Seal states. Skip pauses at choices. Fast/reduced-motion playback never bypasses inputs or score resolution.
+
+## 5. Acceptance evidence
+
+Technical checks: exact three-encounter route; ten digits; three charms; no successful parries (jar expiry works); watch/skip; save/reload; double callbacks; keyboard/pointer; reduced motion. Separate startup from Start-to-action.
+
+Run PLAYTEST with fresh players afterward. Initial target: four of five explain a pattern and defence unaided and can say why NIL is hunted and why they spared Varro. Ask what changed with their charm. Record help requests, first action, digit choice and completion times. No passing study or emotional response is implied.

@@ -3,7 +3,7 @@
 
 Layout grammar follows docs/ARTBOOK_PRODUCTION.md §1 and §6: label tabs, a text column, art bleeding to the edge,
 rough colour blocks, stamps and tally-mark overlays. Text facts are read from the Markdown docs through
-tools/canon.py, so the book never disagrees with the bibles. Where paintings don't exist yet, the page shows the
+tools/canon.py, to reduce duplication; source-index and visual checks still apply. Where paintings don't exist yet, the page shows the
 designed stand-ins from tools/figures.py and tools/graphics.py and a brief for the painting.
 Usage: python3 tools/build_artbook.py
 """
@@ -23,21 +23,13 @@ ROOT = C.ROOT
 BUILD = os.path.join(ROOT, "build", "artbook")
 IMG = os.path.join(BUILD, "img")
 OUT = os.path.join(ROOT, "docs", "ZERO-SUM_OMEN_Artbook_Draft.pdf")
-VERSION = "v0.4"
-os.makedirs(IMG, exist_ok=True)
+VERSION = "v0.5 · 7 NOV 2026 · SPECIFICATION SNAPSHOT"
 
 E = html.escape
 
 
 def img(rel, max_side=1800):
-    src = os.path.join(ROOT, rel)
-    name = os.path.splitext(os.path.basename(rel))[0] + ".jpg"
-    dst = os.path.join(IMG, name)
-    if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
-        im = Image.open(src).convert("RGB")
-        im.thumbnail((max_side, max_side))
-        im.save(dst, quality=84, optimize=True, progressive=True)
-    return "img/" + name
+    return C.derivative_image(rel, BUILD, max_side=max_side, quality=84)
 
 
 def tab(text):
@@ -76,19 +68,19 @@ HERO_KEYS = C.FIGURE_KEYS[:9]
 BOSS_KEYS = C.FIGURE_KEYS[9:]
 
 ERAS = [
-    ("charmpunk", "CHARMPUNK", "LUCK OVER SENSE", "#FF2E88", "TR 850→",
+    ("charmpunk", "CHARMPUNK", "LUCK OVER SENSE", "#FF2E88", "Timeline: LORE_LEXICON",
      "The street's lingua franca. Every culture's charms worn at once, hand-painted lucky numbers, plastic gold and neon. Charmpunk is loud because luck is a performance: if you can't raise your Omen, you can at least look like you're winning.",
      [("Neon magenta", "#FF2E88"), ("Sign yellow", "#F5E400"), ("Cyan", "#00E5FF"), ("Clover", "#3BB273")], "dice",
      ["Line-up of 6 Bazaar locals in Charmpunk", "Keyframe: the Charm Bazaar at night, every stall a different culture", "Omen display: gaudy holo-halos, fake Omen projectors"]),
-    ("remainder", "REMAINDER", "SURVIVAL OVER LUCK", "#8A7F72", "TR 960→",
+    ("remainder", "REMAINDER", "SURVIVAL OVER LUCK", "#8A7F72", "Timeline: LORE_LEXICON",
      "The style of the Undercity, where Omens run low. Scrap brass from old Basilica parts, patched cloth, salvaged Nixie tubes and rope. Durable, ugly, honest. People hide their numbers here out of shame.",
      [("Ash", "#8A7F72"), ("Leather", "#6B4226"), ("Gunmetal", "#4A4E54"), ("Old brass", "#C8963E")], "horseshoe",
      ["Line-up: Remainder Wards residents (mechanic, cook, debt-ridden mother, kids)", "Environment: Rain Alley 9 at dawn", "Omen display: a cracked tube on a cord"]),
-    ("ledgerism", "LEDGERISM", "ORDER OVER CHANCE", "#B5A642", "TR 760→",
+    ("ledgerism", "LEDGERISM", "ORDER OVER CHANCE", "#B5A642", "Timeline: LORE_LEXICON",
      "The style of the Basilica and its servants. Brass, steel and white enamel; cathedral arches; clockwork; uniforms with stamped seals. Cold, formal and threatening, it says that chance has been abolished and you are being counted.",
      [("Brass", "#B5A642"), ("Steel", "#8E9196"), ("Enamel", "#E8E6E1"), ("Uniform", "#6E6B4E")], None,
      ["Line-up: Collectors, Ledger-priests, Basilica clerks, Auditors", "Environment: the Basilica Ring checkpoint", "Omen display: steel numerals, never glowing"]),
-    ("gilded", "GILDED FORTUNE", "FORTUNE AND ORDER", "#D4AF37", "TR 990→",
+    ("gilded", "GILDED FORTUNE", "FORTUNE AND ORDER", "#D4AF37", "Timeline: LORE_LEXICON",
      "The style of the 99s: old money and Exchange magnates. Real gold leaf, jade, silk and living plants. In Meridian a garden is luck you can see; a bonsai on a balcony is a fortune worn in public.",
      [("Gold leaf", "#D4AF37"), ("Jade", "#00A86B"), ("Lacquer", "#B22222"), ("Silk", "#F4F1EA")], "red_envelope",
      ["Line-up: Exchange magnates, heirs, their guards", "Environment: the Exchange Terraces garden-villas", "Omen display: embroidered or gold-leaf numerals"]),
@@ -106,7 +98,7 @@ LAND_BRIEF = {
     "sunyapura": ["Establishing: the Great Observatory in monsoon light", "The Stepwell of a Thousand Steps", "Chitragupta's Hall of palm-leaf records"],
     "kroton": ["Establishing: the white Sieve city at noon", "The undercity of the fallen under the Sieve", "The Moirai's cave"],
     "crossroads": ["Establishing: the midnight crossroads under one streetlamp", "Lucky Strike's casino strip, the same night repeating", "The Ghost Train"],
-    "basilica": ["Keyframe: the Basilica nave, every land's ledger on its walls", "The Upper Gate with seven Seal Digits", "Thale's three phases as one sequence"],
+    "basilica": ["Keyframe: the Basilica nave, every land's ledger on its walls", "The Upper Gate: six acquired Seals plus NIL's resonance", "Thale's three phases as one sequence"],
 }
 
 
@@ -126,7 +118,7 @@ def tally_map():
 <path d="{road}" fill="none" stroke="#B3261E" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
 <circle cx="320" cy="250" r="72" fill="#141018"/><circle cx="320" cy="250" r="72" fill="none" stroke="#FF7A2C" stroke-width="4"/>
 <text x="320" y="240" text-anchor="middle" class="m-core">MERIDIAN</text><text x="320" y="260" text-anchor="middle" class="m-core-sub">PROLOGUE · SEAL 1 · FINALE</text>
-<text x="320" y="276" text-anchor="middle" class="m-core-sub">THE BASILICA · SEAL = YOUR NUMBER</text>
+<text x="320" y="276" text-anchor="middle" class="m-core-sub">SIX SEALS + NIL RESONANCE</text>
 {marks}
 <text x="548" y="500" class="m-tally">|||| |||| ||</text>
 </svg>"""
@@ -169,11 +161,13 @@ def hero_sheet(key, n_section, num):
             ("Voice", rows.get("Voice", ""))]
     dl = "".join(f'<div class="dl"><span>{E(k)}</span><p>{E(v)}</p></div>' for k, v in info if v)
     lock_items = "".join(f"<li>{E(l)}</li>" for l in (rows.get("Canon locks", "").split(" · ") if rows.get("Canon locks") else locks))
+    front = (f'<img src="{img(art, 1600)}" alt="{E(name)} fresh candidate">' if art and "/fresh/" in art else F.figure(key, "colour"))
+    front_caption = "FRESH CANDIDATE · NOT A RUNTIME RIG" if art and "/fresh/" in art else "FRONT · DESIGN FIGURE"
     return page(f"""
 <div class="hs-left">
-  <div class="hs-front">{F.figure(key, "colour")}<div class="cap">FRONT · DESIGN FIGURE</div></div>
-  <div class="hs-back">{F.figure(key, "ink", mirror=True)}<div class="cap">BACK · SILHOUETTE</div></div>
-  <div class="hs-thumb"><div class="t64">{F.figure(key, "ink")}</div><div class="cap">64 PX TEST</div></div>
+  <div class="hs-front">{front}<div class="cap">{front_caption}</div></div>
+  <div class="hs-back">{F.figure(key, "ink", mirror=True)}<div class="cap">MIRRORED FRONT · NOT A BACK VIEW</div></div>
+  <div class="hs-thumb"><div class="t64">{F.figure(key, "ink")}</div><div class="cap">SILHOUETTE REFERENCE · TEST SEPARATELY</div></div>
 </div>
 <div class="hs-right">
   <div class="hs-head" style="border-color:{sig}"><div>{tab("DESIGN SHEET")}<div class="hs-name">{E(name.upper())}</div><div class="hs-role">{E(role)} · {E(land)}</div></div>
@@ -182,7 +176,7 @@ def hero_sheet(key, n_section, num):
   <div class="sub">Canon locks</div><ul class="callouts">{lock_items}</ul>
   {dl}
   <div class="hs-quote">“{E(sample.strip('"“”'))}”</div>
-  {brief(name + " model pack", ["Key art (register A) and an in-game cel model (register B)", "Turnaround: front, ¾, side, back", "6 expressions · 3 attack key poses · victory pose"], "hs-brief")}
+  {brief(name + " model pack", ["One in-game master style; source assets and runtime checks", "Actual turnaround pending: front, ¾, side, back", "6 expressions · 3 attack key poses · victory pose"], "hs-brief")}
 </div>{folio(num, "Characters")}""", "padded hero-sheet")
 
 
@@ -196,6 +190,7 @@ def C_lum(hexc):
 def build():
     with open(os.path.join(ROOT, "tools", "artbook.css"), encoding="utf-8") as f:
         css = f.read()
+    os.makedirs(IMG, exist_ok=True)
     P = []
     n = [0]
 
@@ -205,9 +200,9 @@ def build():
 
     # cover
     add(page(f"""
-<div class="cover-art" style="background-image:url('{img("art/concepts/env_meridian_establishing.jpg")}')"></div>
+<div class="cover-art" style="background-image:url('{img(("art/concepts/fresh/env_meridian_v4.png" if os.path.isfile(os.path.join(ROOT,"art/concepts/fresh/env_meridian_v4.png")) else "art/concepts/env_meridian_establishing.jpg"))}')"></div>
 <div class="cover-block"></div>
-<div class="cover-text"><div class="kicker">THE OFFICIAL ART BOOK OF</div><div class="title">ZERO&#8209;SUM:<br><span>OMEN</span></div><div class="kicker">DRAFT LAYOUT · {VERSION}</div>
+<div class="cover-text"><div class="kicker">DESIGN REFERENCE FOR</div><div class="title">ZERO&#8209;SUM:<br><span>OMEN</span></div><div class="kicker">DRAFT LAYOUT · {VERSION}</div>
 <div class="cover-cast">{''.join(F.figure(k, "ink") for k in HERO_KEYS)}</div></div>
 {stamp("NaN", "big")}{placeholder_note()}""", "cover"))
 
@@ -217,7 +212,7 @@ def build():
 <p class="lede">Every number in this world is spinning. This book is about the people who live under them.</p>
 <p>The Tally began as a question: what would a world look like if luck were a currency everyone could see? Our answer was a city that counts and a ring of lands that remember older ways of counting: thread, karma, contracts and books of the dead.</p>
 <p>We built every style from that history. The brass of the Basilica, the scrap of the Remainder Wards, the gaudy charms of the street, the gold leaf of the fortunate few, and the painted, breathing lands beyond the gate.</p>
-<p class="sig">The ZERO-SUM: OMEN team</p></div>
+<p class="small"><b>7 November scope:</b> required jam = NIL, Vesper, Varro, Debt Hound and one Meridian stage with variants. Other lands/actors are future. Candidates are not accepted runtime rigs; see DECISIONS and PROJECT_STATUS. AI-only, free-first production.</p></div>
 <div class="col-art paint-block" style="--block:#FF7A2C"><div class="big-quote">"A WORLD WITHOUT LUCK<br>IS A WORLD WITHOUT LOSS."</div><div class="quote-by">Comptroller Lucan Thale</div></div>{folio(2, "Foreword")}""", "split"))
 
     # contents (filled after pages are known)
@@ -229,7 +224,7 @@ def build():
     sections.append(("Styles: the four eras of luck", n[0] + 1))
     add(page(f"""<div class="opener">{tab("STYLES")}<div class="opener-title">THE FOUR<br>ERAS OF LUCK</div>
 <p class="opener-sub">Meridian's styles come from its history: the binding of the ledgers, the Rounding, the Deficit. Every street mixes them; every outfit tells you which side of the Zero-Sum Law its owner lives on.</p>
-<div class="tl"><div><b>TR 702</b>Basilica completed</div><div><b>TR 760→</b>Ledgerism</div><div><b>TR 850→</b>Charmpunk</div><div><b>TR 960→</b>Remainder</div><div><b>TR 990→</b>Gilded Fortune</div><div><b>TR 1002</b>Today</div></div>
+<div class="tl"><div><b>Fictional history</b>Dates and institutional authorship follow LORE_LEXICON; Thale inherits an older Basilica.</div></div>
 <div class="era-row">{''.join(F.era_figure(k) for k, *_ in ERAS)}</div></div>""", "dark"))
     for key, name, motto, c, since, text, mats, charm, needs in ERAS:
         charm_svg = G.CHARMS[charm] if charm else G.EMBLEMS["basilica"][1]
@@ -259,7 +254,7 @@ def build():
     sections.append(("The Tally", n[0] + 1))
     add(page(f"""
 <div class="col-text">{tab("THE TALLY")}<p>A ring of lands around Meridian's plateau. The upper city is sealed, so to go up you must go around. Each land kept its own ledger of fate before the Basilica bound them all.</p>
-<p class="small">Red dotted line: the party's road, from Meridian's Undercity through five lands and back. The Upper Gate needs seven Seal Digits: 1 (Varro), 9, 8, 0, 2, 7, and the seventh is the player's own lucky number.</p></div>
+<p class="small">Red dotted line: the party's road, from Meridian's Undercity through five lands and back. Six acquired Seals (1,9,8,0,2,7) plus NIL's chosen resonance open the ritual gate. Guard recall, Seal lock and interior service passage are separate obstacles. Future campaign, not required jam content.</p></div>
 <div class="col-art">{tally_map()}{stamp("SEALED", "red")}</div>{folio(n[0] + 1, "The Tally")}""", "split"))
 
     # Meridian
@@ -268,10 +263,10 @@ def build():
     add(page(f"""
 <div class="col-text">{tab("MERIDIAN · REMAINDER WARDS")}<p>Stacked in the drains and cliffs beneath the plateau. The Wards began as workers' housing for the Basilica's builders and became the place where low Omens end up. Remainder scrap meets Charmpunk colour: every door wears a different culture's charm.</p>
 <p class="small"><b>What happened here:</b> the Rounding. Every fraction of luck dropped since TR 702 flowed downhill, and so did everyone who lost theirs.</p></div>
-<div class="col-art bleed" style="background-image:url('{img("art/concepts/env_meridian_establishing.jpg")}')">{placeholder_note()}{stamp("REMAINDER DETECTED", "red tilt")}</div>{folio(n[0] + 1, "Meridian")}""", "split"))
+<div class="col-art bleed" style="background-image:url('{img(("art/concepts/fresh/env_meridian_v4.png" if os.path.isfile(os.path.join(ROOT,"art/concepts/fresh/env_meridian_v4.png")) else "art/concepts/env_meridian_establishing.jpg"))}')">{placeholder_note()}{stamp("REMAINDER DETECTED", "red tilt")}</div>{folio(n[0] + 1, "Meridian")}""", "split"))
     add(page(f"""
 <div class="col-text">{tab("KEY · REMAINDER WARDS")}<p>Colour key over the 3D base: overcast dawn after rain. Slate, ochre and moss walls, warm windows, every culture's laundry, the brass Basilica at the end of the canyon. Nixie orange, magenta and cyan live only on the signs.</p>
-<p class="small"><b>Pipeline stage 1b · colour key.</b> Perspective, scale and light are solved in 3D first (see the pipeline page). Stage 2 paints over this; stage 3 is the artist's overpaint.</p></div>
+<p class="small"><b>Pipeline stage 1b · colour key.</b> Perspective, scale and light are explored in 3D first (see the pipeline page). AI-directed rendering/correction and runtime validation follow. Source scenes for these historical rasters were not supplied.</p></div>
 <div class="col-art bleed" style="background-image:url('{img("art/base3d/wards_colorkey_v1.png")}')">{stamp("STAGE 1b · COLOUR KEY", "ph")}</div>{folio(n[0] + 1, "Meridian")}""", "split"))
     lineup = [("remainder", dict(h_m=1.78, sw=44, skin="#8D5A3B")),
               ("charmpunk", dict(h_m=1.52, sw=40, skin="#E8C9A8", overrides={"top": "#3BB273", "cap": "#FF2E88"})),
@@ -285,6 +280,14 @@ def build():
 {brief("Remainder Wards line-up", ["Brass-scrap mechanic (Remainder)", "Grandmother with jade and evil-eye charms (Charmpunk)", "Teen dice-gambler (Charmpunk)", "Collector in rust armour (Ledgerism)", "Noodle cook with a lemon-and-chilli charm", "Kid with a cracked Nixie-tube necklace (Remainder)"])}
 <div class="inset"><img src="{img("art/base3d/lineup_base_v1.png", 900)}" alt=""><div class="cap">3D BASE FOR THIS LINE-UP · STAGE 1</div></div></div>
 <div class="col-art paint-block lineup" style="--block:#C8963E"><div class="lineup-row">{figs}</div><div class="tag">wards</div></div>{folio(n[0] + 1, "Meridian")}""", "split"))
+
+    for rel, label in [("art/renders/lookdev/omen_battle_v5.png", "FRESH LOOKDEV · NOT GAMEPLAY"),
+                       ("art/renders/lookdev/meridian_empty_v5.png", "EMPTY STAGE · LOOKDEV"),
+                       ("art/renders/lookdev/meridian_clay_v5.png", "REPRODUCIBLE CLAY · LOOKDEV")]:
+        if os.path.isfile(os.path.join(ROOT, rel)):
+            sections.append((label, n[0] + 1))
+            add(page(f'<div class="col-art bleed full" style="background-image:url(\'{img(rel)}\')"></div>'
+                     f'{tab(label)}{stamp("RENDER STUDY · NOT A UNITY BUILD", "ph")}', "kf"))
 
     # Hyakki
     sections.append(("Hyakki · Act I", n[0] + 1))
@@ -307,7 +310,7 @@ def build():
     # the reel, land by land
     reels = "".join(f'<div class="reel"><div class="reel-svg">{s}</div><b>{E(nm)}</b><div class="eff">{E(C.LANDS[LAND_KEYS[k]][0])}</div></div>'
                     for k, (nm, s) in G.REELS.items())
-    add(page(f'{tab("THE REEL, LAND BY LAND")}<p class="lead-p">The three slots where stopped digits land are always an object from the world, never a UI panel (GDD §8). Same three digits, seven cultures.</p>'
+    add(page(f'{tab("THE REEL, LAND BY LAND")}<p class="lead-p">The three slots where stopped digits land are always an object from the world, never a UI panel (GDD §8). Same three slots, regional art treatments.</p>'
              f'<div class="reels">{reels}</div>{folio(n[0] + 1, "The lands")}', "padded"))
 
     # cast
@@ -321,13 +324,19 @@ def build():
                       f'<b>{E(nm)}</b><i>{E(CHAR[k][2])}</i></div>')
         return cells
     ink_row = "".join(f'<div class="cs-ink" style="width:{16 * F.crop_width(k) / 278:.1f}mm">{F.figure(k, "ink")}</div>' for k in C.FIGURE_KEYS)
-    add(page(f"""{tab("CAST · READABILITY")}<p class="lead-p">Every character must read as a solid black silhouette at 64 px and by colour alone (Character Bible §0). Shared scale, true relative heights: heroes on top, Auditors below.</p>
+    add(page(f"""{tab("CAST · READABILITY")}<p class="lead-p">Selected design figures, not the complete playable roster or accepted models. Approximate authored scale; test silhouette at 64 px separately. Colour supports identity, never the only gameplay cue. Core roster is NIL + eight companions + three secret recruits; future figures below are references.</p>
 <div class="cast ink">{ink_row}</div><div class="cast col">{cast_row(HERO_KEYS, 60)}</div><div class="cast col">{cast_row(BOSS_KEYS, 60)}</div>{folio(n[0] + 1, "Characters")}""", "padded"))
     add(page(f"""
-<div class="col-art bleed full" style="background-image:url('{img("art/concepts/nil_keyart.jpg")}')"></div>
+<div class="col-art bleed full" style="background-image:url('{img(CHAR["nil"][6])}')"></div>
 <div class="kf-overlay">{tab("KEYFRAME · NIL")}<div class="spray">NaN?</div></div>{placeholder_note()}""", "kf"))
     for i, k in enumerate(HERO_KEYS, start=1):
         add(hero_sheet(k, i, n[0] + 1))
+
+    detail = "art/renders/lookdev/vesper_cylinder_detail_v5.png"
+    if os.path.isfile(os.path.join(ROOT, detail)):
+        sections.append(("Vesper · purposeful prop detail", n[0] + 1))
+        add(page(f'<div class="col-text">{tab("VESPER / PROP LOGIC")}<p>Seven real bores around a solid axle. This source-authored geometry makes chamber count inspectable rather than trusting generated ornament.</p><p>Read silhouette at thumbnail size, materials and gesture in game, mechanism/wear in close-up. Preserve left-shoulder braid and prop grip; this is a design study, not a functional weapon or game capture.</p></div>'
+                 f'<div class="col-art" style="background:#141018"><img class="detail-plate" src="{img(detail)}" alt="Scripted seven-chamber detail"></div>{folio(n[0] + 1, "Prop detail")}', "split"))
 
     # Auditors and keepers
     sections.append(("Auditors and Keepers", n[0] + 1))
@@ -338,7 +347,7 @@ def build():
     for k in BOSS_KEYS:
         name, role, digit, land, *_ = CHAR[k]
         cards += (f'<div class="boss"><div class="boss-fig">{F.figure(k)}</div><b>{E(name)}</b><div class="land">{E(role)} · {E(land)}</div>'
-                  f'<div class="eff">{E(rules.get(boss_rule_key[k], ""))}</div></div>')
+                  f'<div class="eff">{E(rules.get(boss_rule_key[k], "Contract: BESTIARY/SYSTEMS; future scope except Varro."))}</div></div>')
     add(page(f"""{tab("AUDITORS")}<div class="bosses">{cards}</div>
 <div class="keepers"><b>Keepers, not villains.</b> Enma (Hyakki) · Judge Cui (the Ten Courts) · Chitragupta (Śūnyapura) · the Moirai (Kroton Nova) · the Stranger (the Crossroads). Shown with reverence, never as monsters; they test the party and are never "defeated", only satisfied (World Bible §10).</div>{folio(n[0] + 1, "Auditors")}""", "padded"))
 
@@ -356,14 +365,16 @@ def build():
     em = "".join(f'<div class="emblem"><div class="em-svg">{svg}</div><b>{E(nm)}</b><div class="eff">{E(meanings[k])}</div></div>' for k, (nm, svg) in G.EMBLEMS.items())
     add(page(f'{tab("FACTIONS & SYMBOLS")}<div class="emblems">{em}</div>{folio(n[0] + 1, "Factions")}', "padded"))
 
-    gdd_charms = {r[0].split(" (")[0]: (r[1], r[2]) for r in C.md_table("docs/GDD.md", "### 3.1")}
-    charm_keys = [("Beckoning Cat", "beckoning_cat"), ("Daruma", "daruma"), ("Red Envelope", "red_envelope"), ("Door God", "door_god"),
-                  ("Lemon and Seven Chillies", "lemon_chillies"), ("108 Beads", "beads_108"), ("Evil-Eye Bead", "evil_eye"),
-                  ("Fortuna's Wheel", "fortuna_wheel"), ("Horseshoe", "horseshoe"), ("Seven-Come-Eleven Dice", "dice"),
-                  ("Four-Leaf Clover", "clover"), ("Black Cat", "black_cat")]
-    cards = "".join(f'<div class="charm"><div class="icon">{G.CHARMS[k]}</div><div><b>{E(nm)}</b><div class="land">{E(gdd_charms[nm][0])}</div>'
-                    f'<div class="eff">{E(gdd_charms[nm][1])}</div></div></div>' for nm, k in charm_keys)
-    add(page(f'{tab("CHARMS OF THE WORLD")}<div class="charms">{cards}</div><div class="cmp-note">Rules quoted from GDD §3.1. Twelve of the ~90 planned; sets by land grant set bonuses.</div>{folio(n[0] + 1, "Charms")}', "padded"))
+    jam_charms = C.md_table("docs/SYSTEMS.md", "## 3.")
+    icon_keys = {"charm_horseshoe": "horseshoe", "charm_black_cat": "black_cat", "charm_ofuda": "ofuda"}
+    cards = ""
+    for row in jam_charms:
+        key, name, effect = row[:3]
+        key = key.strip("`")
+        cards += (f'<div class="charm"><div class="icon">{G.CHARMS[icon_keys[key]]}</div><div><b>{E(name)}</b>'
+                  f'<div class="land">{E(key)}</div><div class="eff">{E(effect)}</div></div></div>')
+    add(page(f'{tab("THREE JAM CHARMS")}<p class="lead-p">Free pick one; no fen/shop/crafting/set bonuses in required jam. Effects are sourced from SYSTEMS §3.</p>'
+             f'<div class="charms">{cards}</div><div class="cmp-note">Full campaign: 63 candidate party charms, nine per seven sets. Future effects require data and validation gates. These SVGs are candidates, not runtime acceptance.</div>{folio(n[0] + 1, "Charms")}', "padded"))
 
     # pipeline
     sections.append(("How an image is made", n[0] + 1))
@@ -375,18 +386,18 @@ def build():
     for title, base, key in [("REMAINDER WARDS", "art/base3d/wards_base_clay.png", "art/base3d/wards_colorkey_v1.png"),
                              ("MOON PIER", "art/base3d/hyakki_pier_base_v1.png", "art/base3d/hyakki_pier_colorkey_v1.png")]:
         rows += (f'<div class="pl-row"><div class="pl-title">{title}</div>{stage_cell(base, "1 · 3D BASE (Blender)")}{stage_cell(key, "1b · COLOUR KEY")}'
-                 f'{stage_cell(None, "2 · PAINT PASS (Higgsfield / FLUX)")}{stage_cell(None, "3 · HUMAN OVERPAINT")}</div>')
-    add(page(f'{tab("PIPELINE · FROM BASE TO PAINTING")}<p class="lead-p">How every environment in this book is made (Art Book Production Guide §4): perspective and scale solved in 3D, colour decided on a flat key, then painted, then overpainted by hand.</p>'
+                 f'{stage_cell(None, "2 · SCRIPTED / OPTIONAL AI PASS")}{stage_cell(None, "3 · AI CORRECTION + QC")}</div>')
+    add(page(f'{tab("PIPELINE · FROM BASE TO PAINTING")}<p class="lead-p">Specified pipeline: source layout, colour key, scripted rendering or optional generation, AI-directed correction, export and runtime validation. Historical raster bases below do not supply their missing scene sources. No human finishing dependency.</p>'
              f'<div class="pipeline">{rows}</div>{folio(n[0] + 1, "Pipeline")}', "padded"))
 
     # status
     first12 = C.numbered_list("docs/ARTBOOK_PRODUCTION.md", "## 7.")
     standins = {0: "colour key", 1: "design figures + 3D base", 2: "design figures", 4: "design figure", 5: "design figure", 6: "design figure",
                 7: "design figure", 8: "colour key", 10: "design figure", 11: "design figure"}
-    items = "".join(f'<li><span>{E(t.rstrip("."))}</span><em>{E("stand-in: " + standins[i]) if i in standins else "pass-1 placeholder"}</em></li>'
+    items = "".join(f'<li><span>{E(t.rstrip("."))}</span><em>{"specified production task; see asset evidence"}</em></li>'
                     for i, t in enumerate(first12))
     add(page(f"""<div class="opener">{tab("DRAFT " + VERSION)}<div class="opener-title">ART PENDING</div>
-<p class="opener-sub">This draft sets the layout grammar and the design system. The paintings fill in as register-A concept art is produced, starting with these twelve (Art Book Production Guide §7). Rebuild with python3 tools/build_artbook.py.</p>
+<p class="opener-sub">Current production order from ARTBOOK_PRODUCTION §7. Required runtime assets remain unverified until integrated and checked; this book is a source snapshot, not a build. Rebuild with python tools/build_artbook.py; preview with --html-only --output-dir build/review-artbook.</p>
 <ol class="first12">{items}</ol></div>""", "dark"))
 
     # contents page
@@ -395,11 +406,9 @@ def build():
 <p class="small">Page numbers in the corner of each spread. Placeholder stamps mark pass-1 art kept for layout; colour-key and design-figure stamps mark the designed stand-ins.</p></div>
 <div class="col-art toc-art"><ol class="toc">{toc}</ol></div>{folio(3, "Contents")}""", "split")
 
-    fonts = ("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Barlow+Semi+Condensed:wght@400;600;700"
-             "&family=JetBrains+Mono:wght@400;700&family=Permanent+Marker&family=Noto+Sans+JP:wght@700&family=Noto+Sans+SC:wght@700"
-             "&family=Noto+Sans+Devanagari:wght@700&display=swap")
-    doc = (f'<!doctype html><html><head><meta charset="utf-8"><title>ZERO-SUM: OMEN Art Book Draft</title>'
-           f'<link rel="stylesheet" href="{fonts}"><style>{css}</style></head><body>{"".join(P)}</body></html>')
+    snapshot = C.write_manifest(BUILD, "artbook")
+    doc = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>ZERO-SUM: OMEN Art Book Draft</title>'
+           f'<meta name="source-sha256" content="{snapshot}"><style>{css}</style></head><body>{"".join(P)}</body></html>')
     path = os.path.join(BUILD, "artbook.html")
     with open(path, "w", encoding="utf-8") as f:
         f.write(doc)
@@ -407,6 +416,16 @@ def build():
 
 
 if __name__ == "__main__":
+    args = C.build_options("artbook", "ZERO-SUM_OMEN_Artbook_Draft.pdf")
+    print(C.validate_sources())
+    if args.check:
+        sys.exit(0)
+    BUILD = str(args.build_dir)
+    IMG = os.path.join(BUILD, "img")
+    OUT = str(args.pdf_path)
     p = build()
-    r = subprocess.run(["node", os.path.join(ROOT, "tools", "render_pdf.js"), p, OUT, "landscape"])
+    print("HTML:", p)
+    if args.html_only:
+        sys.exit(0)
+    r = subprocess.run([args.node, os.path.join(ROOT, "tools", "render_pdf.js"), p, OUT, "landscape"])
     sys.exit(r.returncode)

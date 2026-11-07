@@ -1,69 +1,54 @@
-# ZERO-SUM: OMEN — Audio Direction and Sound List (Gate A7)
+# ZERO-SUM: OMEN — Audio Direction and Contracts
 
-Sound is half the game feel. A reel that clicks on the beat feels twice as good. Every interaction in [`GAME_FEEL.md`](GAME_FEEL.md) has a named sound here.
+Updated 7 November 2026. Meridian Prologue; DECISIONS D01/D02/D08. **Specified; no accepted runtime audio/listening/mix test recorded.** AI authors synthesis, arrangement, editing and processing; no human performer/finishing dependency.
 
----
+## 1. Identity and timing
 
-## 1. Direction
-- **One musical identity, many lands:** a synth-noir core (Meridian) that every land re-voices with its own instruments. The player should hear the journey.
-- **The beat clock rules the reel.** Music runs on a beat clock; wheel ticks are quantised to the beat; the stop "clack" is not quantised (response comes first), but its tail lands on the next beat.
-- **Stems fill with the reel:** stem 1 (pads/rhythm) always; stem 2 (bass) when the first digit lands; stem 3 (lead) on the second; stem 4 (choir/brass) on a pattern.
-- **Silence is a tool:** the Ten Courts, Chitragupta's Hall and Hap's Dreams use near-silence.
+Synth-noir core: mechanical/brass clicks, warm windows/rain and an original rising seven-note motif. This is a composition brief, not seven notes already supplied. Future lands revoice it with source research and honest limits on instrumental authenticity.
 
-## 2. Music
+The **wheel face follows gameplay clock/input**, never music quantization. Ticks follow actual face crossings; optional ornaments/tails can align with a beat. Stop, Parry/Fortune and state feedback respond immediately. Audio must not delay acknowledgement or change the accepted face. A clip cannot implement a rule or imply a second damage payment.
 
-| Cue | Land / moment | Tempo | Instruments | Stems | Tag (jam) |
-|---|---|---|---|---|---|
-| Meridian theme | Prologue | 96 BPM | Analog synth bass, Nixie-hum pads, rain, muted trumpet | 4 | M |
-| Varro boss | Prologue boss | 120 | Distorted bass, sirens, stomps | 4 | S (use Meridian battle remix) |
-| Hyakki theme | Act I | 90 | Shamisen, shakuhachi, taiko over synth pads, wind chimes | 4 | M |
-| Tamamo boss | Act I boss | 132 | Taiko ensemble, koto runs, choir, synth arps | 4 | M |
-| Hap's Dream | Interludes | free | Music box of dice, celesta, reversed bells | 1 | S |
-| River Empire | Act II | 100 | Erhu, guzheng, dizi, gongs over synth | 4 | — |
-| Ten Courts | Act II underworld | — | Near silence, brush strokes, low drones | 1 | — |
-| Śūnyapura | Act III | 84 | Sitar, tabla, tanpura drone, rain on stone | 4 | — |
-| Kroton Nova | Act IV | 108 | Lyre, bouzouki, frame drum, male chant of primes | 4 | — |
-| Crossroads | Act V | 92 | Slide guitar, harmonica, upright bass, slot-machine choir | 4 | — |
-| Thale | Finale | 72 → 140 | Cathedral organ, brass, then every land's instrument in Phase 3 | 6 | — |
-| Title | Title | 80 | Solo Nixie hum → the main motif on synth | 1 | M |
+## 2. Music scope
 
-**The main motif:** seven notes (the "lucky seven"), rising; every hero theme quotes it in their land's mode.
-
-## 3. SFX vocabulary (jam must-haves)
-
-| Id | Sound | Recognisable as |
+| ID | Brief | Jam status |
 |---|---|---|
-| sfx_wheel_unfurl | Paper-and-brass whoosh | "A wheel appeared" |
-| sfx_wheel_tick | Soft mechanical tick per face, pitch rising with speed | Spinning |
-| sfx_stop | **Clack**: mechanical latch + Nixie zap + low thump | The stop. Must cut through everything |
-| sfx_hit_light / heavy | Punch + digital crunch | Damage |
-| sfx_digit_slam_1/2/3 | Tube slams, low → mid → high | The reel filling up |
-| sfx_bust | Tubes flicker out, a sigh | Nothing |
-| sfx_pair | Two bright notes | Something good |
-| sfx_zero_sum | Ledger chime + paper flip | Balanced |
-| sfx_cascade | Rising three-note arpeggio | Again! |
-| sfx_jackpot | Slot fanfare + coins + crowd "oh" | Big win |
-| sfx_reaper | Four funeral bells | Danger |
-| sfx_overwrite | Bells rung your digit's number of times + choir | Miracle |
-| sfx_parry | "Ting" + whoosh | Saved |
-| sfx_fortune | Gold shimmer + reversed hit | Reflected |
-| sfx_favour_warm / haps_hand | Two dice rattling in a palm / dice thrown and landing | Luck turning |
-| sfx_settle | Departure-board flip to 00 + wind | Defeat (never gory) |
-| sfx_count_up | Ticks accelerating, "ching" per power of ten | The big number |
-| sfx_ui_tap / back / buy | Paper, stamp, bell | Menus |
+| mus_meridian | 96 BPM starting brief, synth pad/bass, sparse mechanical rhythm; seamless loop | Required; specified |
+| mus_varro | Same-source intensity/arrangement variant | Required intensity change; may reuse Meridian |
+| mus_title_end | Sparse motif/held pad from same source | Reuse, not another commissioned song |
+| mus_hyakki / mus_tamamo | Festival/night and boss revoicing | Future gate |
+| mus_hap / later lands / Thale | Near-silence, regional instruments, combined finale motifs | Future; no production claim |
 
-## 4. Voice
-- Jam: **barks only** (3–5 per hero: strike, hurt, pattern, ultimate) + a few story lines; subtitles always.
-- Voice direction per character from [`CHARACTER_BIBLE.md`](CHARACTER_BIBLE.md) (Voice rows).
-- Optional AI voice for the Basilica's announcements and Thale's narration **must be disclosed**; human actors preferred for heroes.
+Multi-stem adaptive music is future/optional. Later stems must share start/length/tempo/loop points; scheduled crossfades never affect game timing. Ship one coherent loop/variant first.
 
-## 5. Mix rules
-- Priority: sfx_stop > dialogue > pattern stingers > hits > music > ambience.
-- Duck music −6 dB during stingers and dialogue.
-- Loudness target −16 LUFS integrated (web); true peak −1 dBTP.
-- Every sound has a reduced-intensity variant for Reduced Motion mode (softer transients).
+## 3. Required SFX events
 
-## 6. Sources and licences
-Original compositions; SFX from licensed libraries (record which in `audio/LICENSES.md`); culturally specific instruments recorded or licensed from performers of that tradition where possible. Any AI-generated audio is logged in [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).
+| ID | Sound brief | Rule/readability |
+|---|---|---|
+| sfx_wheel_unfurl / sfx_wheel_tick | Paper/brass whoosh; soft tick | Actual active faces; rate/polyphony caps |
+| sfx_stop | Latch + synthetic zap + short thump | Highest priority, immediate |
+| sfx_hit_light / sfx_hit_heavy | Contact + digital crunch | Provisional contact distinct from settlement |
+| sfx_digit_slam_1 / 2 / 3 | Low→mid→high latch | Slot placement, not extra score |
+| sfx_bust / sfx_pair / sfx_zero_sum / sfx_cascade | Dry tube / two notes / ledger chime / three-step rise | Exact runtime label/icon |
+| sfx_jackpot / sfx_reaper / sfx_overwrite | Compact fanfare / four dark pulses / motif resolution | Equal perceptual payoff for digits including 0; not zero bells for 0 |
+| sfx_parry / sfx_fortune | Ting / reflected sweep | Lucky-0 overlap uses one combined defensive event/cue |
+| sfx_favour_warm / sfx_haps_hand | Warm rattle / repair latch | Match actual third→first repair |
+| sfx_jar_store / sfx_jar_progress / sfx_jar_open | Glass latch / progress steps / release | Align token, counters, restoration |
+| sfx_audit_settle | Departure-board flip + wind | Audit Omen 00 means exhausted stake, not automatic civic death |
+| sfx_count_up / sfx_ui_tap / sfx_ui_back / sfx_charm_pick | Bounded ticks / paper / stamp / chime | Skip stops tails; no purchase cue required |
+| amb_meridian | Rain/window/gear bed | Stop/dialogue remain clear |
 
-**Done when:** every Must interaction in GAME_FEEL has a named sound here, and the temp music runs on the beat clock in the prototype.
+Each imported cue has duration, priority and simultaneous-instance cap. Avoid tick floods at high speed. Audio/VFX never schedule gameplay events.
+
+## 4. Voice and text
+
+Full voice/barks optional; required dialogue is text with speaker IDs/subtitles. Existing AI voice access needs original voice design, provider terms and logging. No unauthorized real-person imitation; no invented human performer credits. Text plus silence/synthetic barks is the free fallback.
+
+## 5. Production and acceptance
+
+Default: AI-authored note/event/synthesis scripts, deterministic loop renders and edit scripts. Preserve source, parameters and hashes. Any used sample/library needs its actual licence record; a planned `audio/LICENSES.md` is not proof it exists or grants rights. No traditional performer is assumed.
+
+Starting mix targets: −16 LUFS integrated on a representative complete mix; true peak ≤−1 dBTP. One-shots need headroom, not arbitrary normalization to −16 LUFS. Priority: stop > dialogue > pattern > hit > music > ambience. Duck music up to 6 dB smoothly under dialogue/stingers; test pumping/masking.
+
+Music/SFX/Voice controls, mute, saved settings and separate audio-intensity control; reduced transients need not require Reduced Motion. Every essential sound has visible feedback. Web audio unlock follows a user gesture.
+
+Verify seams/clicks/clipping/tails/missing clips/duplicate defensive procs/dialogue masking/tick overload. Retry/skip must not leave loops running. Measure imported memory/CPU and cold playback in the actual Web build. Tempo/loudness/performance targets are not measured results.

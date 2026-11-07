@@ -1,16 +1,19 @@
 """ZERO-SUM: OMEN figure kit: flat-colour model-sheet figures for every hero and boss, plus Meridian era outfits.
 
 Each figure is built from simple parts (limbs as round-capped strokes, torsos and garments as polygons) so it reads
-as a clean silhouette. Heights follow the Character Bible (1 m = 112 px; ground at y = 244 in a 160 x 250 box).
+as a clean silhouette. Approximate design heights (not a validated anatomical model): 1 m = 112 px; ground at y = 244 in a 160 x 250 box).
 
 figure(key, mode) -> SVG string
   mode "colour": signature colours with an ink outline (the "inked people" rule)
   mode "ink":    solid ink silhouette (the 64 px readability test in Character Bible §0)
-  mirror=True    flips horizontally (a back view reads as the mirrored front silhouette)
+  mirror=True    flips the FRONT horizontally; it is not a back view or a valid asymmetric turnaround
 Run directly to write every figure to art/graphics/figures/.
 """
+import argparse
+import html
 import math
 import os
+from pathlib import Path
 
 INK = "#141018"
 G = 244          # ground line
@@ -88,7 +91,7 @@ def _el(kind, data, fill, extra=0, outline=False):
     if kind == "text":
         x, y, s, size = data
         return (f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="middle" font-family="Big Shoulders Display,Impact,sans-serif" '
-                f'font-weight="900" font-size="{size}" fill="{fill}">{s}</text>')
+                f'font-weight="900" font-size="{size}" fill="{fill}">{html.escape(str(s))}</text>')
     raise ValueError(kind)
 
 
@@ -391,20 +394,18 @@ def jin_chan():
 
 
 def rahu_ketu():
-    p = []
-    p.append(path("serpent", f"M{CX + 10} {G - 70} C{CX + 70} {G - 120}, {CX + 80} {G - 20}, {CX + 40} {G - 14} "
-                             f"S{CX - 40} {G - 2}, {CX - 70} {G - 30} L{CX - 74} {G - 22} C{CX - 40} {G + 4}, {CX + 30} {G - 6}, {CX + 46} {G - 24} "
-                             f"C{CX + 64} {G - 50}, {CX + 46} {G - 92}, {CX + 14} {G - 62} Z"))
-    p.append(path("corona", f"M{CX - 74} {G - 26} l-14 -6 l4 10 l-12 2 l12 4 z"))
-    p.append(circ("head", CX - 6, G - 140, 46))
-    for k in range(7):
-        x = CX - 40 + k * 11.5
-        p.append(poly("corona", [(x, G - 176), (x + 5, G - 200 + (k % 2) * 8), (x + 10, G - 176)]))
-    p.append(arc("night", CX - 22, G - 150, 8, 20, 160, 3))
-    p.append(arc("night", CX + 10, G - 150, 8, 20, 160, 3))
-    p.append(poly("corona", [(CX - 6, G - 172), (CX - 1, G - 164), (CX - 6, G - 156), (CX - 11, G - 164)]))
-    p.append(line("night", CX - 14, G - 118, CX + 2, G - 118, 2.5))
-    return p, {"serpent": "#4B2A6B", "head": "#4B2A6B", "corona": "#F4A300", "night": "#141018"}
+    """Invented Basilica eclipse engines: bolted disc and segmented rail, no divine body."""
+    p = [circ("plate", CX - 12, G - 142, 48), ring("brass", CX - 12, G - 142, 48, 5),
+         circ("void", CX - 12, G - 142, 30), ring("brass", CX - 12, G - 142, 19, 3)]
+    for i in range(12):
+        a = i * math.pi / 6
+        p.append(circ("bolt", CX - 12 + 40 * math.cos(a), G - 142 + 40 * math.sin(a), 2.6))
+    for i in range(8):
+        x, y = CX - 55 + i * 16, G - 35 - 16 * math.sin(i * 0.6)
+        p.append(poly("rail", [(x - 11, y - 10), (x + 9, y - 10), (x + 12, y + 8), (x - 10, y + 8)]))
+        p.append(circ("bolt", x, y, 2.7))
+    p.append(line("brass", CX - 25, G - 93, CX - 25, G - 62, 5))
+    return p, {"plate": "#4B2A6B", "void": "#141018", "brass": "#B5A642", "rail": "#4B2A6B", "bolt": "#E8E6E1"}
 
 
 def archon():
@@ -549,17 +550,28 @@ def era_figure(era, mode="colour", cls="fig", overrides=None, **kw):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Write candidate design figures, not runtime rigs or back views.")
+    parser.add_argument("--output-dir", type=Path, help="Derived output directory; defaults to build/figures (preserves tracked references).")
+    parser.add_argument("--check", action="store_true", help="Validate generated XML without writing files.")
+    args = parser.parse_args()
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    out = os.path.join(root, "art", "graphics", "figures")
-    os.makedirs(out, exist_ok=True)
+    out = str(args.output_dir or Path(root, "build", "figures"))
+    if not args.check:
+        os.makedirs(out, exist_ok=True)
     n = 0
     for k in BUILDERS:
         for mode in ("colour", "ink"):
-            with open(os.path.join(out, f"{k}_{mode}.svg"), "w") as f:
-                f.write(figure(k, mode))
+            value = figure(k, mode)
+            __import__("xml.etree.ElementTree", fromlist=["fromstring"]).fromstring(value)
+            if not args.check:
+                with open(os.path.join(out, f"{k}_{mode}.svg"), "w", encoding="utf-8") as f:
+                    f.write(value)
             n += 1
     for era in ERA_COLOURS:
-        with open(os.path.join(out, f"era_{era}.svg"), "w") as f:
-            f.write(era_figure(era))
+        value = era_figure(era)
+        __import__("xml.etree.ElementTree", fromlist=["fromstring"]).fromstring(value)
+        if not args.check:
+            with open(os.path.join(out, f"era_{era}.svg"), "w", encoding="utf-8") as f:
+                f.write(value)
         n += 1
-    print("wrote", n, "figures to", out)
+    print("validated" if args.check else "wrote", n, "candidate figures", "" if args.check else out)

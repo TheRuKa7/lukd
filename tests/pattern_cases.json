@@ -1,0 +1,18 @@
+[
+  {"digits":[7,7,7],"lucky":7,"pattern":"OVERWRITE","mult":21},
+  {"digits":[4,4,4],"lucky":4,"pattern":"OVERWRITE","mult":21},
+  {"digits":[4,4,4],"lucky":7,"pattern":"REAPER","mult":4},
+  {"digits":[0,0,0],"lucky":0,"pattern":"OVERWRITE","mult":21},
+  {"digits":[0,0,0],"lucky":7,"pattern":"JACKPOT","mult":2},
+  {"digits":[1,1,1],"lucky":7,"pattern":"JACKPOT","mult":2},
+  {"digits":[3,3,3],"lucky":7,"pattern":"JACKPOT","mult":3},
+  {"digits":[8,7,6],"lucky":7,"pattern":"CASCADE","mult":3},
+  {"digits":[1,2,3],"lucky":7,"pattern":"CASCADE","mult":3},
+  {"digits":[9,8,7],"lucky":7,"pattern":"CASCADE","mult":3},
+  {"digits":[3,3,4],"lucky":7,"pattern":"ZERO_SUM","mult":2},
+  {"digits":[7,7,6],"lucky":7,"pattern":"ZERO_SUM","mult":2},
+  {"digits":[9,9,2],"lucky":7,"pattern":"ZERO_SUM","mult":2},
+  {"digits":[7,1,7],"lucky":7,"pattern":"PAIR","mult":2},
+  {"digits":[8,9,0],"lucky":7,"pattern":"BUST","mult":1},
+  {"digits":[2,9,5],"lucky":7,"pattern":"BUST","mult":1}
+]

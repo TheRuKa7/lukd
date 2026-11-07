@@ -1,34 +1,32 @@
-# ZERO-SUM: OMEN — Market, Audience and Positioning (Gate B12)
+# ZERO-SUM: OMEN - Audience and Positioning
 
-Draft for after the jam; update with jam ratings and wishlist data.
+Updated 7 November 2026. Design hypothesis, not market validation. See [DECISIONS.md](DECISIONS.md) and [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
----
+## 1. Hook and current promise
 
-## 1. The hook
-**One sentence:** *An anime roguelite RPG where every number spins and you tap to stop it, across lands built from the world's lucky-number superstitions.*
-**One image:** a giant slot-reel Jackpot exploding over a ukiyo-e night parade, with a hooded hero whose number reads NaN.
-**Elevator pitch:** Balatro's build-crafting meets Persona's style and a party you love, in a world where luck is visible and someone wants to freeze it forever.
+**A numberless outsider learns to shape luck, one stopped digit and one unlikely companion at a time.** The full-game genre is an authored anime 2.5D party RPG with timing and build-crafting. The jam offers a 10-15 minute Meridian Prologue with NIL, Vesper, a charm choice and Varro. Do not describe the browser sandbox as that Unity game.
 
-## 2. Audience
-| Segment | Why they'll like it | Comparable games |
+Use one clear gameplay image: an actual stopped digit entering the Nixie reel over a readable Meridian fight. Keep NaN exact in runtime UI. Do not market unbuilt regions, party systems or films as current features.
+
+## 2. Audience hypotheses and evidence to collect
+
+| Segment | Intended appeal | Evidence required |
 |---|---|---|
-| Deckbuilder / roguelite fans | Synergy discovery, big numbers, short runs | Balatro, Slay the Spire, Luck be a Landlord, Dicey Dungeons |
-| Anime RPG fans | Style, party, story, cinematic ultimates | Persona 5, Metaphor: ReFantazio, Sea of Stars |
-| Story-forward indie players | A strange, warm world and characters | Hades, Disco Elysium (tone of moral argument), Citizen Sleeper |
-| Mobile-curious players | One verb, short fights | Balatro mobile, Vampire Survivors mobile |
+| Build-crafting players | Visible pattern consequences, legal wheel choices, synergies | Can explain an effect and choose a different build intentionally |
+| Party-RPG players | Warm noir cast, trust, local conflict, later recruitment | Recall NIL/Vesper's relationship and want to continue |
+| Timing/strategy players | Honest accepted stops, readable defence and boss rule | Can identify the target and improve without unexplained outcomes |
+| Short-session players | Encounter-scale progress, clear retry and checkpoints | Can stop/resume without losing unexplained progress |
 
-## 3. Differentiators
-1. **One verb with real skill**: timing + reading the reel, not just picking cards.
-2. **Theme in the maths**: lucky numbers from five cultures *are* the rules.
-3. **Cinematic payoffs**: every pattern is an anime moment.
-4. **A party with digits**: team synergy as number theory, readable at a glance.
-5. **A god of luck you free, not fight.**
+Comparable-game research is in [COMPARATIVE_RESEARCH.md](refinement/COMPARATIVE_RESEARCH.md). Study individual craft principles; do not copy UI, characters, signature plot premises or styles by name. OMEN's differentiators are the personal resonance choice, luck as social power, number-theory relationships and reclaiming shared agency.
 
-## 4. Platforms and price (proposal)
-PC (Steam) first, Steam Deck verified; Switch and mobile after. Premium, no microtransactions, no randomness for money. Indicative price USD 19.99 (full game); the jam slice stays free on itch as a demo.
+## 3. Platforms, price and tags
 
-## 5. Store tags (Steam)
-Roguelite · Deckbuilding (adjacent) · Anime · RPG · Turn-Based Combat · Rhythm (light) · Story Rich · Multiple Endings · Colorful · Mythology.
+Jam target: Unity WebGL on itch. Desktop browsers first; mobile is best effort until its matrix passes. Full-game commercial target: PC, subject to production evidence. Steam Deck verification, consoles and mobile are separate future requirements, not certifications or commitments. Price is undecided; the earlier USD19.99 figure was an unsupported proposal. No real-money randomness or microtransactions.
 
-## 6. Risks
-"Gambling" perception (mitigate: no real-money mechanics, messaging about luck and community) · AI-art scepticism (mitigate: human overpaint, honest disclosure, strong hand-made motion) · cultural missteps (mitigate: CULTURAL_CONSULTATION) · scope (mitigate: Gate B planning before production).
+Candidate tags should match the delivered build: RPG, turn-based combat, anime, story rich, strategy. Do not claim deckbuilding without a deck system, rhythm without rhythm gameplay, roguelite without the validated reset/run structure, or multiple endings on the single-ending jam page. Full-game tags may change after those systems exist.
+
+## 4. Claims and risks
+
+AI authors and processes development work; disclose actual use and provenance. Quality comes from consistent accepted assets, responsive interaction and tested rules, not an unperformed human overpaint stage. Avoid presenting an invented region as a definitive account of a real culture. No market-demand, award, AAA, accessibility, platform or cultural-approval claim without evidence.
+
+Done when the submitted page accurately describes the exact uploaded build and feedback has been recorded. Commercial positioning is revisited after the first complete act; wishlist or sales forecasts are not established here.

@@ -1,34 +1,25 @@
-# ZERO-SUM: OMEN — Localisation Guide (Gate B8)
+# ZERO-SUM: OMEN — Localisation contract
 
-English at the jam; Japanese, Simplified and Traditional Chinese and Hindi next (World Bible §10); then French, German, Spanish (LatAm), Brazilian Portuguese, Korean.
+Updated 7 November 2026 IST. English jam only. Additional language order is a planning hypothesis after the core pipeline: Japanese, Simplified/Traditional Chinese, Hindi, then French/German/Spanish (Lat Am)/Brazilian Portuguese/Korean. No translation or language QA is claimed by this document.
 
----
+## 1. String and asset boundaries
 
-## 1. Engineering rules (from day one)
-- All text in Unity Localization string tables; ids from the dialogue database ([`BOND_ARCS.md`](BOND_ARCS.md) §3).
-- No text baked into images (signs in art use digits or are layered for replacement).
-- **Digits are universal**: Omens and reels always use Western Arabic numerals (0–9) in every language, because the mechanics are about those glyphs. Each language's own numerals (kanji, hanzi, Devanagari) appear only as decoration.
-- Plural and gender support via Smart Strings; NIL is always they/them in English; translators choose the natural equivalent (e.g. no pronoun) per language.
-- Text expansion: UI boxes fit +40% (German) and line breaks work for CJK (no spaces).
+Unity content gate L-IMPORT requires stable string IDs, locale/namespace, source text, speaker, context/screenshot, variables, plural/gender rules and fallback. Unity Localization string/asset tables are the intended implementation; none exists in this repository yet. The browser sandbox hardcodes English and is not localisation-ready evidence. A validated importer must reject duplicate IDs/missing placeholders and produce a dependency report before non-English content is enabled.
 
-## 2. Fonts
-| Script | Font | Notes |
-|---|---|---|
-| Latin | Big Shoulders Display, Barlow Semi Condensed, JetBrains Mono | |
-| Japanese | Noto Sans JP | Vertical text only for decorative signs |
-| Chinese (SC/TC) | Noto Sans SC / TC | |
-| Devanagari | Noto Sans Devanagari | Check conjuncts render in TMP |
-| Greek | Noto Sans (Greek) | |
-Fallback chains per language in TextMeshPro; subset fonts per build to save WebGL size.
+No critical text/numerals baked into generated art; signs requiring translation use replaceable text layers. Mechanical reel/resonance digits remain 0–9 consistently across languages; decorative regional numerals cannot resemble an interactive face. Locale-aware formatting handles large Balance values separately from the actual stopped digit.
 
-## 3. Glossary for translators
-Keep untranslated: **NaN**, **Omen** (or the agreed local term, decided once), the names of heroes and bosses.
-Translate consistently (lock once): Balance, Remainder, the Basilica, the Tally, Settled, Audit, Fate Wheel, the reel, Jackpot, Pair, Bust, Cascade, Zero-Sum, Omen Overwrite, Reaper's Toll, Hap, the Open Hand, Hap's Favour, fen.
-Puns to adapt, not translate: Vesper's "Seven bucks", Maeve's "third time lucky", the catechism "Every soul a number".
+## 2. Fonts and shaping
 
-## 4. Culture-specific care
-- Where a land's own language appears (Hyakki in Japanese, the River Empire in Chinese, Śūnyapura in Hindi), the native-language version should feel *more* authentic, not less: localisers may restore terms the English simplifies.
-- Lucky and unlucky numbers are part of the mechanics; translators must not "localise" them away (4 stays unlucky in Hyakki in every language).
+Candidate Latin fonts: Big Shoulders Display, Barlow Semi Condensed, Jet Brains Mono. Candidate fallback families: Noto Sans JP/SC/TC/Devanagari/Greek. Verify licence and bundle the exact font files; no required Google Fonts network call in the Unity jam. Fontgate L-FONT requires glyph coverage, valid fallback stack, atlas/memorybudget, CJK wrapping and Devanagariconjunct tests on the chosen TextMeshPro/Editor version. Do not claim TMP conjunct support merely because a font contains glyphs. Use screenshots of real strings for acceptance.
 
-## 5. Process
-Freeze English per act → export → translation (with the glossary, screenshots and character sheets) → in-game LQA pass → cultural reviewer pass for that land ([`CULTURAL_CONSULTATION.md`](CULTURAL_CONSULTATION.md)) → fix → ship.
+## 3. Layout and terminology
+
+Allow at least 40%text expansion as a planning baseline, test actual strings and 150%text scale, and support line-break rules without assuming spaces. Smart Strings or equivalent handles plural/gender without concatenation. NIL uses they/them in English; translators choose an appropriate grammatical equivalent with consistent identity.
+
+Lock distinct terms: resonance, Civic Omen, Audit Omen, Balance, Audit, Settled, Remainder, Basilica, Fate Wheel, reel, Pair, Jackpot, Bust, Cascade, Zero-Sum, Overwrite, Reaper, Hap, Open Hand/Favour, fen. NaN remains exact case. Combatstake settlement must not translate as literal death by default. Chosen resonance 0 is never healthy Civic 00. Proper names and mythic figure depictions use the same reviewed glossary/context as the narrative docs.
+
+## 4. Workflow and gate
+
+Freeze source per scene/act → export with context → AI draft translation → glossary/consistency checks → build imported language → actual-device visual/readability review → record unresolved native-language/cultural validation. AI translation/source checks are not claimed to be native expertise or external approval. Any community/native review, if obtained, records exact scope and findings.
+
+Gate L-ENABLE is per locale: source/translation placeholders equal, no missing string ID, no overflow, correctglyph/shaping/focus, subtitles/skip intact, mechanics/civic distinctions preserved, and performance within budget. Incomplete locales stay disabled; no empty language selector in jam. Language choices/settings saves must migrate by stable locale ID.

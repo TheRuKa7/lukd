@@ -1,74 +1,53 @@
-# ZERO-SUM: OMEN — Jam Slice Spec and Cut List (Gate A3)
+# ZERO-SUM: OMEN - Jam Slice and Cut List
 
-**"Prologue & Act I: The Remainder and the Night Parade."** The locked content list for the Official Unity Game Jam 2026 build. Nothing enters without something leaving. Deadline: **Sat 14 Nov 2026, 12:00 UTC**; we submit **Fri 13 Nov**.
+Updated 7 November 2026 (IST). Adopted scope under [DECISIONS.md](DECISIONS.md). **The Remainder: a 10-15 minute Meridian Prologue.** This replaces the older two-region jam scope. Nothing below is a claim of implemented content; see [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
-Tags: **M** = must (no ship without it) · **S** = should (cut on the date shown if not working) · **C** = could (only if everything else is done).
+## 1. Required player journey
 
----
+| Beat ID | Content | Target window from Start | Required evidence |
+|---|---|---|---|
+| JAM-01 | Title, audio unlock, settings; Rain Alley opens immediately | 0:00-0:10 | Keyboard/pointer Start, muted path and settings work |
+| JAM-02 | Ama's Civic Omen01; stop reroutes six visible units from a confiscation jar to her07 | First action by0:20 | Transfer is visible; NIL does not create luck or erase the Collector's Omen |
+| JAM-03 | Naming shrine: choose resonance0-9; REMAINDER DETECTED | Choice by1:00; reveal before3:00 | Zero is valid; choice is not presented as a difficulty selector |
+| JAM-04 | One Debt Hound; NIL acts three times; safe scripted pattern teaching and one defence | About1:00-3:00 | Tutorial exceptions explicit; legal normal wheels resume afterward |
+| JAM-05 | Vesper rescue and recruit | About3:00-4:00 | Recruited flag commits once; entrance remains understandable muted/skipped |
+| JAM-06 | One Debt Hound; two heroes, one acts twice; Pattern Sight | About4:00-6:00 | Both heroes used; third-digit opportunities and accepted stop are clear |
+| JAM-07 | Gus offers Horseshoe, Black Cat, Ofuda; choose one free | About6:00-7:00 | One grant only; descriptions match exact effect; no shop/fen prerequisite |
+| JAM-08 | Varro, Debt Jar, telegraphed phase change | About7:00-11:00 | Boss counter works for all ten digits and every charm choice |
+| JAM-09 | Mercy, Livia thread, Seal1, quiet rooftop/map reveal | About11:00-13:00 | Varro survives defeat; local arc resolves; future lands are a teaser |
+| JAM-10 | Results, credits/disclosure, replay/new number | Total10-15min target | Biggest score, patterns and time; restart clears transient effects |
 
-## 1. Player journey (target 25–35 minutes)
+Windows are pacing hypotheses; do not speed-read story to force a stopwatch result. The detailed line/event/skip contract is [JAM_SCRIPT.md](JAM_SCRIPT.md), and teaching details are in [FIRST_10_MINUTES.md](FIRST_10_MINUTES.md). The full campaign Prologue remains a separate35-minute budget in STORY.
 
-| # | Beat | Content | Tag | Cut date |
-|---|---|---|---|---|
-| 1 | Title | Logo, tap to start, audio unlock, settings | M | — |
-| 2 | Intro cinematic | Shots 1–4 of World Bible §8 (myth montage + title), ~45 s | M (shortened) | — |
-| 3 | Rain Alley 9 | Ama's Omen drops to 01; NIL stops it on 07 (scripted interactive stop) | M | — |
-| 4 | Naming shrine | Brother Nought; **choose your lucky number**; REMAINDER DETECTED | M | — |
-| 5 | Fight 1 | Debt Hounds ×2; NIL alone; scripted Jackpot | M | — |
-| 6 | Vesper joins | Rescue scene (stills + motion graphics) | M | — |
-| 7 | Fight 2 | Debt Hounds ×3; choose strikers; Cascade/Zero-Sum | M | — |
-| 8 | Maeve's forge | Defend the forge (Big Audit: Collectors) → Maeve joins | S | Tue 10 |
-| 9 | Charm stall | Gus Mendoza: pick 1 of 3 charms | M | — |
-| 10 | Boss: Varro | Debt Jar rule, 2 phases, Vesper's Requiem | M | — |
-| 11 | World-map reveal | Six lands light up; Seal 1 | M | — |
-| 12 | Hap's Dream 0 | 15 s dream: "Pick a number…" | S | Wed 11 |
-| 13 | Ferry → Moon Pier | Fight 3: Chōchin-obake on the pier | M | — |
-| 14 | Night Parade | Hina joins (party of 3, bonds) | M | — |
-| 15 | Map choice | Ofuku's shrine (charm + sets) **or** fox-wedding Whisper | M (shrine) / S (Whisper) | Tue 10 |
-| 16 | Fight 4 | Kasa-obake pack | M | — |
-| 17 | Teahouse | Party swap; one bond scene (Vesper + Hina) | M (swap) / S (scene) | Wed 11 |
-| 18 | Market / Elite | Kappa market (Kyūsuke cameo) **or** Kitsune twins elite | S | Tue 10 |
-| 19 | Enma's trial | Keeper trial (no parry, 4 rounds); NIL learns Carry | S | Tue 10 |
-| 20 | Boss: Tamamo | Nine tails, illusion faces, Shi and Ku; *Hundred Demons' Night* vs *Hundred-Year Night* | M | — |
-| 21 | Ending | Seal 9; Thale's line "The Remainder is learning to count"; "To be continued: the River Empire" | M | — |
-| 22 | Results | Biggest number, patterns found, time; "Play again with a new number" | M | — |
+## 2. Required systems and content
 
-**Minimum lovable slice** (if everything goes wrong by Wed 11): beats 1–7, 9–11, 13–14, 16, 20–22. About 18 minutes.
-
-## 2. Systems in the slice
-
-| System | Tag | Notes |
+| Type | Required for this build | Excluded from baseline |
 |---|---|---|
-| Fate Wheels (8-face starters), reel, all 7 patterns, priority | M | GDD §1, SYSTEMS §2.1–2.2 |
-| Pattern Sight | M | Biggest single fix for Busts (TUNING §2) |
-| Hap's Favour (warm + Hap's Hand) | M | Removes 3-Bust streaks |
-| Parry / Fortune on enemy strikes | M | |
-| Omen over a Balance, party Balance | M | GDD §1.6 |
-| Heroes: NIL, Vesper, Hina (M); Maeve (S) | M/S | Party of 3 max |
-| Ultimates for every hero in the slice | M | Video or in-engine; 3–5 s |
-| Bonds: Complements, Neighbours, Twins | M | Constellation lines in the Teahouse |
-| Link Arts: *Midnight Parade* (M), *Lucky Strike* (S) | M/S | |
-| Charms: 12 (Hyakki 6 + Meridian/Crossroads 6), 3 slots, sets | M | SYSTEMS §7 |
-| Land Laws: Debt (Meridian), Shi and Ku (Hyakki) | M | |
-| NIL verbs: Splice (M), Carry (S) | M/S | |
-| Wheel crafting: Remove + Gold/Jade/Glass at Ofuku's shrine | S | Tue 10 |
-| Hap's Whispers (1 per act) | S | Wed 11 |
-| Tsukumogami faces | C | |
-| Economy beyond fen rewards, oracle sticks, Ink, Karma, gems, Awakenings, Deals | ✗ | Not in jam |
+| Heroes | NIL, Vesper | Maeve, Hina and all later recruits |
+| Encounters | Debt Hound solo tutorial; Debt Hound two-hero test; Varro | Collectors, additional packs, Tamamo, keeper trials |
+| Combat | Three strikes, legal hero quotas/faces, seven base patterns/priority, one settlement, Pattern Sight, visible Favour repair, defence, Balance/Audit Omen, Debt Land Law, Varro jar | Extended reels, wildcard heroes, gem/Deal/Karma systems |
+| Builds | Free choice of one of three charms below | Fen, shops, rerolls, crafting, sets and progression tree |
+| Presentation | Exact runtime digits, stop/hit/settlement effects, reusable Overwrite payoff, limited pose animation | Required generated film, ultimate gauge, Link Arts, full narrative-bond menu |
+| Story | Rescue, Naming, Vesper, Varro mercy, rooftop | Mandatory mythology montage, Hap Dream, Hyakki gameplay |
+| Assets | NIL/Vesper/Varro/Debt Hound poses, one empty Meridian plate plus variants, Nixie reel, three charm icons, UI/VFX/audio | A mandatory PSB rig, six-layer stage or new 3D service |
+| Reliability | Assist, reduced motion, text/subtitles, audio settings, pause/skip/retry, node checkpoint and storage fallback, credits | Network telemetry, live content or online services |
 
-## 3. Assets in the slice (owners and specs in [`ASSET_LIST.md`](ASSET_LIST.md))
-- **Characters (rigged, 2D):** NIL, Vesper, Hina (M); Maeve (S). Bosses: Varro, Tamamo (M). Enemies (3-pose sprites): Debt Hound, Collector, Chōchin-obake, Kasa-obake (M); Kitsune twins (S).
-- **Stages (parallax):** Rain Alley 9, drain gates (Meridian); Moon Pier, foxfire palace (Hyakki). 4 stages (M).
-- **Reel objects:** Nixie sign, torii with three lanterns (M).
-- **Cinematics:** intro (M, ~45 s), Vesper rescue (M, stills), world-map reveal (M), Hina's entrance (M), Tamamo defeat (M), ending (M); Hap's Dream 0 (S).
-- **Music:** Meridian theme, Hyakki theme, Tamamo boss theme (M); stems (S).
+### The three charm contracts
 
-## 4. Rules for change
-1. New content needs a matching cut of equal size, agreed in the daily stand-up.
-2. A **Should** that isn't working on its cut date is cut, not "nearly done".
-3. Feature freeze **Tue 10 Nov**; content lock **Wed 11 Nov**; bugs only from **Thu 12 Nov**.
-4. Every day ends with a build on the private itch page.
+- `charm_horseshoe`: chosen resonance faces on allied wheels are1.5 times their normal width, when the face exists; it cannot add an absent face.
+- `charm_black_cat`: first would-be Bust per fight visibly replaces scoring slot3 with slot1 and re-evaluates normal priority once. It shares the nonrecursive conversion pipeline with Favour.
+- `charm_ofuda`: first enemy strike is automatically Parried, no accepted stop and no reflected damage; it counts once toward Varro's defence counter.
 
-**Done when:** the team has signed this list (names below) and the Day 2 build matches beats 1–7.
+[SYSTEMS.md](SYSTEMS.md) defines effect order and actual-versus-resolved digits. [BESTIARY.md](BESTIARY.md) defines the jar and phase telegraphs. A Vesper finishing shot may reference Seven-Chamber Requiem visually; it must not teach or require an absent ultimate system.
 
-Signed: ______ (design) · ______ (code) · ______ (art) · ______ (audio/cinematics)
+## 3. Expansion gate and cut rules
+
+The baseline is already the minimum complete game: tutorial, recruit, meaningful choice, boss, resolution and replay. Simplify animation, stage variants and optional dialogue if needed; do not cut the mechanic explanation or boss recovery.
+
+Maeve or Hyakki may enter only if the entire baseline is already hosted, has final required presentation, passes technical checks, and fresh players understand it by end of9November IST. Otherwise they remain future content. An extension must also have a complete script, asset/data contracts, tests, save/skip behavior and time for regression; a single attractive frame is not enough. No additions after feature freeze10November. Content lock end11November; verify12November; submit13November.
+
+## 4. Release acceptance
+
+Every lucky digit and every jam charm choice can finish Varro; no optional character is required. Skip/pause/retry do not duplicate rewards or omit recruit/Seal flags. Audio is not required to read a cue. The uploaded itch build is completed from a fresh browser and its exact hash/version is recorded. Technical targets and browser matrix live only in [TECH_DESIGN.md](TECH_DESIGN.md); passing a desktop prototype check does not certify Unity/Web.
+
+Hard deadline:14November2026 at17:30IST (12:00UTC). Unity is required and WebGL is required for prize eligibility; AI use must be described. The project targets WebGL. [Official jam overview](https://itch.io/jam/official-unity-game-jam-2026)

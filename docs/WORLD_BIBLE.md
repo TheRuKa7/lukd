@@ -5,11 +5,13 @@
 
 This file is the story source of truth: world, lore, the god of luck, lands, villain, cast, plot and endings. The full scene-by-scene campaign is in [`STORY.md`](STORY.md); each land's acts, encounters and bosses are in [`ACT_DESIGN.md`](ACT_DESIGN.md). Mechanics live in [`GDD.md`](GDD.md); schedule and pipeline in [`PRODUCTION_PLAN.md`](PRODUCTION_PLAN.md).
 
+Updated 7 November 2026. **Specified, not implemented or externally validated.** [DECISIONS.md](DECISIONS.md) resolves cross-document rules. The jam is the 10–15-minute Meridian Prologue in [JAM_SLICE.md](JAM_SLICE.md); other lands, bonds and endings below are the full campaign. [PROJECT_STATUS.md](PROJECT_STATUS.md) records evidence.
+
 ---
 
 ## 1. The one-paragraph pitch
 
-In **the Tally**, every living soul carries a floating number, its **Omen** (00–99), which is literally its share of the world's luck. Luck is conserved: for one Omen to rise, another must fall. It wasn't always like this. Every people once had its own idea of fate: the Greeks' spun thread, the Indian scribe's ledger of deeds, the Chinese and Japanese underworld books of the dead, the deal struck at an American crossroads at midnight. Then the capital, **Meridian**, built **the Basilica** and bound every one of those ledgers into one machine that gives every soul one number.
+In **the Tally**, every ordinary living soul carries a floating **Civic Omen** (00–99), its registered share of the world's luck. Luck is conserved under the Basilica: a gain must debit another account or an identified reserve. It wasn't always like this. Every people once had its own idea of fate: spun thread, a ledger of deeds, underworld books, a contract at midnight. Then the capital, **Meridian**, built **the Basilica** and bound those different ledgers into one machine that gives every registered soul one number.
 
 **NIL** wakes in Meridian's slums with no number at all, only a glitching **NaN**. When NIL is made to state a lucky number at a back-alley Naming Rite, the Basilica screams **REMAINDER DETECTED**, and every bounty hunter in the world comes running. To stop the **Final Audit**, which will freeze every fate forever and erase NIL to balance the books, NIL must travel the lands of the Tally, free the ledgers the Basilica stole, gather a party from every culture, and learn the truth: NIL *is* the world's missing luck.
 
@@ -19,13 +21,15 @@ In **the Tally**, every living soul carries a floating number, its **Omen** (00�
 
 | # | Law | In the world | In the game |
 |---|---|---|---|
-| 1 | **Every soul has an Omen** (00–99) | Everyone can see everyone's number floating above their head. It decides loans, jobs, marriages and how dangerous a staircase is for you today. | The Omen over every combatant is its health readout: in an Audit it shows the share of its staked luck (its **Balance**) that is left, 99 down to 00 (GDD §1.6). No HP bars. |
-| 2 | **The Zero-Sum Law** | Total luck is constant. Fortune is traded, taxed, inherited and stolen. Luck banks lend it at interest; debt collectors drain it. | Fights are transfers of luck. The Zero-Sum pattern (digits summing to 10) "balances the books" and cancels a move. |
+| 1 | **Civic and Audit Omens differ** | The two-digit Civic Omen is personal luck/status; NIL's unregistered identity is NaN. | The separately framed **Audit Omen** normalizes staked **Balance** from 99 to 00. It is not the Civic Omen. NIL's NaN stays visible beside the party's shared Audit readout. |
+| 2 | **The Zero-Sum Law** | Total luck is constant across people, reserves and the hidden Remainder. Fortune can be traded, taxed, inherited or stolen; interest debits an account. | Damage exhausts a stake; provisional strike numbers are not new Civic luck. Zero-Sum (three digits summing to 10 or 20) cancels the next enemy action. |
 | 3 | **Resonance (your lucky number)** | At seven, every child performs the **Naming Rite** and states their lucky number. That digit is how the Basilica reads you and how you channel luck. | Each hero has a resonant digit. Their wheel favours it, and landing it charges their ultimate. The player chooses NIL's. |
-| 4 | **Settlement** | At 00 you are *Settled*. Misfortune finds you within days, and your luck flows back to the pool. | Defeat = Settled. Enemies are "rounded down", not gored. |
+| 4 | **Settlement** | **Civic settlement** at Civic 00 leaves someone vulnerable to lethal misfortune within days; it is a separate story event. | **Audit settlement** means Balance 0 and combat defeat, not automatic death or a Civic reset. Named people survive for their aftermath; constructs/Noise alone may disintegrate. |
 | 5 | **Audits** | When fates collide, Omens contest. Trained **Auditors** summon a **Fate Wheel** (the old *Rota Fortunae*, Fortune's wheel, now made of digits) and strike with the digits they stop. | The core verb: every number spins, and you stop it. Combat is called an Audit. |
 
 **Daily life details to show, not tell.** Lifts skip floors 4, 9 and 13. Weddings crowd onto the 8th. Gamblers kiss sevens. Beggars sell "luck-ins" (a point of Omen for a meal). Children compare Omens in the schoolyard. Shopkeepers hang a lemon with seven green chillies over the door, or a horseshoe, or a blue evil-eye bead, or a beckoning cat, depending on the street.
+
+**Readout contract.** Resonance is a separate digit 0–9, never a health/status value. Positive Balance shows `ceil(99 × Balance / MaxBalance)`, clamped 01–99; zero Balance shows 00. MaxBalance is positive. Unless explicitly marked civic, combat rules read Audit Omen. A Collector's confiscation jar is a reserve account: the opening visibly debits six units from it as Ama rises Civic 01→07. NIL neither creates luck nor erases the Collector's number.
 
 ### Lucky and unlucky numbers across the Tally (the jam theme, built into the setting)
 | Number | Where it's lucky / unlucky | Why (real-world belief the land is inspired by) |
@@ -64,9 +68,9 @@ In **the Tally**, every living soul carries a floating number, its **Omen** (00�
 2. **The Final Binding** (TR 702): the Basilica's heart, the **Even Hand engine**, closed around Hap itself. The Basilica's great amber eye is **Hap's eye, caged**. Since then Hap no longer deals; it is **counted**. Every Dawn Tally divides the caged god into whole-number shares: the Omens.
 3. **The Rounding** shaves the fractions off Hap every morning. Three hundred years of shavings pooled into one account, and the account woke up: **NIL is the part of Hap that refused to be counted.** NIL is not Hap, and not a god; NIL is a person made of the god's lost change, and the last free piece of luck in the world.
 4. **The Deficit** is Hap starving in the cage. **Noise storms** are its seizures. **The Default** that the theologians fear is not "the Noise returns"; it is **Hap's death**, after which nothing would ever happen by chance again: no surprises, no second chances, no luck at all.
-5. **Thale** discovered the cage in TR 999. He believes a caged god is mercy ("No child has died at random since I put chance in a box") and plans the **Final Audit**: settle NIL, count Hap completely, and freeze it forever (**Fixed Fate**). He doesn't know, or won't admit, that a frozen god is a dead one.
+5. **Thale** inherited the Basilica, discovered the cage in TR 999 and developed **Fixed Fate**. He believes continuing its emergency allocations is mercy: “I inherited the box. I can make it safe.” His Final Audit would absorb NIL and freeze chance completely. His belief is wrong: ending all chance kills Hap rather than curing the Default.
 
-**Hap in the game:** Hap speaks only in dreams. At the end of every act NIL dreams of a dice-starred void where Hap appears with the face of the land just visited and asks one question (the **Hap's Dream** epilogues, Story §Interludes). In play, Hap shows up as **Hap's Favour** (a pity system: luck turns after bad luck), **Hap's Whispers** (coincidence events on the map) and **Open Hand shrines** (rest nodes). See [`SYSTEMS.md`](SYSTEMS.md).
+**Hap in the game:** before the finale, Hap speaks only in dreams. At each campaign segment's end NIL dreams of a dice-starred void where Hap appears with the face of the land just visited and asks one question (STORY; BOND_ARCS §2). Hap can speak openly when its cage is exposed in the finale. In play it appears through **Favour**, **Whispers** and **Open Hand shrines** (SYSTEMS). The jam ends at the rooftop; a dream is not required.
 
 ## 3. History (the myth told in the intro)
 
@@ -80,8 +84,8 @@ In **the Tally**, every living soul carries a floating number, its **Omen** (00�
 
    None of these ledgers agreed. Luck meant karma in one land, thread in another, a contract in a third. The world was messy, plural and alive.
 3. **The Basilica.** Meridian, a young trading capital at the centre of the Tally, sent actuaries to every land. Over three centuries they **copied, bought or seized each ledger** and bound them into one brass engine, **the Basilica**, which recomputes one Omen for every soul at sunrise (**the Dawn Tally**). One number for everyone; one law for luck. In TR 702 the engine's heart closed around **Hap itself** (§2A); since then the god of luck is not worshipped in Meridian, it is *counted*. Meridian became the capital of the world because it holds the merged Ledger.
-4. **The Rounding.** Each Dawn Tally divides luck into whole numbers. The fractions, every soul's tiny remainder, are rounded down and dropped. It has happened every day for three hundred years. Nobody noticed.
-5. **The Deficit (now).** For forty years the world's total luck has been leaking. **Noise storms** tear open where the books don't balance: patches of pure chance where numbers scramble and glitch-creatures (**Noiselings**) crawl out. Theologians predict **the Default**, the day the Basilica fails. The truth is worse: the Deficit is Hap starving in its cage, and the Default would be the god's death (§2A).
+4. **The Rounding.** Every Dawn Tally drops fractional luck from the visible accounts into an unlisted account. The total remains conserved, but circulating luck declines. The process began in TR 702; its cumulative consequence went unrecognized until the observatory measured the Deficit and Thale later found the cause.
+5. **The Deficit (now).** The observatory first measured declining available luck in TR 962, forty years ago. Noise storms are spasms of the starving caged Hap, not luck being newly created. **Objective truth:** the Default is extinguished chance and absolute stillness. **Public doctrine:** the Basilica warns that collapse will return the Noise. These are different claims, not two contradictory objective definitions.
 
 **The secret (midpoint reveal, Act III, in Śūnyapura, the land that invented zero):** the rounded-down fractions didn't vanish. Three centuries of everyone's lost remainders pooled into a hidden account, and that account became a person. **NIL is the Remainder**, the world's missing luck, embodied. NIL has no Omen because NIL isn't *in* the Ledger. NIL *is what the Ledger owes.*
 
@@ -98,11 +102,11 @@ In **the Tally**, every living soul carries a floating number, its **Omen** (00�
 | **Voice** | Calm, kind, exhausted. Narrates the intro myth. |
 | **Backstory** | Born in Meridian's slums. At twelve, a Noise storm took his family and his street in one minute, by pure chance. He became the greatest actuary in history to make sure chance never decides anything again. |
 | **His plan: the Final Audit** | 1) Capture the Remainder (NIL) and settle it back into the Ledger, closing the Deficit. 2) Freeze every Omen forever ("Fixed Fate"): no luck, no loss, no Noise. |
-| **Why he's not wrong** | He would save the world from the Default. |
-| **Why he's wrong** | He flattened every culture's meaning of fortune into one number, and now he would freeze it. His plan also erases a person. |
-| **Line** | *"Thread, karma, contracts, books of the dead: a hundred superstitions, and every one of them let people die at random. I replaced them with arithmetic."* |
+| **The real benefit he defends** | His emergency allocations have reduced accidents on protected routes by transferring luck from reserves and less protected districts; the cost is disclosed in Act II records. He believes permanent control will prevent the Default. |
+| **Why he's wrong** | He perpetuates an inherited flattening of regional ledgers, hides who pays for safety, and would erase NIL and kill chance by freezing Hap. |
+| **Line** | *“Thread, karma, contracts: every account left someone behind. I inherited the arithmetic. I will end the loss.”* |
 
-**How he hunts NIL: the Auditors and the Seals.** Each land's bound ledger is locked into the Basilica by a **Seal**, and each Seal is guarded by that land's **Auditor**, a local power who made a deal with Thale. Deliver the Remainder, and your people are protected (frozen high) under Fixed Fate. The upper gate of Meridian opens only with **seven Seal Digits**: one from each of the six Auditors, and **the seventh is NIL's own lucky number**, the one the player chose in the intro.
+**How he hunts NIL: the Auditors and the Seals.** Six **Auditor offices** control ledger locks: local pact-holders, Varro's Undercity office, and the surveyors' paired eclipse-engine control office. Each holds one Seal Digit. Pacts began in TR 999; Varro inherited his office and its Seal in TR 1001. Thale promises protected allocations under Fixed Fate. Breaking a Seal ends its monopoly/control channel; local ledgers regain agency while physical originals remain in the Basilica archive until the finale. The ritual Upper Gate needs six acquired digits plus NIL's chosen resonance in its seventh socket; duplicate digits still occupy different keyed sockets.
 
 **Why the party fights:**
 1. NIL is hunted: every Auditor wants the bounty.
@@ -122,18 +126,18 @@ The Tally is a ring of lands around Meridian's plateau. The upper city is sealed
 | **Prologue** | **Meridian Undercity** (the Remainder Wards) | A cosmopolitan modern capital | Anime cyber-noir: rain, neon, Nixie signage | The Basilica itself | *Debt*: everyone owes luck | **Varro Kade, the Ledgerhound** | 1 |
 | **I** | **Hyakki (百鬼), the Isles of a Hundred Demons** | Japanese folklore | *Ukiyo-e* woodblock prints + anime: flat colour, bold outlines, Hokusai waves, torii, lantern light | **Enma's Ledger** of the dead | *The Rule of Shi and Ku*: 4 and 9 are cursed; 7 is blessed | **Tamamo, the Nine-Tailed Auditor** | 9 |
 | **II** | **The River Empire**: Bāfā Harbor (八发港) above, the Ten Courts (十殿) below | Chinese folk religion and festival culture | Ink-wash (水墨) for the underworld; *gongbi* (工笔) fine line and gold leaf + neon for the harbor | **The Book of Life and Death** and the Judge's Brush | *The Rule of Interest*: luck compounds | **Chancellor Jin Chan (金蟾), the Golden Toad** | 8 |
-| **III** | **Śūnyapura, the City Where Zero Was Born** | Indian mythology, astronomy and mathematics | Indian miniature painting and Pattachitra outlines + anime; monsoon light; giant stone observatory instruments; geometric stepwells | **Chitragupta's Ledger** of deeds (karma) | *The Rule of Karma*: every action is recorded and returns | **Rahu and Ketu, the Eclipse** | 0 |
+| **III** | **Śūnyapura, the City Where Zero Was Born** | Indian mythology, astronomy and mathematics | Indian miniature painting and Pattachitra outlines + anime; monsoon light; giant stone observatory instruments; geometric stepwells | **Chitragupta's Ledger** of deeds (karma) | *The Rule of Karma*: every action is recorded and returns | **Eclipse Engines “Rahu” and “Ketu”** (invented Basilica constructs) | 0 |
 | **IV** | **Kroton Nova, the Sieve of the Aegean** | Greek mythology and Pythagorean number mysticism | White marble, Aegean blue, mosaic and red-figure-pottery motifs + anime | **The Thread of the Moirai** | *The Rule of Indivisibility*: only primes pass | **Archon Seventeen** of the Pythagorean Synod | 2 |
 | **V** | **The Crossroads Territory** | American folklore: frontier tall tales, the blues crossroads legend, immigrant charms, desert neon | Americana: desert sunsets, Route-66 motels, pulp-poster lettering, art-deco casino neon | **The Black Book of the Crossroads** | *The Rule of the House*: the night loops, and every deal has a price | **The House (Octavian Nine, "Mr. Eighty-Nine")** | 7 |
 | **Finale** | **Meridian & the Basilica** | — | Brass clockwork cathedral, monochrome + Nixie amber; every land's art style appears on its wall | All of them | *Fixed Fate* | **Comptroller Lucan Thale** | *yours* |
 
-**Gods are not the villains.** Revered figures (Enma, Chitragupta, the Judge of the Ten Courts, the Moirai) appear as **neutral keepers who test the party**, never as enemies to beat up. The Auditors are mortals, folklore tricksters or legendary monsters who made deals with Thale.
+**Gods are not the villains.** Revered figures (including Rahu/Ketu) are not enemy targets. Keepers pose nonlethal trials. The Act III targets are invented, visibly bolted brass eclipse engines named “Rahu” and “Ketu” by Basilica surveyors; they are not the celestial beings, their bodies, avatars or disguised forms. Their control seal is the Act III Auditor's lock. Destroying machinery releases the sky's ordinary eclipse rather than defeating a deity. Other Auditors are mortals or fictionalized folklore tricksters accountable for their choices.
 
 ### Luck and superstition by region (what each land believes, and how it plays)
 | Land | What luck means here | Lucky | Unlucky | Everyday customs | Becomes in play |
 |---|---|---|---|---|---|
 | **Meridian** | A number you own, rent or owe | 7, 77, 99 | 13 (floors skipped), 00 | Charms of every culture on one door; kissing sevens; selling "luck-ins" | *Debt*: the Collectors' interest; Charmpunk shops sell every set |
-| **Hyakki** | A relationship with spirits; old things wake up | 7 (Seven Lucky Gods), 8 (*suehirogari*, widening fan) | 4 (*shi*, death), 9 (*ku*, suffering) | Daruma eyes, omamori, beckoning cats, throwing salt, no room 4 | *Rule of Shi and Ku*: 4s and 9s curse the striker; tsukumogami faces awaken after 100 stops |
+| **Hyakki** | A relationship with spirits; old things wake up | 7 (Seven Lucky Gods), 8 (*suehirogari*, widening fan) | 4 (*shi*, death), 9 (*ku*, suffering) | Daruma eyes, omamori, beckoning cats, throwing salt, no room 4 | Shi/Ku: 4 curses striker's next strike; 9 curses next party defence; SYSTEMS owns exact values. Faces awaken after 100 stops |
 | **River Empire** | Prosperity that compounds; harmony between the living and the dead | 8 (*fā*, prosper), 6 (*liù*, smooth), 9 (*jiǔ*, lasting) | 4 (*sǐ*) | Red envelopes, the money toad, oracle sticks, burning joss paper for ancestors | *Rule of Interest*: Mult compounds; ancestors' gifts at shrine nodes |
 | **Śūnyapura** | Deeds and their return (karma), auspicious timing | 0 (the place that holds everything), 108, 9 (*navagraha*) | Inauspicious hours during the eclipse | Lemon and seven chillies, rangoli, the nine gems, auspicious hours | *Rule of Karma*: parries and Zero-Sums bank Karma; every action returns |
 | **Kroton Nova** | Purity and proportion; the thread the Moirai spin | Primes, 2 (the even prime), the golden ratio | 17 (VIXI), composites (in the Synod's eyes) | Evil-eye beads, spitting three times, Fortuna's wheel | *Rule of Indivisibility*: composite strikes weaken; primes pierce |
@@ -174,7 +178,7 @@ The Tally is a ring of lands around Meridian's plateau. The upper city is sealed
 - Superstitions: horseshoes over doors (open end up), rabbit's foot, lucky penny, four-leaf clover, "seven come eleven", never count your money at the table.
 
 ### The Far Lands (expansion plan, not the main game)
-Each a short post-launch act with its own ledger, built with cultural consultants:
+Uncommitted research directions, outside the jam and first campaign. No content or release date is promised. Each needs source research, explicit cultural-risk review and the same production gates; AI checks cannot be represented as native expertise:
 - **Norse North**: the three Norns at the Well of Urðr; nine worlds; runes.
 - **Kemet** (Egypt): the Weighing of the Heart against Ma'at's feather; 42 assessors.
 - **The Long Count** (Maya): the other civilisation that invented zero; a base-20 calendar.
@@ -205,9 +209,9 @@ Each a short post-launch act with its own ledger, built with cultural consultant
 | **Bai Si (白四)** | 4 | River Empire (Ten Courts) | Act II | Executioner | The underworld's headsman, who keeps count so no dead soul is lost |
 | **Shunya (शून्य)** | 0 | Śūnyapura | Act III | Astronomer | Young mathematician at the great observatory who proves what NIL is |
 | **Prima of Kroton** | 2 | Kroton Nova | Act IV | Paladin | The Synod's "even prime" novice, the odd one out |
-| **Fibi Leone** | Fibonacci | The Crossroads | Act V | Dealer | Card prodigy trapped in the looping night, the only one who remembers |
+| **Fibi Leone** | Fibonacci | The Crossroads | Act V | Dealer | Card prodigy in the repeating night; initially the only local retaining full memories |
 
-Each hero has a 4-scene **bond arc** (Teahouse/Campfire events) that unlocks their Awakening and affects the true ending. Each also carries a **piece of their land's ledger** that matters at the climax.
+Eight core companions and three secret companions plus NIL make 12 authored playable characters across campaign/postgame. Each companion has four **narrative bond stages**, some integrated into story scenes (BOND_ARCS). These are distinct from mathematical resonance bonds and the Act IV Awakening choice. Core bond completion supplies an additional passive/Link Art upgrade and the ending proof; every required core stage has a catch-up route before commitment. Secret recruits never gate the central resolution.
 
 #### Vesper Sette (7)
 - **Look:** tall, crooked grin, scar across the lip; black hair with a crimson underlayer in a long braid; crimson long coat over a croupier's waistcoat; wide-brim hat with cards in the band; a revolver with a **seven-chamber cylinder** engraved 1–7.
@@ -219,7 +223,7 @@ Each hero has a 4-scene **bond arc** (Teahouse/Campfire events) that unlocks the
 #### Maeve Triskel (3)
 - **Look:** freckled, red hair in three braids; leather apron over work clothes; **horseshoe-knuckle gauntlets**; a four-leaf-clover pin; a triskele (triple spiral) burned into her forge hammer.
 - **Personality:** loud, warm, stubborn, superstitious about everything and proud of it.
-- **Backstory:** her family fled to Meridian when their land's luck was "rounded" into the Basilica; her grandmother's charms stopped working that day. She makes new ones.
+- **Backstory:** her family fled a recent tightening of the old Rounding system in TR 990. Her grandmother's charms stopped working then; neither woman witnessed the system's creation in TR 702. Maeve makes new ones.
 - **Role:** upgrades charms at the forge (crafting tie-in); comic warmth for the party.
 - **Ledger piece:** a horseshoe forged from the first Basilica gear, which can hold one Seal open.
 
@@ -260,19 +264,19 @@ Each hero has a 4-scene **bond arc** (Teahouse/Campfire events) that unlocks the
 #### Fibi Leone (Fibonacci)
 - **Look:** 18; golden hair in spiral curls; spiral-patterned irises; tailored croupier tailcoat with headset; glowing cards that flow around her in a golden spiral.
 - **Personality:** fast-talking, anxious, brilliant; laughs at bad moments.
-- **Backstory:** dealer at the House, the only person in Lucky Strike who remembers the night repeats. She has lived it 1,597 times (a Fibonacci number).
-- **Twist:** the House loops the night because Fibi dies at dawn. Octavian Nine is her grandfather.
+- **Backstory:** dealer at the House, the only local initially retaining full memories. The party arrives during the 1,597th iteration, after 1,596 completed repeats. The pact began in TR 999; outside time advances only one night while local time repeats. NIL's unregistered account anchors the party's new memories; Fibi has never met this party on earlier iterations and predicts familiar local routines, not NIL's new sentences.
+- **Twist:** Octavian Nine, her grandfather, believes the loop prevents a fatal dawn. His maintenance contract actually drains her at dawn; cancelling that clause, not simply winning damage, allows her to live.
 - **Ledger piece:** the last page of the Black Book: her grandfather's own deal.
 
 ### The Auditors (bosses) and the keepers (trials)
 | Boss | Land | Look | Motive | Fight (the rule) | After defeat |
 |---|---|---|---|---|---|
-| **Varro Kade, the Ledgerhound** | Meridian | Hulking bailiff, hound-skull mask, debt jars on his belt | Wants the bounty to buy his sister's exemption | **The Collector:** steals your last reel digit into a debt jar; 3 parries shatter it | Spared; returns in Act V |
+| **Varro Kade, the Ledgerhound** | Meridian | Hulking bailiff, hound-skull mask, debt jars on his belt | Wants the bounty to buy his sister's exemption | **Debt Jar:** a stored last-slot token, visible debt and defence recovery; exact replacement/restoration in BESTIARY/SYSTEMS | Spared; returns in Act V |
 | **Tamamo, the Nine-Tailed Auditor** | Hyakki | A nine-tailed fox in courtly layered robes; foxfire (*kitsunebi*) floating around her; each tail tipped with a glowing digit | Yokai fade when people stop believing in them; Thale promised Fixed Fate would make yokai permanent | **Nine Tails:** each tail has its own small Balance; foxfire **illusion faces** appear on your wheels (they show one digit and land as another); landing a 9 hurts you (*ku*) unless Hina is in the party | Retreats into legend; leaves Hina a tail-blessing |
 | **Chancellor Jin Chan, the Golden Toad** | River Empire | Enormous jovial lord robed in gold coins on a three-legged toad throne | His bank will hold the world's frozen luck | **Interest:** his Balance grows every round; he taxes your Jackpots; phase 2 he swallows a hero (land a Pair to free them) | Bankrupted; Jinling takes over the Exchange |
-| **Rahu & Ketu, the Eclipse** | Śūnyapura | Rahu: a vast severed head with a crown, devouring light; Ketu: a headless serpent body with a comet's tail | Cut in two in the oldest story, they want Fixed Fate to make their stolen immortality permanent and whole | **The Eclipse (two bodies, one fight):** Rahu swallows one reel tube each round (it goes dark); Ketu strikes with a blind random wheel. If their Balances drift more than 10% apart they rejoin and heal, so keep them **balanced**: Zero-Sum hits both equally. | Returned to the sky as a passing eclipse |
+| **Eclipse Engines “Rahu” and “Ketu”** | Śūnyapura | Invented brass occluder disc and articulated surveyor rail; visible bolts, operator stamps and broken cables, no sacred bodily imagery | Execute the Basilica surveyors' order to suppress inconvenient measurements | **The Eclipse:** two linked machine Balances; telegraphed occlusion and equalization (BESTIARY) | Machinery shuts down; natural celestial figures remain revered and untouched |
 | **Archon Seventeen** | Kroton Nova | Gaunt, beautiful, terrifying; a laurel of bronze and a sieve-shaped staff; his Omen is 17 | Faith: the Final Audit is purification; only the indivisible deserve to remain | **The Sieve:** each round he strikes digits off *your* wheels (multiples of 2, then 3, then 5…, like the Sieve of Eratosthenes); composite strikes are halved | Falls through his own sieve; Prima saves him |
-| **The House, Mr. Eighty-Nine** | Crossroads | Elegant old croupier in a white suit, ouroboros tattoo around his throat, a pocket watch running backwards; meets you at the midnight crossroads | Loops the night so his granddaughter never dies at dawn; financed Thale | **The Loop:** every 3 rounds time rewinds, but your reel and charms persist; he copies your last pattern; mid-fight he offers you a **deal** | Lets the dawn come; says goodbye to Fibi |
+| **The House, Mr. Eighty-Nine** | Crossroads | Elegant old croupier in a white suit, ouroboros tattoo, backwards pocket watch; met in Lucky Strike, distinct from the Stranger | Loops the night to protect his granddaughter; financed recent Basilica operations, not the centuries-old construction | **The Loop:** enemy Balance and the reel reset on marked loop boundaries; build, Karma and Mult persist (SYSTEMS) | Cancels the fatal contract, relinquishes control and leaves town alive |
 | **Comptroller Lucan Thale** | Meridian | see §4 | Fixed Fate | **Three phases:** Regression to the Mean (wheels compress toward 5) → Fixed Fate (wheels stop spinning: a puzzle) → Zero (NIL alone; all companions return as Link Arts) | Depends on ending |
 
 **Keepers (trials, not villains):** Enma in Hyakki (judges whether NIL may pass the shrine) · Judge Cui in the Ten Courts (tests NIL for the Brush) · Chitragupta in Śūnyapura (reads NIL's empty page) · the Moirai in Kroton Nova (Clotho, Lachesis and Atropos each pose one challenge) · the Stranger at the Crossroads (offers the deal). These are elite "trial" fights with special rules and no hatred.
@@ -282,9 +286,9 @@ Each hero has a 4-scene **bond arc** (Teahouse/Campfire events) that unlocks the
 ## 7. Plot beats by act
 
 **Prologue: "NaN"** (Meridian Undercity)
-1. *Intro cinematic* (§8). Dawn Tally; NIL interferes; the Naming Rite; **the player states their lucky number**; REMAINDER DETECTED.
+1. *Interactive cold open* (§8). Dawn Tally; NIL transfers six confiscated units to Ama; Naming/lucky digit; REMAINDER DETECTED. No mandatory myth film precedes input.
 2. Tutorial Audit vs Debt Hounds, alone.
-3. Vesper saves NIL ("Need a hand? Seven bucks."). Optional: Maeve's forge in the Celtic quarter, where she joins after you help defend it.
+3. Vesper saves NIL (“Need a hand? Seven fen.”). In the full campaign only, Maeve's forge is an early optional route with guaranteed later recruitment.
 4. Varro corners them at the drain gates. Boss. Spared.
 5. **World-map reveal:** Vesper explains the seven Seals; six lands light up on the map in six art styles. Seal 1.
 
@@ -298,7 +302,7 @@ Each hero has a 4-scene **bond arc** (Teahouse/Campfire events) that unlocks the
 
 **Act II: "Eight Bells and the Book of the Dead"** (River Empire): the Lantern Festival and the Luck Exchange; Ba Jinling buys the party's bounty and hides them; descent through the river's end into the Ten Courts; **Judge Cui's trial** grants the Brush; **Bai Si** joins; return to face **Jin Chan**; father and daughter. Seal 8.
 
-**Act III: "Śūnya"** (Śūnyapura): monsoon arrival; Vetāla riddles; **Shunya** at the observatory; **Chitragupta's Hall**, where NIL's page is blank; **the reveal: NIL is the Remainder**; **Rahu & Ketu** eclipse the city. Seal 0.
+**Act III: “Śūnya”** (Śūnyapura): monsoon arrival; Vetāla riddles; **Shunya** at the observatory; **Chitragupta's Hall**, where NIL's page is blank; **the reveal: NIL is the Remainder**; the invented **Eclipse Engines “Rahu” and “Ketu”** obstruct the sky. Seal 0.
 
 **Act IV: "Indivisible"** (Kroton Nova): Prima defects when the Sieve drops a school; **the Moirai's cave** (three trials); **Archon Seventeen**. Seal 2.
 
@@ -308,33 +312,30 @@ Each hero has a 4-scene **bond arc** (Teahouse/Campfire events) that unlocks the
 
 ---
 
-## 8. The intro (shot list; full prompts in `art/HIGGSFIELD_PROMPTS.md`)
+## 8. Opening and myth montage
 
-Total ≈ 2 min 30 s; skippable after first view. The opening montage cycles through **every land's art style** and doubles as the game's best trailer.
+The jam and full campaign share the **interactive cold open**: Start/audio unlock → Rain Alley rescue by 20 seconds → Naming choice by 60 seconds → detection → solo Audit. FIRST_10_MINUTES and JAM_SCRIPT supply exact jam timing and lines. Story text pauses for reading; these are onboarding targets for a normally advancing first session, not a forced countdown or a measured result.
 
-| # | Beat | Style | Length |
-|---|---|---|---|
-| 1 | **"Before numbers, there was the Noise."** Floods, falling towers and hail of dice. Thale narrates. | Abstract ink and static | 8 s |
-| 2 | **"Every people kept its own accounts with fate."** A montage: the Moirai spin a glowing thread (red-figure pottery style) → Chitragupta writes on palm leaves (Indian miniature) → a judge writes in the Book of Life and Death (ink-wash) → Enma opens his ledger as a lantern parade passes (ukiyo-e) → a hand signs a black book at a midnight crossroads (Americana woodcut). | Five art styles, 4 s each | 20 s |
-| 3 | **"Then Meridian built one machine for all of them."** Brass chains pull each ledger into the Basilica; gears swallow them; the Dawn Tally beam sweeps the world and a number appears over every head. "Every soul a number. Every number a share." | Brass clockwork | 12 s |
-| 4 | **Title card:** ZERO-SUM: OMEN | Nixie | 4 s |
-| 5 | **Dawn in the Undercity.** The beam sweeps neon slums; Omens above the crowd tick up and down. A mother's number drops to **01**; her son stares at it. | Anime cyber-noir | 15 s |
-| 6 | **Varro's collectors** arrive to settle her. The crowd parts. One hooded figure doesn't: **NIL**, with **NaN** flickering above. | — | 12 s |
-| 7 | NIL reaches out. **Digits spin** around the mother's 01; NIL *stops* them on 07. The collectors freeze: "That one has no number." | — | 10 s |
-| 8 | Chase through alleys full of every land's charms (horseshoes, chilli-and-lemon strings, beckoning cats, evil-eye beads); NIL ducks into a black-market shrine with a jury-rigged **Naming terminal**. "Every soul needs a number, child." | — | 15 s |
-| 9 | **Interactive: "STATE YOUR LUCKY NUMBER."** The player picks 0–9; each digit shows what it means in the lands of the Tally. | In-engine | player-paced |
-| 10 | The terminal overloads. Across the city every screen and Omen glitches to **REMAINDER DETECTED**; the Basilica's eye opens; bounty posters print NIL's face. | — | 12 s |
-| 11 | Logo slam with the chosen digit, then straight into gameplay: Debt Hounds leap from the rooftops. | In-engine | 4 s |
+| Beat | Required presentation | State meaning |
+|---|---|---|
+| Dawn and Ama | Civic 03→02→01; a Collector jar visibly holds six confiscated units | Show a personal threat, not a lore lecture |
+| First stop | Explicit scripted tutorial stops at 07; six units leave the jar and reach Ama | Transfer conserves luck; Collector retains their number; NaN remains over NIL |
+| Naming | Ten digit buttons, one optional meaning line on focus, clear confirm | Set resonance once; no claim of equal win rates or hidden starting stat bonus |
+| Detection | Basilica terminals display REMAINDER DETECTED | The machine recognizes a missing account; it has not explained NIL's origin |
+
+The **44-second Many Ledgers montage** is full-campaign, optional after the rooftop or in the Codex, never a mandatory film before first input: Noise 8 s → five local ledger images 20 s → binding machine 12 s → title 4 s. Thale narrates the institution's public origin myth; later evidence corrects its omissions. It is not required jam footage, and historical Higgsfield prompts are references, not an approved build dependency. Use in-engine or still-motion presentation; video has subtitles, skip and a still fallback. Future longer trailer edits need a separate shot budget.
 
 ---
 
 ## 9. Endings
 | Ending | Condition | What happens |
 |---|---|---|
-| **Balance** | Return the Remainder | NIL dissolves into the Ledger and Hap's cage is fed. Every Omen rises by one; the Deficit closes; Hap stays caged, counted and quiet. The party visits a grave with no number. |
+| **Balance** | Deliberately select the always-available return ending | NIL dissolves into the Ledger. The Remainder becomes an identified reserve and funds a one-unit Civic Omen increase per registered soul below 99, capped at 99; any unallocated reserve stays recorded. The present Deficit closes, but Hap remains caged and the institution still needs reform. The party visits a grave with no number. |
 | **Overflow** | Break the Basilica | Hap bursts free all at once. Every Omen becomes NaN; the Noise returns and nobody can see anyone's luck: freedom and chaos. Each land returns to its old ways, for better and worse. NIL fades into the storm. |
-| **Positive-Sum** (true ending) | All 8 bonds complete; every companion's ledger piece kept | The party puts every land's ledger piece back into the Basilica *together*: thread, karma, the Book and the Brush, Enma's page, the crossroads contract, Maeve's horseshoe. The machine stops forcing one law and starts translating between many. Hap's cage opens into an **Open Hand**: the god deals again, but through every land's ledger at once. Shared luck stops being conserved and starts **multiplying**. The game's synergy system (heroes worth more together than apart) becomes the world's new law. Thale lives to see it. In the last shot, Hap gives NIL a number of their own: the NaN over NIL's head resolves into **the player's lucky number**. |
-| **Divide by Zero** (secret) | NIL's digit is 0 and the final hit lands 0-0-0 | The Basilica crashes, the screen blue-screens, and the credits roll in debug text. |
+| **Positive-Sum** (true ending) | Eight core narrative bonds at stage 4 and all eight proof pieces; see STORY §9 for recoverable prerequisites | The party puts its distinct ledger proofs into the engine together. Shunya's translation equation, seeded by differing local records and cooperation, allows possibilities to be shared instead of forced into one finite unit. The fist opens into an **Open Hand**. Thale lives. NIL keeps their personhood, receives a stable resonance equal to the player's choice and a positive Civic Omen: 10 for resonance 0, otherwise the two-digit chosen value 01–09. Zero is never depicted as healthy Civic 00. |
+| **Divide by Zero** (secret) | Resonance 0 and the player explicitly arranges the final optional ritual as 0-0-0, then confirms this earned ending | The Basilica crashes, the screen shows a styled error card (with accessible plain-text alternative), and credits roll in debug text with Hap's laugh. It does not randomly replace the selected main ending. |
+
+STORY §9 owns ending predicates and pre-finale catch-up. The ending wheel is a deliberate selection with confirmation and cancel; it is not a timing gamble. Secret recruits, roster availability in the active combat party and post-ending epilogues never supply mandatory flags. Skip/watch commit identical outcomes once.
 
 **The theme in one sentence:** *a world that flattened every culture's idea of luck into one zero-sum number learns, from a party drawn from all of them, that luck shared isn't zero-sum.*
 
@@ -342,8 +343,7 @@ Total ≈ 2 min 30 s; skippable after first view. The opening montage cycles thr
 
 ## 10. Cultural care
 - Each land is **inspired by** a real culture and is not a depiction of a real country. Names are invented or drawn from widely told public folklore.
-- **Revered deities and sacred figures are never enemies.** Enma, Chitragupta, Judge Cui and the Moirai are keepers who test the party with respect. Villains are mortals, legendary monsters from the stories themselves (Tamamo, Rahu and Ketu, the Headless Horseman), or Thale's officials.
-- Rahu and Ketu are also venerated as celestial bodies in Hindu astronomy and astrology. Present them as tragic, cosmic and awe-inspiring, never as cheap demons, and have the depiction reviewed.
+- **Revered figures are never enemy targets.** Enma, Chitragupta, Judge Cui, the wardens and the Moirai pose dignified, nonlethal trials. Rahu/Ketu remain revered celestial figures. The Act III bosses are explicitly invented Basilica eclipse constructs with operator stamps and machine silhouettes; no sacred head/body imagery is used for those targets.
 - **Avoid Indigenous sacred traditions** in the American act (no dreamcatchers, skinwalkers or sacred ceremonies). The Crossroads draws on frontier tall tales, the blues crossroads legend, immigrant superstitions, ghost towns and Sleepy Hollow.
-- **Hire or consult reviewers from each culture** (Japanese, Chinese, Indian, Greek, American) for names, scripts (kanji, hanzi, Devanagari, Greek), clothing and terms before any public release. Localise to Japanese, Simplified and Traditional Chinese, and Hindi post-jam.
+- AI source research must record names/scripts, clothing, context, disagreements and uncertainties against primary regional sources. No native expertise, consultation or community approval is implied. Any external review is recorded only if it actually occurs; no human finishing stage is a production dependency under the AI-only workflow. Unverified sensitive imagery is removed or fictionalized. Localisation beyond jam English is a later production gate, not a completed deliverable.
 - The casino is aesthetic only: no real-money mechanics or purchasable randomness.

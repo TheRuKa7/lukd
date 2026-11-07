@@ -4,7 +4,11 @@ Style: one ink weight (3 px at 120 px), flat fills from the bible palettes, a 3 
 in ink at 18% (screen-print feel). Every function returns a standalone SVG string (viewBox 0 0 120 120).
 Run directly to write them all to art/graphics/.
 """
+import argparse
 import os
+from pathlib import Path
+import re
+import xml.etree.ElementTree as ET
 
 INK = "#141018"
 PAPER = "#F2E8D5"
@@ -92,6 +96,8 @@ OMENS = {"charmpunk": ("Charmpunk", omen_charmpunk()), "remainder": ("Remainder"
 
 # ---------------------------------------------------------------- charm icons
 CHARMS = {
+    "ofuda": svg(f'<rect x="36" y="10" width="48" height="100" rx="3" fill="{PAPER}"/><rect x="44" y="22" width="32" height="32" fill="#B3261E"/>'
+                 f'<path d="M48 72 h24 M48 84 h24 M52 96 h16" fill="none" stroke="#B3261E" stroke-width="4"/>'),
     "beckoning_cat": svg(f'<path d="M30 104 V58 q0 -26 30 -26 q30 0 30 26 V104 z" fill="{PAPER}"/><path d="M34 40 l6 -20 l12 14 M86 40 l-6 -20 l-12 14" fill="{PAPER}"/>'
                          f'<path d="M84 58 q14 -14 6 -30" fill="none" stroke-width="10" stroke="{PAPER}"/><path d="M84 58 q14 -14 6 -30" fill="none"/>'
                          f'<rect x="36" y="78" width="48" height="10" fill="#C0392B"/><circle cx="60" cy="92" r="6" fill="#D4AF37"/><path d="M48 54 q4 -4 8 0 M64 54 q4 -4 8 0"/>'),
@@ -152,16 +158,29 @@ REELS = {
     "basilica": ("The Basilica clock", svg(gear(60, 60, 52, 18, "#B5A642") + f'<circle cx="60" cy="60" r="38" fill="#E8E6E1"/>' + _tubes(27, 46, 19, 28, 3, INK, "050", NIXIE, 18))),
 }
 
+def reel_frame(key):
+    """Blank frame for runtime: all meaningful digits must be separate engine text."""
+    return re.sub(r"<text\b[^>]*>.*?</text>", "", REELS[key][1], flags=re.S)
+
+
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Generate candidate SVG identity kit; preview digits are not runtime data.")
+    parser.add_argument("--output-dir", type=Path, help="Default build/graphics; preserves tracked historical references.")
+    parser.add_argument("--check", action="store_true", help="Validate generated XML without writing files.")
+    parser.add_argument("--runtime-frames", action="store_true", help="Also export digit-free reel frames.")
+    args = parser.parse_args()
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    out = os.path.join(root, "art", "graphics")
-    os.makedirs(out, exist_ok=True)
-    for k, (_, s) in EMBLEMS.items():
-        open(os.path.join(out, f"emblem_{k}.svg"), "w").write(s)
-    for k, (_, s) in OMENS.items():
-        open(os.path.join(out, f"omen_{k}.svg"), "w").write(s)
-    for k, s in CHARMS.items():
-        open(os.path.join(out, f"charm_{k}.svg"), "w").write(s)
-    for k, (_, s) in REELS.items():
-        open(os.path.join(out, f"reel_{k}.svg"), "w").write(s)
-    print("wrote", len(EMBLEMS) + len(OMENS) + len(CHARMS) + len(REELS), "SVGs to", out)
+    out = args.output_dir or Path(root, "build", "graphics")
+    values = {**{f"emblem_{k}": s for k, (_, s) in EMBLEMS.items()},
+              **{f"omen_{k}": s for k, (_, s) in OMENS.items()},
+              **{f"charm_{k}": s for k, s in CHARMS.items()},
+              **{f"reel_{k}": s for k, (_, s) in REELS.items()}}
+    if args.runtime_frames:
+        values.update({f"reel_{k}_blank": reel_frame(k) for k in REELS})
+    for name, value in values.items():
+        ET.fromstring(value)
+    if not args.check:
+        out.mkdir(parents=True, exist_ok=True)
+        for name, value in values.items():
+            (out / (name + ".svg")).write_text(value, encoding="utf-8")
+    print("validated" if args.check else "wrote", len(values), "candidate SVGs", "" if args.check else str(out))

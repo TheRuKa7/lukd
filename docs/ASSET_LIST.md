@@ -1,71 +1,62 @@
-# ZERO-SUM: OMEN — Asset List and Specs (Gate A6)
+# ZERO-SUM: OMEN — Asset List and Contracts
 
-Art is the bottleneck. Every asset in the jam slice has an id, an owner, a spec and a due day before anyone generates, paints or rigs. Status: ☐ not started · ◐ in progress · ☑ done. Due days follow [`PRODUCTION_PLAN.md`](PRODUCTION_PLAN.md) §3.3.
+Updated 7 November 2026. Required: **The Remainder, Meridian Prologue**(JAM_SLICE, D01). All rows are **specified** unless supported by actual source/check evidence. Concepts are candidates. Owner agents are responsibilities, not a staffed human team.
 
----
+## 1. Export/runtime contracts
 
-## 1. Specs by type
+| Type | Source | Initial runtime / acceptance |
+|---|---|---|
+| Hero/boss | Scripted vector/Blender or generated reference+correction; pose/layer source | 1024–2048px atlas/poses, explicit facing/pivots; neutral/attack/hurt/victory in engine; canon/contacts checked; PSB not required |
+| Debt Hound | Reproducible poses | 512–1024px; idle/attack/hurt and clear tell |
+| Stage | Camera/floor/masks/depth source | 1920×1080,  2–3 useful planes for 1280×720; empty floor, no baked actors/UI/digits; parallax seams checked |
+| Reel | Frame/glass/glow apart from labels | ≤1200×500 source; exact Unity digits/anchors |
+| UI/icons | SVG/code source; actual font provenance | ≤2048² atlas,128–256px icons as needed; shape/text/focus/720p tests |
+| VFX | Procedural source or flipbook | 512–1024 atlas, pooled/lifetime caps; reduced effects variant |
+| Story | Layers/edit decision list | 1280×720 or1920×1080; exact subtitles separate; skip/replay-safe logic |
+| Optional video | Still/request/edit provenance | 1280×72016:9 candidate; local bundled URL, subtitles/skip/still fallback; browser test |
+| Audio | Note/synthesis/edit scripts; any sample licence | WAV master; Web import settings measured; loop/mix checks(AUDIO) |
 
-| Type | Format | Size | Layers / states | Notes |
+4K is an optional master size. Six 4K RGBA planes cost about 190 MiB before mips, unsuitable as an automatic default. Planning budgets(not achievements): ≤50 MB compressed total, ≤25 MB initial, ≤512 MiB measured peak on a named laptop, desktop 60 fps(TECH_DESIGN). Verify compression/alpha/lines on target build.
+
+Naming: `{type}_{id}_{state}_{version}.{ext}`. Target folders: `game/Assets/Art/{Characters,Enemies,Bosses,Stages,Reels,VFX,UI,Story,Video}` and `game/Assets/Audio`; specified until Unity project exists.
+
+## 2. Required jam assets
+
+| ID | Deliverable | Owner agent | Target IST | Evidence/current state |
 |---|---|---|---|---|
-| Character (rigged) | PSB for Unity 2D Animation | 2048 px tall master; atlas ≤ 2048² | head, hair_front, hair_back, torso, arm_L_upper/lower/hand, arm_R_…, leg_…, coat_tail_L/R, props; 3 expressions on the head | Flat cel, 2 tones + 1 rim; coloured lines (Art Direction §2.2) |
-| Character poses | PSB frames | as above | idle (rig), attack key poses ×3, hurt, victory, ultimate start/end | Smear frames drawn |
-| Enemy (sprite) | PNG sheet | 1024 px tall | idle, attack, hurt (3 poses) | |
-| Boss (rigged) | PSB | 2560 px tall | per boss sheet | Tamamo's tails on spring bones |
-| Battle stage | PSD → PNG layers | 3840×2160 | sky, far, mid, near, floor, foreground (6 layers) | Empty plates; deck clear for actors |
-| Reel object | PSD → PNG | 1200×500 | frame, 3 tube backs, glass, glow | Digits rendered in engine (TextMeshPro) |
-| Cut-in band | PNG + shader | 3840×900 | 2–3 layers | Land-styled |
-| VFX | Flipbook PNG | 1024² per sheet, 4×4 | — | Hand-drawn, flat shapes |
-| Story still | PNG | 3840×2160 | 2–4 layers for motion graphics | |
-| Video cinematic | MP4 H.264 | 1280×720, ~2.5 Mbps | — | Streamed from StreamingAssets |
-| UI | PNG atlas | 2048² | — | 9-slice where possible |
-| Icons (charms, emblems) | SVG → PNG | 256² | — | From `art/graphics/` |
+| chr_nil | Pose set, decoder/halo overlays, Overwrite | Character/motion | 8 Nov | Candidate key art; runtime pack unverified |
+| chr_vesper | Pose set, prop, entrance/reaction panel | Character/motion | 9 Nov | Candidate key art; runtime pack unverified |
+| boss_varro | Two phases/tells/defeat, separate jars | Character/motion | 9 Nov | Candidate key art; runtime pack unverified |
+| enm_debthound | Three poses/attack tell | Character/motion | 8 Nov | Specified |
+| stg_rainalley | One stage; dawn/audit/drain/rooftop variants | Environment | 9 Nov | Base/colour-key PNGs exist; source scene/layered runtime plate missing |
+| reel_meridian | Brass three tubes/glass/glow/digit anchors | Environment/UI | 8 Nov | Candidate SVG; runtime acceptance missing |
+| jar_varro | Slot3 token, defence/round progress, restore cue | UI/VFX | 9 Nov | Specified; SYSTEMS/BESTIARY controls logic |
+| ico_charm_horseshoe | Open-end-up silhouette+label | UI | 9 Nov | Candidate `art/graphics/charm_horseshoe.svg` |
+| ico_charm_black_cat | Cat shape+label | UI | 9 Nov | Candidate `art/graphics/charm_black_cat.svg` |
+| ico_charm_ofuda | Abstract paper ward, no sacred writing | UI | 9 Nov | Generator candidate specified; runtime icon unaccepted |
+| vfx_audit | Stop/hit/Parry/Fortune/Favour/jar | VFX | 9 Nov | Specified; consequences stay engine logic |
+| vfx_patterns | Seven labels/payoffs, shared grammar | VFX/UI | 10 Nov | Specified; concise repeated mode |
+| ui_jam | Title/audio/settings/Naming/fight/charm/results/retry/credits | UI | 10 Nov | Specified; no shop/fen/crafting |
+| cin_jam | Ama/Naming, Vesper, mercy, rooftop/map panels | Narrative/motion | 10 Nov | Specified; no mandatory intro film |
+| npc_jam | Ama/Tobi/Nought/Gus where script needs them | Narrative/character | 10 Nov | Panels/silhouettes acceptable; no separate rig quota |
+| aud_jam | Meridian loop, stop/hit/defence/pattern/UI/ambience | Audio | 10 Nov | Specified; no accepted tracked audio sources |
 
-**Naming:** `{type}_{id}_{variant}_{version}.{ext}`, e.g. `chr_nil_attack01_v02.psb`, `stg_moonpier_mid_v01.png`. **Folders:** `Assets/Art/{Characters,Enemies,Bosses,Stages,Reels,VFX,UI,Story,Video}`.
-**Pipeline per asset** (Art Book Production §4): 3D base → paint pass → overpaint → layer split → engine. AI use is logged in [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md).
+Varro: one visible slot 3 token, substitutes 0 for at most 3 player rounds; opens after 3 qualifying defences or expiry; next slot 3 visibly restores stored digit. Exact ordering/overlap in SYSTEMS. Art never determines damage or implies luck creation.
 
-## 2. Jam slice list
+## 3. Three charm IDs/effect labels
 
-### Characters and enemies
-| Id | Asset | Tag | Owner | Due | Status |
-|---|---|---|---|---|---|
-| chr_nil | NIL: rig, 3 attacks, hurt, victory, ultimate | M | Char artist | Sun 8 | ☐ |
-| chr_vesper | Vesper: as above | M | Char artist | Sun 8 | ☐ |
-| chr_hina | Hina + umbrella (separate rig with its own expressions) | M | Char artist | Mon 9 | ☐ |
-| chr_maeve | Maeve: as above | S | Char artist | Tue 10 | ☐ |
-| boss_varro | Varro: rig, jars as separate parts, 2 phases | M | Char artist | Mon 9 | ☐ |
-| boss_tamamo | Tamamo: rig, 9 tails (spring bones), giant-fox phase still | M | Char artist | Tue 10 | ☐ |
-| enm_debthound / enm_collector / enm_chochin / enm_kasa | 3-pose sprites | M | Char artist | Mon 9 | ☐ |
-| enm_kitsune_twins | 3-pose sprites ×2 | S | Char artist | Tue 10 | ☐ |
-| npc_* | Ama, Tobi, Brother Nought, Gus, Ofuku, Tetsu: portrait busts for story | M | Char artist | Tue 10 | ☐ |
+Free pick **one of three**. No fen/purchase/crafting/sets in required jam.
 
-### Stages and reels
-| Id | Asset | Tag | Due | Status |
-|---|---|---|---|---|
-| stg_rainalley | Rain Alley 9 (from the Wards 3D base + colour key) | M | Sun 8 | ◐ base + key done |
-| stg_draingates | Drain gates (Varro) | M | Mon 9 | ☐ |
-| stg_moonpier | Moon Pier (3D base + colour key exist) | M | Sun 8 | ◐ base + key done |
-| stg_foxpalace | Tamamo's foxfire palace | M | Tue 10 | ☐ |
-| reel_meridian / reel_hyakki | Nixie sign; torii with three lanterns | M | Sun 8 | ◐ vector designs in `art/graphics/` |
+| Gameplay ID | Label | Presentation contract |
+|---|---|---|
+| charm_horseshoe | Horseshoe | Chosen resonance faces on allied wheels, **where present**, ×1.5 width; never add an absent face |
+| charm_black_cat | Black Cat | First would-be Bust/fight: visibly third→first digit, then re-evaluate priority; single conversion with Favour |
+| charm_ofuda | Ofuda ward | First enemy strike autoParry, no accepted stop/reflection; counts once toward Varro defence |
 
-### VFX and UI
-| Id | Asset | Tag | Due |
-|---|---|---|---|
-| vfx_stop, vfx_hit, vfx_parry | Stop flash, hit spark, parry ring | M | Sun 8 |
-| vfx_pattern_* | Pair, Zero-Sum, Cascade, Jackpot, Reaper, Overwrite | M | Mon 9 |
-| vfx_foxfire, vfx_rain, vfx_fireflies | Land VFX | M | Mon 9 |
-| ui_* | Title, Naming tubes, map (Meridian wall map, Hyakki scroll), market stall, teahouse, results receipt, pause ledger, Codex | M | Tue 10 |
-| ico_charms ×12, ico_landlaw ×2, ico_intent ×6 | Icons | M | Mon 9 |
+## 4. Evidence and scope
 
-### Cinematics and stills
-| Id | Asset | Tag | Due |
-|---|---|---|---|
-| cin_intro | Intro montage (~45 s video) | M | Mon 9 |
-| cin_vesper, cin_mapreveal, cin_hina, cin_tamamo_end, cin_ending | Stills + motion graphics | M | Tue 10 |
-| cin_hapdream0 | Hap's Dream 0 (15 s) | S | Wed 11 |
-| ult_* | Ultimates: NIL, Vesper, Hina (M), Maeve (S); Link Arts: Midnight Parade (M), Lucky Strike (S) | M/S | Mon 9–Tue 10 |
+Per asset: ID/version, source/reference/output hashes, canon IDs, tool/model/request(ifknown), script/scene, actual processing, licence evidence, dimensions/pivots/layers, import settings, capture/build ID. No credentials/signed URLs. Historical generation claims/missing sources stay explicit in AI_DISCLOSURE.
 
-### Audio (see [`AUDIO.md`](AUDIO.md))
-Meridian theme, Hyakki theme, Tamamo theme (M); SFX vocabulary (M); stems (S).
+Implemented means source/export exists. Verified means named checks/build evidence recorded. A checkbox/date never establishes that. All required files must be in the same packaged itch build; no mutable remote content.
 
-**Done when:** every Must item from [`JAM_SLICE.md`](JAM_SLICE.md) has a row, an owner and a due day, and the status column is updated at each stand-up.
+Maeve/Hina/Tamamo, Hyakki stages/reel/audio, other cultures' assets, full bonds/Link Arts, expanded rigs and long videos are **not in required jam**. Their future briefs require JAM_SLICE's extension gate/post-jam planning, not silent Must promotion.

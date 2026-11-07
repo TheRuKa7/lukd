@@ -1,71 +1,55 @@
-# ZERO-SUM: OMEN — Game Feel Spec (Gate A1)
+# ZERO-SUM: OMEN — Game Feel
 
-Stopping a number is the whole game. If that one tap doesn't feel incredible, nothing else saves us. This spec defines the tap frame by frame, the payoff ladder, and the speed rules that keep spectacle from becoming waiting. All times in milliseconds at 60 fps.
+Updated 7 November 2026 IST. Timing values are **targets to measure**, not verified latency. Adopted rules are SYSTEMS; presentation never changes accepted digits or settles damage twice.
 
----
+## 1. Response before spectacle
 
-## 1. Principles
-1. **Response before spectacle.** The wheel reacts to the tap within one frame (16 ms). Spectacle follows; it never delays the response.
-2. **Readability first.** The stopped digit is legible within 150 ms, under every effect, at 720p, on a phone.
-3. **Payoff scales with rarity.** A Bust is a shrug, a Jackpot is a fireworks finale. The ladder (§4) is strict so players learn value by feel.
-4. **Every animation earns its time.** The first time you see a pattern, it plays in full. The third time, it's shortened. Hold to fast-forward anything.
-5. **Sound is half the feel.** Every beat below has a sound (see [`AUDIO.md`](AUDIO.md)); the stop sound always cuts through the mix.
+The stop latches the displayed face immediately; show acceptance within one rendered frame and target≤50 ms end-to-end on the named Web reference. Keep the digit readable throughout deceleration. No hidden snap to a better/worse outcome. Stop sound wins mix priority. Reduced Motion removes flash/shake/slow-mo and uses short reveals without changing rules.
 
-## 2. Anatomy of one strike
+## 2. One strike timeline
 
-| t (ms) | Event | Visual | Camera | Sound |
-|---|---|---|---|---|
-| 0 | Hero selected | Hero steps forward; wheel unfurls above them in 180 ms (scale 0.6 → 1.05 → 1.0) | Push in 5% on the hero over 300 ms | Wheel "unfurl" whoosh |
-| 180 | Spinning | Ones digit scrolls (speed per hero); tens fixed; faces sized by odds; Pattern Sight shimmer on the 3rd striker | Idle sway ±0.5° | Tick per face passed (pitch rises with speed) |
-| tap | **Stop** | Wheel decelerates over 90 ms with ease-out-back (overshoot 6%) and settles on the face the tap was over | 2-frame micro-shake (2 px) | "Clack" (layered: mechanical + Nixie zap) |
-| +90 | Settle | Stopped face flashes white 1 frame, then the land's accent colour; other faces dim to 30% | — | Short resonance tail |
-| +120 | Hit-stop begins | Hero snaps into attack key pose (smear frame); enemy flinch | Hit-stop 80 ms (Bust/plain) to 140 ms (your lucky digit) | Hit + voice bark (30% chance) |
-| +260 | Damage number | Strike value tears off the wheel: the tens in white, **the stopped digit in the hero's colour**, 1.4× size, then shrinks to 1.0 over 120 ms | Small zoom-out | Number "tear" |
-| +380 | Digit to reel | The ones digit flies along an arc (300 ms, ease-in-out) and **slams** into the next reel tube | Tube-impact shake 3 px | Slam (pitch by tube: low, mid, high) |
-| +680 | Ready | Next striker can be chosen; input buffer accepts a tap from +500 | — | — |
-
-**One strike ≈ 0.7 s after the tap.** A three-strike round, excluding player thinking time, ≈ 2.1 s + the payoff.
-
-### Input
-- Tap anywhere, **Space**, or the hero's number key. Mouse, touch and keyboard identical.
-- Latency budget: input → wheel stop visible ≤ 50 ms end to end (measure on WebGL Chrome and Safari).
-- Input buffer: a tap during the last 180 ms of the previous animation is queued, not lost.
-- Double tap within 120 ms counts once. A tap during the unfurl (first 180 ms) is ignored, with a soft "too early" tick so it never feels like a dropped input.
-- Assist mode: wheels −30% speed; **hold-to-stop** alternative (press and release; stop on release).
-
-## 3. Enemy strike and parry
-| t (ms) | Event |
+|Relative time |Target event |
 |---|---|
-| 0 | Enemy wheel unfurls over the enemy, faces sized by its odds; its special faces show icons |
-| 0–∞ | The player stops it (same verb). 0 → **Parry**: the strike bounces, counter-flash, 120 ms hit-stop, "ting". Your lucky digit → **Fortune**: reflect with a gold trail. Otherwise: damage, hero hurt pose, Balance drop, Omen ticks down with a mechanical flip |
-| Telegraphs | Any special move is shown one round ahead: an icon on the enemy's wheel and a distinct sound (BESTIARY rules) |
+|Select |Eligible actor highlights; wheel opens over 180 ms |
+|Spin |Explicit face widths; stop line; third-slot Pattern Sight words/shapes |
+|Accepted stop |Latch displayed face/phase, disable duplicate acceptance, record command |
+|+0–90 ms |Presentation decelerates to the already accepted face; no reroll |
+|+90–150 ms |Face/digit legible; clack/resonance; optional bounded impact |
+|+150–380 ms |Attack pose and **provisional** strike value; no Balance change |
+|+380–680 ms |Actual digit moves into reel; next eligible choice becomes available |
 
-## 4. The payoff ladder
+Three accepted strikes settle one immutable round result. Vesper's retroactive bonus is reconciled in the final ledger, not hidden extra health loss. Debt/Black Cat/Favour conversions show both actual and scoring replacement before the payoff. Exact current timings in the browser may differ; measure rather than declaring compliance.
 
-| Pattern | Hold before reveal | Hit-stop | Screen | Camera | Music | Cinematic | Repeat rule |
-|---|---|---|---|---|---|---|---|
-| **Bust** | 0 | — | Tubes flicker out | — | — | — | Always short (0.4 s) |
-| **Pair** | 150 | 60 | Silver flourish over the two tubes | Small punch-in | Stinger (2 notes) | — | 0.8 s |
-| **Zero-Sum** | 200 | 100 | Mirror wipe; ledger lines | — | Ledger chime | Enemy's next action icon crossed out | 1.2 s |
-| **Cascade** | 200 | 100 | Time-slow bands; blue | Slow 0.5× for 300 ms | Rising arpeggio | "YOU ACT AGAIN" | 1.4 s |
-| **Jackpot** | 300 | 160 | Squad panels slash down; screen crack | Crash zoom | Full fanfare | Counting Mult up to the huge number | 2.5 s first time → 1.5 s after 3 |
-| **Reaper's Toll** | 300 | 200 | Red wash; four bells | Slow push | Four tolls | Every Omen with a 4 loses 44% | 2.0 s |
-| **Omen Overwrite** | 400 | 220 | Everything gold; your number rings bells (count = your digit) | Spin around the party | Your hero theme, full | The city rewrites itself (land-styled) | 3.0 s first → 2.0 s after 3 |
-| **Link Art** | — | — | Split-screen duo cut-in | Authored | Duo motif | 3–5 s | Skippable after first view |
-| **Ultimate** | — | — | Hero's cut-in band (land-styled) | Authored | Hero theme | 3–5 s | Skippable after first view |
+### Input contract
 
-**The count-up:** round damage counts up over 600 ms (ease-out), then the Mult slams in and the total counts again over 900 ms, with a "ching" every power of ten. The final number stays on screen until the next tap (Balatro's best trick: let people *look* at a big number).
+Mouse/touch/Space stop;1/2 choose eligible jam actor, Enter can choose the first eligible actor. One accepted stop per wheel. Debounce 120 ms is a target; a distinct next-wheel input must not be swallowed. Queue only a deliberate **selection** in the final recovery window; never buffer a stop for a wheel not yet visible. During first 180 ms unfurl, give a visible/soft “wait” response rather than silently losing input.
 
-## 5. Speed and respect for time
-- **Hold anywhere** to fast-forward (4×) any animation; a setting makes every repeat cinematic short.
-- After a pattern has played **3 times** in a session, its reveal uses the short version.
-- A full fight (60–90 s target) has at most **one** long cinematic unless the player triggers more.
-- Never block input for more than 3 s without a skip prompt.
+Unity hold-to-stop option uses press to arm and release to stop; hero selection remains a separate tap/key. Hold-to-fast-forward operates **only during noninteractive presentation**, never during an active wheel or held stop. A visible Skip/Fast button and keyboard binding offer an alternative. Pause/focus loss freezes wheel phase and releases stale pointer state safely. Reference sandbox currently implements tap/keyboard and OS reduced-motion only; other controls remain production work.
 
-## 6. Juice checklist (every interaction)
-Anticipation (a tell before) · Response (within one frame) · Impact (hit-stop, shake, flash, sound) · Follow-through (settle, particles) · Feedback in numbers (the digit in the hero's colour) · Recovery (back to readable calm within 1 s).
+## 3. Defence
 
-## 7. Reference clips to collect (in `art/reference/feel/`)
-Balatro (score count-up; card shake) · Hi-Fi Rush (beat-synced hits) · Persona 5 (all-out attack cut-ins; menu motion) · Hades (hit-stop, dash feel) · Peggle (the "Ode to Joy" finale and slow-mo last peg) · Pachinko and slot machines (reel stop, overshoot, win lights) · Cyberpunk: Edgerunners (smear frames, flashes).
+Show base, legal faces and any special consequence before input. Actual 0 Parry, actual chosen Fortune; chosen 0/actual 0 combines once. Ofuda shows its automatic action, emits no fake stop and no reflection. Results, Balance and jar defence count come from Core. Enemy motion cannot create a second hit. Varro's base 40→80 transition warning remains until its scheduled action occurs.
 
-**Done when:** the browser prototype implements §2–§4 and 4 of 5 first-time testers say stopping a wheel "feels good" without being asked about it ([`PLAYTEST.md`](PLAYTEST.md)).
+## 4. Payoff ladder
+
+|Outcome |Target first/repeat presentation |Essential information |
+|---|---|---|
+|Bust |0.4 s |×1 still deals damage; Favour state warms |
+|Pair |0.8 s |Two matched positions, ×2 |
+|Zero-Sum |1.2 s |Sum 10/20, ×2, enemy action cancelled |
+|Cascade |1.4 s |Ordered run, ×3, act again |
+|Jackpot |2.5 s→1.5 s after 3 views |Triple digit and actual Mult |
+|Reaper |2.0 s |Pre-round qualifying Audit Omens, current-Balance percentage, both results |
+|Overwrite |3.0 s→2.0 s after 3 views |Chosen triple, flat×21, every choice equal payout |
+
+Count-up is a display of the already computed total; do not apply damage again when it finishes. Shorten Pair/Bust repeats and cap mandatory camera movement. Long presentation always offers immediate skip; “first view cannot skip” is not a requirement. A video failure falls back to stills without blocking progress. Link Arts/charged ultimates are future content gates, not jam features.
+
+## 5. Time and accessibility
+
+Settings: fast repeat cinematics, skip, text advance, independent shake/flash intensity and Reduced Motion. Fast-forward changes animation speed only; it never changes accepted timing, RNG or boss counters. Target no unskippable noninteractive wait>3 s. Avoid requiring a hold for essential progress. Subtitles and speaker labels persist with animation disabled.
+
+Three flashes/second alone is not a photosensitivity safety certificate. Evaluate luminance/area/contrast with the selected analysis method, inspect the final capture and log tool/settings/results; until then mark unverified. No numeric health claim is inferred from reducing motion.
+
+## 6. Verification
+
+Capture input marker, displayed face, accepted face and result at different frame rates/focus states. Measure first response and readability at actual embedded Web 720 p and text scaling. Human play observation asks what was confusing/boring without leading praise. Reference inspirations (Balatro count-up, Persona graphic payoff, Hades impact) are research vocabulary, not permission to imitate protected characters/UI. QUALITY_BAR and PLAYTEST define evidence gates.

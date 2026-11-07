@@ -1,4 +1,102 @@
-# ZERO-SUM: OMEN — Art Direction v2
+# ZERO-SUM: OMEN — Art Direction v3
+
+> **v3 (Nov 7): "Painted world, inked manga."** The v2 foundation below stays: painted Ghibli-spirit worlds, graphic Edgerunners-spirit people and fights, Cyberpunk-art-book method for eras and presentation. v3 adds a **coloured-manga layer** for characters, fights, comedy and cutscenes, learned from the *methods* of dark-fantasy seinen (*Berserk*), modern shōnen action (*One Punch Man*, Yusuke Murata's art) and versus-battle manga, with **witty humour** as a core register. §0 below is the v3 rulebook; where it conflicts with v2, v3 wins.
+
+## 0. v3: the coloured-manga layer
+
+### 0.1 What we take from each influence (method, never likeness)
+| Influence | What it does brilliantly | What we take | What we never take |
+|---|---|---|---|
+| **Berserk** (Kentaro Miura) | Weight, scale and dread through ink: dense hatching, spotted blacks, monumental low-angle compositions, grit on every surface | **Ink density as drama**: bosses, the Basilica and Noise storms get hatching and heavy blacks; low angles that make Auditors feel huge; texture on armour, stone, brass | Gore, body horror, cruelty for its own sake (our rating is Teen); any character, armour or panel likeness |
+| **One Punch Man** (Murata's art, ONE's writing) | Hyper-detailed, perfectly choreographed fights, then a **deadpan gag face** that deflates the whole spectacle; comedy and awe in the same chapter | **Two registers** (§0.2): spectacle drawn at full power, then a simplified deadpan beat; fight choreography you can follow panel to panel; scale shots with debris | Copying the bald-hero gag, costumes or specific panels |
+| **Versus-battle manga** (the "VS" face-off tradition of fighting manga) | The face-off: two fighters split by a diagonal, names and stats, before the clash | The **Versus card** before every boss and duel (§0.5) | Real logos or game UIs |
+| **Cyberpunk 2077 / Edgerunners** | Neon colour as emotion, era-based costume logic, kinetic impact frames | Kept from v2 (§2.2, §8): neon in Meridian and combat, eras, colour-step slow-mo | — |
+| **Ghibli backgrounds** | Air, light and lived-in detail | Kept from v2 (§2.1): every land painted | — |
+
+### 0.2 Two registers: SERIOUS and GAG (the humour engine)
+The same character can be drawn in two registers; switching between them *is* the joke, and *is* the drama.
+
+| | **SERIOUS** (default in fights, reveals, boss phases, ultimates) | **GAG** (dialogue asides, barks, menus, failure moments) |
+|---|---|---|
+| Line | Full variable-weight ink; hatching in shadows; spotted blacks | Clean thin line, 30% of the detail |
+| Faces | Full anatomy, sharp eyes, sweat and grit | Simplified: dot eyes, flat mouths, NIL's deadpan "…" face, Hina's chibi rage |
+| Colour | Full cel (2 tones + rim) + screentone midtones | Flat fill, one tone, pastel background swap |
+| Camera | Low angles, foreshortening, Dutch tilts | Flat, front-on, centred (the comedy of stillness) |
+| Timing | Holds before impact, smear frames, impact frames | Hard cut, hold 0.6–1.0 s on the deadpan, then snap back |
+
+**Rules:** (1) a gag beat always follows a big beat, never interrupts its build-up; (2) at most one gag per fight round; (3) keepers, Hap's dreams and genuine grief are never played as gags; (4) NIL is the straight face of the cast, and the humour usually comes from everyone else reacting to NIL's calm.
+
+### 0.3 Inking and colouring characters (coloured-manga look)
+1. **Ink first, colour second:** characters read as finished ink drawings even in greyscale. Colour is flat digital colour laid under the ink, as in coloured manga pages.
+2. **Spotted blacks:** every character has 1–3 areas of solid black (NIL's coat, Vesper's hat, Varro's mask sockets) placed to lead the eye to the face and hands.
+3. **Hatching budget:** SERIOUS register only; heroes ≤ 15% of the figure; bosses and the Basilica up to 40%; never on faces except in shadow.
+4. **Screentone:** midtones in SERIOUS register use a halftone dot screen (45°, 10–12% coverage, ink colour at 60%) instead of a soft gradient. In engine: a screen-space halftone shader driven by the shadow mask.
+5. **Line colour:** keep v2's coloured lines for skin and light cloth; ink-black lines (`#141018`) for silhouettes in SERIOUS register.
+6. **Grit:** wear marks, scratches and stains drawn as ink texture on props and armour (Berserk lesson), never as photo texture.
+
+### 0.4 Fight presentation (choreography you can follow)
+Every strike is a three-panel story: **key pose → impact → aftermath**.
+| Beat | Frames (60 fps) | Visual |
+|---|---|---|
+| Anticipation | 6–10 | Wind-up key pose, held; speed lines start converging |
+| Smear | 2–3 | Smear frame with speed lines in the striker's colour |
+| **Impact frame** | 2–3 | Full-screen inversion: black and paper-white plus the attacker's signature colour only; jagged burst shape; the stopped digit drawn huge in the burst |
+| Hit-stop | 5–13 | Freeze on impact (GAME_FEEL §2) with screen shake |
+| Aftermath | 20–40 | Debris silhouettes, dust with flat shadow, the enemy's Omen ticking down |
+| Gag beat (optional) | 36–60 | Deadpan reaction in GAG register (e.g. Vesper blowing smoke off the barrel, NIL: "Fourteen.") |
+
+**Scale shots:** every boss intro and phase change has one extreme low-angle "monument" frame (Berserk lesson): the boss fills 80% of the frame, the party tiny at the bottom.
+**SFX lettering:** onomatopoeia are drawn, not typed, and **built from digits** (the clack of a stop is lettered "K-7-K"; a Jackpot is "7 7 7" exploding out of the panel), in the land's style (brushed in Hyakki, neon tube letters in Meridian, chiselled in Kroton Nova).
+
+### 0.5 The Versus card (before every boss and duel)
+A 2.5 s full-screen card: a jagged diagonal split; each side a SERIOUS-register bust shot over that side's land colour; names in display type; their Omens; one line of trash talk each; the boss's rule in one line at the bottom; a stamp in the centre: **VS** formed from two crossed digits. Skippable after first view. (Prototype target in the jam slice: NIL & Vesper VS Varro.)
+
+### 0.6 Cutscenes as animated manga pages (motion comics)
+Cutscenes are built as **animated manga pages**: panels slide in on beats, the camera pushes inside a panel, speech balloons pop with sound, and a panel can break out into a full-screen moment. This is cheaper than full animation, deterministic in Unity, and on-style.
+| Panel type | Use |
+|---|---|
+| Wide establishing (borderless, painted) | New place; the Ghibli half |
+| Reaction close-up (narrow, tall) | Emotion; the GAG register's home |
+| Versus split | Confrontations |
+| Splash (breaks the page) | Reveals, ultimates, REMAINDER DETECTED |
+| Aside (tiny inset, chibi) | Jokes, the running gags |
+**Page rules:** read order right-to-left is **not** used (our audience reads left-to-right); 3–6 panels per page; gutters in ink black; one splash per scene maximum.
+
+### 0.7 Speech balloons and lettering
+| Speaker | Balloon | Font feel |
+|---|---|---|
+| NIL | Thin rectangular box, lots of white space | Small, lower-case, precise |
+| Vesper | Jagged edge on punchlines | Swaggering italic |
+| Maeve | Round, slightly wobbly | Loud, big caps on "THIRD TIME!" |
+| Hina | Bubbly cloud | Mixed sizes; "Hina approves!" in a burst |
+| Bai Si | Square, black fill, white text | Sparse, formal |
+| Thale | Typeset steel plate with rivets | Clean serif, never shouts |
+| Hap | Border of dice dots | Letters that roll into place |
+| Collectors / Basilica | Printed form boxes | Stamped type |
+
+### 0.8 Colour in v3
+Keep v2's signature colours and land colour scripts. Add: **paper white `#F4EFE4`** for impact-frame inversions and manga panels; **ink `#141018`**; one **screentone tint** per land (the land's shadow tint from ART_SPEC §2.3 at 60%). Neon (yellow/magenta/cyan) stays Meridian- and combat-only.
+
+### 0.9 Free-first production pipeline (local tools primary)
+| Step | Tool (free, local) | Optional accelerator |
+|---|---|---|
+| Poses, panel layouts, environment bases | **Scripted Blender** (`tools/render_cast.py`, `tools/build_envs.py`), Freestyle/outline renders | Meshy base meshes |
+| Character references | Turnarounds in `art/cast/` as the fixed reference; hand-drawn model sheets over them (Krita) | Higgsfield/FLUX paint-overs (disclosed) |
+| Ink and colour | Krita (free) with a halftone brush set; flat colour under ink | — |
+| Panels, balloons, SFX | Krita / Inkscape; balloon SVG kit | — |
+| In engine | Unity: deterministic sprite/PSB animation, Timeline-driven motion-comic pages, impact-frame and screentone shaders | — |
+**Determinism:** every cutscene and fight beat is driven by authored timelines and seeded RNG, so the same input always produces the same frames (TECH_DESIGN §4).
+
+### 0.10 QC additions (v3)
+- [ ] Reads in greyscale (ink first)
+- [ ] Correct register (SERIOUS vs GAG) for the moment; gag only after a big beat
+- [ ] Impact frame present on every big hit; hit is followable panel to panel
+- [ ] SFX lettered from digits, in the land's style
+- [ ] No likeness to any existing character, armour, logo or panel
+
+---
+
+# Art Direction v2 (foundation, still in force)
 
 **"Painted world, inked people."** Hand-painted, sunlit, lived-in **worlds in the spirit of Studio Ghibli's backgrounds**, inhabited by **graphic, high-contrast, neon-edged characters and action in the spirit of Studio Trigger's *Cyberpunk: Edgerunners***.
 

@@ -483,6 +483,9 @@ async function countUp(el, m) {
   }
 }
 
+/* Scoring (GDD §1.2–1.3): each strike already dealt its own damage on impact, so a pattern with mult M adds
+   (M − 1) × roundDamage here. Total for the round = roundDamage × M. */
+const PATTERN_MULT = { BUST: 1, PAIR: 2, ZERO: 2, CASCADE: 3, REAPER: 4, LUCKY: 21 };
 async function resolveReel(ds, roundDamage) {
   const p = evaluate(ds), L = G.lucky, ep = enemyPos();
   const compound = G.charms.includes('compound') ? 3 : 0;
@@ -495,34 +498,37 @@ async function resolveReel(ds, roundDamage) {
   setTimeout(() => $('#tubes').classList.remove('win'), 900);
   if (p.key === 'LUCKY' || p.key === 'JACKPOT') {
     const lucky = p.key === 'LUCKY';
-    const mult = lucky ? 21 + compound * 3 : Math.max(2, p.d) + compound; // Overwrite is ×21 for every digit (GDD §1.3)
-    const bonus = roundDamage * mult;
+    const mult = lucky ? PATTERN_MULT.LUCKY + compound * 3 : Math.max(2, p.d) + compound; // Overwrite is ×21 for every digit (GDD §1.3)
+    const total = roundDamage * mult, bonus = total - roundDamage;
     setTubes(ds, lucky);
     if (lucky) { sfx.fanfare(); sfx.bells(L || 3); } else { sfx.fanfare(); }
     await allOut(lucky);
-    await bigMoment(lucky ? 'OMEN OVERWRITE' : 'JACKPOT', lucky ? '#ffd27a' : '#ff7a2c', { pre: fmt(roundDamage) + ' × ' + mult + ' = ', from: 0, to: bonus }, lucky ? 'YOUR NUMBER, THREE TIMES. THE CITY REWRITES ITSELF.' : 'THREE OF A KIND', 2);
+    await bigMoment(lucky ? 'OMEN OVERWRITE' : 'JACKPOT', lucky ? '#ffd27a' : '#ff7a2c', { pre: fmt(roundDamage) + ' × ' + mult + ' = ', from: 0, to: total }, lucky ? 'YOUR NUMBER, THREE TIMES. THE CITY REWRITES ITSELF.' : 'THREE OF A KIND', 2);
     await strikeEnemy(bonus, 'gold');
-    G.stats.best = Math.max(G.stats.best, bonus);
+    G.stats.best = Math.max(G.stats.best, total);
   } else if (p.key === 'REAPER') {
     sfx.toll();
     await bigMoment("REAPER'S TOLL", '#ff3d5a', null, 'EVERY OMEN THAT CONTAINS A 4 LOSES 44%', 2);
+    await strikeEnemy(roundDamage * (PATTERN_MULT.REAPER - 1), 'red');
     if (omenStr(G.enemy.hp, G.enemy.max).includes('4')) await strikeEnemy(Math.floor(G.enemy.max * 0.44), 'red');
     else tag(ep.x, 380, 'NO 4 IN ITS OMEN', '#8d8094');
     if (L !== 4 && omenStr(G.squad, G.squadMax).includes('4')) { const l = Math.floor(G.squadMax * 0.44); setSquad(G.squad - l); pop(385, 560, l, 'red'); heroEls.forEach(h => { h.classList.remove('hurt'); void h.offsetWidth; h.classList.add('hurt'); }); await wait(600); }
   } else if (p.key === 'CASCADE') {
     sfx.bells(3);
     await bigMoment('CASCADE', '#5fe3f0', null, 'THE SEQUENCE HOLDS. YOU ACT AGAIN.', 1);
+    await strikeEnemy(roundDamage * (PATTERN_MULT.CASCADE - 1), 'gold');
     result.extra = true;
   } else if (p.key === 'ZERO') {
     sfx.parry();
     const heal = 40;
     await bigMoment('ZERO-SUM', '#5fe3f0', null, 'THE LEDGER BALANCES. ITS NEXT MOVE IS ERASED.', 1);
     setSquad(Math.min(G.squadMax, G.squad + heal)); pop(385, 560, heal, 'teal');
+    await strikeEnemy(roundDamage * (PATTERN_MULT.ZERO - 1), '');
     if (G.charms.includes('balance')) await strikeEnemy(roundDamage * 2, 'gold');
     result.cancel = true;
   } else if (p.key === 'PAIR') {
-    tag(640, 260, L === 2 ? 'PAIR · ×3' : 'PAIR · ×2', '#ffd27a'); sfx.bells(2); await wait(500);
-    await strikeEnemy(roundDamage * (L === 2 ? 2 : 1), '');
+    tag(640, 260, 'PAIR · ×2', '#ffd27a'); sfx.bells(2); await wait(500);
+    await strikeEnemy(roundDamage * (PATTERN_MULT.PAIR - 1), '');
   }
   return result;
 }

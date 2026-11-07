@@ -74,7 +74,23 @@ def part_opener(H, num, title, sub, items):
 def spec_pages(H, n):
     P = []
     P.append(part_opener(H, "I", "FIXED ART SPEC", "The numbers and rules every artist, modeller and animator works to (docs/ART_SPEC.md).",
-                         ["Registers, line, shading, colour", "Scale and proportion", "Cameras and the battle stage", "Light by land", "Faction costume keys"]))
+                         ["Art Direction v3: painted world, inked manga", "Style frames: versus, impact, gag, manga page", "Registers, line, shading, colour", "Scale and proportion", "Cameras and the battle stage", "Light by land", "Faction costume keys"]))
+    AD = "docs/ART_DIRECTION.md"
+    infl = C.md_table(AD, "### 0.1")
+    regs = C.md_table(AD, "### 0.2")
+    P.append(H.page(f"""{H.tab("ART DIRECTION v3 · PAINTED WORLD, INKED MANGA")}<p class="lead-p">v2 stays (painted Ghibli-spirit worlds, Edgerunners-spirit people, Cyberpunk-art-book method). v3 adds a coloured-manga layer learned from the methods of Berserk, One Punch Man and versus-battle manga, with witty humour as a core register. Method, never likeness.</p>
+<div class="two-col"><div>{table(["Influence", "What it does", "What we take", "What we never take"], infl, "t small")}</div>
+<div>{table(["", "SERIOUS", "GAG"], regs, "t small")}</div></div>{H.folio(n + 2, "Art direction v3")}""", "padded"))
+    frames = "".join(f'<figure><img src="{H.img(f"art/style_v3/{k}.png", 1600)}"><figcaption>{E(c)}</figcaption></figure>'
+                     for k, c in (("versus_card", "Versus card before every boss (§0.5)"), ("impact_frame", "Impact frame: ink + paper + signature colour (§0.4)"),
+                                  ("gag_panel", "GAG register: flat, front-on, still (§0.2)")))
+    P.append(H.page(f"""{H.tab("ART DIRECTION v3 · STYLE FRAMES")}<div class="v3-frames">{frames}</div>
+<p class="cmp-note">Treatment studies built locally from the 3D blockouts (tools/style_frames_v3.py): screentone, heavy ink, speed lines, digit SFX and balloons. Final art redraws the figures by hand over these layouts.</p>{H.folio(n + 3, "Art direction v3")}""", "padded"))
+    beats = C.md_table(AD, "### 0.4")
+    P.append(H.page(f"""<div class="v3-page"><img src="{H.img("art/style_v3/manga_page.png", 1600)}"></div>
+<div class="v3-side">{H.tab("CUTSCENES AS MANGA PAGES · FIGHT BEATS")}<p>Cutscenes are animated manga pages: panels slide in on beats, the camera pushes inside a panel, balloons pop with sound, one splash per scene. Cheap, deterministic in Unity Timeline, on-style.</p>
+{table(["Beat", "Frames (60 fps)", "Visual"], beats, "t small")}</div>{H.folio(n + 4, "Art direction v3")}""", "padded v3-pagewrap"))
+    n += 3
     reg = [["A · Concept / art book", "Key art, store page, art book", "Painterly semi-realistic concept art over 3D bases; human overpaint"],
            ["B · In game", "Gameplay, cutscenes, UI", "Painted world (gouache backgrounds), inked people (flat cel, coloured lines)"]]
     line = C.md_table(SPEC, "### 2.3")

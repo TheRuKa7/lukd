@@ -239,6 +239,7 @@ namespace Remainder
             UI.Place(img.rectTransform, new Vector2(x, 0), new Vector2(0.5f, 0), new Vector2(0, 26), new Vector2(w, h));
             if (flip) img.rectTransform.localScale = new Vector3(-1, 1, 1);
             actors[key] = img;
+            img.gameObject.AddComponent<Breathe>();
             if (slideIn && !Reduced && !skipScene) StartCoroutine(SlideIn(img.rectTransform, x < 0.5f ? -1 : 1));
             return img;
         }
@@ -254,6 +255,16 @@ namespace Remainder
                 yield return null;
             }
             if (rt != null) { rt.anchoredPosition = end; g.color = Color.white; }
+        }
+
+        IEnumerator Lunge(string key, float dx)
+        {
+            if (Reduced || !actors.TryGetValue(key, out var a) || a == null) yield break;
+            var rt = a.rectTransform; var origin = rt.anchoredPosition; float t = 0;
+            while (t < 0.1f && rt != null) { t += Time.deltaTime; rt.anchoredPosition = origin + new Vector2(dx * t / 0.1f, 0); yield return null; }
+            t = 0;
+            while (t < 0.18f && rt != null) { t += Time.deltaTime; rt.anchoredPosition = origin + new Vector2(dx * (1 - t / 0.18f), 0); yield return null; }
+            if (rt != null) rt.anchoredPosition = origin;
         }
 
         void ClearActors() { foreach (var a in actors.Values) if (a) Destroy(a.gameObject); actors.Clear(); }
@@ -513,7 +524,7 @@ namespace Remainder
         {
             var t = UI.Txt(body, "Credits",
                 "<b>THE REMAINDER</b>, a ZERO-SUM: OMEN prologue.\nMade for the Official Unity Game Jam 2026, theme <i>Lucky Number</i>. Built in Unity 6.\n\n" +
-                "<b>AI disclosure.</b> Character and environment art: concept boards generated with Higgsfield image models from the team's written designs, then cut out and arranged by script. " +
+                "<b>AI disclosure.</b> Character art and the street: concept boards generated with Higgsfield image models from the team's written designs, cut out by script. Shrine, bazaar, drain and rooftop backgrounds and charm icons: generated with Meshy. " +
                 "Game code, rules port and procedural audio written with an AI coding assistant (Claude) under the creator's direction; the scoring rules match the team's reference implementation. " +
                 "Story, world and characters: original to ZERO-SUM: OMEN.\n\n" +
                 "Fonts: Bebas Neue and Barlow Semi Condensed (SIL Open Font License).\nAll sound is synthesised in code.", UI.Body, 23, UI.Paper, TextAnchor.UpperLeft);
@@ -554,6 +565,9 @@ namespace Remainder
             skipButton.gameObject.SetActive(false);
             ClearActors();
             SetBg("meridian_street", new Color(0.02f, 0.03f, 0.08f, 0.55f), true);
+            Sfx.Music("m_street");
+            var hero = Actor("title_nil", "nil_front", 0.13f, false, false);
+            hero.color = new Color(0.85f, 0.85f, 0.95f, 1f);
             var logo = UI.Rect("Logo", choice);
             UI.Place(logo, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0, 120), new Vector2(1000, 300));
             var nan = UI.Txt(logo, "NaN", "NaN", UI.Bold, 50, UI.Nixie); UI.Place(nan.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, 0), new Vector2(300, 60));
@@ -619,7 +633,7 @@ namespace Remainder
         {
             skipButton.gameObject.SetActive(false);
             UI.Clear(hud); UI.Clear(reel); ClearActors();
-            SetBg("meridian_aerial", new Color(0.02f, 0.03f, 0.08f, 0.7f), false);
+            SetBg("rooftop", new Color(0.02f, 0.03f, 0.08f, 0.6f), false);
             yield return Fade(0);
             var t = UI.Txt(choice, "Results", "", UI.Title, 44, UI.Paper);
             UI.Place(t.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0, 140), new Vector2(1100, 300));

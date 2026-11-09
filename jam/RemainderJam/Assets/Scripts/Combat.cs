@@ -61,6 +61,7 @@ namespace Remainder
             if (!actors.ContainsKey("enemy")) Actor("enemy", d.art, d.art.StartsWith("hound") ? 0.81f : 0.78f);
             actors["enemy"].color = Color.white;
             BuildHud(d);
+            Sfx.Music("m_battle");
             wheel = Wheel.Create(reel, new Vector2(0, -40));
             wheel.gameObject.SetActive(false);
             int round = 0;
@@ -146,6 +147,8 @@ namespace Remainder
                     var colour = r.pattern.key == Pattern.BUST ? UI.Paper : r.pattern.key == Pattern.OVERWRITE ? UI.Gold : UI.Nixie;
                     if (r.pattern.key == Pattern.OVERWRITE || r.pattern.key == Pattern.JACKPOT) yield return Flash(new Color(1, 0.85f, 0.4f, 0.5f));
                     yield return Card(Rules.Label(r.pattern.key) + (r.pattern.mult > 1 ? "  ×" + r.pattern.mult : ""), maths, 1.0f, false, colour);
+                    foreach (var striker in who.Distinct()) StartCoroutine(Lunge(striker == "chr_nil" ? "nil" : "vesper", 90));
+                    yield return new WaitForSeconds(Reduced ? 0f : 0.1f);
                     FloatText(ActorTop("enemy"), "-" + r.damage, UI.Gold, 60);
                     StartCoroutine(Shake(actors["enemy"].rectTransform));
                     if (r.enemyReaper > 0) FloatText(ActorTop("enemy") + new Vector2(0, -60), "REAPER -" + r.enemyReaper, UI.Red, 40);
@@ -217,6 +220,7 @@ namespace Remainder
                     dr = Rules.Defend(digit, resonance, atk, pBal, pMax, eBal, eMax, false);
                 }
                 firstDefence = false;
+                yield return Lunge("enemy", -110);
                 var hurt = target == "chr_nil" ? "nil" : "vesper";
                 if (dr.kind == "HIT")
                 {
@@ -364,6 +368,7 @@ namespace Remainder
             while (t < 0.6f && e != null) { t += Time.deltaTime; e.color = new Color(1, 1, 1, 1 - t / 0.6f * 0.6f); yield return null; }
             yield return Card("AUDIT COMPLETE", d.varro ? "Varro's stake reaches zero. He is still breathing." : "The construct falls inert.", 1.8f);   // jam_solo_100 / jam_duo_060 / jam_varro_win
             UI.Clear(hud); UI.Clear(reel);
+            Sfx.Music("m_street");
         }
 
         // ---------------- HUD

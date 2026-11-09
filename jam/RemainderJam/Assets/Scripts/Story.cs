@@ -9,12 +9,13 @@ namespace Remainder
     public partial class Game
     {
         static readonly Color NightTint = new Color(0.03f, 0.05f, 0.12f, 0.35f);
-        static readonly Color ShrineTint = new Color(0.25f, 0.13f, 0.02f, 0.62f);
-        static readonly Color BazaarTint = new Color(0.20f, 0.10f, 0.02f, 0.30f);
-        static readonly Color DrainTint = new Color(0.02f, 0.10f, 0.08f, 0.55f);
+        static readonly Color ShrineTint = new Color(0.10f, 0.05f, 0.0f, 0.18f);
+        static readonly Color BazaarTint = new Color(0.05f, 0.02f, 0.0f, 0.15f);
+        static readonly Color DrainTint = new Color(0.0f, 0.03f, 0.04f, 0.18f);
 
-        void BeginScene(string plate, Color tintColour, bool rain)
+        void BeginScene(string plate, Color tintColour, bool rain, string song = "m_street")
         {
+            Sfx.Music(song);
             UI.Clear(hud); UI.Clear(reel); UI.Clear(fx); UI.Clear(choice);
             ClearActors();
             SetBg(plate, tintColour, rain);
@@ -107,7 +108,7 @@ namespace Remainder
         // 2. Shrine and the Naming ----------------------------------------------------
         IEnumerator Shrine()
         {
-            BeginScene("meridian_street", ShrineTint, false);
+            BeginScene("shrine", ShrineTint, false, "m_shrine");
             Nil(0.3f);
             Actor("nought", "nought_front", 0.7f);
             yield return Fade(0);
@@ -194,7 +195,7 @@ namespace Remainder
         // 5. One charm ----------------------------------------------------------------
         IEnumerator CharmChoice()
         {
-            BeginScene("meridian_street", BazaarTint, false);
+            BeginScene("bazaar", BazaarTint, false);
             Actor("nil", "nil_front", 0.2f);
             Actor("vesper", "vesper_front", 0.09f);
             Actor("gus", "gus_front", 0.84f);
@@ -213,7 +214,7 @@ namespace Remainder
                     "First Bust each fight: the third digit copies the first.",      // jam_charm_cat
                     "Automatically parry the first enemy action each fight."           // jam_charm_ofuda
                 };
-                string[] glyph = { "Ω", "=^.^=", "§" };
+                string[] icon = { "horseshoe", "black_cat", "ofuda" };
                 int pick = -1, focus = 0;
                 var cards = new List<Image>();
                 for (int i = 0; i < 3; i++)
@@ -222,7 +223,8 @@ namespace Remainder
                     var card = UI.Img(choice, "Charm", new Color(0.1f, 0.1f, 0.14f, 0.95f));
                     card.raycastTarget = true;
                     UI.Place(card.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2((i - 1) * 300, 60), new Vector2(270, 330));
-                    var g = UI.Txt(card.transform, "Glyph", glyph[i], UI.Bold, 84, UI.Brass); UI.Place(g.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -20), new Vector2(250, 110));
+                    var g = UI.Img(card.transform, "Icon", Color.white, UI.Load("Art/icons/" + icon[i])); g.preserveAspect = true;
+                    UI.Place(g.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -12), new Vector2(124, 124));
                     var n = UI.Txt(card.transform, "Name", names[i], UI.Title, 40, UI.Nixie); UI.Place(n.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -140), new Vector2(250, 44));
                     var d = UI.Txt(card.transform, "Text", text[i], UI.Body, 23, UI.Paper); UI.Place(d.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -190), new Vector2(236, 110));
                     var b = card.gameObject.AddComponent<Button>(); b.onClick.AddListener(() => { Sfx.Play("click"); pick = k; });
@@ -252,7 +254,7 @@ namespace Remainder
         // 6. Varro --------------------------------------------------------------------
         IEnumerator VarroFight()
         {
-            BeginScene("meridian_street", DrainTint, true);
+            BeginScene("drain", DrainTint, false);
             Nil(0.3f);
             Actor("vesper", "vesper_side", 0.12f);
             var varro = Actor("enemy", "varro_side", 0.78f);
@@ -268,7 +270,7 @@ namespace Remainder
         // 7. Mercy, rooftop -----------------------------------------------------------
         IEnumerator Ending()
         {
-            BeginScene("meridian_street", DrainTint, true);
+            BeginScene("drain", DrainTint, false, "m_shrine");
             Nil(0.3f);
             Actor("vesper", "vesper_side", 0.14f);
             var v = Actor("varro", "varro_front", 0.76f);
@@ -286,7 +288,7 @@ namespace Remainder
             yield return Card("SEAL 1 RELEASED", "Varro limps away alive.", 1.8f);         // jam_mercy_040
             yield return Fade(1);
 
-            BeginScene("meridian_aerial", new Color(0.05f, 0.03f, 0.10f, 0.25f), false);
+            BeginScene("rooftop", new Color(0, 0, 0, 0), false, "m_shrine");
             Actor("nil", "nil_side", 0.2f);
             Actor("vesper", "vesper_side", 0.08f);
             var map = SealMap();
@@ -305,7 +307,7 @@ namespace Remainder
         RectTransform SealMap()
         {
             var map = UI.Rect("SealMap", fx);
-            UI.Place(map, new Vector2(0.62f, 0.62f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(620, 140));
+            UI.Place(map, new Vector2(0.66f, 0.37f), new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(620, 140));
             var bgp = UI.Img(map, "Back", new Color(0, 0, 0, 0.55f)); UI.Stretch(bgp.rectTransform);
             var cap = UI.Txt(map, "Cap", "THE UPPER GATE", UI.Title, 28, UI.Brass); UI.Place(cap.rectTransform, new Vector2(0.5f, 1), new Vector2(0.5f, 1), new Vector2(0, -4), new Vector2(600, 32));
             for (int i = 0; i < 7; i++)
@@ -316,6 +318,19 @@ namespace Remainder
                 UI.Stretch(lab.rectTransform);
             }
             return map;
+        }
+    }
+
+    /// Slow idle breathing from the feet; off under reduced motion.
+    public class Breathe : MonoBehaviour
+    {
+        float phase; Vector3 baseScale;
+        void Start() { phase = Random.value * 6f; baseScale = transform.localScale; }
+        void Update()
+        {
+            if (Game.Reduced) { transform.localScale = baseScale; return; }
+            float s = 0.012f * Mathf.Sin(Time.time * 1.7f + phase);
+            transform.localScale = new Vector3(baseScale.x * (1 + s * 0.3f), baseScale.y * (1 + s), 1);
         }
     }
 

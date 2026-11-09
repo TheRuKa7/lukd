@@ -137,6 +137,7 @@ namespace Remainder
         readonly List<Face> faces = new List<Face>();
         RectTransform strip, window;
         float offset, total;
+        Face lastFace;
         Text caption;
         public const float Cell = 128f;
 
@@ -211,6 +212,11 @@ namespace Remainder
         {
             if (Running) offset += speed * Time.deltaTime;
             Layout();
+            if (Running && total > 0)
+            {
+                var f = At(offset);
+                if (f != lastFace) { lastFace = f; Sfx.Play("tick", 0.9f + 0.03f * f.digit); }
+            }
             float pulse = 0.55f + 0.45f * Mathf.Sin(Time.time * 9f);
             foreach (var f in faces)
                 foreach (var t in f.texts)

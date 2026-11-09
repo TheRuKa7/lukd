@@ -9,7 +9,8 @@ namespace Remainder
         const int Rate = 44100;
         static readonly Dictionary<string, AudioClip> clips = new Dictionary<string, AudioClip>();
         static AudioSource[] pool;
-        static AudioSource rain, drone;
+        static AudioSource rain, drone, music;
+        static string currentSong;
         static int next;
         public static float Volume = 0.8f;
 
@@ -33,6 +34,11 @@ namespace Remainder
             clips["alarm"] = Arp(new[] { 880f, 660f, 880f, 660f }, 0.14f, 0.3f);
             clips["rain"] = Noise(4f, 0.12f, 0, loopFriendly: true);
             clips["drone"] = Pad(new[] { 55f, 82.5f, 110f, 165f }, 8f, 0.12f);
+            // A minor loops: Am F C G (street), Am F G E (battle), Am Dm (shrine)
+            clips["m_street"] = Song(80, new[] { 57, 53, 48, 55 }, battle: false, density: 0.35f, seed: 3);
+            clips["m_battle"] = Song(112, new[] { 57, 53, 55, 52 }, battle: true, density: 0.5f, seed: 11);
+            clips["m_shrine"] = Song(64, new[] { 57, 50, 57, 52 }, battle: false, density: 0.2f, seed: 5);
+            music = host.AddComponent<AudioSource>(); music.loop = true;
             rain = host.AddComponent<AudioSource>(); rain.clip = clips["rain"]; rain.loop = true;
             drone = host.AddComponent<AudioSource>(); drone.clip = clips["drone"]; drone.loop = true;
         }
@@ -49,10 +55,74 @@ namespace Remainder
             if (rain == null) return;
             rain.volume = Volume * 0.5f; drone.volume = Volume * 0.6f;
             if (rainOn && !rain.isPlaying) rain.Play(); else if (!rainOn) rain.Stop();
-            if (droneOn && !drone.isPlaying) drone.Play(); else if (!droneOn) drone.Stop();
+            if (droneOn && currentSong == null && !drone.isPlaying) drone.Play(); else if (!droneOn) drone.Stop();
         }
 
-        public static void Refresh() { if (rain != null) { rain.volume = Volume * 0.5f; drone.volume = Volume * 0.6f; } }
+        public static void Refresh() { if (rain != null) { rain.volume = Volume * 0.5f; drone.volume = Volume * 0.6f; music.volume = Volume * 0.55f; } }
+
+        /// Switch the music loop (m_street, m_battle, m_shrine) or stop it with null.
+        public static void Music(string id)
+        {
+            if (music == null || id == currentSong) return;
+            currentSong = id;
+            music.volume = Volume * 0.55f;
+            if (id == null || !clips.TryGetValue(id, out var c)) { music.Stop(); return; }
+            music.clip = c; music.Play();
+            drone.Stop();
+        }
+
+        static float Midi(int m) => 440f * Mathf.Pow(2f, (m - 69) / 12f);
+
+        // Small deterministic sequencer: keys or arpeggio, bass, pentatonic melody, light drums.
+        static AudioClip Song(float bpm, int[] roots, bool battle, float density, int seed)
+        {
+            const int sr = 22050;
+            float beat = 60f / bpm; int steps = roots.Length * 8;            // 8th notes, 4 beats per chord
+            float step = beat / 2f; int n = Mathf.RoundToInt(steps * step * sr);
+            var d = new float[n]; var rnd = new System.Random(seed);
+            int[] penta = { 0, 3, 5, 7, 10, 12, 15 };
+            void Note(float start, float freq, float dur, float amp, float decay, float bright)
+            {
+                int s0 = (int)(start * sr), len = (int)(dur * sr);
+                for (int i = 0; i < len; i++)
+                {
+                    int k = (s0 + i) % n; float t = i / (float)sr;
+                    float env = Mathf.Exp(-decay * t) * Mathf.Clamp01(t * 200f);
+                    d[k] += amp * env * (Mathf.Sin(2 * Mathf.PI * freq * t) + bright * Mathf.Sin(4 * Mathf.PI * freq * t) + bright * 0.4f * Mathf.Sin(6 * Mathf.PI * freq * t));
+                }
+            }
+            void Hit(float start, float amp, float decay, float lowFreq)
+            {
+                int s0 = (int)(start * sr), len = (int)(0.25f * sr); float lp = 0;
+                for (int i = 0; i < len; i++)
+                {
+                    int k = (s0 + i) % n; float t = i / (float)sr;
+                    if (lowFreq > 0) d[k] += amp * Mathf.Sin(2 * Mathf.PI * lowFreq * (1 + 2 * Mathf.Exp(-30 * t)) * t) * Mathf.Exp(-decay * t);
+                    else { float w = (float)(rnd.NextDouble() * 2 - 1); lp += (w - lp) * 0.6f; d[k] += amp * (w - lp) * Mathf.Exp(-decay * t); }
+                }
+            }
+            for (int c = 0; c < roots.Length; c++)
+            {
+                int r = roots[c]; bool minor = c == 0 || (battle ? false : r == 50);
+                int[] chord = { r, r + (minor || r == 57 ? 3 : 4), r + 7 };
+                float bar = c * 8 * step;
+                if (battle)
+                    for (int s = 0; s < 8; s++) Note(bar + s * step, Midi(chord[s % 3] + 12), step * 1.2f, 0.05f, 9f, 0.2f);
+                else
+                    foreach (var off in new[] { 0, 4 }) foreach (var m in chord) Note(bar + off * step, Midi(m + 12), step * 4f, 0.045f, 2.2f, 0.35f);
+                for (int s = 0; s < 8; s += battle ? 1 : 4) Note(bar + s * step, Midi(r - 12), step * (battle ? 0.9f : 3.5f), 0.11f, battle ? 6f : 1.5f, 0.1f);
+                for (int s = 0; s < 8; s++)
+                    if (rnd.NextDouble() < density) Note(bar + s * step, Midi(57 + 12 + penta[rnd.Next(penta.Length)]), step * 2f, 0.035f, 5f, 0.15f);
+                for (int s = 0; s < 8; s++)
+                {
+                    if (battle) { if (s % 2 == 0) Hit(bar + s * step, 0.22f, 18f, 55f); if (s == 2 || s == 6) Hit(bar + s * step, 0.08f, 22f, 0); Hit(bar + s * step + step / 2, 0.025f, 60f, 0); }
+                    else { if (s == 0 || s == 5) Hit(bar + s * step, 0.12f, 14f, 50f); if (s % 2 == 1) Hit(bar + s * step, 0.018f, 70f, 0); }
+                }
+            }
+            float peak = 0.001f; foreach (var v in d) peak = Mathf.Max(peak, Mathf.Abs(v));
+            for (int i = 0; i < n; i++) d[i] = d[i] / peak * 0.7f;
+            var clip = AudioClip.Create("song", n, 1, sr, false); clip.SetData(d, 0); return clip;
+        }
 
         public static string ForPattern(Pattern p) => p switch
         {

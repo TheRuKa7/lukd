@@ -21,7 +21,7 @@ Systems: the seven base patterns with priority, defence (0 parries, your number 
 | `RemainderJam/Assets/Scripts/UI.cs`, `Sfx.cs` | UI builders and the Nixie wheel; synthesised audio |
 | `RemainderJam/Assets/Editor/RulesParity.cs` | 16,060 parity checks against fixtures from the JS rules |
 | `RemainderJam/Assets/Editor/JamBuild.cs` | Batch WebGL and Windows builds |
-| `RemainderJam/Assets/Resources/Art` | Sprites and plates cut from the concept boards by `tools/jam_extract_sprites.py` |
+| `RemainderJam/Assets/Resources/Art` | Sprites and the street plate cut from the concept boards by `tools/jam_extract_sprites.py`; `plates/{shrine,bazaar,drain,rooftop}.jpg` and `icons/` generated with Meshy (45 + 9 credits, 9 Nov) |
 
 ## Commands
 
@@ -43,6 +43,6 @@ Debug URL parameters (local testing only): `?cp=N` jumps to chapter N (0 alley â
 
 **Controls:** Space, Enter, Z or click to stop a wheel and advance. 1/2 choose who strikes. P pauses. Tab skips a scene. Settings has Assist (slower wheels), Reduced motion and Instant text. Sound is optional; every cue is on screen.
 
-**AI disclosure:** Character and environment art comes from concept boards generated with Higgsfield image models from the team's written designs; a script cut them into sprites. Game code, the C# rules port and the synthesised audio were written with an AI coding assistant (Claude) under the creator's direction, checked against the team's own JavaScript rules with 16,060 parity cases. Story, world, characters and design are original to ZERO-SUM: OMEN.
+**AI disclosure:** Character art and the Meridian street come from concept boards generated with Higgsfield image models from the team's written designs; a script cut them into sprites. The shrine, bazaar, drain-gate and rooftop backgrounds and the three charm icons were generated with Meshy (Nano Banana Pro), using the street plate as a style reference. Music and sound effects are synthesised in code. Game code, the C# rules port and the synthesised audio were written with an AI coding assistant (Claude) under the creator's direction, checked against the team's own JavaScript rules with 16,060 parity cases. Story, world, characters and design are original to ZERO-SUM: OMEN.
 
 **Upload:** zip the contents of `jam/build/web` (index.html at the zip root), upload as an HTML game, tick "This file will be played in the browser", set the viewport to 1280 Ã— 720, and enable the fullscreen button. The build uses gzip with decompression fallback, so no server headers are needed.

@@ -798,7 +798,7 @@ The gear's financing reference connects old machinery to the House's later maint
 
 Volume5 · relative Day25 · Archon's access court
 
-**Focal participants:** Nil, Prima, Archon, Kallisto, companions.
+**Focal participants:** Nil, Prima, Archon, Kallisto, companions, Brask.
 
 **Travel roster (not a mandatory panel list):** Nil, Vesper, Maeve, Hina, Jinling, Bai Si, Shunya, Prima.
 
@@ -820,9 +820,9 @@ Defeat damages the physical Sieve support; Prima's teacher falls beyond the safe
 
 ## 35 — Catch the Falling
 
-Volume5 · relative Day26 · Sieve edge and reopening hearing
+Volume5 · relative Day26 · Sieve edge and reopening hearing; Meridian Comptroller office interlude
 
-**Focal participants:** Nil, Prima, Maeve, Archon, Kallisto, Vesper.
+**Focal participants:** Nil, Prima, Maeve, Archon, Kallisto, Vesper, Brask, Ivo, Thale.
 
 **Travel roster (not a mandatory panel list):** Nil, Vesper, Maeve, Hina, Jinling, Bai Si, Shunya, Prima.
 

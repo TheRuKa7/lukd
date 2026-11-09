@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "evidence_scope": "Authored development dossiers and cast coverage, not completed prose or approved new artwork",
-  "source_sha256": "77a85fe52e9b881e3041ea835001b5691389c99617c5ee0c6607fd246b81da49",
-  "scene_ledger_sha256": "5a2cea43f153ab37e9912ae0e8f50bcc2e293537d3b87e3ad119330afea378d8",
+  "source_sha256": "9971cac671761462c2f89645525e327e510e6755bfe462be21ccd8b64522627a",
+  "scene_ledger_sha256": "34c3dd66bf5e63bd89acfed94ab7452d0f77b1d75bd26270e50c9737629aaa62",
   "profiles": [
     {
       "name": "Nil",
@@ -957,7 +957,7 @@
       "mistaken_belief": "A lawful order is its own justification, so long as she writes down what it costs",
       "competence": "Pursuit logistics, reading crowds and running linked Collector pairs; meticulous field reports",
       "harm_or_cost": "Enforces seizures and guards the eclipse engines against the party; her linked officers come close to killing Nil before she surrenders the credential",
-      "decisive_chapters": "25,27,28",
+      "decisive_chapters": "25,27,28,34,35",
       "independent_relationship": "Thale reads her reports and acts on them; her officers trust her more than the office; Nil makes her start asking what her orders cost",
       "voice": "Plain, procedural and polite; asks after people's health and means it; never raises her voice",
       "private_life": "Writes the weather, the fields and the Civic numbers of the people affected into reports nobody asked for",
@@ -965,7 +965,9 @@
       "chapter_ids": [
         25,
         27,
-        28
+        28,
+        34,
+        35
       ],
       "actor_type": "person_or_supernatural_person"
     }
@@ -2043,6 +2045,12 @@
       "kind": "group"
     },
     {
+      "chapter": 34,
+      "label": "Brask",
+      "canonical": "Brask",
+      "kind": "profile"
+    },
+    {
       "chapter": 35,
       "label": "Nil",
       "canonical": "Nil",
@@ -2076,6 +2084,24 @@
       "chapter": 35,
       "label": "Vesper",
       "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 35,
+      "label": "Brask",
+      "canonical": "Brask",
+      "kind": "profile"
+    },
+    {
+      "chapter": 35,
+      "label": "Ivo",
+      "canonical": "Ivo",
+      "kind": "profile"
+    },
+    {
+      "chapter": 35,
+      "label": "Thale",
+      "canonical": "Thale",
       "kind": "profile"
     },
     {

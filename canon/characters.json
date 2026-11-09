@@ -2283,6 +2283,7 @@
     14,
     21,
     28,
+    35,
     46,
     47,
     48,
@@ -3417,6 +3418,7 @@
     21,
     21,
     28,
+    35,
     44,
     45,
     46,
@@ -7211,7 +7213,9 @@
    "ledger_chapters": [
     25,
     27,
-    28
+    28,
+    34,
+    35
    ],
    "novel_profile": {
     "name": "Brask",
@@ -7220,7 +7224,7 @@
     "mistaken_belief": "A lawful order is its own justification, so long as she writes down what it costs",
     "competence": "Pursuit logistics, reading crowds and running linked Collector pairs; meticulous field reports",
     "harm_or_cost": "Enforces seizures and guards the eclipse engines against the party; her linked officers come close to killing Nil before she surrenders the credential",
-    "decisive_chapters": "25,27,28",
+    "decisive_chapters": "25,27,28,34,35",
     "independent_relationship": "Thale reads her reports and acts on them; her officers trust her more than the office; Nil makes her start asking what her orders cost",
     "voice": "Plain, procedural and polite; asks after people's health and means it; never raises her voice",
     "private_life": "Writes the weather, the fields and the Civic numbers of the people affected into reports nobody asked for",
@@ -7228,7 +7232,9 @@
     "chapter_ids": [
      25,
      27,
-     28
+     28,
+     34,
+     35
     ],
     "actor_type": "person_or_supernatural_person"
    },

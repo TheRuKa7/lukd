@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "evidence_scope": "Compilation, source identity and body word counts; not independent reader acceptance",
+  "volume": 5,
+  "chapters": [
+    {
+      "chapter": 29,
+      "title": "The Even Prime",
+      "source": "docs/novel/volume_05/chapter_29_the_even_prime.md",
+      "sha256": "2ff4066864f145aa5e50c7bfdd5ba18b16426263966837dc52fa8eefe342391b",
+      "body_words": 1909,
+      "planned_scene_ids": [
+        "ch29_s1",
+        "ch29_s2",
+        "ch29_s3"
+      ]
+    },
+    {
+      "chapter": 30,
+      "title": "The City Beneath",
+      "source": "docs/novel/volume_05/chapter_30_the_city_beneath.md",
+      "sha256": "600c9a317a7b0b75258078747b5aa08af25baceebb1156e3ee89005cd12eab0a",
+      "body_words": 1885,
+      "planned_scene_ids": [
+        "ch30_s1",
+        "ch30_s2",
+        "ch30_s3"
+      ]
+    },
+    {
+      "chapter": 31,
+      "title": "The School Above the Sieve",
+      "source": "docs/novel/volume_05/chapter_31_the_school_above_the_sieve.md",
+      "sha256": "03c5f6640422cd7a9b7969998f750e18761c00385fc6bc37ffebd06c6181f1f1",
+      "body_words": 2246,
+      "planned_scene_ids": [
+        "ch31_s1",
+        "ch31_s2",
+        "ch31_s3"
+      ]
+    },
+    {
+      "chapter": 32,
+      "title": "A Thread That Measures",
+      "source": "docs/novel/volume_05/chapter_32_a_thread_that_measures.md",
+      "sha256": "06fbca5c8c75e1f3ffb509643b83069657b3eeee89e956d0367004dcee83bfaa",
+      "body_words": 1963,
+      "planned_scene_ids": [
+        "ch32_s1",
+        "ch32_s2",
+        "ch32_s3"
+      ]
+    },
+    {
+      "chapter": 33,
+      "title": "The First Gear",
+      "source": "docs/novel/volume_05/chapter_33_the_first_gear.md",
+      "sha256": "e5d2de3299699a674a008c4579d970733ad067214b384fa403c6d4a104fd1c90",
+      "body_words": 1915,
+      "planned_scene_ids": [
+        "ch33_s1",
+        "ch33_s2",
+        "ch33_s3"
+      ]
+    },
+    {
+      "chapter": 34,
+      "title": "What We Refuse to Cut",
+      "source": "docs/novel/volume_05/chapter_34_what_we_refuse_to_cut.md",
+      "sha256": "127300ff27a6e36075df2724ef0c6bf8c678d9cfe20fd866c883ac4a0c2046a1",
+      "body_words": 1894,
+      "planned_scene_ids": [
+        "ch34_s1",
+        "ch34_s2",
+        "ch34_s3"
+      ]
+    },
+    {
+      "chapter": 35,
+      "title": "Catch the Falling",
+      "source": "docs/novel/volume_05/chapter_35_catch_the_falling.md",
+      "sha256": "5c5c49fc62ba0e4a096714bb08d1af44b4af3fa3dca8a52550d98a3073619d17",
+      "body_words": 1950,
+      "planned_scene_ids": [
+        "ch35_s1",
+        "ch35_s2",
+        "ch35_s3"
+      ]
+    }
+  ],
+  "body_words": 13762,
+  "manuscript_sha256": "60a1f2461c68be1b1ede542f0bd22f806d358124d5e730c2e2d6718f9a031a7f",
+  "whole_series_editorially_accepted": false,
+  "authored_manga_pages": 0
+}

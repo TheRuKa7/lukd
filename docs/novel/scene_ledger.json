@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "evidence_scope": "Authored scene plan, not prose, page scripts or generated manga",
-  "source_sha256": "ad02fca9907d27ff0f95828441407283dadb708fa5dd6f425ed81aa9ba2d5635",
+  "source_sha256": "500435a894d53f25c21e9eca6ce4298daffdcf6824c082040ed55ae4cc073fd1",
   "chapters": [
     {
       "chapter": 1,
@@ -1342,7 +1342,8 @@
         "Prima",
         "Archon",
         "Kallisto",
-        "companions"
+        "companions",
+        "Brask"
       ],
       "travelling_roster": [
         "Nil",
@@ -1379,14 +1380,17 @@
       "title": "Catch the Falling",
       "volume": 5,
       "relative_day": "26",
-      "location": "Sieve edge and reopening hearing",
+      "location": "Sieve edge and reopening hearing; Meridian Comptroller office interlude",
       "cast": [
         "Nil",
         "Prima",
         "Maeve",
         "Archon",
         "Kallisto",
-        "Vesper"
+        "Vesper",
+        "Brask",
+        "Ivo",
+        "Thale"
       ],
       "travelling_roster": [
         "Nil",

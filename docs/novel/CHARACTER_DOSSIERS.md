@@ -1060,7 +1060,7 @@ Actor type: person_or_supernatural_person. Decisive chapters: 20,35,40,49.
 
 ## Brask
 
-Actor type: person_or_supernatural_person. Decisive chapters: 25,27,28.
+Actor type: person_or_supernatural_person. Decisive chapters: 25,27,28,34,35.
 
 **Want:** Close her assignments without losing a single officer, and keep her crews paid.
 

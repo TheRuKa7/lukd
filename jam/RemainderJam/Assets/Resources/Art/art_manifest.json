@@ -1,0 +1,139 @@
+{
+ "cast": {
+  "nil_front": {
+   "board": "art/concepts/complete/cast_001_nil.png",
+   "column": 0,
+   "size": [
+    248,
+    760
+   ]
+  },
+  "nil_side": {
+   "board": "art/concepts/complete/cast_001_nil.png",
+   "column": 2,
+   "size": [
+    153,
+    760
+   ]
+  },
+  "vesper_front": {
+   "board": "art/concepts/complete/cast_005_vesper.png",
+   "column": 0,
+   "size": [
+    270,
+    760
+   ]
+  },
+  "vesper_side": {
+   "board": "art/concepts/complete/cast_005_vesper.png",
+   "column": 2,
+   "size": [
+    208,
+    760
+   ]
+  },
+  "varro_front": {
+   "board": "art/concepts/complete/cast_016_varro.png",
+   "column": 0,
+   "size": [
+    395,
+    760
+   ]
+  },
+  "varro_side": {
+   "board": "art/concepts/complete/cast_016_varro.png",
+   "column": 2,
+   "size": [
+    244,
+    760
+   ]
+  },
+  "hound_side": {
+   "board": "art/concepts/complete/cast_057_debt_hound.png",
+   "column": 1,
+   "size": [
+    846,
+    760
+   ]
+  },
+  "ama_front": {
+   "board": "art/concepts/complete/cast_030_ama.png",
+   "column": 0,
+   "size": [
+    255,
+    760
+   ]
+  },
+  "tobi_front": {
+   "board": "art/concepts/complete/cast_031_tobi.png",
+   "column": 0,
+   "size": [
+    260,
+    760
+   ]
+  },
+  "nought_front": {
+   "board": "art/concepts/complete/cast_032_brother_nought.png",
+   "column": 0,
+   "size": [
+    246,
+    760
+   ]
+  },
+  "gus_front": {
+   "board": "art/concepts/complete/cast_034_gus.png",
+   "column": 0,
+   "size": [
+    257,
+    760
+   ]
+  },
+  "collector_front": {
+   "board": "art/concepts/complete/cast_048_f_collector.png",
+   "column": 0,
+   "size": [
+    267,
+    760
+   ]
+  },
+  "collector_side": {
+   "board": "art/concepts/complete/cast_048_f_collector.png",
+   "column": 1,
+   "size": [
+    174,
+    760
+   ]
+  },
+  "livia_front": {
+   "board": "art/concepts/complete/cast_033_livia.png",
+   "column": 0,
+   "size": [
+    250,
+    760
+   ]
+  }
+ },
+ "plates": {
+  "meridian_street": {
+   "source": "art/concepts/complete/env_meridian.png",
+   "size": [
+    1600,
+    767
+   ]
+  },
+  "meridian_aerial": {
+   "source": "art/concepts/complete/env_meridian.png",
+   "size": [
+    1595,
+    850
+   ]
+  },
+  "meridian_plan": {
+   "source": "art/concepts/complete/env_meridian.png",
+   "size": [
+    1545,
+    850
+   ]
+  }
+ }
+}

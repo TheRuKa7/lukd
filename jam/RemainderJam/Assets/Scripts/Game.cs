@@ -14,6 +14,13 @@ namespace Remainder
     {
         public static bool Assist, Reduced, InstantText, Auto, Skilled;
         float autoTimer;
+        static string shotDir; static int shotIndex;
+        void Shot(string tag)
+        {
+            if (shotDir == null || shotIndex > 400) return;
+            string safe = new string(tag.Where(char.IsLetterOrDigit).Take(24).ToArray());
+            ScreenCapture.CaptureScreenshot(System.IO.Path.Combine(shotDir, $"{shotIndex++:000}_{safe}.png"));
+        }
 
         // run state
         int resonance = -1, checkpoint;
@@ -281,6 +288,7 @@ namespace Remainder
                 tap = false;
             }
             lineText.text = line;
+            if (shotDir != null) { tap = false; yield return null; Shot((speaker ?? "") + "_" + line); yield return null; yield return null; }
             while (!tap && !skipScene) yield return null;
             tap = false;
             dialog.gameObject.SetActive(false);
@@ -294,6 +302,7 @@ namespace Remainder
             banner.offsetMin = new Vector2(0, drop); banner.offsetMax = new Vector2(0, drop);
             bannerText.text = title; bannerText.color = colour ?? UI.Gold; bannerSub.text = sub ?? "";
             if (!Reduced) StartCoroutine(Punch(bannerText.rectTransform));
+            if (shotDir != null) { yield return null; Shot("card_" + title); yield return null; }
             if (waitTap) { hintText.text = "Tap or press Space"; yield return WaitTap(); hintText.text = ""; }
             else { float t = 0; tap = false; while (t < hold && !tap) { t += Time.deltaTime; yield return null; } tap = false; }
             banner.gameObject.SetActive(false);
@@ -523,6 +532,7 @@ namespace Remainder
             NewRun(false);
             Auto = args.TryGetValue("auto", out var a) && a == "1";
             Skilled = args.TryGetValue("skill", out var sk) && sk == "1";
+            if (args.TryGetValue("shots", out var sd)) { shotDir = sd; System.IO.Directory.CreateDirectory(sd); }
             if (Auto) { Time.timeScale = args.TryGetValue("speed", out var sp) ? float.Parse(sp) : 3f; InstantText = true; Reduced = true; }
             int cp = int.Parse(args["cp"]);
             resonance = args.TryGetValue("res", out var r) ? int.Parse(r) : 7;

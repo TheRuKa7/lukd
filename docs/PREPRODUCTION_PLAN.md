@@ -63,3 +63,5 @@ The Official Unity Game Jam 2026 closes on **14 November 2026 at 17:30 IST**, fi
 
 - **Skip the jam.** Follow this plan as written.
 - **Run a parallel jam sprint.** A separate, time-boxed track builds the 10–15 minute Meridian Prologue in Unity with existing concept art and placeholder sprites, then stops on 14 November. It does not change canon, and its project is not the phase 10 project.
+
+**Decision, 9 November 2026: run the parallel jam sprint.** The playable build, its tests and the itch.io page draft are in [jam/README.md](../jam/README.md).

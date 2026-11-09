@@ -175,7 +175,7 @@ namespace Remainder
         IEnumerator VesperJoins()
         {
             BeginScene("meridian_street", NightTint, true);
-            Nil(0.26f);
+            Nil(0.3f);
             yield return Fade(0);
             Actor("enemy", "hound_side", 0.81f);
             Sfx.Play("hit");
@@ -253,7 +253,7 @@ namespace Remainder
         IEnumerator VarroFight()
         {
             BeginScene("meridian_street", DrainTint, true);
-            Nil(0.26f);
+            Nil(0.3f);
             Actor("vesper", "vesper_side", 0.12f);
             var varro = Actor("enemy", "varro_side", 0.78f);
             yield return Fade(0);

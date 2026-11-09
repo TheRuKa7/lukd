@@ -99,6 +99,7 @@ namespace Remainder
                         if (i == 2 && !d.solo) yield return Once("duo_030", "SHIMMERING FACES FINISH A PATTERN.", "Pattern Sight shows which last digits score.");
                         wheel.Spin();
                         hintText.text = "Tap or press Space to stop";
+                        if (shotDir != null && i == 2) { yield return null; Shot("wheel_" + d.name); }
                         yield return WaitTap();
                         hintText.text = "";
                         if (authored) yield return wheel.StopOn(j, Reduced);
@@ -392,7 +393,7 @@ namespace Remainder
             UI.Place(charmText.rectTransform, new Vector2(0, 1), new Vector2(0, 1), new Vector2(24, -140), new Vector2(460, 28));
             UI.Outlined(charmText, Color.black);
             jarText = UI.Txt(hud, "Jar", "", UI.Bold, 22, UI.Paper, TextAnchor.UpperRight);
-            UI.Place(jarText.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-92, -140), new Vector2(520, 56));
+            UI.Place(jarText.rectTransform, new Vector2(1, 1), new Vector2(1, 1), new Vector2(-92, -140), new Vector2(360, 60));
             UI.Outlined(jarText, Color.black);
             UpdateStatus();
             SetBars();
@@ -450,8 +451,8 @@ namespace Remainder
                 jarText.text = jar.state switch
                 {
                     JarState.Idle => "DEBT JAR: EMPTY",
-                    JarState.Holding => $"DEBT JAR HOLDS {jar.digit}  ·  ROUNDS [{Pips(jar.affectedRounds)}]  DEFENCES [{Pips(jar.defences)}]",
-                    JarState.Restoring => $"DEBT JAR OPEN  ·  {jar.digit} RETURNS NEXT ROUND",
+                    JarState.Holding => $"DEBT JAR HOLDS {jar.digit}\nROUNDS [{Pips(jar.affectedRounds)}]  DEFENCES [{Pips(jar.defences)}]",
+                    JarState.Restoring => $"DEBT JAR OPEN\n{jar.digit} RETURNS NEXT ROUND",
                     _ => "DEBT JAR: SPENT"
                 };
             }

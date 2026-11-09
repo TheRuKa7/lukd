@@ -76,7 +76,7 @@ Hina laid her household witness tag beside the others. Her local 9 channel could
 
 “Yes.” She looked at the emergency hood. “I want to stay.”
 
-Maeve took the observer's station beside Aka. Vesper kept her revolver in the sealed rack. Her hands would stop wheels; a bullet would contribute nothing to the agreed claim.
+Maeve took the observer's station beside Aka. Vesper kept her revolver in the sealed rack.
 
 Tamamo stepped into the centre of the room.
 
@@ -104,7 +104,7 @@ A warning shook through the floor. The return shutters began to close. Nil moved
 
 “Down, by me,” Vesper said.
 
-Nil went down. Hina lowered the umbrella to shield their view from the brightest image, not their bodies from an impossible blow. Behind its paper the real brass studs stood out. Nil reached the return catch and found zero by the actual marker.
+Nil went down. Hina lowered the umbrella to shade their view from the brightest image. Behind its paper the real brass studs stood out. Nil reached the return catch and found zero by the actual marker.
 
 The closing load struck the frame instead of driving through their declared stake. A safety rail rattled under Vesper's hand. Nothing had hit Tamamo, and one of the court's tail gauges had nevertheless lost part of its allotted capacity in the exchange.
 
@@ -224,7 +224,7 @@ Hina raised the umbrella, bringing the old patch between the projection lamp and
 
 Nil stopped 9.
 
-Three nines locked in the scoring frame. A Jackpot under Hina's authorized route, not Nil's chosen-seven pattern, not a new birthday.
+Three nines locked in the scoring frame. A Jackpot, carried on Hina's own route.
 
 The last three vessels settled to their closing lines. The projected walls collapsed into ordinary light. Tamamo's actual nine tails remained behind her, no longer carrying an active challenge digit. Her Civic still read 99.
 

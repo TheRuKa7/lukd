@@ -124,7 +124,7 @@ They stood back.
 
 The reserve hold had stopped approval of the afternoon work-coverage draw. The scheduled relief crew could not begin a contracted lift under that status; the crew already holding the load could not simply let it fall. A safety clerk had locked the changeover station while the office sought a fresh guarantee.
 
-No invisible force had selected a stranger to suffer. A routine hold had reached a working yard halfway through a real load.
+A routine hold had reached a working yard halfway through a real load.
 
 Vesper and the second worker secured the brake. Jinling put down a named emergency guarantee from her private risk purse for this one lowering operation; the safety clerk read its limit before unlocking the changeover. Ordinary hands took the load down slowly. Rope creaked. The crate settled into its cradle, and the man at the capstan stepped away with blood on one knuckle where the lever had pinched him.
 

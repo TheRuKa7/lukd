@@ -7,8 +7,8 @@
       "chapter": 1,
       "title": "Three Bowls",
       "source": "docs/novel/volume_01/chapter_01_three_bowls.md",
-      "sha256": "e5ac91589109371c8c3fabd584cf48feca926cfd129d71c7569ce66aac278d32",
-      "body_words": 1998,
+      "sha256": "4754d9ae0bf6b0564827e015f9325e156db90cd9ecda8fb87d86e6eb881af014",
+      "body_words": 2067,
       "planned_scene_ids": [
         "ch01_s1",
         "ch01_s2",
@@ -55,8 +55,8 @@
       "chapter": 5,
       "title": "Seven Fen",
       "source": "docs/novel/volume_01/chapter_05_seven_fen.md",
-      "sha256": "363a89aec18504b7cba5af2c858991d55e592563d3597e9a9ba79356b6b90b7f",
-      "body_words": 1422,
+      "sha256": "8e649e7b4a118a44f5d847fefee08882341abe4077fd3e11b8123876975f6eb3",
+      "body_words": 1416,
       "planned_scene_ids": [
         "ch05_s1",
         "ch05_s2",
@@ -67,8 +67,8 @@
       "chapter": 6,
       "title": "A Window at Six",
       "source": "docs/novel/volume_01/chapter_06_a_window_at_six.md",
-      "sha256": "5856b58bd34884d7d72f39625849119a60b415d0e69363c556dbb1898d60f19f",
-      "body_words": 2369,
+      "sha256": "87e463b846ccb4520bbca1371fdfd0a3e5e0fe6c460b9431ffaf67ddcce8acc3",
+      "body_words": 2491,
       "planned_scene_ids": [
         "ch06_s1",
         "ch06_s2",
@@ -79,8 +79,8 @@
       "chapter": 7,
       "title": "A Receipt for Mercy",
       "source": "docs/novel/volume_01/chapter_07_a_receipt_for_mercy.md",
-      "sha256": "629464f0fd76b6488c0304c3e092d89d3a1327db662669eb3c2ea941a4232858",
-      "body_words": 2864,
+      "sha256": "d223e6b3b32820c6124646e267009c1ee765357ff8f5bb36f2c96c83511217d9",
+      "body_words": 2828,
       "planned_scene_ids": [
         "ch07_s1",
         "ch07_s2",
@@ -88,8 +88,8 @@
       ]
     }
   ],
-  "body_words": 13732,
-  "manuscript_sha256": "6b3578b58a43a4569643ec20d12dc6cce0eb9cff2cc901de81ed40ebcd9a54db",
+  "body_words": 13881,
+  "manuscript_sha256": "c6e87f6c7362199b9079d0cb79b8632b84dee1e6faa2f0b2a56b5d7fe6cbed2d",
   "whole_series_editorially_accepted": false,
   "authored_manga_pages": 0
 }

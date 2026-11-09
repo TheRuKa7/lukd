@@ -70,7 +70,7 @@ Nil looked up.
 
 “Then remember. You don't have to carry the whole stair.”
 
-She sat facing the canal behind them. Her hand rested near her holster without touching it. The small cut beneath her lip scar had dried to a dark line. Five live cartridges; Nil knew the count because she had made no effort to turn the gun into a mystery.
+She sat facing the canal behind them. Her hand rested near her holster without touching it. The small cut beneath her lip scar had dried to a dark line.
 
 For a while they travelled between high stone walls. Water stains marked floods above the height of Nil's head. Workers on a maintenance shelf were hauling up a bent grate. One raised a hand to Tetsu; he answered without releasing the tiller.
 

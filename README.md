@@ -6,7 +6,7 @@ In a world where every soul's luck floats above its head as a number, a nameless
 
 **Current priority:** complete and revise *The Remainder*, a125,000-word prose master, then adapt49 chapters into seven manga volumes (1,078 story pages). Existing prose chapters are drafts. Unity implementation follows the story and manga gates; no Unity game build has been verified. The old jam timetable is historical.
 
-Start with the [ten-phase plan](docs/TEN_PHASE_PLAN.md), [resolved series bible](docs/novel/RESOLVED_SERIES_BIBLE.md), [current manga policy](docs/manga/README.md) and [project evidence](docs/PROJECT_STATUS.md).
+Start with the [pre-production plan](docs/PREPRODUCTION_PLAN.md) and the [9 November critique](docs/CRITIQUE_2026-11-09.md), then the earlier [ten-phase plan](docs/TEN_PHASE_PLAN.md), [resolved series bible](docs/novel/RESOLVED_SERIES_BIBLE.md), [current manga policy](docs/manga/README.md) and [project evidence](docs/PROJECT_STATUS.md).
 
 ## Start here
 | | |

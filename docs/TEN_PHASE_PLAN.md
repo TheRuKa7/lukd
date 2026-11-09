@@ -1,5 +1,7 @@
 # Ten-phase production plan
 
+> **Superseded 9 November 2026 for phases 5–10** by the [pre-production plan](PREPRODUCTION_PLAN.md), following the [full critique](CRITIQUE_2026-11-09.md). Phases 1–4 below are complete and carry over.
+
 8 November 2026. Story-first order under the user's current instructions. No stage is complete merely because its design exists. The execution tracker and [Phase1 report](PHASE_01_REPORT.md) distinguish observed evidence from targets.
 
 | Phase | Work and concrete deliverables | Exit gate |

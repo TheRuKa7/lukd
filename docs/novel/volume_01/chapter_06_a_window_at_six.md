@@ -58,6 +58,14 @@ She placed a narrow dealer's seal against the plate on Nil's brace and showed th
 
 “Three stops,” she said. “You, me, you. Don't chase what I've already missed.”
 
+“What am I trying to make?”
+
+She answered the way a dealer reads out the house rules, fast and without looking at the cards. “Two alike, Pair. Three alike, Jackpot. Three in a row, up or down, is a Cascade; it buys a round before the other side answers. Make the three add to ten and it loses its next move. Zero-Sum. Nothing matches, you've Bust.” She paused. “Three of the number you chose at the shrine is the one people tell stories about. Don't plan your evening around it.”
+
+“You've explained this before.”
+
+“I used to deal it.” She did not say where.
+
 The machine's lane boundary rose. A bell at the forge door rang as the porter finally cleared the threshold.
 
 Nil caught 5. Vesper caught 6 so neatly that Nil almost forgot to take the third stop. They recovered late, pressed, and caught 8 instead of 7.
@@ -276,7 +284,7 @@ Maeve joined them at the end of the balcony carrying a wrapped tool bundle and a
 
 “My aunt has the forge key. Guild has the tools. I'm coming as far as the shrine road.” She showed them a supplier slip with the same toll mark as Gus's notice. “Someone is charging us for a channel my grandmother used to keep with a kettle and a promise. I'd like to ask them what changed.”
 
-They took the drain steps toward the covered night route.
+They waited in Gus's back room until the cordon on the canal road thinned, well past midnight. Then they took the drain steps toward the covered night route.
 
 Below, a ratchet clicked. Vesper stopped turning her coin.
 

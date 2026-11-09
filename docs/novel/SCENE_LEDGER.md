@@ -316,9 +316,9 @@ Tamamo survives; Hina claims personhood at99 and insists that restoration work c
 
 ## 14 — The Toll Changes Hands
 
-Volume2 · relative Day7 · Shrine road and River-bound ferry
+Volume2 · relative Day7 · Shrine road and River-bound ferry; Meridian Comptroller office interlude
 
-**Focal participants:** Nil, Hina, Ofuku, Tamamo, Tetsu.
+**Focal participants:** Nil, Hina, Ofuku, Tamamo, Tetsu, Ivo, Thale.
 
 **Travel roster (not a mandatory panel list):** Nil, Vesper, Maeve, Hina.
 
@@ -484,9 +484,9 @@ Vesper admits the rigged hand and Mara Vale's harm without demanding reassurance
 
 ## 21 — A Debt to the Living
 
-Volume3 · relative Day13 · Bāfā public hearing and departure
+Volume3 · relative Day13 · Bāfā public hearing and departure; Meridian Comptroller office interlude
 
-**Focal participants:** Nil, Jinling, workers, depositors, Nought by letter, Ivo by record.
+**Focal participants:** Nil, Jinling, workers, depositors, Nought by letter, Ivo by record, Ivo, Thale.
 
 **Travel roster (not a mandatory panel list):** Nil, Vesper, Maeve, Hina, Jinling, Bai Si.
 

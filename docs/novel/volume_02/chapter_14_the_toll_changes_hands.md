@@ -82,7 +82,7 @@ The road gauge rose. Somewhere outside, a dispatch bell rang once.
 
 The woman with the broken emergency seal closed her eyes.
 
-Nothing in the room announced that history had changed. A courier outside swore because the bell had caught him carrying a sack. He set it down, took the new route slip and went out to do the work the open channel now allowed.
+A courier outside swore because the bell had caught him carrying a sack. He set it down, took the new route slip and went out to do the work the open channel now allowed.
 
 Only after the local receiver had completed its witnessed test did Tamamo release the exclusive office credential. Seal 9 came free into Ao's hand. The new agreement ended its monopoly use on these routes; it remained a credential recognized by the central access system, not a title to Hyakki.
 
@@ -235,6 +235,42 @@ Night reached them in the outer channel. They ate the rice packets Ofuku had pac
 Nil put the two separately wrapped Seals beside the notebook and checked the oilcloth. They wrote down the Exchange receiving desk, the route reference and the fact that the carrier's ankle still needed work.
 
 Then the boat's slow motion drew the words out of focus.
+
+***
+
+In Meridian, the Hyakki release came up the relay an hour after it was signed.
+
+Ivo Marr carried the transcript to the upper offices with the evening post. Thale was at the window, where the pigeons had learned that the Comptroller kept a tin of split grain on the ledge. He fed them one measure at a time, never the whole tin, and closed the lid between handfuls.
+
+“Seal nine,” Ivo said.
+
+Thale read the release standing. He read the household schedule first, then the dispatch rota, then the line in which the court gave up its exclusive clearance. Only at the end did he look at the witness names.
+
+“The carriers?” he asked.
+
+“Restored where the route has reached them. The schedule lists one ankle still under repair.”
+
+“Honour the schedule. If the road office delays a single delivery to make a point, I want the clerk's name.” He set the paper square to the edge of the desk. “They have done Hyakki a service. They have not done it a kindness.”
+
+Ivo waited. With Thale there was always a remainder to the instruction.
+
+“Re-post the claim under this office,” Thale said. “Not the Wards desk. Mine. National circulation, every exchange that carries our paper.”
+
+“The harbour registries can buy a transferable claim and suspend it.”
+
+“Then let them buy it. I would like to know who is willing to pay.” He turned a page of the evening report. “And bring me the stabilisation schedule. All of it, including the appendices you think I've forgotten.”
+
+The schedule had a working title on its cover, typed by a clerk who had not been told what it meant: EVEN HAND. Ivo had seen the words on three requisitions that month. Each asked for a smaller margin of variance on a protected route. Each had been granted.
+
+He fetched the binder. When he came back, Thale had taken a second folder from the cabinet behind his desk, a thin one with a faded TR999 stamp, and was holding it closed.
+
+Ivo knew that folder. He had written most of it.
+
+Thale handed it to him.
+
+“File it,” he said. “Somewhere it can be found.”
+
+Ivo could not tell whether that was a warning or the nearest thing to a confession the office allowed. He filed it. That night he did not sleep, and some time before dawn he realized that he had started keeping a copy of everything that crossed the Comptroller's desk.
 
 ***
 

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "evidence_scope": "Authored development dossiers and cast coverage, not completed prose or approved new artwork",
   "source_sha256": "c15a8eab5ef671f18ff796271425a79126eece001b68dd0d6cb2a519aaf0c8e1",
-  "scene_ledger_sha256": "428f1b452cc9a333b56c31b71bf24c116ccc09c7d67c3916afbbbd7b70e47ffc",
+  "scene_ledger_sha256": "116dd80044ccc81ff05932d016a0d73a5560b654ae9a7542b9e3b3d69d50c570",
   "profiles": [
     {
       "name": "Nil",
@@ -1376,6 +1376,18 @@
       "kind": "profile"
     },
     {
+      "chapter": 14,
+      "label": "Ivo",
+      "canonical": "Ivo",
+      "kind": "profile"
+    },
+    {
+      "chapter": 14,
+      "label": "Thale",
+      "canonical": "Thale",
+      "kind": "profile"
+    },
+    {
       "chapter": 15,
       "label": "Nil",
       "canonical": "Nil",
@@ -1584,6 +1596,18 @@
       "label": "Ivo by record",
       "canonical": "Ivo",
       "kind": "indirect_record"
+    },
+    {
+      "chapter": 21,
+      "label": "Ivo",
+      "canonical": "Ivo",
+      "kind": "profile"
+    },
+    {
+      "chapter": 21,
+      "label": "Thale",
+      "canonical": "Thale",
+      "kind": "profile"
     },
     {
       "chapter": 22,

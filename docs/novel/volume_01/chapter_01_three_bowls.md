@@ -140,6 +140,8 @@ NIL looked at the stack. There were seventeen bowls on the counter and at least 
 
 She pointed them toward a basin under the awning. The water was cold. NIL removed their gloves, set them beside the basin and rolled up their sleeves. The right cuff caught briefly on the decoder. They eased it free before the baker could look closely.
 
+In the basin a stranger wavered under the porridge scum: lean, a little hunched, white hair falling toward amber eyes, one streak of orange through it like a correction nobody had ruled off. A long black coat whose left tail hung lower than the right; three brass clasps down the right side. NIL had no strong opinion about the face. It had simply come with the rest of them.
+
 The first bowl had dried porridge around its rim. The second had an old crack, neatly sealed with a line of dark resin. NIL turned it to find where the repair began and ended, then washed it twice.
 
 “That one doesn't get cleaner if you threaten it.”

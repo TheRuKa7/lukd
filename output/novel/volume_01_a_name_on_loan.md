@@ -144,6 +144,8 @@ NIL looked at the stack. There were seventeen bowls on the counter and at least 
 
 She pointed them toward a basin under the awning. The water was cold. NIL removed their gloves, set them beside the basin and rolled up their sleeves. The right cuff caught briefly on the decoder. They eased it free before the baker could look closely.
 
+In the basin a stranger wavered under the porridge scum: lean, a little hunched, white hair falling toward amber eyes, one streak of orange through it like a correction nobody had ruled off. A long black coat whose left tail hung lower than the right; three brass clasps down the right side. NIL had no strong opinion about the face. It had simply come with the rest of them.
+
 The first bowl had dried porridge around its rim. The second had an old crack, neatly sealed with a line of dark resin. NIL turned it to find where the repair began and ended, then washed it twice.
 
 “That one doesn't get cleaner if you threaten it.”
@@ -992,7 +994,7 @@ Nil crouched until their breath stopped fighting them. The wheels had marks that
 
 They took a second set. A 3, another 3, then a 7.
 
-The two matched marks locked together. A narrow channel opened between the mutual deposit and the machine's detention reserve; the Hound's temporary scale fell. Its foot skidded, not because its body had been cut but because the claim supporting the advance had lost purchase.
+The two matched marks locked together. A narrow channel opened between the mutual deposit and the machine's detention reserve; the Hound's temporary scale fell. Its foot skidded, as if the ground under its claim had been pulled away.
 
 Nil stared for half a beat too long.
 
@@ -1153,6 +1155,14 @@ Vesper set her jaw. “I could do all sorts of things.”
 She placed a narrow dealer's seal against the plate on Nil's brace and showed them the printed stake before closing the clasp. Her own defence deposit supplemented what remained on Nought's witness plate. Neither of their Civic displays changed.
 
 “Three stops,” she said. “You, me, you. Don't chase what I've already missed.”
+
+“What am I trying to make?”
+
+She answered the way a dealer reads out the house rules, fast and without looking at the cards. “Two alike, Pair. Three alike, Jackpot. Three in a row, up or down, is a Cascade; it buys a round before the other side answers. Make the three add to ten and it loses its next move. Zero-Sum. Nothing matches, you've Bust.” She paused. “Three of the number you chose at the shrine is the one people tell stories about. Don't plan your evening around it.”
+
+“You've explained this before.”
+
+“I used to deal it.” She did not say where.
 
 The machine's lane boundary rose. A bell at the forge door rang as the porter finally cleared the threshold.
 
@@ -1372,7 +1382,7 @@ Maeve joined them at the end of the balcony carrying a wrapped tool bundle and a
 
 “My aunt has the forge key. Guild has the tools. I'm coming as far as the shrine road.” She showed them a supplier slip with the same toll mark as Gus's notice. “Someone is charging us for a channel my grandmother used to keep with a kettle and a promise. I'd like to ask them what changed.”
 
-They took the drain steps toward the covered night route.
+They waited in Gus's back room until the cordon on the canal road thinned, well past midnight. Then they took the drain steps toward the covered night route.
 
 Below, a ratchet clicked. Vesper stopped turning her coin.
 
@@ -1392,7 +1402,7 @@ He pointed past her at Nil.
 
 The gate behind Varro had one control socket, occupied by his office credential.
 
-The last night bell sounded above the Wards while the warrant's conditions finished feeding through its reader. They had spent most of the night getting the tools safely into storage and finding a route past the cordons. Nil watched the paper because the man's weapon was easier not to look at: a hooked polearm with a ratchet beneath the blade, its reach almost the width of the steps.
+The last night bell sounded above the Wards while the warrant's conditions finished feeding through its reader. They had waited half the night for the cordon to thin; Varro had evidently waited with them. Nil watched the paper because the man's weapon was easier not to look at: a hooked polearm with a ratchet beneath the blade, its reach almost the width of the steps.
 
 Maeve set her tool bundle down well outside it.
 
@@ -1534,7 +1544,7 @@ The jar's substitution made it 0.
 
 Three, seven, zero. Ten.
 
-The Zero-Sum channel closed Varro's next action before the heavier strike could begin. The loaded spring remained visibly caught. No blow vanished after hitting anyone; the action had been prevented from opening.
+The Zero-Sum channel closed Varro's next action before the heavier strike could begin. The loaded spring remained visibly caught.
 
 The third affected-round segment went dark.
 
@@ -1542,7 +1552,7 @@ The jar opened.
 
 Its defended latch had moved only twice. It did not matter. The three affected rounds were over. The stored 7 slid into a restoration token connected to the last scoring position, waiting for the next actual stop.
 
-Vesper looked at Nil and nodded toward the final wheel. Her revolver remained trained on the stair above Varro. Five cartridges remained: the two shots in the lanes were the only ones she had fired. Inside the stake, it was the declared scoring channel they were working together; shooting the man would not improve its result.
+Vesper looked at Nil and nodded toward the final wheel. Her revolver remained trained on the stair above Varro. Five cartridges remained. Inside the stake, a bullet would buy nothing.
 
 The next sequence was theirs.
 
@@ -1680,7 +1690,7 @@ Gus bound the original receipt in oilcloth. One copy went into his dispatch draw
 
 Nil nodded. This time they did not try to improve the answer by hearing more than he had said.
 
-Maeve brought them to the sheltered roof above the guild store. The tools had been signed into storage; her aunt had answered the notice. There was nothing left for Maeve to carry away except the bundle, her papers and the question she meant to ask.
+Maeve brought them to the sheltered roof above the guild store. They spent the rest of the day there under a tarpaulin, sleeping in turns, while the public boards below changed Nil's description twice. The tools had been signed into storage; her aunt had answered the notice. There was nothing left for Maeve to carry away except the bundle, her papers and the question she meant to ask.
 
 She set a small rough charm on Nil's knee. One of her spare washers sat inside a loop of wire, its chipped edge filed smooth.
 
@@ -1698,7 +1708,7 @@ Nil turned it over. It had no registered frame fitting.
 
 She gave them a fresh cloth before they could bleed on the washer and went to find a place to unroll her blanket.
 
-Vesper sat beside the roof hatch, wiping rain from the cylinder. She laid five unfired cartridges beside the single empty case from the ladder shot; the first empty case was still in her pocket. Seven chambers, each a physical hole. When the cylinder was dry, she put the five live rounds back. Nil counted them once and stopped.
+Vesper sat beside the roof hatch, wiping rain from the cylinder. She laid out five live cartridges and two spent cases from the seven-chamber cylinder, dried each one and loaded the five back. Nil counted them once and made themself stop.
 
 “You could have left,” they said.
 

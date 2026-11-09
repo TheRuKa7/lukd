@@ -38,7 +38,7 @@ Its first term ended after a stated service cycle unless renewed through the pub
 
 A warehouse lender refused to endorse the relief release. He wanted an appeal against the source classification of some claimed surplus. The board accepted the appeal and kept the disputed portion out of the immediate distribution rather than paying it away before the question could be heard.
 
-The remaining verified surplus funded the listed under-eight-fen discharges. Not deposits. Not wages. Not luck newly created because somebody had made a generous speech.
+The remaining verified surplus funded the listed under-eight-fen discharges. Not deposits. Not wages.
 
 Jinling signed the loss of her father's sole control and her own claim to inherit it unchanged. Her pen paused at the ownership disclosure. Nil saw her look toward the quiet side door, where she could have left the room and continued buying a few debts in secret.
 
@@ -108,11 +108,9 @@ He sat beside her. The lantern on its stick leaned against the step.
 
 Jinling stood. “Then let's look.”
 
-Nil watched them go inside with the household keeper, who introduced herself before asking whether the boy wanted the door open. An arrangement had begun. It was not a child purchased along with a bounty, and it would need work after the visitors left.
+Nil watched them go inside with the household keeper, who introduced herself before asking whether the boy wanted the door open. An arrangement had begun. It would need work after the visitors left.
 
 At the back table lay a courier packet addressed through Gus's Exchange contact. Nil recognized the Wards dispatch mark. They had sent a short message on arrival; this reply had been written on Day 10 and carried by the direct cargo post. Its dates mattered. Nought knew they had reached the harbour. He knew nothing yet about the cooperative hold or the court descent.
-
-His letter did not mysteriously answer the questions they had not sent.
 
 He was still at the shrine. Baker had complained about the Collector standing where customers queued. Ama had delivered the repaired coat and kept both receipt copies. The laundry cart needed a new wheel. Gus had added the price and an address for contributing when Nil could afford it.
 
@@ -120,7 +118,7 @@ Nil read that part twice, feeling a peculiar relief at being given a concrete de
 
 Nought had included a short statement about the release order. The Wards office acknowledged receiving it but claimed the treatment transfer still required a named receiving clinic, the patient's agreement and separately guaranteed travel coverage. A stale authorization alone had not opened Livia's stair.
 
-Jinling compared its reference with the page bearing I.M. The order in the Exchange archive matched. She obtained a certified dated copy and sent it to Gus with a request to ask Livia what care and route she wanted. They did not write a rescue as if consent and medicine were pieces of a missing sum.
+Jinling compared its reference with the page bearing I.M. The order in the Exchange archive matched. She obtained a certified dated copy and sent it to Gus with a request to ask Livia what care and route she wanted.
 
 Below the order, another archive slip carried the full name behind the initials: Ivo Marr. It identified a rejected emergency-allocation proposal from TR999. Copies would be released under the existing correspondence request; the author had authorized transmission of the administrative proposal, not every classified appendix held by the Basilica.
 
@@ -133,8 +131,6 @@ Nil touched the date. “He had another option.”
 “An option with costs,” Jinling said. “And people he would have had to share the decision with.”
 
 Bai Si read the retained limits. “We should compare this with the original if we reach it.”
-
-They copied the reference, not the conclusion that a document had solved the problem by existing.
 
 Nought's second sheet was less official. He wrote that questions about the route papers might grow into a larger inquiry. He supplied the addresses of Open Hand contacts: a clinic, a meal room, a carrier who accepted sealed counter-copies without demanding the private account inside.
 
@@ -171,6 +167,32 @@ That evening Jinling went back to the hearing desk to sign her departure disclos
 No one asked whether she had forgiven him. She put the bowl with the road provisions.
 
 Nil slept in the bed one last night, with three separately wrapped credentials and the paid caravan receipt beneath the notebook.
+
+***
+
+The Bāfā hearing reached the Comptroller's desk as one line in the relay digest: EXCHANGE CONTROL REVIEW CLOSED. PROVISIONAL BOARD SEATED. SEAL 8 RELEASED.
+
+Thale read it three times. Then he asked who had bought the transferable claim.
+
+“Ba Jinling,” Ivo said. “Private funds. She attached a no-transfer condition.”
+
+“Jin Chan's daughter.” Something moved at the corner of Thale's mouth. “So the Exchange has paid me the compliment of an argument.”
+
+He did not order the claim bought back. He wrote a new instruction in his own hand and gave it to Ivo to code. No further pursuit through private exchanges. The plateau observatories to be reminded of their reporting duties under the instrument charter. Every regional desk to forward any request touching TR999 to the Comptroller personally.
+
+Ivo coded it. Three lines down the request log was his own name, beside an Exchange application for the administrative text of the TR999 proposal: received two days earlier, already answered. He had signed the transmission himself. The rules allowed an author to release his own administrative work. They did not require him to mention it.
+
+Thale did not look at the log. He looked at the window, where the pigeons had gone in for the night, and then at the Even Hand binder, which had grown by a third since Hyakki.
+
+“How many protected routes now?” he asked.
+
+“Forty-one.”
+
+“And the variance?”
+
+Ivo read the figure. It was smaller every week. On the forty-one routes nothing had gone badly wrong for a month. From everywhere else the incident reports had begun to arrive in thicker envelopes.
+
+“Good,” Thale said. He meant it. Ivo could not decide which part of that frightened him more.
 
 ***
 

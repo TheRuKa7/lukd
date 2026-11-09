@@ -220,7 +220,9 @@ Little Lantern looked at the raised patch on her umbrella. He did not touch it. 
 
 He studied her expression, then smiled. It was the first time he had smiled without watching an adult's hands.
 
-“And the comparison?” they asked.
+When Jinling came back from the counter, Nil asked the question they had been holding since the claim board.
+
+“And the comparison?”
 
 “I would like your help. We can negotiate that after you have eaten.”
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "evidence_scope": "Authored scene plan, not prose, page scripts or generated manga",
-  "source_sha256": "867d080833036ef2cc7dc05a3b05a86026d532c889e2f4803e743bf5a73ee5a1",
+  "source_sha256": "9f46e93245a66685969fe46ba5a09bf1c6926551382b811f3e36c459251995e5",
   "chapters": [
     {
       "chapter": 1,
@@ -495,13 +495,15 @@
       "title": "The Toll Changes Hands",
       "volume": 2,
       "relative_day": "7",
-      "location": "Shrine road and River-bound ferry",
+      "location": "Shrine road and River-bound ferry; Meridian Comptroller office interlude",
       "cast": [
         "Nil",
         "Hina",
         "Ofuku",
         "Tamamo",
-        "Tetsu"
+        "Tetsu",
+        "Ivo",
+        "Thale"
       ],
       "travelling_roster": [
         "Nil",
@@ -777,14 +779,16 @@
       "title": "A Debt to the Living",
       "volume": 3,
       "relative_day": "13",
-      "location": "Bāfā public hearing and departure",
+      "location": "Bāfā public hearing and departure; Meridian Comptroller office interlude",
       "cast": [
         "Nil",
         "Jinling",
         "workers",
         "depositors",
         "Nought by letter",
-        "Ivo by record"
+        "Ivo by record",
+        "Ivo",
+        "Thale"
       ],
       "travelling_roster": [
         "Nil",

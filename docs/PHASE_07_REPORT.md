@@ -63,3 +63,5 @@ Before any approved native test, review the script against revised prose, the fi
 ## Executed checks
 
 Final source/output identity, page-count, panel-order, damaged-input and documentation results are recorded after execution. The predecessor gate remains NOT_READY, independently of successful script checks.
+
+**Recorded 9 November 2026 (critique pass).** The interrupted run had left the compiled script out of date: `CAST_AND_PROPS.json` changed after the last build. After the critique line edits to the Volume 1 prose, `build_manga_volume_script.py` was rerun and its `--check` passes: 154 pages, 491 panels, seven chapters, current prose hashes. Volume manuscript checks 1–3 pass, the scene ledger and dossier compilers pass (242 cast mentions, 0 uncovered), the current-edition plan has no errors, document contracts pass, and the prose gate remains NOT_READY at 21 chapters. Phases 5–10 continue under the [pre-production plan](PREPRODUCTION_PLAN.md).

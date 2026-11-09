@@ -74,7 +74,7 @@ Nil looked up.
 
 “Then remember. You don't have to carry the whole stair.”
 
-She sat facing the canal behind them. Her hand rested near her holster without touching it. The small cut beneath her lip scar had dried to a dark line. Five live cartridges; Nil knew the count because she had made no effort to turn the gun into a mystery.
+She sat facing the canal behind them. Her hand rested near her holster without touching it. The small cut beneath her lip scar had dried to a dark line.
 
 For a while they travelled between high stone walls. Water stains marked floods above the height of Nil's head. Workers on a maintenance shelf were hauling up a bent grate. One raised a hand to Tetsu; he answered without releasing the tiller.
 
@@ -786,7 +786,7 @@ Nil could refuse the demonstration and still receive the answer. They stayed by 
 
 Enma set the request slip where all of them could see it. “Then let us make the route safe.”
 
-The first round began with a deep wooden click. Each strike had a declared base of fifty training units, printed beside the gauge. Not Nil's ordinary field strength: the instrument's calibration, for the instrument's bounded reserve. The actual digit would be added to it.
+The first round began with a deep wooden click. Each strike had a declared base of fifty training units, printed beside the gauge. The actual digit would be added to it.
 
 Nil stopped 5. Vesper, taking the second position, caught 3.
 
@@ -1310,7 +1310,7 @@ Hina laid her household witness tag beside the others. Her local 9 channel could
 
 “Yes.” She looked at the emergency hood. “I want to stay.”
 
-Maeve took the observer's station beside Aka. Vesper kept her revolver in the sealed rack. Her hands would stop wheels; a bullet would contribute nothing to the agreed claim.
+Maeve took the observer's station beside Aka. Vesper kept her revolver in the sealed rack.
 
 Tamamo stepped into the centre of the room.
 
@@ -1338,7 +1338,7 @@ A warning shook through the floor. The return shutters began to close. Nil moved
 
 “Down, by me,” Vesper said.
 
-Nil went down. Hina lowered the umbrella to shield their view from the brightest image, not their bodies from an impossible blow. Behind its paper the real brass studs stood out. Nil reached the return catch and found zero by the actual marker.
+Nil went down. Hina lowered the umbrella to shade their view from the brightest image. Behind its paper the real brass studs stood out. Nil reached the return catch and found zero by the actual marker.
 
 The closing load struck the frame instead of driving through their declared stake. A safety rail rattled under Vesper's hand. Nothing had hit Tamamo, and one of the court's tail gauges had nevertheless lost part of its allotted capacity in the exchange.
 
@@ -1458,7 +1458,7 @@ Hina raised the umbrella, bringing the old patch between the projection lamp and
 
 Nil stopped 9.
 
-Three nines locked in the scoring frame. A Jackpot under Hina's authorized route, not Nil's chosen-seven pattern, not a new birthday.
+Three nines locked in the scoring frame. A Jackpot, carried on Hina's own route.
 
 The last three vessels settled to their closing lines. The projected walls collapsed into ordinary light. Tamamo's actual nine tails remained behind her, no longer carrying an active challenge digit. Her Civic still read 99.
 
@@ -1584,7 +1584,7 @@ The road gauge rose. Somewhere outside, a dispatch bell rang once.
 
 The woman with the broken emergency seal closed her eyes.
 
-Nothing in the room announced that history had changed. A courier outside swore because the bell had caught him carrying a sack. He set it down, took the new route slip and went out to do the work the open channel now allowed.
+A courier outside swore because the bell had caught him carrying a sack. He set it down, took the new route slip and went out to do the work the open channel now allowed.
 
 Only after the local receiver had completed its witnessed test did Tamamo release the exclusive office credential. Seal 9 came free into Ao's hand. The new agreement ended its monopoly use on these routes; it remained a credential recognized by the central access system, not a title to Hyakki.
 
@@ -1737,6 +1737,42 @@ Night reached them in the outer channel. They ate the rice packets Ofuku had pac
 Nil put the two separately wrapped Seals beside the notebook and checked the oilcloth. They wrote down the Exchange receiving desk, the route reference and the fact that the carrier's ankle still needed work.
 
 Then the boat's slow motion drew the words out of focus.
+
+***
+
+In Meridian, the Hyakki release came up the relay an hour after it was signed.
+
+Ivo Marr carried the transcript to the upper offices with the evening post. Thale was at the window, where the pigeons had learned that the Comptroller kept a tin of split grain on the ledge. He fed them one measure at a time, never the whole tin, and closed the lid between handfuls.
+
+“Seal nine,” Ivo said.
+
+Thale read the release standing. He read the household schedule first, then the dispatch rota, then the line in which the court gave up its exclusive clearance. Only at the end did he look at the witness names.
+
+“The carriers?” he asked.
+
+“Restored where the route has reached them. The schedule lists one ankle still under repair.”
+
+“Honour the schedule. If the road office delays a single delivery to make a point, I want the clerk's name.” He set the paper square to the edge of the desk. “They have done Hyakki a service. They have not done it a kindness.”
+
+Ivo waited. With Thale there was always a remainder to the instruction.
+
+“Re-post the claim under this office,” Thale said. “Not the Wards desk. Mine. National circulation, every exchange that carries our paper.”
+
+“The harbour registries can buy a transferable claim and suspend it.”
+
+“Then let them buy it. I would like to know who is willing to pay.” He turned a page of the evening report. “And bring me the stabilisation schedule. All of it, including the appendices you think I've forgotten.”
+
+The schedule had a working title on its cover, typed by a clerk who had not been told what it meant: EVEN HAND. Ivo had seen the words on three requisitions that month. Each asked for a smaller margin of variance on a protected route. Each had been granted.
+
+He fetched the binder. When he came back, Thale had taken a second folder from the cabinet behind his desk, a thin one with a faded TR999 stamp, and was holding it closed.
+
+Ivo knew that folder. He had written most of it.
+
+Thale handed it to him.
+
+“File it,” he said. “Somewhere it can be found.”
+
+Ivo could not tell whether that was a warning or the nearest thing to a confession the office allowed. He filed it. That night he did not sleep, and some time before dawn he realized that he had started keeping a copy of everything that crossed the Comptroller's desk.
 
 ***
 

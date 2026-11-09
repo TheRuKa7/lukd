@@ -232,7 +232,7 @@ The cooperative witness unrolled her map beside the death return. “Our living 
 
 “That is a question we can take below,” he said. “Judge Cui retains the independent returns. The Exchange does not control his book.”
 
-Jinling read the access conditions. The route went through a service descent at the river's old gate, with a defined crossing and a return register. It was not a leap into water in the hope that a supernatural country would catch them.
+Jinling read the access conditions. The route went through a service descent at the river's old gate, with a defined crossing and a return register.
 
 “What do we need?” she asked.
 

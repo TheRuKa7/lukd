@@ -4,7 +4,7 @@
 
 The gate behind Varro had one control socket, occupied by his office credential.
 
-The last night bell sounded above the Wards while the warrant's conditions finished feeding through its reader. They had spent most of the night getting the tools safely into storage and finding a route past the cordons. Nil watched the paper because the man's weapon was easier not to look at: a hooked polearm with a ratchet beneath the blade, its reach almost the width of the steps.
+The last night bell sounded above the Wards while the warrant's conditions finished feeding through its reader. They had waited half the night for the cordon to thin; Varro had evidently waited with them. Nil watched the paper because the man's weapon was easier not to look at: a hooked polearm with a ratchet beneath the blade, its reach almost the width of the steps.
 
 Maeve set her tool bundle down well outside it.
 
@@ -146,7 +146,7 @@ The jar's substitution made it 0.
 
 Three, seven, zero. Ten.
 
-The Zero-Sum channel closed Varro's next action before the heavier strike could begin. The loaded spring remained visibly caught. No blow vanished after hitting anyone; the action had been prevented from opening.
+The Zero-Sum channel closed Varro's next action before the heavier strike could begin. The loaded spring remained visibly caught.
 
 The third affected-round segment went dark.
 
@@ -154,7 +154,7 @@ The jar opened.
 
 Its defended latch had moved only twice. It did not matter. The three affected rounds were over. The stored 7 slid into a restoration token connected to the last scoring position, waiting for the next actual stop.
 
-Vesper looked at Nil and nodded toward the final wheel. Her revolver remained trained on the stair above Varro. Five cartridges remained: the two shots in the lanes were the only ones she had fired. Inside the stake, it was the declared scoring channel they were working together; shooting the man would not improve its result.
+Vesper looked at Nil and nodded toward the final wheel. Her revolver remained trained on the stair above Varro. Five cartridges remained. Inside the stake, a bullet would buy nothing.
 
 The next sequence was theirs.
 
@@ -292,7 +292,7 @@ Gus bound the original receipt in oilcloth. One copy went into his dispatch draw
 
 Nil nodded. This time they did not try to improve the answer by hearing more than he had said.
 
-Maeve brought them to the sheltered roof above the guild store. The tools had been signed into storage; her aunt had answered the notice. There was nothing left for Maeve to carry away except the bundle, her papers and the question she meant to ask.
+Maeve brought them to the sheltered roof above the guild store. They spent the rest of the day there under a tarpaulin, sleeping in turns, while the public boards below changed Nil's description twice. The tools had been signed into storage; her aunt had answered the notice. There was nothing left for Maeve to carry away except the bundle, her papers and the question she meant to ask.
 
 She set a small rough charm on Nil's knee. One of her spare washers sat inside a loop of wire, its chipped edge filed smooth.
 
@@ -310,7 +310,7 @@ Nil turned it over. It had no registered frame fitting.
 
 She gave them a fresh cloth before they could bleed on the washer and went to find a place to unroll her blanket.
 
-Vesper sat beside the roof hatch, wiping rain from the cylinder. She laid five unfired cartridges beside the single empty case from the ladder shot; the first empty case was still in her pocket. Seven chambers, each a physical hole. When the cylinder was dry, she put the five live rounds back. Nil counted them once and stopped.
+Vesper sat beside the roof hatch, wiping rain from the cylinder. She laid out five live cartridges and two spent cases from the seven-chamber cylinder, dried each one and loaded the five back. Nil counted them once and made themself stop.
 
 “You could have left,” they said.
 

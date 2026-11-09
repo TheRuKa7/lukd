@@ -1,15 +1,15 @@
 {
   "status": "PASS",
   "evidence_scope": "Six authored stop traces and pattern priority only; not simulated Balance, interest, damage, actor levels or runtime implementation. Jinling legal faces are a documented future candidate.",
-  "manuscript_sha256": "d61259f83b2199548b5ebd7726f9adf7cf193812d04cd13005aa96bcc41f633f",
+  "manuscript_sha256": "e5b2b37338c23dd59eb25bc4313a991090cef0fd138540eac4055b044d8039b5",
   "source_chapter_sha256": [
-    "7bbc000e507e34ea13aaa29e11d49609ef0d9d69824da30ce3f966b05f99d40a",
-    "177684e0f8e87dbc0ac7daf92c842af63a7dfebd2ecf360e7167796fbb915ecb",
-    "d7f8a6ae0c279e4d90a20f04a2198e46566f0ab1f0beab6c1efff7ba80989ba9",
+    "5a2db2f6d848dcef9e2cd8deeb6b623ff3db77eee4bc123039edbf6f11b18ba2",
+    "7dd5a1330c802bb67595d13a88e92294118dacdd5dbd32da93bafb1c2465c97c",
+    "41e461e0e0a31c9f427d78567371d0efd417f02f34569f57128dc20e6a59100f",
     "e45fbe3136be1fa8178f10ec5584a02afc5db1e3cb915b0aa3047eb9f90b62a0",
-    "1f00247cadcb16dfd7af84e705801878098cd0e4e934fdfd7b7f449e5b74b90b",
+    "45643b5a106548faf1da87a5e4b0fbbd507808d2c8a615faaff8df5bddf1b7ea",
     "821df8a05534b86fcd6c8d0e940d59e27ec5eb619d8904a020fa001e0ee3f09d",
-    "e7cc97a126da7513f6e0b476f80ba68a7bc0743310efde91475121d8b8f111df"
+    "37f076a53821fb7c56c7cb1abac2c73db98a38763bbbf4b61485ab9b7cbe3458"
   ],
   "results": [
     {
@@ -102,5 +102,6 @@
       "rewrite_used": true,
       "pattern": "OVERWRITE"
     }
-  ]
+  ],
+  "compilation_update": "2026-11-09 line edit and antagonist interlude; no digit trace changed. Hashes rebound after rebuild."
 }

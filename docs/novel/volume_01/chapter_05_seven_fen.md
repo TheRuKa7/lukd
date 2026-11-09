@@ -80,7 +80,7 @@ Nil crouched until their breath stopped fighting them. The wheels had marks that
 
 They took a second set. A 3, another 3, then a 7.
 
-The two matched marks locked together. A narrow channel opened between the mutual deposit and the machine's detention reserve; the Hound's temporary scale fell. Its foot skidded, not because its body had been cut but because the claim supporting the advance had lost purchase.
+The two matched marks locked together. A narrow channel opened between the mutual deposit and the machine's detention reserve; the Hound's temporary scale fell. Its foot skidded, as if the ground under its claim had been pulled away.
 
 Nil stared for half a beat too long.
 

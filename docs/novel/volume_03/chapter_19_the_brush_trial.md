@@ -86,7 +86,7 @@ For a moment all they could hear was water tapping in a basin beyond the screen.
 
 They wrote in the upper window. A single ink pin dropped; the trial Balance moved from 100 to 90. The scoring line became 3,3,3 while the actual line remained 3,3,4.
 
-The Jackpot closed the trial objective. Nobody's account above their head changed. Cui detached the small training pin before handing the Brush back to its support.
+The Jackpot closed the trial objective. Cui detached the small training pin before handing the Brush back to its support.
 
 “That is the beginning of Rewrite,” he said. “Not permission to use another person's record as a blank page.”
 

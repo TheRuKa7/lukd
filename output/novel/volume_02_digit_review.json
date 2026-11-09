@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "evidence_scope": "Eight authored digit traces checked against legal faces and the existing reference pattern evaluator. Carry arithmetic is an authored novel rule, not a claim of runtime implementation or damage balance.",
-  "manuscript_sha256": "e4d305f613d137c0866585382246aca10e9a25ddd3748756fe73aa844a349279",
+  "manuscript_sha256": "62bd882dea1d528e5157b5aa6239789ba800cb9bd2096e0cef448e3fac25e64f",
   "results": [
     {
       "chapter": 11,
@@ -116,14 +116,14 @@
       "pattern": "JACKPOT"
     }
   ],
-  "compilation_update": "Adopted story title added; Volume2 prose unchanged. Eight prior traces rechecked.",
+  "compilation_update": "2026-11-09 line edit and antagonist interlude; no digit trace changed. Hashes rebound after rebuild.",
   "source_chapter_sha256": [
-    "ed9a64c19218d4049b9b0d590efe6e7b47a4621dde061ece0de2d56f4c60a90c",
+    "8eac11b483ba76bcf6f839e794463fefaee944bb6d00496020c697fa432d600a",
     "1c06f1b51c2072d1143f7e4d2cce075301a6928c7888506ceab956f32a5c193c",
     "cf4767cf01e37100127d5a60ad4a182a2703c4457e62aac5c9ef77349259a2eb",
-    "f31789531b79ff49cea0d760923454fcbe86bb1015bfc527665cc5b5616700a5",
+    "aa072b5e695f7212e19fa82333d6755d27a28e374d146d269325dd2cd7837c8f",
     "ebb3d6afbb74f468f51b813355fee49f56f6b11c9b4e2640048f91ed8ffaa7d9",
-    "aec41fcaf1604d9ada8979e197a209b8258b6caaf58ba802a061e327eb22e865",
-    "462809f99a7985eb6664fabeab8f0a47484d2b744e291ba2a6ed916d84f75f66"
+    "d145ba0445a13a9a55aa1cb23f18bd58285ae4f4cd674f2e604fa1f762b898df",
+    "f22103990f7f5faf1a52157cadb60a07e02a0936c6fee74c7f62c6267fc8fc03"
   ]
 }

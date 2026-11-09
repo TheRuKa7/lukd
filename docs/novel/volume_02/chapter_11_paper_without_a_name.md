@@ -74,7 +74,7 @@ Nil could refuse the demonstration and still receive the answer. They stayed by 
 
 Enma set the request slip where all of them could see it. “Then let us make the route safe.”
 
-The first round began with a deep wooden click. Each strike had a declared base of fifty training units, printed beside the gauge. Not Nil's ordinary field strength: the instrument's calibration, for the instrument's bounded reserve. The actual digit would be added to it.
+The first round began with a deep wooden click. Each strike had a declared base of fifty training units, printed beside the gauge. The actual digit would be added to it.
 
 Nil stopped 5. Vesper, taking the second position, caught 3.
 

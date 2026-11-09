@@ -582,7 +582,7 @@ New data requires a fresh question and renewed consent; Shunya preserves the rej
 
 Volume4 · relative Day17 · Observatory comparison room
 
-**Focal participants:** Nil, Shunya, Bai Si, Jinling, Vesper.
+**Focal participants:** Nil, Shunya, Bai Si, Jinling, Vesper, Brask.
 
 **Travel roster (not a mandatory panel list):** Nil, Vesper, Maeve, Hina, Jinling, Bai Si, Shunya.
 
@@ -630,7 +630,7 @@ Bai Si writes Wen's disputed name into his continuing record; Nil chooses to sto
 
 Volume4 · relative Day19 · Plateau eclipse-engine works
 
-**Focal participants:** Nil, Shunya, Vidya Rao, surveyors, companions.
+**Focal participants:** Nil, Shunya, Vidya Rao, surveyors, companions, Brask.
 
 **Travel roster (not a mandatory panel list):** Nil, Vesper, Maeve, Hina, Jinling, Bai Si, Shunya.
 
@@ -652,9 +652,9 @@ Seal0 releases the control monopoly; Vidya records brightness varies, while Shun
 
 ## 28 — An Order Accelerated
 
-Volume4 · relative Day20 · Observatory dispatch room and Kroton road
+Volume4 · relative Day20 · Observatory dispatch room and Kroton road; Meridian Comptroller office interlude
 
-**Focal participants:** Nil, Shunya, Jinling, Vidya Rao, courier.
+**Focal participants:** Nil, Shunya, Jinling, Vidya Rao, courier, Brask, Ivo, Thale.
 
 **Travel roster (not a mandatory panel list):** Nil, Vesper, Maeve, Hina, Jinling, Bai Si, Shunya.
 

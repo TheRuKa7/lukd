@@ -2282,6 +2282,7 @@
     4,
     14,
     21,
+    28,
     46,
     47,
     48,
@@ -3415,6 +3416,7 @@
     14,
     21,
     21,
+    28,
     44,
     45,
     46,
@@ -7203,11 +7205,33 @@
    "class": "recurring_hunter",
    "tier": "B",
    "game_role": "recurring_enemy",
-   "novel_name": null,
-   "in_novel": false,
-   "first_chapter": null,
-   "ledger_chapters": [],
-   "novel_profile": null,
+   "novel_name": "Brask",
+   "in_novel": true,
+   "first_chapter": 25,
+   "ledger_chapters": [
+    25,
+    27,
+    28
+   ],
+   "novel_profile": {
+    "name": "Brask",
+    "want": "Close her assignments without losing a single officer, and keep her crews paid",
+    "fear": "That an order she carried out will be the one that kills someone she could have warned",
+    "mistaken_belief": "A lawful order is its own justification, so long as she writes down what it costs",
+    "competence": "Pursuit logistics, reading crowds and running linked Collector pairs; meticulous field reports",
+    "harm_or_cost": "Enforces seizures and guards the eclipse engines against the party; her linked officers come close to killing Nil before she surrenders the credential",
+    "decisive_chapters": "25,27,28",
+    "independent_relationship": "Thale reads her reports and acts on them; her officers trust her more than the office; Nil makes her start asking what her orders cost",
+    "voice": "Plain, procedural and polite; asks after people's health and means it; never raises her voice",
+    "private_life": "Writes the weather, the fields and the Civic numbers of the people affected into reports nobody asked for",
+    "end_state": "Testifies about seizure orders in the public proceedings and keeps her crews employed under council review; no automatic absolution",
+    "chapter_ids": [
+     25,
+     27,
+     28
+    ],
+    "actor_type": "person_or_supernatural_person"
+   },
    "cultural_review": false
   },
   "hungry_ghost_swarm": {

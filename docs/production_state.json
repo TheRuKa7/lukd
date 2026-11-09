@@ -89,13 +89,15 @@
  "preproduction_phases": [
   {
    "phase": 1,
-   "status": "not_started",
-   "title": "Canon lock and project reset"
+   "status": "complete",
+   "title": "Canon lock and project reset",
+   "note": "Canon registry (canon/), reconciliation, LF and LFS rules; the 2.4 GB art backlog is not yet uploaded to LFS (quota decision pending)"
   },
   {
    "phase": 2,
-   "status": "not_started",
-   "title": "Finish the novel draft"
+   "status": "in_progress",
+   "title": "Finish the novel draft",
+   "note": "Volume 4 drafted (chapters 22-28, 15,750 words); 28 of 49 chapters, 59,740 words; Volumes 5-7 remain"
   },
   {
    "phase": 3,
@@ -137,5 +139,6 @@
    "status": "not_started",
    "title": "Unity-ready assets and project setup"
   }
- ]
+ ],
+ "research": "docs/research/GAME_DESIGN_RESEARCH.md"
 }

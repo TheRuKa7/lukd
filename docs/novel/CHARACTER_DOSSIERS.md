@@ -1057,3 +1057,25 @@ Actor type: person_or_supernatural_person. Decisive chapters: 20,35,40,49.
 **Private life:** Has work shifts and education outside the scene about what happened to her.
 
 **End state:** Chooses the terms of contact, receives directed restitution and is not obliged to forgive.
+
+## Brask
+
+Actor type: person_or_supernatural_person. Decisive chapters: 25,27,28.
+
+**Want:** Close her assignments without losing a single officer, and keep her crews paid.
+
+**Fear:** That an order she carried out will be the one that kills someone she could have warned.
+
+**Mistaken belief:** A lawful order is its own justification, so long as she writes down what it costs.
+
+**Competence:** Pursuit logistics, reading crowds and running linked Collector pairs; meticulous field reports.
+
+**Harm or cost:** Enforces seizures and guards the eclipse engines against the party; her linked officers come close to killing Nil before she surrenders the credential.
+
+**Independent relationship:** Thale reads her reports and acts on them; her officers trust her more than the office; Nil makes her start asking what her orders cost.
+
+**Voice:** Plain, procedural and polite; asks after people's health and means it; never raises her voice.
+
+**Private life:** Writes the weather, the fields and the Civic numbers of the people affected into reports nobody asked for.
+
+**End state:** Testifies about seizure orders in the public proceedings and keeps her crews employed under council review; no automatic absolution.

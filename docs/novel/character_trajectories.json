@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "evidence_scope": "Authored development dossiers and cast coverage, not completed prose or approved new artwork",
-  "source_sha256": "c15a8eab5ef671f18ff796271425a79126eece001b68dd0d6cb2a519aaf0c8e1",
-  "scene_ledger_sha256": "beee84eb6756cd89a9b254df9be9f027d9d33a115b3d7833bcab1f5bbc7f4676",
+  "source_sha256": "77a85fe52e9b881e3041ea835001b5691389c99617c5ee0c6607fd246b81da49",
+  "scene_ledger_sha256": "5a2cea43f153ab37e9912ae0e8f50bcc2e293537d3b87e3ad119330afea378d8",
   "profiles": [
     {
       "name": "Nil",
@@ -949,6 +949,25 @@
         49
       ],
       "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Brask",
+      "want": "Close her assignments without losing a single officer, and keep her crews paid",
+      "fear": "That an order she carried out will be the one that kills someone she could have warned",
+      "mistaken_belief": "A lawful order is its own justification, so long as she writes down what it costs",
+      "competence": "Pursuit logistics, reading crowds and running linked Collector pairs; meticulous field reports",
+      "harm_or_cost": "Enforces seizures and guards the eclipse engines against the party; her linked officers come close to killing Nil before she surrenders the credential",
+      "decisive_chapters": "25,27,28",
+      "independent_relationship": "Thale reads her reports and acts on them; her officers trust her more than the office; Nil makes her start asking what her orders cost",
+      "voice": "Plain, procedural and polite; asks after people's health and means it; never raises her voice",
+      "private_life": "Writes the weather, the fields and the Civic numbers of the people affected into reports nobody asked for",
+      "end_state": "Testifies about seizure orders in the public proceedings and keeps her crews employed under council review; no automatic absolution",
+      "chapter_ids": [
+        25,
+        27,
+        28
+      ],
+      "actor_type": "person_or_supernatural_person"
     }
   ],
   "groups": {
@@ -1724,6 +1743,12 @@
       "kind": "profile"
     },
     {
+      "chapter": 25,
+      "label": "Brask",
+      "canonical": "Brask",
+      "kind": "profile"
+    },
+    {
       "chapter": 26,
       "label": "Nil",
       "canonical": "Nil",
@@ -1784,6 +1809,12 @@
       "kind": "group"
     },
     {
+      "chapter": 27,
+      "label": "Brask",
+      "canonical": "Brask",
+      "kind": "profile"
+    },
+    {
       "chapter": 28,
       "label": "Nil",
       "canonical": "Nil",
@@ -1812,6 +1843,24 @@
       "label": "courier",
       "canonical": "courier",
       "kind": "group"
+    },
+    {
+      "chapter": 28,
+      "label": "Brask",
+      "canonical": "Brask",
+      "kind": "profile"
+    },
+    {
+      "chapter": 28,
+      "label": "Ivo",
+      "canonical": "Ivo",
+      "kind": "profile"
+    },
+    {
+      "chapter": 28,
+      "label": "Thale",
+      "canonical": "Thale",
+      "kind": "profile"
     },
     {
       "chapter": 29,

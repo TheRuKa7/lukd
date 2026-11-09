@@ -3,15 +3,8 @@
   "status": "NOT_READY",
   "evidence_scope": "Chapter identity, substantive-length floor, explicit placeholder screening and hashes; not scene execution, originality or literary acceptance",
   "expected_chapters": 49,
-  "draft_chapters": 21,
+  "draft_chapters": 28,
   "missing_chapters": [
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
     29,
     30,
     31,
@@ -34,7 +27,7 @@
     48,
     49
   ],
-  "body_words": 43990,
+  "body_words": 59740,
   "errors": [],
   "warnings": [
     "Current word total is outside the110,000–140,000 full-novel planning range"
@@ -235,50 +228,64 @@
       "chapter": 22,
       "volume": 4,
       "title": "Room for Chai",
-      "status": "missing",
-      "body_words": 0
+      "status": "draft",
+      "body_words": 2861,
+      "source": "docs/novel/volume_04/chapter_22_room_for_chai.md",
+      "sha256": "dd47024fb8a739e6d5bff87642f92fe6b2387d80967077c42468775354292ee8"
     },
     {
       "chapter": 23,
       "volume": 4,
       "title": "The Drowned Record",
-      "status": "missing",
-      "body_words": 0
+      "status": "draft",
+      "body_words": 2041,
+      "source": "docs/novel/volume_04/chapter_23_the_drowned_record.md",
+      "sha256": "aabb9db3da1c9fc71fb74d9b5a11f1e4c709d47c7050eaffaeeff0256fe9088e"
     },
     {
       "chapter": 24,
       "volume": 4,
       "title": "Terms of Examination",
-      "status": "missing",
-      "body_words": 0
+      "status": "draft",
+      "body_words": 2226,
+      "source": "docs/novel/volume_04/chapter_24_terms_of_examination.md",
+      "sha256": "c9dc4e2477d1bdd282eed0b21c0db8184bfcd44d8299ae7be8391199e19976ef"
     },
     {
       "chapter": 25,
       "volume": 4,
       "title": "Everyone's Handwriting",
-      "status": "missing",
-      "body_words": 0
+      "status": "draft",
+      "body_words": 1854,
+      "source": "docs/novel/volume_04/chapter_25_everyones_handwriting.md",
+      "sha256": "d12f20f59d827cd86d999fcf5aca1ddd306d98e06b43974c1ea62757a5c311a4"
     },
     {
       "chapter": 26,
       "volume": 4,
       "title": "But You Are Yours",
-      "status": "missing",
-      "body_words": 0
+      "status": "draft",
+      "body_words": 2276,
+      "source": "docs/novel/volume_04/chapter_26_but_you_are_yours.md",
+      "sha256": "bdb7b0720d359342a005f7fe623baf8f1cd4ddb8da30b0b34c059d8688a04b01"
     },
     {
       "chapter": 27,
       "volume": 4,
       "title": "Brightness: Varies",
-      "status": "missing",
-      "body_words": 0
+      "status": "draft",
+      "body_words": 2551,
+      "source": "docs/novel/volume_04/chapter_27_brightness_varies.md",
+      "sha256": "e80937e4d1e9b8eaf967fd16d59dbf09decf01d19d9398e8370ee8ad0b32d07d"
     },
     {
       "chapter": 28,
       "volume": 4,
       "title": "An Order Accelerated",
-      "status": "missing",
-      "body_words": 0
+      "status": "draft",
+      "body_words": 1941,
+      "source": "docs/novel/volume_04/chapter_28_an_order_accelerated.md",
+      "sha256": "df52dd9689aba87d019679d27d150044c4d18203cab396816b49b84b43b5c483"
     },
     {
       "chapter": 29,

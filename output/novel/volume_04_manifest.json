@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "evidence_scope": "Compilation, source identity and body word counts; not independent reader acceptance",
+  "volume": 4,
+  "chapters": [
+    {
+      "chapter": 22,
+      "title": "Room for Chai",
+      "source": "docs/novel/volume_04/chapter_22_room_for_chai.md",
+      "sha256": "dd47024fb8a739e6d5bff87642f92fe6b2387d80967077c42468775354292ee8",
+      "body_words": 2861,
+      "planned_scene_ids": [
+        "ch22_s1",
+        "ch22_s2",
+        "ch22_s3"
+      ]
+    },
+    {
+      "chapter": 23,
+      "title": "The Drowned Record",
+      "source": "docs/novel/volume_04/chapter_23_the_drowned_record.md",
+      "sha256": "aabb9db3da1c9fc71fb74d9b5a11f1e4c709d47c7050eaffaeeff0256fe9088e",
+      "body_words": 2041,
+      "planned_scene_ids": [
+        "ch23_s1",
+        "ch23_s2",
+        "ch23_s3"
+      ]
+    },
+    {
+      "chapter": 24,
+      "title": "Terms of Examination",
+      "source": "docs/novel/volume_04/chapter_24_terms_of_examination.md",
+      "sha256": "c9dc4e2477d1bdd282eed0b21c0db8184bfcd44d8299ae7be8391199e19976ef",
+      "body_words": 2226,
+      "planned_scene_ids": [
+        "ch24_s1",
+        "ch24_s2",
+        "ch24_s3"
+      ]
+    },
+    {
+      "chapter": 25,
+      "title": "Everyone's Handwriting",
+      "source": "docs/novel/volume_04/chapter_25_everyones_handwriting.md",
+      "sha256": "d12f20f59d827cd86d999fcf5aca1ddd306d98e06b43974c1ea62757a5c311a4",
+      "body_words": 1854,
+      "planned_scene_ids": [
+        "ch25_s1",
+        "ch25_s2",
+        "ch25_s3"
+      ]
+    },
+    {
+      "chapter": 26,
+      "title": "But You Are Yours",
+      "source": "docs/novel/volume_04/chapter_26_but_you_are_yours.md",
+      "sha256": "bdb7b0720d359342a005f7fe623baf8f1cd4ddb8da30b0b34c059d8688a04b01",
+      "body_words": 2276,
+      "planned_scene_ids": [
+        "ch26_s1",
+        "ch26_s2",
+        "ch26_s3"
+      ]
+    },
+    {
+      "chapter": 27,
+      "title": "Brightness: Varies",
+      "source": "docs/novel/volume_04/chapter_27_brightness_varies.md",
+      "sha256": "e80937e4d1e9b8eaf967fd16d59dbf09decf01d19d9398e8370ee8ad0b32d07d",
+      "body_words": 2551,
+      "planned_scene_ids": [
+        "ch27_s1",
+        "ch27_s2",
+        "ch27_s3"
+      ]
+    },
+    {
+      "chapter": 28,
+      "title": "An Order Accelerated",
+      "source": "docs/novel/volume_04/chapter_28_an_order_accelerated.md",
+      "sha256": "df52dd9689aba87d019679d27d150044c4d18203cab396816b49b84b43b5c483",
+      "body_words": 1941,
+      "planned_scene_ids": [
+        "ch28_s1",
+        "ch28_s2",
+        "ch28_s3"
+      ]
+    }
+  ],
+  "body_words": 15750,
+  "manuscript_sha256": "1b8f2f09e0e0f56ac2c81104f0811194da37a7ec53bf3b96bd0221141104c52c",
+  "whole_series_editorially_accepted": false,
+  "authored_manga_pages": 0
+}

@@ -26,7 +26,7 @@ NOVEL_TO_ID = {
     'Jin Chan': 'jin_chan', 'Ox-Head': 'ox_head', 'Horse-Face': 'horse_face', 'Judge Cui': 'judge_cui', 'Wen': 'wen',
     'Vidya Rao': 'vidya_rao', 'Meera': 'meera', 'Chitragupta': 'chitragupta', 'Kallisto': 'kallisto', 'Niko': 'niko',
     'Clotho': 'clotho', 'Lachesis': 'lachesis', 'Atropos': 'atropos', 'Archon': 'archon', 'Stranger': 'stranger',
-    'Penny': 'penny', 'Vance': 'sheriff_vance', 'House': 'house', 'Mara': 'mara',
+    'Penny': 'penny', 'Vance': 'sheriff_vance', 'House': 'house', 'Mara': 'mara', 'Brask': 'collector_captain',
 }
 
 # records the novel needs that have no design record yet

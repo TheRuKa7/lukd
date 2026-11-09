@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "evidence_scope": "Authored scene plan, not prose, page scripts or generated manga",
-  "source_sha256": "f3d0ddbb3e2a49d6b9cdae650bf16ef426d9125f7a4d601ed40e94e8f6170b6f",
+  "source_sha256": "ad02fca9907d27ff0f95828441407283dadb708fa5dd6f425ed81aa9ba2d5635",
   "chapters": [
     {
       "chapter": 1,
@@ -954,7 +954,8 @@
         "Shunya",
         "Bai Si",
         "Jinling",
-        "Vesper"
+        "Vesper",
+        "Brask"
       ],
       "travelling_roster": [
         "Nil",
@@ -1038,7 +1039,8 @@
         "Shunya",
         "Vidya Rao",
         "surveyors",
-        "companions"
+        "companions",
+        "Brask"
       ],
       "travelling_roster": [
         "Nil",
@@ -1074,13 +1076,16 @@
       "title": "An Order Accelerated",
       "volume": 4,
       "relative_day": "20",
-      "location": "Observatory dispatch room and Kroton road",
+      "location": "Observatory dispatch room and Kroton road; Meridian Comptroller office interlude",
       "cast": [
         "Nil",
         "Shunya",
         "Jinling",
         "Vidya Rao",
-        "courier"
+        "courier",
+        "Brask",
+        "Ivo",
+        "Thale"
       ],
       "travelling_roster": [
         "Nil",

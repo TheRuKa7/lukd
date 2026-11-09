@@ -7,7 +7,7 @@
       "chapter": 8,
       "title": "The Ferryman's Seam",
       "source": "docs/novel/volume_02/chapter_08_the_ferrymans_seam.md",
-      "sha256": "8eac11b483ba76bcf6f839e794463fefaee944bb6d00496020c697fa432d600a",
+      "sha256": "af4f34319a2c97233c23c088595953b76523b8045ba25b7471c89e8028729ddb",
       "body_words": 1966,
       "planned_scene_ids": [
         "ch08_s1",
@@ -19,7 +19,7 @@
       "chapter": 9,
       "title": "A Hundred Wishes",
       "source": "docs/novel/volume_02/chapter_09_a_hundred_wishes.md",
-      "sha256": "1c06f1b51c2072d1143f7e4d2cce075301a6928c7888506ceab956f32a5c193c",
+      "sha256": "7a6a73806b99867946faee7915e9223315ec5f87f1b96ddb9b4e58f9d186c463",
       "body_words": 1887,
       "planned_scene_ids": [
         "ch09_s1",
@@ -31,7 +31,7 @@
       "chapter": 10,
       "title": "The Keeper's Gift",
       "source": "docs/novel/volume_02/chapter_10_the_keepers_gift.md",
-      "sha256": "cf4767cf01e37100127d5a60ad4a182a2703c4457e62aac5c9ef77349259a2eb",
+      "sha256": "8aadb667e84fe7ec98446a06dd54eb256cfec4b183b0c1d73ed3f6736381c564",
       "body_words": 1939,
       "planned_scene_ids": [
         "ch10_s1",
@@ -43,7 +43,7 @@
       "chapter": 11,
       "title": "Paper Without a Name",
       "source": "docs/novel/volume_02/chapter_11_paper_without_a_name.md",
-      "sha256": "aa072b5e695f7212e19fa82333d6755d27a28e374d146d269325dd2cd7837c8f",
+      "sha256": "eb89afc6d7723183dc743975dceb9262100ea2f5bf8bd149316d5515357754af",
       "body_words": 2262,
       "planned_scene_ids": [
         "ch11_s1",
@@ -55,7 +55,7 @@
       "chapter": 12,
       "title": "The Foxes' Bargain",
       "source": "docs/novel/volume_02/chapter_12_the_foxes_bargain.md",
-      "sha256": "ebb3d6afbb74f468f51b813355fee49f56f6b11c9b4e2640048f91ed8ffaa7d9",
+      "sha256": "e577c66485584330e2aef4404f9825160eca0a0a3e61886401b26cb1ee1d9914",
       "body_words": 2090,
       "planned_scene_ids": [
         "ch12_s1",
@@ -67,7 +67,7 @@
       "chapter": 13,
       "title": "Already Real",
       "source": "docs/novel/volume_02/chapter_13_already_real.md",
-      "sha256": "d145ba0445a13a9a55aa1cb23f18bd58285ae4f4cd674f2e604fa1f762b898df",
+      "sha256": "4813cbafab8c71843d816fb01778384c8f405e6a476f72931147be2d87191954",
       "body_words": 2184,
       "planned_scene_ids": [
         "ch13_s1",
@@ -79,7 +79,7 @@
       "chapter": 14,
       "title": "The Toll Changes Hands",
       "source": "docs/novel/volume_02/chapter_14_the_toll_changes_hands.md",
-      "sha256": "f22103990f7f5faf1a52157cadb60a07e02a0936c6fee74c7f62c6267fc8fc03",
+      "sha256": "3840da4c27200d745320e509759b6b2116c3df78695a268669b6388265fdca7d",
       "body_words": 3021,
       "planned_scene_ids": [
         "ch14_s1",
@@ -89,7 +89,7 @@
     }
   ],
   "body_words": 15349,
-  "manuscript_sha256": "62bd882dea1d528e5157b5aa6239789ba800cb9bd2096e0cef448e3fac25e64f",
+  "manuscript_sha256": "66334566b97cd03fd144b2ac93689cda44de923c39250d1eaa769492f954eade",
   "whole_series_editorially_accepted": false,
   "authored_manga_pages": 0
 }

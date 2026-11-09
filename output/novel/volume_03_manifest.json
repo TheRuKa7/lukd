@@ -7,7 +7,7 @@
       "chapter": 15,
       "title": "Purchased Guests",
       "source": "docs/novel/volume_03/chapter_15_purchased_guests.md",
-      "sha256": "5a2db2f6d848dcef9e2cd8deeb6b623ff3db77eee4bc123039edbf6f11b18ba2",
+      "sha256": "06e2d88d47686720fd7240ed70f2cdff7ae7dc8b4ec0d1cf552257b6748a295f",
       "body_words": 2186,
       "planned_scene_ids": [
         "ch15_s1",
@@ -19,7 +19,7 @@
       "chapter": 16,
       "title": "Tea and Interest",
       "source": "docs/novel/volume_03/chapter_16_tea_and_interest.md",
-      "sha256": "7dd5a1330c802bb67595d13a88e92294118dacdd5dbd32da93bafb1c2465c97c",
+      "sha256": "6acaf5a2601aa9f8eeda73d6c81483953d4387566cd0c1af66c4534a6a6cf968",
       "body_words": 1776,
       "planned_scene_ids": [
         "ch16_s1",
@@ -31,7 +31,7 @@
       "chapter": 17,
       "title": "Four Lanterns",
       "source": "docs/novel/volume_03/chapter_17_four_lanterns.md",
-      "sha256": "41e461e0e0a31c9f427d78567371d0efd417f02f34569f57128dc20e6a59100f",
+      "sha256": "1bce1d1706bfe14fa5093303f854c98f35b18bce8a4d19d34ee3c9ee7866dd91",
       "body_words": 2288,
       "planned_scene_ids": [
         "ch17_s1",
@@ -43,7 +43,7 @@
       "chapter": 18,
       "title": "The Weight of the Dead",
       "source": "docs/novel/volume_03/chapter_18_the_weight_of_the_dead.md",
-      "sha256": "e45fbe3136be1fa8178f10ec5584a02afc5db1e3cb915b0aa3047eb9f90b62a0",
+      "sha256": "3cb0dd3fa496ad0544f05319d462a34a50fc7dce8d9f77aa2a9ab8bfe042d95c",
       "body_words": 1582,
       "planned_scene_ids": [
         "ch18_s1",
@@ -55,7 +55,7 @@
       "chapter": 19,
       "title": "The Brush Trial",
       "source": "docs/novel/volume_03/chapter_19_the_brush_trial.md",
-      "sha256": "45643b5a106548faf1da87a5e4b0fbbd507808d2c8a615faaff8df5bddf1b7ea",
+      "sha256": "15b70546a0212a09de3c1c7f45dcbeae117ff581a2b15217a00f8669a1c46c50",
       "body_words": 2054,
       "planned_scene_ids": [
         "ch19_s1",
@@ -67,7 +67,7 @@
       "chapter": 20,
       "title": "The True Account",
       "source": "docs/novel/volume_03/chapter_20_the_true_account.md",
-      "sha256": "821df8a05534b86fcd6c8d0e940d59e27ec5eb619d8904a020fa001e0ee3f09d",
+      "sha256": "6e0bc31042246dec5b2d200c475865b93636068dea96444a0141bc7de36592f8",
       "body_words": 2360,
       "planned_scene_ids": [
         "ch20_s1",
@@ -79,7 +79,7 @@
       "chapter": 21,
       "title": "A Debt to the Living",
       "source": "docs/novel/volume_03/chapter_21_a_debt_to_the_living.md",
-      "sha256": "37f076a53821fb7c56c7cb1abac2c73db98a38763bbbf4b61485ab9b7cbe3458",
+      "sha256": "67447d43148148dd8728c2b0696f682e1a020230245a05ce1e488f490e373837",
       "body_words": 2514,
       "planned_scene_ids": [
         "ch21_s1",
@@ -89,7 +89,7 @@
     }
   ],
   "body_words": 14760,
-  "manuscript_sha256": "e5b2b37338c23dd59eb25bc4313a991090cef0fd138540eac4055b044d8039b5",
+  "manuscript_sha256": "4dfd4ca80e66994c90c935a73c2b36ed6082c37b193c7bb1ee45b5d588ae1bac",
   "whole_series_editorially_accepted": false,
   "authored_manga_pages": 0
 }

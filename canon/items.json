@@ -1,0 +1,134 @@
+{
+ "schema_version": 1,
+ "seals": [
+  {
+   "digit": 1,
+   "secured": 7,
+   "use": 44
+  },
+  {
+   "digit": 9,
+   "secured": 14,
+   "use": 44
+  },
+  {
+   "digit": 8,
+   "secured": 21,
+   "use": 44
+  },
+  {
+   "digit": 0,
+   "secured": 27,
+   "use": 44
+  },
+  {
+   "digit": 2,
+   "secured": 35,
+   "use": 44
+  },
+  {
+   "digit": 7,
+   "secured": 41,
+   "use": 44
+  }
+ ],
+ "proofs": [
+  {
+   "id": "piece.enma_page",
+   "introduced": 11,
+   "secured": 14,
+   "custodian": "Hina",
+   "review": 43,
+   "use": 49
+  },
+  {
+   "id": "piece.true_accounts",
+   "introduced": 20,
+   "secured": 21,
+   "custodian": "Jinling",
+   "review": 43,
+   "use": 49
+  },
+  {
+   "id": "piece.dead_count",
+   "introduced": 18,
+   "secured": 19,
+   "custodian": "Bai Si",
+   "review": 43,
+   "use": 49
+  },
+  {
+   "id": "piece.remainder_equation",
+   "introduced": 23,
+   "secured": 28,
+   "custodian": "Shunya with Nil consent",
+   "review": 43,
+   "use": 49
+  },
+  {
+   "id": "piece.lachesis_thread",
+   "introduced": 32,
+   "secured": 35,
+   "custodian": "Prima",
+   "review": 43,
+   "use": 49
+  },
+  {
+   "id": "piece.first_gear_horseshoe",
+   "introduced": 33,
+   "secured": 35,
+   "custodian": "Maeve",
+   "review": 43,
+   "use": 49
+  },
+  {
+   "id": "piece.marked_deck",
+   "introduced": 16,
+   "secured": 41,
+   "custodian": "Vesper",
+   "review": 43,
+   "use": 49
+  },
+  {
+   "id": "piece.black_book_page",
+   "introduced": 39,
+   "secured": 41,
+   "custodian": "Fibi",
+   "review": 43,
+   "use": 49
+  }
+ ],
+ "gates": {
+  "origin_evidence_converges": 25,
+  "origin_confirmed": 26,
+  "physical_cage_revealed": 45,
+  "failed_test": 23,
+  "small_test": 31,
+  "mandates_ratified": 43,
+  "proof_review": 43,
+  "ritual_gate": 44,
+  "positive_sum": 49
+ },
+ "nil_verbs": [
+  {
+   "id": "carry",
+   "introduced": 11
+  },
+  {
+   "id": "rewrite",
+   "introduced": 19
+  },
+  {
+   "id": "place_value",
+   "introduced": null
+  },
+  {
+   "id": "factor",
+   "introduced": null
+  },
+  {
+   "id": "deal",
+   "introduced": 36
+  }
+ ]
+}

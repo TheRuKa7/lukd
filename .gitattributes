@@ -1,0 +1,21 @@
+# Text: one line ending everywhere, so byte-exact build checks pass on any OS
+docs/** text eol=lf
+output/**/*.md text eol=lf
+output/**/*.json text eol=lf
+tools/** text eol=lf
+canon/** text eol=lf
+tests/** text eol=lf
+jam/**/*.cs text eol=lf
+jam/README.md text eol=lf
+README.md text eol=lf
+# Binaries: these folders hold large art and print files and go through Git LFS
+art/manga/**/*.png filter=lfs diff=lfs merge=lfs -text
+art/concepts/complete/*.png filter=lfs diff=lfs merge=lfs -text
+art/renders/**/*.png filter=lfs diff=lfs merge=lfs -text
+art/source/*.blend filter=lfs diff=lfs merge=lfs -text
+art/source/*.blend1 filter=lfs diff=lfs merge=lfs -text
+output/pdf/*.pdf filter=lfs diff=lfs merge=lfs -text
+output/production/**/*.pdf filter=lfs diff=lfs merge=lfs -text
+*.png binary
+*.jpg binary
+*.pdf binary

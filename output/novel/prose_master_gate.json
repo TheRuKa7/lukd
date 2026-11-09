@@ -49,7 +49,7 @@
       "status": "draft",
       "body_words": 2067,
       "source": "docs/novel/volume_01/chapter_01_three_bowls.md",
-      "sha256": "4754d9ae0bf6b0564827e015f9325e156db90cd9ecda8fb87d86e6eb881af014"
+      "sha256": "c7b523ed0a5bf700577a96ab1c6e6c84343c0b21f761f14dc69698db63c1e7c5"
     },
     {
       "chapter": 2,
@@ -85,7 +85,7 @@
       "status": "draft",
       "body_words": 1416,
       "source": "docs/novel/volume_01/chapter_05_seven_fen.md",
-      "sha256": "8e649e7b4a118a44f5d847fefee08882341abe4077fd3e11b8123876975f6eb3"
+      "sha256": "5fbe736356fe92553f0798b03184ef1a0ff7f0580b879e343c031648f48f9b72"
     },
     {
       "chapter": 6,
@@ -94,7 +94,7 @@
       "status": "draft",
       "body_words": 2491,
       "source": "docs/novel/volume_01/chapter_06_a_window_at_six.md",
-      "sha256": "87e463b846ccb4520bbca1371fdfd0a3e5e0fe6c460b9431ffaf67ddcce8acc3"
+      "sha256": "396dddb09ed02ddc0539b746e422abc0fca11cdc80ea0c594479663d8e541647"
     },
     {
       "chapter": 7,
@@ -103,7 +103,7 @@
       "status": "draft",
       "body_words": 2828,
       "source": "docs/novel/volume_01/chapter_07_a_receipt_for_mercy.md",
-      "sha256": "d223e6b3b32820c6124646e267009c1ee765357ff8f5bb36f2c96c83511217d9"
+      "sha256": "bef9b262d786c16a05544c8ce7116eb2828f8e8a22e9a73f87267d85db6d8716"
     },
     {
       "chapter": 8,
@@ -112,7 +112,7 @@
       "status": "draft",
       "body_words": 1966,
       "source": "docs/novel/volume_02/chapter_08_the_ferrymans_seam.md",
-      "sha256": "8eac11b483ba76bcf6f839e794463fefaee944bb6d00496020c697fa432d600a"
+      "sha256": "af4f34319a2c97233c23c088595953b76523b8045ba25b7471c89e8028729ddb"
     },
     {
       "chapter": 9,
@@ -121,7 +121,7 @@
       "status": "draft",
       "body_words": 1887,
       "source": "docs/novel/volume_02/chapter_09_a_hundred_wishes.md",
-      "sha256": "1c06f1b51c2072d1143f7e4d2cce075301a6928c7888506ceab956f32a5c193c"
+      "sha256": "7a6a73806b99867946faee7915e9223315ec5f87f1b96ddb9b4e58f9d186c463"
     },
     {
       "chapter": 10,
@@ -130,7 +130,7 @@
       "status": "draft",
       "body_words": 1939,
       "source": "docs/novel/volume_02/chapter_10_the_keepers_gift.md",
-      "sha256": "cf4767cf01e37100127d5a60ad4a182a2703c4457e62aac5c9ef77349259a2eb"
+      "sha256": "8aadb667e84fe7ec98446a06dd54eb256cfec4b183b0c1d73ed3f6736381c564"
     },
     {
       "chapter": 11,
@@ -139,7 +139,7 @@
       "status": "draft",
       "body_words": 2262,
       "source": "docs/novel/volume_02/chapter_11_paper_without_a_name.md",
-      "sha256": "aa072b5e695f7212e19fa82333d6755d27a28e374d146d269325dd2cd7837c8f"
+      "sha256": "eb89afc6d7723183dc743975dceb9262100ea2f5bf8bd149316d5515357754af"
     },
     {
       "chapter": 12,
@@ -148,7 +148,7 @@
       "status": "draft",
       "body_words": 2090,
       "source": "docs/novel/volume_02/chapter_12_the_foxes_bargain.md",
-      "sha256": "ebb3d6afbb74f468f51b813355fee49f56f6b11c9b4e2640048f91ed8ffaa7d9"
+      "sha256": "e577c66485584330e2aef4404f9825160eca0a0a3e61886401b26cb1ee1d9914"
     },
     {
       "chapter": 13,
@@ -157,7 +157,7 @@
       "status": "draft",
       "body_words": 2184,
       "source": "docs/novel/volume_02/chapter_13_already_real.md",
-      "sha256": "d145ba0445a13a9a55aa1cb23f18bd58285ae4f4cd674f2e604fa1f762b898df"
+      "sha256": "4813cbafab8c71843d816fb01778384c8f405e6a476f72931147be2d87191954"
     },
     {
       "chapter": 14,
@@ -166,7 +166,7 @@
       "status": "draft",
       "body_words": 3021,
       "source": "docs/novel/volume_02/chapter_14_the_toll_changes_hands.md",
-      "sha256": "f22103990f7f5faf1a52157cadb60a07e02a0936c6fee74c7f62c6267fc8fc03"
+      "sha256": "3840da4c27200d745320e509759b6b2116c3df78695a268669b6388265fdca7d"
     },
     {
       "chapter": 15,
@@ -175,7 +175,7 @@
       "status": "draft",
       "body_words": 2186,
       "source": "docs/novel/volume_03/chapter_15_purchased_guests.md",
-      "sha256": "5a2db2f6d848dcef9e2cd8deeb6b623ff3db77eee4bc123039edbf6f11b18ba2"
+      "sha256": "06e2d88d47686720fd7240ed70f2cdff7ae7dc8b4ec0d1cf552257b6748a295f"
     },
     {
       "chapter": 16,
@@ -184,7 +184,7 @@
       "status": "draft",
       "body_words": 1776,
       "source": "docs/novel/volume_03/chapter_16_tea_and_interest.md",
-      "sha256": "7dd5a1330c802bb67595d13a88e92294118dacdd5dbd32da93bafb1c2465c97c"
+      "sha256": "6acaf5a2601aa9f8eeda73d6c81483953d4387566cd0c1af66c4534a6a6cf968"
     },
     {
       "chapter": 17,
@@ -193,7 +193,7 @@
       "status": "draft",
       "body_words": 2288,
       "source": "docs/novel/volume_03/chapter_17_four_lanterns.md",
-      "sha256": "41e461e0e0a31c9f427d78567371d0efd417f02f34569f57128dc20e6a59100f"
+      "sha256": "1bce1d1706bfe14fa5093303f854c98f35b18bce8a4d19d34ee3c9ee7866dd91"
     },
     {
       "chapter": 18,
@@ -202,7 +202,7 @@
       "status": "draft",
       "body_words": 1582,
       "source": "docs/novel/volume_03/chapter_18_the_weight_of_the_dead.md",
-      "sha256": "e45fbe3136be1fa8178f10ec5584a02afc5db1e3cb915b0aa3047eb9f90b62a0"
+      "sha256": "3cb0dd3fa496ad0544f05319d462a34a50fc7dce8d9f77aa2a9ab8bfe042d95c"
     },
     {
       "chapter": 19,
@@ -211,7 +211,7 @@
       "status": "draft",
       "body_words": 2054,
       "source": "docs/novel/volume_03/chapter_19_the_brush_trial.md",
-      "sha256": "45643b5a106548faf1da87a5e4b0fbbd507808d2c8a615faaff8df5bddf1b7ea"
+      "sha256": "15b70546a0212a09de3c1c7f45dcbeae117ff581a2b15217a00f8669a1c46c50"
     },
     {
       "chapter": 20,
@@ -220,7 +220,7 @@
       "status": "draft",
       "body_words": 2360,
       "source": "docs/novel/volume_03/chapter_20_the_true_account.md",
-      "sha256": "821df8a05534b86fcd6c8d0e940d59e27ec5eb619d8904a020fa001e0ee3f09d"
+      "sha256": "6e0bc31042246dec5b2d200c475865b93636068dea96444a0141bc7de36592f8"
     },
     {
       "chapter": 21,
@@ -229,7 +229,7 @@
       "status": "draft",
       "body_words": 2514,
       "source": "docs/novel/volume_03/chapter_21_a_debt_to_the_living.md",
-      "sha256": "37f076a53821fb7c56c7cb1abac2c73db98a38763bbbf4b61485ab9b7cbe3458"
+      "sha256": "67447d43148148dd8728c2b0696f682e1a020230245a05ce1e488f490e373837"
     },
     {
       "chapter": 22,

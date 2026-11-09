@@ -2,7 +2,7 @@
   "schema_version": 1,
   "evidence_scope": "Authored development dossiers and cast coverage, not completed prose or approved new artwork",
   "source_sha256": "c15a8eab5ef671f18ff796271425a79126eece001b68dd0d6cb2a519aaf0c8e1",
-  "scene_ledger_sha256": "116dd80044ccc81ff05932d016a0d73a5560b654ae9a7542b9e3b3d69d50c570",
+  "scene_ledger_sha256": "beee84eb6756cd89a9b254df9be9f027d9d33a115b3d7833bcab1f5bbc7f4676",
   "profiles": [
     {
       "name": "Nil",

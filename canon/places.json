@@ -1,0 +1,299 @@
+{
+ "schema_version": 1,
+ "ledger_locations": [
+  {
+   "chapter": 1,
+   "volume": 1,
+   "day": "1",
+   "location": "Meridian registration lane and market"
+  },
+  {
+   "chapter": 2,
+   "volume": 1,
+   "day": "1",
+   "location": "Market arch and canal rail"
+  },
+  {
+   "chapter": 3,
+   "volume": 1,
+   "day": "1",
+   "location": "Service stairs and Nought's shrine"
+  },
+  {
+   "chapter": 4,
+   "volume": 1,
+   "day": "1",
+   "location": "Naming shrine and relay district"
+  },
+  {
+   "chapter": 5,
+   "volume": 1,
+   "day": "1",
+   "location": "Ward service yard"
+  },
+  {
+   "chapter": 6,
+   "volume": 1,
+   "day": "1",
+   "location": "Bazaar and forge lane"
+  },
+  {
+   "chapter": 7,
+   "volume": 1,
+   "day": "2",
+   "location": "Drain gate and roof route"
+  },
+  {
+   "chapter": 8,
+   "volume": 2,
+   "day": "3",
+   "location": "Canal ferry to Hyakki"
+  },
+  {
+   "chapter": 9,
+   "volume": 2,
+   "day": "4",
+   "location": "Moon Pier and Night Parade"
+  },
+  {
+   "chapter": 10,
+   "volume": 2,
+   "day": "4",
+   "location": "Ofuku's shrine workshop"
+  },
+  {
+   "chapter": 11,
+   "volume": 2,
+   "day": "5",
+   "location": "Enma's archive gate"
+  },
+  {
+   "chapter": 12,
+   "volume": 2,
+   "day": "6",
+   "location": "Foxfire approach"
+  },
+  {
+   "chapter": 13,
+   "volume": 2,
+   "day": "6",
+   "location": "Tamamo's palace"
+  },
+  {
+   "chapter": 14,
+   "volume": 2,
+   "day": "7",
+   "location": "Shrine road and River-bound ferry; Meridian Comptroller office interlude"
+  },
+  {
+   "chapter": 15,
+   "volume": 3,
+   "day": "8",
+   "location": "Bāfā harbour and pawnshop"
+  },
+  {
+   "chapter": 16,
+   "volume": 3,
+   "day": "9",
+   "location": "Exchange back rooms and dock cooperative"
+  },
+  {
+   "chapter": 17,
+   "volume": 3,
+   "day": "10",
+   "location": "Harbour records and Hall approach"
+  },
+  {
+   "chapter": 18,
+   "volume": 3,
+   "day": "11",
+   "location": "Naihe crossing and Ten Courts"
+  },
+  {
+   "chapter": 19,
+   "volume": 3,
+   "day": "11",
+   "location": "Judge Cui's record hall"
+  },
+  {
+   "chapter": 20,
+   "volume": 3,
+   "day": "12",
+   "location": "Exchange archive and Jin Chan's office"
+  },
+  {
+   "chapter": 21,
+   "volume": 3,
+   "day": "13",
+   "location": "Bāfā public hearing and departure; Meridian Comptroller office interlude"
+  },
+  {
+   "chapter": 22,
+   "volume": 4,
+   "day": "14",
+   "location": "Road to Śūnyapura and observatory guest room"
+  },
+  {
+   "chapter": 23,
+   "volume": 4,
+   "day": "15",
+   "location": "Stepwell retrieval route"
+  },
+  {
+   "chapter": 24,
+   "volume": 4,
+   "day": "16",
+   "location": "Observatory and Chitragupta's hall"
+  },
+  {
+   "chapter": 25,
+   "volume": 4,
+   "day": "17",
+   "location": "Observatory comparison room"
+  },
+  {
+   "chapter": 26,
+   "volume": 4,
+   "day": "18",
+   "location": "Observatory quiet room and courtyard"
+  },
+  {
+   "chapter": 27,
+   "volume": 4,
+   "day": "19",
+   "location": "Plateau eclipse-engine works"
+  },
+  {
+   "chapter": 28,
+   "volume": 4,
+   "day": "20",
+   "location": "Observatory dispatch room and Kroton road"
+  },
+  {
+   "chapter": 29,
+   "volume": 5,
+   "day": "21",
+   "location": "Kroton arrival terraces"
+  },
+  {
+   "chapter": 30,
+   "volume": 5,
+   "day": "22",
+   "location": "Kallisto's undercity workshops"
+  },
+  {
+   "chapter": 31,
+   "volume": 5,
+   "day": "23",
+   "location": "School evacuation and Sieve span"
+  },
+  {
+   "chapter": 32,
+   "volume": 5,
+   "day": "24",
+   "location": "Moirai's route and measured cave"
+  },
+  {
+   "chapter": 33,
+   "volume": 5,
+   "day": "24",
+   "location": "Undercity archive workshop"
+  },
+  {
+   "chapter": 34,
+   "volume": 5,
+   "day": "25",
+   "location": "Archon's access court"
+  },
+  {
+   "chapter": 35,
+   "volume": 5,
+   "day": "26",
+   "location": "Sieve edge and reopening hearing"
+  },
+  {
+   "chapter": 36,
+   "volume": 6,
+   "day": "27",
+   "location": "Crossroads road and midnight junction"
+  },
+  {
+   "chapter": 37,
+   "volume": 6,
+   "day": "28 night",
+   "location": "Lucky Strike local iteration1597"
+  },
+  {
+   "chapter": 38,
+   "volume": 6,
+   "day": "28 night",
+   "location": "Motel and railway inside local iteration1597"
+  },
+  {
+   "chapter": 39,
+   "volume": 6,
+   "day": "28 night",
+   "location": "House contract office"
+  },
+  {
+   "chapter": 40,
+   "volume": 6,
+   "day": "28 before dawn",
+   "location": "Mutual-aid office and honest table"
+  },
+  {
+   "chapter": 41,
+   "volume": 6,
+   "day": "29 dawn",
+   "location": "Lucky Strike cancellation table"
+  },
+  {
+   "chapter": 42,
+   "volume": 6,
+   "day": "30",
+   "location": "Crossroads courier station and return convoy"
+  },
+  {
+   "chapter": 43,
+   "volume": 7,
+   "day": "33",
+   "location": "Meridian outer camp"
+  },
+  {
+   "chapter": 44,
+   "volume": 7,
+   "day": "34",
+   "location": "Basilica Upper Gate and service passage"
+  },
+  {
+   "chapter": 45,
+   "volume": 7,
+   "day": "34",
+   "location": "Basilica heart"
+  },
+  {
+   "chapter": 46,
+   "volume": 7,
+   "day": "34",
+   "location": "Basilica operator archive"
+  },
+  {
+   "chapter": 47,
+   "volume": 7,
+   "day": "34",
+   "location": "Even Hand control floor"
+  },
+  {
+   "chapter": 48,
+   "volume": 7,
+   "day": "34",
+   "location": "Control floor and witness station"
+  },
+  {
+   "chapter": 49,
+   "volume": 7,
+   "day": "35–36;one year later",
+   "location": "Meridian workshops and regional epilogues"
+  }
+ ]
+}

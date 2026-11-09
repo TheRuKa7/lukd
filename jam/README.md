@@ -46,3 +46,7 @@ Debug URL parameters (local testing only): `?cp=N` jumps to chapter N (0 alley �
 **AI disclosure:** Character art and the Meridian street come from concept boards generated with Higgsfield image models from the team's written designs; a script cut them into sprites. The shrine, bazaar, drain-gate and rooftop backgrounds and the three charm icons were generated with Meshy (Nano Banana Pro), using the street plate as a style reference. Music and sound effects are synthesised in code. Game code, the C# rules port and the synthesised audio were written with an AI coding assistant (Claude) under the creator's direction, checked against the team's own JavaScript rules with 16,060 parity cases. Story, world, characters and design are original to ZERO-SUM: OMEN.
 
 **Upload:** zip the contents of `jam/build/web` (index.html at the zip root), upload as an HTML game, tick "This file will be played in the browser", set the viewport to 1280 × 720, and enable the fullscreen button. The build uses gzip with decompression fallback, so no server headers are needed.
+
+## Balance decisions
+
+- **Overwrite against Varro, kept as tuned (9 November 2026).** With `jam_tuning.csv` values, three stops on the lucky number in the first round (before the jar captures slot 3) score Overwrite ×21, enough to end the Varro fight in one round. The creator chose to keep this as the reward for precise play; no boss damage cap is applied.

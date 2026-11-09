@@ -1,0 +1,22 @@
+{
+  "inputs": [
+    {
+      "path": "docs/manga/SERIES_PRODUCTION_BRIEF.md",
+      "sha256": "6cb3225ccd699d930728629ca928ab3e3fa217c0adb241d571c82f5d3d0b8aee"
+    },
+    {
+      "path": "docs/manga/OPENING_SCRIPT_01_03.md",
+      "sha256": "9742712f1784705e777dc6957f795dbf600088873cd2fa9b3af171936cd17b2b"
+    },
+    {
+      "path": "docs/manga/CHAPTER_TREATMENT_04_22.md",
+      "sha256": "49af25352f193b200d4883ca83272db92b75f32a759f4ea782ef7c5375a8da4d"
+    },
+    {
+      "path": "docs/manga/SERIES_REVEAL_LEDGER.md",
+      "sha256": "94ba91853d0eb8793df97e2b4a89d0df572e724fde8cfcdbc770950bda3d27f5"
+    }
+  ],
+  "source_sha256": "6942bd6df4e034b4ef160995a1219a58dc8d798fd96ec6862ade4cbead71957d",
+  "note": "Production manuscript only; no Mangaka chapter generation/export implied"
+}

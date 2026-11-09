@@ -1,0 +1,30 @@
+{
+  "index": 16,
+  "params": {
+    "model": "gpt_image_2_6",
+    "quality": "high",
+    "resolution": "4k",
+    "aspect_ratio": "2:3",
+    "count": 1,
+    "output_format": "png",
+    "prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p016_01 at normalized rectangle [0.05, 0.05, 0.9, 0.22]: Second affected round: heroes trade front position. Two bright tubes and debt-constrained third; focused attack on known clamp, no invented elemental weakness.\nPanel p016_02 at normalized rectangle [0.05, 0.29, 0.43, 0.28]: Varro coat plate cracks at hinge, free hand presses exemption token: human motive amid machinery.\nPanel p016_03 at normalized rectangle [0.52, 0.29, 0.43, 0.28]: Varro lifts ratchet to larger mechanical detent, announcing a heavier upcoming strike.\nPanel p016_04 at normalized rectangle [0.05, 0.59, 0.9, 0.36]: Charged wide pause: hook raised in long deliberate wind-up, heroes have reaction space. High contrast holds before impact.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p016_01 [50, 75, 900, 330]; p016_02 [50, 435, 430, 420]; p016_03 [520, 435, 430, 420]; p016_04 [50, 885, 900, 540]. Keep all art inside these boxes; gutters remain plain paper.\nFINAL CONTINUITY: Draw ONLY this page's listed story cast: nil, vesper, varro.  Do not add other named characters from style notes or other pages. The priest must NOT appear before the shrine entrance scene. Every mechanical readout is EMPTY SMOKED GLASS, never a portrait mirror; Civic/Audit/NaN lettering is added later. Preserve panel count, geometry and required geography. Clean 4K portrait page, no lettering, no balloons. Broad clean upper panel areas for separate text, faces/hands placed below those zones. Fine controlled ink detail at focal areas; strong black shapes and selective crosshatching; readable painted atmosphere, no glossy photorealism.",
+    "medias": [
+      {
+        "role": "image",
+        "value": "a2d34f71-172a-4d0e-8fc6-f88f4214fb24"
+      },
+      {
+        "role": "image",
+        "value": "04aff4f9-7b0a-47c0-9d21-303a321d9c3a"
+      },
+      {
+        "role": "image",
+        "value": "0f491baa-e662-439a-ade6-a58355c947f7"
+      },
+      {
+        "role": "image",
+        "value": "e768be52-cc0b-4968-9521-0985189c39aa"
+      }
+    ]
+  }
+}

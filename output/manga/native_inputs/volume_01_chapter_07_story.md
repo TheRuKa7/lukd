@@ -1,0 +1,7 @@
+# Chapter 7: A Receipt for Mercy
+
+Before dawn Varro offers a posted office review, distinct from the closed lane claims. A win closes this route claim and releases its credential. Vesper shows the remaining finite dealer guarantee; Maeve keeps the counter-copy as witness. The drain has one office socket, not the later Upper Gate's seven connections.
+
+A completed5,6,7 Cascade precedes capture of the resolved third7. The next three actual triples3,3,4;0,0,7;3,7,7 score as3,3,0;0,0,0;3,7,0. Nil defends with0 then7. Two defended actions are recorded, but the third affected round still expires the jar. Its Zero-Sum prevents the prepared heavy action before it starts. The next actual7,7,3 restores to scored7,7,7 and clears the stored token. Varro's temporary Balance closes; Civic61 remains. Seal1 and receipt release.
+
+Nil learns Livia is Varro's sister. Mercy costs the direct ferry and gives Varro knowledge of their route. Nil offers the LEFT hand, accidentally hurts the RIGHT while bracing, and helps him stand without removing his mask or forgiving his actions. Gus meets them as arranged, brings news and copies the toll reference. Actual wages and coins pay food and the next ferry. On the roof Maeve gives a nonmagical friend-luck washer; Vesper has five live rounds left. The Upper Gate needs six separate credentials plus resonance. Nil writes Ask before promising. A dream fortune-teller asks about their already-chosen7 without explaining an origin. On Day3 Nil chooses the journey and helps tie Maeve's tool bundle.

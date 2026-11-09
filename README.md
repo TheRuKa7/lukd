@@ -1,20 +1,25 @@
 # ZERO-SUM: OMEN
 
-Entry for the [Official Unity Game Jam 2026](https://itch.io/jam/official-unity-game-jam-2026). Theme: **Lucky Number**.
+Originally conceived for the Official Unity Game Jam 2026 theme, Lucky Number. The current project follows a story-first production order.
 
 In a world where every soul's luck floats above its head as a number, a nameless wanderer with no number at all tells the city its lucky number, and becomes the most wanted person alive. An anime 2.5D party RPG through lands inspired by Japanese, Chinese, Indian, Greek and American myth and folklore, where every number spins and you **tap to stop it**, and where the god of luck, **Hap**, waits in a cage at the heart of the capital.
 
-Hard deadline: **14 November 2026, 12:00 UTC / 17:30 IST.** Unity is required; WebGL is required for prize eligibility and is our target. AI use must be disclosed on the submission page.
+**Current priority:** complete and revise *The Remainder*, a125,000-word prose master, then adapt49 chapters into seven manga volumes (1,078 story pages). Existing prose chapters are drafts. Unity implementation follows the story and manga gates; no Unity game build has been verified. The old jam timetable is historical.
 
-**Current scope:** a 10-15 minute Meridian Prologue with NIL, Vesper and Varro. The wider campaign remains expansion scope. This repository contains specifications, art candidates and a browser sandbox; no Unity game build has been verified. See [project status](docs/PROJECT_STATUS.md), [adopted decisions](docs/DECISIONS.md) and the [documentation audit](docs/DOC_AUDIT.md).
+Start with the [ten-phase plan](docs/TEN_PHASE_PLAN.md), [resolved series bible](docs/novel/RESOLVED_SERIES_BIBLE.md), [current manga policy](docs/manga/README.md) and [project evidence](docs/PROJECT_STATUS.md).
 
 ## Start here
 | | |
 |---|---|
-| [`docs/ZERO-SUM_OMEN_World_and_Art_Bible.pdf`](docs/ZERO-SUM_OMEN_World_and_Art_Bible.pdf) | Generated world/design presentation; source Markdown remains authoritative. Rebuild with `python tools/build_bible.py` |
-| [`docs/ZERO-SUM_OMEN_Artbook_Draft.pdf`](docs/ZERO-SUM_OMEN_Artbook_Draft.pdf) | Generated art book draft; see its build provenance and candidate labels. Rebuild with `python tools/build_artbook.py` |
+| [Concept collection](output/pdf/ZERO-SUM_OMEN_Concept_Collection.pdf) |94 pages:84 existing cast/outfit/encounter boards and7 regional boards, with scope, current-story guidance and provenance. |
+| [Complete world and artbook](output/pdf/ZERO-SUM_OMEN_Complete_Artbook.pdf) | Historical full-reference snapshot:91 detailed cast/environment boards,91 indexed cast records,84 distinct actual four-view sets and seven regions. Design proposals and first-draft3D evidence remain distinct. Build with `python tools/build_full_artbook.py` |
+| [World and design bible](output/pdf/ZERO-SUM_OMEN_World_and_Design_Bible.pdf) | Historical design compilation; Markdown remains authoritative. Build with `python tools/build_bible.py` |
+| [Mangaka series production manuscript](output/production/OMEN_Mangaka_22_Chapter_Manuscript.pdf) |Superseded32-document-page manuscript planning22 B&W chapters x30 story pages;90 numbered opening instructions and114 later five-page blocks. This is not a completed660-page comic. [Current production policy](docs/manga/README.md) |
+| [Mangaka input diagnosis](docs/manga/MANGAKA_RECOVERY.md) | Actual stopped-analysis evidence and preserved input hashes. [Clean Chapter01 input](output/production/OMEN_Chapter_01_Story_Only_v2.pdf) and [lean22-chapter story digest](output/production/OMEN_22_Chapter_Story_Digest.pdf) separate native story input from the long editorial reference. |
 | [`docs/PREPRODUCTION_DOCS.md`](docs/PREPRODUCTION_DOCS.md) | Which docs exist, what each must answer, and what is still to verify in production |
 | [`prototype/index.html`](prototype/index.html) | Browser combat sandbox, not the Unity jam campaign: tap/Space to stop; choose a hero by pointer or number |
+
+The older135-page artbook and158-page bible under `docs/` are retained historical presentations from upstream commit4856ec5. The earlier20-page colour manga is a user-rejected study. Native Mangaka analysis, production and export must have separate evidence; completed ordinary image jobs do not establish an accepted comic.
 
 ## World and story
 | Doc | What's in it |

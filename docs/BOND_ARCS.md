@@ -1,5 +1,7 @@
 # ZERO-SUM: OMEN — Bond Arcs, Key Scenes and the Dialogue Database (Gate B 6)
 
+> **8 November editorial revision:** [Resolved series bible](novel/RESOLVED_SERIES_BIBLE.md) supersedes conflicting older naming, origin wording, character backstories, political outcomes and story-length targets below. Gameplay formulas retain their existing domain authority. This source is being adapted to the49-chapter edition; its historical schedules and game scene numbering are not manga chapter numbering.
+
 Updated 7 November 2026 under [DECISIONS.md](DECISIONS.md). **Specified campaign content, not implemented dialogue or tested relationship pacing.** Each companion has **four narrative stages**, through story-integrated scenes or optional conversations. Narrative state is separate from mathematical resonance bonds and Act IV Awakenings. Completion grants the named bond reward once through SYSTEMS' content payload plus the protected proof flag where relevant. STORY §9 owns ending predicates/catch-up. The jam has no bond system; Vesper's rescue and mercy remain ordinary story beats.
 
 ---

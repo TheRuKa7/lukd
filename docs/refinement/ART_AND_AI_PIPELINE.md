@@ -1,5 +1,6 @@
 # ZERO-SUM: OMEN — Art and strictly AI production pipeline
 
+> **HISTORICAL SNAPSHOT - 6 November 2026, baseline `3d88239`.** Findings/proposals describe that snapshot, not the current corrected repository. See [adopted decisions](../DECISIONS.md), [current status](../PROJECT_STATUS.md) and [audit resolutions](../DOC_AUDIT.md).
 Audit date: 6 November 2026 (Asia/Calcutta). Source: repository commit `3d88239dff58db1d313b8d979d6ae98a8f1ceed0`.
 
 Status: evidence and proposed refinements, not implemented production changes. Original art, policy documents and builds were not changed. User direction for this plan: **Unity jam first; free and already available tools first; AI performs development and asset production**. Human direction and player feedback can guide the work; the plan does not depend on a manual artist, animator, editor, composer or programmer completing AI drafts.

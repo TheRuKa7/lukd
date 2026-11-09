@@ -17,7 +17,7 @@ Updated 7 November 2026 under [DECISIONS.md](DECISIONS.md). **Specified, not imp
 
 | Land | Enemy | Wheel | Behaviour | Telegraph | Counter |
 |---|---|---|---|---|---|
-| Meridian | **Debt Hound** | Jam: explicit legal 0–9, 4 double-wide; tutorial 0 visibly enlarged | Jam: one telegraphed 40-base strike, no hidden extra bite. Expansion variant may advertise a 4-triggered second bite as a separate intent | 4 glow plus shape/intent | Parry/Fortune; no unavailable hero needed |
+| Meridian | **Debt Hound** | Jam: explicit legal 0–9, 4 double-wide; tutorial 0 visibly enlarged | Jam: one telegraphed 20-base strike, no hidden extra bite. Expansion variant may advertise a 4-triggered second bite as a separate intent | 4 glow plus shape/intent | Parry/Fortune; no unavailable hero needed |
 | Meridian | **Collector** | Medium; Iron faces | Armour: −50% from Pairs | Raises a ledger shield | Jackpots and Cascades |
 | Meridian | **Noiseling** | Scrambles once per spin | Copies a random reel digit | Static crackle | Fast taps (it can't scramble twice) |
 | Hyakki | **Chōchin-obake** | Odd faces only | Lights a lantern each round; 3 lanterns = big flame | Lantern count on its body | Even strikes snuff a lantern |

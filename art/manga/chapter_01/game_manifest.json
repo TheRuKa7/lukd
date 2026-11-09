@@ -1,0 +1,4271 @@
+{
+  "schema_version": 1,
+  "chapter_id": "zso_ch01",
+  "reading_direction": "ltr",
+  "print_route": {
+    "resonance": 7,
+    "charm": "charm_horseshoe",
+    "reason": "Authored fixed example, never a best-digit claim or enforced player result"
+  },
+  "reader_policy": "read-only; bookmark state separate from campaign",
+  "page_size_px": [
+    2336,
+    3504
+  ],
+  "clean_image_policy": "Original source pixels preserved; lettered export and panel crops use declared page size.",
+  "future_adapter_only": [
+    {
+      "kind": "choice",
+      "pause_before": "p006_04",
+      "live_system": "resonance_choice",
+      "resume_before": "p007_01",
+      "requirements": "Use accepted resonance 0-9. Replace reference digit; preserve NIL NaN."
+    },
+    {
+      "kind": "combat",
+      "pause_before": "p008_01",
+      "live_system": "solo_audit",
+      "resume_before": "p010_01",
+      "omit_reference_panels": [
+        "p008",
+        "p009"
+      ],
+      "requirements": "Actual completed solo victory only; loss/retry remains in gameplay."
+    },
+    {
+      "kind": "combat",
+      "pause_before": "p011_02",
+      "live_system": "duo_audit",
+      "resume_before": "p012_01",
+      "omit_reference_panels": [
+        "p011_02",
+        "p011_03",
+        "p011_04",
+        "p011_05"
+      ],
+      "requirements": "Actual completed duo victory only. Tab exchange p011_01 can precede combat."
+    },
+    {
+      "kind": "choice",
+      "pause_after": "p012_04",
+      "live_system": "charm_choice",
+      "resume_before": "p013_01",
+      "requirements": "Accept exactly one of the three free charms; substitute any held-item art if shown."
+    },
+    {
+      "kind": "combat",
+      "pause_before": "p014_01",
+      "live_system": "boss_varro",
+      "resume_before": "p019_01",
+      "omit_reference_panels": [
+        "p014",
+        "p015",
+        "p016",
+        "p017",
+        "p018"
+      ],
+      "requirements": "Actual atomic boss settlement and victory. Printed Overwrite is not a forced power or result."
+    }
+  ],
+  "pages": [
+    {
+      "id": "p001",
+      "title": "The Remainder",
+      "clean": "clean/p001.png",
+      "lettered": "lettered/p001.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [],
+      "panels": [
+        {
+          "id": "p001_01",
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "clean": "panels/clean/p001_01.png",
+          "lettered": "panels/lettered/p001_01.png",
+          "dialogue_ids": [
+            "ch01_001_01",
+            "ch01_001_02",
+            "ch01_001_03"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p002",
+      "title": "The morning count",
+      "clean": "clean/p002.png",
+      "lettered": "lettered/p002.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "scene.rescue.available"
+      ],
+      "panels": [
+        {
+          "id": "p002_01",
+          "rect": [
+            0.03425,
+            0.02197,
+            0.93236,
+            0.34846
+          ],
+          "clean": "panels/clean/p002_01.png",
+          "lettered": "panels/lettered/p002_01.png",
+          "dialogue_ids": [
+            "ch01_002_01"
+          ]
+        },
+        {
+          "id": "p002_02",
+          "rect": [
+            0.03425,
+            0.37928,
+            0.46318,
+            0.28282
+          ],
+          "clean": "panels/clean/p002_02.png",
+          "lettered": "panels/lettered/p002_02.png",
+          "dialogue_ids": [
+            "ch01_002_02",
+            "ch01_002_04"
+          ]
+        },
+        {
+          "id": "p002_03",
+          "rect": [
+            0.51327,
+            0.37928,
+            0.45334,
+            0.28282
+          ],
+          "clean": "panels/clean/p002_03.png",
+          "lettered": "panels/lettered/p002_03.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p002_04",
+          "rect": [
+            0.03425,
+            0.66981,
+            0.93236,
+            0.30708
+          ],
+          "clean": "panels/clean/p002_04.png",
+          "lettered": "panels/lettered/p002_04.png",
+          "dialogue_ids": [
+            "ch01_002_03"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p003",
+      "title": "An uncounted person",
+      "clean": "clean/p003.png",
+      "lettered": "lettered/p003.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [],
+      "panels": [
+        {
+          "id": "p003_01",
+          "rect": [
+            0.03082,
+            0.03767,
+            0.93836,
+            0.32021
+          ],
+          "clean": "panels/clean/p003_01.png",
+          "lettered": "panels/lettered/p003_01.png",
+          "dialogue_ids": [
+            "ch01_003_01",
+            "ch01_003_04"
+          ]
+        },
+        {
+          "id": "p003_02",
+          "rect": [
+            0.03082,
+            0.37357,
+            0.46404,
+            0.23402
+          ],
+          "clean": "panels/clean/p003_02.png",
+          "lettered": "panels/lettered/p003_02.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p003_03",
+          "rect": [
+            0.50514,
+            0.37357,
+            0.46404,
+            0.23402
+          ],
+          "clean": "panels/clean/p003_03.png",
+          "lettered": "panels/lettered/p003_03.png",
+          "dialogue_ids": [
+            "ch01_003_02"
+          ]
+        },
+        {
+          "id": "p003_04",
+          "rect": [
+            0.03082,
+            0.62357,
+            0.93836,
+            0.33562
+          ],
+          "clean": "panels/clean/p003_04.png",
+          "lettered": "panels/lettered/p003_04.png",
+          "dialogue_ids": [
+            "ch01_003_03"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p004",
+      "title": "Six borrowed seconds",
+      "clean": "clean/p004.png",
+      "lettered": "lettered/p004.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "ama_rescued"
+      ],
+      "panels": [
+        {
+          "id": "p004_01",
+          "rect": [
+            0.0351,
+            0.03796,
+            0.45634,
+            0.26969
+          ],
+          "clean": "panels/clean/p004_01.png",
+          "lettered": "panels/lettered/p004_01.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p004_02",
+          "rect": [
+            0.50771,
+            0.03796,
+            0.45762,
+            0.26969
+          ],
+          "clean": "panels/clean/p004_02.png",
+          "lettered": "panels/lettered/p004_02.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p004_03",
+          "rect": [
+            0.0351,
+            0.3165,
+            0.93022,
+            0.30765
+          ],
+          "clean": "panels/clean/p004_03.png",
+          "lettered": "panels/lettered/p004_03.png",
+          "dialogue_ids": [
+            "ch01_004_01"
+          ]
+        },
+        {
+          "id": "p004_04",
+          "rect": [
+            0.0351,
+            0.63271,
+            0.93022,
+            0.34018
+          ],
+          "clean": "panels/clean/p004_04.png",
+          "lettered": "panels/lettered/p004_04.png",
+          "dialogue_ids": [
+            "ch01_004_02",
+            "ch01_004_03",
+            "ch01_004_04"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p005",
+      "title": "A door that rounds up",
+      "clean": "clean/p005.png",
+      "lettered": "lettered/p005.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [],
+      "panels": [
+        {
+          "id": "p005_01",
+          "rect": [
+            0.03211,
+            0.02426,
+            0.93536,
+            0.27454
+          ],
+          "clean": "panels/clean/p005_01.png",
+          "lettered": "panels/lettered/p005_01.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p005_02",
+          "rect": [
+            0.03211,
+            0.31164,
+            0.93536,
+            0.17808
+          ],
+          "clean": "panels/clean/p005_02.png",
+          "lettered": "panels/lettered/p005_02.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p005_03",
+          "rect": [
+            0.03211,
+            0.50171,
+            0.4589,
+            0.19321
+          ],
+          "clean": "panels/clean/p005_03.png",
+          "lettered": "panels/lettered/p005_03.png",
+          "dialogue_ids": [
+            "ch01_005_01"
+          ]
+        },
+        {
+          "id": "p005_04",
+          "rect": [
+            0.50728,
+            0.50171,
+            0.46019,
+            0.19321
+          ],
+          "clean": "panels/clean/p005_04.png",
+          "lettered": "panels/lettered/p005_04.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p005_05",
+          "rect": [
+            0.03211,
+            0.70719,
+            0.93536,
+            0.26855
+          ],
+          "clean": "panels/clean/p005_05.png",
+          "lettered": "panels/lettered/p005_05.png",
+          "dialogue_ids": [
+            "ch01_005_02",
+            "ch01_005_03"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p006",
+      "title": "Choose what answers",
+      "clean": "clean/p006.png",
+      "lettered": "lettered/p006.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": "resonance_choice",
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "choice.resonance"
+      ],
+      "panels": [
+        {
+          "id": "p006_01",
+          "rect": [
+            0.03296,
+            0.01398,
+            0.93365,
+            0.39241
+          ],
+          "clean": "panels/clean/p006_01.png",
+          "lettered": "panels/lettered/p006_01.png",
+          "dialogue_ids": [
+            "ch01_006_01"
+          ]
+        },
+        {
+          "id": "p006_02",
+          "rect": [
+            0.03296,
+            0.41866,
+            0.45805,
+            0.28054
+          ],
+          "clean": "panels/clean/p006_02.png",
+          "lettered": "panels/lettered/p006_02.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p006_03",
+          "rect": [
+            0.50813,
+            0.41866,
+            0.45848,
+            0.28054
+          ],
+          "clean": "panels/clean/p006_03.png",
+          "lettered": "panels/lettered/p006_03.png",
+          "dialogue_ids": [
+            "ch01_006_02"
+          ]
+        },
+        {
+          "id": "p006_04",
+          "rect": [
+            0.03296,
+            0.71233,
+            0.93365,
+            0.26484
+          ],
+          "clean": "panels/clean/p006_04.png",
+          "lettered": "panels/lettered/p006_04.png",
+          "dialogue_ids": [
+            "ch01_006_03",
+            "ch01_006_04"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p007",
+      "title": "The city looks back",
+      "clean": "clean/p007.png",
+      "lettered": "lettered/p007.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "resonance_confirmed",
+        "remainder_detected"
+      ],
+      "panels": [
+        {
+          "id": "p007_01",
+          "rect": [
+            0.03382,
+            0.03225,
+            0.93279,
+            0.21632
+          ],
+          "clean": "panels/clean/p007_01.png",
+          "lettered": "panels/lettered/p007_01.png",
+          "dialogue_ids": [
+            "ch01_007_01"
+          ]
+        },
+        {
+          "id": "p007_02",
+          "rect": [
+            0.03382,
+            0.2597,
+            0.45933,
+            0.26998
+          ],
+          "clean": "panels/clean/p007_02.png",
+          "lettered": "panels/lettered/p007_02.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p007_03",
+          "rect": [
+            0.51027,
+            0.2597,
+            0.45634,
+            0.26998
+          ],
+          "clean": "panels/clean/p007_03.png",
+          "lettered": "panels/lettered/p007_03.png",
+          "dialogue_ids": [
+            "ch01_007_02"
+          ]
+        },
+        {
+          "id": "p007_04",
+          "rect": [
+            0.03339,
+            0.54138,
+            0.93322,
+            0.43522
+          ],
+          "clean": "panels/clean/p007_04.png",
+          "lettered": "panels/lettered/p007_04.png",
+          "dialogue_ids": [
+            "ch01_007_03",
+            "ch01_007_04"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p008",
+      "title": "Three stops",
+      "clean": "clean/p008.png",
+      "lettered": "lettered/p008.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": "solo_audit",
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [],
+      "panels": [
+        {
+          "id": "p008_01",
+          "rect": [
+            0.03125,
+            0.02597,
+            0.9375,
+            0.39555
+          ],
+          "clean": "panels/clean/p008_01.png",
+          "lettered": "panels/lettered/p008_01.png",
+          "dialogue_ids": [
+            "ch01_008_01",
+            "ch01_008_03"
+          ]
+        },
+        {
+          "id": "p008_02",
+          "rect": [
+            0.03082,
+            0.43493,
+            0.4542,
+            0.23373
+          ],
+          "clean": "panels/clean/p008_02.png",
+          "lettered": "panels/lettered/p008_02.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p008_03",
+          "rect": [
+            0.50257,
+            0.43493,
+            0.46661,
+            0.23373
+          ],
+          "clean": "panels/clean/p008_03.png",
+          "lettered": "panels/lettered/p008_03.png",
+          "dialogue_ids": [
+            "ch01_008_02"
+          ]
+        },
+        {
+          "id": "p008_04",
+          "rect": [
+            0.03125,
+            0.68208,
+            0.93793,
+            0.29195
+          ],
+          "clean": "panels/clean/p008_04.png",
+          "lettered": "panels/lettered/p008_04.png",
+          "dialogue_ids": []
+        }
+      ]
+    },
+    {
+      "id": "p009",
+      "title": "A pattern, not panic",
+      "clean": "clean/p009.png",
+      "lettered": "lettered/p009.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "encounter.solo.won"
+      ],
+      "panels": [
+        {
+          "id": "p009_01",
+          "rect": [
+            0.03339,
+            0.03225,
+            0.45634,
+            0.2891
+          ],
+          "clean": "panels/clean/p009_01.png",
+          "lettered": "panels/lettered/p009_01.png",
+          "dialogue_ids": [
+            "ch01_009_01",
+            "ch01_009_05",
+            "ch01_009_06",
+            "ch01_009_07"
+          ]
+        },
+        {
+          "id": "p009_02",
+          "rect": [
+            0.50856,
+            0.03225,
+            0.45805,
+            0.2891
+          ],
+          "clean": "panels/clean/p009_02.png",
+          "lettered": "panels/lettered/p009_02.png",
+          "dialogue_ids": [
+            "ch01_009_02"
+          ]
+        },
+        {
+          "id": "p009_03",
+          "rect": [
+            0.03339,
+            0.33476,
+            0.93322,
+            0.30908
+          ],
+          "clean": "panels/clean/p009_03.png",
+          "lettered": "panels/lettered/p009_03.png",
+          "dialogue_ids": [
+            "ch01_009_03"
+          ]
+        },
+        {
+          "id": "p009_04",
+          "rect": [
+            0.03296,
+            0.65525,
+            0.93365,
+            0.32049
+          ],
+          "clean": "panels/clean/p009_04.png",
+          "lettered": "panels/lettered/p009_04.png",
+          "dialogue_ids": [
+            "ch01_009_04"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p010",
+      "title": "Seven fen",
+      "clean": "clean/p010.png",
+      "lettered": "lettered/p010.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "recruit.vesper"
+      ],
+      "panels": [
+        {
+          "id": "p010_01",
+          "rect": [
+            0.02868,
+            0.02483,
+            0.94307,
+            0.2871
+          ],
+          "clean": "panels/clean/p010_01.png",
+          "lettered": "panels/lettered/p010_01.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p010_02",
+          "rect": [
+            0.02868,
+            0.31935,
+            0.47389,
+            0.32106
+          ],
+          "clean": "panels/clean/p010_02.png",
+          "lettered": "panels/lettered/p010_02.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p010_03",
+          "rect": [
+            0.51413,
+            0.31935,
+            0.45762,
+            0.32106
+          ],
+          "clean": "panels/clean/p010_03.png",
+          "lettered": "panels/lettered/p010_03.png",
+          "dialogue_ids": [
+            "ch01_010_01"
+          ]
+        },
+        {
+          "id": "p010_04",
+          "rect": [
+            0.02868,
+            0.64869,
+            0.94307,
+            0.32677
+          ],
+          "clean": "panels/clean/p010_04.png",
+          "lettered": "panels/lettered/p010_04.png",
+          "dialogue_ids": [
+            "ch01_010_02",
+            "ch01_010_03"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p011",
+      "title": "A debt worth keeping",
+      "clean": "clean/p011.png",
+      "lettered": "lettered/p011.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": "duo_audit",
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "encounter.duo.won"
+      ],
+      "panels": [
+        {
+          "id": "p011_01",
+          "rect": [
+            0.01798,
+            0.02255,
+            0.96361,
+            0.30793
+          ],
+          "clean": "panels/clean/p011_01.png",
+          "lettered": "panels/lettered/p011_01.png",
+          "dialogue_ids": [
+            "ch01_011_01",
+            "ch01_011_02"
+          ]
+        },
+        {
+          "id": "p011_02",
+          "rect": [
+            0.01798,
+            0.33933,
+            0.96318,
+            0.18293
+          ],
+          "clean": "panels/clean/p011_02.png",
+          "lettered": "panels/lettered/p011_02.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p011_03",
+          "rect": [
+            0.01798,
+            0.52997,
+            0.48031,
+            0.19492
+          ],
+          "clean": "panels/clean/p011_03.png",
+          "lettered": "panels/lettered/p011_03.png",
+          "dialogue_ids": [
+            "ch01_011_03"
+          ]
+        },
+        {
+          "id": "p011_04",
+          "rect": [
+            0.51712,
+            0.52997,
+            0.46404,
+            0.19492
+          ],
+          "clean": "panels/clean/p011_04.png",
+          "lettered": "panels/lettered/p011_04.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p011_05",
+          "rect": [
+            0.01798,
+            0.73316,
+            0.96318,
+            0.24829
+          ],
+          "clean": "panels/clean/p011_05.png",
+          "lettered": "panels/lettered/p011_05.png",
+          "dialogue_ids": [
+            "ch01_011_04"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p012",
+      "title": "The cheapest insurance",
+      "clean": "clean/p012.png",
+      "lettered": "lettered/p012.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": "charm_choice",
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "choice.charm"
+      ],
+      "panels": [
+        {
+          "id": "p012_01",
+          "rect": [
+            0.03382,
+            0.02711,
+            0.93236,
+            0.4121
+          ],
+          "clean": "panels/clean/p012_01.png",
+          "lettered": "panels/lettered/p012_01.png",
+          "dialogue_ids": [
+            "ch01_012_01"
+          ]
+        },
+        {
+          "id": "p012_02",
+          "rect": [
+            0.03382,
+            0.44777,
+            0.45377,
+            0.23516
+          ],
+          "clean": "panels/clean/p012_02.png",
+          "lettered": "panels/lettered/p012_02.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p012_03",
+          "rect": [
+            0.5,
+            0.44777,
+            0.46618,
+            0.23516
+          ],
+          "clean": "panels/clean/p012_03.png",
+          "lettered": "panels/lettered/p012_03.png",
+          "dialogue_ids": [
+            "ch01_012_02",
+            "ch01_012_03"
+          ]
+        },
+        {
+          "id": "p012_04",
+          "rect": [
+            0.03382,
+            0.69092,
+            0.93236,
+            0.28482
+          ],
+          "clean": "panels/clean/p012_04.png",
+          "lettered": "panels/lettered/p012_04.png",
+          "dialogue_ids": [
+            "ch01_012_04"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p013",
+      "title": "What a name costs",
+      "clean": "clean/p013.png",
+      "lettered": "lettered/p013.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "boss.varro.available"
+      ],
+      "panels": [
+        {
+          "id": "p013_01",
+          "rect": [
+            0.02312,
+            0.01912,
+            0.95377,
+            0.30365
+          ],
+          "clean": "panels/clean/p013_01.png",
+          "lettered": "panels/lettered/p013_01.png",
+          "dialogue_ids": [
+            "ch01_013_01",
+            "ch01_013_05"
+          ]
+        },
+        {
+          "id": "p013_02",
+          "rect": [
+            0.02312,
+            0.33647,
+            0.46918,
+            0.25771
+          ],
+          "clean": "panels/clean/p013_02.png",
+          "lettered": "panels/lettered/p013_02.png",
+          "dialogue_ids": [
+            "ch01_013_02"
+          ]
+        },
+        {
+          "id": "p013_03",
+          "rect": [
+            0.50856,
+            0.33647,
+            0.46832,
+            0.25771
+          ],
+          "clean": "panels/clean/p013_03.png",
+          "lettered": "panels/lettered/p013_03.png",
+          "dialogue_ids": [
+            "ch01_013_03"
+          ]
+        },
+        {
+          "id": "p013_04",
+          "rect": [
+            0.02312,
+            0.60502,
+            0.95377,
+            0.37243
+          ],
+          "clean": "panels/clean/p013_04.png",
+          "lettered": "panels/lettered/p013_04.png",
+          "dialogue_ids": [
+            "ch01_013_04"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p014",
+      "title": "A collector takes the last word",
+      "clean": "clean/p014.png",
+      "lettered": "lettered/p014.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": "boss_varro",
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "boss.varro.jar_captured"
+      ],
+      "panels": [
+        {
+          "id": "p014_01",
+          "rect": [
+            0.03168,
+            0.02597,
+            0.93707,
+            0.42979
+          ],
+          "clean": "panels/clean/p014_01.png",
+          "lettered": "panels/lettered/p014_01.png",
+          "dialogue_ids": [
+            "ch01_014_04",
+            "ch01_014_05",
+            "ch01_014_06"
+          ]
+        },
+        {
+          "id": "p014_02",
+          "rect": [
+            0.03168,
+            0.47546,
+            0.46276,
+            0.23288
+          ],
+          "clean": "panels/clean/p014_02.png",
+          "lettered": "panels/lettered/p014_02.png",
+          "dialogue_ids": [
+            "ch01_014_01"
+          ]
+        },
+        {
+          "id": "p014_03",
+          "rect": [
+            0.51113,
+            0.47546,
+            0.45762,
+            0.23288
+          ],
+          "clean": "panels/clean/p014_03.png",
+          "lettered": "panels/lettered/p014_03.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p014_04",
+          "rect": [
+            0.03168,
+            0.72517,
+            0.93707,
+            0.25171
+          ],
+          "clean": "panels/clean/p014_04.png",
+          "lettered": "panels/lettered/p014_04.png",
+          "dialogue_ids": [
+            "ch01_014_02",
+            "ch01_014_03",
+            "ch01_014_07"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p015",
+      "title": "First affected round",
+      "clean": "clean/p015.png",
+      "lettered": "lettered/p015.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "boss.varro.affected_round_1"
+      ],
+      "panels": [
+        {
+          "id": "p015_01",
+          "rect": [
+            0.02825,
+            0.01826,
+            0.46147,
+            0.33933
+          ],
+          "clean": "panels/clean/p015_01.png",
+          "lettered": "panels/lettered/p015_01.png",
+          "dialogue_ids": [
+            "ch01_015_01",
+            "ch01_015_04"
+          ]
+        },
+        {
+          "id": "p015_02",
+          "rect": [
+            0.51199,
+            0.01826,
+            0.46104,
+            0.33933
+          ],
+          "clean": "panels/clean/p015_02.png",
+          "lettered": "panels/lettered/p015_02.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p015_03",
+          "rect": [
+            0.02825,
+            0.37129,
+            0.94521,
+            0.27768
+          ],
+          "clean": "panels/clean/p015_03.png",
+          "lettered": "panels/lettered/p015_03.png",
+          "dialogue_ids": [
+            "ch01_015_02"
+          ]
+        },
+        {
+          "id": "p015_04",
+          "rect": [
+            0.02825,
+            0.65953,
+            0.94521,
+            0.32163
+          ],
+          "clean": "panels/clean/p015_04.png",
+          "lettered": "panels/lettered/p015_04.png",
+          "dialogue_ids": [
+            "ch01_015_03"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p016",
+      "title": "Final notice",
+      "clean": "clean/p016.png",
+      "lettered": "lettered/p016.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "boss.varro.affected_round_2"
+      ],
+      "panels": [
+        {
+          "id": "p016_01",
+          "rect": [
+            0.03425,
+            0.02083,
+            0.93193,
+            0.2714
+          ],
+          "clean": "panels/clean/p016_01.png",
+          "lettered": "panels/lettered/p016_01.png",
+          "dialogue_ids": [
+            "ch01_016_04"
+          ]
+        },
+        {
+          "id": "p016_02",
+          "rect": [
+            0.03425,
+            0.30337,
+            0.45805,
+            0.28682
+          ],
+          "clean": "panels/clean/p016_02.png",
+          "lettered": "panels/lettered/p016_02.png",
+          "dialogue_ids": [
+            "ch01_016_01"
+          ]
+        },
+        {
+          "id": "p016_03",
+          "rect": [
+            0.51027,
+            0.30337,
+            0.45591,
+            0.28682
+          ],
+          "clean": "panels/clean/p016_03.png",
+          "lettered": "panels/lettered/p016_03.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p016_04",
+          "rect": [
+            0.03425,
+            0.60188,
+            0.93193,
+            0.377
+          ],
+          "clean": "panels/clean/p016_04.png",
+          "lettered": "panels/lettered/p016_04.png",
+          "dialogue_ids": [
+            "ch01_016_02",
+            "ch01_016_03"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p017",
+      "title": "The clause nobody reads",
+      "clean": "clean/p017.png",
+      "lettered": "lettered/p017.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "boss.varro.affected_round_3",
+        "boss.varro.jar_opened"
+      ],
+      "panels": [
+        {
+          "id": "p017_01",
+          "rect": [
+            0.03767,
+            0.02312,
+            0.92637,
+            0.28995
+          ],
+          "clean": "panels/clean/p017_01.png",
+          "lettered": "panels/lettered/p017_01.png",
+          "dialogue_ids": [
+            "ch01_017_04"
+          ]
+        },
+        {
+          "id": "p017_02",
+          "rect": [
+            0.03724,
+            0.3222,
+            0.9268,
+            0.17523
+          ],
+          "clean": "panels/clean/p017_02.png",
+          "lettered": "panels/lettered/p017_02.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p017_03",
+          "rect": [
+            0.03724,
+            0.50599,
+            0.45334,
+            0.18864
+          ],
+          "clean": "panels/clean/p017_03.png",
+          "lettered": "panels/lettered/p017_03.png",
+          "dialogue_ids": [
+            "ch01_017_01"
+          ]
+        },
+        {
+          "id": "p017_04",
+          "rect": [
+            0.50685,
+            0.50599,
+            0.45719,
+            0.18864
+          ],
+          "clean": "panels/clean/p017_04.png",
+          "lettered": "panels/lettered/p017_04.png",
+          "dialogue_ids": [
+            "ch01_017_02"
+          ]
+        },
+        {
+          "id": "p017_05",
+          "rect": [
+            0.03724,
+            0.70377,
+            0.92723,
+            0.27255
+          ],
+          "clean": "panels/clean/p017_05.png",
+          "lettered": "panels/lettered/p017_05.png",
+          "dialogue_ids": [
+            "ch01_017_03"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p018",
+      "title": "One clean answer",
+      "clean": "clean/p018.png",
+      "lettered": "lettered/p018.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "encounter.varro.won"
+      ],
+      "panels": [
+        {
+          "id": "p018_01",
+          "rect": [
+            0.02526,
+            0.02825,
+            0.94949,
+            0.38213
+          ],
+          "clean": "panels/clean/p018_01.png",
+          "lettered": "panels/lettered/p018_01.png",
+          "dialogue_ids": []
+        },
+        {
+          "id": "p018_02",
+          "rect": [
+            0.02611,
+            0.42437,
+            0.46361,
+            0.23801
+          ],
+          "clean": "panels/clean/p018_02.png",
+          "lettered": "panels/lettered/p018_02.png",
+          "dialogue_ids": [
+            "ch01_018_01",
+            "ch01_018_05",
+            "ch01_018_06",
+            "ch01_018_07"
+          ]
+        },
+        {
+          "id": "p018_03",
+          "rect": [
+            0.50685,
+            0.42437,
+            0.46789,
+            0.23801
+          ],
+          "clean": "panels/clean/p018_03.png",
+          "lettered": "panels/lettered/p018_03.png",
+          "dialogue_ids": [
+            "ch01_018_02",
+            "ch01_018_03"
+          ]
+        },
+        {
+          "id": "p018_04",
+          "rect": [
+            0.02611,
+            0.67551,
+            0.9482,
+            0.30108
+          ],
+          "clean": "panels/clean/p018_04.png",
+          "lettered": "panels/lettered/p018_04.png",
+          "dialogue_ids": [
+            "ch01_018_04"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p019",
+      "title": "The rest is not yours",
+      "clean": "clean/p019.png",
+      "lettered": "lettered/p019.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "varro_spared",
+        "seal.1"
+      ],
+      "panels": [
+        {
+          "id": "p019_01",
+          "rect": [
+            0.03553,
+            0.00799,
+            0.93065,
+            0.28539
+          ],
+          "clean": "panels/clean/p019_01.png",
+          "lettered": "panels/lettered/p019_01.png",
+          "dialogue_ids": [
+            "ch01_019_01"
+          ]
+        },
+        {
+          "id": "p019_02",
+          "rect": [
+            0.03553,
+            0.30051,
+            0.45933,
+            0.3125
+          ],
+          "clean": "panels/clean/p019_02.png",
+          "lettered": "panels/lettered/p019_02.png",
+          "dialogue_ids": [
+            "ch01_019_02",
+            "ch01_019_03"
+          ]
+        },
+        {
+          "id": "p019_03",
+          "rect": [
+            0.50942,
+            0.30051,
+            0.45676,
+            0.3125
+          ],
+          "clean": "panels/clean/p019_03.png",
+          "lettered": "panels/lettered/p019_03.png",
+          "dialogue_ids": [
+            "ch01_019_04"
+          ]
+        },
+        {
+          "id": "p019_04",
+          "rect": [
+            0.03553,
+            0.62272,
+            0.93065,
+            0.35616
+          ],
+          "clean": "panels/clean/p019_04.png",
+          "lettered": "panels/lettered/p019_04.png",
+          "dialogue_ids": [
+            "ch01_019_05",
+            "ch01_019_06"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p020",
+      "title": "A beginning in the Tally",
+      "clean": "clean/p020.png",
+      "lettered": "lettered/p020.png",
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      },
+      "event_postconditions_only": [
+        "chapter.01.complete"
+      ],
+      "panels": [
+        {
+          "id": "p020_01",
+          "rect": [
+            0.03296,
+            0.02112,
+            0.93408,
+            0.36444
+          ],
+          "clean": "panels/clean/p020_01.png",
+          "lettered": "panels/lettered/p020_01.png",
+          "dialogue_ids": [
+            "ch01_020_01",
+            "ch01_020_08"
+          ]
+        },
+        {
+          "id": "p020_02",
+          "rect": [
+            0.03296,
+            0.39498,
+            0.45034,
+            0.27626
+          ],
+          "clean": "panels/clean/p020_02.png",
+          "lettered": "panels/lettered/p020_02.png",
+          "dialogue_ids": [
+            "ch01_020_02",
+            "ch01_020_03"
+          ]
+        },
+        {
+          "id": "p020_03",
+          "rect": [
+            0.50043,
+            0.39498,
+            0.46661,
+            0.27626
+          ],
+          "clean": "panels/clean/p020_03.png",
+          "lettered": "panels/lettered/p020_03.png",
+          "dialogue_ids": [
+            "ch01_020_04",
+            "ch01_020_05"
+          ]
+        },
+        {
+          "id": "p020_04",
+          "rect": [
+            0.03296,
+            0.68037,
+            0.93408,
+            0.29823
+          ],
+          "clean": "panels/clean/p020_04.png",
+          "lettered": "panels/lettered/p020_04.png",
+          "dialogue_ids": [
+            "ch01_020_06",
+            "ch01_020_07"
+          ]
+        }
+      ]
+    }
+  ],
+  "dialogue": [
+    {
+      "id": "ch01_001_01",
+      "page_id": "p001",
+      "panel_id": "p001_01",
+      "speaker": "TITLE",
+      "text": "ZERO-SUM: OMEN",
+      "kind": "title",
+      "shape": "caption",
+      "box": [
+        0.055,
+        0.025,
+        0.89,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "display",
+      "max_lines": 2,
+      "source_beat": "cover",
+      "status": "authored English; lettering/localization QA pending"
+    },
+    {
+      "id": "ch01_001_02",
+      "page_id": "p001",
+      "panel_id": "p001_01",
+      "speaker": "TITLE",
+      "text": "THE REMAINDER",
+      "kind": "subtitle",
+      "shape": "caption",
+      "box": [
+        0.13,
+        0.09,
+        0.74,
+        0.04
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "display",
+      "max_lines": 2,
+      "source_beat": "cover",
+      "status": "authored English; lettering/localization QA pending"
+    },
+    {
+      "id": "ch01_001_03",
+      "page_id": "p001",
+      "panel_id": "p001_01",
+      "speaker": "CAPTION",
+      "text": "Chapter 01 - Rain Alley Nine",
+      "kind": "imprint",
+      "shape": "caption",
+      "box": [
+        0.1,
+        0.944,
+        0.8,
+        0.035
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 3,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "cover",
+      "status": "authored English; lettering/localization QA pending"
+    },
+    {
+      "id": "ch01_002_01",
+      "page_id": "p002",
+      "panel_id": "p002_01",
+      "speaker": "CAPTION",
+      "text": "Meridian. Every soul wears a number.",
+      "kind": "caption",
+      "shape": "caption",
+      "box": [
+        0.05497,
+        0.0369,
+        0.39366,
+        0.05675
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ]
+    },
+    {
+      "id": "ch01_002_02",
+      "page_id": "p002",
+      "panel_id": "p002_02",
+      "speaker": "TOBI",
+      "text": "Mum?",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.045,
+        0.387,
+        0.13,
+        0.047
+      ],
+      "tail_anchor": [
+        0.125,
+        0.509
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.517
+      ]
+    },
+    {
+      "id": "ch01_002_04",
+      "page_id": "p002",
+      "panel_id": "p002_02",
+      "speaker": "SYSTEM",
+      "text": "01",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.188,
+        0.414,
+        0.08,
+        0.037
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_002_03",
+      "page_id": "p002",
+      "panel_id": "p002_04",
+      "speaker": "COLLECTOR",
+      "text": "Ama Okoro. Your account's closed.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.54,
+        0.688,
+        0.39,
+        0.065
+      ],
+      "tail_anchor": [
+        0.395,
+        0.717
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.695,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.777
+      ]
+    },
+    {
+      "id": "ch01_003_01",
+      "page_id": "p003",
+      "panel_id": "p003_01",
+      "speaker": "COLLECTOR",
+      "text": "Move.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.255,
+        0.06,
+        0.2,
+        0.057
+      ],
+      "tail_anchor": [
+        0.16,
+        0.15
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_003_04",
+      "page_id": "p003",
+      "panel_id": "p003_01",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.485,
+        0.065,
+        0.12,
+        0.035
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_003_02",
+      "page_id": "p003",
+      "panel_id": "p003_03",
+      "speaker": "NIL",
+      "text": "There's still six in the jar.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.545,
+        0.545,
+        0.39,
+        0.055
+      ],
+      "tail_anchor": [
+        0.65,
+        0.529
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.649,
+        0.387
+      ]
+    },
+    {
+      "id": "ch01_003_03",
+      "page_id": "p003",
+      "panel_id": "p003_04",
+      "speaker": "COLLECTOR",
+      "text": "Those aren't yours.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.06,
+        0.875,
+        0.36,
+        0.065
+      ],
+      "tail_anchor": [
+        0.17,
+        0.72
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.605,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.687
+      ]
+    },
+    {
+      "id": "ch01_004_01",
+      "page_id": "p004",
+      "panel_id": "p004_03",
+      "speaker": "SYSTEM",
+      "text": "AMA CIVIC 01 -> 07 / JAR RESERVE -6",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.56,
+        0.337,
+        0.36,
+        0.07
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.275,
+        0.335,
+        0.45,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_004_02",
+      "page_id": "p004",
+      "panel_id": "p004_04",
+      "speaker": "COLLECTOR",
+      "text": "That one has no number.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.903,
+        0.39,
+        0.06
+      ],
+      "tail_anchor": [
+        0.17,
+        0.71
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.665,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.747
+      ]
+    },
+    {
+      "id": "ch01_004_03",
+      "page_id": "p004",
+      "panel_id": "p004_04",
+      "speaker": "NIL",
+      "text": "Go. Both of you.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.55,
+        0.903,
+        0.39,
+        0.06
+      ],
+      "tail_anchor": [
+        0.697,
+        0.752
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.665,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.812
+      ]
+    },
+    {
+      "id": "ch01_004_04",
+      "page_id": "p004",
+      "panel_id": "p004_04",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.635,
+        0.641,
+        0.12,
+        0.034
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_005_01",
+      "page_id": "p005",
+      "panel_id": "p005_03",
+      "speaker": "BROTHER NOUGHT",
+      "text": "In here. Quick.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.052,
+        0.515,
+        0.235,
+        0.057
+      ],
+      "tail_anchor": [
+        0.365,
+        0.568
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.545,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.627
+      ]
+    },
+    {
+      "id": "ch01_005_02",
+      "page_id": "p005",
+      "panel_id": "p005_05",
+      "speaker": "NIL",
+      "text": "Your nail has my coat.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.79,
+        0.265,
+        0.063
+      ],
+      "tail_anchor": [
+        0.407,
+        0.785
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.765,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.847
+      ]
+    },
+    {
+      "id": "ch01_005_03",
+      "page_id": "p005",
+      "panel_id": "p005_05",
+      "speaker": "BROTHER NOUGHT",
+      "text": "It rounds everything up.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.58,
+        0.91,
+        0.36,
+        0.057
+      ],
+      "tail_anchor": [
+        0.78,
+        0.8
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.765,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.912
+      ]
+    },
+    {
+      "id": "ch01_006_01",
+      "page_id": "p006",
+      "panel_id": "p006_01",
+      "speaker": "BROTHER NOUGHT",
+      "text": "Every soul needs a number, child.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05371,
+        0.0308,
+        0.39421,
+        0.06391
+      ],
+      "tail_anchor": [
+        0.31306,
+        0.12273
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_006_02",
+      "page_id": "p006",
+      "panel_id": "p006_03",
+      "speaker": "NIL",
+      "text": "I don't have one.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.52945,
+        0.43619,
+        0.40517,
+        0.06663
+      ],
+      "tail_anchor": [
+        0.64567,
+        0.53204
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.649,
+        0.517
+      ]
+    },
+    {
+      "id": "ch01_006_03",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "BROTHER NOUGHT",
+      "text": "Then pick. The machine is listening.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05371,
+        0.72704,
+        0.42533,
+        0.05885
+      ],
+      "tail_anchor": [
+        0.31306,
+        0.80748
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.695,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.777
+      ]
+    },
+    {
+      "id": "ch01_006_04",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "SYSTEM",
+      "text": "Choose a resonance. A personal number, not your health.",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.52053,
+        0.72704,
+        0.42533,
+        0.05885
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.695,
+        0.41,
+        0.06
+      ]
+    },
+    {
+      "id": "ch01_007_01",
+      "page_id": "p007",
+      "panel_id": "p007_01",
+      "speaker": "SYSTEM",
+      "text": "RESONANCE {{resonance}}",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.275,
+        0.08,
+        0.16,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.275,
+        0.065,
+        0.45,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_007_02",
+      "page_id": "p007",
+      "panel_id": "p007_03",
+      "speaker": "SYSTEM",
+      "text": "REMAINDER DETECTED",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.53,
+        0.28,
+        0.39,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.305,
+        0.39,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_007_03",
+      "page_id": "p007",
+      "panel_id": "p007_04",
+      "speaker": "BROTHER NOUGHT",
+      "text": "Hap's watching. Run.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.6,
+        0.905,
+        0.34,
+        0.06
+      ],
+      "tail_anchor": [
+        0.774,
+        0.656
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.605,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.687
+      ]
+    },
+    {
+      "id": "ch01_007_04",
+      "page_id": "p007",
+      "panel_id": "p007_04",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.185,
+        0.545,
+        0.11,
+        0.034
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_008_01",
+      "page_id": "p008",
+      "panel_id": "p008_01",
+      "speaker": "SYSTEM",
+      "text": "Three stops make a pattern.",
+      "kind": "caption",
+      "shape": "caption",
+      "box": [
+        0.06,
+        0.315,
+        0.39,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-04",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ]
+    },
+    {
+      "id": "ch01_008_03",
+      "page_id": "p008",
+      "panel_id": "p008_01",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.302,
+        0.058,
+        0.11,
+        0.034
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_008_02",
+      "page_id": "p008",
+      "panel_id": "p008_03",
+      "speaker": "NIL",
+      "text": "One. Then the next.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.68,
+        0.612,
+        0.27,
+        0.053
+      ],
+      "tail_anchor": [
+        0.66,
+        0.544
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-04",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.649,
+        0.517
+      ]
+    },
+    {
+      "id": "ch01_009_01",
+      "page_id": "p009",
+      "panel_id": "p009_01",
+      "speaker": "SYSTEM",
+      "text": "JACKPOT",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.052,
+        0.049,
+        0.4,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-04",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.39,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_009_05",
+      "page_id": "p009",
+      "panel_id": "p009_01",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.09,
+        0.155,
+        0.08,
+        0.07
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_009_06",
+      "page_id": "p009",
+      "panel_id": "p009_01",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.232,
+        0.155,
+        0.08,
+        0.07
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_009_07",
+      "page_id": "p009",
+      "panel_id": "p009_01",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.372,
+        0.155,
+        0.08,
+        0.07
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_009_02",
+      "page_id": "p009",
+      "panel_id": "p009_02",
+      "speaker": "SFX",
+      "text": "K-CLACK",
+      "kind": "sfx",
+      "shape": "sfx",
+      "box": [
+        0.54,
+        0.047,
+        0.39,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "display",
+      "max_lines": 2,
+      "source_beat": "JAM-04",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.065,
+        0.38,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_009_03",
+      "page_id": "p009",
+      "panel_id": "p009_03",
+      "speaker": "NIL",
+      "text": "...Huh.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.54,
+        0.36,
+        0.25,
+        0.057
+      ],
+      "tail_anchor": [
+        0.34,
+        0.449
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-04",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.335,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.417
+      ]
+    },
+    {
+      "id": "ch01_009_04",
+      "page_id": "p009",
+      "panel_id": "p009_04",
+      "speaker": "SYSTEM",
+      "text": "0 - PARRY",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.06,
+        0.9,
+        0.34,
+        0.055
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-04",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.665,
+        0.38,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_010_01",
+      "page_id": "p010",
+      "panel_id": "p010_03",
+      "speaker": "VESPER",
+      "text": "Need a hand? Seven fen.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.552,
+        0.525,
+        0.39,
+        0.063
+      ],
+      "tail_anchor": [
+        0.77,
+        0.377
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-05",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.821,
+        0.387
+      ]
+    },
+    {
+      "id": "ch01_010_02",
+      "page_id": "p010",
+      "panel_id": "p010_04",
+      "speaker": "NIL",
+      "text": "I don't have seven fen.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.045,
+        0.885,
+        0.39,
+        0.06
+      ],
+      "tail_anchor": [
+        0.276,
+        0.766
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-05",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.605,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.687
+      ]
+    },
+    {
+      "id": "ch01_010_03",
+      "page_id": "p010",
+      "panel_id": "p010_04",
+      "speaker": "VESPER",
+      "text": "I'll put it on your tab.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.55,
+        0.885,
+        0.39,
+        0.06
+      ],
+      "tail_anchor": [
+        0.79,
+        0.753
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-05",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.605,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.752
+      ]
+    },
+    {
+      "id": "ch01_011_01",
+      "page_id": "p011",
+      "panel_id": "p011_01",
+      "speaker": "NIL",
+      "text": "I don't have a tab.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.03939,
+        0.04032,
+        0.43898,
+        0.07106
+      ],
+      "tail_anchor": [
+        0.30706,
+        0.13743
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-06",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_011_02",
+      "page_id": "p011",
+      "panel_id": "p011_01",
+      "speaker": "VESPER",
+      "text": "You do now.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.5212,
+        0.04032,
+        0.43898,
+        0.07106
+      ],
+      "tail_anchor": [
+        0.69251,
+        0.21441
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-06",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.065,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.212
+      ]
+    },
+    {
+      "id": "ch01_011_03",
+      "page_id": "p011",
+      "panel_id": "p011_03",
+      "speaker": "VESPER",
+      "text": "Read the reel. Then choose.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.04032,
+        0.54459,
+        0.42446,
+        0.05555
+      ],
+      "tail_anchor": [
+        0.16207,
+        0.62451
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-06",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.545,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.627
+      ]
+    },
+    {
+      "id": "ch01_011_04",
+      "page_id": "p011",
+      "panel_id": "p011_05",
+      "speaker": "NIL",
+      "text": "That one.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.03938,
+        0.75178,
+        0.40668,
+        0.07076
+      ],
+      "tail_anchor": [
+        0.30693,
+        0.85358
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-06",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.765,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.847
+      ]
+    },
+    {
+      "id": "ch01_012_01",
+      "page_id": "p012",
+      "panel_id": "p012_01",
+      "speaker": "GUS",
+      "text": "One for the road. Pick what you trust.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.5518,
+        0.04477,
+        0.39366,
+        0.06711
+      ],
+      "tail_anchor": [
+        0.68647,
+        0.14132
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-07",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_012_02",
+      "page_id": "p012",
+      "panel_id": "p012_03",
+      "speaker": "VESPER",
+      "text": "Generous today?",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.52168,
+        0.46247,
+        0.41197,
+        0.05585
+      ],
+      "tail_anchor": [
+        0.63985,
+        0.54281
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-07",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.649,
+        0.517
+      ]
+    },
+    {
+      "id": "ch01_012_03",
+      "page_id": "p012",
+      "panel_id": "p012_03",
+      "speaker": "GUS",
+      "text": "Alive customers come back.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.53252,
+        0.52616,
+        0.41197,
+        0.05585
+      ],
+      "tail_anchor": [
+        0.82633,
+        0.6065
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-07",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.5,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.821,
+        0.582
+      ]
+    },
+    {
+      "id": "ch01_012_04",
+      "page_id": "p012",
+      "panel_id": "p012_04",
+      "speaker": "SYSTEM",
+      "text": "Horseshoe - Black Cat - Ofuda Ward",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.26691,
+        0.70674,
+        0.46618,
+        0.05274
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-07",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.275,
+        0.695,
+        0.45,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_013_01",
+      "page_id": "p013",
+      "panel_id": "p013_01",
+      "speaker": "VARRO",
+      "text": "NaN. Worth more than my whole street.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.29,
+        0.035,
+        0.37,
+        0.065
+      ],
+      "tail_anchor": [
+        0.647,
+        0.109
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_013_05",
+      "page_id": "p013",
+      "panel_id": "p013_01",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.106,
+        0.065,
+        0.11,
+        0.034
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_013_02",
+      "page_id": "p013",
+      "panel_id": "p013_02",
+      "speaker": "VESPER",
+      "text": "They promised your sister an exemption?",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.045,
+        0.532,
+        0.4,
+        0.058
+      ],
+      "tail_anchor": [
+        0.285,
+        0.465
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.387
+      ]
+    },
+    {
+      "id": "ch01_013_03",
+      "page_id": "p013",
+      "panel_id": "p013_03",
+      "speaker": "VARRO",
+      "text": "Don't talk about her.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.555,
+        0.534,
+        0.39,
+        0.052
+      ],
+      "tail_anchor": [
+        0.695,
+        0.454
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.821,
+        0.387
+      ]
+    },
+    {
+      "id": "ch01_013_04",
+      "page_id": "p013",
+      "panel_id": "p013_04",
+      "speaker": "SYSTEM",
+      "text": "VARRO KADE - THE LEDGERHOUND / CIVIC 61",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.26,
+        0.914,
+        0.47,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.275,
+        0.605,
+        0.45,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_014_04",
+      "page_id": "p014",
+      "panel_id": "p014_01",
+      "speaker": "SYSTEM",
+      "text": "4",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.443,
+        0.291,
+        0.05,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_014_05",
+      "page_id": "p014",
+      "panel_id": "p014_01",
+      "speaker": "SYSTEM",
+      "text": "5",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.516,
+        0.291,
+        0.05,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_014_06",
+      "page_id": "p014",
+      "panel_id": "p014_01",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.589,
+        0.291,
+        0.05,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_014_01",
+      "page_id": "p014",
+      "panel_id": "p014_02",
+      "speaker": "VARRO",
+      "text": "Interest is due.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.65,
+        0.39,
+        0.05
+      ],
+      "tail_anchor": [
+        0.21,
+        0.545
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.08,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.351,
+        0.517
+      ]
+    },
+    {
+      "id": "ch01_014_02",
+      "page_id": "p014",
+      "panel_id": "p014_04",
+      "speaker": "SYSTEM",
+      "text": "SCORING SLOT 3 HELD / SCORES AS 0",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.05,
+        0.904,
+        0.41,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.695,
+        0.41,
+        0.06
+      ]
+    },
+    {
+      "id": "ch01_014_03",
+      "page_id": "p014",
+      "panel_id": "p014_04",
+      "speaker": "VESPER",
+      "text": "Three defences - or three rounds. Then you get it back.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.738,
+        0.41,
+        0.084
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.695,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.842
+      ],
+      "off_panel_speaker": true
+    },
+    {
+      "id": "ch01_014_07",
+      "page_id": "p014",
+      "panel_id": "p014_04",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.674,
+        0.923,
+        0.06,
+        0.035
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_015_01",
+      "page_id": "p015",
+      "panel_id": "p015_01",
+      "speaker": "VESPER",
+      "text": "He took the score. Not your hand.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.035,
+        0.4,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.147
+      ],
+      "off_panel_speaker": true
+    },
+    {
+      "id": "ch01_015_04",
+      "page_id": "p015",
+      "panel_id": "p015_01",
+      "speaker": "SYSTEM",
+      "text": "STOP 0 / SCORE 0 / HELD ROUND 1 OF 3",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.05,
+        0.293,
+        0.4,
+        0.052
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_015_02",
+      "page_id": "p015",
+      "panel_id": "p015_03",
+      "speaker": "SYSTEM",
+      "text": "0 - PARRY",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.61,
+        0.383,
+        0.3,
+        0.052
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.275,
+        0.335,
+        0.45,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_015_03",
+      "page_id": "p015",
+      "panel_id": "p015_04",
+      "speaker": "NIL",
+      "text": "Then I can still stop him.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.3,
+        0.683,
+        0.32,
+        0.058
+      ],
+      "tail_anchor": [
+        0.485,
+        0.79
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.665,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.747
+      ]
+    },
+    {
+      "id": "ch01_016_04",
+      "page_id": "p016",
+      "panel_id": "p016_01",
+      "speaker": "SYSTEM",
+      "text": "HELD ROUND 2 OF 3",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.32,
+        0.04,
+        0.34,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_016_01",
+      "page_id": "p016",
+      "panel_id": "p016_02",
+      "speaker": "VARRO",
+      "text": "Final notice.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.514,
+        0.39,
+        0.058
+      ],
+      "tail_anchor": [
+        0.185,
+        0.433
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.821,
+        0.387
+      ]
+    },
+    {
+      "id": "ch01_016_02",
+      "page_id": "p016",
+      "panel_id": "p016_04",
+      "speaker": "VESPER",
+      "text": "He always says that like it's the first one.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.626,
+        0.41,
+        0.083
+      ],
+      "tail_anchor": [
+        0.41,
+        0.827
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.605,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.687
+      ]
+    },
+    {
+      "id": "ch01_016_03",
+      "page_id": "p016",
+      "panel_id": "p016_04",
+      "speaker": "NIL",
+      "text": "Wait.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.54,
+        0.917,
+        0.17,
+        0.043
+      ],
+      "tail_anchor": [
+        0.235,
+        0.819
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.605,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.752
+      ]
+    },
+    {
+      "id": "ch01_017_04",
+      "page_id": "p017",
+      "panel_id": "p017_01",
+      "speaker": "SYSTEM",
+      "text": "RELEASE TRACK - ROUND 3 OF 3",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.49,
+        0.041,
+        0.43,
+        0.051
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_017_01",
+      "page_id": "p017",
+      "panel_id": "p017_03",
+      "speaker": "SFX",
+      "text": "KLANG",
+      "kind": "sfx",
+      "shape": "sfx",
+      "box": [
+        0.075,
+        0.53,
+        0.35,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "display",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.545,
+        0.39,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_017_02",
+      "page_id": "p017",
+      "panel_id": "p017_04",
+      "speaker": "SYSTEM",
+      "text": "THREE AFFECTED ROUNDS - JAR OPEN",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.53,
+        0.631,
+        0.41,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.545,
+        0.39,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_017_03",
+      "page_id": "p017",
+      "panel_id": "p017_05",
+      "speaker": "NIL",
+      "text": "There.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.055,
+        0.914,
+        0.25,
+        0.05
+      ],
+      "tail_anchor": [
+        0.277,
+        0.775
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.765,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.847
+      ]
+    },
+    {
+      "id": "ch01_018_01",
+      "page_id": "p018",
+      "panel_id": "p018_02",
+      "speaker": "SYSTEM",
+      "text": "DIGIT RETURNED",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.05,
+        0.624,
+        0.41,
+        0.035
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.435,
+        0.38,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_018_05",
+      "page_id": "p018",
+      "panel_id": "p018_02",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.23,
+        0.554,
+        0.05,
+        0.055
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_018_06",
+      "page_id": "p018",
+      "panel_id": "p018_02",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.326,
+        0.554,
+        0.05,
+        0.055
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_018_07",
+      "page_id": "p018",
+      "panel_id": "p018_02",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.423,
+        0.554,
+        0.05,
+        0.055
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_018_02",
+      "page_id": "p018",
+      "panel_id": "p018_03",
+      "speaker": "SYSTEM",
+      "text": "OMEN OVERWRITE",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.54,
+        0.556,
+        0.4,
+        0.055
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.435,
+        0.39,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_018_03",
+      "page_id": "p018",
+      "panel_id": "p018_03",
+      "speaker": "SFX",
+      "text": "K-CLACK",
+      "kind": "sfx",
+      "shape": "sfx",
+      "box": [
+        0.63,
+        0.619,
+        0.27,
+        0.035
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "display",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.5,
+        0.38,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_018_04",
+      "page_id": "p018",
+      "panel_id": "p018_04",
+      "speaker": "SYSTEM",
+      "text": "AUDIT COMPLETE / VARRO AUDIT 00 / CIVIC 61",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.717,
+        0.705,
+        0.217,
+        0.145
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 4,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.695,
+        0.38,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_019_01",
+      "page_id": "p019",
+      "panel_id": "p019_01",
+      "speaker": "VARRO",
+      "text": "Go on. Settle the rest.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.055,
+        0.045,
+        0.32,
+        0.065
+      ],
+      "tail_anchor": [
+        0.55,
+        0.11
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_019_02",
+      "page_id": "p019",
+      "panel_id": "p019_02",
+      "speaker": "NIL",
+      "text": "No.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.055,
+        0.322,
+        0.13,
+        0.05
+      ],
+      "tail_anchor": [
+        0.296,
+        0.399
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.387
+      ]
+    },
+    {
+      "id": "ch01_019_03",
+      "page_id": "p019",
+      "panel_id": "p019_02",
+      "speaker": "VARRO",
+      "text": "...You'll regret that.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.055,
+        0.537,
+        0.39,
+        0.057
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.821,
+        0.387
+      ],
+      "off_panel_speaker": true
+    },
+    {
+      "id": "ch01_019_04",
+      "page_id": "p019",
+      "panel_id": "p019_03",
+      "speaker": "VESPER",
+      "text": "Livia. She still waiting?",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.54,
+        0.55,
+        0.39,
+        0.057
+      ],
+      "tail_anchor": [
+        0.76,
+        0.388
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.37,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.649,
+        0.452
+      ]
+    },
+    {
+      "id": "ch01_019_05",
+      "page_id": "p019",
+      "panel_id": "p019_04",
+      "speaker": "VARRO",
+      "text": "Every morning.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.43,
+        0.64,
+        0.27,
+        0.065
+      ],
+      "tail_anchor": [
+        0.73,
+        0.714
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.605,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.687
+      ]
+    },
+    {
+      "id": "ch01_019_06",
+      "page_id": "p019",
+      "panel_id": "p019_04",
+      "speaker": "SYSTEM",
+      "text": "SEAL 1 RELEASED",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.56,
+        0.914,
+        0.38,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.605,
+        0.41,
+        0.06
+      ]
+    },
+    {
+      "id": "ch01_020_01",
+      "page_id": "p020",
+      "panel_id": "p020_01",
+      "speaker": "VESPER",
+      "text": "Six Auditors. Six Seal Digits. Then the Upper Gate.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.33,
+        0.047,
+        0.58,
+        0.067
+      ],
+      "tail_anchor": [
+        0.231,
+        0.185
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_020_08",
+      "page_id": "p020",
+      "panel_id": "p020_01",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.093,
+        0.116,
+        0.11,
+        0.034
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_020_02",
+      "page_id": "p020",
+      "panel_id": "p020_02",
+      "speaker": "NIL",
+      "text": "Seven locks.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.055,
+        0.621,
+        0.2,
+        0.043
+      ],
+      "tail_anchor": [
+        0.296,
+        0.484
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.517
+      ]
+    },
+    {
+      "id": "ch01_020_03",
+      "page_id": "p020",
+      "panel_id": "p020_02",
+      "speaker": "VESPER",
+      "text": "The last one's yours. You told the whole city.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.265,
+        0.577,
+        0.205,
+        0.084
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 4,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.08,
+        0.5,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.351,
+        0.582
+      ],
+      "off_panel_speaker": true
+    },
+    {
+      "id": "ch01_020_04",
+      "page_id": "p020",
+      "panel_id": "p020_03",
+      "speaker": "NIL",
+      "text": "They got away?",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.52,
+        0.576,
+        0.39,
+        0.043
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.649,
+        0.517
+      ],
+      "off_panel_speaker": true
+    },
+    {
+      "id": "ch01_020_05",
+      "page_id": "p020",
+      "panel_id": "p020_03",
+      "speaker": "VESPER",
+      "text": "Both of them. Come on.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.57,
+        0.626,
+        0.35,
+        0.043
+      ],
+      "tail_anchor": [
+        0.65,
+        0.487
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.5,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.821,
+        0.582
+      ]
+    },
+    {
+      "id": "ch01_020_06",
+      "page_id": "p020",
+      "panel_id": "p020_04",
+      "speaker": "CAPTION",
+      "text": "THE REMAINDER - A beginning in the Tally.",
+      "kind": "caption",
+      "shape": "caption",
+      "box": [
+        0.06,
+        0.9,
+        0.43,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.695,
+        0.41,
+        0.06
+      ]
+    },
+    {
+      "id": "ch01_020_07",
+      "page_id": "p020",
+      "panel_id": "p020_04",
+      "speaker": "CAPTION",
+      "text": "Next: The Night Parade",
+      "kind": "caption",
+      "shape": "caption",
+      "box": [
+        0.56,
+        0.9,
+        0.37,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.695,
+        0.41,
+        0.06
+      ]
+    }
+  ]
+}

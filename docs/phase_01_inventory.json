@@ -1,0 +1,1542 @@
+{
+  "schema_version": 1,
+  "observed_utc": "2026-11-09T01:06:38.017257+00:00",
+  "evidence_scope": "Files, hashes and declared draft status; not literary acceptance or tool-account live state",
+  "errors": [],
+  "source_authority": [
+    {
+      "path": "docs/novel/RESOLVED_SERIES_BIBLE.md",
+      "sha256": "371b0fa373089778de74d16762f211578be1a7f5f6c5c9df61dde608502dcd47"
+    },
+    {
+      "path": "docs/manga/SEVEN_VOLUME_NOVEL_PLAN.md",
+      "sha256": "21b80d72ffbc928a20ce673bca0f17f527f215a6f63b10d4d49c48ca13366829"
+    },
+    {
+      "path": "docs/TEN_PHASE_PLAN.md",
+      "sha256": "546da5433c7853a1d39f1f2a6a920245acbe40cc26dd354ac617e647378a7b8f"
+    },
+    {
+      "path": "docs/manga/README.md",
+      "sha256": "a7c3e44558c2f79db5e53ffba63f2150145c145522d738cec660edb62e9d5a0c"
+    },
+    {
+      "path": "docs/novel/README.md",
+      "sha256": "876dcf9ba13252f31cc8cc5bb523da0d1f47367a661f73e76c689ae976d682c5"
+    }
+  ],
+  "totals": {
+    "volumes": 7,
+    "chapters": 49,
+    "target_story_pages": 1078,
+    "prose_drafts": 21,
+    "editorially_accepted_chapters": 0,
+    "authored_current_page_instructions": 154,
+    "accepted_native_story_pages": 0,
+    "selected_boards": 91
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "volume": 1,
+      "title": "Three Bowls",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_01/chapter_01_three_bowls.md",
+      "prose_status": "draft",
+      "prose_words": 1998,
+      "prose_sha256": "e5ac91589109371c8c3fabd584cf48feca926cfd129d71c7569ce66aac278d32",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 22,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 2,
+      "volume": 1,
+      "title": "The Jar Owes Six",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_01/chapter_02_the_jar_owes_six.md",
+      "prose_status": "draft",
+      "prose_words": 1735,
+      "prose_sha256": "c19735809f68c5a2e9fc5ddb5f1d320b85e1284592625d0a149d7f5584f583f3",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 22,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 3,
+      "volume": 1,
+      "title": "A Door That Opens",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_01/chapter_03_a_door_that_opens.md",
+      "prose_status": "draft",
+      "prose_words": 1842,
+      "prose_sha256": "b5807f3bfe8ed028f3b05b11d597afbf13337cc7b892adc5e369463cca6233fa",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 22,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 4,
+      "volume": 1,
+      "title": "Seven Is Not a Name",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_01/chapter_04_seven_is_not_a_name.md",
+      "prose_status": "draft",
+      "prose_words": 1502,
+      "prose_sha256": "285cd2c888aa1c1fe37cdd68d8daf94975e830d5ab2de2dd139d5332a372e947",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 22,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 5,
+      "volume": 1,
+      "title": "Seven Fen",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_01/chapter_05_seven_fen.md",
+      "prose_status": "draft",
+      "prose_words": 1422,
+      "prose_sha256": "363a89aec18504b7cba5af2c858991d55e592563d3597e9a9ba79356b6b90b7f",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 22,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 6,
+      "volume": 1,
+      "title": "A Window at Six",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_01/chapter_06_a_window_at_six.md",
+      "prose_status": "draft",
+      "prose_words": 2369,
+      "prose_sha256": "5856b58bd34884d7d72f39625849119a60b415d0e69363c556dbb1898d60f19f",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 22,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 7,
+      "volume": 1,
+      "title": "A Receipt for Mercy",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_01/chapter_07_a_receipt_for_mercy.md",
+      "prose_status": "draft",
+      "prose_words": 2864,
+      "prose_sha256": "629464f0fd76b6488c0304c3e092d89d3a1327db662669eb3c2ea941a4232858",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 22,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 8,
+      "volume": 2,
+      "title": "The Ferryman's Seam",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_02/chapter_08_the_ferrymans_seam.md",
+      "prose_status": "draft",
+      "prose_words": 1986,
+      "prose_sha256": "ed9a64c19218d4049b9b0d590efe6e7b47a4621dde061ece0de2d56f4c60a90c",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 9,
+      "volume": 2,
+      "title": "A Hundred Wishes",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_02/chapter_09_a_hundred_wishes.md",
+      "prose_status": "draft",
+      "prose_words": 1887,
+      "prose_sha256": "1c06f1b51c2072d1143f7e4d2cce075301a6928c7888506ceab956f32a5c193c",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 10,
+      "volume": 2,
+      "title": "The Keeper's Gift",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_02/chapter_10_the_keepers_gift.md",
+      "prose_status": "draft",
+      "prose_words": 1939,
+      "prose_sha256": "cf4767cf01e37100127d5a60ad4a182a2703c4457e62aac5c9ef77349259a2eb",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 11,
+      "volume": 2,
+      "title": "Paper Without a Name",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_02/chapter_11_paper_without_a_name.md",
+      "prose_status": "draft",
+      "prose_words": 2275,
+      "prose_sha256": "f31789531b79ff49cea0d760923454fcbe86bb1015bfc527665cc5b5616700a5",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 12,
+      "volume": 2,
+      "title": "The Foxes' Bargain",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_02/chapter_12_the_foxes_bargain.md",
+      "prose_status": "draft",
+      "prose_words": 2090,
+      "prose_sha256": "ebb3d6afbb74f468f51b813355fee49f56f6b11c9b4e2640048f91ed8ffaa7d9",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 13,
+      "volume": 2,
+      "title": "Already Real",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_02/chapter_13_already_real.md",
+      "prose_status": "draft",
+      "prose_words": 2212,
+      "prose_sha256": "aec41fcaf1604d9ada8979e197a209b8258b6caaf58ba802a061e327eb22e865",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 14,
+      "volume": 2,
+      "title": "The Toll Changes Hands",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_02/chapter_14_the_toll_changes_hands.md",
+      "prose_status": "draft",
+      "prose_words": 2619,
+      "prose_sha256": "462809f99a7985eb6664fabeab8f0a47484d2b744e291ba2a6ed916d84f75f66",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 15,
+      "volume": 3,
+      "title": "Purchased Guests",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_03/chapter_15_purchased_guests.md",
+      "prose_status": "draft",
+      "prose_words": 2169,
+      "prose_sha256": "7bbc000e507e34ea13aaa29e11d49609ef0d9d69824da30ce3f966b05f99d40a",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 16,
+      "volume": 3,
+      "title": "Tea and Interest",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_03/chapter_16_tea_and_interest.md",
+      "prose_status": "draft",
+      "prose_words": 1785,
+      "prose_sha256": "177684e0f8e87dbc0ac7daf92c842af63a7dfebd2ecf360e7167796fbb915ecb",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 17,
+      "volume": 3,
+      "title": "Four Lanterns",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_03/chapter_17_four_lanterns.md",
+      "prose_status": "draft",
+      "prose_words": 2305,
+      "prose_sha256": "d7f8a6ae0c279e4d90a20f04a2198e46566f0ab1f0beab6c1efff7ba80989ba9",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 18,
+      "volume": 3,
+      "title": "The Weight of the Dead",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_03/chapter_18_the_weight_of_the_dead.md",
+      "prose_status": "draft",
+      "prose_words": 1582,
+      "prose_sha256": "e45fbe3136be1fa8178f10ec5584a02afc5db1e3cb915b0aa3047eb9f90b62a0",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 19,
+      "volume": 3,
+      "title": "The Brush Trial",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_03/chapter_19_the_brush_trial.md",
+      "prose_status": "draft",
+      "prose_words": 2060,
+      "prose_sha256": "1f00247cadcb16dfd7af84e705801878098cd0e4e934fdfd7b7f449e5b74b90b",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 20,
+      "volume": 3,
+      "title": "The True Account",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_03/chapter_20_the_true_account.md",
+      "prose_status": "draft",
+      "prose_words": 2360,
+      "prose_sha256": "821df8a05534b86fcd6c8d0e940d59e27ec5eb619d8904a020fa001e0ee3f09d",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 21,
+      "volume": 3,
+      "title": "A Debt to the Living",
+      "outline_present": true,
+      "prose_path": "docs/novel/volume_03/chapter_21_a_debt_to_the_living.md",
+      "prose_status": "draft",
+      "prose_words": 2299,
+      "prose_sha256": "e7cc97a126da7513f6e0b476f80ba68a7bc0743310efde91475121d8b8f111df",
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 22,
+      "volume": 4,
+      "title": "Room for Chai",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 23,
+      "volume": 4,
+      "title": "The Drowned Record",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 24,
+      "volume": 4,
+      "title": "Terms of Examination",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 25,
+      "volume": 4,
+      "title": "Everyone's Handwriting",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 26,
+      "volume": 4,
+      "title": "But You Are Yours",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 27,
+      "volume": 4,
+      "title": "Brightness: Varies",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 28,
+      "volume": 4,
+      "title": "An Order Accelerated",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 29,
+      "volume": 5,
+      "title": "The Even Prime",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 30,
+      "volume": 5,
+      "title": "The City Beneath",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 31,
+      "volume": 5,
+      "title": "The School Above the Sieve",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 32,
+      "volume": 5,
+      "title": "A Thread That Measures",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 33,
+      "volume": 5,
+      "title": "The First Gear",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 34,
+      "volume": 5,
+      "title": "What We Refuse to Cut",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 35,
+      "volume": 5,
+      "title": "Catch the Falling",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 36,
+      "volume": 6,
+      "title": "An Honest Deal",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 37,
+      "volume": 6,
+      "title": "The Motel at Three",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 38,
+      "volume": 6,
+      "title": "One Thousand Five Hundred Ninety-Six",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 39,
+      "volume": 6,
+      "title": "The Price of Protection",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 40,
+      "volume": 6,
+      "title": "The Marked Deck",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 41,
+      "volume": 6,
+      "title": "A First New Sunrise",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 42,
+      "volume": 6,
+      "title": "The Letter from Meridian",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 43,
+      "volume": 7,
+      "title": "Eight Things Kept",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 44,
+      "volume": 7,
+      "title": "The Seventh Socket",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 45,
+      "volume": 7,
+      "title": "The Closed Fist",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 46,
+      "volume": 7,
+      "title": "The Inherited Box",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 47,
+      "volume": 7,
+      "title": "Fixed Fate",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 48,
+      "volume": 7,
+      "title": "Hands That Answer",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    },
+    {
+      "chapter": 49,
+      "volume": 7,
+      "title": "An Open Hand",
+      "outline_present": true,
+      "prose_path": null,
+      "prose_status": "not_written",
+      "prose_words": 0,
+      "prose_sha256": null,
+      "editorial_accepted": false,
+      "target_story_pages": 22,
+      "authored_current_page_instructions": 0,
+      "accepted_native_story_pages": 0
+    }
+  ],
+  "contexts": [
+    {
+      "volume": 1,
+      "path": "docs/manga/volumes/volume_01_context_working.md",
+      "lines": 6024,
+      "nonempty_lines": 3115,
+      "required_lines": 6000,
+      "meets_raw_line_minimum": true,
+      "meets_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "sha256": "a90498e570e99690e28df7f720347c858a7051db3e01aa4dd1208717f3de8731"
+    },
+    {
+      "volume": 2,
+      "path": "docs/manga/volumes/volume_02_context_working.md",
+      "lines": 2413,
+      "nonempty_lines": 1234,
+      "required_lines": 6000,
+      "meets_raw_line_minimum": false,
+      "meets_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "sha256": "e77de74207fe9aff47d58e1dad189c79828371fd726c3778d77c24c2f3428122"
+    },
+    {
+      "volume": 3,
+      "path": "docs/manga/volumes/volume_03_context_working.md",
+      "lines": 2311,
+      "nonempty_lines": 1183,
+      "required_lines": 6000,
+      "meets_raw_line_minimum": false,
+      "meets_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "sha256": "d9f0c711593732b8a33f1461c4bbabe1e1ea2f7d29a305c7ba78d6d72d105274"
+    },
+    {
+      "volume": 4,
+      "path": "docs/manga/volumes/volume_04_context_working.md",
+      "lines": 613,
+      "nonempty_lines": 337,
+      "required_lines": 6000,
+      "meets_raw_line_minimum": false,
+      "meets_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "sha256": "0ee7c512c7b217930232d9bf5b08ff3aa76de3c3f24ecd6130ba18e60c27db2f"
+    },
+    {
+      "volume": 5,
+      "path": "docs/manga/volumes/volume_05_context_working.md",
+      "lines": 653,
+      "nonempty_lines": 357,
+      "required_lines": 6000,
+      "meets_raw_line_minimum": false,
+      "meets_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "sha256": "60afbb6a0a98fda91878e927dea6c0ac4f06b556780c965db633cd0aae5868e2"
+    },
+    {
+      "volume": 6,
+      "path": "docs/manga/volumes/volume_06_context_working.md",
+      "lines": 693,
+      "nonempty_lines": 377,
+      "required_lines": 6000,
+      "meets_raw_line_minimum": false,
+      "meets_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "sha256": "89bd0059e95117cfd69d9f772852d90e9844d94ec516180d3f32b5bc336212fe"
+    },
+    {
+      "volume": 7,
+      "path": "docs/manga/volumes/volume_07_context_working.md",
+      "lines": 593,
+      "nonempty_lines": 327,
+      "required_lines": 6000,
+      "meets_raw_line_minimum": false,
+      "meets_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "sha256": "56ae92f21b7e5ac462fd1363698a9dfad91860dceaf47374ac3e53d76425a16d"
+    }
+  ],
+  "selected_assets": [
+    {
+      "id": "cast_001_nil",
+      "path": "art/concepts/complete/cast_001_nil.png",
+      "kind": "character_turnaround",
+      "sha256": "1ac9f5a83828c306f31fef3c316a63662e8eb0b99833c5aeb30bf4e7610fec21",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_002_nil_rags",
+      "path": "art/concepts/complete/cast_002_nil_rags.png",
+      "kind": "character_turnaround",
+      "sha256": "49dfc897522d991108cedec81c4d96ffd90573e489164acc2ebcf43f43c9d4f2",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_003_nil_parade",
+      "path": "art/concepts/complete/cast_003_nil_parade.png",
+      "kind": "character_turnaround",
+      "sha256": "bbdb900c8cb60db963de5355177427fba1e7c39edeefa423465fc92ae2d002ea",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_004_nil_openhand",
+      "path": "art/concepts/complete/cast_004_nil_openhand.png",
+      "kind": "character_turnaround",
+      "sha256": "a61ef0a0df0a27a3fe674cd673477451a81db8001ca9ac4eabd0de129b15fd49",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_005_vesper",
+      "path": "art/concepts/complete/cast_005_vesper.png",
+      "kind": "character_turnaround",
+      "sha256": "63da81f9905378946ed5205d27dd99a230e0a8035e5e905345b7cf5cb5cef14e",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_006_maeve",
+      "path": "art/concepts/complete/cast_006_maeve.png",
+      "kind": "character_turnaround",
+      "sha256": "6a59c25c8631f1a390705c65218d1766213c9596c75eb38db7db36fea5a0bc5e",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_007_hina",
+      "path": "art/concepts/complete/cast_007_hina.png",
+      "kind": "character_turnaround",
+      "sha256": "aa650980d464db3e6c5173cbe50301277d6268e73fe93a8ae5b67cccac6450a1",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_008_ba",
+      "path": "art/concepts/complete/cast_008_ba.png",
+      "kind": "character_turnaround",
+      "sha256": "cdb4d395e2b18cae6a0c67bfdab9d44d7ccef5173b51b88344faa73577fec0fa",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_009_bai_si",
+      "path": "art/concepts/complete/cast_009_bai_si.png",
+      "kind": "character_turnaround",
+      "sha256": "92f118b703a55972011c450c27c5e6cc22833e46e579987ebccad49a88218e7b",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_010_shunya",
+      "path": "art/concepts/complete/cast_010_shunya.png",
+      "kind": "character_turnaround",
+      "sha256": "1f5e756c56d5e595f6806846e12048c066b940ced9cd87e28a1955426f7387ae",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_011_prima",
+      "path": "art/concepts/complete/cast_011_prima.png",
+      "kind": "character_turnaround",
+      "sha256": "773e7ffbb50cc360d2844e2103def768a0f1af08f9f3526075c7e8d9373a7268",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_012_fibi",
+      "path": "art/concepts/complete/cast_012_fibi.png",
+      "kind": "character_turnaround",
+      "sha256": "b4cc8144cd8febad8f97c2cf1d59a489c8f5b7e2bf405072025e579aa45f773b",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_013_varro_ally",
+      "path": "art/concepts/complete/cast_013_varro_ally.png",
+      "kind": "character_turnaround",
+      "sha256": "da90516cde916a7d27bbcc5038a72cfb9e957028241745365a2fc02aee28a94d",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_014_kyusuke",
+      "path": "art/concepts/complete/cast_014_kyusuke.png",
+      "kind": "character_turnaround",
+      "sha256": "afa24cab55a39dbe27768de016794729ee76e3424d52328f8b0da71ec353bd64",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_015_liu_shun",
+      "path": "art/concepts/complete/cast_015_liu_shun.png",
+      "kind": "character_turnaround",
+      "sha256": "0bc85b78229360c261b45d4670f3bac47d653819cc466f1ca507214b9ba7c09a",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_016_varro",
+      "path": "art/concepts/complete/cast_016_varro.png",
+      "kind": "character_turnaround",
+      "sha256": "ca257bbfbc52ec207619f5ab52021db8659606af8473b0f0f306afe6075915e7",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_017_tamamo",
+      "path": "art/concepts/complete/cast_017_tamamo.png",
+      "kind": "character_turnaround",
+      "sha256": "0e8c95c8ffb6924fff4ca55141345a6134136caffcafc12524e8d6a2d59ad29b",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_018_jin_chan",
+      "path": "art/concepts/complete/cast_018_jin_chan.png",
+      "kind": "character_turnaround",
+      "sha256": "68428defca84bff01d87334b79cd4b99f2ffeb70e84779382a5673cd53d70719",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_019_rahu_ketu",
+      "path": "art/concepts/complete/cast_019_rahu_ketu.png",
+      "kind": "character_turnaround",
+      "sha256": "0e9ce94678d646388331f773b867379939832ffd64f2fde4e1865c0b0afdfddc",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_020_archon",
+      "path": "art/concepts/complete/cast_020_archon.png",
+      "kind": "character_turnaround",
+      "sha256": "02153815b138e298f8a5b29dcdc9a90962de626dd85c5bf6b71073e5c5f76d99",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_021_house",
+      "path": "art/concepts/complete/cast_021_house.png",
+      "kind": "character_turnaround",
+      "sha256": "e32b3ac351aca2c046aace067dc548305845670f1a28c5ec6aa8f4c38cf01a5c",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_022_thale",
+      "path": "art/concepts/complete/cast_022_thale.png",
+      "kind": "character_turnaround",
+      "sha256": "091557edfd9a19654b41ff39b4302723c1f38cfdb6069910991f110d3a412f4d",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_023_enma",
+      "path": "art/concepts/complete/cast_023_enma.png",
+      "kind": "character_turnaround",
+      "sha256": "653d67abaa8e8896bdf954f4575aa909356645b1b9b534987b5e14003a5d1093",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_024_judge_cui",
+      "path": "art/concepts/complete/cast_024_judge_cui.png",
+      "kind": "character_turnaround",
+      "sha256": "f17e8bc4ece24271ad0e00c5345f47b16ef7134f141ead52ee03ba9ac28837ad",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_025_chitragupta",
+      "path": "art/concepts/complete/cast_025_chitragupta.png",
+      "kind": "character_turnaround",
+      "sha256": "587155bf4d71661787639a40ffc0789c576e08489ed34f791c9b9ff967d3a20a",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_026_moirai",
+      "path": "art/concepts/complete/cast_026_moirai.png",
+      "kind": "character_turnaround",
+      "sha256": "82981f422e7e66378954f3fa37d47acace9fd120882449c6fcbe5a504573fe3d",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_027_stranger",
+      "path": "art/concepts/complete/cast_027_stranger.png",
+      "kind": "character_turnaround",
+      "sha256": "e259016f7b994a9e5e1b79bbb8f19427f160bb957c4810ab075f64a850be93ea",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_028_oxhead_horseface",
+      "path": "art/concepts/complete/cast_028_oxhead_horseface.png",
+      "kind": "character_turnaround",
+      "sha256": "7880dae62c9cc9bd2e4b302a317a5ea473abf2e8f12e85cc668cc2f2dc4b04a5",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_029_hap",
+      "path": "art/concepts/complete/cast_029_hap.png",
+      "kind": "character_turnaround",
+      "sha256": "43124a5579d780e0b751f2bbc5454c82ea0553cae8eedd5da27e45cb62ff4584",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_030_ama",
+      "path": "art/concepts/complete/cast_030_ama.png",
+      "kind": "character_turnaround",
+      "sha256": "88cb16fbdf9b51400ae626037be805bdf0f57b63e60581e2c92055802b0fb35a",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_031_tobi",
+      "path": "art/concepts/complete/cast_031_tobi.png",
+      "kind": "character_turnaround",
+      "sha256": "ad18c7ee86d151a6fd1ccf9a84ab88f5fe0963d4e7469c88b34987d238094a96",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_032_brother_nought",
+      "path": "art/concepts/complete/cast_032_brother_nought.png",
+      "kind": "character_turnaround",
+      "sha256": "712043dba67554f7de2c073603fa03e0206b1b47d0f9c8ef308f645b23c89aee",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_033_livia",
+      "path": "art/concepts/complete/cast_033_livia.png",
+      "kind": "character_turnaround",
+      "sha256": "c18fa8ad08cef348bb29baa22f74ddfa94dc7a8ca52addd1d4bbced898bb4b53",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_034_gus",
+      "path": "art/concepts/complete/cast_034_gus.png",
+      "kind": "character_turnaround",
+      "sha256": "a21f88ef53b09cc440d3d5f1494380c309cb66e4f220505e073a2fef83eedf25",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_035_ivo_marr",
+      "path": "art/concepts/complete/cast_035_ivo_marr.png",
+      "kind": "character_turnaround",
+      "sha256": "a74585dee26217f72cb2730cd43419983ab5232d3141d59fa7da497164768eca",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_036_ofuku",
+      "path": "art/concepts/complete/cast_036_ofuku.png",
+      "kind": "character_turnaround",
+      "sha256": "6845e2d1fe05d4b340fccc166e0b25ec2ea3d0e7ca8aceec300d4780387bf79e",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_037_tetsu",
+      "path": "art/concepts/complete/cast_037_tetsu.png",
+      "kind": "character_turnaround",
+      "sha256": "cd4fd2a652221aafe2fbefb2fbc0d04ed734bca207180d0c33dc01e774bd6f5b",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_038_ao",
+      "path": "art/concepts/complete/cast_038_ao.png",
+      "kind": "character_turnaround",
+      "sha256": "27bee69895b3a7a2533f41e8b6a8cef5a66b0723ad57880e02fffbad6f95e989",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_039_aka",
+      "path": "art/concepts/complete/cast_039_aka.png",
+      "kind": "character_turnaround",
+      "sha256": "f4a9b0234ac078c98e8e619341c58ca12472c5ee8659ac43019940754276b4f1",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_040_little_lantern",
+      "path": "art/concepts/complete/cast_040_little_lantern.png",
+      "kind": "character_turnaround",
+      "sha256": "2131dfd57897f11964a7f2dcac08aa2f3d63ecb046aa4689850b625ff4e9ab39",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_041_vidya_rao",
+      "path": "art/concepts/complete/cast_041_vidya_rao.png",
+      "kind": "character_turnaround",
+      "sha256": "0d02c044ecc07d81d9dbb4d332354381be02a0f35dca0d6b8032c6a20314f124",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_042_meera",
+      "path": "art/concepts/complete/cast_042_meera.png",
+      "kind": "character_turnaround",
+      "sha256": "c106d1318255473770f991c6d2d50a8f56fd0b7a68cdfb844d90180bbaeab5cb",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_043_baital",
+      "path": "art/concepts/complete/cast_043_baital.png",
+      "kind": "character_turnaround",
+      "sha256": "e46b441cd1784940c5e691ab7ad3d0425e626d4abb02d4f15b8a135adc9326b0",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_044_kallisto",
+      "path": "art/concepts/complete/cast_044_kallisto.png",
+      "kind": "character_turnaround",
+      "sha256": "08d0fbd3d5c07101c3db6851a30502c072706f99aab9daabf3a534f6f2c8269b",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_045_niko",
+      "path": "art/concepts/complete/cast_045_niko.png",
+      "kind": "character_turnaround",
+      "sha256": "1718876830d6610946cf97b5bcfab095ba63f736d78268d7796872c9b9de5b4b",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_046_penny",
+      "path": "art/concepts/complete/cast_046_penny.png",
+      "kind": "character_turnaround",
+      "sha256": "c9900410b6bd0a3688dbeb8f7658b5faba8aa6ff99d882963180ecedce10a9ba",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_047_sheriff_vance",
+      "path": "art/concepts/complete/cast_047_sheriff_vance.png",
+      "kind": "character_turnaround",
+      "sha256": "85554d2eee7bc277a99c5774b14371d773988ae6b367f1ec8e6ae965bdc4ca58",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_048_f_collector",
+      "path": "art/concepts/complete/cast_048_f_collector.png",
+      "kind": "character_turnaround",
+      "sha256": "02acada79aafd2e8462fc141bc2242aaf29d37a64bfb5ff1a767835e38e833f5",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_049_f_ledger_priest",
+      "path": "art/concepts/complete/cast_049_f_ledger_priest.png",
+      "kind": "character_turnaround",
+      "sha256": "20b6ef76e1010422e1355c0dcc6a4c95dab39e42db15155b0c9d3db3fb0d169c",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_050_f_auditor",
+      "path": "art/concepts/complete/cast_050_f_auditor.png",
+      "kind": "character_turnaround",
+      "sha256": "14fa09e27d23f3c3b2448d6466339625009dccac5d35db3c8a51699d1f8291b6",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_051_f_broker",
+      "path": "art/concepts/complete/cast_051_f_broker.png",
+      "kind": "character_turnaround",
+      "sha256": "2c6bac12522232875a0105407e60d06efdb6ee6f1600bb638bfc7082910ef86d",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_052_f_charmpunk",
+      "path": "art/concepts/complete/cast_052_f_charmpunk.png",
+      "kind": "character_turnaround",
+      "sha256": "e8b30d282e57400c261f98b1eaaf7194aadcd7057a300bf5af3ef1c54e80add3",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_053_f_remainder",
+      "path": "art/concepts/complete/cast_053_f_remainder.png",
+      "kind": "character_turnaround",
+      "sha256": "c14c828fadcd77b6d1633548cbe884841c8607e25cc716cd8c7cfbbd633221ed",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_054_f_synod",
+      "path": "art/concepts/complete/cast_054_f_synod.png",
+      "kind": "character_turnaround",
+      "sha256": "64a759eefff9c8fe2971760de8f9e10801eb6f701c28c2b9fcb21d65c21ffb14",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_055_f_dealer",
+      "path": "art/concepts/complete/cast_055_f_dealer.png",
+      "kind": "character_turnaround",
+      "sha256": "2d7bdfc3b8992fcd144efda175edb407ecc8e286c6739ec514ca812aa9e6d0c1",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_056_f_pilgrim",
+      "path": "art/concepts/complete/cast_056_f_pilgrim.png",
+      "kind": "character_turnaround",
+      "sha256": "27484003bdcdd7b83ede0905f9a59fadf65ca1e67eb73fdfee011ecd4d1650b8",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_057_debt_hound",
+      "path": "art/concepts/complete/cast_057_debt_hound.png",
+      "kind": "character_turnaround",
+      "sha256": "827acc8ac29c46f3c1c8bb691bd4716e0f2c4aab8cb96cd5488f29f6ae0d68d4",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_058_noiseling",
+      "path": "art/concepts/complete/cast_058_noiseling.png",
+      "kind": "character_turnaround",
+      "sha256": "a55702dbdacca58d7a63df983384e58e65ee41b7f05f47320bbb630d21ad4c65",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_059_chochin_obake",
+      "path": "art/concepts/complete/cast_059_chochin_obake.png",
+      "kind": "character_turnaround",
+      "sha256": "ab60b125e41810e80a1965b2d71dc9d9bae0fd2b42777f0e35b731dd720d7e3d",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_060_kasa_obake",
+      "path": "art/concepts/complete/cast_060_kasa_obake.png",
+      "kind": "character_turnaround",
+      "sha256": "1bb32f83c0592c2e4d20d0a928268fad83fb5e94f9f5250c95380fddcf34a594",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_061_kappa",
+      "path": "art/concepts/complete/cast_061_kappa.png",
+      "kind": "character_turnaround",
+      "sha256": "8bc1e6722d68aee2f89e212e4817500b7d6101302ac21f12d59737b636ce6dbf",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_062_oni_enforcer",
+      "path": "art/concepts/complete/cast_062_oni_enforcer.png",
+      "kind": "character_turnaround",
+      "sha256": "23b9c27656b1bf3b8d44868a7dfb254a5dea85e94663340bb6aebba25b4a7a15",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_063_abacus_golem",
+      "path": "art/concepts/complete/cast_063_abacus_golem.png",
+      "kind": "character_turnaround",
+      "sha256": "edc176d78a38db7958e01ce5e5bdc40e70a75b74f9d4de47c0b87b512a819f3d",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_064_debt_junk",
+      "path": "art/concepts/complete/cast_064_debt_junk.png",
+      "kind": "character_turnaround",
+      "sha256": "d5a94dad9f3feac7d5cf3154e4002fa122392cc9a525c4c4d88ff4b16118a8c9",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_065_golden_koi",
+      "path": "art/concepts/complete/cast_065_golden_koi.png",
+      "kind": "character_turnaround",
+      "sha256": "5d90b43b34fcd487f436545f391711c84058733e85261a55ad06f0f3ffc7c872",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_066_hungry_ghost",
+      "path": "art/concepts/complete/cast_066_hungry_ghost.png",
+      "kind": "character_turnaround",
+      "sha256": "8b1619ed1520cbff6a888a90b795acfa437a9d653d726800fa8ef99fb846b253",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_067_jiangshi",
+      "path": "art/concepts/complete/cast_067_jiangshi.png",
+      "kind": "character_turnaround",
+      "sha256": "3436e8731a2499399d70e4520238501917431b47eb015e2df9270f72774ba7c0",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_068_vetala",
+      "path": "art/concepts/complete/cast_068_vetala.png",
+      "kind": "character_turnaround",
+      "sha256": "398e3673d4c81175eea96243d9087f0d4a1ee6d63adbf0306f5ed68092475ecd",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_069_yantra_guardian",
+      "path": "art/concepts/complete/cast_069_yantra_guardian.png",
+      "kind": "character_turnaround",
+      "sha256": "f452d7716a7a73704316a7b9e7403209fda49735c1780b1edc81ab71259d84e7",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_070_monsoon_naga",
+      "path": "art/concepts/complete/cast_070_monsoon_naga.png",
+      "kind": "character_turnaround",
+      "sha256": "bc5ffcb4c67f3ccddf0e2298892c35e6fdd9764ac7217dc10e1dc208f0ec25a2",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_071_bronze_automaton",
+      "path": "art/concepts/complete/cast_071_bronze_automaton.png",
+      "kind": "character_turnaround",
+      "sha256": "983b83e998b3665f06e024011cd86f289eb6e2c2bc07cd62ddf9f61f3cfe8b5d",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_072_harpy",
+      "path": "art/concepts/complete/cast_072_harpy.png",
+      "kind": "character_turnaround",
+      "sha256": "93ea7fd669cd53d660c69faff35ee39b3040e2db5791c6c75b51634903d1a72e",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_073_siren",
+      "path": "art/concepts/complete/cast_073_siren.png",
+      "kind": "character_turnaround",
+      "sha256": "750a39558dcf5030cbf4d62721ee6ff29e65a4f64774a8a96aefaae21e06a7cb",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_074_card_sharp_automaton",
+      "path": "art/concepts/complete/cast_074_card_sharp_automaton.png",
+      "kind": "character_turnaround",
+      "sha256": "1bec2a59272bf29fe7ffa7f4dbf7b50c81023024d8cb87901d3b9a278920f0cd",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_075_tumbleweed_golem",
+      "path": "art/concepts/complete/cast_075_tumbleweed_golem.png",
+      "kind": "character_turnaround",
+      "sha256": "8ec272b09492e98a285609cbf1a4d0b928c45b44b0710ba410079ff3a9176b99",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_076_loop_echo",
+      "path": "art/concepts/complete/cast_076_loop_echo.png",
+      "kind": "character_turnaround",
+      "sha256": "cd992b5bba538211daec6b4d472210f49ff7d4d94280be702a0d227d06228952",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_077_collector_captain",
+      "path": "art/concepts/complete/cast_077_collector_captain.png",
+      "kind": "character_turnaround",
+      "sha256": "63f0122717e9a4f7cdd3eef3642ce8e4f7a44346922c2c1eefae69b0327a5b00",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_078_hungry_ghost_swarm",
+      "path": "art/concepts/complete/cast_078_hungry_ghost_swarm.png",
+      "kind": "character_turnaround",
+      "sha256": "6c8267e65f0ff995d3ecee582078d675da07be3b3149854e9211af103b15849b",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_079_basilica_surveyor",
+      "path": "art/concepts/complete/cast_079_basilica_surveyor.png",
+      "kind": "character_turnaround",
+      "sha256": "4b9a1146271dc8d2cef964492bdc423d561868d8038a086a3fc0d803b740de41",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_080_harpy_queen",
+      "path": "art/concepts/complete/cast_080_harpy_queen.png",
+      "kind": "character_turnaround",
+      "sha256": "476e4f2870f02826f5bb798fa1de04dbc555bb6e9417190a892588f8b3a74d42",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_081_headless_horseman",
+      "path": "art/concepts/complete/cast_081_headless_horseman.png",
+      "kind": "character_turnaround",
+      "sha256": "421fecf3a4fbb6151076fab752829f42412116793e00e3d1ee2cd153e343cc18",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_082_ghost_train",
+      "path": "art/concepts/complete/cast_082_ghost_train.png",
+      "kind": "character_turnaround",
+      "sha256": "be2e78e939380b3d848493c532a236f785bb92cd2b241ad7734e11aaf5f17249",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_083_noise_storm",
+      "path": "art/concepts/complete/cast_083_noise_storm.png",
+      "kind": "character_turnaround",
+      "sha256": "7999d8964c27c938bac5c1540e455ba7a75830497c0259a2124ef3a791291e44",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "cast_084_default",
+      "path": "art/concepts/complete/cast_084_default.png",
+      "kind": "character_turnaround",
+      "sha256": "3e558018c2ee4dcd8e053a43638c9015d6ee2593a5de8de76c433149e44a4954",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "env_meridian",
+      "path": "art/concepts/complete/env_meridian.png",
+      "kind": "environment_three_view",
+      "sha256": "452df20be5beb814b1e0e7346a5d86a874a7833222157539d898f930e82ac57a",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "env_hyakki",
+      "path": "art/concepts/complete/env_hyakki.png",
+      "kind": "environment_three_view",
+      "sha256": "2856264bc78df918d2d9e051f301274cc0c341b0c830b057c8d2a5405951ec9b",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "env_river",
+      "path": "art/concepts/complete/env_river.png",
+      "kind": "environment_three_view",
+      "sha256": "d39e20f7dd0c102623bdcd8b6fb3f64621e81a8b760ac993de0676b0e6a46aae",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "env_sunyapura",
+      "path": "art/concepts/complete/env_sunyapura.png",
+      "kind": "environment_three_view",
+      "sha256": "123706fe39be07dd994fa6b3bd17afd3eafdbc8d948debc96cf7834277d2d375",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "env_kroton",
+      "path": "art/concepts/complete/env_kroton.png",
+      "kind": "environment_three_view",
+      "sha256": "d19b5f4405357661f78ad2d4edaef96dbae8334ba50ef9057141d483fc1f8646",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "env_crossroads",
+      "path": "art/concepts/complete/env_crossroads.png",
+      "kind": "environment_three_view",
+      "sha256": "bdab2100d1e90f2bb7c210c6f4dbb7d715f36aa361c36db9bc2926e4103e4541",
+      "present": true,
+      "source_manifest_match": true
+    },
+    {
+      "id": "env_basilica",
+      "path": "art/concepts/complete/env_basilica.png",
+      "kind": "environment_three_view",
+      "sha256": "53cf5a6b631d9ad3384b760e4d22bad81452e0bc7afd32dce30d2ea8792619f1",
+      "present": true,
+      "source_manifest_match": true
+    }
+  ],
+  "concept_collection": {
+    "path": "output/pdf/ZERO-SUM_OMEN_Concept_Collection.pdf",
+    "pages": 94,
+    "bytes": 71040297,
+    "sha256": "decde163c02dc295beb3046da534d8df5c0505520ea5addcc6cd75836d4d9147",
+    "qa_path": "output/pdf/ZERO-SUM_OMEN_Concept_Collection.qa.json"
+  }
+}

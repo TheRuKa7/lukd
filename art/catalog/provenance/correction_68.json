@@ -1,0 +1,22 @@
+{
+  "index": 68,
+  "params": {
+    "model": "gpt_image_2_6",
+    "quality": "high",
+    "resolution": "4k",
+    "aspect_ratio": "3:2",
+    "count": 1,
+    "output_format": "png",
+    "medias": [
+      {
+        "role": "image",
+        "value": "f8eb52c0-e4c5-487d-b52d-9f67676474a8"
+      },
+      {
+        "role": "image",
+        "value": "d794db22-f1ca-4986-951b-e2c47105e609"
+      }
+    ],
+    "prompt": "Replace the mistaken figure construction in the SECOND reference with the correct subject from the FIRST spatial reference: the VETALA encounter archetype for ZERO-SUM OMEN. Produce one beautifully finished original ink/cel concept board, four true orthographic views left-to-right FRONT, SUBJECT LEFT, SUBJECT RIGHT, BACK, no printed labels. THE MAIN CHARACTER ITSELF HANGS UPSIDE DOWN FROM A BANYAN BRANCH. It is NOT a standing traveller, NOT a person carrying a little hanging doll, effigy, backpack or puppet. In ALL FOUR VIEWS show the SAME full-size pale grey-green humanlike riddle spirit's entire inverted body, two bent legs securely hooked/draped at the branch high above, torso below, arms hanging naturally toward the floor, and its own expressive head LOWEST near the roots. Weight and cloth folds obey this inverted hanging gravity; fingers and face have eerie dry wit, not gore. Two arms/two legs, one face, one body per view. The simple banyan branch/trunk support is visibly separate from its body and repeats coherently in all views. Repaired indigo/olive draped cloth, brass riddle tokens and restrained saffron ties; fibrous worn cloth and bark, pale green skin, fine face/hands, selective hatching and hard cel shadows, quiet cream background. Avoid gruesome corpse detail, sacred invented imagery and a hood concealing the face. This is the unnamed regional encounter type, not a redesign of the named Baital boss. Do not inherit the standing pose/backpack of reference two; inherit only the detailed controlled ink/material finish. No text, symbols functioning as text, numerals, logos, labels, height bars or palette chips. No duplicate tiny figures or humanoid prop."
+  }
+}

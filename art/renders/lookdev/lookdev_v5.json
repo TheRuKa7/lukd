@@ -1,0 +1,103 @@
+{
+  "status": "lookdev render / not gameplay or runtime-rig acceptance",
+  "source_script": "tools/build_lookdev.py",
+  "script_sha256": "877c84d0bcee424d24515896d25cf4015e638f5b5b06bcd40cbc240b8d66e262",
+  "blender": "5.2.1 LTS",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "actors_mirrored": false,
+  "inputs": {
+    "chr_nil": {
+      "width": 1024,
+      "height": 1536,
+      "alpha_bbox_bottom_up": [
+        64,
+        1,
+        787,
+        1536
+      ],
+      "transparent_fraction": 0.60164,
+      "alpha_max": 0.99608,
+      "sha256": "ce43b25d951a3725d3a942a6a90304c0171bf313eb23e7ce6f1ea171be180c2c",
+      "file": "art/concepts/fresh/chr_nil_v5.png"
+    },
+    "chr_vesper": {
+      "width": 1024,
+      "height": 1536,
+      "alpha_bbox_bottom_up": [
+        50,
+        0,
+        975,
+        1536
+      ],
+      "transparent_fraction": 0.58365,
+      "alpha_max": 0.99608,
+      "sha256": "7595a86dfbe75bae55727494176024a25f3c74e0d2ab7d0384ae4bbe7500eb9a",
+      "file": "art/concepts/fresh/chr_vesper_v5.png"
+    },
+    "chr_varro": {
+      "width": 1199,
+      "height": 1312,
+      "alpha_bbox_bottom_up": [
+        43,
+        2,
+        1162,
+        1312
+      ],
+      "transparent_fraction": 0.41467,
+      "alpha_max": 1.0,
+      "sha256": "80695b35cac5c98ed51b47f181d1dc75e94ece3d8b4d266d5f71b10df183b034",
+      "file": "art/concepts/fresh/chr_varro_v5.png"
+    },
+    "enm_debthound": {
+      "width": 1774,
+      "height": 887,
+      "alpha_bbox_bottom_up": [
+        8,
+        4,
+        1769,
+        882
+      ],
+      "transparent_fraction": 0.4695,
+      "alpha_max": 1.0,
+      "sha256": "0953cbbb24904768c936c9a69e43eafbfc9ee1667b71464d428fdab5e863dd5e",
+      "file": "art/concepts/fresh/enm_debthound_v5.png"
+    },
+    "env_meridian": {
+      "width": 1672,
+      "height": 941,
+      "alpha_bbox_bottom_up": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "transparent_fraction": 0.0,
+      "alpha_max": 1.0,
+      "sha256": "c09d6165cd3e74626b588c808ca18d186d892cddf0a941a48d7d8c29ef485292",
+      "file": "art/concepts/fresh/env_meridian_v5.png"
+    }
+  },
+  "seven_physical_chambers": 7,
+  "exact_labels": [
+    "NaN",
+    "070",
+    "AUDIT / PREVIEW",
+    "68"
+  ],
+  "outputs": [
+    "omen_battle_v5.png",
+    "meridian_empty_v5.png",
+    "meridian_clay_v5.png",
+    "vesper_cylinder_detail_v5.png"
+  ],
+  "scene": "art/source/omen_lookdev_v5.blend",
+  "limitations": [
+    "Flattened candidate actors, no animation rigs",
+    "Illustrative readouts are not simulated game state",
+    "Painted background is a single reference plate",
+    "Empty clay scene is source geometry, not a finished region"
+  ]
+}

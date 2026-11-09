@@ -1,0 +1,22 @@
+{
+  "index": 13,
+  "params": {
+    "model": "gpt_image_2_6",
+    "quality": "high",
+    "resolution": "4k",
+    "aspect_ratio": "3:2",
+    "count": 1,
+    "output_format": "png",
+    "prompt": "Continuity correction of FIRST reference, the four-view RECRUITED VARRO turnaround. Preserve the same four elevations, cream background, baselines, rust coat design, empty visibly CRACKED jars, skull mask PUSHED UP above the face, and neutral construction pose. The SECOND reference is the SAME MAN's earlier boss appearance and is authoritative for body and age: make all four ally views use that broad muscular heavy middle-aged man's thick neck, large shoulders, square jaw, substantial torso and powerful legs, same dark swept hair, mature tired brow and facial structure. Recruitment does not turn him into a thin young man. Preserve the later costume changes: mask stays lifted above his human forehead, three jars stay broken/empty, his weight looks released but his body mass remains the same as the boss. Show plausible repaired armor hinges and load-bearing straps. Exactly two arms/two legs per view, distinct true left/right, no mirrored tool attachment. No letters, digits, logos or labels.",
+    "medias": [
+      {
+        "role": "image",
+        "value": "a26cf1e8-8586-49aa-8147-491b1f976345"
+      },
+      {
+        "role": "image",
+        "value": "8dc6a821-b433-415a-87b3-8ab604b690b4"
+      }
+    ]
+  }
+}

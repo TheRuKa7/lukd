@@ -1,0 +1,193 @@
+{
+  "chapter_id": "zso_ch01",
+  "page_count": 20,
+  "panel_count": 80,
+  "missing_images": [],
+  "lettering_overflows": [],
+  "blocked_remote_requests": [],
+  "failed_requests": [],
+  "outputs": [
+    {
+      "page_id": "p001",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p001.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "70c2777d77bd2839ace74516ca7c2ba8774a75c22b95aebc2d7b2a9e8344a64f"
+    },
+    {
+      "page_id": "p002",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p002.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "36ad5b6985d7d5a0fc74e25ce5f96437820770308fcc7210f4a356f4f6698a21"
+    },
+    {
+      "page_id": "p003",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p003.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "8b44487f32abbeee713cc2e617a5fd7c05cf9af05cd0fca5b7339cbc1dae5c46"
+    },
+    {
+      "page_id": "p004",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p004.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "e857f4079a5b9cc2f0d6c527d020f66cd3032718d373d2b4c26f6d03d864dc1b"
+    },
+    {
+      "page_id": "p005",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p005.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "48cceb9adb74ef325f40249b4c31da1f7bcaad823b766b86e30f3f21c49ad6f6"
+    },
+    {
+      "page_id": "p006",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p006.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "519282231176681230a9def18ac226d7b463273898c59526ff69c74d86f92fd2"
+    },
+    {
+      "page_id": "p007",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p007.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "b6030658e767da076378a9b16d878dc127bdfa7877e0fcfa1c2cc62ec00a4ef0"
+    },
+    {
+      "page_id": "p008",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p008.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "281dbddf1823248720926b70cde35f0b8d9e4eb9fcb795898b950c933f182ec3"
+    },
+    {
+      "page_id": "p009",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p009.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "949bfcd58ddd159d5e95e4e3b374b87f36c87968151a4e1eb025878d28fa3493"
+    },
+    {
+      "page_id": "p010",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p010.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "4aed4ae176ab44f80832e5d894b33e6e823859679c16a62992e7568f53a78456"
+    },
+    {
+      "page_id": "p011",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p011.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "369ad68f336e6c5b62a5ee5e73fab8b7364bc2848aee86bdaec9939f3da08fe1"
+    },
+    {
+      "page_id": "p012",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p012.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "cf2392afbb8a5592267a80c99ddc17de3d5b6c7931a220b067ba40f01c50ed74"
+    },
+    {
+      "page_id": "p013",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p013.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "c59911c2f63d0b74bb986f738967b7c902405eb8eace4b38591f041c75a61f34"
+    },
+    {
+      "page_id": "p014",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p014.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "a31c15c562680bcca25e4b1698a60dec5dff5f8124841a0071132216af2cadad"
+    },
+    {
+      "page_id": "p015",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p015.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "2cbbc704e53cb519501c7dae3fdf2d82c9e285e724da6797ee2145c31fad9521"
+    },
+    {
+      "page_id": "p016",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p016.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "405821aa7cc566cc4978f96b3f64fd4f28d9cf520ef074c1df2449f357c8f52d"
+    },
+    {
+      "page_id": "p017",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p017.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "7f456aff714a99d3ed0537d7c05fc0dc639ebeb2e290b10020ca8026f5b90e5a"
+    },
+    {
+      "page_id": "p018",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p018.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "2b2df6f16d4ffafc6b4fe8ea654114a5ab67b1c0d4e9a714eea66322ac529432"
+    },
+    {
+      "page_id": "p019",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p019.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "55aeaee4479f86d72cc3cea4b89b8af5db9c3e83d8392793debd5a727854cfc2"
+    },
+    {
+      "page_id": "p020",
+      "path": "D:\\RUKA Stash\\Projects\\New folder\\art\\manga\\chapter_01\\lettered\\p020.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "f601cd3b1736cca38cdbb97eecb1d35816c7e5f7004cddb2c9590bf51a43f386"
+    }
+  ],
+  "source_sha256": "8005f771dcc69d9e0eefd2fdd37a25f9065599f2c06dfbdadd857bce874a2317",
+  "note": "Technical export evidence only; final page sequence still requires visual review."
+}

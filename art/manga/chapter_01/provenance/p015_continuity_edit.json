@@ -1,0 +1,26 @@
+{
+  "index": 15,
+  "params": {
+    "model": "gpt_image_2_6",
+    "quality": "high",
+    "resolution": "4k",
+    "aspect_ratio": "2:3",
+    "count": 1,
+    "output_format": "png",
+    "medias": [
+      {
+        "role": "image",
+        "value": "29e0ce3e-14c3-4aa0-8fab-3cb68ba197a9"
+      },
+      {
+        "role": "image",
+        "value": "0f491baa-e662-439a-ade6-a58355c947f7"
+      },
+      {
+        "role": "image",
+        "value": "a2d34f71-172a-4d0e-8fc6-f88f4214fb24"
+      }
+    ],
+    "prompt": "PRECISION CONTINUITY EDIT of the FIRST reference: one existing full comic page. Preserve its entire panel layout, exact gutter locations, composition, poses, lighting, fine ink and material detail, architecture, all other people, and every blank readout. Return the same full page, with no added text, captions, balloons, numerals or logos. The SECOND reference establishes ONLY Varro's correct costume and face mask. In EVERY panel where Varro's face is visible, replace his exposed human face / white cheek patch with his actual full worn ivory HOUND-SKULL MASK: rigid cracked bone-coloured mask covering his face from forehead to long canine nasal muzzle, angular black eye sockets with a human eye visible deep inside, strapped along the temples, human dark hair and ears still visible, repaired brass hinge, squared canine teeth contours. This is a HUMAN MAN WEARING A REMOVABLE MASK, not an animal head, not a face tattoo, not just a cheek plate. Its projecting muzzle must be legible even in small side views. Preserve his bulky rust ledger armour, three belt debt jars and collar exemption token. He keeps this mask worn throughout this Prologue; it is removed only much later in the campaign. Do not alter other cast faces or put the mask on anyone else. ADDITIONAL NECESSARY CORRECTION on this page's THIRD PANEL, the wide close action strip: NIL currently has an impossible fused hook/claw on the wrong arm. Replace that fused claw with NIL's anatomically RIGHT decoder wrist, reaching across their body, ending in an OPEN GLOVED HUMAN HAND with five believable fingers. NIL has two human arms and hands. Varro's hooked polearm is a SEPARATE OBJECT extending in from the right opponent, deflected against the brass post with sparks and a clear contact point; it never grows from NIL. Keep panel one unchanged where NIL's RIGHT decoder is already correct. The third reference is NIL's identity/decoder construction only."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "index": 68,
+  "params": {
+    "model": "gpt_image_2_6",
+    "quality": "high",
+    "resolution": "4k",
+    "aspect_ratio": "3:2",
+    "count": 1,
+    "output_format": "png",
+    "medias": [
+      {
+        "role": "image",
+        "value": "d794db22-f1ca-4986-951b-e2c47105e609"
+      }
+    ],
+    "prompt": "Create a new SAFE NEUTRAL COSTUME DESIGN STUDY for an original fictional adult male riddle spirit, the Vetala encounter archetype in ZERO-SUM OMEN. This is a calm upright character turnaround for costume and face construction, NOT a depiction of its action pose. FOUR true orthographic elevations in one landscape cream-paper board, left-to-right front, anatomical left side, anatomical right side, back. ONE FULL-SIZE adult person per view, exactly two arms and two legs, normal upright relaxed A-pose, whole head/hands/feet visible, clothed throughout in layered olive and indigo wrapped practical garments with saffron cloth ties and small brass riddle tokens. Individual memorable angular face, pale grey-green magical complexion, lively intelligent amber-green eyes, unruly dark hair, a dry questioning smile. It is a witty folklore-inspired apparition, not an ordinary hooded courier. Face remains clearly visible, no hood. Subtle worn bark-fibre texture on garment fasteners relates it to a banyan habitat. No backpack, NO DOLLS, NO EFFIGIES, NO miniature human figures, no objects shaped like another person, no second face, no dangerous or inverted pose. Nothing suspended from branches or limbs in this illustration; only the upright costume views. The existing reference supplies restrained detailed ink, cel colour and matte materials only. Remove its erroneous small figure/backpack completely. Beautiful variable-weight contours, selective contact hatching, believable five-finger hands, distinct rear seams and load-bearing cloth wraps, no theatrical attack effects. No letters, symbols functioning as text, numerals, logos, labels, speech balloons or watermarks. This is an original game creature design, not a named deity or existing franchise character. Quiet cream background."
+  }
+}

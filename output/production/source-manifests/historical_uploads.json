@@ -1,0 +1,17 @@
+{
+  "note": "Exact diagnostic/upload PDFs preserved. Historical source manifests record hashes; they do not assert a current source snapshot is identical.",
+  "files": [
+    {
+      "path": "output/production/archive/OMEN_Mangaka_22_Chapter_Manuscript_initial_upload_20261108.pdf",
+      "sha256": "b2061a4535bab6e8b09847a38b212b7fea726b5a2a2c25d82a4c9a2347fc740d",
+      "bytes": 385358,
+      "pages": 32
+    },
+    {
+      "path": "output/production/OMEN_Chapter_01_Story_Only.pdf",
+      "sha256": "7c8b33a87ecea3da82f155b6f77ea4750acd6670b058ec1fc0d612f00a86ab1c",
+      "bytes": 75423,
+      "pages": 3
+    }
+  ]
+}

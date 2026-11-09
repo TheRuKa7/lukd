@@ -1,0 +1,28 @@
+/* Original chapter reader; no remote fonts, scripts or mutable content. */
+@page { size: 6in 9in; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin:0; color:#17151a; background:#262329; font-family:Arial,sans-serif; }
+body { padding-bottom:24px; }
+.reader-bar { display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:center; padding:12px; position:sticky; top:0; z-index:20; background:#17151a; color:#fff5de; }
+.reader-bar button, .reader-bar select { font:600 16px Arial,sans-serif; padding:8px 12px; border:1px solid #b9a689; border-radius:4px; background:#fff5de; color:#17151a; }
+.reader-bar button:disabled { opacity:.5; }
+.reader-bar button:focus-visible, .reader-bar select:focus-visible { outline:3px solid #ff7a2c; outline-offset:3px; }
+.edition-note { color:#e8dac2; text-align:center; padding:0 15px; font-size:14px; line-height:1.45; }
+.manga-page { position:relative; display:block; margin:0 auto; width:min(96vw,900px); aspect-ratio:2/3; overflow:hidden; background:#f6f0e4; break-after:page; }
+.clean-art { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:contain; }
+.manga-page > svg { position:absolute; inset:0; display:block; width:100%; height:100%; }
+.accessible-transcript { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.transcript { max-width:900px; margin:20px auto; padding:28px; background:#fff5de; font-size:18px; line-height:1.6; }
+.transcript h3 { margin-top:24px; font-size:21px; }
+@media screen { .manga-page:not(.current) { display:none; } }
+body.capture { padding:0; background:#f6f0e4; }
+.capture .reader-bar, .capture .edition-note, .capture .transcript { display:none!important; }
+.capture .manga-page { margin:0; }
+.capture.clean .manga-page > svg { visibility:hidden; }
+@media print {
+ html,body { margin:0; padding:0; background:#f6f0e4; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+ .reader-bar,.edition-note,.transcript { display:none!important; }
+ .manga-page { display:block!important; width:6in!important; height:9in!important; margin:0; break-after:page; }
+ .manga-page:last-child { break-after:auto; }
+}
+@media (prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important; animation:none!important; transition:none!important; } }

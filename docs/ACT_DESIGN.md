@@ -2,7 +2,7 @@
 
 One section per land: its story in one paragraph, the Land Law (its superstition as a rule), the act map, encounters, the keeper trial, the boss (full sheet in [`BESTIARY.md`](BESTIARY.md)), side quests, Hap's Whispers, and what the act teaches. Scenes are in [`STORY.md`](STORY.md); numbers in [`TUNING.md`](TUNING.md) and [`ECONOMY_PROGRESSION.md`](ECONOMY_PROGRESSION.md).
 
-Updated 7 November 2026 under [DECISIONS.md](DECISIONS.md). **Specified campaign maps, not playable acts.** Jam uses only the shortened route in §1A/JAM_SLICE; the other node tables describe the future campaign. SYSTEMS owns Land Law math, BESTIARY owns boss/trial contracts, STORY §9 owns flags/catch-up.
+Updated 7 November 2026 under [DECISIONS.md](DECISIONS.md). **Specified campaign maps, not playable acts.** Jam uses only the shortened route in §1A/JAM_SLICE; the other node tables describe the future campaign. ACT_DESIGN owns the regional narrative/traversal Land Law briefs; BESTIARY owns currently specified encounter counters and boss/trial contracts; STORY §9 owns flags/catch-up. Typed numeric regional modifier records remain future-gated SYSTEMS work.
 
 ---
 
@@ -13,6 +13,8 @@ Updated 7 November 2026 under [DECISIONS.md](DECISIONS.md). **Specified campaign
 - **Pacing rule:** never two fights in a row without a choice; never more than two non-fight nodes in a row. A story node never interrupts a Market.
 - **Every act spotlights one new decision layer:** a Land Law/verb and its narrative consequence. It may introduce more than one companion (River Empire) or several supporting items, but teaches them separately; it does not guarantee one-and-only-one character/system. Final camp reconciles missed core stages before ending commitment.
 - **Land Law:** the land's superstition as a global rule for every fight there, shown on the reel frame as a small icon. Counter-play always exists inside that land (a companion, a charm or a verb).
+
+**Regional-rules backlog gate F-LAND:** before enabling a Land Law, author its stable ID, scope/entry/exit, exact event/input domain, numeric modifier/order, stacking/reset, visible telegraph and same-land accessible counter in typed content. Test each chosen digit, every required party, replacement/terminal overlaps and save/retry. The regional briefs below do not substitute for those records. Keep numeric effects disabled until the SYSTEMS/content gate passes; no missing values are inferred from folklore.
 
 ---
 

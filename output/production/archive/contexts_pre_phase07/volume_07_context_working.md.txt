@@ -1,0 +1,459 @@
+# Working context — Volume 7 — An Open Hand: Basilica
+
+STATUS: INCOMPLETE RESEARCH DOSSIER. This is not the requested 6,000-line original context, a finished novel, or an upload-ready Mangaka script. It collects selected existing material for further drafting. It contains editorial spoilers and historical chapter numbering; do not upload it directly to Mangaka.
+
+Current authority: [Resolved series bible](../../novel/RESOLVED_SERIES_BIBLE.md) supersedes incompatible statements in the excerpts below. The manifest fingerprints that authority; this research dossier does not close the remaining drafting work.
+
+## Current seven-chapter spine
+
+43. **Eight Things Kept** — At camp, the group checks its distinct proofs and relationships; NIL hears the risks and chooses collective translation.
+44. **The Seventh Socket** — Six office Seals and NIL's chosen 7 occupy separate sockets. Ivo pays off his earlier corrections by opening the service route.
+45. **The Closed Fist** — Original ledgers and the physical cage reveal a starving Hap. Earlier dreams were incomplete, not an omniscient account of the truth.
+46. **The Inherited Box** — Evidence distinguishes the TR702 cage, Thale's inheritance of office in TR985 and his discovery of Hap in TR999.
+47. **Fixed Fate** — Thale's grief explains his fear but does not excuse informed coercion. The group exposes the hidden payers and faces imposed stillness.
+48. **Hands That Answer** — Specific acts of help answer NIL's apparent isolation. Thale survives, asks what the others would do, and must face responsibility.
+49. **An Open Hand** — Eight consenting contributors translate their evidence together. Hap is freed, NIL remains a person with a separate Civic 07 and resonance 7, and the epilogue shows repair as continuing work; a year later Hina turns 100.
+
+## Reveal boundary
+
+The cage is revealed in chapter 45, after the gate in chapter 44.
+The new edition is seven volumes of seven chapters; each manga chapter targets 22 story pages. Covers and closing matter are additional. The prose novel must be completed and reviewed before any volume is generated.
+
+## Region reference from docs/LOCATIONS.md
+
+### The Basilica, the Closed Hand (Finale)
+
+- **Inspired by:** the game's invented accounting institution: cathedral-like civic machinery, layered archives and a bureaucracy built around seized plural ledgers. It is not a replica of a real sacred site.
+- **Geography:** the raised Meridian plateau above the Wards; guarded exterior courts lead through a ritual gate to interior archives, the nave and the Even Hand engine. The capital outside and the institution inside are distinct spaces.
+- **Key locations:** Upper Gate with seven sockets · Ivo Marr's service passage around the inner trap · archive galleries containing regional ledgers · nave · the Even Hand engine's closed brass fist around Hap · Thale's private workroom and modest meal table.
+- **Little things:** stitched archive bindings, replacement gear teeth, a clerk's cooling tea, maintenance tags and ordinary workers changing shifts. The building's scale comes from accumulated labour as well as power.
+- **Sound:** measured relay clicks, air through old ducts, distant ledger-priest voices and an uneven pulse from the engine. Silence becomes more unsettling as Fixed Fate suppresses chance.
+- **Institutional pressure:** exterior guards recalled by Thale do not unlock the ritual gate. Six acquired Seals plus NIL's chosen resonance open that gate; Ivo then bypasses only the separate interior service trap. No one helper solves all three obstacles.
+- **Reel object:** the Even Hand's brass channels; stopped wheels in Fixed Fate become a visible arrangement problem. Exact Civic, resonance and Audit readouts retain distinct frames.
+- **Human conflict / decision:** competent protection financed by concealed harm versus a repair that preserves plural choices. Thale inherited the old institution, discovered Hap in TR999 and chose its new Fixed Fate programme; present responsibility does not require claiming he built the ancient cage.
+- **Ordinary life:** archive staff eat beside unfinished petitions; a mechanic knows which obsolete parts still hold the floor; Ivo decides to correct a record at a personal cost. Rain Alley, Ama/Tobi and Gus's Bazaar belong to the Wards outside, not the nave. The final quiet is a choice about what this institution becomes.
+
+## Existing character and voice references from docs/CHARACTER_BIBLE.md
+
+The following canon profiles contain future knowledge. Use only facts already available at the relevant point in the story. They are references, not dialogue or mandatory appearances.
+
+### 1. NIL, the Remainder
+
+| | |
+|---|---|
+| **Age / build** | ~19 (appears); 1.74 m; lean, long-legged, slightly hunched when thinking |
+| **Pronouns** | They/them in all writing. NIL never defines their own gender, and nobody in the world asks. |
+| **Wardrobe** | Long asymmetric black actuary's coat (left tail longer), high collar, three brass ledger clasps down the right side, fingerless black gloves, slim black trousers, tall boots |
+| **Props** | Cracked brass **decoder** fused into the **right** wrist; leaks orange light and tiny floating digits when emotional |
+| **Omen** | A broken holographic **NaN** glitch where an Omen should be; it flickers faster under stress |
+| **Personality** | Quiet, observant, dry. Counts things under their breath when anxious (stairs, raindrops, people). Fascinated by other people's numbers. Kind without announcing it. |
+| **Flaw** | Disappears into calculation instead of feeling; assumes they're a problem to be solved |
+| **Want → need** | Wants a number and a normal life. Needs to accept being what everyone lost, and choose what to give back. |
+| **Voice** | Short sentences. Precise words. Questions more than statements. Deadpan humour. Never swears. |
+| **Sample lines** | "Fourteen steps. You've rounded down two of them." · "Everyone here has a number. I just have a question." · "If I'm what the world lost… I'd like to be returned carefully." |
+| **Animation personality** | Economical movement; snaps into action. Idle: turns the decoder wrist, digits drift up. Victory: closes a fist on a locked digit, small exhale. On their lucky digit: halo stabilises for one frame. On a Bust: tilts their head, recalculating. |
+| **Growth** | One new verb per act (GDD §6) and one memory flashback per Seal, each drawn in that land's art style |
+| **Canon locks** | Decoder RIGHT wrist · one orange streak in white hair · halo “NaN” throughout the journey, separately framed from party Audit Omen · longer left coat tail · amber eyes · they/them. Positive-Sum gives chosen stable resonance and positive Civic Omen; resonance 0 is never healthy Civic 00 |
+
+### 2. Vesper Sette (7)
+
+| | |
+|---|---|
+| **Age / build** | 28; 1.82 m; long limbs, sharp angles |
+| **Wardrobe** | Wide-brim black hat with two playing cards in the band; crimson duster with triangular tails; black croupier waistcoat; white shirt, sleeves rolled; cards in her garters |
+| **Props** | Revolver with a **seven-chamber** cylinder engraved 1–7; a worn silver coin she flips before every decision and ignores |
+| **Personality** | Gambler's bravado, dry jokes, generous with strangers, merciless with cheats. Guilt she won't name. |
+| **Flaw** | Treats every relationship as a bet she can walk away from |
+| **Want → need** | Wants to stay one step ahead of her past. Needs to deal one honest hand. |
+| **Secret** | Dealt the rigged hand at the House that Settled a twelve-year-old boy |
+| **Voice** | Drawl, card and dice slang, calls NIL "Kid" until Act III, then by name |
+| **Sample lines** | “Need a hand? Seven fen.” · “Luck's just math somebody else is hiding from you.” · “I always flip. I never look.” |
+| **Animation** | Fan-the-hammer shooting; reloads by spinning the cylinder like a roulette wheel; idle hat tip; grins and spins the cylinder when a 7 lands |
+| **Bond arc** | (1) Teaches NIL to read tells · (2) admits the rigged hand · (3) faces the House · (4) deals an honest hand to Fibi |
+| **Canon locks** | Exactly 7 chambers · scar on the lip · crimson + black + brass only · braid over the LEFT shoulder |
+
+### 3. Maeve Triskel (3)
+
+| | |
+|---|---|
+| **Age / build** | 20; 1.65 m; strong arms, freckled |
+| **Wardrobe** | Leather forge apron, rolled work shirt, heavy boots; red hair in **three** braids |
+| **Props** | Horseshoe-knuckle gauntlets (glow copper-hot when charged); forge hammer with a triskele burned into the head; four-leaf-clover pin |
+| **Personality** | Loud, warm, superstitious about everything and proud of it; adopts every stray |
+| **Flaw** | Stubborn; believes charms can fix things that need words |
+| **Want → need** | Wants to make her grandmother's charms work again. Needs to accept that luck is something people make together. |
+| **Backstory** | A TR 990 tightening of the old Rounding system stopped her grandmother's charms; the family fled to Meridian. Neither experienced the original TR 702 Binding. Maeve makes new charms and later finds a historical first gear. |
+| **Voice** | Fast and warm; touches wood; uses “third time's the charm” at most once per scene. No phonetic imitation of an accent; no unverified heritage claim by a generated voice. |
+| **Sample lines** | "Horseshoe goes open end UP, or the luck falls out. Honestly." · "Three braids, three tries, three hits. That's just maths." |
+| **Animation** | Swings with her whole body; kisses her clover pin when a 3 lands; hammer-on-anvil sparks as a victory pose |
+| **Canon locks** | Exactly 3 braids · triskele on the hammer · clover pin on the collar |
+
+### 4. Hina of the Ninety-Nine (九十九 雛, 9)
+
+| | |
+|---|---|
+| **Age / build** | 99 years old (as an umbrella); appears ~12; 1.35 m |
+| **Wardrobe** | Furisode kimono in indigo and vermilion patterned with numbers 1–99; big obi bow; geta sandals; black bob |
+| **Props** | Red-and-white oiled-paper umbrella with **one eye and a long tongue** (it's her true body; it has its own expressions) |
+| **Personality** | Mischievous, ancient and childish at once; obsessed with turning 100; secretly scared of not being "real" |
+| **Want → need** | Wants to reach 100 and become a "proper" spirit. Needs to decide she's already real. |
+| **Backstory** | A 99-year-old umbrella left at Enma's shrine, soaked in a century of wishes, woke up one year early. Fixed Fate would freeze her at 99 forever. |
+| **Voice** | Formal old-fashioned phrasing mixed with kid slang; refers to herself in the third person when excited ("Hina approves!") |
+| **Sample lines** | "One more year and Hina would've been a *real* spirit. Don't you dare freeze me now." · "You smell like a hundred wishes." |
+| **Animation** | Rides the umbrella; the umbrella reacts separately (blinks, sticks its tongue out on a 9); twirls on a Jackpot |
+| **Cultural note** | Based on *tsukumogami* and *kasa-obake* folklore; keep her playful, never creepy-cute fan service |
+| **Canon locks** | Umbrella ONE eye · kimono numbers stop at 99 · Hina remains 99 through every Awakening and finale; only the true-ending epilogue one year later shows her birthday. Accepting herself is not literal age progression. |
+
+### 5. Ba Jinling (八金铃, 8)
+
+| | |
+|---|---|
+| **Age / build** | 31; 1.70 m; poised |
+| **Wardrobe** | Modern jade-and-gold qipao with a high slit and structured shoulders; eight tiny golden bells in hair ornaments and anklets |
+| **Props** | Folding fan whose ribs are **abacus rods** (beads fly as projectiles) |
+| **Personality** | Theatrical, sly, mercenary on the surface; buys poor people's debts and burns them in secret |
+| **Want → need** | Wants to outplay her father. Needs to stop hiding her kindness behind business. |
+| **Backstory** | Chancellor Jin Chan's daughter; left the Luck Exchange when she learned what built his fortune |
+| **Voice** | Silk and knives; speaks in interest rates ("That favour will cost you eight percent, compounding.") |
+| **Sample lines** | "Everyone's in debt, darling. I just keep better books." · "Eight bells. Count them. You won't hear the ninth." |
+| **Animation** | Fan snap; every gesture rings a bell; collects coins mid-fight with a flick |
+| **Canon locks** | Exactly 8 bells · the abacus fan · jade + gold palette |
+
+### 6. Bai Si (白四, 4)
+
+| | |
+|---|---|
+| **Age / build** | Looks ~35; 1.95 m; long and still |
+| **Wardrobe** | White mourning robes (white is the mourning colour in Chinese tradition) inked with 四; black funeral ribbon in long white hair |
+| **Props** | Huge guandao-style blade hung with four paper talismans; joss paper drifts around him; four floating lanterns |
+| **Personality** | Stoic, formal, honour-bound; unexpectedly tender with children and the old; dry humour arrives late in the story |
+| **Want → need** | Wants the count of the dead to be correct. Needs to forgive himself for centuries of wrong counts. |
+| **Backstory** | The Ten Courts' executioner who counts every Settled soul. NIL shows him the Rounding; his count was always short. |
+| **Voice** | Few words, archaic and formal; never uses contractions |
+| **Sample lines** | "Everyone dies. I only keep count." · "Four lanterns. I have never needed a fifth." |
+| **Animation** | Almost motionless idle; each strike extinguishes one lantern; closes his eyes when a 4 lands |
+| **Canon locks** | Always 4 lanterns and 4 talismans · white robes, never coloured · never smiles before Act IV |
+
+### 7. Shunya (शून्य, 0)
+
+| | |
+|---|---|
+| **Age / build** | 23; 1.62 m; restless energy |
+| **Wardrobe** | Indigo-and-saffron layered clothing with mirror-work embroidery; long dark braid with brass astrolabe hairpins; ink-stained fingers |
+| **Props** | Brass astrolabe (spun as a weapon), palm-leaf manuscripts tied at her hip |
+| **Personality** | Brilliant, impatient, joyful about ideas, gentle with people who are slow |
+| **Want → need** | Wants to prove her Deficit calculations. Needs to remember the answer is a person (NIL), not a number. |
+| **Backstory** | Works at the great observatory where her ancestors formalised zero; found that the Deficit equals exactly one person's worth of luck |
+| **Voice** | Talks fast, interrupts herself, explains with her hands; calls zero "the place that holds everything" |
+| **Sample lines** | "Zero isn't nothing. It's room." · "The books are short by one soul. Exactly one. Hello." |
+| **Animation** | Spins the astrolabe like a discus; sketches equations in the air in light; beams when a 0 lands |
+| **Cultural note** | Draws on Indian mathematical history (zero, place value); have the design and clothing reviewed |
+| **Canon locks** | The astrolabe · mirror-work embroidery · the line "Zero isn't nothing." |
+
+### 8. Prima of Kroton (2)
+
+| | |
+|---|---|
+| **Age / build** | 18; 1.68 m; sturdy |
+| **Wardrobe** | White-and-gold armour with Greek-key borders; short blonde hair; blue eyes |
+| **Props** | Giant round shield shaped like a sieve set with blue glass; a halo of floating glyphs 2-3-5-7 |
+| **Personality** | Earnest, loud, honest to a fault; comic relief who becomes the moral backbone |
+| **Want → need** | Wants to be a proper member of the Synod. Needs to see that "indivisible" means people, not numbers. |
+| **Backstory** | 2 is "the even prime", the odd one out among primes, and so is she |
+| **Voice** | Formal battle cries, then clumsy apologies; counts primes to calm down |
+| **Sample lines** | "Two! Three! Five! Seven! …I'm calm." · "If the Sieve drops children, the Sieve is wrong." |
+| **Animation** | Shield-bash; plants her feet like a statue; trips once per fight in idle |
+| **Canon locks** | The sieve shield · the 2-3-5-7 halo · short hair |
+
+### 9. Fibi Leone (Fibonacci)
+
+| | |
+|---|---|
+| **Age / build** | 18; 1.60 m; jittery |
+| **Wardrobe** | Tailored croupier tailcoat and headset; golden spiral curls; spiral-patterned irises |
+| **Props** | A deck of glowing cards that flows around her in a golden spiral |
+| **Personality** | Fast-talking, anxious, brilliant; laughs at bad moments; current iteration is 1,597 after 1,596 completed repeats |
+| **Want → need** | Wants the night to end. Needs to accept the dawn, even though it may kill her. |
+| **Twist** | Her grandfather believes his loop protects her; its maintenance clause actually drains her at dawn. Cancelling that clause with her consent saves her. The protection was commissioned inTR999; its active loop begins on story Day28 inTR1002, when Fibi is18. Outside time advances one night while1,596 local repeats complete before the party enters iteration1,597. NIL anchors the arriving party's retained memories. |
+| **Voice** | Rapid; counts in Fibonacci; finishes other people's sentences (she's heard them before) |
+| **Sample lines** | “The third step breaks. It always does.” · “You said something new. Say it again.” · “One, one, two, three, five. That's how I breathe.” |
+| **Animation** | Deals cards in spirals; her lucky digit glows in a different place every round |
+| **Canon locks** | Current night 1,597 · spiral irises · digit changes every combat round per SYSTEMS · predicts repeated local routines, never claims to have met NIL in an earlier iteration |
+
+---
+
+### 10. Antagonists and keepers
+
+| Character | Look (locks) | Motive | Voice | Fate |
+|---|---|---|---|---|
+| **Varro Kade** | Hound-skull mask, rust trench armour, glass debt jars on his belt, "61" in red | Buy his sister's exemption | Growls in debt-collector jargon: "Interest is due." | Spared; helps in Act V |
+| **Tamamo** | Nine glowing tails each tipped with a digit, Heian court robes in violet and gold, foxfire | Keep the yokai from fading | Teasing, archaic, kind cruelty | Retreats into legend; blesses Hina |
+| **Jin Chan** | Gold-coin robes, three-legged toad throne, coins spill from his mouth | Hold the world's frozen luck in his bank | Booming, jolly, transactional | Bankrupted; Jinling takes over |
+| **Eclipse Engines “Rahu” and “Ketu”** | Invented Basilica machines: bolted occluder disc and articulated surveyor rail; operator stamps/cables, no sacred head/body/halo | Suppress observatory measurements under surveyors' orders | Mechanical signal tones and labelled operator messages; no divine voice | Shut down; the revered celestial figures remain outside the enemy roster |
+| **Archon Seventeen** | Gaunt, bronze laurel, sieve staff, cold "17" | Purify the world: only the indivisible should remain | Soft, scholarly, absolute | Falls through his own sieve; Prima saves him |
+| **The House** | White suit, ouroboros tattoo on his throat, backwards pocket watch | Keep his granddaughter alive by looping the night | Old-world charm, gentle menace | Lets the dawn come |
+| **Comptroller Thale** | White-and-brass cathedral vestments, gear monocle, steel "50" | Fixed Fate: end all loss by ending all chance | Calm, kind, exhausted; never shouts | Depends on the ending |
+| **Keepers** (Enma, Judge Cui, Chitragupta, the Moirai) | Shown with reverence: solemn, beautiful, never monstrous | Test the party | Measured, ritual language | They are never "defeated", only satisfied |
+
+---
+
+### 11. Relationship map
+
+| | NIL | Vesper | Maeve | Hina | Jinling | Bai Si | Shunya | Prima | Fibi |
+|---|---|---|---|---|---|---|---|---|---|
+| **NIL** | — | Big sister / first protector | Best friend | Little sister they adopt | Wary respect → trust | Student of grief | Equal; the one who explains them | Protects her | Mirror (both outside time) |
+| **Vesper** | Protector | — | Sparring jokes | Teaches her poker | Old rival from the casinos | Respect | Finds her exhausting | Mocks, then defends | Guilt; the honest hand |
+| **Maeve** | Best friend | Hero-worship | — | Makes her charms | Haggles | Forges his new lanterns | Asks too many questions | Fellow loud one | Big-sister energy |
+| **Hina** | "Hundred-wish human" | "Hat lady" | Charm-maker | — | Wants her bells | Scared of him, then adores him | Calls her "the zero girl" | Rides on her shield | Twins in being "not quite real" |
+
+**Party banter budget:** one authored spotlight duo per act plus four short roster-conditioned exchanges, with fallback lines for absent optional recruits. Mathematical Complement means nonzero digits summing 10; zero has no ordinary Complement. Extra duo scenes deepen relationships but are not hidden ending gates. Narrative stages and resonance bonds are separate state. BOND_ARCS owns their schedule; no 55-pair-per-act cinematic promise.
+
+---
+
+### 12. Writing and voice quick rules
+
+1. NIL never wastes a word. Companions talk more than NIL does.
+2. Each character has one **number habit**: Vesper flips a coin, Maeve counts threes, Hina counts to 100, Jinling quotes interest, Bai Si counts lanterns, Shunya says "zero isn't nothing", Prima recites primes, Fibi counts in Fibonacci.
+3. Villains are never cartoonishly evil; every Auditor's motive is understandable in one sentence.
+4. Cultural characters speak as people, not as tour guides; no fake accents in text.
+5. No one comments on NIL's gender.
+
+---
+
+### 13. Secret recruits (digits 1, 5 and 6)
+
+Three optional recruits fill resonance 1,5,6. Eventual Twin coverage does not imply equal early partner access. Zero has no ordinary Complement; Shunya's later bond-wild is a named exception. Varro is only a late guest before postgame/NG+. Each secret has a hinted return route; none gates Positive-Sum.
+
+| Recruit | Digit | Found | Look | Kit in one line | Why they join |
+|---|---|---|---|---|---|
+| **Varro Kade** | 1 | Act V guest after saving Livia; full recruit post-ending/NG+ | Hound-skull mask pushed up, rust armour, debt jars smashed | *First and Only*: first-striker kit; exact conversion payload in SYSTEMS, never undefined empty slots on an already-full reel | Withheld exemption proves Thale broke his promise; he chooses to help |
+| **Kyūsuke the Kappa** | 5 | Act I side quest (the tired kappa selling cucumbers on the river) | Small green river imp, water dish on his head, straw hat, a cucumber cart | *Bow*: once per fight he bows; if the enemy bows back (land a 5), the enemy loses its next strike | NIL buys every cucumber; he's never had a full day's sales |
+| **Granny Liu Shun** | 6 | Act II learn-a-rule or retrieve-purse quest | Tiny,80-ish, jade bangles, cardigan over qipao, tile purse | *Six-Six Smooth*: two 6 s trigger the declared SYSTEMS conversion, not an impossible Cascade label on unchanged 6-6-x | She claims she won the party; they invite her, and she refuses to miss the adventure |
+
+Canon locks: Kyūsuke's water dish is always full (if it spills he naps); Liu Shun never loses at mahjong on screen; Varro never wears the mask over his face again after Act V.
+
+### 14. Side characters by region
+
+Side characters carry the regions' stories and quests. Each has one want, one number habit and one quest (Act Design per land).
+
+| Region | Character | Role | Want | Number habit | Quest / payoff |
+|---|---|---|---|---|---|
+| Meridian | **Ama Okoro** and **Tobi** (age 9) | Civic 01→07 rescue; her son | Ama: to see Tobi grow up. Tobi: to follow NIL | Counts wins on fingers | Rooftop shows them safe; campaign epilogue letters; Tobi renews his already-completed childhood Rite under new rules, not a belated seventh birthday |
+| Meridian | **Brother Nought** | Defrocked Ledger-priest, Naming shrine, secret Open Hand member | To see Hap free | Rounds up out of spite | Hands NIL a charm frame (SYSTEMS owns slot count); explains Open Hand in Act II |
+| Meridian | **Livia Kade** | Varro's younger sister, Omen 06, bedridden | For her brother to stop | Counts the cracks in the ceiling | Saving her in Act V turns Varro into an ally |
+| Meridian | **Gus Mendoza** | Charm Bazaar fixer from the Crossroads, sells every culture's charms | Profit; secretly, to go home | Haggles in sevens | Runs the Prologue market; later found in Lucky Strike |
+| Meridian | **Clerk Ivo Marr** | Thale's quiet assistant, Ledgerist | To make an honest correction | Files in triplicate | Corrected Act II archive notes seed defection; opens an interior service passage after NIL opens the ritual gate |
+| Hyakki | **Ofuku** | Elderly keeper of the Seven Lucky Gods' shrine | That people still come to the shrine | Paints one daruma eye a day | Teaches charms; her shrine is the Act I charm hub |
+| Hyakki | **Tetsu** | Ferryman between the islands, a former Collector | To forget Meridian | Counts strokes of the oar | Ferry nodes; his story foreshadows the Basilica's reach |
+| Hyakki | **Kitsune twins Ao and Aka** | Tamamo's foxfire retainers | To protect their mistress | Speak only in pairs | Elite fight; after Tamamo's defeat they guard Hina's shrine |
+| River Empire | **Judge Cui** (keeper) | Holder of the Brush in the Ten Courts | A true count of the dead | Writes every number twice | Grants NIL the Rewrite verb |
+| River Empire | **Little Lantern (Xiao Deng)** | Festival orphan who runs messages across Bāfā | A family | Counts lanterns | Leads the party to Jinling's pawnshop; adopted by Jinling in the epilogue |
+| Śūnyapura | **Acharya Vidya Rao** | Shunya's old teacher at the observatory | To finish his star catalogue | Counts in Sanskrit numerals | Gives the party the observatory dials; his catalogue's last entry is NIL |
+| Śūnyapura | **Meera** | Stepwell guide and diver | To find her drowned brother's karma record | Counts steps (there are 1,001) | The stepwell dungeon; payoff in Chitragupta's Hall |
+| Śūnyapura | **Baital** | A Vetāla who riddles travellers from a banyan tree | A riddle nobody can answer | Answers only in questions | Riddle encounters; NIL's answer to his last riddle is "zero" |
+| Kroton Nova | **Mother Kallisto** | Leader of the undercity of the "composite" people under the Sieve | Her people back on the surface | Counts in composites, proudly | Undercity hub; the Sieve's fall reunites the city |
+| Kroton Nova | **Niko** | Goat-herd child who knows unsafe terrace routes | To be a hero | Counts goats (always one short) | Identifies a safe route under adult supervision; real danger to a child is not a recurring gag |
+| Kroton Nova | **The Moirai** (keepers) | Clotho, Lachesis and Atropos | That every thread is spun, measured and cut honestly | Speak in turns | Three trials; Lachesis gives Prima her strand of thread |
+| Crossroads | **The Stranger** (keeper) | The figure at the midnight crossroads with the black book | A fair deal | Shuffles constantly | Offers NIL's Deal verb; never a villain |
+| Crossroads | **Penny** | Ghost girl on the railway who preserves nonspendable retained tokens | To leave without erasing the record | Counts1,596 completed iterations | Release follows the witnessed cancellation; a final marker records closure, not newly created currency |
+| Crossroads | **Sheriff Dolores Vance** | Lucky Strike's sheriff, half-aware of the loop | To arrest the House | Notches her badge each night | Loop puzzles; helps in the House fight |
+| Everywhere | **Hap** | The god of luck (World Bible §2A) | To deal again | — | Hap's Dream epilogues; the finale's Open Hand |
+
+### 15. Hap: depiction rules
+
+- **Never the same face twice.** In each act's dream, Hap wears the face that land's stories would expect, drawn in that land's art style; the dice eyes, the orbiting digits and the star-wheel behind it never change.
+- **Scale and warmth.** Vast but gentle; it crouches to talk to NIL. It laughs often, and its laughter makes dice rattle.
+- **Voice.** Short, playful lines; questions more than answers. It never explains the plot. Sample lines: "Pick a number. Any number. …Oh, *that* one. Interesting." · "I don't play fair. I play *everyone*." · "You're the change I never got back."
+- **Never** a monster, a villain, a boss or a stand-in for any real religion's deity.
+- **Colour:** star-black, warm dice-ivory eyes, and the orbiting digits in every land's accent colour in turn.
+
+## Living-world reference from docs/WORLD_ENCYCLOPEDIA.md
+
+The following describes production knowledge, not necessarily what a character knows. Apply reveal boundaries above.
+
+### 1. The logic of luck (the physics of the Tally)
+
+| Rule | What it means | Consequence people live with |
+|---|---|---|
+| **1. Luck is real and finite.** | Luck is the capacity for events to favor a person, not strength, virtue or physical fuel. Under the Basilica it is **conserved** across people, reserves and the hidden Remainder account. | A gain debits an identified person or reserve. Combat score does not mint Civic luck. |
+| **2. Every soul holds a share.** | The Basilica registers a personal **Civic Omen**, 00–99, at each Dawn Tally. A separate **Audit Omen** normalizes staked Balance, and a **resonance digit** channels a practitioner's technique. | Visible allocations affect access to loans, jobs and safety under discriminatory policy; the number is not competence or worth. NIL's Civic identity remains NaN. |
+| **3. Luck acts through numbers.** | Luck resolves events by the **digits** they produce. A dropped coin, a dice roll, a door code, a clock time: each is a little lottery the world runs. Higher Omens tilt them. | Numbers are everywhere because numbers are where luck *happens*. |
+| **4. Resonance.** | At the Naming Rite (age seven) each soul states a lucky digit. That digit **resonates**: luck flows more easily through it. | People wear their digit, choose house numbers, wedding dates and jobs by it. |
+| **5. Stopping.** | Auditors can summon a **Fate Wheel** (a visible strip of the digits an event could produce) and **stop** it, choosing which digit the event takes. Skill and resonance decide how well. | This is the only "magic" in the world, and it's licensed (§3). |
+| **6. Settlement.** | **Civic** 00 is dangerous settlement, reversible by a legitimate transfer before death. **Audit** Balance 0 merely exhausts a stake and ends combat. | A Collector must identify the claim and reserve. A Civic 01 signals vulnerability, not a predetermined death date or a combat HP value. |
+| **7. The Rounding.** | Every Dawn Tally rounds each share down to a whole number. The fractions vanish… into NIL. | The hidden account accumulated for three centuries; independent observers measured the Deficit before proving its cause. |
+| **8. Noise.** | Unstable allocations and damaged control channels cause **Noise**: scrambled events and Noiselings. The conserved total need not disappear for distribution to become dangerous. | The Deficit is growing; storms are more frequent every year. |
+
+**What luck is not:** it isn't strength, intelligence or virtue. A 99 can still be a fool; a 03 can still be a hero. Luck only decides how often the world's coin lands your way. The game's theme lives here: collective agency can outperform isolation; the literal Positive-Sum change is earned only in the finale.
+
+### How a Fate Wheel works (in-world explanation of the core mechanic)
+1. An **Audit** begins with a declared outcome, participants, contract scale and stake. Civic identity, resonance and Audit readout remain separate.
+2. Each Auditor's will draws a **wheel** of digits from the event. Faces are the possible outcomes; a **face's width determines exposure** under the specified motion; resonance and declared tools alter it. Human stopping probability is not inferred from width alone.
+3. The **tens** of every strike are fixed by training and gear (*tens are safe*); the **ones** are fate and must be stopped (*ones are fate*).
+4. Three stopped digits fall into the **reel**, the shared ledger of the moment. The resolved pattern applies the declared Audit contract: a Pair is a coincidence, a Jackpot a miracle, a Zero-Sum a perfectly balanced book that cancels the other side's next move.
+5. The loser's **Balance** is exhausted; no automatic Civic transfer or death occurs. A separate witnessed agreement may transfer an allocation. Named defeated actors remain alive for their aftermath; only appropriate constructs/Noise dissolve or fall inert.
+
+### 2. Power types (the six schools of Auditing)
+
+Every land learned to stop numbers its own way before the Basilica licensed one method. In play, each school is a hero kit flavour and an enemy behaviour.
+
+| School | Land | Source of power | How it looks | Signature techniques | Practitioners |
+|---|---|---|---|---|---|
+| **Ledger Auditing** (licensed) | Meridian | Brass wrist-wheels that tap the Basilica's count | Steel numerals, Nixie amber light, ledger lines | Debt Jar (steal a reel digit), Seizure (freeze a face), Interest | Basilica Auditors, Collectors, Varro, Thale |
+| **Shrine Binding** | Hyakki | Belief: charms, shrines and old objects with souls | Paper talismans, foxfire, ukiyo-e waves | Omamori wards, illusion faces (foxfire), tsukumogami awakening | Shrine keepers, yokai, Hina, Tamamo |
+| **Brush Writing** | River Empire | The written word in the Book of Life and Death | Ink strokes, gold leaf, red seals | Ink (rewrite a digit), Interest (compounding), Oracle sticks | Judge Cui's clerks, Exchange brokers, Jinling, Bai Si |
+| **Karma Weaving** | Śūnyapura | Deeds recorded and returned; zero as the place that holds everything | Geometric light, rangoli patterns, brass instruments | Karma (bank and spend), Place Value, eclipses | Observatory astronomers and Shunya; the hostile eclipse machines are Basilica equipment, not celestial practitioners |
+| **Sieve Geometry** | Kroton Nova | Number properties: primes, ratios, the thread's measure | Marble, mosaic glyphs, white light through holes | Prime pierce, Sieve (strike out faces), Factor | Synod knights, Prima, Archon Seventeen |
+| **Dealing** | Crossroads | Contracts: luck bought, borrowed and owed | Cards, neon, dust, the black book | Deals, Wagers, Loops | The Stranger, croupiers, Fibi, the House |
+| **The Remainder** (unique exception) | — | The god's lost change | NaN glitches, orange digits that refuse to round | Splice, Carry, Divide by Zero | NIL only |
+
+**Licensing.** Since TR 760 the Basilica licenses only Ledger Auditing; every other school is "folk practice": tolerated in its home land, illegal in Meridian unless registered. Unlicensed Auditing in Meridian is a debt offence (your Omen is fined).
+
+### 3. How people use their powers (daily life)
+
+| Use | Who | How |
+|---|---|---|
+| **Protection** | Everyone | Charms perform their declared bounded payload. No automatic home-region bonus exists; any Land Law or set interaction must be explicitly named. Craft and maintenance still matter. |
+| **Lending luck** | Luck banks, the Exchange | Lend an identified allocation from a reserve under disclosed terms; authorized dawn repayments debit a named account. Interest does not create luck. |
+| **Insurance** | Insurers (Meridian) | Pool many small Omens to cover one big misfortune; premiums are paid in luck-ins. |
+| **Law** | Courts | Disputes between Omens are settled by **Audit** under a magistrate (a formal, non-lethal duel). |
+| **Medicine** | Clinics | Doctors can't create luck, but **Omen clinics** move luck from donors to the critically ill ("luck transfusion"), for a price. |
+| **Work** | Trades | Builders, pilots and miners need high Omens for safety; low Omens are pushed into dangerous jobs, which is how the Remainder Wards grew. |
+| **Games** | Casinos, festivals | Legal small Audits for show; big Audits for money are illegal in Meridian, legal in Lucky Strike. |
+| **Faith** | Temples, shrines, the outlawed Open Hand | Offerings ask for a land's way of luck; the Open Hand leaves a die in an open palm for Hap. |
+
+### 4. Factions and their styles
+
+| Faction | Seat | Wants | Power | Style (materials, colours) | Uniform / look | Ranks | Tools & weapons |
+|---|---|---|---|---|---|---|---|
+| **The Basilica** | Meridian | Order; the Final Audit | Ledger Auditing; the Dawn Tally | Ledgerism: brass, steel, white enamel, cathedral arches; steel numerals | White-and-brass vestments, gear-crested mitres (priests); olive field coats (Auditors) | Comptroller → Ledger-priests → Senior Auditors → Clerks → Novices | Wrist-wheels, chained ledgers, Seal stamps |
+| **The Collectors** | Meridian | Debts paid; bounties | Licensed debt Auditing | Rust armour, gunmetal, glass debt jars with orange glow | Rust trench armour, peaked caps, hound-skull masks for captains | Chief Collector → Captain (masked) → Collector → Hound handler | Debt jars, chains, Debt Hounds |
+| **Charm Bazaar guilds** | Meridian | Trade, survival, folk luck | Charm-smithing (every culture's) | Charmpunk: plastic gold, neon, stickers, every culture at once | Puffer jackets hung with charms; painted numbers; fake holo-halos | Guild masters → stallholders → runners | Charms, Nixie pendants, forged horseshoes |
+| **The Remainder Wards** (not a faction: a people) | Meridian Undercity | To get through the week | Mutual aid; luck-ins | Remainder: scrap brass, patched cloth, salvaged Nixie tubes, rope | Ponchos, patched coats, a cracked tube on a cord as a damaged social display, beside the still-existing Civic aura | Elders, block captains | Tools, salvage |
+| **The Yokai Courts** | Hyakki | To keep existing | Shrine Binding; belief | Ukiyo-e flatness, vermilion, foxfire cyan-violet, paper and lacquer | Court robes, fox ears and tails for kitsune; tsukumogami are their objects | Tamamo → kitsune retainers → yokai of every kind | Foxfire, illusion faces |
+| **The Luck Exchange** | Bāfā Harbor | Profit | Brush Writing for contracts; interest | Gilded Fortune: jade, gold leaf, red lacquer, live price boards | Jade mandarin-collar suits, gold trim, pocket abacus, ear tickers | Chancellor → Directors → Brokers → Runners | Abacus fans, contracts, Debt Junks |
+| **The Ten Courts** (keepers) | Under the River Empire | The true count of the dead | Brush Writing on the Book | Ink-wash, rice paper, red seals; near silence | Black official robes; wardens in lamellar armour (Ox-Head, Horse-Face) | Judges → wardens → clerks → executioner (Bai Si) | The Brush, the Book, halberds |
+| **The Observatory** | Śūnyapura | Truth by measurement | Karma Weaving; astronomy | Sandstone, brass instruments, saffron and indigo, mirror-work | Layered indigo-and-saffron, brass astrolabe pins | Acharya → astronomers → students | Astrolabes, dials, palm-leaf records |
+| **The Pythagorean Synod** | Kroton Nova | Purity of number | Sieve Geometry | White marble, bronze, Aegean blue, mosaic glyphs | Bronze cuirass, chalk tunic, sieve shields | Archon → Synod elders → knights → novices | Sieve shields, prime glyphs |
+| **The House** | Lucky Strike | The night never ending | Dealing; the loop | Casino red, ivory, gold, desert neon | Red waistcoats, sleeve garters, green-felt trays | The House → floor bosses → dealers | Marked decks, Wagers, the loop |
+| **The Open Hand** (outlawed) | Everywhere, quietly | To free Hap; second chances for all | Prayer; coincidence | Road dust, plain cloth, one gold open-hand mark | Travelling cloaks, a carved open hand on a cord, a smooth die | No ranks: "hands" | Dice, shrines, safe houses |
+
+**Reading a crowd:** in Meridian you can tell someone's side of the Zero-Sum Law at a glance: steel numerals (power), gold-leaf numerals (wealth), gaudy holo-halos (street), a cracked auxiliary tube beside a Civic aura (the Wards). That's the four eras of luck (Art Direction §8.2).
+
+### 5. Jobs in the Tally
+
+| Job | Where | What they do | Typical Omen | Tools / look |
+|---|---|---|---|---|
+| **Auditor** | Everywhere (licensed in Meridian) | Stops Fate Wheels in disputes, debts and duels | 50–90 | Wrist-wheel, field coat |
+| **Collector** | Meridian | Drains debts at dawn; hunts bounties | 40–60 | Debt jars, rust armour |
+| **Actuary** | Basilica | Computes the Dawn Tally; the Basilica's mathematicians (NIL's coat is an actuary's) | 50 | Ledgers, slide rules |
+| **Ledger-priest** | Basilica | Performs the Dawn Tally and the Naming Rite | 50 (steel) | Mitre, chained ledger |
+| **Dawn-bell ringer** | Meridian | Rings the bells that start the Tally; the city's clocks strike 0 | 30–60 | Bell ropes |
+| **Nixie-tuber** | Meridian | Repairs the Nixie tubes that display Omens and signs | 20–50 | Glass, wire, gloves |
+| **Charm-smith** | Bazaar, everywhere | Makes and repairs charms from every culture | 20–70 | Forge, anvil (Maeve) |
+| **Luck-broker** | Exchange | Trades Omen points like shares | 70–99 | Abacus, ticker |
+| **Pawnbroker of luck** | River Empire, Meridian | Lends against charms and future luck | 60–90 | Ledgers, safes (Jinling) |
+| **Omen clinician** | Meridian, River Empire | Luck transfusion from donor to patient | 60–80 | Brass cannulas, Nixie meters |
+| **Insurer** | Meridian | Pools luck against misfortune | 70+ | Contracts |
+| **Shrine keeper** | Hyakki | Keeps shrines, paints daruma eyes, sells omamori | any | Brush, charms (Ofuku) |
+| **Ferryman** | Hyakki | Carries travellers between the islands | any | Oar (Tetsu) |
+| **Oracle-stick reader** | River Empire temples | Reads the fortune sticks | any | Cylinders, poem books |
+| **Astronomer** | Śūnyapura | Measures the sky and the Deficit | any | Astrolabes (Shunya) |
+| **Stepwell diver** | Śūnyapura | Recovers what falls into the wells | any | Rope, lamp (Meera) |
+| **Synod knight** | Kroton Nova | Guards the Sieve | prime | Sieve shield |
+| **Croupier / dealer** | Crossroads | Runs fictional in-world stake contracts; the game has no real-money wagers | any | Cards (Fibi) |
+| **Sheriff** | Crossroads | Keeps the peace in the loop | any | Badge (Vance) |
+| **Luck-in seller** | Remainder Wards | Sells single Omen points for food | 01–10 | Nothing left to sell |
+| **Rounding-sweeper** (urban legend) | Meridian | Said to sweep up dropped fractions at dawn; nobody has seen one | — | A broom made of digits |
+
+### 6. How things operate
+
+**Money.** Two currencies: **fen** (small coins of brass, everyday trade across the Tally) and **luck** itself (Omen points, traded at the Exchange and lent by banks). Prices are posted in fen; luck is for big things (loans, licences, medicine).
+**The day.** The **Dawn Tally** at sunrise recomputes every Omen (a beam sweeps each city; clocks strike 0). Debts are drained in the hour after. Markets open at the second bell.
+**Law.** Disputes go to an **Audit court**: a magistrate oversees a formal Audit between the parties' Auditors (or themselves). Crimes are punished in luck (Omen fines) or time. Officials deny a formal death penalty while coercive Civic settlement can expose people to lethal harm. The narrative identifies this as institutional violence, not humane arithmetic.
+**Health.** Omen clinics transfuse luck; doctors still heal bodies. The poor sell luck-ins to pay for medicine and then need more medicine.
+**Transport.** Meridian: cliff lifts and stairs between the Undercity and the plateau (lift fares are by Omen: the lower your number, the higher the fare, "for safety"). Between lands: ferries (Hyakki), river junks (River Empire), rail (Crossroads), the monsoon road (Śūnyapura), the Aegean packet boats (Kroton Nova).
+**Media.** Omen boards in squares; the *Daily Tally* broadsheet (every Omen change of note); radio plays in the Crossroads; street criers in Bāfā.
+**Education.** Children learn their digit's meaning before the Naming Rite at seven; the Basilica's schools teach arithmetic as morality.
+**Architecture rule.** Floors 4, 9 and 13 are skipped in lifts; buildings face east for the Dawn Tally; the Basilica's eye is visible from every street in Meridian (a planning law).
+
+### 7. Stores and services (what you see on a street)
+
+| Store | Land | What it sells | Sign | In play |
+|---|---|---|---|---|
+| **Charm stall** | Meridian (Bazaar) | Every culture's charms | Hand-painted lucky number + a charm silhouette | Markets (charms) |
+| **Luck pawnshop** | River Empire, Meridian | Loans against charms or future luck | Three gold coins on a red board | Markets (fen, Deals later) |
+| **Omen clinic** | Meridian | Luck transfusions, Omen checks | White cross made of two 1s | Story; healing at a price |
+| **Nixie repair** | Meridian | Tubes for Omen displays and signs | A glowing tube in the window | Face enhancements |
+| **Forge** | Meridian (Celtic quarter), Kroton | Charm upgrades, horseshoes | An anvil with a clover | Forge nodes (Maeve) |
+| **Noodle stall** | Everywhere | Food priced in sevens and eights | Steam and a number | Rest (Teahouse/Campfire) |
+| **Teahouse** | Hyakki, River Empire | Tea, gossip, a place to rest the party | Paper lantern with a digit | Teahouse nodes |
+| **Shrine** | Hyakki, Śūnyapura | Omamori, daruma, offerings | Torii / temple bell | Shrine nodes |
+| **Oracle-stick temple** | River Empire | Fortune sticks | Smoke and a cylinder | Oracle sticks |
+| **Gem bazaar** | Śūnyapura | The nine planetary gems | Nine coloured lamps | Navaratna gems |
+| **Agora stalls** | Kroton Nova | Gems, wheel crafting at a "prime discount" | Prime numerals on marble | Markets |
+| **Casino / card room** | Crossroads | Legal Audits for money | Neon dice | Wagers |
+| **Motel** | Crossroads | Rooms on Route 7 | "VACANCY" with the C burnt out | Campfire nodes |
+| **Open Hand shrine** | Everywhere | Nothing: a stone hand and a die | An open palm carved in stone | Open Hand nodes |
+
+### 8. Politics and power
+
+**The Comptrollership.** Meridian is governed by the **Comptroller**, chosen by the **Board of Actuaries** (twelve senior actuaries) for life. The Comptroller holds the Basilica (the Dawn Tally and the Seals) and therefore the world. Thale has held it since TR 985.
+**The Ledger Assembly.** A chamber of representatives weighted by Omen: each member's vote counts in proportion to their constituents' total luck. The rich decide; the Wards are "represented" by a single seat that hasn't been filled in forty years.
+**The Seal pacts.** The Basilica binds each land through its **Auditor** (a regional office renewed under Thale's TR 999 pacts; Varro inherited his office in TR 1001) and its **Seal**. In return each land gets "protection" (an exemption from the Deficit's worst storms) and a promise of permanence under Fixed Fate.
+
+| Land | Who rules | The Basilica's grip | What the pact promised |
+|---|---|---|---|
+| Meridian | The Comptroller; the Board; the Assembly | Total | Order |
+| Hyakki | The Yokai Courts with human village councils | Toll gates on shrine roads; Collectors in harbours | Yokai never fade (Tamamo) |
+| River Empire | The Chancellor of the Exchange (de facto); the Ten Courts below | The Exchange is half a Basilica office | Jin Chan's bank holds the frozen luck |
+| Śūnyapura | City council of scholars and guilds; the Observatory | Surveyors rewriting measurements | Protected allocations and control of the observatory; invented Basilica eclipse engines enforce the surveyors' monopoly |
+| Kroton Nova | The Pythagorean Synod (the Archon) | The Sieve "accelerated" | Purity |
+| Crossroads | The House (by money), the sheriff (by law) | Basilica finance | The night never ends |
+
+**Power, honestly.** Luck is wealth, health and safety at once, so whoever controls the count controls everything. The Basilica's genius was to make that look like arithmetic instead of rule. The game's politics is that unmasking: each Seal broken returns a land's own idea of luck, and with it, its own say.
+
+## Historical draft excerpts
+
+These excerpts predate the 49-chapter structure. Their chapter and page numbering, pacing, and older production instructions are superseded. Adapt only compatible fictional facts into newly authored scenes; do not mistake them for the new volume's finished script.
+
+### 20 — The Seventh Socket
+
+|Pages|Concrete cause/action and relationship turn|Necessary lore; silence/comedy placement|Last-page hook|
+|---|---|---|---|
+|1–5|At final camp, the party checks each protected proof and the decisions that earned it. NIL asks whether everyone still wants to enter; each has a present reason.|The print route earned all32 stages; the game retains catch-up/decline routes. No late montage substitutes for missing consent.|NIL asks what happens if the translation fails.|
+|6–10|Shunya describes what their evidence supports and what remains uncertain. NIL hears the cost of returning the reserve or breaking the engine, then chooses to attempt shared possibility.|Balance and Overflow remain genuine game choices; printed conviction does not mock them. Leave room for fear.|Each contributor keeps responsibility for their own ledger.|
+|11–15|The party crosses the recalled exterior guard line but must still operate the ritual gate. Six office keys occupy six sockets; NIL’s7 goes into the seventh.|The second7 is a different keyed socket, not a duplicate-key error. A small “filed twice” joke may follow success.|The inner service trap is still active.|
+|16–20|Ivo’s known correction mark identifies him. After the ritual gate opens, he offers the service route and risks his position to make an honest correction.|Ivo bypasses only the interior trap. Seeded defection pays off without making him a secret all-powerful saviour.|A thread ledger hangs beside palm-leaf records in the nave.|
+|21–25|The party recognizes the original regional ledgers and the traces their proof copies preserve. Institutional copying/seizure becomes material evidence, not a mythology lecture.|Distinct possibilities can correspond without becoming identical. Keep this walk slow enough for recognition.|The ledgers feed one closed brass fist.|
+|26–30|The heart is exposed: Hap is inside, starved and counting itself. NIL reaches toward the cage but waits for a response instead of treating it as a machine switch.|First undeniable cage reveal. No action gag or glorious god-battle splash over its suffering.|Thale says he inherited the box.|
+
+### 21 — The Inherited Box
+
+|Pages|Concrete cause/action and relationship turn|Necessary lore; silence/comedy placement|Last-page hook|
+|---|---|---|---|
+|1–5|Archive dates and Thale’s admission align: cageTR702, office inheritedTR985, Hap discoveredTR999. He chose Fixed Fate afterwards and continued the concealed debit.|Never portray54-year-old Thale constructing a300-year-old cage. Give NIL time to distinguish origin from present responsibility.|He calls enforced certainty mercy.|
+|6–10|Thale argues from real protected-route lives. Jinling counters with the hidden payers; Varro, if shown, supplies personal witness without becoming the necessary proof.|HisTR960 childhood loss explains fear, not innocence. No funny interruption or sentimental absolution.|He asks NIL to return home to the Ledger.|
+|11–15|NIL refuses to become property. The first phase compresses choices toward5; the party acts within remaining legal options while recognizing the promise’s practical meaning.|Fixed Fate removes possibility. Provisional hits and Audit stake do not kill civic identities.|The wheels stop moving altogether.|
+|16–20|The arrangement puzzle presents a legal explicit hand. NIL and companions solve the constraint rather than winning through a nonexistent lucky reflex.|The book can simplify UI but must show a comprehensible decision. Use silence around the still wheels.|NIL’s isolated account becomes the next target.|
+|21–25|The phase strips away the visible party support. NIL begins alone, then recalls the first specific act of help; the others answer through recruited relationships, not absent digit luck.|Begin phase3 here so22 can breathe. Recalls include reserves and do not require equipping every proof.|The apparently solitary reel has room for another contribution.|
+|26–30|The remaining companions answer; their records remain different as Shunya’s translation aligns them. Thale falls to one knee with Civic50 distinct from exhausted stake.|Carry action forward without finishing the institutional repair through damage. No full eight-person repetitive attack parade.|“Then tell me what you’d do with it.”|
+
+### 22 — An Open Hand
+
+|Pages|Concrete cause/action and relationship turn|Necessary lore; silence/comedy placement|Last-page hook|
+|---|---|---|---|
+|1–5|NIL and the recalled party turn their specific acts of help toward a new choice. They protect Thale and the cage from a destructive shortcut.|No attack creates ordinary new luck. All eight companions matter as contributors, active or reserve.|Hap asks what NIL chooses to give back.|
+|6–10|NIL hears the alternatives without a timing test. They choose the seeded collective translation; each contributor consents to putting their protected proof into use.|The eight pieces and32 stages make this route earned; the printed choice is Positive-Sum, never a forced game ending.|Different records enter the engine without being flattened.|
+|11–15|Shunya’s established equation allows possibilities to be shared; the closed fist opens. Hap deals through multiple ledgers; NIL remains a person rather than being spent as the solution.|This finale transformation is the first change to the old zero-sum regime. Use one readable change and then white space.|NIL is still there when the noise clears.|
+|16–20|NIL receives stable resonance7 and positive Civic07 in distinct frames. Thale lives to face a changed institution. Tobi participates in a renewing Rite rather than belatedly turning seven.|No healthy Civic00. Allow an ordinary awkward exchange after relief; the world is not repaired in one caption.|Fibi cannot tell NIL what the next morning will contain.|
+|21–25|Show consequences through work: honest games, affordable loans, remembered names, teaching and the shelter on this printed rescue route. Shunya publishes only the agreed co-authored material.|Epilogue publication is payoff, not retroactive eligibility. Do not give every character the same smiling victory pose.|One person still has a birthday to wait for.|
+|26–30|A clearly marked year passes; Hina turns100 and hosts her festival. Fibi reaches another sunrise; Thale tends pigeons. NIL chooses an ordinary next task with companions.|The local struggle resolves while future life remains uncertain. End with earned gentle wit and a final quiet image, not a new supervillain teaser.|An open hand can offer something without closing around its recipient.|
+
+## Remaining work
+
+- Write original full prose scenes for all seven new chapters, with differentiated voices, character decisions and consequences.
+- Reconcile the new volume with the other six, the eight protected proofs, six Seals, chronology, political changes and reveal boundaries.
+- Adapt the completed novel into 154 individually authored manga story pages for this volume.
+- Prepare a concise spoiler-controlled upload for Mangaka, and check the native plan and counted exports.
+- Expand this dossier with meaningful specific material until it satisfies the requested 6,000-line minimum; do not pad with duplicated boilerplate.

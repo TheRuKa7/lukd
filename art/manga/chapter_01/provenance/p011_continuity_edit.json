@@ -1,0 +1,22 @@
+{
+  "index": 11,
+  "params": {
+    "model": "gpt_image_2_6",
+    "quality": "high",
+    "resolution": "4k",
+    "aspect_ratio": "2:3",
+    "count": 1,
+    "output_format": "png",
+    "prompt": "Precision continuity edit of FIRST reference. Retain its original detailed ink/cel art, complete full-page composition and all unaffected material. Preserve this entire existing comic page's five-panel layout, exact white gutters, duo poses, established actor geography, character identities, rain canal architecture, brass mechanisms and action detail. Make two precise corrections only: in PANEL FOUR (the circular wheel closeup), REMOVE the triangle/circle/square shapes and leave THREE BLANK SMOKED-GLASS FACE WINDOWS, retaining the brass rim and divisions. These will receive exact digit overlays later. No symbols or numerals. In PANEL FIVE (bottom action wide), NIL's extended decoder-bearing arm must be their anatomically RIGHT arm reaching naturally across the body, with one normal gloved five-fingered human hand and the wrist-mounted brass decoder. No swapped/mirrored handedness, no claw, no extra limb. Preserve Vesper's firing pose and the separate mechanical Debt Hound. No lettering, balloons, captions or logos anywhere.",
+    "medias": [
+      {
+        "role": "image",
+        "value": "5d28f61b-8cf0-484c-a94b-a4b9cd646d84"
+      },
+      {
+        "role": "image",
+        "value": "a2d34f71-172a-4d0e-8fc6-f88f4214fb24"
+      }
+    ]
+  }
+}

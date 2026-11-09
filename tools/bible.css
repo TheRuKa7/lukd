@@ -107,3 +107,7 @@ tbody tr:nth-child(even) td { background: #F6EFE1; }
 .digit { max-width:78mm; font-size:22pt; overflow-wrap:anywhere; text-align:right; }
 td,th,a,code { overflow-wrap:anywhere; }
 .char-side,.char-art { min-width:0; }
+.doc p { break-inside:avoid-page; }
+.dated-records th:first-child,.dated-records td:first-child { width:21mm; min-width:21mm; white-space:nowrap; overflow-wrap:normal; font-size:7.5pt; }
+.cover-nan { font-family:var(--body); }
+.project-status th:first-child,.project-status td:first-child { width:20mm; min-width:20mm; overflow-wrap:normal; }

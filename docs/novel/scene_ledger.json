@@ -1,0 +1,2191 @@
+{
+  "schema_version": 1,
+  "evidence_scope": "Authored scene plan, not prose, page scripts or generated manga",
+  "source_sha256": "867d080833036ef2cc7dc05a3b05a86026d532c889e2f4803e743bf5a73ee5a1",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Three Bowls",
+      "volume": 1,
+      "relative_day": "1",
+      "location": "Meridian registration lane and market",
+      "cast": [
+        "Nil",
+        "Baker",
+        "Ama",
+        "Tobi",
+        "Collector"
+      ],
+      "travelling_roster": [
+        "Nil"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": null,
+      "decision": "Interrupt the seizure at the cost of anonymity",
+      "scenes": [
+        {
+          "id": "ch01_s1",
+          "action": "A repair job with a bed closes while Nil is sent between employer and registrar; the private NIL field is distinguished from a chosen name."
+        },
+        {
+          "id": "ch01_s2",
+          "action": "Bowl washing earns food and Tobi's joke; Baker supplies a specific Bazaar repair lead rather than another circular refusal."
+        },
+        {
+          "id": "ch01_s3",
+          "action": "Ama's receipt is disputed; Nil abandons the safe Bazaar route and steps between Tobi and the collection case."
+        }
+      ],
+      "exit_consequence": "The Collector must answer Nil's interruption; anonymity and the apprenticeship route can no longer be pursued unchanged."
+    },
+    {
+      "chapter": 2,
+      "title": "The Jar Owes Six",
+      "volume": 1,
+      "relative_day": "1",
+      "location": "Market arch and canal rail",
+      "cast": [
+        "Nil",
+        "Ama",
+        "Tobi",
+        "Collector",
+        "Baker",
+        "Debt Hound"
+      ],
+      "travelling_roster": [
+        "Nil"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 1,
+      "decision": "Return six existing units rather than flee",
+      "scenes": [
+        {
+          "id": "ch02_s1",
+          "action": "Ama identifies her six confiscated units and disputed return; the Collector starts a separate final seizure while retaining her receipt."
+        },
+        {
+          "id": "ch02_s2",
+          "action": "Nil's first physical intervention fails and scrapes the right palm; they stay and bridge an exposed return channel, transferring jar6 to Ama01→07."
+        },
+        {
+          "id": "ch02_s3",
+          "action": "Ama regains her receipt, Tobi passes Baker's bun to Nil, and the Collector sees NaN; Nil draws the Hound away from the family."
+        }
+      ],
+      "exit_consequence": "The family uses the laundry stairs while Nil must take the canal service route with an injured hand."
+    },
+    {
+      "chapter": 3,
+      "title": "A Door That Opens",
+      "volume": 1,
+      "relative_day": "1",
+      "location": "Service stairs and Nought's shrine",
+      "cast": [
+        "Nil",
+        "cart resident",
+        "Nought",
+        "Debt Hound"
+      ],
+      "travelling_roster": [
+        "Nil"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 2,
+      "decision": "Accept shelter and hear the risks without surrendering choice",
+      "scenes": [
+        {
+          "id": "ch03_s1",
+          "action": "The four-footed machine blocks the obvious escape; Nil cannot repeat the jar trick at an unrelated locked gate."
+        },
+        {
+          "id": "ch03_s2",
+          "action": "A resident moves a laundry cart and Nil reaches the open-hand door; Nought hides the lamp before asking questions."
+        },
+        {
+          "id": "ch03_s3",
+          "action": "Water, cloth, a chair and shared bread precede disclosure; Nought offers rest, a back exit or an explained Naming attempt."
+        }
+      ],
+      "exit_consequence": "Nil chooses to hear the Naming's risks; shelter remains available without accepting it."
+    },
+    {
+      "chapter": 4,
+      "title": "Seven Is Not a Name",
+      "volume": 1,
+      "relative_day": "1",
+      "location": "Naming shrine and relay district",
+      "cast": [
+        "Nil",
+        "Nought",
+        "Ivo",
+        "Thale"
+      ],
+      "travelling_roster": [
+        "Nil"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 3,
+      "decision": "Choose Nil as a name and7 as a separate resonance",
+      "scenes": [
+        {
+          "id": "ch04_s1",
+          "action": "Nil adopts the private designation as their chosen name; Nought writes it down independently of the terminal."
+        },
+        {
+          "id": "ch04_s2",
+          "action": "Nil chooses resonance7, keeps NaN and asks whether the choice was wrong; Nought says no and disconnects the failing query."
+        },
+        {
+          "id": "ch04_s3",
+          "action": "Physical relay alarms announce REMAINDER DETECTED; Ivo witnesses Thale setting aside dinner to trace the shrine, without access to his private thoughts."
+        }
+      ],
+      "exit_consequence": "Nought directs Nil toward Gus while the city begins an organized hunt."
+    },
+    {
+      "chapter": 5,
+      "title": "Seven Fen",
+      "volume": 1,
+      "relative_day": "1",
+      "location": "Ward service yard",
+      "cast": [
+        "Nil",
+        "Nought",
+        "Vesper",
+        "Debt Hound"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 4,
+      "decision": "Coordinate with Vesper despite an unresolved fee",
+      "scenes": [
+        {
+          "id": "ch05_s1",
+          "action": "Nought routes Nil out and remains to answer the search; Nil survives a bounded solo stake without confusing defeat with Civic death."
+        },
+        {
+          "id": "ch05_s2",
+          "action": "Vesper intervenes before mentioning seven fen; she demonstrates one defensive decision rather than lecturing all patterns."
+        },
+        {
+          "id": "ch05_s3",
+          "action": "Nil helps secure their exit instead of fleeing alone; Vesper stays despite not being paid and gives a Bazaar route."
+        }
+      ],
+      "exit_consequence": "A reluctant partnership has a destination and an unresolved price rather than instant trust."
+    },
+    {
+      "chapter": 6,
+      "title": "A Window at Six",
+      "volume": 1,
+      "relative_day": "1",
+      "location": "Bazaar and forge lane",
+      "cast": [
+        "Nil",
+        "Vesper",
+        "Gus",
+        "Maeve",
+        "Livia"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 5,
+      "decision": "Help the forge and choose Horseshoe",
+      "scenes": [
+        {
+          "id": "ch06_s1",
+          "action": "The duo coordinates under pursuit; Gus repairs the decoder strap and offers three free charms, of which Nil chooses Horseshoe."
+        },
+        {
+          "id": "ch06_s2",
+          "action": "Maeve refuses to abandon a threatened forge; Nil and Vesper help preserve its tools and she negotiates travel rather than being collected as a reward."
+        },
+        {
+          "id": "ch06_s3",
+          "action": "They glimpse Livia06 behind a guarded window; Gus marks its location on a receipt while Maeve prepares a practical departure bundle."
+        }
+      ],
+      "exit_consequence": "Varro blocks the drain gate and names Nil's bounty; the window changes how the group understands the confrontation."
+    },
+    {
+      "chapter": 7,
+      "title": "A Receipt for Mercy",
+      "volume": 1,
+      "relative_day": "2",
+      "location": "Drain gate and roof route",
+      "cast": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Varro"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 6,
+      "decision": "Spare Varro and accept the slower route",
+      "scenes": [
+        {
+          "id": "ch07_s1",
+          "action": "Varro captures the third scoring token after a completed nonterminal round; Vesper and Nil read the three-round release boundary together."
+        },
+        {
+          "id": "ch07_s2",
+          "action": "The group wins the stake, leaving Varro alive and Civic61 unchanged; Nil refuses another seizure despite learning of Livia."
+        },
+        {
+          "id": "ch07_s3",
+          "action": "Seal1 releases the local monopoly credential; Maeve gives the imperfect friend-luck charm, and a confiscation/toll receipt supplies a ferry lead; a brief dice-eyed dream asks only the chosen digit."
+        }
+      ],
+      "exit_consequence": "Mercy costs the fast ferry; the party chooses the slower Hyakki route with Varro's need unresolved."
+    },
+    {
+      "chapter": 8,
+      "title": "The Ferryman's Seam",
+      "volume": 2,
+      "relative_day": "3",
+      "location": "Canal ferry to Hyakki",
+      "cast": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Tetsu"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 7,
+      "decision": "Work the ferry crossing rather than demand passage",
+      "scenes": [
+        {
+          "id": "ch08_s1",
+          "action": "Tetsu checks the released toll receipt and charges a disclosed crossing fee from their travel funds."
+        },
+        {
+          "id": "ch08_s2",
+          "action": "An old Collector seam appears while he repairs a line; he declines a request for his whole history but teaches a practical knot."
+        },
+        {
+          "id": "ch08_s3",
+          "action": "Weather delays their arrival and forces a shared repair; Vesper must let Maeve lead a task she cannot bluff."
+        }
+      ],
+      "exit_consequence": "They enter Hyakki after the easy shrine-road passage has closed for the night."
+    },
+    {
+      "chapter": 9,
+      "title": "A Hundred Wishes",
+      "volume": 2,
+      "relative_day": "4",
+      "location": "Moon Pier and Night Parade",
+      "cast": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 8,
+      "decision": "Follow Hina to a household instead of the court",
+      "scenes": [
+        {
+          "id": "ch09_s1",
+          "action": "The party uses the parade to avoid a toll inspection; Hina names ordinary wishes Nil has never allowed themself."
+        },
+        {
+          "id": "ch09_s2",
+          "action": "A neighbour's manifestation thins when a local vow channel fails; Hina's fear interrupts her theatrical confidence."
+        },
+        {
+          "id": "ch09_s3",
+          "action": "Hina chooses to guide them to Ofuku rather than accept a court assurance she cannot verify."
+        }
+      ],
+      "exit_consequence": "Shelter and information now depend on a household relationship, not only a route through the festival."
+    },
+    {
+      "chapter": 10,
+      "title": "The Keeper's Gift",
+      "volume": 2,
+      "relative_day": "4",
+      "location": "Ofuku's shrine workshop",
+      "cast": [
+        "Nil",
+        "Maeve",
+        "Hina",
+        "Ofuku",
+        "Vesper"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 9,
+      "decision": "Restore Hina's patch and listen to her objection",
+      "scenes": [
+        {
+          "id": "ch10_s1",
+          "action": "The elderly human keeper assigns practical restoration tasks and disagrees with Hina over what should be kept."
+        },
+        {
+          "id": "ch10_s2",
+          "action": "Maeve fixes an umbrella rib without asking and removes a familiar patch; Hina objects and Maeve restores the salvaged piece rather than defending her intent."
+        },
+        {
+          "id": "ch10_s3",
+          "action": "Ofuku's care supplies a specific shared history; a court notice offers permanence if the unregistered traveller is surrendered."
+        }
+      ],
+      "exit_consequence": "Hina must seek evidence from Enma before deciding whether the court's promise is rescue or confinement."
+    },
+    {
+      "chapter": 11,
+      "title": "Paper Without a Name",
+      "volume": 2,
+      "relative_day": "5",
+      "location": "Enma's archive gate",
+      "cast": [
+        "Nil",
+        "Hina",
+        "Maeve",
+        "Vesper",
+        "Enma"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 10,
+      "decision": "Accept a witnessed absence without calling it soullessness",
+      "scenes": [
+        {
+          "id": "ch11_s1",
+          "action": "Enma states a nonlethal access trial with an explicit cancellation; cooperation resolves the condition without injuring the keeper."
+        },
+        {
+          "id": "ch11_s2",
+          "action": "His ledger contains no page for Nil; he certifies the absence in his own book but cannot certify the absence of personhood everywhere."
+        },
+        {
+          "id": "ch11_s3",
+          "action": "Nil learns Carry through the bounded trial and accepts a witnessed counter-copy; Hina keeps it safe for the journey."
+        }
+      ],
+      "exit_consequence": "Absence becomes evidence to compare elsewhere, not a complete explanation of Nil's origin."
+    },
+    {
+      "chapter": 12,
+      "title": "The Foxes' Bargain",
+      "volume": 2,
+      "relative_day": "6",
+      "location": "Foxfire approach",
+      "cast": [
+        "Nil",
+        "Hina",
+        "Ao",
+        "Aka",
+        "Tamamo"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 11,
+      "decision": "Hear Tamamo's actual terms before answering",
+      "scenes": [
+        {
+          "id": "ch12_s1",
+          "action": "Ao values the court's protection while Aka doubts its frozen promise; their paired challenge exposes different motives."
+        },
+        {
+          "id": "ch12_s2",
+          "action": "Hina hears what permanence would preserve and what change it would prohibit; Nil refuses to make the decision for her."
+        },
+        {
+          "id": "ch12_s3",
+          "action": "The twins permit an audience under a bounded claim; Tamamo states the price openly enough for Hina to answer."
+        }
+      ],
+      "exit_consequence": "Hina's own fear, not a stolen captive, drives the palace decision."
+    },
+    {
+      "chapter": 13,
+      "title": "Already Real",
+      "volume": 2,
+      "relative_day": "6",
+      "location": "Tamamo's palace",
+      "cast": [
+        "Nil",
+        "Hina",
+        "Vesper",
+        "Maeve",
+        "Tamamo",
+        "Ao",
+        "Aka"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 12,
+      "decision": "Refuse permanence purchased with another person",
+      "scenes": [
+        {
+          "id": "ch13_s1",
+          "action": "Tamamo shows real losses rather than a fabricated threat; Hina is tempted by stability and admits it."
+        },
+        {
+          "id": "ch13_s2",
+          "action": "The group exposes illusion channels in a declared Audit; Hina refuses to purchase recognition with Nil's freedom."
+        },
+        {
+          "id": "ch13_s3",
+          "action": "Tamamo survives; Hina claims personhood at99 and insists that restoration work continue for spirits who are still fading."
+        }
+      ],
+      "exit_consequence": "The court must negotiate reopened care channels instead of declaring belief or victory a universal cure."
+    },
+    {
+      "chapter": 14,
+      "title": "The Toll Changes Hands",
+      "volume": 2,
+      "relative_day": "7",
+      "location": "Shrine road and River-bound ferry",
+      "cast": [
+        "Nil",
+        "Hina",
+        "Ofuku",
+        "Tamamo",
+        "Tetsu"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 13,
+      "decision": "Reopen care channels and carry the independent record",
+      "scenes": [
+        {
+          "id": "ch14_s1",
+          "action": "A witnessed road-channel agreement breaks the court monopoly and yields Seal9; Enma's counter-copy remains with Hina."
+        },
+        {
+          "id": "ch14_s2",
+          "action": "Ofuku and restoration workers disagree about priorities but begin a shared queue; Maeve assists under Hina's direction."
+        },
+        {
+          "id": "ch14_s3",
+          "action": "The toll release transfers a documented obligation to the Exchange; the party leaves with the ledger reference and a question-shaped dream, not a cage image."
+        }
+      ],
+      "exit_consequence": "Jinling has a financial reason to intervene when the party reaches Bāfā."
+    },
+    {
+      "chapter": 15,
+      "title": "Purchased Guests",
+      "volume": 3,
+      "relative_day": "8",
+      "location": "Bāfā harbour and pawnshop",
+      "cast": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Little Lantern"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 14,
+      "decision": "Negotiate shelter with a right to leave",
+      "scenes": [
+        {
+          "id": "ch15_s1",
+          "action": "Little Lantern returns a stolen charm with a purchase message; the party follows the named buyer rather than a random inn."
+        },
+        {
+          "id": "ch15_s2",
+          "action": "Jinling purchases the bounty claim but offers shelter with terms the party can inspect, refuse and leave."
+        },
+        {
+          "id": "ch15_s3",
+          "action": "Nil distinguishes protection from ownership and negotiates a guest arrangement; harbour records reveal the contested toll."
+        }
+      ],
+      "exit_consequence": "Jinling needs help comparing records while the party needs a safe way to examine the claim against them."
+    },
+    {
+      "chapter": 16,
+      "title": "Tea and Interest",
+      "volume": 3,
+      "relative_day": "9",
+      "location": "Exchange back rooms and dock cooperative",
+      "cast": [
+        "Nil",
+        "Jinling",
+        "Vesper",
+        "dock witnesses"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 15,
+      "decision": "Present a tentative comparison as certain, causing harm",
+      "scenes": [
+        {
+          "id": "ch16_s1",
+          "action": "Tea and guarded humour precede a look at Jinling's private debt relief; Vesper recognizes a mark and conceals its personal significance."
+        },
+        {
+          "id": "ch16_s2",
+          "action": "Nil treats an apparent match as conclusive and authorizes use of their comparison despite an unstated uncertainty."
+        },
+        {
+          "id": "ch16_s3",
+          "action": "An innocent dock cooperative's reserve is frozen; workers confront Nil and Jinling instead of applauding cleverness."
+        }
+      ],
+      "exit_consequence": "The investigation cannot proceed honestly until Nil corrects their claim and helps restore the cooperative's access."
+    },
+    {
+      "chapter": 17,
+      "title": "Four Lanterns",
+      "volume": 3,
+      "relative_day": "10",
+      "location": "Harbour records and Hall approach",
+      "cast": [
+        "Nil",
+        "Jinling",
+        "Bai Si",
+        "dock witnesses"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 16,
+      "decision": "Withdraw the claim publicly and restore access",
+      "scenes": [
+        {
+          "id": "ch17_s1",
+          "action": "Nil withdraws the false certainty publicly; Jinling releases the disputed freeze from a documented review route without raiding deposits."
+        },
+        {
+          "id": "ch17_s2",
+          "action": "Independent discrepancies remain after that correction; Bai Si meets the party carrying four lanterns and asks who will preserve contradictory testimony."
+        },
+        {
+          "id": "ch17_s3",
+          "action": "A knot used by Wen the ferry-rope maker identifies a life behind the old missing fraction; Nil agrees to compare living and death records independently."
+        }
+      ],
+      "exit_consequence": "The dead-count inquiry has a named human stake and a reason for the descent."
+    },
+    {
+      "chapter": 18,
+      "title": "The Weight of the Dead",
+      "volume": 3,
+      "relative_day": "11",
+      "location": "Naihe crossing and Ten Courts",
+      "cast": [
+        "Nil",
+        "Bai Si",
+        "Jinling",
+        "Ox-Head",
+        "Horse-Face",
+        "witness"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 17,
+      "decision": "Preserve contradictory testimony instead of rounding it away",
+      "scenes": [
+        {
+          "id": "ch18_s1",
+          "action": "The paired wardens define an objective that requires simultaneous cooperation, then bow when it is fulfilled."
+        },
+        {
+          "id": "ch18_s2",
+          "action": "A preserved witness account of Wen conflicts with the rounded official entry; Bai Si records both instead of discarding the testimony."
+        },
+        {
+          "id": "ch18_s3",
+          "action": "An independently preserved dead count shows the same direction of loss as corrected living records, not yet its destination."
+        }
+      ],
+      "exit_consequence": "Judge Cui can test whether a bounded correction preserves its original evidence."
+    },
+    {
+      "chapter": 19,
+      "title": "The Brush Trial",
+      "volume": 3,
+      "relative_day": "11",
+      "location": "Judge Cui's record hall",
+      "cast": [
+        "Nil",
+        "Bai Si",
+        "Jinling",
+        "Judge Cui"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 18,
+      "decision": "Make a bounded correction with counter-evidence",
+      "scenes": [
+        {
+          "id": "ch19_s1",
+          "action": "The Brush trial requires a counter-copy, a named source and an amendable entry; no blank cheque to rewrite lives is offered."
+        },
+        {
+          "id": "ch19_s2",
+          "action": "Nil performs a limited correction and learns Rewrite; the dead-count extract is witnessed and copied before return."
+        },
+        {
+          "id": "ch19_s3",
+          "action": "Bai Si chooses to travel with the party because their method permits uncertainty and correction, not because his grief is solved."
+        }
+      ],
+      "exit_consequence": "The harbour must now answer independently verified evidence it cannot dismiss as a private ledger mistake."
+    },
+    {
+      "chapter": 20,
+      "title": "The True Account",
+      "volume": 3,
+      "relative_day": "12",
+      "location": "Exchange archive and Jin Chan's office",
+      "cast": [
+        "Nil",
+        "Jinling",
+        "Vesper",
+        "Bai Si",
+        "Jin Chan"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 19,
+      "decision": "Protect the archive and admit withheld culpability",
+      "scenes": [
+        {
+          "id": "ch20_s1",
+          "action": "Jinling protects true accounts before burning enforcement copies; her confrontation identifies the hidden payers of protected-route allocations."
+        },
+        {
+          "id": "ch20_s2",
+          "action": "The father's Audit stake ends without killing him; workers and depositors contest whether his daughter should simply inherit control."
+        },
+        {
+          "id": "ch20_s3",
+          "action": "Vesper admits the rigged hand and Mara Vale's harm without demanding reassurance; an archive correction bears Ivo's initials."
+        }
+      ],
+      "exit_consequence": "The party has evidence of a system, a companion's withheld culpability and a release order that still has not helped Livia."
+    },
+    {
+      "chapter": 21,
+      "title": "A Debt to the Living",
+      "volume": 3,
+      "relative_day": "13",
+      "location": "Bāfā public hearing and departure",
+      "cast": [
+        "Nil",
+        "Jinling",
+        "workers",
+        "depositors",
+        "Nought by letter",
+        "Ivo by record"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 20,
+      "decision": "Fund specific relief and accept divided oversight",
+      "scenes": [
+        {
+          "id": "ch21_s1",
+          "action": "A provisional reserve board includes workers and depositors; relief below eight fen is funded from distributable owner surplus, not wages or deposits."
+        },
+        {
+          "id": "ch21_s2",
+          "action": "Seal8 breaks the monopoly; Jinling retains a protected true-account copy while Bai Si retains the dead-count extract; Ivo's dated correction transmits the rejected decentralization proposal and Livia's withheld order."
+        },
+        {
+          "id": "ch21_s3",
+          "action": "Nought's dated reply explains Open Hand as shelter rather than a command; the party sends its new observatory lead back through the established courier route, without inventing an instant acknowledgment."
+        }
+      ],
+      "exit_consequence": "The records require independent measurement; the party leaves a contested functioning board and an active correspondence route behind."
+    },
+    {
+      "chapter": 22,
+      "title": "Room for Chai",
+      "volume": 4,
+      "relative_day": "14",
+      "location": "Road to Śūnyapura and observatory guest room",
+      "cast": [
+        "Nil",
+        "Shunya",
+        "Vidya Rao",
+        "Meera",
+        "Jinling"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 21,
+      "decision": "Limit the investigation before granting access",
+      "scenes": [
+        {
+          "id": "ch22_s1",
+          "action": "Travel consumes paid provisions and time; an instrument crew's missing wages complicate an apparently hospitable scholarly invitation."
+        },
+        {
+          "id": "ch22_s2",
+          "action": "Shunya offers chai and a hypothesis, then Nil sets limits before anyone touches the decoder."
+        },
+        {
+          "id": "ch22_s3",
+          "action": "Meera brings a named request for her brother's record; Jinling challenges Shunya over releasing financial data."
+        }
+      ],
+      "exit_consequence": "An inquiry becomes a negotiated collaboration with personal and institutional costs."
+    },
+    {
+      "chapter": 23,
+      "title": "The Drowned Record",
+      "volume": 4,
+      "relative_day": "15",
+      "location": "Stepwell retrieval route",
+      "cast": [
+        "Nil",
+        "Meera",
+        "Shunya",
+        "Maeve",
+        "Bai Si"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 22,
+      "decision": "Retrieve the private record without claiming resurrection",
+      "scenes": [
+        {
+          "id": "ch23_s1",
+          "action": "Meera establishes ropes, lamps, depth and a return boundary; the descent cannot rely on resurrection or a universal decoder trick."
+        },
+        {
+          "id": "ch23_s2",
+          "action": "The recovered record represents a lost life, not the body; Shunya's equal-quantity model fails to preserve a timed event in a small inert test using nonpersonal calibration pulses."
+        },
+        {
+          "id": "ch23_s3",
+          "action": "Nil returns the private record to Meera and obtains permission for a limited comparison, preserving the failed result."
+        }
+      ],
+      "exit_consequence": "Quantities alone are insufficient; timing and the meaning of regional claims must be compared."
+    },
+    {
+      "chapter": 24,
+      "title": "Terms of Examination",
+      "volume": 4,
+      "relative_day": "16",
+      "location": "Observatory and Chitragupta's hall",
+      "cast": [
+        "Nil",
+        "Shunya",
+        "Vidya Rao",
+        "Chitragupta"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 23,
+      "decision": "Renew consent when the question changes",
+      "scenes": [
+        {
+          "id": "ch24_s1",
+          "action": "Shunya states scope, risks, stopping conditions and separate publication rights; Nil agrees to examination, not public ownership."
+        },
+        {
+          "id": "ch24_s2",
+          "action": "The keeper's nonlethal record trial supplies another independent source with its own meaning rather than an identical missing coin."
+        },
+        {
+          "id": "ch24_s3",
+          "action": "New data requires a fresh question and renewed consent; Shunya preserves the rejected model instead of quietly replacing it."
+        }
+      ],
+      "exit_consequence": "The investigators have enough independent signatures to test an origin hypothesis without narrating it as fact yet."
+    },
+    {
+      "chapter": 25,
+      "title": "Everyone's Handwriting",
+      "volume": 4,
+      "relative_day": "17",
+      "location": "Observatory comparison room",
+      "cast": [
+        "Nil",
+        "Shunya",
+        "Bai Si",
+        "Jinling",
+        "Vesper"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 24,
+      "decision": "Ask for the plain conclusion once evidence converges",
+      "scenes": [
+        {
+          "id": "ch25_s1",
+          "action": "Witness copies align fractional signatures across living, dead and deed records; each source's limits remain visible."
+        },
+        {
+          "id": "ch25_s2",
+          "action": "Nil catches the urge to offer the answer others want and asks whether the evidence is sufficient; Shunya distinguishes what it proves from what it cannot explain."
+        },
+        {
+          "id": "ch25_s3",
+          "action": "Independent checks converge on accumulation into a self-aware account; the chapter ends on Nil asking for the plain conclusion."
+        }
+      ],
+      "exit_consequence": "The next chapter must answer clearly rather than prolong mystery through evasive terminology."
+    },
+    {
+      "chapter": 26,
+      "title": "But You Are Yours",
+      "volume": 4,
+      "relative_day": "18",
+      "location": "Observatory quiet room and courtyard",
+      "cast": [
+        "Nil",
+        "Shunya",
+        "Bai Si",
+        "Maeve",
+        "Vesper"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 25,
+      "decision": "Refuse further testing and choose the engine mission",
+      "scenes": [
+        {
+          "id": "ch26_s1",
+          "action": "Shunya states that discarded fractions became Nil; there is no proof here of the physical captive source or a divine lineage."
+        },
+        {
+          "id": "ch26_s2",
+          "action": "Companions react imperfectly; Nil refuses further testing for the afternoon, and Shunya respects it without withdrawing shelter."
+        },
+        {
+          "id": "ch26_s3",
+          "action": "Bai Si writes Wen's disputed name into his continuing record; Nil chooses to stop suppressor interference rather than accept a public demonstration of their body; that evening they voluntarily learn Place Value on an inert instrument, not through renewed personal examination."
+        }
+      ],
+      "exit_consequence": "Identity knowledge changes agency and boundaries; the engine mission follows Nil's own decision."
+    },
+    {
+      "chapter": 27,
+      "title": "Brightness: Varies",
+      "volume": 4,
+      "relative_day": "19",
+      "location": "Plateau eclipse-engine works",
+      "cast": [
+        "Nil",
+        "Shunya",
+        "Vidya Rao",
+        "surveyors",
+        "companions"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 26,
+      "decision": "Disable machinery while preserving uncertainty and independent sky",
+      "scenes": [
+        {
+          "id": "ch27_s1",
+          "action": "The party documents operator stamps on invented bolted machines, separating the surveyors' acts from revered celestial figures."
+        },
+        {
+          "id": "ch27_s2",
+          "action": "They disable linked suppressors through ordinary bounded Audits and maintenance access; the natural eclipse passes without killing a deity."
+        },
+        {
+          "id": "ch27_s3",
+          "action": "Seal0 releases the control monopoly; Vidya records brightness varies, while Shunya offers restricted co-authorship and preserves the equation's unresolved scaling limit."
+        }
+      ],
+      "exit_consequence": "The observatory can publish measurements; Thale learns suppression has failed through the resulting report."
+    },
+    {
+      "chapter": 28,
+      "title": "An Order Accelerated",
+      "volume": 4,
+      "relative_day": "20",
+      "location": "Observatory dispatch room and Kroton road",
+      "cast": [
+        "Nil",
+        "Shunya",
+        "Jinling",
+        "Vidya Rao",
+        "courier"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 27,
+      "decision": "Warn stewards and follow the dated school threat",
+      "scenes": [
+        {
+          "id": "ch28_s1",
+          "action": "The protected equation copy includes the failed timing test, a corrected bounded model and an explicit warning against mass deployment."
+        },
+        {
+          "id": "ch28_s2",
+          "action": "A public acceleration order names the Sieve schedule; Shunya issues independently signed observation copies, while Ivo's earlier proposal identifies a possible decentralized institution."
+        },
+        {
+          "id": "ch28_s3",
+          "action": "The party uses a paid caravan route, sends councils a request to consider a bounded transition, and chooses Kroton because children face a dated threat."
+        }
+      ],
+      "exit_consequence": "Travel follows a specific imminent policy rather than a new unlocked biome; no regional mandate is assumed merely because a letter was sent."
+    },
+    {
+      "chapter": 29,
+      "title": "The Even Prime",
+      "volume": 5,
+      "relative_day": "21",
+      "location": "Kroton arrival terraces",
+      "cast": [
+        "Nil",
+        "Prima",
+        "Synod guards",
+        "Niko"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 28,
+      "decision": "Question an exclusion rule while still under escort",
+      "scenes": [
+        {
+          "id": "ch29_s1",
+          "action": "Prima escorts the party as prisoners under an exclusion order she believes temporary; she shows real shelter work alongside doctrinal rank."
+        },
+        {
+          "id": "ch29_s2",
+          "action": "A goat-herd's mishap exposes the unsafe terrace edge without making endangered residents a joke."
+        },
+        {
+          "id": "ch29_s3",
+          "action": "Nil asks about appeal and Prima supplies a route that excludes people she has previously turned away."
+        }
+      ],
+      "exit_consequence": "The prisoners must pass through the undercity before the schedule can be challenged."
+    },
+    {
+      "chapter": 30,
+      "title": "The City Beneath",
+      "volume": 5,
+      "relative_day": "22",
+      "location": "Kallisto's undercity workshops",
+      "cast": [
+        "Nil",
+        "Prima",
+        "Kallisto",
+        "workers",
+        "Maeve"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 29,
+      "decision": "Disclose past complicity before demanding trust",
+      "scenes": [
+        {
+          "id": "ch30_s1",
+          "action": "Workers demonstrate the supports they maintain beneath the official city; Kallisto names a family Prima denied passage."
+        },
+        {
+          "id": "ch30_s2",
+          "action": "Prima cannot repair the injury by citing good intentions; Maeve recognizes parts of the old machine in ordinary workshop repairs."
+        },
+        {
+          "id": "ch30_s3",
+          "action": "A signed school-transfer order reveals that children will be moved across a failing Sieve section before an appeal can reach the temple."
+        }
+      ],
+      "exit_consequence": "Prima must choose between the command she carries and people whose danger she can now verify."
+    },
+    {
+      "chapter": 31,
+      "title": "The School Above the Sieve",
+      "volume": 5,
+      "relative_day": "23",
+      "location": "School evacuation and Sieve span",
+      "cast": [
+        "Nil",
+        "Prima",
+        "Kallisto",
+        "children",
+        "workers"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 30,
+      "decision": "Defy orders and accept residents' direction",
+      "scenes": [
+        {
+          "id": "ch31_s1",
+          "action": "Prima orders a halt and is refused; she opens her shield to support the trapped children, visibly breaking her office's command."
+        },
+        {
+          "id": "ch31_s2",
+          "action": "A small consenting rescue team uses the corrected translation model on named stakes; it succeeds locally while the monopoly prevents wider scaling."
+        },
+        {
+          "id": "ch31_s3",
+          "action": "Prima accepts workers' direction and surrenders her access logs for evidence rather than asking for immediate forgiveness."
+        }
+      ],
+      "exit_consequence": "The rescue proves a limited alternative and exposes both the remaining lock and Prima's earlier complicity."
+    },
+    {
+      "chapter": 32,
+      "title": "A Thread That Measures",
+      "volume": 5,
+      "relative_day": "24",
+      "location": "Moirai's route and measured cave",
+      "cast": [
+        "Nil",
+        "Prima",
+        "Clotho",
+        "Lachesis",
+        "Atropos",
+        "companions"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 31,
+      "decision": "Sacrifice a permitted ribbon rather than protected evidence",
+      "scenes": [
+        {
+          "id": "ch32_s1",
+          "action": "The sequence trial asks coordinated action rather than injury to a keeper."
+        },
+        {
+          "id": "ch32_s2",
+          "action": "Lachesis measures relationships with permission; Prima and Nil work through disagreement instead of gaining a proof from numerical compatibility alone."
+        },
+        {
+          "id": "ch32_s3",
+          "action": "Atropos offers an expendable ribbon as the declared sacrifice; protected proofs are not consumed and the thread is witnessed for later release."
+        }
+      ],
+      "exit_consequence": "The group learns Factor and returns with a trial record, not an unlimited power over anyone's life."
+    },
+    {
+      "chapter": 33,
+      "title": "The First Gear",
+      "volume": 5,
+      "relative_day": "24",
+      "location": "Undercity archive workshop",
+      "cast": [
+        "Nil",
+        "Maeve",
+        "Bai Si",
+        "Kallisto",
+        "Prima"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 32,
+      "decision": "Preserve the dated gear and name the personal risk",
+      "scenes": [
+        {
+          "id": "ch33_s1",
+          "action": "Maeve identifies a first-generation gear through an independently dated repair log, showing the institution predates Thale."
+        },
+        {
+          "id": "ch33_s2",
+          "action": "Bai Si smiles at a River-born worker's inherited account of Wen's ropework rather than a perfect total; Prima helps prepare testimony without directing the residents."
+        },
+        {
+          "id": "ch33_s3",
+          "action": "The gear's financing reference connects old machinery to the House's later maintenance network; Vesper agrees to disclose the risk before departure."
+        }
+      ],
+      "exit_consequence": "The temple confrontation now has evidence, a repair objective and witnesses who will still govern after the party leaves."
+    },
+    {
+      "chapter": 34,
+      "title": "What We Refuse to Cut",
+      "volume": 5,
+      "relative_day": "25",
+      "location": "Archon's access court",
+      "cast": [
+        "Nil",
+        "Prima",
+        "Archon",
+        "Kallisto",
+        "companions"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 33,
+      "decision": "Contest the doctrine through remaining lawful options",
+      "scenes": [
+        {
+          "id": "ch34_s1",
+          "action": "Residents present access logs and the failed school order; the Archon refuses review while claiming the system protects the city."
+        },
+        {
+          "id": "ch34_s2",
+          "action": "The bounded Audit removes declared faces; the party adapts through legal remaining options rather than inventing a new ability."
+        },
+        {
+          "id": "ch34_s3",
+          "action": "Defeat damages the physical Sieve support; Prima's teacher falls beyond the safe edge before the outcome can become a victory speech."
+        }
+      ],
+      "exit_consequence": "Saving a defeated opponent becomes a costly action rather than automatic institutional restoration."
+    },
+    {
+      "chapter": 35,
+      "title": "Catch the Falling",
+      "volume": 5,
+      "relative_day": "26",
+      "location": "Sieve edge and reopening hearing",
+      "cast": [
+        "Nil",
+        "Prima",
+        "Maeve",
+        "Archon",
+        "Kallisto",
+        "Vesper"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 34,
+      "decision": "Save the teacher without restoring his office",
+      "scenes": [
+        {
+          "id": "ch35_s1",
+          "action": "Prima catches the Archon and others share the load; Civic17 remains distinct from his exhausted stake, and custody passes to witnesses."
+        },
+        {
+          "id": "ch35_s2",
+          "action": "Lachesis's witnessed thread is released to Prima, Seal2 breaks the monopoly and Maeve forges the first-gear horseshoe only after asking what Nil needs."
+        },
+        {
+          "id": "ch35_s3",
+          "action": "Residents control the reopened routes; Vesper gives the fuller Mara history and the party consents to follow the financing trail through a paid westbound passage."
+        }
+      ],
+      "exit_consequence": "The party leaves copies and testimony, carries two more proofs and accepts a journey whose personal danger Vesper has finally named."
+    },
+    {
+      "chapter": 36,
+      "title": "An Honest Deal",
+      "volume": 6,
+      "relative_day": "27",
+      "location": "Crossroads road and midnight junction",
+      "cast": [
+        "Nil",
+        "Vesper",
+        "Stranger",
+        "companions"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 35,
+      "decision": "Enter the House jurisdiction after disclosed terms",
+      "scenes": [
+        {
+          "id": "ch36_s1",
+          "action": "Caravan travel and a shelter letter place the group outside Lucky Strike before the local loop boundary."
+        },
+        {
+          "id": "ch36_s2",
+          "action": "The Stranger declares the terms of a fair trial and teaches a bounded Deal with an explicit refusal option."
+        },
+        {
+          "id": "ch36_s3",
+          "action": "Vesper identifies the casino and former associates instead of pretending to be an uninvolved guide."
+        }
+      ],
+      "exit_consequence": "The group knowingly enters a repeating jurisdiction with a skill and an articulated risk."
+    },
+    {
+      "chapter": 37,
+      "title": "The Motel at Three",
+      "volume": 6,
+      "relative_day": "28 night",
+      "location": "Lucky Strike local iteration1597",
+      "cast": [
+        "Nil",
+        "Fibi",
+        "Vesper",
+        "House staff"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 36,
+      "decision": "Fibi invites investigation and states her own future",
+      "scenes": [
+        {
+          "id": "ch37_s1",
+          "action": "The party enters during the1597th iteration; Fibi predicts a routine but cannot finish Nil's new reply."
+        },
+        {
+          "id": "ch37_s2",
+          "action": "She tests whether their memories and records differ from her prior visitors; Nil's unregistered account anchors the arriving party after entry."
+        },
+        {
+          "id": "ch37_s3",
+          "action": "Fibi chooses to show the motel at three and confides her wish to train as a road surveyor."
+        }
+      ],
+      "exit_consequence": "The investigation proceeds by her permission rather than treating her as a puzzle object to extract."
+    },
+    {
+      "chapter": 38,
+      "title": "One Thousand Five Hundred Ninety-Six",
+      "volume": 6,
+      "relative_day": "28 night",
+      "location": "Motel and railway inside local iteration1597",
+      "cast": [
+        "Nil",
+        "Fibi",
+        "Penny",
+        "Vance"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 37,
+      "decision": "Use corroborated prior records without killing Fibi again",
+      "scenes": [
+        {
+          "id": "ch38_s1",
+          "action": "At three, Fibi reconstructs previous repeated events and distinguishes memory from current observation."
+        },
+        {
+          "id": "ch38_s2",
+          "action": "Penny's authorized nonspendable penny tokens and Vance's retained case markers corroborate1596 completed loops; they are not farmable currency."
+        },
+        {
+          "id": "ch38_s3",
+          "action": "The group observes the protection mechanism's current debit and identifies Fibi's heart stopping as the reset condition, without causing another death to prove it."
+        }
+      ],
+      "exit_consequence": "They have a testable mechanism and a reason to seek the signed maintenance clause before dawn."
+    },
+    {
+      "chapter": 39,
+      "title": "The Price of Protection",
+      "volume": 6,
+      "relative_day": "28 night",
+      "location": "House contract office",
+      "cast": [
+        "Nil",
+        "Fibi",
+        "House",
+        "Vance",
+        "Jinling"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 38,
+      "decision": "Fibi chooses cancellation and limits Vesper's involvement",
+      "scenes": [
+        {
+          "id": "ch39_s1",
+          "action": "The recovered maintenance clause identifies source, debit and cancellation; protection itself drains Fibi at dawn."
+        },
+        {
+          "id": "ch39_s2",
+          "action": "Fibi consents to ending it after hearing what safety it actually supplied; the House refuses to release its control claim."
+        },
+        {
+          "id": "ch39_s3",
+          "action": "Vesper tries to make the conversation about her own guilt; Fibi asks her to leave, and she does."
+        }
+      ],
+      "exit_consequence": "Fibi's decision is settled but execution requires a changed House signature and protected original terms."
+    },
+    {
+      "chapter": 40,
+      "title": "The Marked Deck",
+      "volume": 6,
+      "relative_day": "28 before dawn",
+      "location": "Mutual-aid office and honest table",
+      "cast": [
+        "Nil",
+        "Vesper",
+        "Fibi",
+        "Mara",
+        "Vance",
+        "House"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 39,
+      "decision": "Accept Mara's refusal, restitution and a fair loss",
+      "scenes": [
+        {
+          "id": "ch40_s1",
+          "action": "Mara refuses a reunion on Vesper's terms through her own mutual-aid office; Vesper supplies a witnessed statement and directs restitution to the family's chosen fund."
+        },
+        {
+          "id": "ch40_s2",
+          "action": "Vesper deals Fibi a game with open rules and accepts a fair loss; Fibi is not required to forgive or console her."
+        },
+        {
+          "id": "ch40_s3",
+          "action": "The table exposes the House's rewind limits under the recovered terms; the group begins a bounded confrontation to compel release of its unlawful control claim."
+        }
+      ],
+      "exit_consequence": "The victory must yield a signature and a lawful cancellation, not simply damage that cures Fibi."
+    },
+    {
+      "chapter": 41,
+      "title": "A First New Sunrise",
+      "volume": 6,
+      "relative_day": "29 dawn",
+      "location": "Lucky Strike cancellation table",
+      "cast": [
+        "Nil",
+        "Fibi",
+        "House",
+        "Vance",
+        "companions"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 40,
+      "decision": "Relinquish the control claim and confirm cancellation separately",
+      "scenes": [
+        {
+          "id": "ch41_s1",
+          "action": "The House's bounded stake ends and it relinquishes the claim with a witnessed signature; Fibi separately confirms consent."
+        },
+        {
+          "id": "ch41_s2",
+          "action": "The cancellation closes the maintenance drain; Fibi survives the first new dawn with fatigue and uncertain plans, and keeps control of her recollections."
+        },
+        {
+          "id": "ch41_s3",
+          "action": "Seal7 releases the monopoly; Fibi keeps the Black Book page and Vesper the marked deck, with witness copies; staff begin wage and property proceedings."
+        }
+      ],
+      "exit_consequence": "The required six Seals exist, but returning safely requires Livia's unresolved transfer and regional replies."
+    },
+    {
+      "chapter": 42,
+      "title": "The Letter from Meridian",
+      "volume": 6,
+      "relative_day": "30",
+      "location": "Crossroads courier station and return convoy",
+      "cast": [
+        "Nil",
+        "Fibi",
+        "Vesper",
+        "Varro",
+        "Livia by letter",
+        "Gus",
+        "Nought"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi",
+        "Varro"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 41,
+      "decision": "Livia consents to care; Varro offers restitution as a guest",
+      "scenes": [
+        {
+          "id": "ch42_s1",
+          "action": "Gus's courier delivers Livia's symptom log and consent to medical transfer using the dated River order; Nought confirms ordinary care and separately funded route protection."
+        },
+        {
+          "id": "ch42_s2",
+          "action": "Varro removes the mask and chooses restitution as a guest; no Civic units are created as payment for his recruitment."
+        },
+        {
+          "id": "ch42_s3",
+          "action": "Council replies and reserve schedules arrive through established carriers; a paid convoy carries the group home over the following three days."
+        }
+      ],
+      "exit_consequence": "The party carries evidence and limited mandates, not sovereign power; Fibi joins the road by her own choice."
+    },
+    {
+      "chapter": 43,
+      "title": "Eight Things Kept",
+      "volume": 7,
+      "relative_day": "33",
+      "location": "Meridian outer camp",
+      "cast": [
+        "Nil",
+        "all eight core companions",
+        "Varro",
+        "regional delegates"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi",
+        "Varro"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 42,
+      "decision": "Authorize a bounded transition with dissent and a withdrawal condition",
+      "scenes": [
+        {
+          "id": "ch43_s1",
+          "action": "The camp reviews each protected proof, its owner, counter-copy, permitted use and the two earlier translation tests."
+        },
+        {
+          "id": "ch43_s2",
+          "action": "Delegates ratify limited revocable mandates and named emergency pools after dissent is recorded; Nil hears that injury and failure remain possible."
+        },
+        {
+          "id": "ch43_s3",
+          "action": "Nil chooses the bounded attempt, preserves a withdrawal condition and declines any claim to inherit government."
+        }
+      ],
+      "exit_consequence": "All final prerequisites are now available before the ritual rather than conjured by a climax speech."
+    },
+    {
+      "chapter": 44,
+      "title": "The Seventh Socket",
+      "volume": 7,
+      "relative_day": "34",
+      "location": "Basilica Upper Gate and service passage",
+      "cast": [
+        "Nil",
+        "companions",
+        "Ivo",
+        "guards"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi",
+        "Varro"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 43,
+      "decision": "Use distinct credentials and Ivo's earned defection",
+      "scenes": [
+        {
+          "id": "ch44_s1",
+          "action": "Recalled exterior guards do not open the ritual gate; six office credentials and chosen resonance7 occupy seven distinct keyed sockets."
+        },
+        {
+          "id": "ch44_s2",
+          "action": "The opened gate still leads to a separate internal barrier; Ivo uses the route seeded by his earlier copies and accepts witnessed responsibility for his part."
+        },
+        {
+          "id": "ch44_s3",
+          "action": "The group follows original account routes through archive corridors, preserving records rather than destroying every trace of the institution."
+        }
+      ],
+      "exit_consequence": "They reach the heart through acquired access and a person's deliberate defection, not teleportation or a prophecy."
+    },
+    {
+      "chapter": 45,
+      "title": "The Closed Fist",
+      "volume": 7,
+      "relative_day": "34",
+      "location": "Basilica heart",
+      "cast": [
+        "Nil",
+        "companions",
+        "Hap",
+        "Ivo"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi",
+        "Varro"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 44,
+      "decision": "Refuse to treat freed chance as automatically just",
+      "scenes": [
+        {
+          "id": "ch45_s1",
+          "action": "The party first sees the physical closed brass fist and starving Hap; the reader is not told it was visible in earlier dreams."
+        },
+        {
+          "id": "ch45_s2",
+          "action": "Original records connect the registered fractions to captive possibility, completing the origin's second stage without declaring Nil a deity or property."
+        },
+        {
+          "id": "ch45_s3",
+          "action": "Hap can now speak directly; Nil asks about people injured by free chance and refuses a demand that freedom mean returning to unaccountable rule."
+        }
+      ],
+      "exit_consequence": "The final choice must solve coercive allocation without pretending a liberated god is automatically just."
+    },
+    {
+      "chapter": 46,
+      "title": "The Inherited Box",
+      "volume": 7,
+      "relative_day": "34",
+      "location": "Basilica operator archive",
+      "cast": [
+        "Nil",
+        "Thale",
+        "Ivo",
+        "Jinling",
+        "Shunya"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi",
+        "Varro"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 45,
+      "decision": "Reject coercion after hearing its genuine benefits and costs",
+      "scenes": [
+        {
+          "id": "ch46_s1",
+          "action": "Independent original dates distinguish TR702 construction, TR985 inheritance and TR999 discovery; the rejected decentralization proposal matches Ivo's earlier copy."
+        },
+        {
+          "id": "ch46_s2",
+          "action": "Thale admits the protected-route benefits and hidden costs and explains why he rejected a power-sharing alternative."
+        },
+        {
+          "id": "ch46_s3",
+          "action": "Nil and the witnesses name their limited mandate and continuity pools; disagreement concerns authority and risk after the arithmetic is understood."
+        }
+      ],
+      "exit_consequence": "Thale chooses Fixed Fate despite a documented alternative, making the confrontation an informed coercive act."
+    },
+    {
+      "chapter": 47,
+      "title": "Fixed Fate",
+      "volume": 7,
+      "relative_day": "34",
+      "location": "Even Hand control floor",
+      "cast": [
+        "Nil",
+        "Thale",
+        "companions"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi",
+        "Varro"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 46,
+      "decision": "Protect essential coverage while opposing Fixed Fate",
+      "scenes": [
+        {
+          "id": "ch47_s1",
+          "action": "The bounded confrontation tests declared channels while crews preserve essential coverage; no ordinary strike generates new Civic luck."
+        },
+        {
+          "id": "ch47_s2",
+          "action": "Compression slows available options toward stillness; the party must protect the record routes and people maintaining them."
+        },
+        {
+          "id": "ch47_s3",
+          "action": "Nil appears isolated when the shared channel closes, but their earlier refusal to treat companions as expendable leaves independent routes intact."
+        }
+      ],
+      "exit_consequence": "The next response must come from those distinct prior commitments rather than an unseeded collective power."
+    },
+    {
+      "chapter": 48,
+      "title": "Hands That Answer",
+      "volume": 7,
+      "relative_day": "34",
+      "location": "Control floor and witness station",
+      "cast": [
+        "Nil",
+        "Thale",
+        "all eight core companions",
+        "Ivo"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi",
+        "Varro"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 47,
+      "decision": "Yield executive control and renew each contributor's permission",
+      "scenes": [
+        {
+          "id": "ch48_s1",
+          "action": "Companions answer through specific previously established routes, tools and authorized records; none is reduced to a number in a friendship attack."
+        },
+        {
+          "id": "ch48_s2",
+          "action": "Thale's stake ends without automatic Civic settlement; he yields executive control and preserves the operator record under witness custody."
+        },
+        {
+          "id": "ch48_s3",
+          "action": "Nil reconfirms the attempt with each contributor and the emergency-pool stewards; the equation cannot substitute for their permission."
+        }
+      ],
+      "exit_consequence": "The mechanism can now be enacted as a bounded institutional transition, not merely a boss reward."
+    },
+    {
+      "chapter": 49,
+      "title": "An Open Hand",
+      "volume": 7,
+      "relative_day": "35–36;one year later",
+      "location": "Meridian workshops and regional epilogues",
+      "cast": [
+        "Nil",
+        "companions",
+        "regional councils",
+        "Livia",
+        "Varro",
+        "Hap",
+        "Thale"
+      ],
+      "travelling_roster": [
+        "Nil",
+        "Vesper",
+        "Maeve",
+        "Hina",
+        "Jinling",
+        "Bai Si",
+        "Shunya",
+        "Prima",
+        "Fibi",
+        "Varro"
+      ],
+      "roster_note": "Active focal participants are listed separately; no obligation to place every traveller in every panel. Bai Si is guide until19; Prima escort until31; Jinling guest until21; Varro late guest.",
+      "viewpoint": "Nil-close; chapter4 Ivo-observed cutaway only",
+      "requires_previous_chapter": 48,
+      "decision": "Implement limited reform and choose ordinary repair work",
+      "scenes": [
+        {
+          "id": "ch49_s1",
+          "action": "Eight protected records support the witnessed translation; the fist opens, rounding monopoly ends and reserves bridge the switch without claiming infinite luck."
+        },
+        {
+          "id": "ch49_s2",
+          "action": "Nil receives separate Civic07 and resonance7, chooses the apprenticeship rather than office; councils begin appeals while Thale faces proceedings, not a sentimental pardon."
+        },
+        {
+          "id": "ch49_s3",
+          "action": "Linked regional aftermaths show work, unresolved disagreements and unrepaired loss; a clearly marked one-year jump gives Hina her100th birthday and Fibi another chosen departure."
+        }
+      ],
+      "exit_consequence": "The central conflict closes while ordinary repair continues; no sequel is required to explain Nil's personhood or the new institutions' limits."
+    }
+  ],
+  "proofs": [
+    {
+      "id": "piece.enma_page",
+      "introduced": 11,
+      "secured": 14,
+      "custodian": "Hina",
+      "review": 43,
+      "use": 49
+    },
+    {
+      "id": "piece.true_accounts",
+      "introduced": 20,
+      "secured": 21,
+      "custodian": "Jinling",
+      "review": 43,
+      "use": 49
+    },
+    {
+      "id": "piece.dead_count",
+      "introduced": 18,
+      "secured": 19,
+      "custodian": "Bai Si",
+      "review": 43,
+      "use": 49
+    },
+    {
+      "id": "piece.remainder_equation",
+      "introduced": 23,
+      "secured": 28,
+      "custodian": "Shunya with Nil consent",
+      "review": 43,
+      "use": 49
+    },
+    {
+      "id": "piece.lachesis_thread",
+      "introduced": 32,
+      "secured": 35,
+      "custodian": "Prima",
+      "review": 43,
+      "use": 49
+    },
+    {
+      "id": "piece.first_gear_horseshoe",
+      "introduced": 33,
+      "secured": 35,
+      "custodian": "Maeve",
+      "review": 43,
+      "use": 49
+    },
+    {
+      "id": "piece.marked_deck",
+      "introduced": 16,
+      "secured": 41,
+      "custodian": "Vesper",
+      "review": 43,
+      "use": 49
+    },
+    {
+      "id": "piece.black_book_page",
+      "introduced": 39,
+      "secured": 41,
+      "custodian": "Fibi",
+      "review": 43,
+      "use": 49
+    }
+  ],
+  "seals": [
+    {
+      "digit": 1,
+      "secured": 7,
+      "use": 44
+    },
+    {
+      "digit": 9,
+      "secured": 14,
+      "use": 44
+    },
+    {
+      "digit": 8,
+      "secured": 21,
+      "use": 44
+    },
+    {
+      "digit": 0,
+      "secured": 27,
+      "use": 44
+    },
+    {
+      "digit": 2,
+      "secured": 35,
+      "use": 44
+    },
+    {
+      "digit": 7,
+      "secured": 41,
+      "use": 44
+    }
+  ],
+  "gates": {
+    "origin_evidence_converges": 25,
+    "origin_confirmed": 26,
+    "physical_cage_revealed": 45,
+    "failed_test": 23,
+    "small_test": 31,
+    "mandates_ratified": 43,
+    "proof_review": 43,
+    "ritual_gate": 44,
+    "positive_sum": 49
+  },
+  "core_arcs": {
+    "Vesper": [
+      5,
+      20,
+      40,
+      41
+    ],
+    "Maeve": [
+      7,
+      10,
+      33,
+      35
+    ],
+    "Hina": [
+      9,
+      10,
+      12,
+      14
+    ],
+    "Jinling": [
+      15,
+      16,
+      20,
+      21
+    ],
+    "Bai Si": [
+      17,
+      18,
+      26,
+      33
+    ],
+    "Shunya": [
+      22,
+      24,
+      26,
+      28
+    ],
+    "Prima": [
+      29,
+      31,
+      32,
+      35
+    ],
+    "Fibi": [
+      37,
+      38,
+      39,
+      41
+    ]
+  }
+}

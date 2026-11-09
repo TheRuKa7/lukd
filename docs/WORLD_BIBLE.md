@@ -1,5 +1,7 @@
 # ZERO-SUM: OMEN — World Bible
 
+> **8 November editorial revision:** [Resolved series bible](novel/RESOLVED_SERIES_BIBLE.md) supersedes conflicting older naming, origin wording, character backstories, political outcomes and story-length targets below. Gameplay formulas retain their existing domain authority. This source is being adapted to the49-chapter edition; its historical schedules and game scene numbering are not manga chapter numbering.
+
 > *"Every soul a number. Every number a share. The books must balance."*
 > — the Comptroller's catechism, recited at every Dawn Tally
 

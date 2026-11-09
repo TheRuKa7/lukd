@@ -4,6 +4,33 @@ Updated 7 November 2026. **Specified, not accepted runtime art.** [DECISIONS.md]
 
 **Painted world, inked people.** Matte lived-in backgrounds carry the old plural world; graphic cel characters and numerical machinery carry the struggle over luck. These are original production choices, not a claim of verified research into another studio's process.
 
+## 0. Current illustrated direction: painted world, inked manga
+
+The illustrated edition and in-game motion comic add dense, deliberate ink craft to the shared foundation. The user means **Versus, the manga series**, not merely a generic VS card. For reference accuracy, its official credit is story by ONE, manga by Kyoutarou Azuma, organized by bose; One-Punch Man credits ONE and Yusuke Murata. These titles and Berserk are references for broad craft questions, not prompts to reproduce an artist's personal style, characters, compositions or signature marks. [Kodansha's Versus credit](https://kmanga.kodansha.com/title/10569/episode/34962), [VIZ's One-Punch Man credit](https://www.viz.com/one-punch-man).
+
+**Original visual brief:** tactile brass bureaucracy and plural folklore, drawn with precise variable-weight ink, spotted blacks, selective crosshatching and screentone, grounded anatomy, cinematic depth and clear action geography. Soft matte painted spaces contrast with decisive foreground drawing. Colour is deliberate: local cel colour, region atmosphere, and restrained signature accents. No uniform muddy wash, generic glossy portrait treatment or indiscriminate mechanical ornaments.
+
+### Two dramatic registers
+
+| Register | Line and rendering | Staging and timing |
+|---|---|---|
+| Serious | Finished anatomy; confident contour; blacks lead to faces/hands; hatching concentrated in contact/material shadows | Establish geography, wind up, make contact, show consequence; foreshortening serves a readable action |
+| Comedy | Same identity and costume; simplified face/line detail; quiet flat values | A still reaction after a resolved beat; precise deadpan or an observed contradiction, not a joke over grief |
+
+NIL's humour is literal observation; Vesper's is generous bravado and selective honesty. Punchlines target the system and powerful people's contradictions. Keepers, personal grief, disability, poverty and a culture are not punchlines. A gag never conceals an attack tell or interrupts a necessary explanation.
+
+### Detail that belongs to this world
+
+NIL's abacus-lock clasps, interrupted decoder ring and repaired ledger lining express a life made from discarded accounting. Vesper's dealer tailoring, erased House insignia seam, worn coin and mechanical revolver express experience rather than decoration. Varro's hinged ledger plates, three-lever confiscation clamp and protected exemption token connect his silhouette to his job and sister. A Debt Hound's stamp-pad paws, receipt clip and abacus spine make it an enforcement machine. These are the fresh design refinements; game-readable silhouettes and canon handedness still govern them.
+
+### Manga and game contracts
+
+English pages read left-to-right, then top-to-bottom. Use 3-5 panels normally, with sparse splash pages at earned turning points. Establish actor positions before reversing an angle; preserve the 180-degree line across a blow. Leave sufficient quiet space for text. Generate clean artwork **without lettering**, then add exact vector/raster lettering from the dialogue manifest. Speech, Civic Omen, resonance, Audit values and sound-effect typography are authored layers. Do not trust generated writing.
+
+Clean art, lettered page, panel regions, dialogue IDs, reading order, safe areas and reduced-motion behavior are separate deliverables. A printed chapter depicts one clearly identified authored route; a live cutscene must yield to actual player choices and combat outcomes. Technical determinism means state/outcomes replay; it does not promise identical video decoding or every rendered frame. Detailed rules live in MANGA_DIRECTION and TECH_DESIGN.
+
+The old 3D cast and environment views are first spatial blockouts. Fresh inked concepts establish the current visual treatment; they do not retroactively make the old models detailed matching final turnarounds. The artbook distinguishes concept, spatial draft, model source, technical specification and accepted runtime asset.
+
 ## 1. Pass-1 assets and the target
 
 Existing JPEGs are exploration references, not final layered/rigged assets. Retain originals and create derived files. The 6 November metadata/sample audit is historical evidence in `docs/refinement/ASSET_METADATA.csv`, not a current acceptance ledger.

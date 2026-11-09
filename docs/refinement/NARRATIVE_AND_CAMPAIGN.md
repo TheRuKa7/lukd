@@ -1,5 +1,6 @@
 # ZERO-SUM: OMEN — Narrative and campaign refinement review
 
+> **HISTORICAL SNAPSHOT - 6 November 2026, baseline `3d88239`.** Findings/proposals describe that snapshot, not the current corrected repository. See [adopted decisions](../DECISIONS.md), [current status](../PROJECT_STATUS.md) and [audit resolutions](../DOC_AUDIT.md).
 Review date: 6 November 2026 (Asia/Kolkata). Repository baseline: `3d88239dff58db1d313b8d979d6ae98a8f1ceed0`.
 
 **Historical review snapshot.** The body preserves findings/proposals against that source revision; its section references and “current” descriptions are not the present specification. The 7 November corrections are governed by [DECISIONS.md](../DECISIONS.md), current domain documents and [DOC_AUDIT.md](../DOC_AUDIT.md). Many listed defects have now been resolved in source. This report itself is not evidence of implementation, review approval or playtesting.

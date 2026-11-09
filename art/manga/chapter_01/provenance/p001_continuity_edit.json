@@ -1,0 +1,22 @@
+{
+  "index": 1,
+  "params": {
+    "model": "gpt_image_2_6",
+    "quality": "high",
+    "resolution": "4k",
+    "aspect_ratio": "2:3",
+    "count": 1,
+    "output_format": "png",
+    "medias": [
+      {
+        "role": "image",
+        "value": "69039ade-c5aa-472b-8997-991c8b23895b"
+      },
+      {
+        "role": "image",
+        "value": "0f491baa-e662-439a-ade6-a58355c947f7"
+      }
+    ],
+    "prompt": "PRECISION CONTINUITY EDIT of the FIRST reference: one existing full comic page. Preserve its entire panel layout, exact gutter locations, composition, poses, lighting, fine ink and material detail, architecture, all other people, and every blank readout. Return the same full page, with no added text, captions, balloons, numerals or logos. The SECOND reference establishes ONLY Varro's correct costume and face mask. In EVERY panel where Varro's face is visible, replace his exposed human face / white cheek patch with his actual full worn ivory HOUND-SKULL MASK: rigid cracked bone-coloured mask covering his face from forehead to long canine nasal muzzle, angular black eye sockets with a human eye visible deep inside, strapped along the temples, human dark hair and ears still visible, repaired brass hinge, squared canine teeth contours. This is a HUMAN MAN WEARING A REMOVABLE MASK, not an animal head, not a face tattoo, not just a cheek plate. Its projecting muzzle must be legible even in small side views. Preserve his bulky rust ledger armour, three belt debt jars and collar exemption token. He keeps this mask worn throughout this Prologue; it is removed only much later in the campaign. Do not alter other cast faces or put the mask on anyone else."
+  }
+}

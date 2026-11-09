@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-11-08",
+  "scope": "First20 actual generated boards. Broad visual triage, not final four-camera rig, cultural, topology or gameplay acceptance.",
+  "summary": "Strong detail and specificity; Varro ally continuity corrected and visually checked. Generated glyphs remain separate exact-authoring work; occluded counts remain unverified.",
+  "reviews": [
+    {
+      "index": 1,
+      "request_id": "cast_001_nil",
+      "source_path": "art/concepts/complete/cast_001_nil.png",
+      "source_sha256": "1ac9f5a83828c306f31fef3c316a63662e8eb0b99833c5aeb30bf4e7610fec21",
+      "inspection": "Contact sheet plus individual2400px print derivative",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Right-wrist decoder and longer anatomical-left tail coherent; blank floating hardware remains a separate lettering target."
+    },
+    {
+      "index": 2,
+      "request_id": "cast_002_nil_rags",
+      "source_path": "art/concepts/complete/cast_002_nil_rags.png",
+      "source_sha256": "49dfc897522d991108cedec81c4d96ffd90573e489164acc2ebcf43f43c9d4f2",
+      "inspection": "Actual generated contact sheet, all four camera proposals visible",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Protective wrap, hood and established body identity preserved at contact-sheet scale."
+    },
+    {
+      "index": 3,
+      "request_id": "cast_003_nil_parade",
+      "source_path": "art/concepts/complete/cast_003_nil_parade.png",
+      "source_sha256": "bbdb900c8cb60db963de5355177427fba1e7c39edeefa423465fc92ae2d002ea",
+      "inspection": "Actual generated contact sheet, all four camera proposals visible",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Parade robe and lantern differ clearly from default. Blank/canon overlays remain separate."
+    },
+    {
+      "index": 4,
+      "request_id": "cast_004_nil_openhand",
+      "source_path": "art/concepts/complete/cast_004_nil_openhand.png",
+      "source_sha256": "a61ef0a0df0a27a3fe674cd673477451a81db8001ca9ac4eabd0de129b15fd49",
+      "inspection": "Contact sheet plus individual2400px print derivative",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Bone lining and gold thread make a conservative repaired epilogue design. Same identity and left-long tail preserved."
+    },
+    {
+      "index": 5,
+      "request_id": "cast_005_vesper",
+      "source_path": "art/concepts/complete/cast_005_vesper.png",
+      "source_sha256": "63da81f9905378946ed5205d27dd99a230e0a8035e5e905345b7cf5cb5cef14e",
+      "inspection": "Contact sheet plus individual2400px print derivative",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Left-shoulder braid and right-side holster consistent. Seven-chamber construction is not certifiable from profile images; macro/source check remains open."
+    },
+    {
+      "index": 6,
+      "request_id": "cast_006_maeve",
+      "source_path": "art/concepts/complete/cast_006_maeve.png",
+      "source_sha256": "6a59c25c8631f1a390705c65218d1766213c9596c75eb38db7db36fea5a0bc5e",
+      "inspection": "Contact sheet plus individual2400px print derivative",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Three braids visible on back, working gauntlets, clover pin and triskele hammer readable."
+    },
+    {
+      "index": 7,
+      "request_id": "cast_007_hina",
+      "source_path": "art/concepts/complete/cast_007_hina.png",
+      "source_sha256": "aa650980d464db3e6c5173cbe50301277d6268e73fe93a8ae5b67cccac6450a1",
+      "inspection": "Contact sheet plus individual2400px print derivative",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Single-eye umbrella, child-appropriate proportions and no observed100. Generated robe numerals are decorative proposal, not an approved exact atlas/runtime layer."
+    },
+    {
+      "index": 8,
+      "request_id": "cast_008_ba",
+      "source_path": "art/concepts/complete/cast_008_ba.png",
+      "source_sha256": "cdb4d395e2b18cae6a0c67bfdab9d44d7ccef5173b51b88344faa73577fec0fa",
+      "inspection": "Contact sheet plus individual2400px print derivative",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Abacus fan and bell ornament locations coherent. Exact8 count requires isolated prop diagram; occluded bells cannot be certified from one board."
+    },
+    {
+      "index": 9,
+      "request_id": "cast_009_bai_si",
+      "source_path": "art/concepts/complete/cast_009_bai_si.png",
+      "source_sha256": "92f118b703a55972011c450c27c5e6cc22833e46e579987ebccad49a88218e7b",
+      "inspection": "Actual generated contact sheet, all four camera proposals visible",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Four lantern composition and tall still figure readable. Exact talisman count remains an isolated-detail check."
+    },
+    {
+      "index": 10,
+      "request_id": "cast_010_shunya",
+      "source_path": "art/concepts/complete/cast_010_shunya.png",
+      "source_sha256": "1f5e756c56d5e595f6806846e12048c066b940ced9cd87e28a1955426f7387ae",
+      "inspection": "Actual generated contact sheet, all four camera proposals visible",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Astrolabe, mirror-work construction and tied workwear are coherent."
+    },
+    {
+      "index": 11,
+      "request_id": "cast_011_prima",
+      "source_path": "art/concepts/complete/cast_011_prima.png",
+      "source_sha256": "773e7ffbb50cc360d2844e2103def768a0f1af08f9f3526075c7e8d9373a7268",
+      "inspection": "Actual generated contact sheet, all four camera proposals visible",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Sieve shield and short-hair silhouette readable. Generated2-3-5-7 halo is illustrative only; must be a separate authored glyph layer for runtime."
+    },
+    {
+      "index": 12,
+      "request_id": "cast_012_fibi",
+      "source_path": "art/concepts/complete/cast_012_fibi.png",
+      "source_sha256": "b4cc8144cd8febad8f97c2cf1d59a489c8f5b7e2bf405072025e579aa45f773b",
+      "inspection": "Actual generated contact sheet, all four camera proposals visible",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Tailored spiral/card silhouette distinct, no major crop/anatomy fault at contact-sheet scale."
+    },
+    {
+      "index": 13,
+      "request_id": "cast_013_varro_ally",
+      "source_path": "art/concepts/complete/cast_013_varro_ally.png",
+      "source_sha256": "da90516cde916a7d27bbcc5038a72cfb9e957028241745365a2fc02aee28a94d",
+      "inspection": "Contact sheet plus individual2400px print derivative",
+      "verdict": "Focused continuity correction visually checked",
+      "observations": "Corrected mature face, heavy neck/shoulders and boss-consistent mass. Raised mask and three visibly cracked empty jars preserved. No new major defect observed."
+    },
+    {
+      "index": 14,
+      "request_id": "cast_014_kyusuke",
+      "source_path": "art/concepts/complete/cast_014_kyusuke.png",
+      "source_sha256": "afa24cab55a39dbe27768de016794729ee76e3424d52328f8b0da71ec353bd64",
+      "inspection": "Actual generated contact sheet, all four camera proposals visible",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Water dish and cart both present; recognisable kappa construction."
+    },
+    {
+      "index": 15,
+      "request_id": "cast_015_liu_shun",
+      "source_path": "art/concepts/complete/cast_015_liu_shun.png",
+      "source_sha256": "0bc85b78229360c261b45d4670f3bac47d653819cc466f1ca507214b9ba7c09a",
+      "inspection": "Actual generated contact sheet, all four camera proposals visible",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Age, cane and tile-related work accessories readable; no major contact-sheet fault."
+    },
+    {
+      "index": 16,
+      "request_id": "cast_016_varro",
+      "source_path": "art/concepts/complete/cast_016_varro.png",
+      "source_sha256": "ca257bbfbc52ec207619f5ab52021db8659606af8473b0f0f306afe6075915e7",
+      "inspection": "Contact sheet plus individual2400px print derivative",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Human strapped skull-mask, massive body, three jars, active vessel and three release levers clearly visible. Strong design candidate."
+    },
+    {
+      "index": 17,
+      "request_id": "cast_017_tamamo",
+      "source_path": "art/concepts/complete/cast_017_tamamo.png",
+      "source_sha256": "0e8c95c8ffb6924fff4ca55141345a6134136caffcafc12524e8d6a2d59ad29b",
+      "inspection": "Actual generated contact sheet, all four camera proposals visible",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Nine-tail fan readable from rear at contact-sheet scale; specific count remains final prop/rig acceptance."
+    },
+    {
+      "index": 18,
+      "request_id": "cast_018_jin_chan",
+      "source_path": "art/concepts/complete/cast_018_jin_chan.png",
+      "source_sha256": "68428defca84bff01d87334b79cd4b99f2ffeb70e84779382a5673cd53d70719",
+      "inspection": "Actual generated contact sheet, all four camera proposals visible",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Round seated figure and toad-throne silhouette coherent; hidden third supporting leg needs separate construction proof."
+    },
+    {
+      "index": 19,
+      "request_id": "cast_019_rahu_ketu",
+      "source_path": "art/concepts/complete/cast_019_rahu_ketu.png",
+      "source_sha256": "0e9ce94678d646388331f773b867379939832ffd64f2fde4e1865c0b0afdfddc",
+      "inspection": "Actual generated contact sheet, all four camera proposals visible",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Distinct bolted occluder disc and graduated rail engines; no sacred head/serpent embodiment observed."
+    },
+    {
+      "index": 20,
+      "request_id": "cast_020_archon",
+      "source_path": "art/concepts/complete/cast_020_archon.png",
+      "source_sha256": "02153815b138e298f8a5b29dcdc9a90962de626dd85c5bf6b71073e5c5f76d99",
+      "inspection": "Actual generated contact sheet, all four camera proposals visible",
+      "verdict": "Usable illustrated concept proposal; no runtime/rig/count acceptance implied",
+      "observations": "Tall column costume and sieve staff readable, no major contact-sheet fault."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "target_lines_per_volume": 6000,
+  "completion": false,
+  "inputs": [
+    {
+      "path": "docs\\manga\\SEVEN_VOLUME_NOVEL_PLAN.md",
+      "sha256": "21b80d72ffbc928a20ce673bca0f17f527f215a6f63b10d4d49c48ca13366829"
+    },
+    {
+      "path": "docs\\manga\\OPENING_SCRIPT_01_03.md",
+      "sha256": "288686e6736fd9dc0fe8f9d81cd7113e0d56120f8a69c9fa73c9f71468848a7c"
+    },
+    {
+      "path": "docs\\manga\\CHAPTER_TREATMENT_04_22.md",
+      "sha256": "d3b99f697e4ebfd1bd7574f6bdef22063e37e1565d413dc149d743e3b6a145bd"
+    },
+    {
+      "path": "docs\\LOCATIONS.md",
+      "sha256": "bfb365a920fd12fc4cca2b21590f67663a644eeebcd5f81842833fb0268ae713"
+    },
+    {
+      "path": "docs\\WORLD_ENCYCLOPEDIA.md",
+      "sha256": "9621acfe72bf60cf9bff7b86cf1a5e936434cae1ef97e660e3a41199b11df623"
+    },
+    {
+      "path": "docs\\CHARACTER_BIBLE.md",
+      "sha256": "14f7196970b0f95f982b846c0c87fb928ee6832f38c03d01a3791ade97c479b2"
+    },
+    {
+      "path": "docs\\novel\\RESOLVED_SERIES_BIBLE.md",
+      "sha256": "371b0fa373089778de74d16762f211578be1a7f5f6c5c9df61dde608502dcd47"
+    }
+  ],
+  "volumes": [
+    {
+      "volume": 1,
+      "path": "docs\\manga\\volumes\\volume_01_context_working.md",
+      "lines": 505,
+      "status": "incomplete_working_dossier"
+    },
+    {
+      "volume": 2,
+      "path": "docs\\manga\\volumes\\volume_02_context_working.md",
+      "lines": 362,
+      "status": "incomplete_working_dossier"
+    },
+    {
+      "volume": 3,
+      "path": "docs\\manga\\volumes\\volume_03_context_working.md",
+      "lines": 391,
+      "status": "incomplete_working_dossier"
+    },
+    {
+      "volume": 4,
+      "path": "docs\\manga\\volumes\\volume_04_context_working.md",
+      "lines": 418,
+      "status": "incomplete_working_dossier"
+    },
+    {
+      "volume": 5,
+      "path": "docs\\manga\\volumes\\volume_05_context_working.md",
+      "lines": 422,
+      "status": "incomplete_working_dossier"
+    },
+    {
+      "volume": 6,
+      "path": "docs\\manga\\volumes\\volume_06_context_working.md",
+      "lines": 451,
+      "status": "incomplete_working_dossier"
+    },
+    {
+      "volume": 7,
+      "path": "docs\\manga\\volumes\\volume_07_context_working.md",
+      "lines": 459,
+      "status": "incomplete_working_dossier"
+    }
+  ]
+}

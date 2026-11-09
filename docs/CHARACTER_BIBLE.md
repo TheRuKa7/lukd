@@ -1,5 +1,7 @@
 # ZERO-SUM: OMEN — Character Bible
 
+> **8 November editorial revision:** [Resolved series bible](novel/RESOLVED_SERIES_BIBLE.md) supersedes conflicting older naming, origin wording, character backstories, political outcomes and story-length targets below. Gameplay formulas retain their existing domain authority. This source is being adapted to the49-chapter edition; its historical schedules and game scene numbering are not manga chapter numbering.
+
 The single reference for how every character looks, talks, moves and changes. Story context lives in [`WORLD_BIBLE.md`](WORLD_BIBLE.md); visual rules in [`ART_DIRECTION.md`](ART_DIRECTION.md). **Canon locks** are details that must never change between artists, writers or animators.
 
 Updated 7 November 2026 under [DECISIONS.md](DECISIONS.md). **Specified character designs, not accepted runtime rigs or reviewed cultural depictions.** Jam playable cast is NIL and Vesper; Varro and a Debt Hound supply encounters. Other actors below are campaign/expansion scope. Eight core companions + three secret companions + NIL =12 authored playable characters across campaign/postgame. NPCs, bosses and Thale's hypothetical NG+ cameo do not add persistent roster slots.
@@ -59,7 +61,7 @@ Updated 7 November 2026 under [DECISIONS.md](DECISIONS.md). **Specified characte
 | **Personality** | Gambler's bravado, dry jokes, generous with strangers, merciless with cheats. Guilt she won't name. |
 | **Flaw** | Treats every relationship as a bet she can walk away from |
 | **Want → need** | Wants to stay one step ahead of her past. Needs to deal one honest hand. |
-| **Secret** | Dealt the rigged hand at the House that Settled a twelve-year-old boy |
+| **Secret** | Seven years earlier she rigged a hand against nine-year-old Mara Vale's pledged allocation. Mara survived with emergency donations but suffered injury, interrupted schooling and displacement. At16 she controls any contact and owes Vesper no forgiveness; the resolved series bible governs this history. |
 | **Voice** | Drawl, card and dice slang, calls NIL "Kid" until Act III, then by name |
 | **Sample lines** | “Need a hand? Seven fen.” · “Luck's just math somebody else is hiding from you.” · “I always flip. I never look.” |
 | **Animation** | Fan-the-hammer shooting; reloads by spinning the cylinder like a roulette wheel; idle hat tip; grins and spins the cylinder when a 7 lands |
@@ -168,7 +170,7 @@ Updated 7 November 2026 under [DECISIONS.md](DECISIONS.md). **Specified characte
 | **Props** | A deck of glowing cards that flows around her in a golden spiral |
 | **Personality** | Fast-talking, anxious, brilliant; laughs at bad moments; current iteration is 1,597 after 1,596 completed repeats |
 | **Want → need** | Wants the night to end. Needs to accept the dawn, even though it may kill her. |
-| **Twist** | Her grandfather believes his loop protects her; its maintenance clause actually drains her at dawn. Cancelling that clause with her consent saves her. The loop began inTR 999; outside time advances one night while local time repeats. NIL anchors the arriving party's retained memories. |
+| **Twist** | Her grandfather believes his loop protects her; its maintenance clause actually drains her at dawn. Cancelling that clause with her consent saves her. The protection was commissioned inTR999; its active loop begins on story Day28 inTR1002, when Fibi is18. Outside time advances one night while1,596 local repeats complete before the party enters iteration1,597. NIL anchors the arriving party's retained memories. |
 | **Voice** | Rapid; counts in Fibonacci; finishes other people's sentences (she's heard them before) |
 | **Sample lines** | “The third step breaks. It always does.” · “You said something new. Say it again.” · “One, one, two, three, five. That's how I breathe.” |
 | **Animation** | Deals cards in spirals; her lucky digit glows in a different place every round |
@@ -245,10 +247,10 @@ Side characters carry the regions' stories and quests. Each has one want, one nu
 | Śūnyapura | **Meera** | Stepwell guide and diver | To find her drowned brother's karma record | Counts steps (there are 1,001) | The stepwell dungeon; payoff in Chitragupta's Hall |
 | Śūnyapura | **Baital** | A Vetāla who riddles travellers from a banyan tree | A riddle nobody can answer | Answers only in questions | Riddle encounters; NIL's answer to his last riddle is "zero" |
 | Kroton Nova | **Mother Kallisto** | Leader of the undercity of the "composite" people under the Sieve | Her people back on the surface | Counts in composites, proudly | Undercity hub; the Sieve's fall reunites the city |
-| Kroton Nova | **Niko** | Goat-herd kid who keeps falling through the Sieve | To be a hero | Counts goats (always one short) | Running gag; saved by Prima in her defection scene |
+| Kroton Nova | **Niko** | Goat-herd child who knows unsafe terrace routes | To be a hero | Counts goats (always one short) | Identifies a safe route under adult supervision; real danger to a child is not a recurring gag |
 | Kroton Nova | **The Moirai** (keepers) | Clotho, Lachesis and Atropos | That every thread is spun, measured and cut honestly | Speak in turns | Three trials; Lachesis gives Prima her strand of thread |
 | Crossroads | **The Stranger** (keeper) | The figure at the midnight crossroads with the black book | A fair deal | Shuffles constantly | Offers NIL's Deal verb; never a villain |
-| Crossroads | **Penny** | Ghost girl on the railway who collects lucky pennies | To spend one | Counts pennies (1,596 of them) | Ghost Train quest; her 1,597th penny frees her, echoing Fibi |
+| Crossroads | **Penny** | Ghost girl on the railway who preserves nonspendable retained tokens | To leave without erasing the record | Counts1,596 completed iterations | Release follows the witnessed cancellation; a final marker records closure, not newly created currency |
 | Crossroads | **Sheriff Dolores Vance** | Lucky Strike's sheriff, half-aware of the loop | To arrest the House | Notches her badge each night | Loop puzzles; helps in the House fight |
 | Everywhere | **Hap** | The god of luck (World Bible §2A) | To deal again | — | Hap's Dream epilogues; the finale's Open Hand |
 

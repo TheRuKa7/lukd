@@ -1,0 +1,40 @@
+{
+  "retrieved": "2026-11-08",
+  "files": [
+    {
+      "file": "BarlowSemiCondensed-Regular.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlowsemicondensed/BarlowSemiCondensed-Regular.ttf",
+      "sha256": "e8c7242f612b13d026e18a94b63b0fd079e91a3faf009d1b6981dbb5f16d1153",
+      "bytes": 105776,
+      "license": "SIL Open Font License 1.1; bundled unmodified"
+    },
+    {
+      "file": "BarlowSemiCondensed-Bold.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlowsemicondensed/BarlowSemiCondensed-Bold.ttf",
+      "sha256": "5bd6757e459a110da81b44532f0f43058e2dab2401688abca84f2fdbde193cbb",
+      "bytes": 111772,
+      "license": "SIL Open Font License 1.1; bundled unmodified"
+    },
+    {
+      "file": "BarlowSemiCondensed-OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlowsemicondensed/OFL.txt",
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f",
+      "bytes": 4377,
+      "license": "SIL Open Font License 1.1; bundled unmodified"
+    },
+    {
+      "file": "BebasNeue-Regular.ttf",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/bebasneue/BebasNeue-Regular.ttf",
+      "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+      "bytes": 61400,
+      "license": "SIL Open Font License 1.1; bundled unmodified"
+    },
+    {
+      "file": "BebasNeue-OFL.txt",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/bebasneue/OFL.txt",
+      "sha256": "72082f6cb4d04be2ecf7cc7d9e1e7d73787f0af8a5a278a47cade70c16b78341",
+      "bytes": 4337,
+      "license": "SIL Open Font License 1.1; bundled unmodified"
+    }
+  ]
+}

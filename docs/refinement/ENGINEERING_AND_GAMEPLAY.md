@@ -1,5 +1,6 @@
 # Engineering, gameplay and delivery audit
 
+> **HISTORICAL SNAPSHOT - 6 November 2026, baseline `3d88239`.** Findings/proposals describe that snapshot, not the current corrected repository. See [adopted decisions](../DECISIONS.md), [current status](../PROJECT_STATUS.md) and [audit resolutions](../DOC_AUDIT.md).
 Date: 6 November 2026 (India). Source snapshot: `3d88239dff58db1d313b8d979d6ae98a8f1ceed0` of `TheRuKa7/lukd`. This report adds proposals; it does not amend the existing canon, scope or rules. “Observed” means present in the reviewed source or reproduced with the checks below. “Proposed” means a decision still to adopt. No Unity build or human playtest was performed for this audit.
 
 ## 1. What is actually implemented

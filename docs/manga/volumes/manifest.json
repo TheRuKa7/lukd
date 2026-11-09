@@ -1,0 +1,347 @@
+{
+  "target_lines_per_volume": 6000,
+  "completion": false,
+  "evidence_scope": "Current author sources and actual line counts; no meaningful-content acceptance or upload claim",
+  "volumes": [
+    {
+      "volume": 1,
+      "path": "docs/manga/volumes/volume_01_context_working.md",
+      "lines": 6024,
+      "nonempty_lines": 3115,
+      "meets_raw_line_minimum": true,
+      "substantive_editorial_accepted": false,
+      "status": "incomplete_current_author_reference",
+      "sha256": "a90498e570e99690e28df7f720347c858a7051db3e01aa4dd1208717f3de8731",
+      "sources": [
+        {
+          "path": "docs/novel/RESOLVED_SERIES_BIBLE.md",
+          "sha256": "371b0fa373089778de74d16762f211578be1a7f5f6c5c9df61dde608502dcd47"
+        },
+        {
+          "path": "docs/novel/PHASE_02_CONTINUITY.md",
+          "sha256": "03f582646fbf3e249c0af59a8dc5f4613d3cb49fb7da3216f1b8fb19e8a3e0c7"
+        },
+        {
+          "path": "docs/novel/SOCIETIES_AND_RELATIONSHIPS.md",
+          "sha256": "5c95fb14eeb9082b701a4fcee8e59c9e1d7b0a816a4aed9b0ffb157a5779e120"
+        },
+        {
+          "path": "docs/novel/scene_ledger.json",
+          "sha256": "428f1b452cc9a333b56c31b71bf24c116ccc09c7d67c3916afbbbd7b70e47ffc"
+        },
+        {
+          "path": "docs/novel/character_trajectories.json",
+          "sha256": "c4287e92df6a03e4ca2d5238075c263aedd857e521975460ea2555b6c9258768"
+        },
+        {
+          "path": "docs/novel/volume_01/chapter_01_three_bowls.md",
+          "sha256": "e5ac91589109371c8c3fabd584cf48feca926cfd129d71c7569ce66aac278d32"
+        },
+        {
+          "path": "docs/novel/volume_01/chapter_02_the_jar_owes_six.md",
+          "sha256": "c19735809f68c5a2e9fc5ddb5f1d320b85e1284592625d0a149d7f5584f583f3"
+        },
+        {
+          "path": "docs/novel/volume_01/chapter_03_a_door_that_opens.md",
+          "sha256": "b5807f3bfe8ed028f3b05b11d597afbf13337cc7b892adc5e369463cca6233fa"
+        },
+        {
+          "path": "docs/novel/volume_01/chapter_04_seven_is_not_a_name.md",
+          "sha256": "285cd2c888aa1c1fe37cdd68d8daf94975e830d5ab2de2dd139d5332a372e947"
+        },
+        {
+          "path": "docs/novel/volume_01/chapter_05_seven_fen.md",
+          "sha256": "363a89aec18504b7cba5af2c858991d55e592563d3597e9a9ba79356b6b90b7f"
+        },
+        {
+          "path": "docs/novel/volume_01/chapter_06_a_window_at_six.md",
+          "sha256": "5856b58bd34884d7d72f39625849119a60b415d0e69363c556dbb1898d60f19f"
+        },
+        {
+          "path": "docs/novel/volume_01/chapter_07_a_receipt_for_mercy.md",
+          "sha256": "629464f0fd76b6488c0304c3e092d89d3a1327db662669eb3c2ea941a4232858"
+        },
+        {
+          "path": "docs/manga/scripts/volume_01/DIRECTION.md",
+          "sha256": "d23e0ec49fafe4a024822ba76d90fc3993148330d55439efae47e91cc383ea72"
+        },
+        {
+          "path": "docs/manga/scripts/volume_01/chapter_01_script.md",
+          "sha256": "e5b7849b60f07d2644161d579f72f7d8eff439bcf9bf08e2b81fee0d1344c886"
+        },
+        {
+          "path": "docs/manga/scripts/volume_01/chapter_02_script.md",
+          "sha256": "3dcc0996b47e7f56ac3e3ab09290130239835982e3ff706f6c3a261d1e20c246"
+        },
+        {
+          "path": "docs/manga/scripts/volume_01/chapter_03_script.md",
+          "sha256": "64c98d1f790a6186a8d4d5f85600c0039dbea72eabf5b541861d1c3627e555e5"
+        },
+        {
+          "path": "docs/manga/scripts/volume_01/chapter_04_script.md",
+          "sha256": "580a7dc2dcf38bbfbdcb7e051bf98c23c1ef5c0fa6cc05f7478575327146d47a"
+        },
+        {
+          "path": "docs/manga/scripts/volume_01/chapter_05_script.md",
+          "sha256": "cfab6d20d7711d301265c7f6d8ee576b5de6c1c83919457b751a72d1fd40d8c2"
+        },
+        {
+          "path": "docs/manga/scripts/volume_01/chapter_06_script.md",
+          "sha256": "26c199da3d78bbb849bc1682cf9a9bbe835f29ca55e30906f6dc6401e5107fab"
+        },
+        {
+          "path": "docs/manga/scripts/volume_01/chapter_07_script.md",
+          "sha256": "b4cb87b2568dcf0f4adeb1a6906a23e70b817509de217d55d05beb5153e0559f"
+        }
+      ]
+    },
+    {
+      "volume": 2,
+      "path": "docs/manga/volumes/volume_02_context_working.md",
+      "lines": 2413,
+      "nonempty_lines": 1234,
+      "meets_raw_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "status": "incomplete_current_author_reference",
+      "sha256": "e77de74207fe9aff47d58e1dad189c79828371fd726c3778d77c24c2f3428122",
+      "sources": [
+        {
+          "path": "docs/novel/RESOLVED_SERIES_BIBLE.md",
+          "sha256": "371b0fa373089778de74d16762f211578be1a7f5f6c5c9df61dde608502dcd47"
+        },
+        {
+          "path": "docs/novel/PHASE_02_CONTINUITY.md",
+          "sha256": "03f582646fbf3e249c0af59a8dc5f4613d3cb49fb7da3216f1b8fb19e8a3e0c7"
+        },
+        {
+          "path": "docs/novel/SOCIETIES_AND_RELATIONSHIPS.md",
+          "sha256": "5c95fb14eeb9082b701a4fcee8e59c9e1d7b0a816a4aed9b0ffb157a5779e120"
+        },
+        {
+          "path": "docs/novel/scene_ledger.json",
+          "sha256": "428f1b452cc9a333b56c31b71bf24c116ccc09c7d67c3916afbbbd7b70e47ffc"
+        },
+        {
+          "path": "docs/novel/character_trajectories.json",
+          "sha256": "c4287e92df6a03e4ca2d5238075c263aedd857e521975460ea2555b6c9258768"
+        },
+        {
+          "path": "docs/novel/volume_02/chapter_08_the_ferrymans_seam.md",
+          "sha256": "ed9a64c19218d4049b9b0d590efe6e7b47a4621dde061ece0de2d56f4c60a90c"
+        },
+        {
+          "path": "docs/novel/volume_02/chapter_09_a_hundred_wishes.md",
+          "sha256": "1c06f1b51c2072d1143f7e4d2cce075301a6928c7888506ceab956f32a5c193c"
+        },
+        {
+          "path": "docs/novel/volume_02/chapter_10_the_keepers_gift.md",
+          "sha256": "cf4767cf01e37100127d5a60ad4a182a2703c4457e62aac5c9ef77349259a2eb"
+        },
+        {
+          "path": "docs/novel/volume_02/chapter_11_paper_without_a_name.md",
+          "sha256": "f31789531b79ff49cea0d760923454fcbe86bb1015bfc527665cc5b5616700a5"
+        },
+        {
+          "path": "docs/novel/volume_02/chapter_12_the_foxes_bargain.md",
+          "sha256": "ebb3d6afbb74f468f51b813355fee49f56f6b11c9b4e2640048f91ed8ffaa7d9"
+        },
+        {
+          "path": "docs/novel/volume_02/chapter_13_already_real.md",
+          "sha256": "aec41fcaf1604d9ada8979e197a209b8258b6caaf58ba802a061e327eb22e865"
+        },
+        {
+          "path": "docs/novel/volume_02/chapter_14_the_toll_changes_hands.md",
+          "sha256": "462809f99a7985eb6664fabeab8f0a47484d2b744e291ba2a6ed916d84f75f66"
+        }
+      ]
+    },
+    {
+      "volume": 3,
+      "path": "docs/manga/volumes/volume_03_context_working.md",
+      "lines": 2311,
+      "nonempty_lines": 1183,
+      "meets_raw_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "status": "incomplete_current_author_reference",
+      "sha256": "d9f0c711593732b8a33f1461c4bbabe1e1ea2f7d29a305c7ba78d6d72d105274",
+      "sources": [
+        {
+          "path": "docs/novel/RESOLVED_SERIES_BIBLE.md",
+          "sha256": "371b0fa373089778de74d16762f211578be1a7f5f6c5c9df61dde608502dcd47"
+        },
+        {
+          "path": "docs/novel/PHASE_02_CONTINUITY.md",
+          "sha256": "03f582646fbf3e249c0af59a8dc5f4613d3cb49fb7da3216f1b8fb19e8a3e0c7"
+        },
+        {
+          "path": "docs/novel/SOCIETIES_AND_RELATIONSHIPS.md",
+          "sha256": "5c95fb14eeb9082b701a4fcee8e59c9e1d7b0a816a4aed9b0ffb157a5779e120"
+        },
+        {
+          "path": "docs/novel/scene_ledger.json",
+          "sha256": "428f1b452cc9a333b56c31b71bf24c116ccc09c7d67c3916afbbbd7b70e47ffc"
+        },
+        {
+          "path": "docs/novel/character_trajectories.json",
+          "sha256": "c4287e92df6a03e4ca2d5238075c263aedd857e521975460ea2555b6c9258768"
+        },
+        {
+          "path": "docs/novel/volume_03/chapter_15_purchased_guests.md",
+          "sha256": "7bbc000e507e34ea13aaa29e11d49609ef0d9d69824da30ce3f966b05f99d40a"
+        },
+        {
+          "path": "docs/novel/volume_03/chapter_16_tea_and_interest.md",
+          "sha256": "177684e0f8e87dbc0ac7daf92c842af63a7dfebd2ecf360e7167796fbb915ecb"
+        },
+        {
+          "path": "docs/novel/volume_03/chapter_17_four_lanterns.md",
+          "sha256": "d7f8a6ae0c279e4d90a20f04a2198e46566f0ab1f0beab6c1efff7ba80989ba9"
+        },
+        {
+          "path": "docs/novel/volume_03/chapter_18_the_weight_of_the_dead.md",
+          "sha256": "e45fbe3136be1fa8178f10ec5584a02afc5db1e3cb915b0aa3047eb9f90b62a0"
+        },
+        {
+          "path": "docs/novel/volume_03/chapter_19_the_brush_trial.md",
+          "sha256": "1f00247cadcb16dfd7af84e705801878098cd0e4e934fdfd7b7f449e5b74b90b"
+        },
+        {
+          "path": "docs/novel/volume_03/chapter_20_the_true_account.md",
+          "sha256": "821df8a05534b86fcd6c8d0e940d59e27ec5eb619d8904a020fa001e0ee3f09d"
+        },
+        {
+          "path": "docs/novel/volume_03/chapter_21_a_debt_to_the_living.md",
+          "sha256": "e7cc97a126da7513f6e0b476f80ba68a7bc0743310efde91475121d8b8f111df"
+        }
+      ]
+    },
+    {
+      "volume": 4,
+      "path": "docs/manga/volumes/volume_04_context_working.md",
+      "lines": 613,
+      "nonempty_lines": 337,
+      "meets_raw_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "status": "incomplete_current_author_reference",
+      "sha256": "0ee7c512c7b217930232d9bf5b08ff3aa76de3c3f24ecd6130ba18e60c27db2f",
+      "sources": [
+        {
+          "path": "docs/novel/RESOLVED_SERIES_BIBLE.md",
+          "sha256": "371b0fa373089778de74d16762f211578be1a7f5f6c5c9df61dde608502dcd47"
+        },
+        {
+          "path": "docs/novel/PHASE_02_CONTINUITY.md",
+          "sha256": "03f582646fbf3e249c0af59a8dc5f4613d3cb49fb7da3216f1b8fb19e8a3e0c7"
+        },
+        {
+          "path": "docs/novel/SOCIETIES_AND_RELATIONSHIPS.md",
+          "sha256": "5c95fb14eeb9082b701a4fcee8e59c9e1d7b0a816a4aed9b0ffb157a5779e120"
+        },
+        {
+          "path": "docs/novel/scene_ledger.json",
+          "sha256": "428f1b452cc9a333b56c31b71bf24c116ccc09c7d67c3916afbbbd7b70e47ffc"
+        },
+        {
+          "path": "docs/novel/character_trajectories.json",
+          "sha256": "c4287e92df6a03e4ca2d5238075c263aedd857e521975460ea2555b6c9258768"
+        }
+      ]
+    },
+    {
+      "volume": 5,
+      "path": "docs/manga/volumes/volume_05_context_working.md",
+      "lines": 653,
+      "nonempty_lines": 357,
+      "meets_raw_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "status": "incomplete_current_author_reference",
+      "sha256": "60afbb6a0a98fda91878e927dea6c0ac4f06b556780c965db633cd0aae5868e2",
+      "sources": [
+        {
+          "path": "docs/novel/RESOLVED_SERIES_BIBLE.md",
+          "sha256": "371b0fa373089778de74d16762f211578be1a7f5f6c5c9df61dde608502dcd47"
+        },
+        {
+          "path": "docs/novel/PHASE_02_CONTINUITY.md",
+          "sha256": "03f582646fbf3e249c0af59a8dc5f4613d3cb49fb7da3216f1b8fb19e8a3e0c7"
+        },
+        {
+          "path": "docs/novel/SOCIETIES_AND_RELATIONSHIPS.md",
+          "sha256": "5c95fb14eeb9082b701a4fcee8e59c9e1d7b0a816a4aed9b0ffb157a5779e120"
+        },
+        {
+          "path": "docs/novel/scene_ledger.json",
+          "sha256": "428f1b452cc9a333b56c31b71bf24c116ccc09c7d67c3916afbbbd7b70e47ffc"
+        },
+        {
+          "path": "docs/novel/character_trajectories.json",
+          "sha256": "c4287e92df6a03e4ca2d5238075c263aedd857e521975460ea2555b6c9258768"
+        }
+      ]
+    },
+    {
+      "volume": 6,
+      "path": "docs/manga/volumes/volume_06_context_working.md",
+      "lines": 693,
+      "nonempty_lines": 377,
+      "meets_raw_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "status": "incomplete_current_author_reference",
+      "sha256": "89bd0059e95117cfd69d9f772852d90e9844d94ec516180d3f32b5bc336212fe",
+      "sources": [
+        {
+          "path": "docs/novel/RESOLVED_SERIES_BIBLE.md",
+          "sha256": "371b0fa373089778de74d16762f211578be1a7f5f6c5c9df61dde608502dcd47"
+        },
+        {
+          "path": "docs/novel/PHASE_02_CONTINUITY.md",
+          "sha256": "03f582646fbf3e249c0af59a8dc5f4613d3cb49fb7da3216f1b8fb19e8a3e0c7"
+        },
+        {
+          "path": "docs/novel/SOCIETIES_AND_RELATIONSHIPS.md",
+          "sha256": "5c95fb14eeb9082b701a4fcee8e59c9e1d7b0a816a4aed9b0ffb157a5779e120"
+        },
+        {
+          "path": "docs/novel/scene_ledger.json",
+          "sha256": "428f1b452cc9a333b56c31b71bf24c116ccc09c7d67c3916afbbbd7b70e47ffc"
+        },
+        {
+          "path": "docs/novel/character_trajectories.json",
+          "sha256": "c4287e92df6a03e4ca2d5238075c263aedd857e521975460ea2555b6c9258768"
+        }
+      ]
+    },
+    {
+      "volume": 7,
+      "path": "docs/manga/volumes/volume_07_context_working.md",
+      "lines": 593,
+      "nonempty_lines": 327,
+      "meets_raw_line_minimum": false,
+      "substantive_editorial_accepted": false,
+      "status": "incomplete_current_author_reference",
+      "sha256": "56ae92f21b7e5ac462fd1363698a9dfad91860dceaf47374ac3e53d76425a16d",
+      "sources": [
+        {
+          "path": "docs/novel/RESOLVED_SERIES_BIBLE.md",
+          "sha256": "371b0fa373089778de74d16762f211578be1a7f5f6c5c9df61dde608502dcd47"
+        },
+        {
+          "path": "docs/novel/PHASE_02_CONTINUITY.md",
+          "sha256": "03f582646fbf3e249c0af59a8dc5f4613d3cb49fb7da3216f1b8fb19e8a3e0c7"
+        },
+        {
+          "path": "docs/novel/SOCIETIES_AND_RELATIONSHIPS.md",
+          "sha256": "5c95fb14eeb9082b701a4fcee8e59c9e1d7b0a816a4aed9b0ffb157a5779e120"
+        },
+        {
+          "path": "docs/novel/scene_ledger.json",
+          "sha256": "428f1b452cc9a333b56c31b71bf24c116ccc09c7d67c3916afbbbd7b70e47ffc"
+        },
+        {
+          "path": "docs/novel/character_trajectories.json",
+          "sha256": "c4287e92df6a03e4ca2d5238075c263aedd857e521975460ea2555b6c9258768"
+        }
+      ]
+    }
+  ]
+}

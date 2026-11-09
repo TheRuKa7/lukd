@@ -1,0 +1,91 @@
+"""Assemble traceable working dossiers; these are not finished 6,000-line scripts."""
+from pathlib import Path
+import hashlib
+import json
+import re
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / 'docs/manga/volumes'
+PLAN = ROOT / 'docs/manga/SEVEN_VOLUME_NOVEL_PLAN.md'
+OLD_OPENING = ROOT / 'docs/manga/OPENING_SCRIPT_01_03.md'
+OLD_LATER = ROOT / 'docs/manga/CHAPTER_TREATMENT_04_22.md'
+LOCATIONS = ROOT / 'docs/LOCATIONS.md'
+ENCYCLOPEDIA = ROOT / 'docs/WORLD_ENCYCLOPEDIA.md'
+CHARACTERS = ROOT / 'docs/CHARACTER_BIBLE.md'
+RESOLVED = ROOT / 'docs/novel/RESOLVED_SERIES_BIBLE.md'
+
+def sections(path):
+    text = path.read_text(encoding='utf-8-sig')
+    return re.findall(r'(?ms)^## (.+?)\n(.*?)(?=^## |\Z)', text)
+
+def selected(items, indices):
+    result = '\n\n'.join('### ' + items[i][0] + '\n\n' + items[i][1].strip() for i in indices)
+    return re.sub(r'\[([^]]+)\]\((?!https?://)[^)]+\)', r'\1', result)
+
+def main():
+    OUT.mkdir(parents=True, exist_ok=True)
+    volumes = [x for x in sections(PLAN) if x[0].startswith('Volume ')]
+    old_opening, old_later = sections(OLD_OPENING), sections(OLD_LATER)
+    loc, encyclopedia, cast = sections(LOCATIONS), sections(ENCYCLOPEDIA), sections(CHARACTERS)
+    assert len(volumes) == 7
+    old_ranges = [range(0, 3), range(0, 3), range(3, 6), range(6, 10), range(10, 13), range(13, 16), range(16, 19)]
+    cast_ranges = [[1,2,3,10,11,12,14], [1,2,3,4,10,11,12,14], [1,2,3,4,5,6,10,11,12,14], [1,2,3,4,5,6,7,10,11,12,14], [1,2,3,4,5,6,7,8,10,11,12,14], [1,2,3,4,5,6,7,8,9,10,11,12,13,14], list(range(1,16))]
+    manifest = []
+    inputs = [PLAN, OLD_OPENING, OLD_LATER, LOCATIONS, ENCYCLOPEDIA, CHARACTERS, RESOLVED]
+    for idx, (title, body) in enumerate(volumes):
+        old = selected(old_opening, old_ranges[idx]) if idx == 0 else selected(old_later, old_ranges[idx])
+        guard = ('Do not disclose NIL’s origin before chapters 25–26 or show Hap’s physical cage before chapter 45.' if idx < 6 else 'The cage is revealed in chapter 45, after the gate in chapter 44.')
+        content = f'''# Working context — {title}
+
+STATUS: INCOMPLETE RESEARCH DOSSIER. This is not the requested 6,000-line original context, a finished novel, or an upload-ready Mangaka script. It collects selected existing material for further drafting. It contains editorial spoilers and historical chapter numbering; do not upload it directly to Mangaka.
+
+Current authority: [Resolved series bible](../../novel/RESOLVED_SERIES_BIBLE.md) supersedes incompatible statements in the excerpts below. The manifest fingerprints that authority; this research dossier does not close the remaining drafting work.
+
+## Current seven-chapter spine
+
+{body.strip()}
+
+## Reveal boundary
+
+{guard}
+The new edition is seven volumes of seven chapters; each manga chapter targets 22 story pages. Covers and closing matter are additional. The prose novel must be completed and reviewed before any volume is generated.
+
+## Region reference from docs/LOCATIONS.md
+
+{selected(loc, [idx])}
+
+## Existing character and voice references from docs/CHARACTER_BIBLE.md
+
+The following canon profiles contain future knowledge. Use only facts already available at the relevant point in the story. They are references, not dialogue or mandatory appearances.
+
+{selected(cast, cast_ranges[idx])}
+
+## Living-world reference from docs/WORLD_ENCYCLOPEDIA.md
+
+The following describes production knowledge, not necessarily what a character knows. Apply reveal boundaries above.
+
+{selected(encyclopedia, list(range(0, 8)))}
+
+## Historical draft excerpts
+
+These excerpts predate the 49-chapter structure. Their chapter and page numbering, pacing, and older production instructions are superseded. Adapt only compatible fictional facts into newly authored scenes; do not mistake them for the new volume's finished script.
+
+{old}
+
+## Remaining work
+
+- Write original full prose scenes for all seven new chapters, with differentiated voices, character decisions and consequences.
+- Reconcile the new volume with the other six, the eight protected proofs, six Seals, chronology, political changes and reveal boundaries.
+- Adapt the completed novel into 154 individually authored manga story pages for this volume.
+- Prepare a concise spoiler-controlled upload for Mangaka, and check the native plan and counted exports.
+- Expand this dossier with meaningful specific material until it satisfies the requested 6,000-line minimum; do not pad with duplicated boilerplate.
+'''
+        path = OUT / f'volume_{idx+1:02d}_context_working.md'
+        path.write_text(content, encoding='utf-8', newline='\n')
+        manifest.append({'volume': idx+1, 'path': str(path.relative_to(ROOT)), 'lines': len(content.splitlines()), 'status': 'incomplete_working_dossier'})
+    sources = [{'path': str(p.relative_to(ROOT)), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in inputs]
+    (OUT / 'manifest.json').write_text(json.dumps({'target_lines_per_volume': 6000, 'completion': False, 'inputs': sources, 'volumes': manifest}, indent=2) + '\n', encoding='utf-8')
+    print(json.dumps(manifest, indent=2))
+
+if __name__ == '__main__':
+    main()

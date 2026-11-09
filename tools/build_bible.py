@@ -5,10 +5,14 @@ Usage:  python3 tools/build_bible.py            (writes build/bible.html, then n
 Needs:  pip install markdown pillow ; Node with playwright (Chromium) for tools/render_pdf.js
 """
 import html
+import hashlib
+import json
 import os
 import re
 import subprocess
 import sys
+from functools import lru_cache
+from pathlib import Path
 
 import markdown
 from PIL import Image
@@ -44,7 +48,10 @@ def md_file(rel, drop_title=True):
     # links to other repo files become plain text; external links stay
     text = re.sub(r"\[([^\]]+)\]\((?!https?://)[^)]+\)", r"\1", text)
     MD.reset()
-    out = '<section class="doc">' + MD.convert(text) + "</section>"
+    converted = MD.convert(text)
+    converted = re.sub(r'<table>(?=\s*<thead>\s*<tr>\s*<th>Date</th>)', '<table class="dated-records">', converted)
+    source_class = " project-status" if rel == "docs/PROJECT_STATUS.md" else ""
+    out = f'<section class="doc{source_class}">' + converted + "</section>"
     # demote headings one level so part titles stay on top
     out = re.sub(r"<(/?)h([1-5])>", lambda m: f"<{m.group(1)}h{int(m.group(2)) + 1}>", out)
     return out
@@ -63,7 +70,36 @@ def swatches(colors, label=None):
 from canon import CHARACTERS, FIGURE_KEYS, LANDS  # noqa: E402  (shared with the art book)
 import figures as FIG  # noqa: E402
 
-PASS1_NOTE = "Historical pass-1 concept, not accepted runtime art. Retained as reference; current direction is Art Direction v3."
+@lru_cache(maxsize=1)
+def illustrated_catalog():
+    """Use the same selected boards as the complete artbook, with output evidence."""
+    catalog = Path(ROOT, "art", "catalog")
+    requests = json.loads((catalog / "higgsfield_artbook_requests.json").read_text(encoding="utf-8-sig"))["requests"]
+    outputs = json.loads((catalog / "higgsfield_artbook_outputs.json").read_text(encoding="utf-8-sig"))["outputs"]
+    characters = json.loads((catalog / "characters.json").read_text(encoding="utf-8-sig"))["entries"]
+    return requests, {item["request_id"]: item for item in outputs}, {item["id"]: item for item in characters}
+
+
+def illustrated_art(*, character_id=None, region_name=None):
+    """Fail on missing/stale selected art rather than printing an obsolete placeholder."""
+    requests, outputs, _ = illustrated_catalog()
+    matches = [item for item in requests
+               if (character_id is not None and item.get("kind") == "character_turnaround"
+                   and character_id in item.get("catalog_ids", []))
+               or (region_name is not None and item.get("kind") == "environment_three_view"
+                   and item.get("name") == region_name)]
+    identity = character_id or region_name
+    if len(matches) != 1:
+        raise ValueError(f"Expected one selected illustrated board for {identity}; found {len(matches)}")
+    request = matches[0]
+    output = outputs.get(request["request_id"], {})
+    rel = request["output_target"]
+    source = Path(ROOT, rel)
+    if output.get("path") != rel or not source.is_file():
+        raise ValueError(f"Missing selected illustrated output for {identity}: {rel}")
+    if hashlib.sha256(source.read_bytes()).hexdigest() != output.get("sha256"):
+        raise ValueError(f"Illustrated output hash mismatch for {identity}: {rel}")
+    return rel
 
 
 def luminance(hexc):
@@ -82,14 +118,16 @@ def strong_color(colors):
 
 def character_pages():
     out = []
+    _, _, profiles = illustrated_catalog()
     for fkey, (name, role, digit, land, shape, colors, art, locks) in zip(FIGURE_KEYS, CHARACTERS):
+        colors = [(item["name"], item["hex"]) for item in profiles[fkey]["palette"]]
         sig = strong_color(colors)
-        art_html = (
-            f'<figure class="char-art"><img src="{web_image(art)}" alt="{html.escape(name)} concept art"><figcaption>{"Fresh v4 design candidate; visual/lookdev approval does not establish a runtime rig." if "/fresh/" in art else PASS1_NOTE}</figcaption></figure>'
-            if art else
-            f'<div class="char-art pending" style="border-color:{sig}"><div class="pending-label">Key art pending</div>'
-            f'<p>Generate with the character suffix in Art Direction §6 and the description in the Character Bible.</p></div>'
-        )
+        art = illustrated_art(character_id=fkey)
+        art_html = (f'<figure class="char-art"><img src="{web_image(art, 2400, 90)}" '
+                    f'alt="{html.escape(name)} illustrated character views"><figcaption>'
+                    'Current illustrated concept candidate; four-view visual proposal, not a 3D render '
+                    'or accepted runtime rig. Actual Blender camera drafts and full dossiers are in the complete artbook.'
+                    '</figcaption></figure>')
         lock_items = "".join(f"<li>{html.escape(l)}</li>" for l in locks)
         out.append(f"""
 <section class="char-page">
@@ -113,18 +151,12 @@ def character_pages():
 def land_pages():
     out = []
     for name, sub, colors, arts in LANDS:
-        figs = "".join(
-            f'<figure class="plate"><img src="{web_image(a)}" alt="{html.escape(name)} concept"></figure>' for a in arts
-        )
-        keys = {"Meridian Undercity": ["art/base3d/wards_base_clay.png", "art/base3d/wards_colorkey_v1.png"],
-                "Hyakki": ["art/base3d/hyakki_pier_base_v1.png", "art/base3d/hyakki_pier_colorkey_v1.png"]}.get(name, [])
-        if arts:
-            figs += f'<p class="note">{PASS1_NOTE} Future Hyakki plates are composition references; no runtime acceptance or source scene is supplied.</p>'
-        if keys:
-            figs += "".join(f'<figure class="plate half"><img src="{web_image(k, 1200)}" alt=""></figure>' for k in keys)
-            figs += '<p class="note">Historical raster base and colour key; source scene/scripts missing at baseline. AI-directed production is specified in ARTBOOK_PRODUCTION.</p>'
-        else:
-            figs = '<div class="pending wide"><div class="pending-label">Environment art pending</div><p>Establishing shot and battle stage to be generated with the background suffix in Art Direction §6, using this land\'s palette and the Locations Guide.</p></div>'
+        art = illustrated_art(region_name=name)
+        figs = (f'<figure class="plate"><img src="{web_image(art, 2400, 90)}" '
+                f'alt="{html.escape(name)} illustrated environment views"><figcaption>'
+                'Current painted environment concept; matched-view visual proposal, not an engine screenshot '
+                'or a camera render. Actual Blender plan, 2.5D and front drafts are in the complete artbook.'
+                '</figcaption></figure>')
         out.append(f"""
 <section class="land-page">
   <div class="eyebrow">{html.escape(sub)}</div>
@@ -163,6 +195,7 @@ def build_html():
     css_path = os.path.join(ROOT, "tools", "bible.css")
     with open(css_path, encoding="utf-8") as f:
         css = f.read()
+    css += C.open_font_css(BUILD)
     os.makedirs(IMG, exist_ok=True)
     body = []
     body.append("""
@@ -171,7 +204,7 @@ def build_html():
   <div class="cover-title">ZERO&#8209;SUM:<br><span>OMEN</span></div>
   <div class="cover-sub">The World &amp; Art Bible</div>
   <div class="cover-nan">NaN</div>
-  <div class="cover-bottom">Required jam: Meridian Prologue · NIL/Vesper/Varro/Debt Hound · AI-only/free-first<br>Full campaign content is future specification · Specification snapshot · 7 November 2026 · TR 1002 · the Markdown files in <code>docs/</code> are the source of truth.</div>
+  <div class="cover-bottom">Required jam: Meridian Prologue · NIL/Vesper/Varro/Debt Hound · AI-only/free-first<br>Full campaign content is future specification · Specification snapshot · 8 November 2026 · TR 1002 · the Markdown files in <code>docs/</code> are the source of truth.</div>
 </section>
 <section class="toc">
   <h1>Contents</h1>
@@ -205,6 +238,8 @@ def build_html():
 </div></div>""")
     body.append(part("II", "The world", "Why numbers matter, the god of luck, and who wants to freeze fate forever."))
     body.append(md_file("docs/WORLD_BIBLE.md"))
+    body.append(md_file("docs/WORLD_ENCYCLOPEDIA.md"))
+    body.append(md_file("docs/WORLD_OPERATIONS.md"))
     body.append(part("III", "The story", "From a NaN in the rain to the Open Hand: every act, every boss, every bond."))
     for f in ["STORY", "ACT_DESIGN", "BESTIARY", "BOND_ARCS"]:
         body.append(md_file(f"docs/{f}.md"))
@@ -218,6 +253,7 @@ def build_html():
     body.append(md_file("docs/CHARACTER_BIBLE.md"))
     body.append(part("VII", "Art direction", "Painted world, inked people."))
     body.append(md_file("docs/ART_DIRECTION.md"))
+    body.append(md_file("docs/ART_SPEC.md"))
     body.append(md_file("docs/ARTBOOK_PRODUCTION.md"))
     body.append(motion_and_layouts())
     for rel in ("art/renders/lookdev/omen_battle_v5.png", "art/renders/lookdev/meridian_empty_v5.png", "art/renders/lookdev/meridian_clay_v5.png"):
@@ -237,6 +273,8 @@ def build_html():
         body.append(md_file(f"docs/{f}.md"))
     body.append(part("XI", "Appendix", "Writing rules and disclosures."))
     body.append(md_file("docs/NARRATIVE_STYLE.md"))
+    body.append(md_file("docs/manga/MANGAKA_WORKFLOW.md"))
+    body.append(md_file("docs/manga/SERIES_PRODUCTION_BRIEF.md"))
     body.append(md_file("docs/AI_DISCLOSURE.md"))
 
     snapshot = C.write_manifest(BUILD, "bible")

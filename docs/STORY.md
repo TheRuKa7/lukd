@@ -1,5 +1,7 @@
 # ZERO-SUM: OMEN — The Story, Start to End
 
+> **8 November editorial revision:** [Resolved series bible](novel/RESOLVED_SERIES_BIBLE.md) supersedes conflicting older naming, origin wording, character backstories, political outcomes and story-length targets below. Gameplay formulas retain their existing domain authority. This source is being adapted to the49-chapter edition; its historical schedules and game scene numbering are not manga chapter numbering.
+
 The full campaign outline: Prologue, five acts, six dream epilogues, finale and four endings. World rules are in [`WORLD_BIBLE.md`](WORLD_BIBLE.md), people in [`CHARACTER_BIBLE.md`](CHARACTER_BIBLE.md), encounters in [`ACT_DESIGN.md`](ACT_DESIGN.md), and bond scheduling in [`BOND_ARCS.md`](BOND_ARCS.md). Updated 7 November 2026 under [DECISIONS.md](DECISIONS.md). These are **specified scenes and state contracts**, not finished dialogue assets or an implemented campaign.
 
 **Scope and budget.** The campaign critical path is 35/45/50/50/45/50/40 minutes = **315 minutes**, plus 45–105 minutes optional bonds/quests/navigation: a **6–7-hour hypothesis**, unmeasured. Required bond stages may be integrated into these critical-path scenes; optional versions provide extra depth. The jam is a separate 10–15-minute Prologue adaptation defined only by JAM_SLICE/JAM_SCRIPT/FIRST_10_MINUTES, with NIL and Vesper, three encounters and rooftop/results; it does not include the extra campaign route, dream, ultimate system or later lands.
@@ -135,7 +137,7 @@ The full campaign outline: Prologue, five acts, six dream epilogues, finale and 
 
 ## 6. Act V: "1,597 Nights" (the Crossroads Territory) · ~50 min
 
-**What's wrong here.** The House financed decades of Basilica maintenance; the institution itself predates him. In TR 999 he bought a local loop to protect Fibi. The party arrives on iteration 1,597 after 1,596 completed repeats. Outside time advances one night; local memories reset except Fibi's and, after entry, the party's, anchored by NIL's unregistered account. Only authorized loop objects persist; ordinary rewards cannot be farmed by resetting scenes.
+**What's wrong here.** The House financed decades of Basilica maintenance; the institution itself predates him. In TR999 he commissioned protection for Fibi; its fatal-loop trigger activates on story Day28 inTR1002, when she is18. The party arrives on iteration 1,597 after 1,596 completed repeats. Outside time advances one night; local memories reset except Fibi's and, after entry, the party's, anchored by NIL's unregistered account. Only authorized loop objects persist; ordinary rewards cannot be farmed by resetting scenes.
 
 1. **The midnight crossroads.** One streetlamp; the Stranger (keeper) with the black book offers NIL a deal. NIL learns **Deal** (once per fight, take a Crossroads Deal). The Stranger never cheats.
 2. **Lucky Strike.** Casino neon; Route 7 motels; the same drunk falls off the same stool every night. **Loops** begin: every few scenes the night resets; the party keeps what it learned.

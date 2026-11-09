@@ -1,0 +1,1909 @@
+{
+  "schema_version": 1,
+  "updated": "2026-11-08",
+  "baseline": "Adopted docs/DECISIONS.md and current technical domain contracts; no Unity project implementation baseline",
+  "id_policy": "Stable IDs are never renumbered or reused; append within system, deprecate removed intent explicitly.",
+  "status_meanings": {
+    "specified": "Written requirement only",
+    "mapped": "ADR explicitly owns architectural contract",
+    "gated": "Future feature disabled until per-content data and named evidence exist"
+  },
+  "requirements": [
+    {
+      "id": "TR-ENG-001",
+      "system": "ENG",
+      "requirement": "Separate pure Core, typed Content, single Flow owner, replaceable Presentation and Meta; no Unity clock or rendering in rules.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "1. Boundaries and ownership"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "10. Technical target and evidence"
+        }
+      ],
+      "adr": "docs/architecture/adr-0001-engine.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-CORE",
+      "required_verification": "Dependency check and Core fixtures outside Unity."
+    },
+    {
+      "id": "TR-ENG-002",
+      "system": "ENG",
+      "requirement": "Offline assets only; jam has no backend, runtime LLM, ECS or paid service dependency.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "1. Boundaries and ownership"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "3. Build systems and content gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0001-engine.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-WEB",
+      "required_verification": "Hosted offline/network inspection and complete critical path with services unavailable."
+    },
+    {
+      "id": "TR-ENG-003",
+      "system": "ENG",
+      "requirement": "Pin successful Editor, packages, lock, project settings, Assets/meta and clean build script; ignore generated caches.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "3. Content import and repository contract"
+        }
+      ],
+      "adr": "docs/architecture/adr-0001-engine.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-WEB",
+      "required_verification": "Empty Unity6000.4.11f1 plus installed Web module build, then clean-checkout import/build logs."
+    },
+    {
+      "id": "TR-ENG-004",
+      "system": "ENG",
+      "requirement": "Desktop WebGL2 first; mobile remains independently unverified.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "5. Web targets and measurement"
+        }
+      ],
+      "adr": "docs/architecture/adr-0001-engine.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-WEB",
+      "required_verification": "Named desktop browsers in real itch iframe; separate device evidence for mobile."
+    },
+    {
+      "id": "TR-ENG-005",
+      "system": "ENG",
+      "requirement": "One chosen compression format with correct host headers or its tested JS fallback; no inferred alternate-format fallback.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "5. Web targets and measurement"
+        }
+      ],
+      "adr": "docs/architecture/adr-0001-engine.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-WEB",
+      "required_verification": "Inspect network Content-Encoding/MIME and cold boot on intended host."
+    },
+    {
+      "id": "TR-ENG-006",
+      "system": "ENG",
+      "requirement": "Plan total compressed<=50MB, initial<=25MB, peak<=512MiB and desktop60fps; measure on named hardware.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "5. Web targets and measurement"
+        }
+      ],
+      "adr": "docs/architecture/adr-0001-engine.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-WEB",
+      "required_verification": "Hosted bytes, cold waterfall, memory method and frame-time distributions."
+    },
+    {
+      "id": "TR-ENG-007",
+      "system": "ENG",
+      "requirement": "Budget atlases, shader set, transparency, particles and load allocations from actual target profiling.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "5. Web targets and measurement"
+        }
+      ],
+      "adr": "docs/architecture/adr-0001-engine.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-WEB",
+      "required_verification": "Texture/build reports and captured worst-route CPU/GPU/memory profile."
+    },
+    {
+      "id": "TR-ENG-008",
+      "system": "ENG",
+      "requirement": "Sequence empty build, fixtures/importer, greybox Audit, Prologue, release verification and immutable artifact evidence.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "8. Build, tests and release gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0001-engine.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-SMOKE",
+      "required_verification": "Build/source/content hashes, reproducible command and exact uploaded artifact completion."
+    },
+    {
+      "id": "TR-RULE-001",
+      "system": "RULE",
+      "requirement": "Keep resonance, Civic Omen, Balance and normalized Audit Omen distinct with valid integer bounds.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "1.1 Identity and state"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "1.6 Four different numbers"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CORE",
+      "required_verification": "Exact zero/positive/max/invalid-state fixtures and UI domain labels."
+    },
+    {
+      "id": "TR-RULE-002",
+      "system": "RULE",
+      "requirement": "Store actual and scoring digits separately with immutable round ledger and effect provenance; settle once after three stops.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "1.2 Round ledger and effect ordering"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "1.1 Three strikes"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CORE",
+      "required_verification": "Exact past double-payment regression and replacements/landing event ledger."
+    },
+    {
+      "id": "TR-RULE-003",
+      "system": "RULE",
+      "requirement": "Order replacements, repair, wilds, bonuses, modifiers and atomic damage; check intermediate bounds and floor at declared stage.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "1.2 Round ledger and effect ordering"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "1.2 Damage"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CORE",
+      "required_verification": "Overflow, negative, rational-rounding and order collision fixtures."
+    },
+    {
+      "id": "TR-RULE-004",
+      "system": "RULE",
+      "requirement": "Evaluate one base pattern by exact priority with chosen4 Overwrite, no-wrap Cascade and sum10/20 Zero-Sum.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "1.3 Base patterns and priorities"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "1.3 Seven base patterns"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CORE",
+      "required_verification": "Shared authored examples plus exhaustive three-digit classifier comparison."
+    },
+    {
+      "id": "TR-RULE-005",
+      "system": "RULE",
+      "requirement": "Snapshot current balances/Omens for Reaper; simultaneous party zero loses; no events after terminal state.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "1.4 Reaper and terminal rules"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "1.3 Seven base patterns"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CORE",
+      "required_verification": "Current-versus-max regression, atomic simultaneous defeat and rejected subsequent commands."
+    },
+    {
+      "id": "TR-RULE-006",
+      "system": "RULE",
+      "requirement": "Parry, Fortune, chosen-zero overlap and Ofuda emit one defended event with exact reflection policy.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "1.5 Defence and zero overlap"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "1.4 Defence"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CORE",
+      "required_verification": "All ten chosen digits and Ofuda/zero terminal fixtures."
+    },
+    {
+      "id": "TR-RULE-007",
+      "system": "RULE",
+      "requirement": "NIL required; legal solo/two/three-actor selection; active Vesper7 retroactively adds7 to every strike per actual7.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "1.6 Party eligibility"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "1.1 Three strikes"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CORE",
+      "required_verification": "Both two-actor orders and inactive/passive/reconciliation fixtures."
+    },
+    {
+      "id": "TR-RULE-008",
+      "system": "RULE",
+      "requirement": "Varro capture occurs once after first nonterminal round; holding/release/restoration survives skipped enemy actions.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "1.7 Varro Debt Jar: exact jam boss contract"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CORE",
+      "required_verification": "Three-round and three-defence expiry, Ofuda one-credit, one restore and retry reset."
+    },
+    {
+      "id": "TR-RULE-009",
+      "system": "RULE",
+      "requirement": "Varro half-stake phase telegraphs one remaining40 action before80; cancelled action does not consume warning.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "1.7 Varro Debt Jar: exact jam boss contract"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CORE",
+      "required_verification": "Threshold crossing, cancelled action and terminal-before-phase fixtures."
+    },
+    {
+      "id": "TR-RULE-010",
+      "system": "RULE",
+      "requirement": "Starter face IDs/lists preserve actual zero/chosen digit, widths and logical motion units; target absent faces is invalid.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "2.1 Explicit starter faces"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "1.5 Wheels, Favour and agency"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CONTENT",
+      "required_verification": "All ten NIL lists, Vesper legal list and invalid aimed-face rejection."
+    },
+    {
+      "id": "TR-RULE-011",
+      "system": "RULE",
+      "requirement": "Latch displayed face on accepted input and preserve it during deceleration; gameplay RNG separate from visual RNG.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "2.2 Timing/exposure"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-REPLAY",
+      "required_verification": "Input/capture/replay fixture under variable FPS and visual effects."
+    },
+    {
+      "id": "TR-RULE-012",
+      "system": "RULE",
+      "requirement": "Pattern Sight previews each legal third face through replacements/repair without consuming state or RNG.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "2.3 Pattern Sight"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CORE",
+      "required_verification": "Preview versus actual resolution, boss jar, Favour and eligible closer parity."
+    },
+    {
+      "id": "TR-RULE-013",
+      "system": "RULE",
+      "requirement": "Favour warm/recovery and Black Cat visibly replace scoring third-to-first once, with Black Cat precedence and retry reset.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "2.4 Favour and Black Cat"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "1.5 Wheels, Favour and agency"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CORE",
+      "required_verification": "Repair yielding higher-priority Zero-Sum, actual unchanged and no recursive trigger."
+    },
+    {
+      "id": "TR-RULE-014",
+      "system": "RULE",
+      "requirement": "Only one free choice from three typed jam charms; selection and retries never duplicate the reward.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "3. Three jam charms"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/pattern_cases.json",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-RETRY",
+      "required_verification": "Double-click choice, all three effects, reload and encounter2 restart."
+    },
+    {
+      "id": "TR-RULE-015",
+      "system": "RULE",
+      "requirement": "Wild assignment chooses priority, multiplier then lexical order; actual landing domain remains unchanged.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "2.5 Wild assignments and extended reels: expansion gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-KIT",
+      "required_verification": "Independent assignment/overlap fixtures for every enabled wildcard."
+    },
+    {
+      "id": "TR-RULE-016",
+      "system": "RULE",
+      "requirement": "Extended reels score entire4/5-digit domain with zero-strike extra slots, declared priority and bounded numeric validation.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "2.5 Wild assignments and extended reels: expansion gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-REEL",
+      "required_verification": "Every length/category, modifier bound, repair, wildcard and terminal fixture before enable."
+    },
+    {
+      "id": "TR-RULE-017",
+      "system": "RULE",
+      "requirement": "Every future ability/passive needs owner/unlock, input domain, cap, duration, replacement/reset policy and exact counter.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "4. Future ability gates and roster"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-KIT",
+      "required_verification": "Per-ability typed record, overlap/terminal fixtures and playable encounter; candidates stay disabled."
+    },
+    {
+      "id": "TR-RULE-018",
+      "system": "RULE",
+      "requirement": "Awakening benefits differ from baseline; branch/respec choices persist by ID and cannot age Hina early.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "5. Awakenings: individually gated expansion"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-AWAKEN",
+      "required_verification": "Both branches individually pass F-KIT, unlock/respec/save migration checks."
+    },
+    {
+      "id": "TR-RULE-019",
+      "system": "RULE",
+      "requirement": "Evaluate active mathematical bonds separately from narrative bonds; zero is not ordinary Complement; all parties include NIL.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "6. Bonds, Link Arts and recursion"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "2.2 Resonance bonds, expansion only"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-BOND",
+      "required_verification": "Party-preview/core parity for all chosen digits and eligible active roster combinations."
+    },
+    {
+      "id": "TR-RULE-020",
+      "system": "RULE",
+      "requirement": "Link Arts and generated effects use tagged bounded bundles; one activation and depth1 prevent recursive attack/charge chains.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "6. Bonds, Link Arts and recursion"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-LINK",
+      "required_verification": "Haps Laugh repeat-once, source expiry and terminal recursion fixtures."
+    },
+    {
+      "id": "TR-RULE-021",
+      "system": "RULE",
+      "requirement": "Party charm sets count separate personal gear;3/5 equipped thresholds; each of63 candidates needs exact typed event data.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "7. Full-game charm catalogue:63 candidates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-CHARM",
+      "required_verification": "Per-charm ordering/reset/interaction fixtures and feasible equipment sets."
+    },
+    {
+      "id": "TR-CONTENT-001",
+      "system": "CONTENT",
+      "requirement": "Import exact schema/version, unique required keys, finite scalar ranges/units and valid references; fail invalid build content.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "3. Content import and repository contract"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-CONTENT",
+      "required_verification": "Malformed/unknown/duplicate data rejection and generated content hash."
+    },
+    {
+      "id": "TR-CONTENT-002",
+      "system": "CONTENT",
+      "requirement": "Keep predicates in Core and numeric inputs in tuning CSV; structured faces/encounters cannot be executable formula strings.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "3. Content import and repository contract"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-CONTENT",
+      "required_verification": "CSV schema/scalar checks plus Unity importer fixtures and browser-default parity."
+    },
+    {
+      "id": "TR-CONTENT-003",
+      "system": "CONTENT",
+      "requirement": "Record rules/content/build version, pinned PRNG streams, accepted face/tick/order and settings/tutorial overrides.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "4. Input, motion and replay"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-REPLAY",
+      "required_verification": "Editor/Web full-state hash parity; a seed plus timestamps alone is insufficient."
+    },
+    {
+      "id": "TR-CONTENT-004",
+      "system": "CONTENT",
+      "requirement": "Authored graph covers rescue, Naming, solo Hound, recruit, two-hero Hound, one charm, Varro, mercy/roof and results.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/UX_SPEC.md",
+          "heading": "2. Required jam flow"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "9. Jam scope"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-SMOKE",
+      "required_verification": "Fixed commands complete the real story graph with no mandatory pre-input film."
+    },
+    {
+      "id": "TR-CONTENT-005",
+      "system": "CONTENT",
+      "requirement": "Unavailable future map/market/camp/gear/gauge screens remain disabled until domain gates and wireframes pass.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/UX_SPEC.md",
+          "heading": "7. Expansion screen gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-CONTENT",
+      "required_verification": "Inspect enabled menus/offers for unavailable IDs and empty prompts."
+    },
+    {
+      "id": "TR-CONTENT-006",
+      "system": "CONTENT",
+      "requirement": "Teach one rule, let player demonstrate it, then combine; authored outcomes are explicit tutorial exceptions.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/FIRST_10_MINUTES.md",
+          "heading": "1. Timing and teaching contract"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "5. Teaching ladder"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-SMOKE",
+      "required_verification": "First-time observed learning route and tutorial-data override trace."
+    },
+    {
+      "id": "TR-CONTENT-007",
+      "system": "CONTENT",
+      "requirement": "Wheel enhancements have explicit faces, min4 remaining, stacking/expiry/shatter IDs and actual-versus-scoring domains.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "8. Future systems and implementation gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-WHEEL",
+      "required_verification": "Removal/exposure/reset/save fixtures; no missing-face aim."
+    },
+    {
+      "id": "TR-CONTENT-008",
+      "system": "CONTENT",
+      "requirement": "Economy uses bounded per-node payouts/caps and explicit faucets/sinks; no UI/timer/retry income.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "8. Future systems and implementation gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-ECON",
+      "required_verification": "Full node ledger and transactional offers with no infinite payout loop."
+    },
+    {
+      "id": "TR-CONTENT-009",
+      "system": "CONTENT",
+      "requirement": "Ink consumes one declared scoring replacement without replaying actual landing or charge.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "8. Future systems and implementation gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-INK",
+      "required_verification": "Debt ordering, normal priority, cancel and terminal fixtures."
+    },
+    {
+      "id": "TR-CONTENT-010",
+      "system": "CONTENT",
+      "requirement": "Oracle sticks have24 authored poems/boons/visible prices, deterministic offers and safe decline.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "8. Future systems and implementation gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-STICK",
+      "required_verification": "Offer, consume-once and retry/save fixtures."
+    },
+    {
+      "id": "TR-CONTENT-011",
+      "system": "CONTENT",
+      "requirement": "Karma gains once per event, caps9, prices reroll/guard explicitly and cannot create a lethal-guard loop.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "8. Future systems and implementation gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-KARMA",
+      "required_verification": "Chosen-zero overlap, carryover floor and once-per-fight guard fixtures."
+    },
+    {
+      "id": "TR-CONTENT-012",
+      "system": "CONTENT",
+      "requirement": "Gem levels use owned stable IDs and rational deltas/caps that materially differ from baseline.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "8. Future systems and implementation gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-GEM",
+      "required_verification": "Exact level/rounding/save/carryover fixtures for each enabled gem."
+    },
+    {
+      "id": "TR-CONTENT-013",
+      "system": "CONTENT",
+      "requirement": "Seven tree branches use node IDs, prerequisites and unique costs/rewards; graph cannot cycle or soft-lock required path.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "8. Future systems and implementation gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-TREE",
+      "required_verification": "DAG, duplicated grant, migration and full required-route tests."
+    },
+    {
+      "id": "TR-CONTENT-014",
+      "system": "CONTENT",
+      "requirement": "Deals have12 authored boon/real-price records, safe decline and rollback without negative/inaccessible wheels.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "8. Future systems and implementation gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-DEAL",
+      "required_verification": "Accept/decline, actual max/slot/rule mutation and save/retry tests."
+    },
+    {
+      "id": "TR-CONTENT-015",
+      "system": "CONTENT",
+      "requirement": "House loops retain party build/stake, reset declared enemy/reel state everythird round, cap3 then final phase.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "8. Future systems and implementation gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-LOOP",
+      "required_verification": "Replay/checkpoint parity and no reward duplication or infinite reset."
+    },
+    {
+      "id": "TR-CONTENT-016",
+      "system": "CONTENT",
+      "requirement": "Custom recruits use bounded authored name/look/kit templates and cannot gate the central ending.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/SYSTEMS.md",
+          "heading": "8. Future systems and implementation gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-CUSTOM",
+      "required_verification": "Provenance, legal party, unlock/save/load and required ending without custom recruits."
+    },
+    {
+      "id": "TR-CONTENT-017",
+      "system": "CONTENT",
+      "requirement": "String/asset importer uses stable IDs, context, variables, fallback and duplicate/placeholder validation.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/LOCALISATION.md",
+          "heading": "1. String and asset boundaries"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "L-IMPORT",
+      "required_verification": "Actual Localization tables and importer dependency report."
+    },
+    {
+      "id": "TR-CONTENT-018",
+      "system": "CONTENT",
+      "requirement": "Bundle licensed fonts; validate real glyph shaping/fallback/atlas memory on pinned engine, not assumed conjunct support.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/LOCALISATION.md",
+          "heading": "2. Fonts and shaping"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "L-FONT",
+      "required_verification": "CJK wrapping and Devanagari conjunct screenshots on target builds."
+    },
+    {
+      "id": "TR-CONTENT-019",
+      "system": "CONTENT",
+      "requirement": "Enable each locale only after placeholder, overflow, shaping, focus, skip and memory gates; save stable locale ID.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/LOCALISATION.md",
+          "heading": "4. Workflow and gate"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "L-ENABLE",
+      "required_verification": "Per-locale real UI captures and migration checks."
+    },
+    {
+      "id": "TR-SAVE-001",
+      "system": "SAVE",
+      "requirement": "Persist version/content version, resonance, encounter checkpoint, selected charm, settings and journal IDs; no mid-fight save.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "7. Saves and retries"
+        }
+      ],
+      "adr": "docs/architecture/adr-0004-persistence.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-RETRY",
+      "required_verification": "Compatible schema roundtrip and malformed/incompatible checkpoint tests."
+    },
+    {
+      "id": "TR-SAVE-002",
+      "system": "SAVE",
+      "requirement": "Retry restores full stake/seed/actor eligibility and clears jar/Favour/transient charges; selected reward persists exactly once.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "7. Saves and retries"
+        }
+      ],
+      "adr": "docs/architecture/adr-0004-persistence.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-RETRY",
+      "required_verification": "Every checkpoint and all three charm reload/retry routes."
+    },
+    {
+      "id": "TR-SAVE-003",
+      "system": "SAVE",
+      "requirement": "Atomic last-good recovery, safe repair/New Game and memory settings fallback handle unavailable/corrupt browser storage.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "7. Saves and retries"
+        }
+      ],
+      "adr": "docs/architecture/adr-0004-persistence.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-RETRY",
+      "required_verification": "Blocked storage, interrupted write, corrupt payload and real iframe IndexedDB checks."
+    },
+    {
+      "id": "TR-SAVE-004",
+      "system": "SAVE",
+      "requirement": "Continue is available only for a validated compatible checkpoint.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "7. Saves and retries"
+        }
+      ],
+      "adr": "docs/architecture/adr-0004-persistence.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-RETRY",
+      "required_verification": "No save, old content, malformed and valid checkpoint UI states."
+    },
+    {
+      "id": "TR-SAVE-005",
+      "system": "SAVE",
+      "requirement": "Campaign retains roster/verbs/bonds/faces/gems/level; act transition selects3 active charms and stashes others, floors fenhalf/Karma75%.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/ECONOMY_PROGRESSION.md",
+          "heading": "1. Persistent and transient layers"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "7. Persistent progression"
+        }
+      ],
+      "adr": "docs/architecture/adr-0004-persistence.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "G3",
+      "required_verification": "Exact boundary carryover inventory/resource fixtures."
+    },
+    {
+      "id": "TR-SAVE-006",
+      "system": "SAVE",
+      "requirement": "Campaign defeat restores complete immutable checksummed act snapshot and reconciles retained unlock journal by unique event/reward IDs.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/ECONOMY_PROGRESSION.md",
+          "heading": "4. Save, defeat and idempotence"
+        }
+      ],
+      "adr": "docs/architecture/adr-0004-persistence.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "G3",
+      "required_verification": "No repeated XP/fen/memory/recruit payout; complete rollback and migrated restart/catch-up."
+    },
+    {
+      "id": "TR-SAVE-007",
+      "system": "SAVE",
+      "requirement": "Mode/challenge flags and reward policy are explicit and versioned; assistance cannot corrupt normal save achievements.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/ECONOMY_PROGRESSION.md",
+          "heading": "5. Difficulty and accessibility"
+        }
+      ],
+      "adr": "docs/architecture/adr-0004-persistence.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "A-MOTOR",
+      "required_verification": "Mode switches, retry and migration tests for every enabled option."
+    },
+    {
+      "id": "TR-SAVE-008",
+      "system": "SAVE",
+      "requirement": "Reader bookmarks are separate from campaign checkpoints; read-only reference pages never grant rewards or mutate resonance.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/MANGA_DIRECTION.md",
+          "heading": "8. Game delivery"
+        }
+      ],
+      "adr": "docs/architecture/adr-0004-persistence.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "M-READER",
+      "required_verification": "Reader forward/back/bookmark/reopen leave campaign state identical."
+    },
+    {
+      "id": "TR-SAVE-009",
+      "system": "SAVE",
+      "requirement": "Future adaptive cutscenes stop at unresolved live choices/combat and commit only idempotent actual completed events on skip.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/MANGA_DIRECTION.md",
+          "heading": "8. Game delivery"
+        }
+      ],
+      "adr": "docs/architecture/adr-0004-persistence.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "M-ADAPTER",
+      "required_verification": "Naming/charm/combat pause/resume/skip traces use real accepted state."
+    },
+    {
+      "id": "TR-VIEW-001",
+      "system": "VIEW",
+      "requirement": "Use monotonic gameplay clock and accepted command eligibility; pause/focus loss freeze time and clear stale input.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "4. Input, motion and replay"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-REPLAY",
+      "required_verification": "Low/high FPS, focus-loss, held key/pointer and deliberate resume tests."
+    },
+    {
+      "id": "TR-VIEW-002",
+      "system": "VIEW",
+      "requirement": "In-engine skippable/speedable gameplay feedback reads immutable results and never changes damage or RNG.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "6. Cinematic/audio contract"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-SMOKE",
+      "required_verification": "Skip/pause/fast completion yields identical Core ledger."
+    },
+    {
+      "id": "TR-VIEW-003",
+      "system": "VIEW",
+      "requirement": "Optional URL-backed bundled video has subtitles and immediate still/error fallback; no event relies on frame accuracy.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "6. Cinematic/audio contract"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-WEB",
+      "required_verification": "Missing/blocked video, timeout and muted path on target Web build."
+    },
+    {
+      "id": "TR-VIEW-004",
+      "system": "VIEW",
+      "requirement": "Title gesture unlocks audio; mute/background resume and platform load settings are tested.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TECH_DESIGN.md",
+          "heading": "6. Cinematic/audio contract"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-WEB",
+      "required_verification": "Gesture/blocked-audio/resume and measured clip/mixer pass."
+    },
+    {
+      "id": "TR-VIEW-005",
+      "system": "VIEW",
+      "requirement": "Every required screen exposes readable state, valid focus and mouse/touch/keyboard path; Naming confirms choice.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/UX_SPEC.md",
+          "heading": "3. Required screens and controls"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-SMOKE",
+      "required_verification": "End-to-end independent input modes, no focus trap or phantom stop."
+    },
+    {
+      "id": "TR-VIEW-006",
+      "system": "VIEW",
+      "requirement": "Separate NIL identity/resonance from shared Audit frame; actual/scoring reel, jar progress and enemy intent remain legible.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/UX_SPEC.md",
+          "heading": "4. Layout and text"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-SMOKE",
+      "required_verification": "Real1280x720/iframe captures including jar and large values."
+    },
+    {
+      "id": "TR-VIEW-007",
+      "system": "VIEW",
+      "requirement": "Design1080p with5% safe area, body28px target and text100/125/150%; no generated/baked critical text.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/UX_SPEC.md",
+          "heading": "4. Layout and text"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "A-VISION",
+      "required_verification": "All screen layouts at each scale/embedded ratio and locale-aware full values."
+    },
+    {
+      "id": "TR-VIEW-008",
+      "system": "VIEW",
+      "requirement": "One accepted stop per eligible active wheel; hold release belongs to that wheel; skip cannot masquerade as stop.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/UX_SPEC.md",
+          "heading": "5. Input states"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-SMOKE",
+      "required_verification": "Rapid/double inputs, recovery/skip clicks and held input tests."
+    },
+    {
+      "id": "TR-VIEW-009",
+      "system": "VIEW",
+      "requirement": "Word/shape/colour pattern labels, subtitles/speakers, pause/skip, assist0.7 and hold-to-stop form jam baseline.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/UX_SPEC.md",
+          "heading": "6. Accessibility baseline"
+        },
+        {
+          "path": "docs/GDD.md",
+          "heading": "8. UX and production quality"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-SMOKE",
+      "required_verification": "Muted, one-handed and chosen-zero routes plus settings event replay."
+    },
+    {
+      "id": "TR-VIEW-010",
+      "system": "VIEW",
+      "requirement": "No timed reading/choice or compulsory manual; settings changes record events without silently moving active phase.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/ACCESSIBILITY.md",
+          "heading": "4. Cognitive and timing"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-REPLAY",
+      "required_verification": "Mid-fight assist changes, pause recap and user-paced story tests."
+    },
+    {
+      "id": "TR-VIEW-011",
+      "system": "VIEW",
+      "requirement": "Reduced Motion removes shake/spins/parallax wobble/full-screen flash; effects preserve accepted-digit readability.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/ACCESSIBILITY.md",
+          "heading": "5. Motion and photosensitivity"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "A-MOTION",
+      "required_verification": "Final captures and named flash-analysis method/settings; no safety certificate from prose."
+    },
+    {
+      "id": "TR-VIEW-012",
+      "system": "VIEW",
+      "requirement": "Accessibility acceptance records actual device, mode, settings and recovery evidence, including150% text and focus loss.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/ACCESSIBILITY.md",
+          "heading": "6. Acceptance evidence"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-SMOKE",
+      "required_verification": "Recorded route matrix and relevant player feedback; unavailable platforms remain unverified."
+    },
+    {
+      "id": "TR-VIEW-013",
+      "system": "VIEW",
+      "requirement": "Future rebind, slower tiers, one-switch and strategy legal-face mode preserve scoring/input/replay semantics.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/ACCESSIBILITY.md",
+          "heading": "1. Motor and input"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "A-MOTOR",
+      "required_verification": "Independent target-mode critical-path completion and exact accepted-outcome replay."
+    },
+    {
+      "id": "TR-VIEW-014",
+      "system": "VIEW",
+      "requirement": "Future screen reader needs supported engine API, names/order/live summaries and avoids announcing every scrolling face.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/ACCESSIBILITY.md",
+          "heading": "2. Vision and reading"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "A-READER",
+      "required_verification": "Named platform reader navigation and real combat/result announcements."
+    },
+    {
+      "id": "TR-VIEW-015",
+      "system": "VIEW",
+      "requirement": "Turnarounds use actual anatomical front/left/right/back, scale and asymmetry; no mirrored front substituting unseen surfaces.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/ART_SPEC.md",
+          "heading": "2.2 Turnaround standard (every character, every outfit)"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "A-ASSET",
+      "required_verification": "Four-view source/camera trace, canon lock review and64px silhouette."
+    },
+    {
+      "id": "TR-VIEW-016",
+      "system": "VIEW",
+      "requirement": "Environment has coherent plan/2.5D/front views, metric grid and clear24x6m battle floor.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/ART_SPEC.md",
+          "heading": "3.1 Scale, grid and stage"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "A-ASSET",
+      "required_verification": "Source camera/layout comparison and actual in-engine playable composition."
+    },
+    {
+      "id": "TR-VIEW-017",
+      "system": "VIEW",
+      "requirement": "Layered actors, pivots/contact/hidden surfaces and exact separate lettering are required beyond concept/blockout existence.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/ART_SPEC.md",
+          "heading": "7. Current detailed design and manga export contract"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "A-ASSET",
+      "required_verification": "Pose/motion test scene with matching source hashes and runtime dimensions."
+    },
+    {
+      "id": "TR-VIEW-018",
+      "system": "VIEW",
+      "requirement": "Produce49 Mangaka-native B&W chapters of22 story pages each (1,078 total), in seven sequential volumes of seven chapters, with English LTR reading order and separate colour supplements; ordinary image jobs cannot produce story pages.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/manga/MANGAKA_WORKFLOW.md",
+          "heading": "Deliverable"
+        },
+        {
+          "path": "docs/manga/README.md",
+          "heading": "Current edition and evidence"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tools/check_docs.py"
+      ],
+      "gate": "M-SERIES",
+      "required_verification": "Plan structure check is current evidence only. Review/analyse the manuscript and cast in Mangaka; inspect chapter01 before scaling; record actual native chapter IDs, exports and22-story-page counts for all49 chapters,154 per volume, with visual/lettering/continuity acceptance.",
+      "revised": "2026-11-08",
+      "revision_reason": "User replaced rejected20-page ordinary-image study with22x30 native Mangaka series."
+    },
+    {
+      "id": "TR-VIEW-019",
+      "system": "VIEW",
+      "requirement": "Adapt accepted native-series exports into stable page/panel/dialogue metadata, transcript/localization, crops and a read-only spoiler-aware reader; clean/lettered separation needs actual supported output or validated processing.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/MANGA_DIRECTION.md",
+          "heading": "8. Game delivery"
+        },
+        {
+          "path": "docs/manga/MANGAKA_WORKFLOW.md",
+          "heading": "Export and quality evidence"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tools/check_docs.py"
+      ],
+      "gate": "M-ADAPT",
+      "required_verification": "Verify actual native formats/layers/pixels first; then new-series ID/export/localization/reader unlock checks. Legacy20-page JSON/layout tests do not prove the current package. Live cutscene boundaries require real game choices and idempotent outcomes.",
+      "revised": "2026-11-08",
+      "revision_reason": "Current native Mangaka output must replace legacy study-specific IDs/coordinates; native layer capability remains unverified."
+    },
+    {
+      "id": "TR-TOOL-001",
+      "system": "TOOL",
+      "requirement": "Each asset carries stable ID/version, canon locks, source/reference hash, dimensions/camera, provider/process and candid readiness.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/ARTBOOK_PRODUCTION.md",
+          "heading": "3. Asset contract"
+        }
+      ],
+      "adr": "docs/architecture/adr-0006-tooling.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "A-PROVENANCE",
+      "required_verification": "Manifest hash/file audit plus source/canon/runtime acceptance evidence."
+    },
+    {
+      "id": "TR-TOOL-002",
+      "system": "TOOL",
+      "requirement": "AI authors/scripts every production stage; installed/free tools default; no mandatory human finishing or runtime generation.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/ARTBOOK_PRODUCTION.md",
+          "heading": "4. Strictly AI, free-first pipeline"
+        }
+      ],
+      "adr": "docs/architecture/adr-0006-tooling.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "A-PROVENANCE",
+      "required_verification": "Reproducible source workflow and actual provider/quota/cost evidence before optional paid requests."
+    },
+    {
+      "id": "TR-TOOL-003",
+      "system": "TOOL",
+      "requirement": "Book builders provide check/html-only/output-dir, offline fonts and blocked remote requests; derivative manifests hash inputs.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/ARTBOOK_PRODUCTION.md",
+          "heading": "6. Book structure and reproducibility"
+        }
+      ],
+      "adr": "docs/architecture/adr-0006-tooling.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "D-EXPORT",
+      "required_verification": "Builder checks, offline render and content/layout inspection of outputs."
+    },
+    {
+      "id": "TR-TOOL-004",
+      "system": "TOOL",
+      "requirement": "A generated file/job or render establishes candidate existence; accepted runtime status needs import/motion/readability/budget/provenance.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/ARTBOOK_PRODUCTION.md",
+          "heading": "8. Definition of done"
+        }
+      ],
+      "adr": "docs/architecture/adr-0006-tooling.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "A-ASSET",
+      "required_verification": "Attach actual capture/test artifact before status promotion."
+    },
+    {
+      "id": "TR-TOOL-005",
+      "system": "TOOL",
+      "requirement": "Maintain independent exact rule fixtures/shared examples before statistics; reference tests do not certify DOM or Unity.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/QA_TEST_PLAN.md",
+          "heading": "1. Current automated reference checks"
+        }
+      ],
+      "adr": "docs/architecture/adr-0006-tooling.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-CORE",
+      "required_verification": "Node/Python regression run plus separate Core/editor/Web gates."
+    },
+    {
+      "id": "TR-TOOL-006",
+      "system": "TOOL",
+      "requirement": "Automate content, smoke, retry, replay and hosted Web gates with explicit artifact evidence.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/QA_TEST_PLAN.md",
+          "heading": "2. Required Unity automation gates"
+        }
+      ],
+      "adr": "docs/architecture/adr-0006-tooling.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-SMOKE",
+      "required_verification": "Recorded build/hash/browser matrix and reproducible commands."
+    },
+    {
+      "id": "TR-TOOL-007",
+      "system": "TOOL",
+      "requirement": "Test allten choices and allthree charms, both two-hero orders, jar expiry with extra turns and blocked storage.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/QA_TEST_PLAN.md",
+          "heading": "3. Manual critical path matrix"
+        }
+      ],
+      "adr": "docs/architecture/adr-0006-tooling.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-SMOKE",
+      "required_verification": "Real route matrix, accepted-command replay and defect repros."
+    },
+    {
+      "id": "TR-TOOL-008",
+      "system": "TOOL",
+      "requirement": "No required-path S1/S2; preserve source/content/build hashes and exact submitted artifact; no inferred playtest approval.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/QA_TEST_PLAN.md",
+          "heading": "5. Release candidate acceptance"
+        }
+      ],
+      "adr": "docs/architecture/adr-0006-tooling.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [
+        "tests/reference_rules.test.js",
+        "tests/test_sim_patterns.py"
+      ],
+      "gate": "Q-RELEASE",
+      "required_verification": "Independent completion of uploaded build with issue list and final provenance."
+    },
+    {
+      "id": "TR-TOOL-009",
+      "system": "TOOL",
+      "requirement": "Jam uses local explicit replay export and observer notes; no automatic telemetry/network calls or install IDs.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/TELEMETRY.md",
+          "heading": "1. Jam evidence"
+        }
+      ],
+      "adr": "docs/architecture/adr-0006-tooling.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-WEB",
+      "required_verification": "Network inspection, user-triggered export contents and local evidence log."
+    },
+    {
+      "id": "TR-TOOL-010",
+      "system": "TOOL",
+      "requirement": "Any future service needs purpose/schema, default-off consent, retention/deletion/security/privacy review before collection.",
+      "scope": "postjam",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/TELEMETRY.md",
+          "heading": "2. Post-jam service gate T-SERVICE"
+        }
+      ],
+      "adr": "docs/architecture/adr-0006-tooling.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "T-SERVICE",
+      "required_verification": "Approved exact field list and consent/withdrawal/ingestion tests; gameplay independent of upload."
+    },
+    {
+      "id": "TR-CONTENT-020",
+      "system": "CONTENT",
+      "requirement": "Expansion encounters model target groups/pools, legal target previews, phase thresholds, replacement/armour tags and declared overflow; each required party retains a counter.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/BESTIARY.md",
+          "heading": "4. Bosses (Auditors)"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-ENCOUNTER",
+      "required_verification": "Per-boss typed record and complete phase/target/overflow/terminal fixtures before enable."
+    },
+    {
+      "id": "TR-CONTENT-021",
+      "system": "CONTENT",
+      "requirement": "Keeper trials use separate nonlethal objectives/progress, supplied safe resources, retry/help and protected-item alternatives rather than human damage/death state.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/BESTIARY.md",
+          "heading": "3. Keepers (trials, never villains)"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-TRIAL",
+      "required_verification": "Every required trial is completable without optional bond/item, full Karma bank or inaccessible faces."
+    },
+    {
+      "id": "TR-CONTENT-022",
+      "system": "CONTENT",
+      "requirement": "Scene/recruit/ending flags are prerequisite-checked and idempotent; catch-up core recruits/pieces and six-Seal-plus-resonance finale remain reachable without secret recruits or epilogue events.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/STORY.md",
+          "heading": "9. Scene, recruit and ending state contract"
+        }
+      ],
+      "adr": "docs/architecture/adr-0003-content.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "G5",
+      "required_verification": "Full ending predicate/catch-up/skip/load traversal for all ten resonances; protected evidence cannot be lost."
+    },
+    {
+      "id": "TR-RULE-022",
+      "system": "RULE",
+      "requirement": "Land Laws require typed entry/exit scope, event/domain, exact modifier/order/stack/reset, readable intent and accessible same-land counter; narrative briefs are not numeric runtime data.",
+      "scope": "campaign",
+      "status": "specified",
+      "architecture_status": "gated",
+      "sources": [
+        {
+          "path": "docs/ACT_DESIGN.md",
+          "heading": "0. How every act is built"
+        }
+      ],
+      "adr": "docs/architecture/adr-0002-rules.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-LAND",
+      "required_verification": "Per-region records plus all chosen digits/required parties, replacement/terminal/save/retry fixtures."
+    },
+    {
+      "id": "TR-VIEW-020",
+      "system": "VIEW",
+      "requirement": "Display accepted-input feedback within one rendered frame and target<=50ms end-to-end; keep digits readable and mandatory noninteractive waits<=3s with immediate skip.",
+      "scope": "jam",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/GAME_FEEL.md",
+          "heading": "1. Response before spectacle"
+        }
+      ],
+      "adr": "docs/architecture/adr-0005-presentation.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "Q-FEEL",
+      "required_verification": "Input-marker/high-frame capture on named embedded Web hardware, repeated-payoff timing and reduced-motion route."
+    },
+    {
+      "id": "TR-TOOL-011",
+      "system": "TOOL",
+      "requirement": "Validate later-act power/phase pools using legal NIL-containing parties, actual passives/defence/offers and stated aim/seed assumptions; formula arithmetic alone cannot establish fight length or synergy necessity.",
+      "scope": "production",
+      "status": "specified",
+      "architecture_status": "mapped",
+      "sources": [
+        {
+          "path": "docs/ECONOMY_PROGRESSION.md",
+          "heading": "2. Power curve and validation requirements"
+        }
+      ],
+      "adr": "docs/architecture/adr-0006-tooling.md",
+      "unity_implementation": "not_started",
+      "existing_verification": [],
+      "gate": "F-BALANCE",
+      "required_verification": "Versioned full-fight/phase model and observed player distributions before later acts are accepted."
+    }
+  ]
+}

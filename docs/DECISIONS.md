@@ -4,6 +4,8 @@ Updated **7 November 2026 (IST)** under the request to audit and fix all documen
 
 ## Authority and scope
 
+**8 November story-first update:** [Resolved series bible](novel/RESOLVED_SERIES_BIBLE.md) governs the newly adopted novel/manga naming, cosmology clarification, character accountability, political transition and length targets. It supersedes conflicting older fictional prose for this edition. The seven-volume plan remains49 chapters ×22 story pages; the old jam timetable is historical under the user's story-first priority. Gameplay formulas remain governed by SYSTEMS and the rules below. Prior artbook PDFs and Mangaka projects are dated snapshots, not automatically updated by this decision.
+
 1. This decision register resolves cross-document conflicts. `JAM_SLICE.md` controls jam content; `SYSTEMS.md` controls gameplay semantics; `WORLD_BIBLE.md` and `LORE_LEXICON.md` control fictional facts; `TECH_DESIGN.md` controls architecture and budgets. Conflicts must be corrected in both documents rather than silently choosing one at runtime.
 2. Tuning CSV stores typed numerical inputs, not executable formula strings. A simulator is a model, not a gameplay implementation or proof of fun. Historical reports must name their baseline and link current resolutions.
 3. State labels are **specified**, **implemented**, **verified**, or **not in scope**. A written document alone establishes only specified. Never use a completion checkmark to imply a build, test, consultation or asset acceptance that has not occurred.

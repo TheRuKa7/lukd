@@ -1,0 +1,22 @@
+# Seven-volume prose manuscript
+
+**Phase2 handoff:** [Complete scene ledger](SCENE_LEDGER.md), [continuity and custody schedules](PHASE_02_CONTINUITY.md), and [structured ledger](scene_ledger.json) now provide the whole-story scene plan. They are planning artifacts, not completed prose. The Phase3 handoff below supplies the corresponding people/society development specification.
+
+**Phase3 handoff:** [Character dossiers](CHARACTER_DOSSIERS.md), [societies, relationships and voices](SOCIETIES_AND_RELATIONSHIPS.md), and [cast coverage](character_trajectories.json) now supply the people/society specifications. Phase4 revises and completes Volume1 against these and the complete scene ledger; their existence does not establish accepted prose.
+
+The [resolved series bible](RESOLVED_SERIES_BIBLE.md) supplies adopted answers to the literary critique and recommends a125,000-word prose master. The [literary critique](LITERARY_CRITIQUE.md) records the reasoning. Older reference PDFs remain historical snapshots.
+
+**Phase4 handoff, 9 November 2026:** Volume1 is a complete seven-chapter prose draft with an AI editorial/continuity pass. Read the [continuous manuscript](../../output/novel/volume_01_a_name_on_loan.md), [source manifest](../../output/novel/volume_01_manifest.json) and [Phase4 report](../PHASE_04_REPORT.md). Chapters1–3 were revised;4–7 were written through Varro's review, the missed ferry, rooftop aftermath and the next departure. Previous opening drafts remain under `archive/`.
+
+The edition target is seven volumes of seven chapters. Phase4 completion means a readable first part exists against the Phase2/3 foundations. Whole-series revision and reader feedback remain Phase6 work. Prose drafts are not finished manga pages and do not establish the requested6,000-line context dossiers.
+
+**Phase5 underway, 9 November:** Volumes1–3 now have21 drafted chapters;28 remain unwritten. See the [Phase5 progress report](../PHASE_05_REPORT.md), [Volume3 reading copy](../../output/novel/volume_03_the_price_of_shelter.md) and [source manifest](../../output/novel/volume_03_manifest.json). The [full-manuscript gate](../../output/novel/prose_master_gate.json) is NOT_READY. The [Phase6 preliminary review](../PHASE_06_REPORT.md) records bounded fixes; the whole-novel revision has not begun on an unwritten ending.
+
+| Volume | Manuscript status |
+|---|---|
+| 1 | Complete prose draft with AI editorial pass: [1: Three Bowls](volume_01/chapter_01_three_bowls.md), [2: The Jar Owes Six](volume_01/chapter_02_the_jar_owes_six.md), [3: A Door That Opens](volume_01/chapter_03_a_door_that_opens.md), [4: Seven Is Not a Name](volume_01/chapter_04_seven_is_not_a_name.md), [5: Seven Fen](volume_01/chapter_05_seven_fen.md), [6: A Window at Six](volume_01/chapter_06_a_window_at_six.md), [7: A Receipt for Mercy](volume_01/chapter_07_a_receipt_for_mercy.md). |
+| 2 | Complete prose draft with AI editorial pass: [8: The Ferryman's Seam](volume_02/chapter_08_the_ferrymans_seam.md), [9: A Hundred Wishes](volume_02/chapter_09_a_hundred_wishes.md), [10: The Keeper's Gift](volume_02/chapter_10_the_keepers_gift.md), [11: Paper Without a Name](volume_02/chapter_11_paper_without_a_name.md), [12: The Foxes' Bargain](volume_02/chapter_12_the_foxes_bargain.md), [13: Already Real](volume_02/chapter_13_already_real.md), [14: The Toll Changes Hands](volume_02/chapter_14_the_toll_changes_hands.md). |
+| 3 | Complete first draft with targeted continuity pass: [15: Purchased Guests](volume_03/chapter_15_purchased_guests.md), [16: Tea and Interest](volume_03/chapter_16_tea_and_interest.md), [17: Four Lanterns](volume_03/chapter_17_four_lanterns.md), [18: The Weight of the Dead](volume_03/chapter_18_the_weight_of_the_dead.md), [19: The Brush Trial](volume_03/chapter_19_the_brush_trial.md), [20: The True Account](volume_03/chapter_20_the_true_account.md), [21: A Debt to the Living](volume_03/chapter_21_a_debt_to_the_living.md). |
+| 4–7 | Fully scene-planned in the [scene ledger](SCENE_LEDGER.md) and [seven-volume plan](../manga/SEVEN_VOLUME_NOVEL_PLAN.md); prose not yet drafted. |
+
+Story and continuity review, complete manuscript revision, and 22-page chapter adaptations remain required before Mangaka volume production. The old 22-chapter manga files are historical material, not the current chapter structure.

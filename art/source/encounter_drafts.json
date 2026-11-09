@@ -1,0 +1,967 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-08",
+  "tool": "Blender local scripted geometry",
+  "source": "art/source/encounter_drafts.blend",
+  "manifest_path": "art/source/encounter_drafts.json",
+  "records": [
+    {
+      "id": "debt_hound",
+      "views": {
+        "front": {
+          "path": "art/cast/views/debt_hound_front.png",
+          "sha256": "21445b8a6391d3118fe4ec52084f8c5991e852485292ecd744422cde1e61d913"
+        },
+        "left": {
+          "path": "art/cast/views/debt_hound_left.png",
+          "sha256": "cf4a97fc35253ab0d1c95fca79891f3cdebcf0eb738befd37d49ad30c6482931"
+        },
+        "right": {
+          "path": "art/cast/views/debt_hound_right.png",
+          "sha256": "c87ed5444eb00be6cca14909e870cbff1e68ef0f49a013a7616404ab12188b70"
+        },
+        "back": {
+          "path": "art/cast/views/debt_hound_back.png",
+          "sha256": "f97307b1539b422a47a17cd2791fdc950b2be58b810fdc07cbe311e3ac8f791a"
+        }
+      },
+      "object_count": 20,
+      "bounds_min": [
+        -0.3864489197731018,
+        -0.9950000047683716,
+        0.0949999988079071
+      ],
+      "bounds_max": [
+        0.4240000247955322,
+        1.1283386945724487,
+        1.5149999856948853
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "noiseling",
+      "views": {
+        "front": {
+          "path": "art/cast/views/noiseling_front.png",
+          "sha256": "b5c7a1c8df92cba536affa5d46b9127e5f4d35847e1d76e2ada3f768bd98ecb7"
+        },
+        "left": {
+          "path": "art/cast/views/noiseling_left.png",
+          "sha256": "f6a4dffe84288e500ec9d741fd2883df07e9e9efb1dba11807c405a38695c03d"
+        },
+        "right": {
+          "path": "art/cast/views/noiseling_right.png",
+          "sha256": "d1650ccf2c0b9e6ed9a768271f1e312ef0a9a3f2c11369b690c0e3cdd20884dd"
+        },
+        "back": {
+          "path": "art/cast/views/noiseling_back.png",
+          "sha256": "3a761771c8b3a2f25e3c87d26f32b29f0f2b7f88d72247eace8f0134732d94e7"
+        }
+      },
+      "object_count": 15,
+      "bounds_min": [
+        -1.07443106174469,
+        -0.6963382363319397,
+        0.11254386603832245
+      ],
+      "bounds_max": [
+        1.192925214767456,
+        0.5371501445770264,
+        2.1780683994293213
+      ],
+      "render_scope": "encounter design study"
+    },
+    {
+      "id": "chochin_obake",
+      "views": {
+        "front": {
+          "path": "art/cast/views/chochin_obake_front.png",
+          "sha256": "a78bfd86417c0c737a993de935fc34447372da877199079381e11b776d7f6495"
+        },
+        "left": {
+          "path": "art/cast/views/chochin_obake_left.png",
+          "sha256": "351c504963fc68c56e70ea190decf2ec3deed52285dff2cdafb985b1582c00c2"
+        },
+        "right": {
+          "path": "art/cast/views/chochin_obake_right.png",
+          "sha256": "569a9d58ef5ceb900a7078c594349920ca8e4b6218262102f1f620d51e839823"
+        },
+        "back": {
+          "path": "art/cast/views/chochin_obake_back.png",
+          "sha256": "39fdfa82a1a27cd4a9fa092f2d5e8b7615574efc67181a2d89702220de9edd27"
+        }
+      },
+      "object_count": 13,
+      "bounds_min": [
+        -0.5000002384185791,
+        -0.7161229252815247,
+        0.36000001430511475
+      ],
+      "bounds_max": [
+        0.5000000596046448,
+        0.4880000054836273,
+        2.075000047683716
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "kasa_obake",
+      "views": {
+        "front": {
+          "path": "art/cast/views/kasa_obake_front.png",
+          "sha256": "ce8bd0422f7f2c343fac061633ca780f92e2d959027eb47aa5ecde89f0c12317"
+        },
+        "left": {
+          "path": "art/cast/views/kasa_obake_left.png",
+          "sha256": "b7c7326a52f4ed19b8c59f50385621367cdfb3777599b1cbe89b94d81322b497"
+        },
+        "right": {
+          "path": "art/cast/views/kasa_obake_right.png",
+          "sha256": "3558862430016cf961275f4b356c035e6abeb0696b991e9f752f92cffbb6f027"
+        },
+        "back": {
+          "path": "art/cast/views/kasa_obake_back.png",
+          "sha256": "5423d06443200e0fe69965f8fc20a22c7aba9cf350b6805da38ed19155029d54"
+        }
+      },
+      "object_count": 15,
+      "bounds_min": [
+        -0.875,
+        -0.8865076899528503,
+        0.07500000298023224
+      ],
+      "bounds_max": [
+        0.875,
+        0.875,
+        1.873448133468628
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "kappa",
+      "views": {
+        "front": {
+          "path": "art/cast/views/kappa_front.png",
+          "sha256": "a48393da12457d148a24b1c5c4024207ce4ed40374d0ba899ee3b41ac7dc5dbc"
+        },
+        "left": {
+          "path": "art/cast/views/kappa_left.png",
+          "sha256": "2e2643c7abc04bcf24b37c8d7ee214e9d5f5c67fbd868cf887a2fa2fb041da06"
+        },
+        "right": {
+          "path": "art/cast/views/kappa_right.png",
+          "sha256": "02acaf8dda92da3ade4593c2ae0abc0a3fcfd5edd19df7d2d977d819c37dec86"
+        },
+        "back": {
+          "path": "art/cast/views/kappa_back.png",
+          "sha256": "46eaa10432b00e9dded7faed65a127c21acf982ac1fe126f13acc9abd61093e7"
+        }
+      },
+      "object_count": 22,
+      "bounds_min": [
+        -0.46503669023513794,
+        -0.4500000476837158,
+        0.0
+      ],
+      "bounds_max": [
+        0.46503669023513794,
+        0.48000001907348633,
+        1.4449999332427979
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "abacus_golem",
+      "views": {
+        "front": {
+          "path": "art/cast/views/abacus_golem_front.png",
+          "sha256": "dd8c73d18fc2cf47b9e257c58c696ccf7dec95ab61bf94ac82a6044f60e815c0"
+        },
+        "left": {
+          "path": "art/cast/views/abacus_golem_left.png",
+          "sha256": "d1cc73e472aa5143c92be8dc24d181e89b665322c6a99c5d576116ece43d687b"
+        },
+        "right": {
+          "path": "art/cast/views/abacus_golem_right.png",
+          "sha256": "d59f2e22b86ddb2ed8b59688e0000ac5da0c31ea35f2380e3547a9c16b2e558b"
+        },
+        "back": {
+          "path": "art/cast/views/abacus_golem_back.png",
+          "sha256": "426e4ba49756a8d55ab0187cd97a19e951f0a42fd30a3bd720cf4a643f610dca"
+        }
+      },
+      "object_count": 38,
+      "bounds_min": [
+        -0.8983869552612305,
+        -0.3499999940395355,
+        0.0
+      ],
+      "bounds_max": [
+        0.8983869552612305,
+        0.17499999701976776,
+        2.240000009536743
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "debt_junk",
+      "views": {
+        "front": {
+          "path": "art/cast/views/debt_junk_front.png",
+          "sha256": "2bb7e2a9d6b899eacc7c8a635da89733697a954bc22ee8ede5d7a70768dcce1a"
+        },
+        "left": {
+          "path": "art/cast/views/debt_junk_left.png",
+          "sha256": "cc56c7e3d2894657d189063f3865fe4520f740e8189676a0d467a09788914f4a"
+        },
+        "right": {
+          "path": "art/cast/views/debt_junk_right.png",
+          "sha256": "8d6f71c29c87d47eac0677c8bf47b4f0e0d602b8591919fd7e5d6b5e3a87663f"
+        },
+        "back": {
+          "path": "art/cast/views/debt_junk_back.png",
+          "sha256": "f2595d3c0b2d611ab20340056fd57eb77379ed88f8a78292bdbc38f1828ce83a"
+        }
+      },
+      "object_count": 14,
+      "bounds_min": [
+        -0.8500000238418579,
+        -1.5,
+        0.3499999940395355
+      ],
+      "bounds_max": [
+        0.8500000238418579,
+        1.5,
+        2.799999952316284
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "golden_koi",
+      "views": {
+        "front": {
+          "path": "art/cast/views/golden_koi_front.png",
+          "sha256": "04c88bb7c781f211ca1d18f5ae7043d936067976a525adbcaa3abf9790a6b7fa"
+        },
+        "left": {
+          "path": "art/cast/views/golden_koi_left.png",
+          "sha256": "53f7d07c1df5852995e7d4340ab39a406efb902ce61dee96b92cd308322567b2"
+        },
+        "right": {
+          "path": "art/cast/views/golden_koi_right.png",
+          "sha256": "99f6d38aeef01fe688882776b6e7ca71c61e9dbdf88cd5a581c4f53287794cfa"
+        },
+        "back": {
+          "path": "art/cast/views/golden_koi_back.png",
+          "sha256": "c8924acc0dc6c324ced65a07edf01d59d9cc6b0217278c548bbc4b2fc7a7cce6"
+        }
+      },
+      "object_count": 13,
+      "bounds_min": [
+        -0.800000011920929,
+        -1.1939539909362793,
+        0.4999999701976776
+      ],
+      "bounds_max": [
+        0.800000011920929,
+        1.2999999523162842,
+        1.2999999523162842
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "hungry_ghost",
+      "views": {
+        "front": {
+          "path": "art/cast/views/hungry_ghost_front.png",
+          "sha256": "fea937ae989b376e9c1a17bffd9cf4abe0d7d335d0bc813704c7cef8d07e5753"
+        },
+        "left": {
+          "path": "art/cast/views/hungry_ghost_left.png",
+          "sha256": "cc10ec7804efa8b03b44bb327784644ae848407139b7c6698060d7994dc13ba8"
+        },
+        "right": {
+          "path": "art/cast/views/hungry_ghost_right.png",
+          "sha256": "e5476bad18eb4da2618a82b2d3a51794af1a903f4db1a4929f2b93302c48f1dc"
+        },
+        "back": {
+          "path": "art/cast/views/hungry_ghost_back.png",
+          "sha256": "dd571bf941f27ce701fde5ded3a13250fabe2b7c4b5045accfd8d463ba2f23ed"
+        }
+      },
+      "object_count": 8,
+      "bounds_min": [
+        -0.5237405300140381,
+        -0.4648432433605194,
+        -0.07999998331069946
+      ],
+      "bounds_max": [
+        0.5237405300140381,
+        0.28999999165534973,
+        1.7999999523162842
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "hungry_ghost_swarm",
+      "views": {
+        "front": {
+          "path": "art/cast/views/hungry_ghost_swarm_front.png",
+          "sha256": "3d400329485c3261d50ee153ea422eb2a1aec4210bbb4f42a3382888000a6e26"
+        },
+        "left": {
+          "path": "art/cast/views/hungry_ghost_swarm_left.png",
+          "sha256": "b1dff2ade631242a5c84c7c82827ef354e13476eaacc078a87de30d0fb8edb61"
+        },
+        "right": {
+          "path": "art/cast/views/hungry_ghost_swarm_right.png",
+          "sha256": "3e3b97b452d93495138b6a6c07a74c4be39766b70c01105edd914e14fa8be71a"
+        },
+        "back": {
+          "path": "art/cast/views/hungry_ghost_swarm_back.png",
+          "sha256": "6fa9f2337c5c2d37a25e51a2bafe33cb451f38929da5229daca15a9cd1da446d"
+        }
+      },
+      "object_count": 40,
+      "bounds_min": [
+        -1.4737404584884644,
+        -0.714843213558197,
+        0.02000001072883606
+      ],
+      "bounds_max": [
+        1.473740577697754,
+        0.6399999856948853,
+        2.450000047683716
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "vetala",
+      "views": {
+        "front": {
+          "path": "art/cast/views/vetala_front.png",
+          "sha256": "ed7a1f064137b3936e5f1fd739669451aa66beccf32142f22fc4f85a160fd122"
+        },
+        "left": {
+          "path": "art/cast/views/vetala_left.png",
+          "sha256": "20601b7ea6a41b8204ae2d56f736099ca1430f6fe19370b91ddc642ea94a4e95"
+        },
+        "right": {
+          "path": "art/cast/views/vetala_right.png",
+          "sha256": "16cc1ebffc95009a54615672c2c7688cd9f0946c3bbe0e003b0468a3421259e9"
+        },
+        "back": {
+          "path": "art/cast/views/vetala_back.png",
+          "sha256": "06062b76bd8f3869fa75291b826ccdddc1cec9389c27c77311c9fa6a7dba82a6"
+        }
+      },
+      "object_count": 8,
+      "bounds_min": [
+        -0.6288996338844299,
+        -0.2600000500679016,
+        0.0
+      ],
+      "bounds_max": [
+        0.6700000166893005,
+        0.320000022649765,
+        2.5999999046325684
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "yantra_guardian",
+      "views": {
+        "front": {
+          "path": "art/cast/views/yantra_guardian_front.png",
+          "sha256": "2f8be1f3ce777aabef7fd9a83750fd555825b238d6aacfecca345e2b240b43fe"
+        },
+        "left": {
+          "path": "art/cast/views/yantra_guardian_left.png",
+          "sha256": "22969e37366e209adfdee7159672de52da1f29f2a08a937e7e1eb987cd07203d"
+        },
+        "right": {
+          "path": "art/cast/views/yantra_guardian_right.png",
+          "sha256": "f1a4465da64592085152e3a133ea7b9289169dd87fc331cbe45022735aa3fa6e"
+        },
+        "back": {
+          "path": "art/cast/views/yantra_guardian_back.png",
+          "sha256": "4620991673ee1d7c0866fa67168f590b4cee2ef1e51004a4cb5beb52bd6ca421"
+        }
+      },
+      "object_count": 8,
+      "bounds_min": [
+        -0.7450000047683716,
+        -0.7450000047683716,
+        0.07891656458377838
+      ],
+      "bounds_max": [
+        0.7450000047683716,
+        0.7450000047683716,
+        1.8450000286102295
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "monsoon_naga",
+      "views": {
+        "front": {
+          "path": "art/cast/views/monsoon_naga_front.png",
+          "sha256": "7d61339fb8c4d75909c2c7a6c91c8ae66bd873e2569dd4de5fd078c527d232f0"
+        },
+        "left": {
+          "path": "art/cast/views/monsoon_naga_left.png",
+          "sha256": "3e2cba1f0e2f78d19fdf09bab8cd7b710fe2a9b4583ab7f3f14c60b47b863730"
+        },
+        "right": {
+          "path": "art/cast/views/monsoon_naga_right.png",
+          "sha256": "e6a1cc599f3b6e63660181a76122f8b21419a927850f25ff2074f540d75989c2"
+        },
+        "back": {
+          "path": "art/cast/views/monsoon_naga_back.png",
+          "sha256": "020d86ffdaa3772269336b8f34de881e0fc812aed6783c1bcd3d66be2e0f90bf"
+        }
+      },
+      "object_count": 4,
+      "bounds_min": [
+        -0.9755282402038574,
+        -0.925565242767334,
+        0.1263863444328308
+      ],
+      "bounds_max": [
+        0.9703687429428101,
+        0.6792023181915283,
+        2.6500000953674316
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "harpy",
+      "views": {
+        "front": {
+          "path": "art/cast/views/harpy_front.png",
+          "sha256": "aa1257caecfb8895ba09842e43b8c33775bc660874b37dfee358734e1b6c28a9"
+        },
+        "left": {
+          "path": "art/cast/views/harpy_left.png",
+          "sha256": "9888f67d9792a902551676edd2bbbcbe2c88d246683deb625ef5031ce5677ce0"
+        },
+        "right": {
+          "path": "art/cast/views/harpy_right.png",
+          "sha256": "f9a534b16869f3196d2fbb4d4a6fbfa3ad1bd3b95bb7414d31d6a50a64aa0d42"
+        },
+        "back": {
+          "path": "art/cast/views/harpy_back.png",
+          "sha256": "93d7479275223a8820b84d47f42af78ad8e6d4d0df4c8bf88183be964a65331f"
+        }
+      },
+      "object_count": 46,
+      "bounds_min": [
+        -1.8899999856948853,
+        -0.29219749569892883,
+        0.0
+      ],
+      "bounds_max": [
+        1.8899999856948853,
+        0.9300000071525574,
+        1.9199999570846558
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "harpy_queen",
+      "views": {
+        "front": {
+          "path": "art/cast/views/harpy_queen_front.png",
+          "sha256": "4992e839a23e89ed100966f8de6e8c62094bdcec317eb23cd0162287ada75801"
+        },
+        "left": {
+          "path": "art/cast/views/harpy_queen_left.png",
+          "sha256": "ed7bcb9d76f491dd3c0a5f9119f329c90792feeb3980dbc4e2b864351ab65966"
+        },
+        "right": {
+          "path": "art/cast/views/harpy_queen_right.png",
+          "sha256": "1363a30d4813c317994b1fab79c16f45e350ac78531d7c8c00bc12b6c7f2519a"
+        },
+        "back": {
+          "path": "art/cast/views/harpy_queen_back.png",
+          "sha256": "78de1d659fc5c56c3b8f83f2f76775ccdc37520ada4a7d721fe28ed0c85d3394"
+        }
+      },
+      "object_count": 46,
+      "bounds_min": [
+        -1.8899999856948853,
+        -0.29219749569892883,
+        0.0
+      ],
+      "bounds_max": [
+        1.8899999856948853,
+        0.9300000071525574,
+        2.2200000286102295
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "tumbleweed_golem",
+      "views": {
+        "front": {
+          "path": "art/cast/views/tumbleweed_golem_front.png",
+          "sha256": "2a978fb7a406bfa9f6ad13840a9bffb8ca16403c5cc09f9b58e81cab6be6bdbb"
+        },
+        "left": {
+          "path": "art/cast/views/tumbleweed_golem_left.png",
+          "sha256": "d21ffdab2185eb1c9c114f4ef173d04b281b75fecd73dc841fb1c221a6342b10"
+        },
+        "right": {
+          "path": "art/cast/views/tumbleweed_golem_right.png",
+          "sha256": "78efc36cdb3e86f9f670e000108f413a727746603f75938a1dcb1f12b4422f9b"
+        },
+        "back": {
+          "path": "art/cast/views/tumbleweed_golem_back.png",
+          "sha256": "93a7d442b5851632f321da1212728f8839d377d34b7a73cbcac666e77bef4bb3"
+        }
+      },
+      "object_count": 32,
+      "bounds_min": [
+        -0.6664701700210571,
+        -0.6800000071525574,
+        0.06085320934653282
+      ],
+      "bounds_max": [
+        0.6675947308540344,
+        0.6679997444152832,
+        1.5179954767227173
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "headless_horseman",
+      "views": {
+        "front": {
+          "path": "art/cast/views/headless_horseman_front.png",
+          "sha256": "e2a2b708067ea2ab1353554c52b2c7545a3a49492e306c012752116abb5a1d07"
+        },
+        "left": {
+          "path": "art/cast/views/headless_horseman_left.png",
+          "sha256": "aa7ef725c8654b1a1692a267361a69364cba902311d4f6e1647737490c5d7154"
+        },
+        "right": {
+          "path": "art/cast/views/headless_horseman_right.png",
+          "sha256": "803e66f185e423076305342567bcd4aae7da9ffb3b1dc8c1ba3955be51768e9e"
+        },
+        "back": {
+          "path": "art/cast/views/headless_horseman_back.png",
+          "sha256": "9e54ade4531111205bb47b4241dd5f564be0685eb8c39ba498c61c02b44ed749"
+        }
+      },
+      "object_count": 20,
+      "bounds_min": [
+        -0.45000019669532776,
+        -1.4000000953674316,
+        0.009999997913837433
+      ],
+      "bounds_max": [
+        0.8479999899864197,
+        1.415113925933838,
+        2.4700000286102295
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "ghost_train",
+      "views": {
+        "front": {
+          "path": "art/cast/views/ghost_train_front.png",
+          "sha256": "e66959f266f86f4ccec5f01e5779a7c3a7e02b0cb083b46b2ca4f6306e605adf"
+        },
+        "left": {
+          "path": "art/cast/views/ghost_train_left.png",
+          "sha256": "545b56551c6159e163232f048bafb16f3a083c4a497cfc695c724f711d9346ef"
+        },
+        "right": {
+          "path": "art/cast/views/ghost_train_right.png",
+          "sha256": "4497d49920e3f8bb5148c96d91d7fdbdec7d41f3b5690ce92415fa95eefb405f"
+        },
+        "back": {
+          "path": "art/cast/views/ghost_train_back.png",
+          "sha256": "e4a24ba7e411e8e41a40e235dc7d02d83bac9d9f9f46a6c301d768378c5c77a4"
+        }
+      },
+      "object_count": 28,
+      "bounds_min": [
+        -0.5299999713897705,
+        -3.0,
+        0.044999778270721436
+      ],
+      "bounds_max": [
+        0.5299999713897705,
+        2.75,
+        3.1449999809265137
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "noise_storm",
+      "views": {
+        "front": {
+          "path": "art/cast/views/noise_storm_front.png",
+          "sha256": "8afc691eec003d4f3e9150934033c160279c3010b81a75b23957603b5f70f483"
+        },
+        "left": {
+          "path": "art/cast/views/noise_storm_left.png",
+          "sha256": "4cf6be91882e240641a1255f7c0fd739b405dba379b57a0dbc0788cd86d28717"
+        },
+        "right": {
+          "path": "art/cast/views/noise_storm_right.png",
+          "sha256": "2a96bee8a1314539e49d4a51e1b6add0b1f93ddd760f3f48a9d134608ca9294e"
+        },
+        "back": {
+          "path": "art/cast/views/noise_storm_back.png",
+          "sha256": "9a6e3946b01ea497d4bd761928809b4207e47592ca97f1d4e5a19bd380df41ab"
+        }
+      },
+      "object_count": 37,
+      "bounds_min": [
+        -1.215000033378601,
+        -0.8091943264007568,
+        -0.11500000953674316
+      ],
+      "bounds_max": [
+        1.215000033378601,
+        0.802348792552948,
+        2.315000057220459
+      ],
+      "render_scope": "encounter design study"
+    },
+    {
+      "id": "default",
+      "views": {
+        "front": {
+          "path": "art/cast/views/default_front.png",
+          "sha256": "8ae4173903467e607bf7594ce0010743a4d9567b5ab5ed91aa47fe42ca102537"
+        },
+        "left": {
+          "path": "art/cast/views/default_left.png",
+          "sha256": "15489038182d16fa7e1f9d7cee6a3b5bf945ece5c5b51755a5dd1d6edf02b6fb"
+        },
+        "right": {
+          "path": "art/cast/views/default_right.png",
+          "sha256": "5dfd9e30e6c3756b8101a5c15ff8c29a8b81e66d6b668b10f33b1ad1cd3fff8e"
+        },
+        "back": {
+          "path": "art/cast/views/default_back.png",
+          "sha256": "230221d1858bdf8c3715e17f2fad9bf3e6be8072dd31d5435534d81ee423feba"
+        }
+      },
+      "object_count": 11,
+      "bounds_min": [
+        -1.350000023841858,
+        -0.6499999761581421,
+        0.0
+      ],
+      "bounds_max": [
+        1.350000023841858,
+        0.8500000238418579,
+        1.8299999237060547
+      ],
+      "render_scope": "encounter design study"
+    },
+    {
+      "id": "rahu_ketu",
+      "views": {
+        "front": {
+          "path": "art/cast/views/rahu_ketu_front.png",
+          "sha256": "3c0ae087e74a52b6af3fef909ca061daec0fa57534f8c3554f50e5a53ce3acc8"
+        },
+        "left": {
+          "path": "art/cast/views/rahu_ketu_left.png",
+          "sha256": "3d43ba23a5616ac110c11d554997fc6c10448442d3b4a2b2437d264f4b979092"
+        },
+        "right": {
+          "path": "art/cast/views/rahu_ketu_right.png",
+          "sha256": "1c8512bd4dfe645435faa02d2e1a47375b2adc35a017fd7a860d1b256f2db6e5"
+        },
+        "back": {
+          "path": "art/cast/views/rahu_ketu_back.png",
+          "sha256": "b2ad4176d81a4aac400d1955b1e1cfb5572fba61d92c36176e96209cb80beb54"
+        }
+      },
+      "object_count": 22,
+      "bounds_min": [
+        -1.840000033378601,
+        -0.32500001788139343,
+        0.0
+      ],
+      "bounds_max": [
+        1.399999976158142,
+        0.4349711537361145,
+        2.440000057220459
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "oni_enforcer",
+      "views": {
+        "front": {
+          "path": "art/cast/views/oni_enforcer_front.png",
+          "sha256": "6a2d9a04a36cfe484bda3685f5a46819420702b455d56b50451c00b482303a90"
+        },
+        "left": {
+          "path": "art/cast/views/oni_enforcer_left.png",
+          "sha256": "d59eaa8576f6b46bed9ed0804f737fed2c5eb090fe4599e22c44a76e16cba764"
+        },
+        "right": {
+          "path": "art/cast/views/oni_enforcer_right.png",
+          "sha256": "1f355a9bc861d4f46cd45756400a6b8849a834e932a55315c747a9a776c9c071"
+        },
+        "back": {
+          "path": "art/cast/views/oni_enforcer_back.png",
+          "sha256": "4d1ef4f65ebc5775cbb4317098e09ab4033789c8c3e8a035026bf7d6c517033d"
+        }
+      },
+      "object_count": 16,
+      "bounds_min": [
+        -0.6784489750862122,
+        -0.24000000953674316,
+        0.0
+      ],
+      "bounds_max": [
+        0.9300000071525574,
+        0.14000000059604645,
+        2.2700002193450928
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "jiangshi",
+      "views": {
+        "front": {
+          "path": "art/cast/views/jiangshi_front.png",
+          "sha256": "13237a0a7fc04b9ac68a2d689792a2b7799de4108a8db25b1706c8c556aaeb48"
+        },
+        "left": {
+          "path": "art/cast/views/jiangshi_left.png",
+          "sha256": "ba5454e613ab292b521288f2a9cb61a9e6f08552efc987760908f6b0f08052f6"
+        },
+        "right": {
+          "path": "art/cast/views/jiangshi_right.png",
+          "sha256": "459e0b321266f241ab954be997820f7f49a7ebe53afc8f3ce5fbf2d521ddf3ec"
+        },
+        "back": {
+          "path": "art/cast/views/jiangshi_back.png",
+          "sha256": "b1b3760efce60e397506de5f0a5480fe5d75db6b8fbf987beb7b2274a5096039"
+        }
+      },
+      "object_count": 15,
+      "bounds_min": [
+        -0.500706672668457,
+        -0.6499999761581421,
+        0.0
+      ],
+      "bounds_max": [
+        0.500706672668457,
+        0.3959999978542328,
+        1.9100000858306885
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "bronze_automaton",
+      "views": {
+        "front": {
+          "path": "art/cast/views/bronze_automaton_front.png",
+          "sha256": "b7cbad7951fe78a8db888189f55b6cd86f63145c74f5c83aaa35210ead82e4ce"
+        },
+        "left": {
+          "path": "art/cast/views/bronze_automaton_left.png",
+          "sha256": "7193a8dfac2a775518294b9551a809fcb2eb3afc9a2bd8f57194b4b25e44de38"
+        },
+        "right": {
+          "path": "art/cast/views/bronze_automaton_right.png",
+          "sha256": "d799b73e86a6dc61c213beadb968a90afad02346be9dca18c294e690ab12f716"
+        },
+        "back": {
+          "path": "art/cast/views/bronze_automaton_back.png",
+          "sha256": "c70b74c1bd29b659b4d33e58d71668cf5e15462b45b2603fca59f42415ab0cb3"
+        }
+      },
+      "object_count": 15,
+      "bounds_min": [
+        -0.7350000143051147,
+        -0.3400000333786011,
+        0.0
+      ],
+      "bounds_max": [
+        1.0199999809265137,
+        0.14000000059604645,
+        2.5
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "siren",
+      "views": {
+        "front": {
+          "path": "art/cast/views/siren_front.png",
+          "sha256": "e47f2fd3e449eea3f930a3884992d692d5c324d30c6126a29bb0a018b867b1b4"
+        },
+        "left": {
+          "path": "art/cast/views/siren_left.png",
+          "sha256": "8273f708e36e140f65e25e975b42bf29f57d01e74784af82ca0f0fd652082b0b"
+        },
+        "right": {
+          "path": "art/cast/views/siren_right.png",
+          "sha256": "b33c575a2792657b0a523ca61590e760ec776bcb9b12eccf81b1debbbab3b756"
+        },
+        "back": {
+          "path": "art/cast/views/siren_back.png",
+          "sha256": "742291a22fc6f7289ebccd249962ba5d23668293ba4234c7ae051746fee79c94"
+        }
+      },
+      "object_count": 16,
+      "bounds_min": [
+        -0.4307573735713959,
+        -0.3240000009536743,
+        0.0
+      ],
+      "bounds_max": [
+        0.9099999666213989,
+        0.3240000009536743,
+        1.809999942779541
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "collector_captain",
+      "views": {
+        "front": {
+          "path": "art/cast/views/collector_captain_front.png",
+          "sha256": "1733b1fa73f0aa4a5c7f3d9d86371859c5dcb04bcafb1c1625c15488d81ae266"
+        },
+        "left": {
+          "path": "art/cast/views/collector_captain_left.png",
+          "sha256": "a331937eea93be3263da161c427c7abf63cc5587dbae59bbba4609aacf5fccca"
+        },
+        "right": {
+          "path": "art/cast/views/collector_captain_right.png",
+          "sha256": "3092cc00ab4f4f72c1b1b09ededed7a2a9ed95a472de7c18c1003b2bfa6b0947"
+        },
+        "back": {
+          "path": "art/cast/views/collector_captain_back.png",
+          "sha256": "f4262e5cb1ffd1cc4a89a293674aebf41e7fd5ed9504e53a83217c0a7b240cee"
+        }
+      },
+      "object_count": 19,
+      "bounds_min": [
+        -0.6949999928474426,
+        -0.3799999952316284,
+        0.0
+      ],
+      "bounds_max": [
+        0.656970202922821,
+        0.14000000059604645,
+        2.0350000858306885
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "basilica_surveyor",
+      "views": {
+        "front": {
+          "path": "art/cast/views/basilica_surveyor_front.png",
+          "sha256": "ea71ea4fcfd0d5a1182dc2e6e0417aea982b5ee638c0b19a13689c315eef3b86"
+        },
+        "left": {
+          "path": "art/cast/views/basilica_surveyor_left.png",
+          "sha256": "7da13675711589f02ac1fa9719fc675c3da0567b6d7c418a59e0973c265949eb"
+        },
+        "right": {
+          "path": "art/cast/views/basilica_surveyor_right.png",
+          "sha256": "f949d489d4138a44c916b4bb870403dd6f59a402b0644e5159cf5420e3912963"
+        },
+        "back": {
+          "path": "art/cast/views/basilica_surveyor_back.png",
+          "sha256": "d04bf96d32103e1e73d9f166bfea78fab4795a3293a3bbd3ffd69f2754a8022f"
+        }
+      },
+      "object_count": 14,
+      "bounds_min": [
+        -0.45169293880462646,
+        -0.3456000089645386,
+        0.0
+      ],
+      "bounds_max": [
+        0.8050000667572021,
+        0.3456000089645386,
+        2.254999876022339
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "card_sharp_automaton",
+      "views": {
+        "front": {
+          "path": "art/cast/views/card_sharp_automaton_front.png",
+          "sha256": "3c82e6ef1cd643b3cc6328cef5486d233187500a821344ba14211eee11a385f5"
+        },
+        "left": {
+          "path": "art/cast/views/card_sharp_automaton_left.png",
+          "sha256": "addf0950aa5d73bae4619061ec81a487470459aa6045b0df8295d8515798df3c"
+        },
+        "right": {
+          "path": "art/cast/views/card_sharp_automaton_right.png",
+          "sha256": "0e486fa30f0cd5b653e887cb6e9710f8d38c4b888d601fae1373e8f1e35bd6b2"
+        },
+        "back": {
+          "path": "art/cast/views/card_sharp_automaton_back.png",
+          "sha256": "89f6468c90417f866cf3657b1e4db12895855d4e2fc560d212e0aeb57ee512d0"
+        }
+      },
+      "object_count": 20,
+      "bounds_min": [
+        -0.4656311571598053,
+        -0.26750001311302185,
+        0.0
+      ],
+      "bounds_max": [
+        0.9112956523895264,
+        0.14000000059604645,
+        1.8399999141693115
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    },
+    {
+      "id": "loop_echo",
+      "views": {
+        "front": {
+          "path": "art/cast/views/loop_echo_front.png",
+          "sha256": "30e8564952922755638cb6feb4dfffb3678457e336eac76f8f2c5170c20555ca"
+        },
+        "left": {
+          "path": "art/cast/views/loop_echo_left.png",
+          "sha256": "4180281aa163739551d1ce3c92db2bbfb55cb8e09ed7684bc88b70cc4d9b03e4"
+        },
+        "right": {
+          "path": "art/cast/views/loop_echo_right.png",
+          "sha256": "fcc70104a08b3e1ae7247c8716fc6354c2f1d092a777be5548431ac33a41e9ad"
+        },
+        "back": {
+          "path": "art/cast/views/loop_echo_back.png",
+          "sha256": "e990da5762f204b416892649ce5221e4f6bfaae11da3259640e83498db9e4247"
+        }
+      },
+      "object_count": 19,
+      "bounds_min": [
+        -0.4307573735713959,
+        -0.24000000953674316,
+        0.0
+      ],
+      "bounds_max": [
+        0.6349999904632568,
+        0.4750000238418579,
+        1.8849999904632568
+      ],
+      "render_scope": "isolated procedural spatial draft"
+    }
+  ],
+  "status": "First-draft spatial studies; no final-rig, cultural, runtime or painted-art approval"
+}

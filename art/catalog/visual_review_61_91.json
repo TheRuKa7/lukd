@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-11-08",
+  "scope": "Actual-image triage61–91; exact hidden geometry, rigs, cultural approval and runtime clearances remain separate.",
+  "reviews": [
+    {
+      "index": 61,
+      "request_id": "cast_061_kappa",
+      "source_path": "art/concepts/complete/cast_061_kappa.png",
+      "source_sha256": "8bc1e6722d68aee2f89e212e4817500b7d6101302ac21f12d59737b636ce6dbf",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Full water dish, shell and nonhuman river-creature profile readable."
+    },
+    {
+      "index": 62,
+      "request_id": "cast_062_oni_enforcer",
+      "source_path": "art/concepts/complete/cast_062_oni_enforcer.png",
+      "source_sha256": "23b9c27656b1bf3b8d44868a7dfb254a5dea85e94663340bb6aebba25b4a7a15",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Enforcer silhouette, horns, weighted workwear and supported tool coherent."
+    },
+    {
+      "index": 63,
+      "request_id": "cast_063_abacus_golem",
+      "source_path": "art/concepts/complete/cast_063_abacus_golem.png",
+      "source_sha256": "edc176d78a38db7958e01ce5e5bdc40e70a75b74f9d4de47c0b87b512a819f3d",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Physical open abacus frame remains visible from the rear; a rear-visible bead frame is not a duplicated front face."
+    },
+    {
+      "index": 64,
+      "request_id": "cast_064_debt_junk",
+      "source_path": "art/concepts/complete/cast_064_debt_junk.png",
+      "source_sha256": "d5a94dad9f3feac7d5cf3154e4002fa122392cc9a525c4c4d88ff4b16118a8c9",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Wooden hull, red sail, supports and cabin construction distinguish the mobile debt vessel."
+    },
+    {
+      "index": 65,
+      "request_id": "cast_065_golden_koi",
+      "source_path": "art/concepts/complete/cast_065_golden_koi.png",
+      "source_sha256": "5d90b43b34fcd487f436545f391711c84058733e85261a55ad06f0f3ffc7c872",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Long koi form, fins, tail and barbels preserved across actual illustrated directions."
+    },
+    {
+      "index": 66,
+      "request_id": "cast_066_hungry_ghost",
+      "source_path": "art/concepts/complete/cast_066_hungry_ghost.png",
+      "source_sha256": "8b1619ed1520cbff6a888a90b795acfa437a9d653d726800fa8ef99fb846b253",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Empty vessel/ghost shape readable with distinct head and cloth trail."
+    },
+    {
+      "index": 67,
+      "request_id": "cast_067_jiangshi",
+      "source_path": "art/concepts/complete/cast_067_jiangshi.png",
+      "source_sha256": "3436e8731a2499399d70e4520238501917431b47eb015e2df9270f72774ba7c0",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Stiff robed silhouette and talisman construction readable; no gore."
+    },
+    {
+      "index": 68,
+      "request_id": "cast_068_vetala",
+      "source_path": "art/concepts/complete/cast_068_vetala.png",
+      "source_sha256": "398e3673d4c81175eea96243d9087f0d4a1ee6d63adbf0306f5ed68092475ecd",
+      "inspection": "Actual generated contact sheet plus individual2400px derivative",
+      "verdict": "Neutral upright costume proposal; hanging motion not illustrated",
+      "observations": "The revised output removes the carried miniature/effigy. This is explicitly an upright costume proposal only; actual Blender views separately show hanging construction. No illustrated hanging-pose or rig acceptance is claimed."
+    },
+    {
+      "index": 69,
+      "request_id": "cast_069_yantra_guardian",
+      "source_path": "art/concepts/complete/cast_069_yantra_guardian.png",
+      "source_sha256": "f452d7716a7a73704316a7b9e7403209fda49735c1780b1edc81ab71259d84e7",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Mechanical dial, gnomon and stepped supports remain distinct from a sacred person."
+    },
+    {
+      "index": 70,
+      "request_id": "cast_070_monsoon_naga",
+      "source_path": "art/concepts/complete/cast_070_monsoon_naga.png",
+      "source_sha256": "bc5ffcb4c67f3ccddf0e2298892c35e6fdd9764ac7217dc10e1dc208f0ec25a2",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Long water body and separate rising-water sweep are legible; detailed creature/source review remains a future acceptance gate."
+    },
+    {
+      "index": 71,
+      "request_id": "cast_071_bronze_automaton",
+      "source_path": "art/concepts/complete/cast_071_bronze_automaton.png",
+      "source_sha256": "983b83e998b3665f06e024011cd86f289eb6e2c2bc07cd62ddf9f61f3cfe8b5d",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Bronze mechanism, apertures and supporting joints readable."
+    },
+    {
+      "index": 72,
+      "request_id": "cast_072_harpy",
+      "source_path": "art/concepts/complete/cast_072_harpy.png",
+      "source_sha256": "93ea7fd669cd53d660c69faff35ee39b3040e2db5791c6c75b51634903d1a72e",
+      "inspection": "Actual generated contact sheet plus individual2400px derivative",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Winged wind-scavenger, supported feather mechanisms and claw/token interaction readable. Neutral wings are folded; flight silhouette needs an animation/pose sheet later."
+    },
+    {
+      "index": 73,
+      "request_id": "cast_073_siren",
+      "source_path": "art/concepts/complete/cast_073_siren.png",
+      "source_sha256": "750a39558dcf5030cbf4d62721ee6ff29e65a4f64774a8a96aefaae21e06a7cb",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Wave-rhythm singer and lyre are distinct; audio-plus-visible-sequence tells must be authored in gameplay rather than inferred from this still."
+    },
+    {
+      "index": 74,
+      "request_id": "cast_074_card_sharp_automaton",
+      "source_path": "art/concepts/complete/cast_074_card_sharp_automaton.png",
+      "source_sha256": "1bec2a59272bf29fe7ffa7f4dbf7b50c81023024d8cb87901d3b9a278920f0cd",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Cardfan and tailored mechanical construction readable."
+    },
+    {
+      "index": 75,
+      "request_id": "cast_075_tumbleweed_golem",
+      "source_path": "art/concepts/complete/cast_075_tumbleweed_golem.png",
+      "source_sha256": "8ec272b09492e98a285609cbf1a4d0b928c45b44b0710ba410079ff3a9176b99",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Root feet and branch sphere distinguish a tumbleweed construct; no blended humanoid body."
+    },
+    {
+      "index": 76,
+      "request_id": "cast_076_loop_echo",
+      "source_path": "art/concepts/complete/cast_076_loop_echo.png",
+      "source_sha256": "cd992b5bba538211daec6b4d472210f49ff7d4d94280be702a0d227d06228952",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Echo circles and layered repeated silhouette readable; live loop cues are not certified by the still."
+    },
+    {
+      "index": 77,
+      "request_id": "cast_077_collector_captain",
+      "source_path": "art/concepts/complete/cast_077_collector_captain.png",
+      "source_sha256": "63f0122717e9a4f7cdd3eef3642ce8e4f7a44346922c2c1eefae69b0327a5b00",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Captain mass, jar harness, mask and load-bearing straps coherent."
+    },
+    {
+      "index": 78,
+      "request_id": "cast_078_hungry_ghost_swarm",
+      "source_path": "art/concepts/complete/cast_078_hungry_ghost_swarm.png",
+      "source_sha256": "6c8267e65f0ff995d3ecee582078d675da07be3b3149854e9211af103b15849b",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Five separate ghost heads/bodies read in the front proposal; side groups overlap, no blended single anatomy observed."
+    },
+    {
+      "index": 79,
+      "request_id": "cast_079_basilica_surveyor",
+      "source_path": "art/concepts/complete/cast_079_basilica_surveyor.png",
+      "source_sha256": "4b9a1146271dc8d2cef964492bdc423d561868d8038a086a3fc0d803b740de41",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Surveyor instrument, robe and institutional construction readable."
+    },
+    {
+      "index": 80,
+      "request_id": "cast_080_harpy_queen",
+      "source_path": "art/concepts/complete/cast_080_harpy_queen.png",
+      "source_sha256": "476e4f2870f02826f5bb798fa1de04dbc555bb6e9417190a892588f8b3a74d42",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Greater feather sweep, claw feet and royal silhouette distinguish the queen from common harpy."
+    },
+    {
+      "index": 81,
+      "request_id": "cast_081_headless_horseman",
+      "source_path": "art/concepts/complete/cast_081_headless_horseman.png",
+      "source_sha256": "421fecf3a4fbb6151076fab752829f42412116793e00e3d1ee2cd153e343cc18",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Headless rider and horse remain coherent with lantern/empty collar; no gore."
+    },
+    {
+      "index": 82,
+      "request_id": "cast_082_ghost_train",
+      "source_path": "art/concepts/complete/cast_082_ghost_train.png",
+      "source_sha256": "be2e78e939380b3d848493c532a236f785bb92cd2b241ad7734e11aaf5f17249",
+      "inspection": "Actual generated contact sheet plus individual2400px derivative",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Exactly three rail cars readable from both side proposals, with coupling and echo-window construction."
+    },
+    {
+      "index": 83,
+      "request_id": "cast_083_noise_storm",
+      "source_path": "art/concepts/complete/cast_083_noise_storm.png",
+      "source_sha256": "7999d8964c27c938bac5c1540e455ba7a75830497c0259a2124ef3a791291e44",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Unresolved fragmentation and abstract boundary stay contextual; no invented character/deity anatomy."
+    },
+    {
+      "index": 84,
+      "request_id": "cast_084_default",
+      "source_path": "art/concepts/complete/cast_084_default.png",
+      "source_sha256": "3e558018c2ee4dcd8e053a43638c9015d6ee2593a5de8de76c433149e44a4954",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Still grey volumes/voids and no wheel; appropriately contextual rather than a humanoid boss."
+    },
+    {
+      "index": 85,
+      "request_id": "env_meridian",
+      "source_path": "art/concepts/complete/env_meridian.png",
+      "source_sha256": "452df20be5beb814b1e0e7346a5d86a874a7833222157539d898f930e82ac57a",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Matched city plan/2.5D/front-stage concept; wet slate alley, service pipes and warm windows. Runtime floor/collision/plates still need separate validation."
+    },
+    {
+      "index": 86,
+      "request_id": "env_hyakki",
+      "source_path": "art/concepts/complete/env_hyakki.png",
+      "source_sha256": "2856264bc78df918d2d9e051f301274cc0c341b0c830b057c8d2a5405951ec9b",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Moonlit pier, lantern gate and water consistent across plan/2.5D/front; no major landmark contradiction observed."
+    },
+    {
+      "index": 87,
+      "request_id": "env_river",
+      "source_path": "art/concepts/complete/env_river.png",
+      "source_sha256": "d39e20f7dd0c102623bdcd8b6fb3f64621e81a8b760ac993de0676b0e6a46aae",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Harbour/warehouse court layout and jade-gold/lacquer materials coherent; stage foreground remains readable."
+    },
+    {
+      "index": 88,
+      "request_id": "env_sunyapura",
+      "source_path": "art/concepts/complete/env_sunyapura.png",
+      "source_sha256": "123706fe39be07dd994fa6b3bd17afd3eafdbc8d948debc96cf7834277d2d375",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Observatory instruments/stepwell geometry and wet sandstone correspond across three views; no sacred figures made into enemies."
+    },
+    {
+      "index": 89,
+      "request_id": "env_kroton",
+      "source_path": "art/concepts/complete/env_kroton.png",
+      "source_sha256": "d19b5f4405357661f78ad2d4edaef96dbae8334ba50ef9057141d483fc1f8646",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Sieve-city circular plaza, stone tiers, sea and noon light coherent; front foreground permits battle staging."
+    },
+    {
+      "index": 90,
+      "request_id": "env_crossroads",
+      "source_path": "art/concepts/complete/env_crossroads.png",
+      "source_sha256": "bdab2100d1e90f2bb7c210c6f4dbb7d715f36aa361c36db9bc2926e4103e4541",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Road junction, casino/motel frontage and sunset palette coherent across three views."
+    },
+    {
+      "index": 91,
+      "request_id": "env_basilica",
+      "source_path": "art/concepts/complete/env_basilica.png",
+      "source_sha256": "53cf5a6b631d9ad3384b760e4d22bad81452e0bc7afd32dce30d2ea8792619f1",
+      "inspection": "Actual generated contact sheet; all four character/three environment proposals visible",
+      "verdict": "Usable illustrated concept proposal, not final runtime acceptance",
+      "observations": "Closed monumental nave, service levels, brass/enamel and amber light coherent; no arbitrary outdoor sky or sunlit open roof."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "original": "docs/manga/volumes/volume_01_context_working.md",
+    "archive": "output/production/archive/contexts_pre_phase07/volume_01_context_working.md.txt",
+    "sha256": "a2c373405ad10f0084d592786d36e948964f4fd31e1fb4a24ad82694abcafcac"
+  },
+  {
+    "original": "docs/manga/volumes/volume_02_context_working.md",
+    "archive": "output/production/archive/contexts_pre_phase07/volume_02_context_working.md.txt",
+    "sha256": "a66cb5d90f68fbac1d5f3cca0da54a816f0835ab6a41f1928fa7a7d0f9b359c7"
+  },
+  {
+    "original": "docs/manga/volumes/volume_03_context_working.md",
+    "archive": "output/production/archive/contexts_pre_phase07/volume_03_context_working.md.txt",
+    "sha256": "fd29f17e90044e8339a1216a599c35c170f951ca7f7352d8847a367fc0d03d3f"
+  },
+  {
+    "original": "docs/manga/volumes/volume_04_context_working.md",
+    "archive": "output/production/archive/contexts_pre_phase07/volume_04_context_working.md.txt",
+    "sha256": "066d0da103996577d019295e9bd636a5793d2c9a80eade840b4aef132db1b8d5"
+  },
+  {
+    "original": "docs/manga/volumes/volume_05_context_working.md",
+    "archive": "output/production/archive/contexts_pre_phase07/volume_05_context_working.md.txt",
+    "sha256": "fc162cc01162de002f773bbea0df2eb74588686d4508d5697a27ce6b7745b975"
+  },
+  {
+    "original": "docs/manga/volumes/volume_06_context_working.md",
+    "archive": "output/production/archive/contexts_pre_phase07/volume_06_context_working.md.txt",
+    "sha256": "ab8499a904ff40db227d2399b8ab580e96a8ab5f8e7a60b39f6b4ec88653426a"
+  },
+  {
+    "original": "docs/manga/volumes/volume_07_context_working.md",
+    "archive": "output/production/archive/contexts_pre_phase07/volume_07_context_working.md.txt",
+    "sha256": "0ff893ee6f92b91678c744e5aa866dc88c1b7498b6f0fb9696298480f8c17d6e"
+  },
+  {
+    "original": "docs/manga/volumes/manifest.json",
+    "archive": "output/production/archive/contexts_pre_phase07/manifest.json.txt",
+    "sha256": "7528e3a40810003fb6cb0e7bcba3e49396e60a0d36542c642637b492002cb629"
+  },
+  {
+    "original": "tools/build_volume_contexts.py",
+    "archive": "output/production/archive/contexts_pre_phase07/build_volume_contexts.py.txt",
+    "sha256": "87b662443a01f522f6b53010b342f68e8e89e7214915c9fbbdd1c05338ffcfb6"
+  }
+]

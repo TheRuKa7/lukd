@@ -1,5 +1,7 @@
 # ZERO-SUM: OMEN - Production Plan
 
+> **8 November editorial revision:** [Resolved series bible](novel/RESOLVED_SERIES_BIBLE.md) supersedes conflicting older naming, origin wording, character backstories, political outcomes and story-length targets below. Gameplay formulas retain their existing domain authority. This source is being adapted to the49-chapter edition; its historical schedules and game scene numbering are not manga chapter numbering.
+
 Updated7November2026 (IST). AI-only development, existing/free tools first, jam first then expansion. [DECISIONS.md](DECISIONS.md) resolves design conflicts, [JAM_SLICE.md](JAM_SLICE.md) owns scope, and [PROJECT_STATUS.md](PROJECT_STATUS.md) owns evidence. Production targets below are not achievements.
 
 ## 1. Production goal

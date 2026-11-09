@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "edition": "seven_volume_49_chapter",
+  "volume": 1,
+  "status": "provisional_script",
+  "reading_direction": "ltr",
+  "story_art": "black_and_white",
+  "source_sha256": "24835f617f7bc274c428241bf8872d6606538c91675200445da56792d3d4114a",
+  "direction_sha256": "d23e0ec49fafe4a024822ba76d90fc3993148330d55439efae47e91cc383ea72",
+  "story_inputs_sha256": "2b5601d96d00cceea6e1273f1e8ba1091375d4151ce594ebc74ddc9fc4ac495f",
+  "authored_pages": 154,
+  "panels": 491,
+  "accepted_native_pages": 0,
+  "approved_for_generation": false,
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Three Bowls",
+      "prose_source": "docs/novel/volume_01/chapter_01_three_bowls.md",
+      "prose_sha256": "e5ac91589109371c8c3fabd584cf48feca926cfd129d71c7569ce66aac278d32",
+      "script_path": "docs/manga/scripts/volume_01/chapter_01_script.md",
+      "script_sha256": "e5b7849b60f07d2644161d579f72f7d8eff439bcf9bf08e2b81fee0d1344c886",
+      "authored_pages": 22,
+      "native_story_characters": 1071,
+      "native_story_sha256": "26ecb614376d305e07043a2592c23cc51e5728e68bfaa65d56530781d1da9bda",
+      "approved_for_generation": false
+    },
+    {
+      "chapter": 2,
+      "title": "The Jar Owes Six",
+      "prose_source": "docs/novel/volume_01/chapter_02_the_jar_owes_six.md",
+      "prose_sha256": "c19735809f68c5a2e9fc5ddb5f1d320b85e1284592625d0a149d7f5584f583f3",
+      "script_path": "docs/manga/scripts/volume_01/chapter_02_script.md",
+      "script_sha256": "3dcc0996b47e7f56ac3e3ab09290130239835982e3ff706f6c3a261d1e20c246",
+      "authored_pages": 22,
+      "native_story_characters": 1168,
+      "native_story_sha256": "c800e0f3b5c47b7d0601564978bd69c8ac672421d98959071b9103bdd7b3c436",
+      "approved_for_generation": false
+    },
+    {
+      "chapter": 3,
+      "title": "A Door That Opens",
+      "prose_source": "docs/novel/volume_01/chapter_03_a_door_that_opens.md",
+      "prose_sha256": "b5807f3bfe8ed028f3b05b11d597afbf13337cc7b892adc5e369463cca6233fa",
+      "script_path": "docs/manga/scripts/volume_01/chapter_03_script.md",
+      "script_sha256": "64c98d1f790a6186a8d4d5f85600c0039dbea72eabf5b541861d1c3627e555e5",
+      "authored_pages": 22,
+      "native_story_characters": 1137,
+      "native_story_sha256": "2ebd2f8f162f23827fb0c6ef725e3eb7cdb753638128b1f7277d397b8677cb39",
+      "approved_for_generation": false
+    },
+    {
+      "chapter": 4,
+      "title": "Seven Is Not a Name",
+      "prose_source": "docs/novel/volume_01/chapter_04_seven_is_not_a_name.md",
+      "prose_sha256": "285cd2c888aa1c1fe37cdd68d8daf94975e830d5ab2de2dd139d5332a372e947",
+      "script_path": "docs/manga/scripts/volume_01/chapter_04_script.md",
+      "script_sha256": "580a7dc2dcf38bbfbdcb7e051bf98c23c1ef5c0fa6cc05f7478575327146d47a",
+      "authored_pages": 22,
+      "native_story_characters": 1190,
+      "native_story_sha256": "0339ff8ed28ff511088688ca3e11172ed76b22978870712ebe26540ed3820ee3",
+      "approved_for_generation": false
+    },
+    {
+      "chapter": 5,
+      "title": "Seven Fen",
+      "prose_source": "docs/novel/volume_01/chapter_05_seven_fen.md",
+      "prose_sha256": "363a89aec18504b7cba5af2c858991d55e592563d3597e9a9ba79356b6b90b7f",
+      "script_path": "docs/manga/scripts/volume_01/chapter_05_script.md",
+      "script_sha256": "cfab6d20d7711d301265c7f6d8ee576b5de6c1c83919457b751a72d1fd40d8c2",
+      "authored_pages": 22,
+      "native_story_characters": 1121,
+      "native_story_sha256": "a70b4764834f32d9223f6785a80c20d9accb2405f53918e1e2553842f911f7c1",
+      "approved_for_generation": false
+    },
+    {
+      "chapter": 6,
+      "title": "A Window at Six",
+      "prose_source": "docs/novel/volume_01/chapter_06_a_window_at_six.md",
+      "prose_sha256": "5856b58bd34884d7d72f39625849119a60b415d0e69363c556dbb1898d60f19f",
+      "script_path": "docs/manga/scripts/volume_01/chapter_06_script.md",
+      "script_sha256": "26c199da3d78bbb849bc1682cf9a9bbe835f29ca55e30906f6dc6401e5107fab",
+      "authored_pages": 22,
+      "native_story_characters": 1345,
+      "native_story_sha256": "4c4daf11977356fb965ae654f210d42df3e1a73c11345f83e593068384e34741",
+      "approved_for_generation": false
+    },
+    {
+      "chapter": 7,
+      "title": "A Receipt for Mercy",
+      "prose_source": "docs/novel/volume_01/chapter_07_a_receipt_for_mercy.md",
+      "prose_sha256": "629464f0fd76b6488c0304c3e092d89d3a1327db662669eb3c2ea941a4232858",
+      "script_path": "docs/manga/scripts/volume_01/chapter_07_script.md",
+      "script_sha256": "b4cb87b2568dcf0f4adeb1a6906a23e70b817509de217d55d05beb5153e0559f",
+      "authored_pages": 22,
+      "native_story_characters": 1535,
+      "native_story_sha256": "c28aba33b36febb725fe07b69aa2bbce1896fac318bb2e88936f3e90f3fdcaa7",
+      "approved_for_generation": false
+    }
+  ]
+}

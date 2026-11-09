@@ -1,6 +1,10 @@
 # ZERO-SUM: OMEN — World Encyclopedia
 
+> **8 November editorial revision:** [Resolved series bible](novel/RESOLVED_SERIES_BIBLE.md) supersedes conflicting older naming, origin wording, character backstories, political outcomes and story-length targets below. Gameplay formulas retain their existing domain authority. This source is being adapted to the49-chapter edition; its historical schedules and game scene numbering are not manga chapter numbering.
+
 How the Tally actually works: the logic of luck and power, the kinds of power and how people use them, factions and their styles, jobs, the economy, stores, law and politics, and the full history. Canon sources: [`WORLD_BIBLE.md`](WORLD_BIBLE.md) (Hap is §2A), [`LORE_LEXICON.md`](LORE_LEXICON.md), [`STORY.md`](STORY.md). Where this file adds detail, it must never contradict those.
+
+**Updated 7 November 2026.** This is specified fictional world design, not an implemented economy or verified cultural account. [DECISIONS.md](DECISIONS.md) controls the four-number model, inherited institutions and current AI-only production policy. The detailed operating contracts, faction conflicts, jobs and scene-ready daily-life material are in [WORLD_OPERATIONS.md](WORLD_OPERATIONS.md). The corrected character catalog is [characters.json](../art/catalog/characters.json); legacy blockouts are explicitly labelled drafts.
 
 ---
 
@@ -8,23 +12,23 @@ How the Tally actually works: the logic of luck and power, the kinds of power an
 
 | Rule | What it means | Consequence people live with |
 |---|---|---|
-| **1. Luck is real and finite.** | Luck is the substance Hap dealt into the world: the chance that things go your way. Under the Basilica it is **conserved**: the total never changes. | For your luck to rise, someone else's must fall. Every gain is a transfer. |
-| **2. Every soul holds a share.** | The Basilica divides the caged god into shares every dawn. Your share is your **Omen**, 00–99, floating over your head. | Everyone can see everyone's luck. It decides loans, jobs, marriages and how dangerous a staircase is for you today. |
+| **1. Luck is real and finite.** | Luck is the capacity for events to favor a person, not strength, virtue or physical fuel. Under the Basilica it is **conserved** across people, reserves and the hidden Remainder account. | A gain debits an identified person or reserve. Combat score does not mint Civic luck. |
+| **2. Every soul holds a share.** | The Basilica registers a personal **Civic Omen**, 00–99, at each Dawn Tally. A separate **Audit Omen** normalizes staked Balance, and a **resonance digit** channels a practitioner's technique. | Visible allocations affect access to loans, jobs and safety under discriminatory policy; the number is not competence or worth. NIL's Civic identity remains NaN. |
 | **3. Luck acts through numbers.** | Luck resolves events by the **digits** they produce. A dropped coin, a dice roll, a door code, a clock time: each is a little lottery the world runs. Higher Omens tilt them. | Numbers are everywhere because numbers are where luck *happens*. |
 | **4. Resonance.** | At the Naming Rite (age seven) each soul states a lucky digit. That digit **resonates**: luck flows more easily through it. | People wear their digit, choose house numbers, wedding dates and jobs by it. |
 | **5. Stopping.** | Auditors can summon a **Fate Wheel** (a visible strip of the digits an event could produce) and **stop** it, choosing which digit the event takes. Skill and resonance decide how well. | This is the only "magic" in the world, and it's licensed (§3). |
-| **6. Settlement.** | At Omen 00 a soul is **Settled**: misfortune finds them within days and their remaining luck flows back to the pool. | Debt collectors drain Omens; a 01 is a death sentence with a short delay. |
-| **7. The Rounding.** | Every Dawn Tally rounds each share down to a whole number. The fractions vanish… into NIL. | Nobody noticed for three centuries. |
-| **8. Noise.** | Where the books don't balance, luck stops being dealt and starts **boiling**: Noise storms scramble numbers and spawn Noiselings. | The Deficit is growing; storms are more frequent every year. |
+| **6. Settlement.** | **Civic** 00 is dangerous settlement, reversible by a legitimate transfer before death. **Audit** Balance 0 merely exhausts a stake and ends combat. | A Collector must identify the claim and reserve. A Civic 01 signals vulnerability, not a predetermined death date or a combat HP value. |
+| **7. The Rounding.** | Every Dawn Tally rounds each share down to a whole number. The fractions vanish… into NIL. | The hidden account accumulated for three centuries; independent observers measured the Deficit before proving its cause. |
+| **8. Noise.** | Unstable allocations and damaged control channels cause **Noise**: scrambled events and Noiselings. The conserved total need not disappear for distribution to become dangerous. | The Deficit is growing; storms are more frequent every year. |
 
-**What luck is not:** it isn't strength, intelligence or virtue. A 99 can still be a fool; a 03 can still be a hero. Luck only decides how often the world's coin lands your way. The game's theme lives here: luck shared multiplies, luck hoarded rots.
+**What luck is not:** it isn't strength, intelligence or virtue. A 99 can still be a fool; a 03 can still be a hero. Luck only decides how often the world's coin lands your way. The game's theme lives here: collective agency can outperform isolation; the literal Positive-Sum change is earned only in the finale.
 
 ### How a Fate Wheel works (in-world explanation of the core mechanic)
-1. An **Audit** begins when two Omens contest the same outcome (a fight, a deal, a debt).
-2. Each Auditor's will draws a **wheel** of digits from the event. Faces are the possible outcomes; a **face's width is its odds**, shaped by the Auditor's Omen, resonance and tools (charms, enhanced faces).
+1. An **Audit** begins with a declared outcome, participants, contract scale and stake. Civic identity, resonance and Audit readout remain separate.
+2. Each Auditor's will draws a **wheel** of digits from the event. Faces are the possible outcomes; a **face's width determines exposure** under the specified motion; resonance and declared tools alter it. Human stopping probability is not inferred from width alone.
 3. The **tens** of every strike are fixed by training and gear (*tens are safe*); the **ones** are fate and must be stopped (*ones are fate*).
-4. Three stopped digits fall into the **reel**, the shared ledger of the moment. When the digits form a pattern, the world itself pays out: a Pair is a coincidence, a Jackpot a miracle, a Zero-Sum a perfectly balanced book that cancels the other side's next move.
-5. The loser's staked luck (**Balance**) drains toward the winner's side. Nobody dies in an Audit; they are **rounded down**, and may Settle later.
+4. Three stopped digits fall into the **reel**, the shared ledger of the moment. The resolved pattern applies the declared Audit contract: a Pair is a coincidence, a Jackpot a miracle, a Zero-Sum a perfectly balanced book that cancels the other side's next move.
+5. The loser's **Balance** is exhausted; no automatic Civic transfer or death occurs. A separate witnessed agreement may transfer an allocation. Named defeated actors remain alive for their aftermath; only appropriate constructs/Noise dissolve or fall inert.
 
 ## 2. Power types (the six schools of Auditing)
 
@@ -35,10 +39,10 @@ Every land learned to stop numbers its own way before the Basilica licensed one 
 | **Ledger Auditing** (licensed) | Meridian | Brass wrist-wheels that tap the Basilica's count | Steel numerals, Nixie amber light, ledger lines | Debt Jar (steal a reel digit), Seizure (freeze a face), Interest | Basilica Auditors, Collectors, Varro, Thale |
 | **Shrine Binding** | Hyakki | Belief: charms, shrines and old objects with souls | Paper talismans, foxfire, ukiyo-e waves | Omamori wards, illusion faces (foxfire), tsukumogami awakening | Shrine keepers, yokai, Hina, Tamamo |
 | **Brush Writing** | River Empire | The written word in the Book of Life and Death | Ink strokes, gold leaf, red seals | Ink (rewrite a digit), Interest (compounding), Oracle sticks | Judge Cui's clerks, Exchange brokers, Jinling, Bai Si |
-| **Karma Weaving** | Śūnyapura | Deeds recorded and returned; zero as the place that holds everything | Geometric light, rangoli patterns, brass instruments | Karma (bank and spend), Place Value, eclipses | Observatory astronomers, Shunya, Rahu & Ketu |
+| **Karma Weaving** | Śūnyapura | Deeds recorded and returned; zero as the place that holds everything | Geometric light, rangoli patterns, brass instruments | Karma (bank and spend), Place Value, eclipses | Observatory astronomers and Shunya; the hostile eclipse machines are Basilica equipment, not celestial practitioners |
 | **Sieve Geometry** | Kroton Nova | Number properties: primes, ratios, the thread's measure | Marble, mosaic glyphs, white light through holes | Prime pierce, Sieve (strike out faces), Factor | Synod knights, Prima, Archon Seventeen |
 | **Dealing** | Crossroads | Contracts: luck bought, borrowed and owed | Cards, neon, dust, the black book | Deals, Wagers, Loops | The Stranger, croupiers, Fibi, the House |
-| **The Remainder** (unique) | — | The god's lost change | NaN glitches, orange digits that refuse to round | Splice, Carry, Divide by Zero | NIL only |
+| **The Remainder** (unique exception) | — | The god's lost change | NaN glitches, orange digits that refuse to round | Splice, Carry, Divide by Zero | NIL only |
 
 **Licensing.** Since TR 760 the Basilica licenses only Ledger Auditing; every other school is "folk practice": tolerated in its home land, illegal in Meridian unless registered. Unlicensed Auditing in Meridian is a debt offence (your Omen is fined).
 
@@ -46,8 +50,8 @@ Every land learned to stop numbers its own way before the Basilica licensed one 
 
 | Use | Who | How |
 |---|---|---|
-| **Protection** | Everyone | Charms widen good faces a little for everyday lotteries (slips, accidents, exams). Weak everywhere, strongest in their home land. |
-| **Lending luck** | Luck banks, the Exchange | Lend Omen points at interest; repayments are drained at dawn by licensed Auditors. |
+| **Protection** | Everyone | Charms perform their declared bounded payload. No automatic home-region bonus exists; any Land Law or set interaction must be explicitly named. Craft and maintenance still matter. |
+| **Lending luck** | Luck banks, the Exchange | Lend an identified allocation from a reserve under disclosed terms; authorized dawn repayments debit a named account. Interest does not create luck. |
 | **Insurance** | Insurers (Meridian) | Pool many small Omens to cover one big misfortune; premiums are paid in luck-ins. |
 | **Law** | Courts | Disputes between Omens are settled by **Audit** under a magistrate (a formal, non-lethal duel). |
 | **Medicine** | Clinics | Doctors can't create luck, but **Omen clinics** move luck from donors to the critically ill ("luck transfusion"), for a price. |
@@ -62,7 +66,7 @@ Every land learned to stop numbers its own way before the Basilica licensed one 
 | **The Basilica** | Meridian | Order; the Final Audit | Ledger Auditing; the Dawn Tally | Ledgerism: brass, steel, white enamel, cathedral arches; steel numerals | White-and-brass vestments, gear-crested mitres (priests); olive field coats (Auditors) | Comptroller → Ledger-priests → Senior Auditors → Clerks → Novices | Wrist-wheels, chained ledgers, Seal stamps |
 | **The Collectors** | Meridian | Debts paid; bounties | Licensed debt Auditing | Rust armour, gunmetal, glass debt jars with orange glow | Rust trench armour, peaked caps, hound-skull masks for captains | Chief Collector → Captain (masked) → Collector → Hound handler | Debt jars, chains, Debt Hounds |
 | **Charm Bazaar guilds** | Meridian | Trade, survival, folk luck | Charm-smithing (every culture's) | Charmpunk: plastic gold, neon, stickers, every culture at once | Puffer jackets hung with charms; painted numbers; fake holo-halos | Guild masters → stallholders → runners | Charms, Nixie pendants, forged horseshoes |
-| **The Remainder Wards** (not a faction: a people) | Meridian Undercity | To get through the week | Mutual aid; luck-ins | Remainder: scrap brass, patched cloth, salvaged Nixie tubes, rope | Ponchos, patched coats, a cracked tube on a cord instead of a glowing Omen | Elders, block captains | Tools, salvage |
+| **The Remainder Wards** (not a faction: a people) | Meridian Undercity | To get through the week | Mutual aid; luck-ins | Remainder: scrap brass, patched cloth, salvaged Nixie tubes, rope | Ponchos, patched coats, a cracked tube on a cord as a damaged social display, beside the still-existing Civic aura | Elders, block captains | Tools, salvage |
 | **The Yokai Courts** | Hyakki | To keep existing | Shrine Binding; belief | Ukiyo-e flatness, vermilion, foxfire cyan-violet, paper and lacquer | Court robes, fox ears and tails for kitsune; tsukumogami are their objects | Tamamo → kitsune retainers → yokai of every kind | Foxfire, illusion faces |
 | **The Luck Exchange** | Bāfā Harbor | Profit | Brush Writing for contracts; interest | Gilded Fortune: jade, gold leaf, red lacquer, live price boards | Jade mandarin-collar suits, gold trim, pocket abacus, ear tickers | Chancellor → Directors → Brokers → Runners | Abacus fans, contracts, Debt Junks |
 | **The Ten Courts** (keepers) | Under the River Empire | The true count of the dead | Brush Writing on the Book | Ink-wash, rice paper, red seals; near silence | Black official robes; wardens in lamellar armour (Ox-Head, Horse-Face) | Judges → wardens → clerks → executioner (Bai Si) | The Brush, the Book, halberds |
@@ -71,7 +75,7 @@ Every land learned to stop numbers its own way before the Basilica licensed one 
 | **The House** | Lucky Strike | The night never ending | Dealing; the loop | Casino red, ivory, gold, desert neon | Red waistcoats, sleeve garters, green-felt trays | The House → floor bosses → dealers | Marked decks, Wagers, the loop |
 | **The Open Hand** (outlawed) | Everywhere, quietly | To free Hap; second chances for all | Prayer; coincidence | Road dust, plain cloth, one gold open-hand mark | Travelling cloaks, a carved open hand on a cord, a smooth die | No ranks: "hands" | Dice, shrines, safe houses |
 
-**Reading a crowd:** in Meridian you can tell someone's side of the Zero-Sum Law at a glance: steel numerals (power), gold-leaf numerals (wealth), gaudy holo-halos (street), a cracked tube on a cord (the Wards). That's the four eras of luck (Art Direction §8.2).
+**Reading a crowd:** in Meridian you can tell someone's side of the Zero-Sum Law at a glance: steel numerals (power), gold-leaf numerals (wealth), gaudy holo-halos (street), a cracked auxiliary tube beside a Civic aura (the Wards). That's the four eras of luck (Art Direction §8.2).
 
 ## 5. Jobs in the Tally
 
@@ -94,7 +98,7 @@ Every land learned to stop numbers its own way before the Basilica licensed one 
 | **Astronomer** | Śūnyapura | Measures the sky and the Deficit | any | Astrolabes (Shunya) |
 | **Stepwell diver** | Śūnyapura | Recovers what falls into the wells | any | Rope, lamp (Meera) |
 | **Synod knight** | Kroton Nova | Guards the Sieve | prime | Sieve shield |
-| **Croupier / dealer** | Crossroads | Runs legal Audits for money | any | Cards (Fibi) |
+| **Croupier / dealer** | Crossroads | Runs fictional in-world stake contracts; the game has no real-money wagers | any | Cards (Fibi) |
 | **Sheriff** | Crossroads | Keeps the peace in the loop | any | Badge (Vance) |
 | **Luck-in seller** | Remainder Wards | Sells single Omen points for food | 01–10 | Nothing left to sell |
 | **Rounding-sweeper** (urban legend) | Meridian | Said to sweep up dropped fractions at dawn; nobody has seen one | — | A broom made of digits |
@@ -103,7 +107,7 @@ Every land learned to stop numbers its own way before the Basilica licensed one 
 
 **Money.** Two currencies: **fen** (small coins of brass, everyday trade across the Tally) and **luck** itself (Omen points, traded at the Exchange and lent by banks). Prices are posted in fen; luck is for big things (loans, licences, medicine).
 **The day.** The **Dawn Tally** at sunrise recomputes every Omen (a beam sweeps each city; clocks strike 0). Debts are drained in the hour after. Markets open at the second bell.
-**Law.** Disputes go to an **Audit court**: a magistrate oversees a formal Audit between the parties' Auditors (or themselves). Crimes are punished in luck (Omen fines) or time. The death penalty doesn't exist; Settlement does the work, which is worse.
+**Law.** Disputes go to an **Audit court**: a magistrate oversees a formal Audit between the parties' Auditors (or themselves). Crimes are punished in luck (Omen fines) or time. Officials deny a formal death penalty while coercive Civic settlement can expose people to lethal harm. The narrative identifies this as institutional violence, not humane arithmetic.
 **Health.** Omen clinics transfuse luck; doctors still heal bodies. The poor sell luck-ins to pay for medicine and then need more medicine.
 **Transport.** Meridian: cliff lifts and stairs between the Undercity and the plateau (lift fares are by Omen: the lower your number, the higher the fare, "for safety"). Between lands: ferries (Hyakki), river junks (River Empire), rail (Crossroads), the monsoon road (Śūnyapura), the Aegean packet boats (Kroton Nova).
 **Media.** Omen boards in squares; the *Daily Tally* broadsheet (every Omen change of note); radio plays in the Crossroads; street criers in Bāfā.
@@ -133,14 +137,14 @@ Every land learned to stop numbers its own way before the Basilica licensed one 
 
 **The Comptrollership.** Meridian is governed by the **Comptroller**, chosen by the **Board of Actuaries** (twelve senior actuaries) for life. The Comptroller holds the Basilica (the Dawn Tally and the Seals) and therefore the world. Thale has held it since TR 985.
 **The Ledger Assembly.** A chamber of representatives weighted by Omen: each member's vote counts in proportion to their constituents' total luck. The rich decide; the Wards are "represented" by a single seat that hasn't been filled in forty years.
-**The Seal pacts.** The Basilica binds each land through its **Auditor** (a local power who made a deal with Thale, TR 999) and its **Seal**. In return each land gets "protection" (an exemption from the Deficit's worst storms) and a promise of permanence under Fixed Fate.
+**The Seal pacts.** The Basilica binds each land through its **Auditor** (a regional office renewed under Thale's TR 999 pacts; Varro inherited his office in TR 1001) and its **Seal**. In return each land gets "protection" (an exemption from the Deficit's worst storms) and a promise of permanence under Fixed Fate.
 
 | Land | Who rules | The Basilica's grip | What the pact promised |
 |---|---|---|---|
 | Meridian | The Comptroller; the Board; the Assembly | Total | Order |
 | Hyakki | The Yokai Courts with human village councils | Toll gates on shrine roads; Collectors in harbours | Yokai never fade (Tamamo) |
 | River Empire | The Chancellor of the Exchange (de facto); the Ten Courts below | The Exchange is half a Basilica office | Jin Chan's bank holds the frozen luck |
-| Śūnyapura | City council of scholars and guilds; the Observatory | Surveyors rewriting measurements | Rahu & Ketu made whole |
+| Śūnyapura | City council of scholars and guilds; the Observatory | Surveyors rewriting measurements | Protected allocations and control of the observatory; invented Basilica eclipse engines enforce the surveyors' monopoly |
 | Kroton Nova | The Pythagorean Synod (the Archon) | The Sieve "accelerated" | Purity |
 | Crossroads | The House (by money), the sheriff (by law) | Basilica finance | The night never ends |
 
@@ -151,7 +155,7 @@ Every land learned to stop numbers its own way before the Basilica licensed one 
 | When | Era | Event |
 |---|---|---|
 | Before reckoning | **The Noise** | Hap deals freely; nobody keeps accounts. Fortune moves like weather. |
-| Ancient | **The Many Ledgers** | Each people learns to talk to Hap: the Moirai's thread (Kroton Nova), Chitragupta's records (Śūnyapura), the Book of Life and Death (River Empire), Enma's ledger (Hyakki), the black book (Crossroads). |
+| Ancient | **The Many Ledgers** | Distinct traditions develop their own records and practices; revered local figures are not avatars of Hap: the Moirai's thread (Kroton Nova), Chitragupta's records (Śūnyapura), the Book of Life and Death (River Empire), Enma's ledger (Hyakki), the black book (Crossroads). |
 | ~1,000 years before TR | | Zero formalised in Śūnyapura; place value travels the trade roads. |
 | TR 0 | **Founding** | Meridian founded as a trading town at the crossroads of the Tally. |
 | TR 120 | | The first Charm Bazaar: every caravan's charms on one street. |
@@ -165,11 +169,21 @@ Every land learned to stop numbers its own way before the Basilica licensed one 
 | TR 960→ | **Remainder** | A storm destroys Lucan Thale's street (he is 12); the Undercity fills with low Omens. |
 | TR 962 | **The Deficit** | Śūnyapura's observatory first measures the leak. Noise storms begin. |
 | TR 985 | | Thale becomes Comptroller. |
+| TR 990 | | Tightened Rounding allocations stop Maeve's grandmother's charms; the family migrates. This is not the original TR 702 Rounding. |
 | TR 990→ | **Gilded Fortune** | The 99s flaunt gold leaf, jade and gardens. |
-| TR 999 | | Thale proves the Rounding, finds Hap in the engine, drafts the Final Audit, signs the Seal pacts. |
-| TR 1001 | | Varro Kade becomes a Collector. The Ghost Train's loop count reaches 1,596. |
+| TR 999 | | Thale proves the Rounding, finds Hap in the old engine, drafts the Final Audit and renews Seal pacts; the House's local protection contract is commissioned. |
+| TR 1001 | | Varro Kade becomes a Collector and inherits the Undercity office/Seal. Local loop counters are not calendar-year conversions. |
 | **TR 1002** | **Now** | NIL wakes in Rain Alley 9. REMAINDER DETECTED. The game begins. |
 | TR 1002 (finale) | **The Open Hand** | Depends on the ending: Balance, Overflow, Positive-Sum or Divide by Zero. |
 
 ## 10. Little laws of daily life (for set dressing and dialogue)
 Lifts skip 4, 9 and 13 · weddings crowd onto the 8th · gamblers kiss sevens · beggars sell luck-ins · children compare Omens in the schoolyard · shopkeepers hang a lemon and seven chillies, a horseshoe, an evil-eye bead or a beckoning cat · it is rude to read someone's Omen out loud · "May your Omen never round" is goodbye · nobody counts money at the table in Lucky Strike · in Hyakki, gifts never come in fours.
+
+
+## 11. Production contracts and source hierarchy
+
+WORLD_OPERATIONS specifies costs, limits, consent, source accounts, working infrastructure and faction disagreements. SYSTEMS owns numerical gameplay payloads; ECONOMY_PROGRESSION owns future combat-market tuning. The encyclopedia's job, shop and political details are fictional setting specifications, not a running civic simulator. A generated aura/digit is never a gameplay source of truth.
+
+The current night is iteration 1,597 after 1,596 completed local repeats; TR 999 commissioning and TR 1002 present are calendar dates, not a conversion of subjective nights into years. NIL's anchored arriving-party investigation is contained by the local contract. The true ending keeps resonance separate from positive Civic identity; resonance 0 is never healthy Civic 00.
+
+All model sheets and environments are first-draft layout/silhouette studies unless explicitly marked otherwise in the asset catalog. AI authors and processes the work; no manual redraw, human overpaint, native consultation or production-quality rig is implied. The book and manga share stable asset/scene IDs, handedness and chronological outfit records.

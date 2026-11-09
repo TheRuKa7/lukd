@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "evidence_scope": "Six authored stop traces and pattern priority only; not simulated Balance, interest, damage, actor levels or runtime implementation. Jinling legal faces are a documented future candidate.",
+  "manuscript_sha256": "d61259f83b2199548b5ebd7726f9adf7cf193812d04cd13005aa96bcc41f633f",
+  "source_chapter_sha256": [
+    "7bbc000e507e34ea13aaa29e11d49609ef0d9d69824da30ce3f966b05f99d40a",
+    "177684e0f8e87dbc0ac7daf92c842af63a7dfebd2ecf360e7167796fbb915ecb",
+    "d7f8a6ae0c279e4d90a20f04a2198e46566f0ab1f0beab6c1efff7ba80989ba9",
+    "e45fbe3136be1fa8178f10ec5584a02afc5db1e3cb915b0aa3047eb9f90b62a0",
+    "1f00247cadcb16dfd7af84e705801878098cd0e4e934fdfd7b7f449e5b74b90b",
+    "821df8a05534b86fcd6c8d0e940d59e27ec5eb619d8904a020fa001e0ee3f09d",
+    "e7cc97a126da7513f6e0b476f80ba68a7bc0743310efde91475121d8b8f111df"
+  ],
+  "results": [
+    {
+      "chapter": 19,
+      "actual": [
+        3,
+        3,
+        4
+      ],
+      "scored": [
+        3,
+        3,
+        3
+      ],
+      "rewrite_used": true,
+      "pattern": "JACKPOT"
+    },
+    {
+      "chapter": 20,
+      "actual": [
+        3,
+        3,
+        5
+      ],
+      "scored": [
+        3,
+        3,
+        5
+      ],
+      "rewrite_used": false,
+      "pattern": "PAIR"
+    },
+    {
+      "chapter": 20,
+      "actual": [
+        7,
+        8,
+        6
+      ],
+      "scored": [
+        7,
+        8,
+        6
+      ],
+      "rewrite_used": false,
+      "pattern": "BUST"
+    },
+    {
+      "chapter": 20,
+      "actual": [
+        5,
+        5,
+        4
+      ],
+      "scored": [
+        5,
+        5,
+        4
+      ],
+      "rewrite_used": false,
+      "pattern": "PAIR"
+    },
+    {
+      "chapter": 20,
+      "actual": [
+        3,
+        2,
+        5
+      ],
+      "scored": [
+        3,
+        2,
+        5
+      ],
+      "rewrite_used": false,
+      "pattern": "ZERO_SUM"
+    },
+    {
+      "chapter": 20,
+      "actual": [
+        7,
+        7,
+        3
+      ],
+      "scored": [
+        7,
+        7,
+        7
+      ],
+      "rewrite_used": true,
+      "pattern": "OVERWRITE"
+    }
+  ]
+}

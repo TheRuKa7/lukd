@@ -1,0 +1,22 @@
+{
+  "index": 12,
+  "params": {
+    "model": "gpt_image_2_6",
+    "quality": "high",
+    "resolution": "4k",
+    "aspect_ratio": "2:3",
+    "count": 1,
+    "output_format": "png",
+    "prompt": "Precision continuity edit of FIRST reference. Retain its original detailed ink/cel art, complete full-page composition and all unaffected material. Preserve this entire existing comic page's four-panel layout, exact gutters, characters, faces, costumes, weather, shop, trays and camera perspectives. Correct the three displayed charm objects consistently wherever they appear: LEFT tray contains one worn brass HORSESHOE, centre tray contains one small MATTE BLACK CAT TOKEN (black material, cat shape; not a gold beckoning figure), RIGHT tray contains one narrow vertical BLANK PAPER WARD suspended from a cord and small brass clip, not a sealed envelope. In the final bottom close-up NIL selects the LEFT HORSESHOE with their anatomical RIGHT decoder-bearing human hand, clearly touching/lifting the horseshoe rather than hovering over the middle cat. Maintain actual tray arrangement and readable hand contact. No invented writing on paper, no digits, captions, balloons, logos or labels.",
+    "medias": [
+      {
+        "role": "image",
+        "value": "1bbe2cc6-f090-4df6-a8b1-7600941e54ca"
+      },
+      {
+        "role": "image",
+        "value": "a2d34f71-172a-4d0e-8fc6-f88f4214fb24"
+      }
+    ]
+  }
+}

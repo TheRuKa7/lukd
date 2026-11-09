@@ -1,0 +1,41 @@
+{
+  "scope": "Local editorial identities and candidate existing references; not native provider IDs or approved artwork",
+  "cast": [
+    {"id":"chr_nil","name":"Nil","aliases":["NIL","the unregistered wanderer"],"candidate_reference":"cast_001_nil","note":"One identity. Name chosen in4. Base coat throughout; injury is a tracked state, not a new character."},
+    {"id":"chr_vesper","name":"Vesper Sette","aliases":["Vesper"],"candidate_reference":"cast_005_vesper","note":"First appearance5. Lip scar distinct from fresh cheek cut6."},
+    {"id":"chr_maeve","name":"Maeve Triskel","aliases":["Maeve","forge worker"],"candidate_reference":"cast_006_maeve","note":"First appearance6. Three braids. Witness, not an active Varro striker."},
+    {"id":"chr_varro","name":"Varro","aliases":["masked Collector"],"candidate_reference":"cast_016_varro","note":"Full boss mask, never ally/unmasked board in this volume."},
+    {"id":"npc_ama","name":"Ama","aliases":[],"candidate_reference":"cast_030_ama","note":"Civic01 before rescue,07 after; receipt and trade work remain hers."},
+    {"id":"npc_tobi","name":"Tobi","aliases":[],"candidate_reference":"cast_031_tobi","note":"Nine. Yellow-hood silhouette in B&W, three bottle-cap charms."},
+    {"id":"npc_nought","name":"Nought","aliases":["Brother Nought"],"candidate_reference":"cast_032_brother_nought","note":"Human elder. No early cage knowledge; no generic shrinekeeper alias shared with later Ofuku."},
+    {"id":"npc_gus","name":"Gus","aliases":["Gus Mendoza"],"candidate_reference":"cast_034_gus","note":"Bench, drawers, receiving copies and limited gifts."},
+    {"id":"npc_livia","name":"Livia Kade","aliases":["Livia"],"candidate_reference":"cast_033_livia","note":"Window6; no forced rescue or accomplished treatment."},
+    {"id":"npc_ivo","name":"Ivo Marr","aliases":["Ivo"],"candidate_reference":"cast_035_ivo_marr","note":"Observing viewpoint of upper-office cutaway4."},
+    {"id":"chr_thale","name":"Comptroller Thale","aliases":["Thale"],"candidate_reference":"cast_022_thale","note":"Civic50. Spoken recognition only; no interior origin reveal."},
+    {"id":"npc_collector_opening","name":"Collector","aliases":["peaked-cap Collector"],"candidate_reference":"cast_048_f_collector","note":"Generic opening officer, not Varro or Collector Captain. Candidate needs actual costume review."},
+    {"id":"npc_baker","name":"Baker","aliases":["the baker"],"candidate_reference":null,"note":"Recurring individual, not auto-duplicated as Vendor and Breakfast Vendor; reference coverage remains missing."},
+    {"id":"extra_registry_clerk","name":"Registry clerk","aliases":[],"candidate_reference":null,"note":"Office window1. Do not merge with the separate tally clerk."},
+    {"id":"extra_tally_clerk","name":"Tally clerk","aliases":[],"candidate_reference":null,"note":"Street umbrella scene1, Civic63."},
+    {"id":"extra_umbrella_porter","name":"Umbrella porter","aliases":[],"candidate_reference":null,"note":"Civic04, repairs umbrella1; not automatically the cart porter6."},
+    {"id":"extra_cart_porter","name":"Cart porter","aliases":[],"candidate_reference":null,"note":"Forge lane6. No unsupported inherited Civic number."},
+    {"id":"extra_cart_resident","name":"Laundry cart resident","aliases":[],"candidate_reference":null,"note":"Courtyard helper3; not Ama, Baker or a new party member."}
+  ],
+  "machine_instances": [
+    {"id":"hound_laundry","base_reference":"cast_057_debt_hound","chapters":[2,3,5],"note":"Four stamp feet; caught sheet fragment identifies the returning unit5."},
+    {"id":"hound_forge","base_reference":"cast_057_debt_hound","chapters":[6],"note":"Different unit, no laundry. Local closure does not destroy its mechanical body."}
+  ],
+  "environment_candidate":"env_meridian",
+  "props": [
+    {"id":"decoder_right","custody":"Nil","state":"Fused RIGHT wrist; source connection needed. Cannot open unrelated courtyard gate."},
+    {"id":"palm_dressing","custody":"Nil","state":"Right glove torn2, removed3; palm dressed3, renewed6, painful through7."},
+    {"id":"bun","custody":"Baker to Tobi to Nil LEFT hand to coat pocket to shared shrine meal","state":"Crushed but edible; not an unexplained second bun."},
+    {"id":"ama_receipt","custody":"Ama to Collector cover to Ama","state":"Corrected authorization; read as a personal source, not generic magic paper."},
+    {"id":"notebook","custody":"Nought to Nil4","state":"Unused, no other visitors' data. Name first, ferry/window notes later."},
+    {"id":"horseshoe","custody":"Gus to Nil6","state":"One chosen charm only. Wider chosen face where present; no new face."},
+    {"id":"friend_washer","custody":"Maeve to Nil7","state":"Spare workshop washer in wire; not the original pocket washer, not a charged charm."},
+    {"id":"revolver","custody":"Vesper RIGHT hand","state":"Seven chambers; gate and ladder shots only; five live rounds after cleaning."},
+    {"id":"seal_1","custody":"Office receiver to Nil via Maeve's comparison","state":"Separate wrapped credential. Not Upper Gate ownership or a final Civic number."},
+    {"id":"closed_review_receipt","custody":"Nil original; Gus and Maeve copies","state":"Original oilcloth, Hyakki toll reference and Livia contact. Does not cancel every future warrant."},
+    {"id":"varro_token","custody":"Varro","state":"Livia exemption note under coat, not a new Seal or jar unit."}
+  ]
+}

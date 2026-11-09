@@ -1,0 +1,22 @@
+{
+  "index": 15,
+  "params": {
+    "model": "gpt_image_2_6",
+    "quality": "high",
+    "resolution": "4k",
+    "aspect_ratio": "2:3",
+    "count": 1,
+    "output_format": "png",
+    "medias": [
+      {
+        "role": "image",
+        "value": "9e8c6f1a-b48c-45a6-beb4-ba71b1292acc"
+      },
+      {
+        "role": "image",
+        "value": "a2d34f71-172a-4d0e-8fc6-f88f4214fb24"
+      }
+    ],
+    "prompt": "Precise local anatomy repair in FIRST reference full comic page. Keep the ENTIRE page, ALL four panels and their exact gutters, camera compositions, costumes, masks, rain, machinery, colour, ink finish and all unaffected pixels as close as possible. Fix ONLY the end of NIL's extended LEFT forearm in the THIRD panel, the wide middle action strip: currently this forearm ends in an impossible stump before the enemy hook. Complete it with a clearly visible normal LEFT HUMAN HAND, wearing a dark fingerless leather glove, with a proper wrist, palm, thumb and four fingers. Show that left open hand reaching to press against the SIDE OF THE SEPARATE ENEMY POLEARM SHAFT near the brass post, deflecting it; the metal hook remains a separate object in front of the post, with a small clear gap between hook blade and NIL's hand. Anatomically plausible elbow-to-wrist-to-palm continuity; do not hide or crop the hand, do not dissolve it, do not fuse metal into the arm. NIL's RIGHT decoder wrist and right human hand already sit near their chest/waist and MUST stay there unchanged, visible on the near arm in this third panel. The extended left hand has NO decoder. Keep Varro's full ivory hound skull MASK as it now is. No new lettering, signs, numerals, captions, balloons or logos."
+  }
+}

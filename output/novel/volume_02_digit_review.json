@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "evidence_scope": "Eight authored digit traces checked against legal faces and the existing reference pattern evaluator. Carry arithmetic is an authored novel rule, not a claim of runtime implementation or damage balance.",
+  "manuscript_sha256": "e4d305f613d137c0866585382246aca10e9a25ddd3748756fe73aa844a349279",
+  "results": [
+    {
+      "chapter": 11,
+      "actual": [
+        5,
+        3,
+        6
+      ],
+      "scored": [
+        5,
+        4,
+        6
+      ],
+      "pattern": "BUST"
+    },
+    {
+      "chapter": 11,
+      "actual": [
+        5,
+        5,
+        7
+      ],
+      "scored": [
+        5,
+        6,
+        7
+      ],
+      "pattern": "CASCADE"
+    },
+    {
+      "chapter": 11,
+      "actual": [
+        7,
+        7,
+        3
+      ],
+      "scored": [
+        7,
+        8,
+        3
+      ],
+      "pattern": "BUST"
+    },
+    {
+      "chapter": 11,
+      "actual": [
+        6,
+        5,
+        6
+      ],
+      "scored": [
+        6,
+        6,
+        6
+      ],
+      "pattern": "JACKPOT"
+    },
+    {
+      "chapter": 13,
+      "actual": [
+        8,
+        3,
+        0
+      ],
+      "scored": [
+        8,
+        4,
+        0
+      ],
+      "pattern": "BUST"
+    },
+    {
+      "chapter": 13,
+      "actual": [
+        5,
+        6,
+        7
+      ],
+      "scored": [
+        5,
+        7,
+        7
+      ],
+      "pattern": "PAIR"
+    },
+    {
+      "chapter": 13,
+      "actual": [
+        7,
+        7,
+        9
+      ],
+      "scored": [
+        7,
+        8,
+        9
+      ],
+      "pattern": "CASCADE"
+    },
+    {
+      "chapter": 13,
+      "actual": [
+        9,
+        8,
+        9
+      ],
+      "scored": [
+        9,
+        9,
+        9
+      ],
+      "pattern": "JACKPOT"
+    }
+  ],
+  "compilation_update": "Adopted story title added; Volume2 prose unchanged. Eight prior traces rechecked.",
+  "source_chapter_sha256": [
+    "ed9a64c19218d4049b9b0d590efe6e7b47a4621dde061ece0de2d56f4c60a90c",
+    "1c06f1b51c2072d1143f7e4d2cce075301a6928c7888506ceab956f32a5c193c",
+    "cf4767cf01e37100127d5a60ad4a182a2703c4457e62aac5c9ef77349259a2eb",
+    "f31789531b79ff49cea0d760923454fcbe86bb1015bfc527665cc5b5616700a5",
+    "ebb3d6afbb74f468f51b813355fee49f56f6b11c9b4e2640048f91ed8ffaa7d9",
+    "aec41fcaf1604d9ada8979e197a209b8258b6caaf58ba802a061e327eb22e865",
+    "462809f99a7985eb6664fabeab8f0a47484d2b744e291ba2a6ed916d84f75f66"
+  ]
+}

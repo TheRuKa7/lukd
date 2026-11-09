@@ -138,7 +138,7 @@ def location_fields():
 
 def land_info(prefix):
     for head, fields in location_fields().items():
-        if head.startswith(prefix) or (prefix == "The Basilica" and head.startswith("Meridian")):
+        if head.startswith(prefix):
             return fields
     return {}
 
@@ -308,6 +308,22 @@ def write_manifest(build_dir, kind):
     Path(build_dir).mkdir(parents=True, exist_ok=True)
     Path(build_dir, "source-manifest.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return snapshot
+
+
+def open_font_css(build_dir):
+    """Portable OFL typography: no dependency on locally licensed Windows fonts."""
+    fonts = [('OMENBody', 'BarlowSemiCondensed-Regular.ttf', 400),
+             ('OMENBody', 'BarlowSemiCondensed-Bold.ttf', 700),
+             ('OMENDisplay', 'BebasNeue-Regular.ttf', 400)]
+    css = []
+    for family, filename, weight in fonts:
+        path = Path(ROOT, 'art', 'fonts', filename)
+        if not path.is_file():
+            raise FileNotFoundError('Vendored OFL font missing: ' + str(path))
+        rel = Path(os.path.relpath(path, build_dir)).as_posix()
+        css.append(f'@font-face{{font-family:"{family}";src:url("{rel}") format("truetype");font-weight:{weight};font-style:normal;}}')
+    css.append(':root{--display:"OMENDisplay",sans-serif;--body:"OMENBody","Noto Sans JP","Noto Sans SC","Noto Sans Devanagari",sans-serif;}')
+    return '\n'.join(css)
 
 
 refresh_character_facts()

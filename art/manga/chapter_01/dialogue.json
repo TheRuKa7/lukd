@@ -1,0 +1,3017 @@
+{
+  "schema_version": 1,
+  "chapter_id": "zso_ch01",
+  "language": "en",
+  "page_size_px": [
+    1800,
+    2700
+  ],
+  "coordinates": "normalized page [x,y,width,height], top-left origin",
+  "print_route": {
+    "resonance": 7,
+    "charm": "charm_horseshoe",
+    "reason": "Authored fixed example, never a best-digit claim or enforced player result"
+  },
+  "tokens": {
+    "resonance": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9,
+      "print_default": 7
+    }
+  },
+  "max_characters_per_balloon": 90,
+  "entries": [
+    {
+      "id": "ch01_001_01",
+      "page_id": "p001",
+      "panel_id": "p001_01",
+      "speaker": "TITLE",
+      "text": "ZERO-SUM: OMEN",
+      "kind": "title",
+      "shape": "caption",
+      "box": [
+        0.055,
+        0.025,
+        0.89,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "display",
+      "max_lines": 2,
+      "source_beat": "cover",
+      "status": "authored English; lettering/localization QA pending"
+    },
+    {
+      "id": "ch01_001_02",
+      "page_id": "p001",
+      "panel_id": "p001_01",
+      "speaker": "TITLE",
+      "text": "THE REMAINDER",
+      "kind": "subtitle",
+      "shape": "caption",
+      "box": [
+        0.13,
+        0.09,
+        0.74,
+        0.04
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "display",
+      "max_lines": 2,
+      "source_beat": "cover",
+      "status": "authored English; lettering/localization QA pending"
+    },
+    {
+      "id": "ch01_001_03",
+      "page_id": "p001",
+      "panel_id": "p001_01",
+      "speaker": "CAPTION",
+      "text": "Chapter 01 - Rain Alley Nine",
+      "kind": "imprint",
+      "shape": "caption",
+      "box": [
+        0.1,
+        0.944,
+        0.8,
+        0.035
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 3,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "cover",
+      "status": "authored English; lettering/localization QA pending"
+    },
+    {
+      "id": "ch01_002_01",
+      "page_id": "p002",
+      "panel_id": "p002_01",
+      "speaker": "CAPTION",
+      "text": "Meridian. Every soul wears a number.",
+      "kind": "caption",
+      "shape": "caption",
+      "box": [
+        0.05497,
+        0.0369,
+        0.39366,
+        0.05675
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ]
+    },
+    {
+      "id": "ch01_002_02",
+      "page_id": "p002",
+      "panel_id": "p002_02",
+      "speaker": "TOBI",
+      "text": "Mum?",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.045,
+        0.387,
+        0.13,
+        0.047
+      ],
+      "tail_anchor": [
+        0.125,
+        0.509
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.517
+      ]
+    },
+    {
+      "id": "ch01_002_04",
+      "page_id": "p002",
+      "panel_id": "p002_02",
+      "speaker": "SYSTEM",
+      "text": "01",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.188,
+        0.414,
+        0.08,
+        0.037
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_002_03",
+      "page_id": "p002",
+      "panel_id": "p002_04",
+      "speaker": "COLLECTOR",
+      "text": "Ama Okoro. Your account's closed.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.54,
+        0.681,
+        0.39,
+        0.065
+      ],
+      "tail_anchor": [
+        0.395,
+        0.717
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.695,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.777
+      ]
+    },
+    {
+      "id": "ch01_003_01",
+      "page_id": "p003",
+      "panel_id": "p003_01",
+      "speaker": "COLLECTOR",
+      "text": "Move.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.255,
+        0.06,
+        0.2,
+        0.057
+      ],
+      "tail_anchor": [
+        0.16,
+        0.15
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_003_04",
+      "page_id": "p003",
+      "panel_id": "p003_01",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.485,
+        0.065,
+        0.12,
+        0.035
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_003_02",
+      "page_id": "p003",
+      "panel_id": "p003_03",
+      "speaker": "NIL",
+      "text": "There's still six in the jar.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.545,
+        0.545,
+        0.39,
+        0.055
+      ],
+      "tail_anchor": [
+        0.65,
+        0.529
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.649,
+        0.387
+      ]
+    },
+    {
+      "id": "ch01_003_03",
+      "page_id": "p003",
+      "panel_id": "p003_04",
+      "speaker": "COLLECTOR",
+      "text": "Those aren't yours.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.06,
+        0.875,
+        0.36,
+        0.065
+      ],
+      "tail_anchor": [
+        0.17,
+        0.72
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.605,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.687
+      ]
+    },
+    {
+      "id": "ch01_004_01",
+      "page_id": "p004",
+      "panel_id": "p004_03",
+      "speaker": "SYSTEM",
+      "text": "AMA CIVIC 01 -> 07 / JAR RESERVE -6",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.56,
+        0.337,
+        0.36,
+        0.07
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.275,
+        0.335,
+        0.45,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_004_02",
+      "page_id": "p004",
+      "panel_id": "p004_04",
+      "speaker": "COLLECTOR",
+      "text": "That one has no number.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.903,
+        0.39,
+        0.06
+      ],
+      "tail_anchor": [
+        0.17,
+        0.71
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.665,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.747
+      ]
+    },
+    {
+      "id": "ch01_004_03",
+      "page_id": "p004",
+      "panel_id": "p004_04",
+      "speaker": "NIL",
+      "text": "Go. Both of you.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.55,
+        0.903,
+        0.39,
+        0.06
+      ],
+      "tail_anchor": [
+        0.697,
+        0.752
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-02",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.665,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.812
+      ]
+    },
+    {
+      "id": "ch01_004_04",
+      "page_id": "p004",
+      "panel_id": "p004_04",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.635,
+        0.641,
+        0.12,
+        0.034
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_005_01",
+      "page_id": "p005",
+      "panel_id": "p005_03",
+      "speaker": "BROTHER NOUGHT",
+      "text": "In here. Quick.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.052,
+        0.515,
+        0.235,
+        0.057
+      ],
+      "tail_anchor": [
+        0.365,
+        0.568
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.545,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.627
+      ]
+    },
+    {
+      "id": "ch01_005_02",
+      "page_id": "p005",
+      "panel_id": "p005_05",
+      "speaker": "NIL",
+      "text": "Your nail has my coat.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.79,
+        0.265,
+        0.063
+      ],
+      "tail_anchor": [
+        0.407,
+        0.785
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.765,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.847
+      ]
+    },
+    {
+      "id": "ch01_005_03",
+      "page_id": "p005",
+      "panel_id": "p005_05",
+      "speaker": "BROTHER NOUGHT",
+      "text": "It rounds everything up.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.58,
+        0.91,
+        0.36,
+        0.057
+      ],
+      "tail_anchor": [
+        0.78,
+        0.8
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.765,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.912
+      ]
+    },
+    {
+      "id": "ch01_006_01",
+      "page_id": "p006",
+      "panel_id": "p006_01",
+      "speaker": "BROTHER NOUGHT",
+      "text": "Every soul needs a number, child.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.06,
+        0.035,
+        0.38,
+        0.065
+      ],
+      "tail_anchor": [
+        0.29,
+        0.183
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_006_05",
+      "page_id": "p006",
+      "panel_id": "p006_01",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.68,
+        0.105,
+        0.11,
+        0.034
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_006_02",
+      "page_id": "p006",
+      "panel_id": "p006_03",
+      "speaker": "NIL",
+      "text": "I don't have one.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.525,
+        0.445,
+        0.18,
+        0.07
+      ],
+      "tail_anchor": [
+        0.75,
+        0.528
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 3,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.649,
+        0.517
+      ]
+    },
+    {
+      "id": "ch01_006_03",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "BROTHER NOUGHT",
+      "text": "Then pick. The machine is listening.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.735,
+        0.4,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.695,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.777
+      ],
+      "off_panel_speaker": true
+    },
+    {
+      "id": "ch01_006_04",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "SYSTEM",
+      "text": "Choose your resonance: a personal number, not health.",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.1,
+        0.822,
+        0.35,
+        0.07
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 3,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.695,
+        0.41,
+        0.06
+      ]
+    },
+    {
+      "id": "ch01_006_06",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "SYSTEM",
+      "text": "0",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.095,
+        0.92,
+        0.05,
+        0.038
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_006_07",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "SYSTEM",
+      "text": "1",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.188,
+        0.92,
+        0.05,
+        0.038
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_006_08",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "SYSTEM",
+      "text": "2",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.276,
+        0.92,
+        0.05,
+        0.038
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_006_09",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "SYSTEM",
+      "text": "3",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.358,
+        0.92,
+        0.05,
+        0.038
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_006_10",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "SYSTEM",
+      "text": "4",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.446,
+        0.92,
+        0.05,
+        0.038
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_006_11",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "SYSTEM",
+      "text": "5",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.535,
+        0.92,
+        0.05,
+        0.038
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_006_12",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "SYSTEM",
+      "text": "6",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.618,
+        0.92,
+        0.05,
+        0.038
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_006_13",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.707,
+        0.92,
+        0.05,
+        0.038
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_006_14",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "SYSTEM",
+      "text": "8",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.796,
+        0.92,
+        0.05,
+        0.038
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_006_15",
+      "page_id": "p006",
+      "panel_id": "p006_04",
+      "speaker": "SYSTEM",
+      "text": "9",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.886,
+        0.92,
+        0.05,
+        0.038
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_007_01",
+      "page_id": "p007",
+      "panel_id": "p007_01",
+      "speaker": "SYSTEM",
+      "text": "RESONANCE {{resonance}}",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.275,
+        0.08,
+        0.16,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.275,
+        0.065,
+        0.45,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_007_02",
+      "page_id": "p007",
+      "panel_id": "p007_03",
+      "speaker": "SYSTEM",
+      "text": "REMAINDER DETECTED",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.53,
+        0.28,
+        0.39,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.305,
+        0.39,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_007_03",
+      "page_id": "p007",
+      "panel_id": "p007_04",
+      "speaker": "BROTHER NOUGHT",
+      "text": "Hap's watching. Run.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.6,
+        0.905,
+        0.34,
+        0.06
+      ],
+      "tail_anchor": [
+        0.774,
+        0.656
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-03",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.605,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.687
+      ]
+    },
+    {
+      "id": "ch01_007_04",
+      "page_id": "p007",
+      "panel_id": "p007_04",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.32,
+        0.555,
+        0.11,
+        0.034
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_008_01",
+      "page_id": "p008",
+      "panel_id": "p008_01",
+      "speaker": "SYSTEM",
+      "text": "Three stops make a pattern.",
+      "kind": "caption",
+      "shape": "caption",
+      "box": [
+        0.06,
+        0.315,
+        0.39,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-04",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ]
+    },
+    {
+      "id": "ch01_008_03",
+      "page_id": "p008",
+      "panel_id": "p008_01",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.302,
+        0.058,
+        0.11,
+        0.034
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_008_04",
+      "page_id": "p008",
+      "panel_id": "p008_01",
+      "speaker": "SYSTEM",
+      "text": "SOLO AUDIT",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.07,
+        0.077,
+        0.205,
+        0.046
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_008_02",
+      "page_id": "p008",
+      "panel_id": "p008_03",
+      "speaker": "NIL",
+      "text": "One. Then the next.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.835,
+        0.535,
+        0.12,
+        0.095
+      ],
+      "tail_anchor": [
+        0.64,
+        0.5
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 4,
+      "source_beat": "JAM-04",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.649,
+        0.517
+      ]
+    },
+    {
+      "id": "ch01_009_01",
+      "page_id": "p009",
+      "panel_id": "p009_01",
+      "speaker": "SYSTEM",
+      "text": "JACKPOT",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.052,
+        0.049,
+        0.4,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-04",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.39,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_009_05",
+      "page_id": "p009",
+      "panel_id": "p009_01",
+      "speaker": "SYSTEM",
+      "text": "3",
+      "kind": "digit",
+      "shape": "none",
+      "box": [
+        0.09,
+        0.155,
+        0.08,
+        0.07
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_009_06",
+      "page_id": "p009",
+      "panel_id": "p009_01",
+      "speaker": "SYSTEM",
+      "text": "3",
+      "kind": "digit",
+      "shape": "none",
+      "box": [
+        0.232,
+        0.155,
+        0.08,
+        0.07
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_009_07",
+      "page_id": "p009",
+      "panel_id": "p009_01",
+      "speaker": "SYSTEM",
+      "text": "3",
+      "kind": "digit",
+      "shape": "none",
+      "box": [
+        0.372,
+        0.155,
+        0.08,
+        0.07
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_009_02",
+      "page_id": "p009",
+      "panel_id": "p009_02",
+      "speaker": "SFX",
+      "text": "K-CLACK",
+      "kind": "sfx",
+      "shape": "sfx",
+      "box": [
+        0.54,
+        0.047,
+        0.39,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "display",
+      "max_lines": 2,
+      "source_beat": "JAM-04",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.065,
+        0.38,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_009_03",
+      "page_id": "p009",
+      "panel_id": "p009_03",
+      "speaker": "NIL",
+      "text": "...Huh.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.54,
+        0.36,
+        0.25,
+        0.057
+      ],
+      "tail_anchor": [
+        0.34,
+        0.449
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-04",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.335,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.417
+      ]
+    },
+    {
+      "id": "ch01_009_04",
+      "page_id": "p009",
+      "panel_id": "p009_04",
+      "speaker": "SYSTEM",
+      "text": "0 - PARRY",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.06,
+        0.9,
+        0.34,
+        0.055
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-04",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.665,
+        0.38,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_010_01",
+      "page_id": "p010",
+      "panel_id": "p010_03",
+      "speaker": "VESPER",
+      "text": "Need a hand? Seven fen.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.552,
+        0.525,
+        0.39,
+        0.063
+      ],
+      "tail_anchor": [
+        0.77,
+        0.377
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-05",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.821,
+        0.387
+      ]
+    },
+    {
+      "id": "ch01_010_02",
+      "page_id": "p010",
+      "panel_id": "p010_04",
+      "speaker": "NIL",
+      "text": "I don't have seven fen.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.4,
+        0.72,
+        0.19,
+        0.088
+      ],
+      "tail_anchor": [
+        0.276,
+        0.766
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 3,
+      "source_beat": "JAM-05",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.605,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.687
+      ]
+    },
+    {
+      "id": "ch01_010_03",
+      "page_id": "p010",
+      "panel_id": "p010_04",
+      "speaker": "VESPER",
+      "text": "I'll put it on your tab.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.55,
+        0.885,
+        0.39,
+        0.06
+      ],
+      "tail_anchor": [
+        0.79,
+        0.753
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-05",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.605,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.752
+      ]
+    },
+    {
+      "id": "ch01_011_01",
+      "page_id": "p011",
+      "panel_id": "p011_01",
+      "speaker": "NIL",
+      "text": "I don't have a tab.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.035,
+        0.039,
+        0.39,
+        0.06
+      ],
+      "tail_anchor": [
+        0.32,
+        0.2
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-06",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_011_02",
+      "page_id": "p011",
+      "panel_id": "p011_01",
+      "speaker": "VESPER",
+      "text": "You do now.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.54,
+        0.039,
+        0.4,
+        0.06
+      ],
+      "tail_anchor": [
+        0.74,
+        0.18
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-06",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.065,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.212
+      ]
+    },
+    {
+      "id": "ch01_011_03",
+      "page_id": "p011",
+      "panel_id": "p011_03",
+      "speaker": "VESPER",
+      "text": "Read the reel. Then choose.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.663,
+        0.4,
+        0.05
+      ],
+      "tail_anchor": [
+        0.21,
+        0.607
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-06",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.545,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.627
+      ]
+    },
+    {
+      "id": "ch01_011_05",
+      "page_id": "p011",
+      "panel_id": "p011_04",
+      "speaker": "SYSTEM",
+      "text": "2",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.596,
+        0.632,
+        0.06,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_011_06",
+      "page_id": "p011",
+      "panel_id": "p011_04",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.713,
+        0.569,
+        0.09,
+        0.045
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_011_07",
+      "page_id": "p011",
+      "panel_id": "p011_04",
+      "speaker": "SYSTEM",
+      "text": "5",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.867,
+        0.632,
+        0.06,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_011_04",
+      "page_id": "p011",
+      "panel_id": "p011_05",
+      "speaker": "NIL",
+      "text": "That one.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.53,
+        0.744,
+        0.25,
+        0.045
+      ],
+      "tail_anchor": [
+        0.42,
+        0.8
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-06",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.765,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.847
+      ]
+    },
+    {
+      "id": "ch01_012_01",
+      "page_id": "p012",
+      "panel_id": "p012_01",
+      "speaker": "GUS",
+      "text": "One for the road. Pick what you trust.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.55,
+        0.05,
+        0.39,
+        0.062
+      ],
+      "tail_anchor": [
+        0.77,
+        0.254
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-07",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_012_02",
+      "page_id": "p012",
+      "panel_id": "p012_03",
+      "speaker": "VESPER",
+      "text": "Generous today?",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.52,
+        0.595,
+        0.245,
+        0.048
+      ],
+      "tail_anchor": [
+        0.653,
+        0.548
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-07",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.649,
+        0.517
+      ]
+    },
+    {
+      "id": "ch01_012_03",
+      "page_id": "p012",
+      "panel_id": "p012_03",
+      "speaker": "GUS",
+      "text": "Alive customers come back.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.775,
+        0.605,
+        0.175,
+        0.07
+      ],
+      "tail_anchor": [
+        0.85,
+        0.55
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 3,
+      "source_beat": "JAM-07",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.5,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.821,
+        0.582
+      ]
+    },
+    {
+      "id": "ch01_012_04",
+      "page_id": "p012",
+      "panel_id": "p012_04",
+      "speaker": "SYSTEM",
+      "text": "Horseshoe - Black Cat - Ofuda Ward",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.26691,
+        0.70674,
+        0.46618,
+        0.05274
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-07",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.275,
+        0.695,
+        0.45,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_013_01",
+      "page_id": "p013",
+      "panel_id": "p013_01",
+      "speaker": "VARRO",
+      "text": "NaN. Worth more than my whole street.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.285,
+        0.035,
+        0.3,
+        0.082
+      ],
+      "tail_anchor": [
+        0.665,
+        0.135
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 3,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_013_05",
+      "page_id": "p013",
+      "panel_id": "p013_01",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.106,
+        0.065,
+        0.11,
+        0.034
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_013_02",
+      "page_id": "p013",
+      "panel_id": "p013_02",
+      "speaker": "VESPER",
+      "text": "They promised your sister an exemption?",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.045,
+        0.532,
+        0.4,
+        0.058
+      ],
+      "tail_anchor": [
+        0.285,
+        0.465
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.387
+      ]
+    },
+    {
+      "id": "ch01_013_03",
+      "page_id": "p013",
+      "panel_id": "p013_03",
+      "speaker": "VARRO",
+      "text": "Don't talk about her.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.555,
+        0.534,
+        0.39,
+        0.052
+      ],
+      "tail_anchor": [
+        0.695,
+        0.454
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.821,
+        0.387
+      ]
+    },
+    {
+      "id": "ch01_013_04",
+      "page_id": "p013",
+      "panel_id": "p013_04",
+      "speaker": "SYSTEM",
+      "text": "VARRO KADE - THE LEDGERHOUND / CIVIC 61",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.175,
+        0.914,
+        0.65,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.275,
+        0.605,
+        0.45,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_014_04",
+      "page_id": "p014",
+      "panel_id": "p014_01",
+      "speaker": "SYSTEM",
+      "text": "4",
+      "kind": "digit",
+      "shape": "none",
+      "box": [
+        0.443,
+        0.291,
+        0.05,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_014_05",
+      "page_id": "p014",
+      "panel_id": "p014_01",
+      "speaker": "SYSTEM",
+      "text": "5",
+      "kind": "digit",
+      "shape": "none",
+      "box": [
+        0.516,
+        0.291,
+        0.05,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_014_06",
+      "page_id": "p014",
+      "panel_id": "p014_01",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "digit",
+      "shape": "none",
+      "box": [
+        0.589,
+        0.291,
+        0.05,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_014_01",
+      "page_id": "p014",
+      "panel_id": "p014_02",
+      "speaker": "VARRO",
+      "text": "Interest is due.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.65,
+        0.39,
+        0.05
+      ],
+      "tail_anchor": [
+        0.21,
+        0.545
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.08,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.351,
+        0.517
+      ]
+    },
+    {
+      "id": "ch01_014_02",
+      "page_id": "p014",
+      "panel_id": "p014_04",
+      "speaker": "SYSTEM",
+      "text": "SCORING SLOT 3 HELD / SCORES AS 0",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.05,
+        0.904,
+        0.41,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.695,
+        0.41,
+        0.06
+      ]
+    },
+    {
+      "id": "ch01_014_03",
+      "page_id": "p014",
+      "panel_id": "p014_04",
+      "speaker": "VESPER",
+      "text": "Three defences - or three rounds. Then you get it back.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.738,
+        0.41,
+        0.084
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.695,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.842
+      ],
+      "off_panel_speaker": true
+    },
+    {
+      "id": "ch01_014_07",
+      "page_id": "p014",
+      "panel_id": "p014_04",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "digit",
+      "shape": "none",
+      "box": [
+        0.674,
+        0.923,
+        0.06,
+        0.035
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_015_01",
+      "page_id": "p015",
+      "panel_id": "p015_01",
+      "speaker": "VESPER",
+      "text": "He took the score. Not your hand.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.035,
+        0.4,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.147
+      ],
+      "off_panel_speaker": true
+    },
+    {
+      "id": "ch01_015_04",
+      "page_id": "p015",
+      "panel_id": "p015_01",
+      "speaker": "SYSTEM",
+      "text": "STOP 0 / SCORE 0 / HELD 1 OF 3",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.05,
+        0.293,
+        0.4,
+        0.052
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_015_02",
+      "page_id": "p015",
+      "panel_id": "p015_03",
+      "speaker": "SYSTEM",
+      "text": "0 - PARRY",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.61,
+        0.383,
+        0.3,
+        0.052
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.275,
+        0.335,
+        0.45,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_015_03",
+      "page_id": "p015",
+      "panel_id": "p015_04",
+      "speaker": "NIL",
+      "text": "Then I can still stop him.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.3,
+        0.683,
+        0.32,
+        0.058
+      ],
+      "tail_anchor": [
+        0.32,
+        0.787
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.665,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.747
+      ]
+    },
+    {
+      "id": "ch01_016_04",
+      "page_id": "p016",
+      "panel_id": "p016_01",
+      "speaker": "SYSTEM",
+      "text": "HELD ROUND 2 OF 3",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.32,
+        0.04,
+        0.34,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_016_01",
+      "page_id": "p016",
+      "panel_id": "p016_02",
+      "speaker": "VARRO",
+      "text": "Final notice.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.514,
+        0.39,
+        0.058
+      ],
+      "tail_anchor": [
+        0.185,
+        0.433
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.821,
+        0.387
+      ]
+    },
+    {
+      "id": "ch01_016_02",
+      "page_id": "p016",
+      "panel_id": "p016_04",
+      "speaker": "VESPER",
+      "text": "He always says that like it's the first one.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.05,
+        0.658,
+        0.3,
+        0.085
+      ],
+      "tail_anchor": [
+        0.41,
+        0.827
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 3,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.605,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.687
+      ]
+    },
+    {
+      "id": "ch01_016_03",
+      "page_id": "p016",
+      "panel_id": "p016_04",
+      "speaker": "NIL",
+      "text": "Wait.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.06,
+        0.917,
+        0.16,
+        0.045
+      ],
+      "tail_anchor": [
+        0.235,
+        0.819
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.605,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.752
+      ]
+    },
+    {
+      "id": "ch01_017_04",
+      "page_id": "p017",
+      "panel_id": "p017_01",
+      "speaker": "SYSTEM",
+      "text": "RELEASE TRACK - ROUND 3 OF 3",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.49,
+        0.041,
+        0.43,
+        0.051
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_017_01",
+      "page_id": "p017",
+      "panel_id": "p017_03",
+      "speaker": "SFX",
+      "text": "KLANG",
+      "kind": "sfx",
+      "shape": "sfx",
+      "box": [
+        0.075,
+        0.53,
+        0.35,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "display",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.545,
+        0.39,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_017_02",
+      "page_id": "p017",
+      "panel_id": "p017_04",
+      "speaker": "SYSTEM",
+      "text": "THREE AFFECTED ROUNDS - JAR OPEN",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.53,
+        0.631,
+        0.41,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.545,
+        0.39,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_017_03",
+      "page_id": "p017",
+      "panel_id": "p017_05",
+      "speaker": "NIL",
+      "text": "There.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.055,
+        0.914,
+        0.25,
+        0.05
+      ],
+      "tail_anchor": [
+        0.277,
+        0.775
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.765,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.847
+      ]
+    },
+    {
+      "id": "ch01_018_01",
+      "page_id": "p018",
+      "panel_id": "p018_02",
+      "speaker": "SYSTEM",
+      "text": "NEXT ROUND: STOP 3 -> DIGIT RETURNED",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.05,
+        0.624,
+        0.41,
+        0.035
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.435,
+        0.38,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_018_05",
+      "page_id": "p018",
+      "panel_id": "p018_02",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "digit",
+      "shape": "none",
+      "box": [
+        0.23,
+        0.554,
+        0.05,
+        0.055
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_018_06",
+      "page_id": "p018",
+      "panel_id": "p018_02",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "digit",
+      "shape": "none",
+      "box": [
+        0.326,
+        0.554,
+        0.05,
+        0.055
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_018_07",
+      "page_id": "p018",
+      "panel_id": "p018_02",
+      "speaker": "SYSTEM",
+      "text": "7",
+      "kind": "digit",
+      "shape": "none",
+      "box": [
+        0.423,
+        0.554,
+        0.05,
+        0.055
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed"
+    },
+    {
+      "id": "ch01_018_02",
+      "page_id": "p018",
+      "panel_id": "p018_03",
+      "speaker": "SYSTEM",
+      "text": "OMEN OVERWRITE",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.54,
+        0.556,
+        0.4,
+        0.055
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.435,
+        0.39,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_018_03",
+      "page_id": "p018",
+      "panel_id": "p018_03",
+      "speaker": "SFX",
+      "text": "K-CLACK",
+      "kind": "sfx",
+      "shape": "sfx",
+      "box": [
+        0.63,
+        0.619,
+        0.27,
+        0.035
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "display",
+      "max_lines": 2,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.5,
+        0.38,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_018_04",
+      "page_id": "p018",
+      "panel_id": "p018_04",
+      "speaker": "SYSTEM",
+      "text": "AUDIT COMPLETE / VARRO AUDIT 00 / CIVIC 61",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.717,
+        0.705,
+        0.217,
+        0.145
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 4,
+      "source_beat": "JAM-08",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.695,
+        0.38,
+        0.05
+      ]
+    },
+    {
+      "id": "ch01_019_01",
+      "page_id": "p019",
+      "panel_id": "p019_01",
+      "speaker": "VARRO",
+      "text": "Go on. Settle the rest.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.055,
+        0.045,
+        0.32,
+        0.065
+      ],
+      "tail_anchor": [
+        0.55,
+        0.11
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_019_02",
+      "page_id": "p019",
+      "panel_id": "p019_02",
+      "speaker": "NIL",
+      "text": "No.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.055,
+        0.322,
+        0.13,
+        0.05
+      ],
+      "tail_anchor": [
+        0.296,
+        0.399
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.387
+      ]
+    },
+    {
+      "id": "ch01_019_03",
+      "page_id": "p019",
+      "panel_id": "p019_02",
+      "speaker": "VARRO",
+      "text": "...You'll regret that.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.055,
+        0.537,
+        0.39,
+        0.057
+      ],
+      "tail_anchor": [
+        0.49,
+        0.56
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.305,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.821,
+        0.387
+      ],
+      "off_panel_speaker": true
+    },
+    {
+      "id": "ch01_019_04",
+      "page_id": "p019",
+      "panel_id": "p019_03",
+      "speaker": "VESPER",
+      "text": "Livia. She still waiting?",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.54,
+        0.55,
+        0.39,
+        0.057
+      ],
+      "tail_anchor": [
+        0.76,
+        0.388
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.37,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.649,
+        0.452
+      ]
+    },
+    {
+      "id": "ch01_019_05",
+      "page_id": "p019",
+      "panel_id": "p019_04",
+      "speaker": "VARRO",
+      "text": "Every morning.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.43,
+        0.64,
+        0.27,
+        0.065
+      ],
+      "tail_anchor": [
+        0.73,
+        0.714
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.605,
+        0.41,
+        0.06
+      ],
+      "authored_tail_anchor": [
+        0.68,
+        0.687
+      ]
+    },
+    {
+      "id": "ch01_019_06",
+      "page_id": "p019",
+      "panel_id": "p019_04",
+      "speaker": "SYSTEM",
+      "text": "SEAL 1 RELEASED",
+      "kind": "ui",
+      "shape": "caption",
+      "box": [
+        0.56,
+        0.914,
+        0.38,
+        0.05
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.605,
+        0.41,
+        0.06
+      ]
+    },
+    {
+      "id": "ch01_020_01",
+      "page_id": "p020",
+      "panel_id": "p020_01",
+      "speaker": "VESPER",
+      "text": "Six Auditors. Six Seal Digits. Then the Upper Gate.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.33,
+        0.047,
+        0.58,
+        0.067
+      ],
+      "tail_anchor": [
+        0.231,
+        0.185
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.065,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.32,
+        0.147
+      ]
+    },
+    {
+      "id": "ch01_020_08",
+      "page_id": "p020",
+      "panel_id": "p020_01",
+      "speaker": "SYSTEM",
+      "text": "NaN",
+      "kind": "label",
+      "shape": "none",
+      "box": [
+        0.093,
+        0.116,
+        0.11,
+        0.034
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 99,
+      "font_role": "dialogue",
+      "max_lines": 1,
+      "source_beat": "typed exact rule/identity layer",
+      "status": "authored English; separately typed",
+      "preserve_case": true
+    },
+    {
+      "id": "ch01_020_02",
+      "page_id": "p020",
+      "panel_id": "p020_02",
+      "speaker": "NIL",
+      "text": "Seven locks.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.055,
+        0.58,
+        0.2,
+        0.043
+      ],
+      "tail_anchor": [
+        0.296,
+        0.484
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.179,
+        0.517
+      ]
+    },
+    {
+      "id": "ch01_020_03",
+      "page_id": "p020",
+      "panel_id": "p020_02",
+      "speaker": "VESPER",
+      "text": "The last one's yours. You told the whole city.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.265,
+        0.577,
+        0.205,
+        0.084
+      ],
+      "tail_anchor": [
+        0.481,
+        0.59
+      ],
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 4,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.08,
+        0.5,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.351,
+        0.582
+      ],
+      "off_panel_speaker": true
+    },
+    {
+      "id": "ch01_020_04",
+      "page_id": "p020",
+      "panel_id": "p020_03",
+      "speaker": "NIL",
+      "text": "They got away?",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.52,
+        0.576,
+        0.39,
+        0.043
+      ],
+      "tail_anchor": [
+        0.501,
+        0.59
+      ],
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.54,
+        0.435,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.649,
+        0.517
+      ],
+      "off_panel_speaker": true
+    },
+    {
+      "id": "ch01_020_05",
+      "page_id": "p020",
+      "panel_id": "p020_03",
+      "speaker": "VESPER",
+      "text": "Both of them. Come on.",
+      "kind": "speech",
+      "shape": "oval",
+      "box": [
+        0.57,
+        0.626,
+        0.35,
+        0.043
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.55,
+        0.5,
+        0.38,
+        0.057
+      ],
+      "authored_tail_anchor": [
+        0.821,
+        0.582
+      ]
+    },
+    {
+      "id": "ch01_020_06",
+      "page_id": "p020",
+      "panel_id": "p020_04",
+      "speaker": "CAPTION",
+      "text": "THE REMAINDER - A beginning in the Tally.",
+      "kind": "caption",
+      "shape": "caption",
+      "box": [
+        0.06,
+        0.9,
+        0.43,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 1,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.07,
+        0.695,
+        0.41,
+        0.06
+      ]
+    },
+    {
+      "id": "ch01_020_07",
+      "page_id": "p020",
+      "panel_id": "p020_04",
+      "speaker": "CAPTION",
+      "text": "Next: The Night Parade",
+      "kind": "caption",
+      "shape": "caption",
+      "box": [
+        0.56,
+        0.9,
+        0.37,
+        0.06
+      ],
+      "tail_anchor": null,
+      "order_in_panel": 2,
+      "font_role": "dialogue",
+      "max_lines": 2,
+      "source_beat": "JAM-09",
+      "status": "authored English; lettering/localization QA pending",
+      "authored_box": [
+        0.52,
+        0.695,
+        0.41,
+        0.06
+      ]
+    }
+  ]
+}

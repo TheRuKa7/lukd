@@ -1,0 +1,2641 @@
+{
+  "schema_version": 1,
+  "chapter_id": "zso_ch01",
+  "title": "The Remainder",
+  "language": "en",
+  "reading_direction": "ltr",
+  "page_size_px": [
+    1800,
+    2700
+  ],
+  "page_count": 20,
+  "status": "superseded study; user rejected narrative flow and acting on 8 November2026; not accepted manga or game asset",
+  "print_route": {
+    "resonance": 7,
+    "charm": "charm_horseshoe",
+    "reason": "Authored fixed example, never a best-digit claim or enforced player result"
+  },
+  "cast_design_notes": {
+    "ama": "Adult mother, patched ochre/charcoal rain clothing, warm practical posture. Civic01 then07 is typed later.",
+    "tobi": "Nine-year-old son in practical rain clothes, stays close to Ama; no adult proportions.",
+    "collector": "Human Ledgerist, rigid brass/black uniform and confiscation jar; no demonic caricature or erased identity.",
+    "brother_nought": "Older defrocked priest, repaired white/charcoal collar, ink-stained hands, fictional Open Hand motif.",
+    "gus": "Weathered Bazaar fixer and repaired apron, shrewd warmth, expressive hands; no ethnic caricature.",
+    "livia": "Only distant non-speaking window silhouette here, not a sexualized or death image."
+  },
+  "pages": [
+    {
+      "id": "p001",
+      "number": 1,
+      "title": "The Remainder",
+      "source_beat": "cover",
+      "layout_id": "S",
+      "clean_art": "art/manga/chapter_01/clean/p001.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p001.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/chr_vesper_v5.png",
+        "art/concepts/fresh/chr_varro_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "vesper",
+        "varro"
+      ],
+      "colour_script": "bone and ink, Nixie orange, Vesper crimson, worn rust, matte blue-grey rain",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: bone and ink, Nixie orange, Vesper crimson, worn rust, matte blue-grey rain.\nPanel p001_01 at normalized rectangle [0.05, 0.05, 0.9, 0.9]: Original ensemble cover: NIL near-left, right wrist decoder open and long asymmetric coat in rain; Vesper higher on an iron stair upper-right; Varro and vault-clamped debt jar heavy at lower-right. Wards rise into distant Basilica. Detailed pipes, repaired doors and charms support the trio. An interrupted brass circle frames them without glyphs. Top quarter and bottom fifth quiet for separately typed title.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p001_01 [50, 75, 900, 1350]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p001_01",
+          "rect": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "shot_and_action": "Original ensemble cover: NIL near-left, right wrist decoder open and long asymmetric coat in rain; Vesper higher on an iron stair upper-right; Varro and vault-clamped debt jar heavy at lower-right. Wards rise into distant Basilica. Detailed pipes, repaired doors and charms support the trio. An interrupted brass circle frames them without glyphs. Top quarter and bottom fifth quiet for separately typed title.",
+          "dialogue_ids": [
+            "ch01_001_01",
+            "ch01_001_02",
+            "ch01_001_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "specified layout; visually verify before export"
+        }
+      ],
+      "reading_order": [
+        "p001_01"
+      ],
+      "continuity_notes": [
+        "Cover only; no story event.",
+        "Cover art is full bleed. Lettering moved into top sky after a real cover review so Varro mask and faces remain visible."
+      ],
+      "story_events": [],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p002",
+      "number": 2,
+      "title": "The morning count",
+      "source_beat": "JAM-02",
+      "layout_id": "A",
+      "clean_art": "art/manga/chapter_01/clean/p002.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p002.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "ama",
+        "tobi",
+        "collector"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p002_01 at normalized rectangle [0.05, 0.05, 0.9, 0.35]: Wide Wards stair view: rain terrace, immigrant charm doors, brass runoff pipes, distant elevated Basilica. Workers open stalls. Ama and Tobi near-right; a rigid Collector approaches from left. Civic sockets are blank mechanical frames, not generated digits.\nPanel p002_02 at normalized rectangle [0.05, 0.42, 0.43, 0.24]: Ama pulls her patched ochre cuff around Tobi. Her blank Civic frame flickers; lettering space above hands, not face.\nPanel p002_03 at normalized rectangle [0.52, 0.42, 0.43, 0.24]: Collector places a confiscation jar on a street pedestal. Exactly six orange sparks inside, blank release gauge.\nPanel p002_04 at normalized rectangle [0.05, 0.68, 0.9, 0.27]: Low wide: Tobi looks up, Collector blocks exit. NIL across the street notices the jar.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p002_01 [50, 75, 900, 525]; p002_02 [50, 630, 430, 360]; p002_03 [520, 630, 430, 360]; p002_04 [50, 1020, 900, 405]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p002_01",
+          "rect": [
+            0.03425,
+            0.02197,
+            0.93236,
+            0.34846
+          ],
+          "shot_and_action": "Wide Wards stair view: rain terrace, immigrant charm doors, brass runoff pipes, distant elevated Basilica. Workers open stalls. Ama and Tobi near-right; a rigid Collector approaches from left. Civic sockets are blank mechanical frames, not generated digits.",
+          "dialogue_ids": [
+            "ch01_002_01"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.35
+          ]
+        },
+        {
+          "id": "p002_02",
+          "rect": [
+            0.03425,
+            0.37928,
+            0.46318,
+            0.28282
+          ],
+          "shot_and_action": "Ama pulls her patched ochre cuff around Tobi. Her blank Civic frame flickers; lettering space above hands, not face.",
+          "dialogue_ids": [
+            "ch01_002_02",
+            "ch01_002_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p002_03",
+          "rect": [
+            0.51327,
+            0.37928,
+            0.45334,
+            0.28282
+          ],
+          "shot_and_action": "Collector places a confiscation jar on a street pedestal. Exactly six orange sparks inside, blank release gauge.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p002_04",
+          "rect": [
+            0.03425,
+            0.66981,
+            0.93236,
+            0.30708
+          ],
+          "shot_and_action": "Low wide: Tobi looks up, Collector blocks exit. NIL across the street notices the jar.",
+          "dialogue_ids": [
+            "ch01_002_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.68,
+            0.9,
+            0.27
+          ]
+        }
+      ],
+      "reading_order": [
+        "p002_01",
+        "p002_02",
+        "p002_03",
+        "p002_04"
+      ],
+      "continuity_notes": [],
+      "story_events": [
+        "scene.rescue.available"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p003",
+      "number": 3,
+      "title": "An uncounted person",
+      "source_beat": "JAM-02",
+      "layout_id": "C",
+      "clean_art": "art/manga/chapter_01/clean/p003.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p003.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "ama",
+        "tobi",
+        "collector"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p003_01 at normalized rectangle [0.05, 0.05, 0.9, 0.22]: NIL crosses between Collector and family, right decoder low, three abacus clasps readable, longer left coat tail catches railing.\nPanel p003_02 at normalized rectangle [0.05, 0.29, 0.43, 0.28]: Collector eye-line close-up at NIL broken identity frame. A bureaucratic inspection, not a supernatural sneer.\nPanel p003_03 at normalized rectangle [0.52, 0.29, 0.43, 0.28]: NIL eye close-up looks beyond Collector at the six sparks, calculating a route rather than an attack.\nPanel p003_04 at normalized rectangle [0.05, 0.59, 0.9, 0.36]: Side-on geography: Collector left, jar centre, NIL centre-right, family behind far-right. NIL RIGHT decoder reaches toward jar; left hand directs boy back.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p003_01 [50, 75, 900, 330]; p003_02 [50, 435, 430, 420]; p003_03 [520, 435, 430, 420]; p003_04 [50, 885, 900, 540]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p003_01",
+          "rect": [
+            0.03082,
+            0.03767,
+            0.93836,
+            0.32021
+          ],
+          "shot_and_action": "NIL crosses between Collector and family, right decoder low, three abacus clasps readable, longer left coat tail catches railing.",
+          "dialogue_ids": [
+            "ch01_003_01",
+            "ch01_003_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.22
+          ]
+        },
+        {
+          "id": "p003_02",
+          "rect": [
+            0.03082,
+            0.37357,
+            0.46404,
+            0.23402
+          ],
+          "shot_and_action": "Collector eye-line close-up at NIL broken identity frame. A bureaucratic inspection, not a supernatural sneer.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.29,
+            0.43,
+            0.28
+          ]
+        },
+        {
+          "id": "p003_03",
+          "rect": [
+            0.50514,
+            0.37357,
+            0.46404,
+            0.23402
+          ],
+          "shot_and_action": "NIL eye close-up looks beyond Collector at the six sparks, calculating a route rather than an attack.",
+          "dialogue_ids": [
+            "ch01_003_02"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.29,
+            0.43,
+            0.28
+          ]
+        },
+        {
+          "id": "p003_04",
+          "rect": [
+            0.03082,
+            0.62357,
+            0.93836,
+            0.33562
+          ],
+          "shot_and_action": "Side-on geography: Collector left, jar centre, NIL centre-right, family behind far-right. NIL RIGHT decoder reaches toward jar; left hand directs boy back.",
+          "dialogue_ids": [
+            "ch01_003_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.59,
+            0.9,
+            0.36
+          ]
+        }
+      ],
+      "reading_order": [
+        "p003_01",
+        "p003_02",
+        "p003_03",
+        "p003_04"
+      ],
+      "continuity_notes": [],
+      "story_events": [],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p004",
+      "number": 4,
+      "title": "Six borrowed seconds",
+      "source_beat": "JAM-02",
+      "layout_id": "B",
+      "clean_art": "art/manga/chapter_01/clean/p004.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p004.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "ama",
+        "tobi",
+        "collector"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p004_01 at normalized rectangle [0.05, 0.05, 0.43, 0.25]: Macro of cracked RIGHT decoder aligning with brass stop lever, rain on smoked glass. Display blank for exact later overlay.\nPanel p004_02 at normalized rectangle [0.52, 0.05, 0.43, 0.25]: Five anatomically clear fingers stop the lever; one taut diagonal motion line ends at latch.\nPanel p004_03 at normalized rectangle [0.05, 0.32, 0.9, 0.31]: Large observable transfer: six sparks leave jar, travel through decoder route and enter Ama frame. Jar and Ama visible together; no new sparks appear.\nPanel p004_04 at normalized rectangle [0.05, 0.65, 0.9, 0.3]: Ama steadier, Tobi holds her. Collector retains their own untouched frame. NIL broken identity frame remains. Orange settles to small ember.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p004_01 [50, 75, 430, 375]; p004_02 [520, 75, 430, 375]; p004_03 [50, 480, 900, 465]; p004_04 [50, 975, 900, 450]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p004_01",
+          "rect": [
+            0.0351,
+            0.03796,
+            0.45634,
+            0.26969
+          ],
+          "shot_and_action": "Macro of cracked RIGHT decoder aligning with brass stop lever, rain on smoked glass. Display blank for exact later overlay.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.43,
+            0.25
+          ]
+        },
+        {
+          "id": "p004_02",
+          "rect": [
+            0.50771,
+            0.03796,
+            0.45762,
+            0.26969
+          ],
+          "shot_and_action": "Five anatomically clear fingers stop the lever; one taut diagonal motion line ends at latch.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.05,
+            0.43,
+            0.25
+          ]
+        },
+        {
+          "id": "p004_03",
+          "rect": [
+            0.0351,
+            0.3165,
+            0.93022,
+            0.30765
+          ],
+          "shot_and_action": "Large observable transfer: six sparks leave jar, travel through decoder route and enter Ama frame. Jar and Ama visible together; no new sparks appear.",
+          "dialogue_ids": [
+            "ch01_004_01"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.32,
+            0.9,
+            0.31
+          ]
+        },
+        {
+          "id": "p004_04",
+          "rect": [
+            0.0351,
+            0.63271,
+            0.93022,
+            0.34018
+          ],
+          "shot_and_action": "Ama steadier, Tobi holds her. Collector retains their own untouched frame. NIL broken identity frame remains. Orange settles to small ember.",
+          "dialogue_ids": [
+            "ch01_004_02",
+            "ch01_004_03",
+            "ch01_004_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.65,
+            0.9,
+            0.3
+          ]
+        }
+      ],
+      "reading_order": [
+        "p004_01",
+        "p004_02",
+        "p004_03",
+        "p004_04"
+      ],
+      "continuity_notes": [
+        "Authored six-unit transfer, not natural odds, new luck or erased identity."
+      ],
+      "story_events": [
+        "ama_rescued"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p005",
+      "number": 5,
+      "title": "A door that rounds up",
+      "source_beat": "JAM-03",
+      "layout_id": "D",
+      "clean_art": "art/manga/chapter_01/clean/p005.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p005.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "brother_nought",
+        "collector"
+      ],
+      "colour_script": "rain blue outside, warm paper interior, tiny amber lamp",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: rain blue outside, warm paper interior, tiny amber lamp.\nPanel p005_01 at normalized rectangle [0.05, 0.05, 0.9, 0.26]: Ama/Tobi flee down lit side passage. NIL sprints opposite; Collector turns late. Escape geography clear.\nPanel p005_02 at normalized rectangle [0.05, 0.33, 0.9, 0.18]: NIL longer coat tail catches a nail for one deadpan beat, no injury or extra mechanical cost.\nPanel p005_03 at normalized rectangle [0.05, 0.53, 0.43, 0.2]: Shrine door opens, Nought ink-stained hand reaches out, patched collar and worn brass latch.\nPanel p005_04 at normalized rectangle [0.52, 0.53, 0.43, 0.2]: Nought pulls NIL in as Collector boots pass far edge; door outside their sightline.\nPanel p005_05 at normalized rectangle [0.05, 0.75, 0.9, 0.2]: Still warm interior: blank Naming terminal, candle cup, repaired chair, ledgers as door wedges. Nought latches door while NIL frees coat.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p005_01 [50, 75, 900, 390]; p005_02 [50, 495, 900, 270]; p005_03 [50, 795, 430, 300]; p005_04 [520, 795, 430, 300]; p005_05 [50, 1125, 900, 300]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p005_01",
+          "rect": [
+            0.03211,
+            0.02426,
+            0.93536,
+            0.27454
+          ],
+          "shot_and_action": "Ama/Tobi flee down lit side passage. NIL sprints opposite; Collector turns late. Escape geography clear.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.26
+          ]
+        },
+        {
+          "id": "p005_02",
+          "rect": [
+            0.03211,
+            0.31164,
+            0.93536,
+            0.17808
+          ],
+          "shot_and_action": "NIL longer coat tail catches a nail for one deadpan beat, no injury or extra mechanical cost.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.33,
+            0.9,
+            0.18
+          ]
+        },
+        {
+          "id": "p005_03",
+          "rect": [
+            0.03211,
+            0.50171,
+            0.4589,
+            0.19321
+          ],
+          "shot_and_action": "Shrine door opens, Nought ink-stained hand reaches out, patched collar and worn brass latch.",
+          "dialogue_ids": [
+            "ch01_005_01"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.53,
+            0.43,
+            0.2
+          ]
+        },
+        {
+          "id": "p005_04",
+          "rect": [
+            0.50728,
+            0.50171,
+            0.46019,
+            0.19321
+          ],
+          "shot_and_action": "Nought pulls NIL in as Collector boots pass far edge; door outside their sightline.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.53,
+            0.43,
+            0.2
+          ]
+        },
+        {
+          "id": "p005_05",
+          "rect": [
+            0.03211,
+            0.70719,
+            0.93536,
+            0.26855
+          ],
+          "shot_and_action": "Still warm interior: blank Naming terminal, candle cup, repaired chair, ledgers as door wedges. Nought latches door while NIL frees coat.",
+          "dialogue_ids": [
+            "ch01_005_02",
+            "ch01_005_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.75,
+            0.9,
+            0.2
+          ]
+        }
+      ],
+      "reading_order": [
+        "p005_01",
+        "p005_02",
+        "p005_03",
+        "p005_04",
+        "p005_05"
+      ],
+      "continuity_notes": [],
+      "story_events": [],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p006",
+      "number": 6,
+      "title": "Choose what answers",
+      "source_beat": "JAM-03",
+      "layout_id": "A",
+      "clean_art": "art/manga/chapter_01/clean/p006.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p006.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "brother_nought"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p006_01 at normalized rectangle [0.05, 0.05, 0.9, 0.35]: Nought and NIL at terminal. Ten equal blank input keys, none privileged. NIL broken identity frame remains separate.\nPanel p006_02 at normalized rectangle [0.05, 0.42, 0.43, 0.24]: Nought face: kind and worried. Sleeve has fictional unclosed-hand motif, no real sacred symbol.\nPanel p006_03 at normalized rectangle [0.52, 0.42, 0.43, 0.24]: NIL studies wrist then keys. Still thoughtful beat, no power explosion.\nPanel p006_04 at normalized rectangle [0.05, 0.68, 0.9, 0.27]: NIL hand poised above unmarked key; quiet central area for typed resonance and confirmation. Deliberate choice, never a timed input.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p006_01 [50, 75, 900, 525]; p006_02 [50, 630, 430, 360]; p006_03 [520, 630, 430, 360]; p006_04 [50, 1020, 900, 405]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p006_01",
+          "rect": [
+            0.03382,
+            0.0137,
+            0.93236,
+            0.40268
+          ],
+          "shot_and_action": "Nought and NIL at terminal. Ten equal blank input keys, none privileged. NIL broken identity frame remains separate.",
+          "dialogue_ids": [
+            "ch01_006_01",
+            "ch01_006_05"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.35
+          ]
+        },
+        {
+          "id": "p006_02",
+          "rect": [
+            0.03425,
+            0.4278,
+            0.45719,
+            0.27825
+          ],
+          "shot_and_action": "Nought face: kind and worried. Sleeve has fictional unclosed-hand motif, no real sacred symbol.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p006_03",
+          "rect": [
+            0.50899,
+            0.4278,
+            0.45719,
+            0.27825
+          ],
+          "shot_and_action": "NIL studies wrist then keys. Still thoughtful beat, no power explosion.",
+          "dialogue_ids": [
+            "ch01_006_02"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p006_04",
+          "rect": [
+            0.03425,
+            0.71861,
+            0.93193,
+            0.26455
+          ],
+          "shot_and_action": "NIL hand poised above unmarked key; quiet central area for typed resonance and confirmation. Deliberate choice, never a timed input.",
+          "dialogue_ids": [
+            "ch01_006_03",
+            "ch01_006_04",
+            "ch01_006_06",
+            "ch01_006_07",
+            "ch01_006_08",
+            "ch01_006_09",
+            "ch01_006_10",
+            "ch01_006_11",
+            "ch01_006_12",
+            "ch01_006_13",
+            "ch01_006_14",
+            "ch01_006_15"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.68,
+            0.9,
+            0.27
+          ]
+        }
+      ],
+      "reading_order": [
+        "p006_01",
+        "p006_02",
+        "p006_03",
+        "p006_04"
+      ],
+      "continuity_notes": [
+        "Reference route7; real0-9 choice waits for confirmation.",
+        "Revised art keeps Naming indoors. All ten keyboard options 0-9 are typed, including valid resonance 0."
+      ],
+      "story_events": [
+        "choice.resonance"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": "resonance_choice",
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p007",
+      "number": 7,
+      "title": "The city looks back",
+      "source_beat": "JAM-03",
+      "layout_id": "C",
+      "clean_art": "art/manga/chapter_01/clean/p007.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p007.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/enm_debthound_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "brother_nought",
+        "debthound"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p007_01 at normalized rectangle [0.05, 0.05, 0.9, 0.22]: Macro finger confirms blank key; orange circuit paths wake in brass; exact selected digit later overlay.\nPanel p007_02 at normalized rectangle [0.05, 0.29, 0.43, 0.28]: Blank terminal glass cracks; Nought flinches, NIL remains a solid silhouette.\nPanel p007_03 at normalized rectangle [0.52, 0.29, 0.43, 0.28]: Distant facade: blank public plates ignite in orderly wave toward Basilica, surfaces clear for typed alert.\nPanel p007_04 at normalized rectangle [0.05, 0.59, 0.9, 0.36]: Nought opens rear exit and gives NIL folded route slip. Hound silhouette beyond. Nought small but resolute in terminal light.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p007_01 [50, 75, 900, 330]; p007_02 [50, 435, 430, 420]; p007_03 [520, 435, 430, 420]; p007_04 [50, 885, 900, 540]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p007_01",
+          "rect": [
+            0.03382,
+            0.03225,
+            0.93279,
+            0.21632
+          ],
+          "shot_and_action": "Macro finger confirms blank key; orange circuit paths wake in brass; exact selected digit later overlay.",
+          "dialogue_ids": [
+            "ch01_007_01"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.22
+          ]
+        },
+        {
+          "id": "p007_02",
+          "rect": [
+            0.03339,
+            0.2597,
+            0.45976,
+            0.26998
+          ],
+          "shot_and_action": "Blank terminal glass cracks; Nought flinches, NIL remains a solid silhouette.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.29,
+            0.43,
+            0.28
+          ]
+        },
+        {
+          "id": "p007_03",
+          "rect": [
+            0.51027,
+            0.2597,
+            0.45634,
+            0.26998
+          ],
+          "shot_and_action": "Distant facade: blank public plates ignite in orderly wave toward Basilica, surfaces clear for typed alert.",
+          "dialogue_ids": [
+            "ch01_007_02"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.29,
+            0.43,
+            0.28
+          ]
+        },
+        {
+          "id": "p007_04",
+          "rect": [
+            0.03339,
+            0.54138,
+            0.93322,
+            0.43522
+          ],
+          "shot_and_action": "Nought opens rear exit and gives NIL folded route slip. Hound silhouette beyond. Nought small but resolute in terminal light.",
+          "dialogue_ids": [
+            "ch01_007_03",
+            "ch01_007_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.59,
+            0.9,
+            0.36
+          ]
+        }
+      ],
+      "reading_order": [
+        "p007_01",
+        "p007_02",
+        "p007_03",
+        "p007_04"
+      ],
+      "continuity_notes": [],
+      "story_events": [
+        "resonance_confirmed",
+        "remainder_detected"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p008",
+      "number": 8,
+      "title": "Three stops",
+      "source_beat": "JAM-04",
+      "layout_id": "A",
+      "clean_art": "art/manga/chapter_01/clean/p008.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p008.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/enm_debthound_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "debthound"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p008_01 at normalized rectangle [0.05, 0.05, 0.9, 0.35]: Hound lands four metal stamp-paws on canal platform. NIL left, hound right, three EMPTY Nixie tubes overhead. Rectangular party Audit frame separate from NIL identity.\nPanel p008_02 at normalized rectangle [0.05, 0.42, 0.43, 0.24]: Machine brass jaw and wheel bracket; raised paw and clear arc telegraph lunge. No animal flesh.\nPanel p008_03 at normalized rectangle [0.52, 0.42, 0.43, 0.24]: NIL stops one legal blank face. Finger, stop line, accepted bracket readable.\nPanel p008_04 at normalized rectangle [0.05, 0.68, 0.9, 0.27]: Three rhythm silhouettes of NIL in one panel, separated by thin timing marks. Reel lit but blank, still wind-up before payoff.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p008_01 [50, 75, 900, 525]; p008_02 [50, 630, 430, 360]; p008_03 [520, 630, 430, 360]; p008_04 [50, 1020, 900, 405]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p008_01",
+          "rect": [
+            0.03125,
+            0.02597,
+            0.9375,
+            0.39555
+          ],
+          "shot_and_action": "Hound lands four metal stamp-paws on canal platform. NIL left, hound right, three EMPTY Nixie tubes overhead. Rectangular party Audit frame separate from NIL identity.",
+          "dialogue_ids": [
+            "ch01_008_01",
+            "ch01_008_03",
+            "ch01_008_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.35
+          ]
+        },
+        {
+          "id": "p008_02",
+          "rect": [
+            0.03082,
+            0.43493,
+            0.4542,
+            0.23373
+          ],
+          "shot_and_action": "Machine brass jaw and wheel bracket; raised paw and clear arc telegraph lunge. No animal flesh.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p008_03",
+          "rect": [
+            0.50257,
+            0.43493,
+            0.46661,
+            0.23373
+          ],
+          "shot_and_action": "NIL stops one legal blank face. Finger, stop line, accepted bracket readable.",
+          "dialogue_ids": [
+            "ch01_008_02"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p008_04",
+          "rect": [
+            0.03125,
+            0.68208,
+            0.93793,
+            0.29195
+          ],
+          "shot_and_action": "Three rhythm silhouettes of NIL in one panel, separated by thin timing marks. Reel lit but blank, still wind-up before payoff.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.68,
+            0.9,
+            0.27
+          ]
+        }
+      ],
+      "reading_order": [
+        "p008_01",
+        "p008_02",
+        "p008_03",
+        "p008_04"
+      ],
+      "continuity_notes": [
+        "Authored tutorial Jackpot; normal legal wheels afterward."
+      ],
+      "story_events": [],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": "solo_audit",
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p009",
+      "number": 9,
+      "title": "A pattern, not panic",
+      "source_beat": "JAM-04",
+      "layout_id": "B",
+      "clean_art": "art/manga/chapter_01/clean/p009.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p009.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/enm_debthound_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "debthound"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p009_01 at normalized rectangle [0.05, 0.05, 0.43, 0.25]: Macro of three matching blank tube faces and one shared settlement latch; exact digits later.\nPanel p009_02 at normalized rectangle [0.52, 0.05, 0.43, 0.25]: Impact: RIGHT decoder locks once, single diagonal force drives hound back. Broad ink masses, restrained orange shape, machine rivets, no extra damage labels.\nPanel p009_03 at normalized rectangle [0.05, 0.32, 0.9, 0.31]: Still gag beat: tiny lifted NIL eyebrow, one raindrop off nose, simplified lines but adult proportions.\nPanel p009_04 at normalized rectangle [0.05, 0.65, 0.9, 0.3]: Hound telegraphed counter. NIL catches enemy wheel latch; circular Parry turns claw aside. Same platform perspective.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p009_01 [50, 75, 430, 375]; p009_02 [520, 75, 430, 375]; p009_03 [50, 480, 900, 465]; p009_04 [50, 975, 900, 450]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p009_01",
+          "rect": [
+            0.03339,
+            0.03225,
+            0.45634,
+            0.2891
+          ],
+          "shot_and_action": "Macro of three matching blank tube faces and one shared settlement latch; exact digits later.",
+          "dialogue_ids": [
+            "ch01_009_01",
+            "ch01_009_05",
+            "ch01_009_06",
+            "ch01_009_07"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.43,
+            0.25
+          ]
+        },
+        {
+          "id": "p009_02",
+          "rect": [
+            0.50856,
+            0.03225,
+            0.45805,
+            0.2891
+          ],
+          "shot_and_action": "Impact: RIGHT decoder locks once, single diagonal force drives hound back. Broad ink masses, restrained orange shape, machine rivets, no extra damage labels.",
+          "dialogue_ids": [
+            "ch01_009_02"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.05,
+            0.43,
+            0.25
+          ]
+        },
+        {
+          "id": "p009_03",
+          "rect": [
+            0.03339,
+            0.33476,
+            0.93322,
+            0.30908
+          ],
+          "shot_and_action": "Still gag beat: tiny lifted NIL eyebrow, one raindrop off nose, simplified lines but adult proportions.",
+          "dialogue_ids": [
+            "ch01_009_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.32,
+            0.9,
+            0.31
+          ]
+        },
+        {
+          "id": "p009_04",
+          "rect": [
+            0.03296,
+            0.65525,
+            0.93365,
+            0.32049
+          ],
+          "shot_and_action": "Hound telegraphed counter. NIL catches enemy wheel latch; circular Parry turns claw aside. Same platform perspective.",
+          "dialogue_ids": [
+            "ch01_009_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.65,
+            0.9,
+            0.3
+          ]
+        }
+      ],
+      "reading_order": [
+        "p009_01",
+        "p009_02",
+        "p009_03",
+        "p009_04"
+      ],
+      "continuity_notes": [
+        "No exact damage total. Additional honest rounds compressed; game must actually complete."
+      ],
+      "story_events": [
+        "encounter.solo.won"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p010",
+      "number": 10,
+      "title": "Seven fen",
+      "source_beat": "JAM-05",
+      "layout_id": "C",
+      "clean_art": "art/manga/chapter_01/clean/p010.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p010.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/chr_vesper_v5.png",
+        "art/concepts/fresh/enm_debthound_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "vesper",
+        "debthound"
+      ],
+      "colour_script": "slate rain; Vesper crimson is first broad warm colour",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain; Vesper crimson is first broad warm colour.\nPanel p010_01 at normalized rectangle [0.05, 0.05, 0.9, 0.22]: First hound inert. Fresh second hound drops behind NIL from drain conduit, unseen. NIL left, threat upper-right.\nPanel p010_02 at normalized rectangle [0.05, 0.29, 0.43, 0.28]: Vesper fires from upper-left stair. Shot vector toward new hound, never NIL. Side-on cylinder, no generated engraving.\nPanel p010_03 at normalized rectangle [0.52, 0.29, 0.43, 0.28]: Vesper steps lightly: crimson triangular coat, LEFT braid, two blank hat cards, coin off-hand; earned confidence, not glamour.\nPanel p010_04 at normalized rectangle [0.05, 0.59, 0.9, 0.36]: Still pair shot: NIL regards offered hand then own empty palm. Second hound remains active in distance.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p010_01 [50, 75, 900, 330]; p010_02 [50, 435, 430, 420]; p010_03 [520, 435, 430, 420]; p010_04 [50, 885, 900, 540]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p010_01",
+          "rect": [
+            0.02868,
+            0.02483,
+            0.94307,
+            0.2871
+          ],
+          "shot_and_action": "First hound inert. Fresh second hound drops behind NIL from drain conduit, unseen. NIL left, threat upper-right.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.22
+          ]
+        },
+        {
+          "id": "p010_02",
+          "rect": [
+            0.02868,
+            0.31935,
+            0.47389,
+            0.32106
+          ],
+          "shot_and_action": "Vesper fires from upper-left stair. Shot vector toward new hound, never NIL. Side-on cylinder, no generated engraving.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.29,
+            0.43,
+            0.28
+          ]
+        },
+        {
+          "id": "p010_03",
+          "rect": [
+            0.51413,
+            0.31935,
+            0.45762,
+            0.32106
+          ],
+          "shot_and_action": "Vesper steps lightly: crimson triangular coat, LEFT braid, two blank hat cards, coin off-hand; earned confidence, not glamour.",
+          "dialogue_ids": [
+            "ch01_010_01"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.29,
+            0.43,
+            0.28
+          ]
+        },
+        {
+          "id": "p010_04",
+          "rect": [
+            0.02868,
+            0.64869,
+            0.94307,
+            0.32677
+          ],
+          "shot_and_action": "Still pair shot: NIL regards offered hand then own empty palm. Second hound remains active in distance.",
+          "dialogue_ids": [
+            "ch01_010_02",
+            "ch01_010_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.59,
+            0.9,
+            0.36
+          ]
+        }
+      ],
+      "reading_order": [
+        "p010_01",
+        "p010_02",
+        "p010_03",
+        "p010_04"
+      ],
+      "continuity_notes": [],
+      "story_events": [
+        "recruit.vesper"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p011",
+      "number": 11,
+      "title": "A debt worth keeping",
+      "source_beat": "JAM-06",
+      "layout_id": "D",
+      "clean_art": "art/manga/chapter_01/clean/p011.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p011.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/chr_vesper_v5.png",
+        "art/concepts/fresh/enm_debthound_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "vesper",
+        "debthound"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p011_01 at normalized rectangle [0.05, 0.05, 0.9, 0.26]: NIL sincerely perplexed; Vesper grin starts. Small still comic beat before action.\nPanel p011_02 at normalized rectangle [0.05, 0.33, 0.9, 0.18]: Hound charges. Vesper planted left, NIL centre behind, clear floor, empty three-tube reel.\nPanel p011_03 at normalized rectangle [0.05, 0.53, 0.43, 0.2]: Vesper points to two lit blank tubes, gun lowered for instruction; reads situation, no lecture.\nPanel p011_04 at normalized rectangle [0.52, 0.53, 0.43, 0.2]: Macro final wheel: legal blank faces have shape-coded completion markers; information, not forced perfect stop.\nPanel p011_05 at normalized rectangle [0.05, 0.75, 0.9, 0.2]: NIL steps into stop, Vesper covers side; paired attack drives hound right toward drain rail.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p011_01 [50, 75, 900, 390]; p011_02 [50, 495, 900, 270]; p011_03 [50, 795, 430, 300]; p011_04 [520, 795, 430, 300]; p011_05 [50, 1125, 900, 300]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p011_01",
+          "rect": [
+            0.01841,
+            0.02283,
+            0.96361,
+            0.30936
+          ],
+          "shot_and_action": "NIL sincerely perplexed; Vesper grin starts. Small still comic beat before action.",
+          "dialogue_ids": [
+            "ch01_011_01",
+            "ch01_011_02"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.26
+          ]
+        },
+        {
+          "id": "p011_02",
+          "rect": [
+            0.01841,
+            0.34161,
+            0.96361,
+            0.18408
+          ],
+          "shot_and_action": "Hound charges. Vesper planted left, NIL centre behind, clear floor, empty three-tube reel.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.33,
+            0.9,
+            0.18
+          ]
+        },
+        {
+          "id": "p011_03",
+          "rect": [
+            0.01841,
+            0.53339,
+            0.48074,
+            0.19235
+          ],
+          "shot_and_action": "Vesper points to two lit blank tubes, gun lowered for instruction; reads situation, no lecture.",
+          "dialogue_ids": [
+            "ch01_011_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.53,
+            0.43,
+            0.2
+          ]
+        },
+        {
+          "id": "p011_04",
+          "rect": [
+            0.51755,
+            0.53339,
+            0.46447,
+            0.19235
+          ],
+          "shot_and_action": "Macro final wheel: legal blank faces have shape-coded completion markers; information, not forced perfect stop.",
+          "dialogue_ids": [
+            "ch01_011_05",
+            "ch01_011_06",
+            "ch01_011_07"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.53,
+            0.43,
+            0.2
+          ]
+        },
+        {
+          "id": "p011_05",
+          "rect": [
+            0.01841,
+            0.7343,
+            0.96361,
+            0.24772
+          ],
+          "shot_and_action": "NIL steps into stop, Vesper covers side; paired attack drives hound right toward drain rail.",
+          "dialogue_ids": [
+            "ch01_011_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.75,
+            0.9,
+            0.2
+          ]
+        }
+      ],
+      "reading_order": [
+        "p011_01",
+        "p011_02",
+        "p011_03",
+        "p011_04",
+        "p011_05"
+      ],
+      "continuity_notes": [
+        "Both heroes act; one acts twice. Actual result remains a gameplay gate.",
+        "Typed candidate digits 2/7/5 illustrate reading a completion; highlight is not a guaranteed stop or manipulated random result."
+      ],
+      "story_events": [
+        "encounter.duo.won"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": "duo_audit",
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p012",
+      "number": 12,
+      "title": "The cheapest insurance",
+      "source_beat": "JAM-07",
+      "layout_id": "A",
+      "clean_art": "art/manga/chapter_01/clean/p012.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p012.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/chr_vesper_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "vesper",
+        "gus"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p012_01 at normalized rectangle [0.05, 0.05, 0.9, 0.35]: Gus stall under patched awning, pair left, Gus right. Three separate trays: horseshoe, cat charm, folded ward. No prices or wallet.\nPanel p012_02 at normalized rectangle [0.05, 0.42, 0.43, 0.24]: Gus weathered hands level trays on scuffed felt; repaired hinges, kettle, clean object silhouettes.\nPanel p012_03 at normalized rectangle [0.52, 0.42, 0.43, 0.24]: Vesper suspicious, coin idle; Gus practical, not saintly.\nPanel p012_04 at normalized rectangle [0.05, 0.68, 0.9, 0.27]: NIL hand hovers over all three without touching; clean space for typed options.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p012_01 [50, 75, 900, 525]; p012_02 [50, 630, 430, 360]; p012_03 [520, 630, 430, 360]; p012_04 [50, 1020, 900, 405]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p012_01",
+          "rect": [
+            0.0351,
+            0.02711,
+            0.93108,
+            0.41381
+          ],
+          "shot_and_action": "Gus stall under patched awning, pair left, Gus right. Three separate trays: horseshoe, cat charm, folded ward. No prices or wallet.",
+          "dialogue_ids": [
+            "ch01_012_01"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.35
+          ]
+        },
+        {
+          "id": "p012_02",
+          "rect": [
+            0.0351,
+            0.44892,
+            0.4542,
+            0.23459
+          ],
+          "shot_and_action": "Gus weathered hands level trays on scuffed felt; repaired hinges, kettle, clean object silhouettes.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p012_03",
+          "rect": [
+            0.50043,
+            0.44892,
+            0.46575,
+            0.23459
+          ],
+          "shot_and_action": "Vesper suspicious, coin idle; Gus practical, not saintly.",
+          "dialogue_ids": [
+            "ch01_012_02",
+            "ch01_012_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p012_04",
+          "rect": [
+            0.0351,
+            0.69092,
+            0.93108,
+            0.28482
+          ],
+          "shot_and_action": "NIL hand hovers over all three without touching; clean space for typed options.",
+          "dialogue_ids": [
+            "ch01_012_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.68,
+            0.9,
+            0.27
+          ]
+        }
+      ],
+      "reading_order": [
+        "p012_01",
+        "p012_02",
+        "p012_03",
+        "p012_04"
+      ],
+      "continuity_notes": [
+        "Printed route Horseshoe; game grants exactly one actual choice, no wallet/loan system.",
+        "Revised props show a matte Black Cat, blank paper Ofuda ward and NIL selecting the left Horseshoe for this fixed edition."
+      ],
+      "story_events": [
+        "choice.charm"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": "charm_choice",
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p013",
+      "number": 13,
+      "title": "What a name costs",
+      "source_beat": "JAM-08",
+      "layout_id": "C",
+      "clean_art": "art/manga/chapter_01/clean/p013.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p013.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/chr_vesper_v5.png",
+        "art/concepts/fresh/chr_varro_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "vesper",
+        "varro"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p013_01 at normalized rectangle [0.05, 0.05, 0.9, 0.22]: Varro huge at right drain gate, heroes left. Three jars, largest vault-clamped, protected exemption token at collar. Civic badge distinct from lower Audit frame.\nPanel p013_02 at normalized rectangle [0.05, 0.29, 0.43, 0.28]: Vesper notices token, expression briefly loses grin, warm small highlight.\nPanel p013_03 at normalized rectangle [0.52, 0.29, 0.43, 0.28]: Varro covers token; hound MASK has repaired ivory jaw, human hair and eye visible.\nPanel p013_04 at normalized rectangle [0.05, 0.59, 0.9, 0.36]: Face-off: hook blocks right exit; left railing route clear. Active jar has three readable release levers; weapons lowered during dialogue.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p013_01 [50, 75, 900, 330]; p013_02 [50, 435, 430, 420]; p013_03 [520, 435, 430, 420]; p013_04 [50, 885, 900, 540]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p013_01",
+          "rect": [
+            0.02312,
+            0.01912,
+            0.95377,
+            0.30365
+          ],
+          "shot_and_action": "Varro huge at right drain gate, heroes left. Three jars, largest vault-clamped, protected exemption token at collar. Civic badge distinct from lower Audit frame.",
+          "dialogue_ids": [
+            "ch01_013_01",
+            "ch01_013_05"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.22
+          ]
+        },
+        {
+          "id": "p013_02",
+          "rect": [
+            0.02312,
+            0.33647,
+            0.46918,
+            0.25771
+          ],
+          "shot_and_action": "Vesper notices token, expression briefly loses grin, warm small highlight.",
+          "dialogue_ids": [
+            "ch01_013_02"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.29,
+            0.43,
+            0.28
+          ]
+        },
+        {
+          "id": "p013_03",
+          "rect": [
+            0.50856,
+            0.33647,
+            0.46832,
+            0.25771
+          ],
+          "shot_and_action": "Varro covers token; hound MASK has repaired ivory jaw, human hair and eye visible.",
+          "dialogue_ids": [
+            "ch01_013_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.29,
+            0.43,
+            0.28
+          ]
+        },
+        {
+          "id": "p013_04",
+          "rect": [
+            0.02312,
+            0.60502,
+            0.95377,
+            0.37243
+          ],
+          "shot_and_action": "Face-off: hook blocks right exit; left railing route clear. Active jar has three readable release levers; weapons lowered during dialogue.",
+          "dialogue_ids": [
+            "ch01_013_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.59,
+            0.9,
+            0.36
+          ]
+        }
+      ],
+      "reading_order": [
+        "p013_01",
+        "p013_02",
+        "p013_03",
+        "p013_04"
+      ],
+      "continuity_notes": [],
+      "story_events": [
+        "boss.varro.available"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p014",
+      "number": 14,
+      "title": "A collector takes the last word",
+      "source_beat": "JAM-08",
+      "layout_id": "A",
+      "clean_art": "art/manga/chapter_01/clean/p014.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p014.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/chr_vesper_v5.png",
+        "art/concepts/fresh/chr_varro_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "vesper",
+        "varro"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p014_01 at normalized rectangle [0.05, 0.05, 0.9, 0.35]: First player round wind-up: NIL left-front, Vesper left-rear, Varro right. Three lit blank tubes; clear converging action vectors.\nPanel p014_02 at normalized rectangle [0.05, 0.42, 0.43, 0.24]: Ordinary hit; Varro braces damaged but standing. No Jackpot spectacle or total score.\nPanel p014_03 at normalized rectangle [0.52, 0.42, 0.43, 0.24]: Capture lever draws ONE scored digit token from THIRD tube to jar. First two remain. Third dim, no erased hero identity.\nPanel p014_04 at normalized rectangle [0.05, 0.68, 0.9, 0.27]: Jar and third tube macro; saved token blank for exact later overlay. Transfer path visible; Varro severe but tired behind glass.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p014_01 [50, 75, 900, 525]; p014_02 [50, 630, 430, 360]; p014_03 [520, 630, 430, 360]; p014_04 [50, 1020, 900, 405]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p014_01",
+          "rect": [
+            0.03168,
+            0.02597,
+            0.93707,
+            0.42979
+          ],
+          "shot_and_action": "First player round wind-up: NIL left-front, Vesper left-rear, Varro right. Three lit blank tubes; clear converging action vectors.",
+          "dialogue_ids": [
+            "ch01_014_04",
+            "ch01_014_05",
+            "ch01_014_06"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.35
+          ]
+        },
+        {
+          "id": "p014_02",
+          "rect": [
+            0.03168,
+            0.47546,
+            0.46276,
+            0.23288
+          ],
+          "shot_and_action": "Ordinary hit; Varro braces damaged but standing. No Jackpot spectacle or total score.",
+          "dialogue_ids": [
+            "ch01_014_01"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p014_03",
+          "rect": [
+            0.51113,
+            0.47546,
+            0.45762,
+            0.23288
+          ],
+          "shot_and_action": "Capture lever draws ONE scored digit token from THIRD tube to jar. First two remain. Third dim, no erased hero identity.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p014_04",
+          "rect": [
+            0.03168,
+            0.72517,
+            0.93707,
+            0.25171
+          ],
+          "shot_and_action": "Jar and third tube macro; saved token blank for exact later overlay. Transfer path visible; Varro severe but tired behind glass.",
+          "dialogue_ids": [
+            "ch01_014_02",
+            "ch01_014_03",
+            "ch01_014_07"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.68,
+            0.9,
+            0.27
+          ]
+        }
+      ],
+      "reading_order": [
+        "p014_01",
+        "p014_02",
+        "p014_03",
+        "p014_04"
+      ],
+      "continuity_notes": [
+        "Once after completed nonterminal player round; saved score is not Civic Omen."
+      ],
+      "story_events": [
+        "boss.varro.jar_captured"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": "boss_varro",
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p015",
+      "number": 15,
+      "title": "First affected round",
+      "source_beat": "JAM-08",
+      "layout_id": "B",
+      "clean_art": "art/manga/chapter_01/clean/p015.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p015.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/chr_vesper_v5.png",
+        "art/concepts/fresh/chr_varro_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "vesper",
+        "varro"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p015_01 at normalized rectangle [0.05, 0.05, 0.43, 0.25]: NIL stops next face, THIRD scoring tube debt-connected; actual accepted bracket separate.\nPanel p015_02 at normalized rectangle [0.52, 0.05, 0.43, 0.25]: Varro hook sweeps low, Vesper calls angle, NIL weight shifts back grounded. No body contact.\nPanel p015_03 at normalized rectangle [0.05, 0.32, 0.9, 0.31]: Parry latch catches; hook deflects into railing spark. ONE defence indicator lights.\nPanel p015_04 at normalized rectangle [0.05, 0.65, 0.9, 0.3]: Reset wide heroes left, Varro right, jar still closed. NIL compares actual stop with score and understands.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p015_01 [50, 75, 430, 375]; p015_02 [520, 75, 430, 375]; p015_03 [50, 480, 900, 465]; p015_04 [50, 975, 900, 450]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p015_01",
+          "rect": [
+            0.02825,
+            0.01798,
+            0.4619,
+            0.33961
+          ],
+          "shot_and_action": "NIL stops next face, THIRD scoring tube debt-connected; actual accepted bracket separate.",
+          "dialogue_ids": [
+            "ch01_015_01",
+            "ch01_015_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.43,
+            0.25
+          ]
+        },
+        {
+          "id": "p015_02",
+          "rect": [
+            0.51156,
+            0.01798,
+            0.46147,
+            0.33961
+          ],
+          "shot_and_action": "Varro hook sweeps low, Vesper calls angle, NIL weight shifts back grounded. No body contact.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.05,
+            0.43,
+            0.25
+          ]
+        },
+        {
+          "id": "p015_03",
+          "rect": [
+            0.02825,
+            0.37129,
+            0.94521,
+            0.27854
+          ],
+          "shot_and_action": "NIL deflects the separate hooked polearm with a normal open LEFT hand; their fused decoder remains on the RIGHT wrist. Hook sparks against railing. ONE defence indicator lights.",
+          "dialogue_ids": [
+            "ch01_015_02"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.32,
+            0.9,
+            0.31
+          ]
+        },
+        {
+          "id": "p015_04",
+          "rect": [
+            0.02825,
+            0.65982,
+            0.94521,
+            0.32106
+          ],
+          "shot_and_action": "Reset wide heroes left, Varro right, jar still closed. NIL compares actual stop with score and understands.",
+          "dialogue_ids": [
+            "ch01_015_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.65,
+            0.9,
+            0.3
+          ]
+        }
+      ],
+      "reading_order": [
+        "p015_01",
+        "p015_02",
+        "p015_03",
+        "p015_04"
+      ],
+      "continuity_notes": [
+        "One defence shown, not three; no early release claim."
+      ],
+      "story_events": [
+        "boss.varro.affected_round_1"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p016",
+      "number": 16,
+      "title": "Final notice",
+      "source_beat": "JAM-08",
+      "layout_id": "C",
+      "clean_art": "art/manga/chapter_01/clean/p016.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p016.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/chr_vesper_v5.png",
+        "art/concepts/fresh/chr_varro_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "vesper",
+        "varro"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p016_01 at normalized rectangle [0.05, 0.05, 0.9, 0.22]: Second affected round: heroes trade front position. Two bright tubes and debt-constrained third; focused attack on known clamp, no invented elemental weakness.\nPanel p016_02 at normalized rectangle [0.05, 0.29, 0.43, 0.28]: Varro coat plate cracks at hinge, free hand presses exemption token: human motive amid machinery.\nPanel p016_03 at normalized rectangle [0.52, 0.29, 0.43, 0.28]: Varro lifts ratchet to larger mechanical detent, announcing a heavier upcoming strike.\nPanel p016_04 at normalized rectangle [0.05, 0.59, 0.9, 0.36]: Charged wide pause: hook raised in long deliberate wind-up, heroes have reaction space. High contrast holds before impact.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p016_01 [50, 75, 900, 330]; p016_02 [50, 435, 430, 420]; p016_03 [520, 435, 430, 420]; p016_04 [50, 885, 900, 540]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p016_01",
+          "rect": [
+            0.03425,
+            0.02083,
+            0.93193,
+            0.2714
+          ],
+          "shot_and_action": "Second affected round: heroes trade front position. Two bright tubes and debt-constrained third; focused attack on known clamp, no invented elemental weakness.",
+          "dialogue_ids": [
+            "ch01_016_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.22
+          ]
+        },
+        {
+          "id": "p016_02",
+          "rect": [
+            0.03425,
+            0.30337,
+            0.45805,
+            0.28682
+          ],
+          "shot_and_action": "Varro coat plate cracks at hinge, free hand presses exemption token: human motive amid machinery.",
+          "dialogue_ids": [
+            "ch01_016_01"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.29,
+            0.43,
+            0.28
+          ]
+        },
+        {
+          "id": "p016_03",
+          "rect": [
+            0.51027,
+            0.30337,
+            0.45591,
+            0.28682
+          ],
+          "shot_and_action": "Varro lifts ratchet to larger mechanical detent, announcing a heavier upcoming strike.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.29,
+            0.43,
+            0.28
+          ]
+        },
+        {
+          "id": "p016_04",
+          "rect": [
+            0.03425,
+            0.60188,
+            0.93193,
+            0.377
+          ],
+          "shot_and_action": "Charged wide pause: hook raised in long deliberate wind-up, heroes have reaction space. High contrast holds before impact.",
+          "dialogue_ids": [
+            "ch01_016_02",
+            "ch01_016_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.59,
+            0.9,
+            0.36
+          ]
+        }
+      ],
+      "reading_order": [
+        "p016_01",
+        "p016_02",
+        "p016_03",
+        "p016_04"
+      ],
+      "continuity_notes": [
+        "Heavier attack telegraphed before affected action, no retroactive damage."
+      ],
+      "story_events": [
+        "boss.varro.affected_round_2"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p017",
+      "number": 17,
+      "title": "The clause nobody reads",
+      "source_beat": "JAM-08",
+      "layout_id": "D",
+      "clean_art": "art/manga/chapter_01/clean/p017.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p017.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/chr_vesper_v5.png",
+        "art/concepts/fresh/chr_varro_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "vesper",
+        "varro"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p017_01 at normalized rectangle [0.05, 0.05, 0.9, 0.26]: Third affected round: NIL watches jar round-track instead of mask; last blank slot in three-part mechanism.\nPanel p017_02 at normalized rectangle [0.05, 0.33, 0.9, 0.18]: NIL third stop, Vesper covers; clean motion path latch to score, glyphs left blank.\nPanel p017_03 at normalized rectangle [0.05, 0.53, 0.43, 0.2]: Hook hits empty floor where NIL stood. One heavy inverted two-colour impact, stone chips, no gore.\nPanel p017_04 at normalized rectangle [0.52, 0.53, 0.43, 0.2]: Third affected-round track closes, jar levers open by expiry. Saved token still inside, NOT yet in reel.\nPanel p017_05 at normalized rectangle [0.05, 0.75, 0.9, 0.2]: Still reaction: NIL eyebrow barely moves; Vesper gives room; Varro sees opened clause too late.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p017_01 [50, 75, 900, 390]; p017_02 [50, 495, 900, 270]; p017_03 [50, 795, 430, 300]; p017_04 [520, 795, 430, 300]; p017_05 [50, 1125, 900, 300]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p017_01",
+          "rect": [
+            0.03767,
+            0.02312,
+            0.92637,
+            0.28995
+          ],
+          "shot_and_action": "Third affected round: NIL watches jar round-track instead of mask; last blank slot in three-part mechanism.",
+          "dialogue_ids": [
+            "ch01_017_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.26
+          ]
+        },
+        {
+          "id": "p017_02",
+          "rect": [
+            0.03724,
+            0.3222,
+            0.9268,
+            0.17523
+          ],
+          "shot_and_action": "NIL third stop, Vesper covers; clean motion path latch to score, glyphs left blank.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.33,
+            0.9,
+            0.18
+          ]
+        },
+        {
+          "id": "p017_03",
+          "rect": [
+            0.03724,
+            0.50599,
+            0.45334,
+            0.18864
+          ],
+          "shot_and_action": "Hook hits empty floor where NIL stood. One heavy inverted two-colour impact, stone chips, no gore.",
+          "dialogue_ids": [
+            "ch01_017_01"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.53,
+            0.43,
+            0.2
+          ]
+        },
+        {
+          "id": "p017_04",
+          "rect": [
+            0.50685,
+            0.50599,
+            0.45719,
+            0.18864
+          ],
+          "shot_and_action": "Third affected-round track closes, jar levers open by expiry. Saved token still inside, NOT yet in reel.",
+          "dialogue_ids": [
+            "ch01_017_02"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.53,
+            0.43,
+            0.2
+          ]
+        },
+        {
+          "id": "p017_05",
+          "rect": [
+            0.03724,
+            0.70377,
+            0.92723,
+            0.27255
+          ],
+          "shot_and_action": "Still reaction: NIL eyebrow barely moves; Vesper gives room; Varro sees opened clause too late.",
+          "dialogue_ids": [
+            "ch01_017_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.75,
+            0.9,
+            0.2
+          ]
+        }
+      ],
+      "reading_order": [
+        "p017_01",
+        "p017_02",
+        "p017_03",
+        "p017_04",
+        "p017_05"
+      ],
+      "continuity_notes": [
+        "Expiry follows third affected PLAYER round. Saved digit returns following round after stop."
+      ],
+      "story_events": [
+        "boss.varro.affected_round_3",
+        "boss.varro.jar_opened"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p018",
+      "number": 18,
+      "title": "One clean answer",
+      "source_beat": "JAM-08",
+      "layout_id": "A",
+      "clean_art": "art/manga/chapter_01/clean/p018.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p018.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/chr_vesper_v5.png",
+        "art/concepts/fresh/chr_varro_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "vesper",
+        "varro"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p018_01 at normalized rectangle [0.05, 0.05, 0.9, 0.35]: Following round: one Vesper shot and two NIL stops compressed through three clean gesture echoes, singular accepted input each, no duplicates.\nPanel p018_02 at normalized rectangle [0.05, 0.42, 0.43, 0.24]: Saved token returns from open jar to THIRD scoring tube AFTER stop. Three matching blank scoring faces align; accepted-input trace stays separate.\nPanel p018_03 at normalized rectangle [0.52, 0.42, 0.43, 0.24]: Single huge settlement: orange interrupted ring closes through converging action, hook/coat driven back. Dense focal perspective, quiet surrounding ink. No seven new damaging shots.\nPanel p018_04 at normalized rectangle [0.05, 0.68, 0.9, 0.27]: Aftermath Varro kneels alive, hook down, jar empty. Civic light remains while separate Audit frame settles. Silent breathing after impact.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p018_01 [50, 75, 900, 525]; p018_02 [50, 630, 430, 360]; p018_03 [520, 630, 430, 360]; p018_04 [50, 1020, 900, 405]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p018_01",
+          "rect": [
+            0.02526,
+            0.02825,
+            0.94949,
+            0.38213
+          ],
+          "shot_and_action": "Following round: one Vesper shot and two NIL stops compressed through three clean gesture echoes, singular accepted input each, no duplicates.",
+          "dialogue_ids": [],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.35
+          ]
+        },
+        {
+          "id": "p018_02",
+          "rect": [
+            0.02611,
+            0.42437,
+            0.46361,
+            0.23801
+          ],
+          "shot_and_action": "Saved token returns from open jar to THIRD scoring tube AFTER stop. Three matching blank scoring faces align; accepted-input trace stays separate.",
+          "dialogue_ids": [
+            "ch01_018_01",
+            "ch01_018_05",
+            "ch01_018_06",
+            "ch01_018_07"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p018_03",
+          "rect": [
+            0.50685,
+            0.42437,
+            0.46789,
+            0.23801
+          ],
+          "shot_and_action": "Single huge settlement: orange interrupted ring closes through converging action, hook/coat driven back. Dense focal perspective, quiet surrounding ink. No seven new damaging shots.",
+          "dialogue_ids": [
+            "ch01_018_02",
+            "ch01_018_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p018_04",
+          "rect": [
+            0.02611,
+            0.67551,
+            0.9482,
+            0.30108
+          ],
+          "shot_and_action": "Aftermath Varro kneels alive, hook down, jar empty. Civic light remains while separate Audit frame settles. Silent breathing after impact.",
+          "dialogue_ids": [
+            "ch01_018_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.68,
+            0.9,
+            0.27
+          ]
+        }
+      ],
+      "reading_order": [
+        "p018_01",
+        "p018_02",
+        "p018_03",
+        "p018_04"
+      ],
+      "continuity_notes": [
+        "Fixed illustrated7 finish; gameplay result may differ. No charged ultimate, Link Art, death or Civic erasure.",
+        "The large orange ring is a stylized Audit settlement visualization, not a city-destroying physical power. Three NIL silhouettes are sequential motion echoes, not clones."
+      ],
+      "story_events": [
+        "encounter.varro.won"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p019",
+      "number": 19,
+      "title": "The rest is not yours",
+      "source_beat": "JAM-09",
+      "layout_id": "C",
+      "clean_art": "art/manga/chapter_01/clean/p019.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p019.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/chr_vesper_v5.png",
+        "art/concepts/fresh/chr_varro_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "vesper",
+        "varro",
+        "livia"
+      ],
+      "colour_script": "slate rain, bone paper and warm amber brass; signature colour only at the focal actor",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: slate rain, bone paper and warm amber brass; signature colour only at the focal actor.\nPanel p019_01 at normalized rectangle [0.05, 0.05, 0.9, 0.22]: Varro kneeling, enormous shoulders now heavy, hand leaves jar, wrapped exemption token exposed.\nPanel p019_02 at normalized rectangle [0.05, 0.29, 0.43, 0.28]: NIL lowers RIGHT decoder with open relaxed hand, never a killing pose.\nPanel p019_03 at normalized rectangle [0.52, 0.29, 0.43, 0.28]: Vesper looks token to Varro, puts coin away instead of flipping it for this decision.\nPanel p019_04 at normalized rectangle [0.05, 0.59, 0.9, 0.36]: Varro rises and leaves alive. Physical lock yields separate blank Seal token to NIL. Small distant sick-girl silhouette in high window, no new dialogue scene.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p019_01 [50, 75, 900, 330]; p019_02 [50, 435, 430, 420]; p019_03 [520, 435, 430, 420]; p019_04 [50, 885, 900, 540]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p019_01",
+          "rect": [
+            0.03553,
+            0.00799,
+            0.93065,
+            0.28539
+          ],
+          "shot_and_action": "Varro kneeling, enormous shoulders now heavy, hand leaves jar, wrapped exemption token exposed.",
+          "dialogue_ids": [
+            "ch01_019_01"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.22
+          ]
+        },
+        {
+          "id": "p019_02",
+          "rect": [
+            0.03553,
+            0.30051,
+            0.45933,
+            0.3125
+          ],
+          "shot_and_action": "NIL lowers RIGHT decoder with open relaxed hand, never a killing pose.",
+          "dialogue_ids": [
+            "ch01_019_02",
+            "ch01_019_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.29,
+            0.43,
+            0.28
+          ]
+        },
+        {
+          "id": "p019_03",
+          "rect": [
+            0.50942,
+            0.30051,
+            0.45676,
+            0.3125
+          ],
+          "shot_and_action": "Vesper looks token to Varro, puts coin away instead of flipping it for this decision.",
+          "dialogue_ids": [
+            "ch01_019_04"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.29,
+            0.43,
+            0.28
+          ]
+        },
+        {
+          "id": "p019_04",
+          "rect": [
+            0.03553,
+            0.62272,
+            0.93065,
+            0.35616
+          ],
+          "shot_and_action": "Varro rises and leaves alive. Physical lock yields separate blank Seal token to NIL. Small distant sick-girl silhouette in high window, no new dialogue scene.",
+          "dialogue_ids": [
+            "ch01_019_05",
+            "ch01_019_06"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.59,
+            0.9,
+            0.36
+          ]
+        }
+      ],
+      "reading_order": [
+        "p019_01",
+        "p019_02",
+        "p019_03",
+        "p019_04"
+      ],
+      "continuity_notes": [],
+      "story_events": [
+        "varro_spared",
+        "seal.1"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    },
+    {
+      "id": "p020",
+      "number": 20,
+      "title": "A beginning in the Tally",
+      "source_beat": "JAM-09",
+      "layout_id": "A",
+      "clean_art": "art/manga/chapter_01/clean/p020.png",
+      "lettered_art": "art/manga/chapter_01/lettered/p020.png",
+      "reference_assets": [
+        "art/concepts/fresh/chr_nil_v5.png",
+        "art/concepts/fresh/chr_vesper_v5.png"
+      ],
+      "cast": [
+        "nil",
+        "vesper",
+        "ama",
+        "tobi"
+      ],
+      "colour_script": "warm window light and orange dawn through slate rain, open sky",
+      "art_prompt": "Original detailed cinematic manga for ZERO-SUM: OMEN. Meticulous variable-weight black ink, selective crosshatching and controlled halftone, expressive anatomy and hands, clear perspective, tactile brass machinery and repaired clothing, matte gouache architectural depth, restrained colour accents. Serious action has weight and aftermath; comedy uses stillness and simplified expression. Teen-rated peril, no gore or sexualization. Preserve supplied character identity and asymmetric props. English left-to-right, top-to-bottom. Exact rectangular layout follows the coordinates below, with clean white gutters. Draw NO lettering, numerals, logos, sound effects, speech balloons, captions, HUD or readable signs. Leave quiet upper areas for separate lettering. Every required digit and word is a later vector layer. No imitation of a named artist or existing franchise. NIL uses they/them, RIGHT decoder, one orange hair streak, three abacus clasps, longer LEFT coat tail. Vesper has LEFT braid, two blank hat cards, seven-chamber gun. Varro is human under a repaired hound mask, with three jars. Never mirror these actors.\nColour script: warm window light and orange dawn through slate rain, open sky.\nPanel p020_01 at normalized rectangle [0.05, 0.05, 0.9, 0.35]: Quiet rooftop after rain, pair small left, distant Basilica. Folded map weighted by coin: six Seal-goal sockets and one different resonance socket, all blank for later overlays.\nPanel p020_02 at normalized rectangle [0.05, 0.42, 0.43, 0.24]: NIL counts seven sockets. Broken identity frame remains, resonance separate. Hand not over face.\nPanel p020_03 at normalized rectangle [0.52, 0.42, 0.43, 0.24]: Look back toward warm window: Ama/Tobi safe together. Vesper coin remains pocketed.\nPanel p020_04 at normalized rectangle [0.05, 0.68, 0.9, 0.27]: Broad final city and waterways. NIL first step BESIDE Vesper. Quiet lower strip for ending and next chapter, no full-campaign reveal.\nUse an exact1000x1500 composition grid (scale proportionally to the output). Panel pixel boxes [x,y,w,h]: p020_01 [50, 75, 900, 525]; p020_02 [50, 630, 430, 360]; p020_03 [520, 630, 430, 360]; p020_04 [50, 1020, 900, 405]. Keep all art inside these boxes; gutters remain plain paper.",
+      "panels": [
+        {
+          "id": "p020_01",
+          "rect": [
+            0.03296,
+            0.02112,
+            0.93408,
+            0.36444
+          ],
+          "shot_and_action": "Quiet rooftop after rain, pair small left, distant Basilica. Folded map weighted by coin: six Seal-goal sockets and one different resonance socket, all blank for later overlays.",
+          "dialogue_ids": [
+            "ch01_020_01",
+            "ch01_020_08"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.05,
+            0.9,
+            0.35
+          ]
+        },
+        {
+          "id": "p020_02",
+          "rect": [
+            0.03296,
+            0.39498,
+            0.45034,
+            0.27626
+          ],
+          "shot_and_action": "NIL counts seven sockets. Broken identity frame remains, resonance separate. Hand not over face.",
+          "dialogue_ids": [
+            "ch01_020_02",
+            "ch01_020_03"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p020_03",
+          "rect": [
+            0.50043,
+            0.39498,
+            0.46661,
+            0.27626
+          ],
+          "shot_and_action": "Look back toward warm window: Ama/Tobi safe together. Vesper coin remains pocketed.",
+          "dialogue_ids": [
+            "ch01_020_04",
+            "ch01_020_05"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.52,
+            0.42,
+            0.43,
+            0.24
+          ]
+        },
+        {
+          "id": "p020_04",
+          "rect": [
+            0.03296,
+            0.68037,
+            0.93408,
+            0.29823
+          ],
+          "shot_and_action": "Broad final city and waterways. NIL first step BESIDE Vesper. Quiet lower strip for ending and next chapter, no full-campaign reveal.",
+          "dialogue_ids": [
+            "ch01_020_06",
+            "ch01_020_07"
+          ],
+          "lettering_safe_area": "Upper20-25% quiet, no critical face/hand/prop overlap.",
+          "crop_status": "Actual source gutter measured; final visual review pending",
+          "authored_rect": [
+            0.05,
+            0.68,
+            0.9,
+            0.27
+          ]
+        }
+      ],
+      "reading_order": [
+        "p020_01",
+        "p020_02",
+        "p020_03",
+        "p020_04"
+      ],
+      "continuity_notes": [
+        "Local ending; future lands are worldbuilding, not playable jam promises.",
+        "Map shows six future Seal goals plus resonance; only Seal 1 is acquired at this point."
+      ],
+      "story_events": [
+        "chapter.01.complete"
+      ],
+      "game_usage": {
+        "reader_mode": "read_only_unlocked_collectible",
+        "unlock_prerequisite": "chapter.01.complete; cover may preview",
+        "adaptation_gate": null,
+        "commit_policy": "Events are future adapter postconditions; reader and page-turn callbacks never execute them.",
+        "skip_policy": "Stop at live choice/combat gates; never resolve combat, choose resonance or grant charm by skipping.",
+        "reduced_motion": "Static page or crossfade; no flash/shake/inversion animation.",
+        "save_policy": "Reader bookmark separate from campaign checkpoint.",
+        "adaptation_policy": "Reference combat panels are retrospective illustration only. A live adapter omits them and resumes after an actual win; it must never display a printed roll as a player result."
+      }
+    }
+  ],
+  "adaptation_boundaries": [
+    {
+      "kind": "choice",
+      "pause_before": "p006_04",
+      "live_system": "resonance_choice",
+      "resume_before": "p007_01",
+      "requirements": "Use accepted resonance 0-9. Replace reference digit; preserve NIL NaN."
+    },
+    {
+      "kind": "combat",
+      "pause_before": "p008_01",
+      "live_system": "solo_audit",
+      "resume_before": "p010_01",
+      "omit_reference_panels": [
+        "p008",
+        "p009"
+      ],
+      "requirements": "Actual completed solo victory only; loss/retry remains in gameplay."
+    },
+    {
+      "kind": "combat",
+      "pause_before": "p011_02",
+      "live_system": "duo_audit",
+      "resume_before": "p012_01",
+      "omit_reference_panels": [
+        "p011_02",
+        "p011_03",
+        "p011_04",
+        "p011_05"
+      ],
+      "requirements": "Actual completed duo victory only. Tab exchange p011_01 can precede combat."
+    },
+    {
+      "kind": "choice",
+      "pause_after": "p012_04",
+      "live_system": "charm_choice",
+      "resume_before": "p013_01",
+      "requirements": "Accept exactly one of the three free charms; substitute any held-item art if shown."
+    },
+    {
+      "kind": "combat",
+      "pause_before": "p014_01",
+      "live_system": "boss_varro",
+      "resume_before": "p019_01",
+      "omit_reference_panels": [
+        "p014",
+        "p015",
+        "p016",
+        "p017",
+        "p018"
+      ],
+      "requirements": "Actual atomic boss settlement and victory. Printed Overwrite is not a forced power or result."
+    }
+  ],
+  "source_art_pixels": [
+    2336,
+    3504
+  ]
+}

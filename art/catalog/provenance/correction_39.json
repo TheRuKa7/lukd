@@ -1,0 +1,22 @@
+{
+  "index": 39,
+  "params": {
+    "model": "gpt_image_2_6",
+    "quality": "high",
+    "resolution": "4k",
+    "aspect_ratio": "3:2",
+    "count": 1,
+    "output_format": "png",
+    "prompt": "Precise continuity correction of FIRST reference: AKA, the red-styled adult KITSUNE TWIN, original four-view design board. Preserve this twin's same face, red/charcoal clothes, costume materials, full four-view layout, quiet cream background, identical body scale and true anatomical side/back elevations. The SECOND reference is AO, the other blue twin; use it only to establish their shared twin face and the opposite-side hair arrangement. Give AKA exactly ONE natural reddish fox tail, emerging from a properly constructed opening at the lower back/sacrum, clearly visible with a red/cream tip in BOTH side views and the unobstructed rear; do not put two tails in a view. AKA's ponytail attaches on the anatomical side OPPOSITE Ao's attachment point, preserving that opposite side through rotation. Their warm red identity must stay distinct from Ao's blue. Exactly two arms/two legs, no extra ears or tail beyond specified fox traits. No lettering/numerals/symbol text, logos or labels.",
+    "medias": [
+      {
+        "role": "image",
+        "value": "44c84506-0f02-4baa-a613-5d90f3bdd23b"
+      },
+      {
+        "role": "image",
+        "value": "7a7aec6b-9a31-46f8-b16f-5c4fb9beec54"
+      }
+    ]
+  }
+}

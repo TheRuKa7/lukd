@@ -1,5 +1,6 @@
 # ZERO-SUM: OMEN — Refinement review
 
+> **HISTORICAL SNAPSHOT - 6 November 2026, baseline `3d88239`.** Findings/proposals describe that snapshot, not the current corrected repository. See [adopted decisions](../DECISIONS.md), [current status](../PROJECT_STATUS.md) and [audit resolutions](../DOC_AUDIT.md).
 Review date: **6 November 2026 (IST)**. Repository: [TheRuKa7/lukd](https://github.com/TheRuKa7/lukd). Source snapshot: `3d88239dff58db1d313b8d979d6ae98a8f1ceed0`. Local branch: `codex/refinement-review`.
 
 **User constraints:** Unity jam first, expansion afterward; existing/free tools first; AI authors and processes the development work. Paid generation is optional. This review does not authorize spending, replace canon, or certify release readiness.

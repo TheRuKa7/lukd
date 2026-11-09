@@ -30,7 +30,7 @@ CAST = [
          palette=[("Ash", "#8A7F72"), ("Ink", "#141018"), ("Nixie", "#FF7A2C")],
          look=dict(hair=["messy", "#EDE6DA", "#FF7A2C"], top=["poncho", "#8A7F72", 0.45, 1.3], inner="#2A2530", legs="#2A2530", shoes="#3A2E28",
                    hat=["hood", "#7A7064"], props=[["decoder", "#FF7A2C"], ["halo_nan", "#FF7A2C"], ["satchel", "#6B4226"]]),
-         spec="Hooded ash-grey poncho patched with Remainder scrap over black clothes; a satchel; the decoder wrapped in rag. The coat is earned later (Vesper buys it in Act I).",
+         spec="Optional pre-story ash-grey protective wrap over NIL's established clothing; a satchel; the RIGHT-wrist decoder visible beneath its wrapping. The default asymmetric actuary coat is already present in the Prologue; no Act I purchase is required.",
          locks=["Hood up until the Naming Rite", "Decoder visible under the rag"]),
     dict(key="nil_parade", group="Main character", name="NIL", outfit="Night Parade disguise (Act I, Hyakki)", role="Protagonist · festival disguise",
          land="Hyakki", digit="—", omen="NaN", h=1.74, w=0.40, skin="#E9D6C4", eyes="#E8A33A",
@@ -42,10 +42,10 @@ CAST = [
     dict(key="nil_openhand", group="Main character", name="NIL", outfit="The Open Hand (finale, true ending)", role="Protagonist · finale",
          land="The Basilica", digit="yours", omen="your number", h=1.74, w=0.40, skin="#E9D6C4", eyes="#E8A33A",
          palette=[("Bone", "#F4F1EA"), ("Gold", "#D4AF37"), ("Nixie", "#FF7A2C")],
-         look=dict(hair=["messy", "#EDE6DA", "#FF7A2C"], top=["coat", "#F4F1EA", 0.70, 1.2], tails=[0.95, 0.95], inner="#D4AF37", legs="#EDE6DA",
+         look=dict(hair=["messy", "#EDE6DA", "#FF7A2C"], top=["coat", "#F4F1EA", 0.70, 1.2], tails=[0.95, 0.70], inner="#D4AF37", legs="#EDE6DA",
                    shoes="#B5A642", belt="#D4AF37", props=[["decoder", "#FFD27A"], ["halo_digit", "#FFD27A"]]),
-         spec="The coat turned inside out: its bone-white lining embroidered with every land's ledger in gold thread. Both tails even for the first time. The halo resolves into the player's digit.",
-         locks=["Only in the true ending", "The halo shows the player's chosen digit"]),
+         spec="Positive-Sum epilogue outfit: the coat's bone-white lining bears gold ledger embroidery and the LEFT tail remains longer. NIL's chosen stable resonance is separate from a positive Civic Omen (10 for resonance 0, otherwise 01-09); healthy Civic 00 is never shown.",
+         locks=["Only after the confirmed true ending", "Longer LEFT coat tail retained", "Chosen resonance separate from positive Civic identity"]),
 
     # ------------------------------------------------------------------ companions
     dict(key="vesper", group="Companions", name="Vesper Sette", role="Gunslinger · companion", land="Meridian / Crossroads", digit="7", omen="77",

@@ -1,5 +1,6 @@
 # ZERO-SUM: OMEN — Comparative design research
 
+> **HISTORICAL SNAPSHOT - 6 November 2026, baseline `3d88239`.** Findings/proposals describe that snapshot, not the current corrected repository. See [adopted decisions](../DECISIONS.md), [current status](../PROJECT_STATUS.md) and [audit resolutions](../DOC_AUDIT.md).
 **Research date: 6 November 2026.** Sources below are official developer/publisher pages. These are documented feature comparisons, not hands-on playtest findings. Proposed applications and experiments are our inferences. No recommendation assumes that a reference game's scope or production budget is reproducible with AI alone.
 
 ## 1. Reference matrix

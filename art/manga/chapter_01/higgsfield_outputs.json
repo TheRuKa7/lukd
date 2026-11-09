@@ -1,0 +1,305 @@
+{
+  "date": "2026-11-08",
+  "outputs": [
+    {
+      "page": 1,
+      "job_id": "5219a736-2e91-48af-9422-da3e54ddc86a",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p001.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "2e59dcc913b911e3168476c28f01ca4857b05e13f3f395cac653e9728809d0b0",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 2,
+      "job_id": "8f96852c-6af2-4215-8380-a82431c15642",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p002.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "9d269f6190608976a6d97901846ec8050c4473ef56d2f704c10b7573ce310e14",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 3,
+      "job_id": "1e4e2ac6-66c3-4f5d-9c83-52a52d292e42",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p003.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "3a964249d0518ded7ec45e84dc7f8659c7f538c0a16381f369315000e323a4f9",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 4,
+      "job_id": "2d59b5f4-8042-48ee-a0c3-f1624ff875ea",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p004.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "1104d81128895792e049058712a2f01d4e52cdda9e533979ced880119d7d4859",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 5,
+      "job_id": "d03f77e1-df25-4587-b2cf-273e0a8302c9",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p005.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "306086a75f0637dabfa0c8e252de89170c2ac1ae95f623c3b3de6ddc835398be",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 6,
+      "job_id": "52223928-2081-4f44-977f-35e5355556e1",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p006.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "bb554e2b913351e3c6999f5ecfa7eab3518abd385e6be5e44ec66a7cf381186e",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 7,
+      "job_id": "adaa34fb-f80b-4d30-b8df-6c8610832ddc",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p007.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "37f93287876f1970c32b24eddd582ee82485852da5dda0ed49bdfedc5495eeb5",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 8,
+      "job_id": "b61962ff-460f-424c-875c-dba87bfb0a57",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p008.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "e98476a978324639858caa2470da31687c292bc8132a48283210edcb3c66336f",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 9,
+      "job_id": "c9af8a5b-48c7-454c-a282-938c768f69fd",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p009.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "13b2a2b1a8641d6fb76616c53bf289989933c327adf01771fbb1859c8e20c6ee",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 10,
+      "job_id": "6961b515-57c7-42ea-b2da-314f85ad8d22",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p010.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "c6b3610cb1f8810c740a7aa5eeb671b394d6dc2e42fb555e78fc2eab871686fa",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 11,
+      "job_id": "f32be35b-6f26-4391-94e7-443c5f1cd454",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p011.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "e552a62db85e86ed3e5c93a13037fbe332a7e25e98e29940fa2adfb857e5ed0e",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 12,
+      "job_id": "1d72dda2-8e03-45d1-84e6-d53a4b38c4b0",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p012.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "92f577d765d8129a554da3b8b3fe8be4b892221d4295fef06e9e4c94de878382",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 13,
+      "job_id": "fb030255-e0ac-46f8-b824-91fa8091cc0e",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p013.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "752204008b6c810bcac6bd432386f41879f90e025cdc3e74f6c25e564a4fb667",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 14,
+      "job_id": "c1b84bda-affe-46b4-b300-f2ba4d273aba",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p014.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "bf0101b251203baf229094f90218117565d8e5afe7f8fa6ce23a871a9cbcd1f8",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 15,
+      "job_id": "39ccc69f-09f9-45e5-8c2e-a633f50c5e93",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p015.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "8c8d76869f91bd87141824ab22d07d991878a1f6d2f10f71e9cb7d0f5487d35c",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 16,
+      "job_id": "616e345c-c46f-4c72-aaf8-3021fa82d786",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p016.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "b568d1d3e5fd5ab247c4d780e4a277051578925a432790a102e4cc322f639bea",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 17,
+      "job_id": "25a3257d-333e-4d66-a90c-db3bf29674b2",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p017.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "25c04b399fb060338ffde9f0fe2b73eb483b2910c20f553e4ea67f25eb0d32d7",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 18,
+      "job_id": "716c3217-3b23-4a34-b2a5-db71f9147af0",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p018.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "cfd4c1af39dbe43770a7d42e555d62104bcb374defc6faf598f932c6f9ef7162",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 19,
+      "job_id": "e2841907-327f-41cc-aa8d-0e19236b0db6",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p019.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "73335663fddbbef221cf4e88768db322b982cd887f0b42bfea62e34144d3036d",
+      "status": "generated; visual QA pending"
+    },
+    {
+      "page": 20,
+      "job_id": "3907c9eb-3601-4957-984d-b3c7fbc60993",
+      "provider": "Higgsfield",
+      "model": "gpt_image_2_6",
+      "requested_quality": "high",
+      "requested_resolution": "4k",
+      "path": "art/manga/chapter_01/clean/p020.png",
+      "pixels": [
+        2336,
+        3504
+      ],
+      "sha256": "d1f1f9445c1234195a24e2b57a9f09430ab12b0181e8d30ccf9b63bd5f9d3f1f",
+      "status": "generated; visual QA pending"
+    }
+  ]
+}

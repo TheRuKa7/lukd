@@ -41,23 +41,23 @@ Meshy's [rigging API](https://docs.meshy.ai/en/api/rigging) targets textured hum
 
 Higgsfield's [API quick start](https://open.higgsfield.ai/quick-start) documents asynchronous jobs; read current model/connector schemas. Current connector exposes reference Elements; only completed compatible elements are usable. References improve consistency without certifying it. Save/reconcile job IDs; do not duplicate uncertain charged requests. Shipped gameplay has no runtime generation service.
 
-## 5. Current tool evidence (7 November)
+## 5. Current tool evidence (8 November)
 
 | Tool | Verified | Unverified |
 |---|---|---|
-| Blender | 5.2.1 LTS executable/help checked 6 Nov | Project sources, production renders/rigs |
+| Blender | 5.2.1 LTS; editable cast, environment, encounter and lookdev scenes; actual four-camera and three-camera draft renders | Final topology/rigs, animation and Unity import acceptance |
 | Unity | 6000.4.11f1+Web module structurally checked | Game import/build/licence success/performance |
-| Higgsfield | Read-only balance/preferences/workspace/project access; Elements schema exposed | Specific request cost/free eligibility; old uncertain jobs; output acceptance/rights |
+| Higgsfield | Reference uploads, exact per-request quotes, completed original manga/concept jobs through gpt_image_2_6; IDs/prompts/hashes recorded | Final runtime acceptance, old unrelated uncertain jobs and per-output rights clearance |
 | Meshy | Read-only balance/model-list access | Per-job cost/rights; game-specific export/rig quality |
 | SVG kit | Source generators exist | Runtime acceptance; future figures are stand-ins |
 
-Balances/unrelated account assets are not public design data. Existing allowances are not universal free generation entitlement. The read-only provider checks made no purchase/trial/upload/generation. The later user-requested fresh designs use the built-in image tool; Blender lookdev processing and output evidence are logged in AI_DISCLOSURE. Old 'working/free', unknown-job and connector-absent statuses were from another session and are not current authority.
+Balances/unrelated account assets are not public design data. Existing allowances are not universal free generation entitlement. The initial provider checks were read-only. Subsequent user-directed fresh v5 identity concepts used the built-in image tool; the complete illustrated cast/environment pass and final manga use Higgsfield as explicitly requested. Local Blender supplies editable spatial references. Actual providers, job IDs, processing and output hashes are logged in AI_DISCLOSURE and the catalog/manga manifests. No subscription, credits or trial were purchased by this work. Old 'working/free', unknown-job and connector-absent statuses were from another session and are not current authority.
 
 ## 6. Book structure and reproducibility
 
 Keep a designed cover, scope/status page, eras, regional scripts, labelled candidate plates, selected sheets, symbols/charms and production priorities. Future regions stay visibly future. No painting-per-district quota before the jam.
 
-Builders support `--check`(no output), `--html-only`, `--output-dir PATH`; defaults retain README PDF filenames. For previews use `--html-only --output-dir build/review-artbook`. Dependencies: Python Pillow; Markdown additionally for bible; Node Playwright with installed Chromium; ffmpeg only for bible motion stills. Renderer blocks remote requests. No network font download. Input manifests record hashes; image/video caches key source bytes plus parameters.
+The complete current visual volume uses `tools/build_full_artbook.py --require-complete-views --output-dir build/full-artbook`; its check/layout modes do not author a PDF. Manga uses `tools/build_manga.py --render-pages`, followed by the portable game packager. The older bible/artbook builders retain `--check`, `--html-only` and `--output-dir` for historical compatibility. Dependencies: Python Pillow; Markdown additionally for bible; Node Playwright with installed Chromium; ffmpeg only for bible motion stills. Renderer blocks remote requests. Fonts are bundled locally with their licences; rendering performs no network font download. Input manifests record hashes; image/video caches key source bytes plus parameters. High-resolution illustrations remain unchanged; book/runtime JPEGs are declared derivatives with source hashes.
 
 After a PDF rebuild inspect overflow-prone pages and representative spreads for clipping, missing glyphs, broken images and incorrect facts. Rendering alone is not visual acceptance. Root integration owns final regenerated books and verification.
 

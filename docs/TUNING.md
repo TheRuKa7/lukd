@@ -1,74 +1,70 @@
-# ZERO-SUM: OMEN — Tuning (Gate A2)
+# ZERO-SUM: OMEN - Jam tuning and model evidence
 
-Every number in the jam slice lives in [`../tuning/jam_tuning.csv`](../tuning/jam_tuning.csv); Unity imports it, so there are **no magic numbers in code**. This page explains the targets and shows the simulation that backs them. Re-run with `python3 tools/sim_patterns.py` and `python3 tools/sim_patterns.py --favour`.
+Updated 8 November 2026. [DECISIONS](DECISIONS.md), [SYSTEMS](SYSTEMS.md) and [JAM_SLICE](JAM_SLICE.md) define the rules. [`jam_tuning.csv`](../tuning/jam_tuning.csv) contains 51 finite numeric inputs and planning targets. The JavaScript reference implements the core rules; **a Unity CSV importer and a Unity game have not been implemented or verified**. The CSV is not evidence that every runtime value is already data driven.
 
----
+## 1. Current values and scope
 
-## 1. Targets (what "fun" means in numbers)
+| Item | Current specification |
+|---|---|
+| Encounters | One solo Debt Hound, one two-hero Debt Hound, then Varro; no three-Hound gauntlet or Collector fight |
+| Party | Start level 1 / Balance 300; Varro checkpoint level 2 / Balance 340; jam level cap 2 |
+| Enemy stakes | Each Hound 300; Varro 1,200 |
+| Enemy base | Hound 20; Varro 40, then 80 at half Balance with one further base-40 warning action |
+| Pattern multipliers | Overwrite 21; Reaper 4; Jackpot max(2, triple digit); Cascade 3; Zero-Sum 2; Pair 2; Bust 1 |
+| Round settlement | Once, after three accepted stops and any explicit scoring repair; no provisional damage double-payment |
+| Reaper | Additional floor(0.44 x current Balance) on each qualifying side, snapshotted before normal damage and committed atomically |
+| Chosen zero | Accepted defensive zero combines Parry and Fortune once; automatic Ofuda has no accepted face and no reflection |
+| Reward | Free choice of Horseshoe, Black Cat or Ofuda; no fen shop or crafting in the jam |
 
-| Measure | Target | Why |
+Actual stopped digits and resolved scoring digits are distinct. Vesper's per-seven landing bonus uses actual digits. Varro's stored digit, replacement, expiry and restoration follow SYSTEMS; do not approximate a jar as a flat damage penalty. Exact fixtures live in [`reference_rules.test.js`](../tests/reference_rules.test.js).
+
+## 2. Timing and difficulty hypotheses
+
+| Measure | Target | Evidence needed |
 |---|---|---|
-| Small Audit length | 3–4 rounds, 60–90 s | Long enough for a pattern, short enough to stay snappy |
-| Big Audit | 5–6 rounds | Room for a Cascade or an ultimate |
-| Boss | 9–12 rounds, 3–4 min | Two phases and at least one big moment |
-| Pair or better | ~65% of rounds (average player) | Something good happens most rounds |
-| Jackpot or Overwrite | 1 in 12 rounds (average player with own-digit Twins), about once per fight | The dream moment is common enough to chase |
-| Three Busts in a row | **0%** | Bad luck never feels like a wall (Hap's Hand) |
-| Damage growth | "No synergy" build stalls by Tamamo; "good synergy" build finishes Tamamo in ≤ 10 rounds | Balatro's rule: the build must matter |
-| Losing | Party Settles ≈ 1 in 5 boss attempts for an average first-timer | Tension without frustration |
+| Hound | 3-4 rounds / 60-90 seconds | Full encounter simulation plus fresh-player observations |
+| Varro | 9-12 rounds / 180-240 seconds | Includes defence, jar, phase transition and retries |
+| Full Prologue | 10-15 minutes | Interactive story, Naming, three fights, reward and ending |
+| First action / Naming | Within 20 / 60 seconds after Start | Measure separately from cold download |
+| Three consecutive scored Busts | Prevented by visible Hap's Hand repair | Exact event/state test, including reset boundaries |
 
-## 2. Pattern odds (simulated, 60,000 rounds per cell)
+These are acceptance hypotheses, not measured averages. No evidence currently supports a 20% first-time boss loss rate, a universal 65% success rate, or equal difficulty across the ten chosen digits. Do not silently engineer every player into the printed manga's reference route.
 
-Party: NIL (digit 7) + Vesper (7) + Maeve (3). "Skill" = chance a tap lands the face the player aims at. The **average player** is modelled at 25%.
+## 3. Reproducible pattern-exposure model
 
-| Setup | Overwrite | Jackpot | Cascade | Zero-Sum | Pair | **Bust** |
-|---|---|---|---|---|---|---|
-| 10-face wheels, aim at own digit (original GDD) | 1.0% | 0.4% | 1.4% | 9.8% | 30.1% | **57.3%** |
-| 10 faces + **Pattern Sight** (3rd striker aims to complete) | 4.7% | 1.3% | 3.3% | 14.5% | 31.6% | **44.5%** |
-| **8-face starter wheels** + Pattern Sight | 5.8% | 1.8% | 2.6% | 13.5% | 35.3% | **41.1%** |
-| 8 faces + Pattern Sight + **Hap's Favour** (8-round fights) | — | — | — | — | — | **34.5%** |
+Run from repository root:
 
-Findings that changed the design:
-1. **Aiming at your own digit in a mixed party makes Busts more likely** (mixed party, 50% skill: 72% Busts). The fix is *reading the reel*: Pattern Sight shows the third striker which faces complete a pattern (GDD §1.1).
-2. **10-face wheels are too wide for a starter.** Starters have 8 faces; removing faces is the core of wheel crafting later.
-3. **Bad-luck streaks** happened in 25% of an average player's fights before Hap's Favour, and in 0% after (SYSTEMS §2.4).
-4. **Overwrite must not depend on the digit** (×3·digit gave digit 0 a ×0 and digit 9 a ×27). It is now a flat **×21** for every digit.
+```sh
+python tools/sim_patterns.py 60000 --favour --json
+```
 
-Expected Mult per round (from the table, 8 faces + Pattern Sight): **≈ 1.6 for a random tapper, ≈ 2.8 for an average player**, most of the gap coming from Overwrites. That gap is the skill expression we want.
+Evidence generated on 8 November with model `jam-pattern-v2`, seed 7, **60,000 rounds for each of 60 cells**: ten chosen digits x solo/two-hero x three hypothetical aim probabilities. Each cell resets Favour every eight rounds. NIL uses D05's legal eight-face list; Vesper uses `[0,1,2,3,5,6,7,8]`. The solo order is NIL/NIL/NIL. The two-hero order is one legal fixed order, NIL/Vesper/NIL, not every player-selected order. Own-resonance width is 2; warm matching width is 1.5. Third-stop Pattern Sight targets the highest-priority available completion, breaking ties by multiplier and smaller digit. Failed aims draw by face width. Favour repairs scoring slot three to slot one before classification.
 
-## 3. Damage and Balance curve (jam slice)
+The `aim` value is an **independent Bernoulli assumption**, not a measured beginner/average/expert label. Wheel speed has no fitted conversion to aim accuracy. This model omits defence, damage, charms, Varro's jar, phase changes, player adaptation and economy; it cannot predict fight length, win rate or fun.
 
-Strike = tens (10 × level) + digit. Round damage = Σ strikes × Mult.
+Selected cells below report percentages after Favour. Rounding can change totals by 0.01 points.
 
-| Point in the slice | Party level | Typical round (avg player, no charms) | With a good build | Enemy Balance | Rounds to win |
-|---|---|---|---|---|---|
-| Fight 1 (NIL alone) | 1 | (10+5)×3 × 2.8 ≈ 125 | — | Debt Hound 300 | 3 |
-| Fight 2 (NIL + Vesper) | 1 | ≈ 125 | — | 3 × 300 (one at a time) | 3 each |
-| Collectors (Big) | 2 | (20+5)×3 × 2.8 × 0.75 (armour) ≈ 160 | ≈ 220 | 500 | 3–4 |
-| **Varro** | 2 | ≈ 210 (jars cost ~1 tube in 3 rounds) | ≈ 300 | 1,200 | 6–9 |
-| Act I Small | 3 | (30+5)×3 × 2.8 ≈ 295 | ≈ 450 | 1,500 | 4–5 |
-| Act I Big | 3 | ≈ 295 | ≈ 500 | 2,500 | 5–8 |
-| **Tamamo** | 4 | (40+5)×3 × 2.8 ≈ 380 | ≈ 700 (Hina + charms + Link Art) | 6,000 | 9–16 |
+| Party / chosen digit / aim | Overwrite | Reaper | Jackpot | Cascade | Zero-Sum | Pair | Bust |
+|---|---|---|---|---|---|---|---|
+| Solo / 0 / 0.00 | 1.42 | 0.00 | 1.33 | 1.21 | 9.66 | 40.52 | 45.86 |
+| Solo / 0 / 0.25 | 7.86 | 0.00 | 2.02 | 2.73 | 20.69 | 34.69 | 32.01 |
+| Solo / 7 / 0.25 | 7.76 | 0.29 | 1.73 | 5.92 | 21.83 | 31.08 | 31.40 |
+| Solo / 7 / 0.50 | 23.28 | 0.21 | 1.12 | 8.63 | 26.76 | 23.39 | 16.62 |
+| NIL/Vesper/NIL / 0 / 0.25 | 1.75 | 0.00 | 2.64 | 4.68 | 22.39 | 31.18 | 37.36 |
+| NIL/Vesper/NIL / 7 / 0.25 | 7.94 | 0.00 | 1.42 | 5.47 | 20.26 | 31.27 | 33.63 |
 
-The plain build needs ~16 rounds against Tamamo (and will likely Settle), the good build ~9: the build matters, as intended. If playtests show the plain build winning easily, raise Tamamo to 7,500 before touching anything else.
+Vesper lacks face 4, so the fixed two-hero order cannot make 444. This is a legal-wheel consequence, not a broken classifier. Overwrite on chosen 4 still wins priority over Reaper. Chosen-zero defensive overlap is absent from this exposure table, so its balance cannot be inferred from the zero row. The ten-digit distribution must inform a real encounter model and playtests before any fairness claim.
 
-## 4. Enemy damage
-Enemy strike = enemy tens + stopped digit; the player stops enemy wheels too, so parries (0) and Fortune (your digit) depend on skill. Starter enemy wheels have 10 faces (no omissions) so parry odds are 10–12%.
+Hap's Hand prevents a third consecutive **scored** Bust by visibly converting a would-be Bust into at least a Pair. It does not eliminate all Busts, guarantee a Jackpot, or prove a player cannot lose. Warm Favour alone has no such guarantee. Black Cat and Hap's Hand share one repair pipeline and do not double-convert the same event.
 
-| Enemy | Tens | Avg hit | Hits to Settle a 300-Balance party |
-|---|---|---|---|
-| Debt Hound | 20 | ~24 | 12 |
-| Collector | 30 | ~34 | 9 |
-| Varro P1 / P2 | 40 / 80 | ~44 / ~88 | 7 / 3–4 |
-| Tamamo | 60 | ~64 (+curses) | 7 at Balance 420 |
+## 4. Damage and economy boundaries
 
-## 5. Economy (jam)
-Fen: Small 8 · Big 15 · Elite 25 · Boss 40; interest 1 per 5 held (cap 5). Prices: common charm 6, rare 12, reroll 3 (+1 each time), face removal 5, enhancement 8. Expected fen at Ofuku's shrine ≈ 45: enough for one rare charm *or* two enhancements, never both (a real choice).
+An unmodified strike is `10 x level + actual stopped digit`; specified landing/passive modifiers apply in the documented order. Sum the three strike bases, apply the one winning pattern and settle once. Future extended reels, armour, charge, Link Arts and Tamamo builds are excluded from this jam model. Do not multiply a guessed mean by enemy Balance and present the result as an observed fight duration.
 
-## 6. How to tune during the jam
-1. Change the CSV, never the code.
-2. Re-run the simulation if you touch wheels, faces or patterns.
-3. Change one number per playtest round, and write down why in the CSV note column.
-4. Priority when a fight feels wrong: enemy Balance → enemy tens → wheel speed → pattern mults (last; they're the game's language).
+Full-campaign fen/interest/prices and act transitions are specified in [ECONOMY_PROGRESSION](ECONOMY_PROGRESSION.md). They do not enter the jam reward flow. That document's illustrative affordability example uses a 20-fen budget: a 12-fen charm plus two 8-fen enhancements costs 28. A 45-fen budget could afford all three and cannot support a scarcity claim.
 
-**Done when:** Unity loads every value above from the CSV, the simulation matches §2, and two playtest rounds have confirmed or corrected §3.
+## 5. Change and acceptance process
+
+Change one factor per measured playtest round and record the reason, source revision, digit, party order, charm, Assist setting and result. For enemy difficulty, investigate stake/base damage and the jar's readable counterplay before changing the pattern language. Face or pattern changes require exact fixtures and a fresh versioned exposure report. Timing/width changes require input and accessibility checks; a statistics-only rerun is insufficient.
+
+Before accepting a Unity tuning pass: implement a strict CSV importer (duplicate/unknown/nonfinite/range checks), demonstrate that runtime settings use the imported values, pass exact rule fixtures on the target engine, verify the complete hosted encounter sequence, then collect two fresh-player rounds. These production gates remain open.

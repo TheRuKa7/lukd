@@ -1,0 +1,22 @@
+{
+  "index": 6,
+  "params": {
+    "model": "gpt_image_2_6",
+    "quality": "high",
+    "resolution": "4k",
+    "aspect_ratio": "2:3",
+    "count": 1,
+    "output_format": "png",
+    "prompt": "Precision continuity edit of FIRST reference. Retain its original detailed ink/cel art, complete full-page composition and all unaffected material. Preserve this entire existing comic page's four-panel layout, clean white gutters, characters, Naming terminal, contact gestures, camera perspectives, faces, costume details, colour accents and exact positions. Correct ONLY its backgrounds/location: this scene takes place INSIDE Brother Nought's cramped warm repaired shrine, continuing the previous page's entry. Replace the outdoor rain canal and distant Basilica in EVERY panel with interior paper ledgers, worn brass pipes, a low amber lamp, patched plaster, small shrine alcove and closed repaired door. It is dry indoors. A small window may show rain outside, never an open outdoor plaza. The terminal stays brass mechanical. In the top panel NIL's back must show back coat seams and ledger lining, not an extra row of three FRONT abacus clasps copied onto the back. Keep the front clasps in the front-facing panels. No added writing, symbols, numerals, balloons, captions or logos.",
+    "medias": [
+      {
+        "role": "image",
+        "value": "44723c5f-0b3d-4771-ad75-a5da07dd2b74"
+      },
+      {
+        "role": "image",
+        "value": "a2d34f71-172a-4d0e-8fc6-f88f4214fb24"
+      }
+    ]
+  }
+}

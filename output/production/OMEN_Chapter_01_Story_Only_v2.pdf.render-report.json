@@ -1,0 +1,23 @@
+{
+  "source_sha256": "ef2696b1d5fec32c9fc3e35ea9ac01821af37e5e60da9f9ab5b8f7f2bee2b041",
+  "missingImages": [],
+  "designedPages": 0,
+  "overflowWarnings": [],
+  "fonts": [
+    {
+      "family": "OMENBody",
+      "status": "loaded"
+    },
+    {
+      "family": "OMENBody",
+      "status": "unloaded"
+    },
+    {
+      "family": "OMENDisplay",
+      "status": "loaded"
+    }
+  ],
+  "blockedRemoteRequests": [],
+  "failedRequests": [],
+  "note": "Structural render report only; visual inspection and glyph/semantic checks still required."
+}

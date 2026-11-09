@@ -1,5 +1,6 @@
 # ZERO-SUM: OMEN — End-to-end refinement plan
 
+> **HISTORICAL SNAPSHOT - 6 November 2026, baseline `3d88239`.** Findings/proposals describe that snapshot, not the current corrected repository. See [adopted decisions](../DECISIONS.md), [current status](../PROJECT_STATUS.md) and [audit resolutions](../DOC_AUDIT.md).
 **6 November 2026, IST · source commit `3d88239` · proposed decisions, not changes to existing canon.**
 
 ## 1. Direction

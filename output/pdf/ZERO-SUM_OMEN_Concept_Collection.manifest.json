@@ -1,0 +1,1095 @@
+{
+  "pages": 94,
+  "cast_boards": 84,
+  "environment_boards": 7,
+  "new_generations": 0,
+  "boards": [
+    {
+      "page": 4,
+      "request_id": "cast_001_nil",
+      "path": "art/concepts/complete/cast_001_nil.png",
+      "sha256": "1ac9f5a83828c306f31fef3c316a63662e8eb0b99833c5aeb30bf4e7610fec21",
+      "job_id": "0b2fe0a8-1165-46eb-a049-fb3a2c4f977c",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "nil"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 5,
+      "request_id": "cast_002_nil_rags",
+      "path": "art/concepts/complete/cast_002_nil_rags.png",
+      "sha256": "49dfc897522d991108cedec81c4d96ffd90573e489164acc2ebcf43f43c9d4f2",
+      "job_id": "3985749e-aa38-48e3-991c-e496d2c11bdb",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "nil_rags"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 6,
+      "request_id": "cast_003_nil_parade",
+      "path": "art/concepts/complete/cast_003_nil_parade.png",
+      "sha256": "bbdb900c8cb60db963de5355177427fba1e7c39edeefa423465fc92ae2d002ea",
+      "job_id": "e7db3501-11ea-45fb-98ed-2875e6c3d6ca",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "nil_parade"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 7,
+      "request_id": "cast_004_nil_openhand",
+      "path": "art/concepts/complete/cast_004_nil_openhand.png",
+      "sha256": "a61ef0a0df0a27a3fe674cd673477451a81db8001ca9ac4eabd0de129b15fd49",
+      "job_id": "5a547620-4305-4404-87e3-815916dc04ec",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "nil_openhand"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 8,
+      "request_id": "cast_005_vesper",
+      "path": "art/concepts/complete/cast_005_vesper.png",
+      "sha256": "63da81f9905378946ed5205d27dd99a230e0a8035e5e905345b7cf5cb5cef14e",
+      "job_id": "c97356b4-a048-40a6-a4c6-ec4cfd0bd5c5",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "vesper"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 9,
+      "request_id": "cast_006_maeve",
+      "path": "art/concepts/complete/cast_006_maeve.png",
+      "sha256": "6a59c25c8631f1a390705c65218d1766213c9596c75eb38db7db36fea5a0bc5e",
+      "job_id": "2aa13c18-8da4-4178-b516-045f87262c09",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "maeve"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 10,
+      "request_id": "cast_007_hina",
+      "path": "art/concepts/complete/cast_007_hina.png",
+      "sha256": "aa650980d464db3e6c5173cbe50301277d6268e73fe93a8ae5b67cccac6450a1",
+      "job_id": "593fe6d4-0916-4da3-96e8-e64664b238bc",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "hina"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 11,
+      "request_id": "cast_008_ba",
+      "path": "art/concepts/complete/cast_008_ba.png",
+      "sha256": "cdb4d395e2b18cae6a0c67bfdab9d44d7ccef5173b51b88344faa73577fec0fa",
+      "job_id": "5ccb132f-2ff6-4b1e-9e40-4af308a57888",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "ba"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 12,
+      "request_id": "cast_009_bai_si",
+      "path": "art/concepts/complete/cast_009_bai_si.png",
+      "sha256": "92f118b703a55972011c450c27c5e6cc22833e46e579987ebccad49a88218e7b",
+      "job_id": "cf605ab4-75c8-4afa-a744-85a3fc03896f",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "bai_si"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 13,
+      "request_id": "cast_010_shunya",
+      "path": "art/concepts/complete/cast_010_shunya.png",
+      "sha256": "1f5e756c56d5e595f6806846e12048c066b940ced9cd87e28a1955426f7387ae",
+      "job_id": "2f161cd1-1341-46db-851a-c970b54daf59",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "shunya"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 14,
+      "request_id": "cast_011_prima",
+      "path": "art/concepts/complete/cast_011_prima.png",
+      "sha256": "773e7ffbb50cc360d2844e2103def768a0f1af08f9f3526075c7e8d9373a7268",
+      "job_id": "7036b9ea-8208-494a-8c67-01db54f127e0",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "prima"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 15,
+      "request_id": "cast_012_fibi",
+      "path": "art/concepts/complete/cast_012_fibi.png",
+      "sha256": "b4cc8144cd8febad8f97c2cf1d59a489c8f5b7e2bf405072025e579aa45f773b",
+      "job_id": "03e37be5-dc1d-4870-b03f-e46fd389aa92",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "fibi"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 16,
+      "request_id": "cast_013_varro_ally",
+      "path": "art/concepts/complete/cast_013_varro_ally.png",
+      "sha256": "da90516cde916a7d27bbcc5038a72cfb9e957028241745365a2fc02aee28a94d",
+      "job_id": "89e68df7-adb3-43f1-8a41-90615d183816",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "varro_ally"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 17,
+      "request_id": "cast_014_kyusuke",
+      "path": "art/concepts/complete/cast_014_kyusuke.png",
+      "sha256": "afa24cab55a39dbe27768de016794729ee76e3424d52328f8b0da71ec353bd64",
+      "job_id": "1162b929-5bdd-4778-b12d-d35acd2998cf",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "kyusuke"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 18,
+      "request_id": "cast_015_liu_shun",
+      "path": "art/concepts/complete/cast_015_liu_shun.png",
+      "sha256": "0bc85b78229360c261b45d4670f3bac47d653819cc466f1ca507214b9ba7c09a",
+      "job_id": "cfe36047-d9e6-4360-97ce-89e24acc1e0e",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "liu_shun"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 19,
+      "request_id": "cast_016_varro",
+      "path": "art/concepts/complete/cast_016_varro.png",
+      "sha256": "ca257bbfbc52ec207619f5ab52021db8659606af8473b0f0f306afe6075915e7",
+      "job_id": "8dc6a821-b433-415a-87b3-8ab604b690b4",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "varro"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 20,
+      "request_id": "cast_017_tamamo",
+      "path": "art/concepts/complete/cast_017_tamamo.png",
+      "sha256": "0e8c95c8ffb6924fff4ca55141345a6134136caffcafc12524e8d6a2d59ad29b",
+      "job_id": "97bf3566-ddb2-49de-a387-30ff525b1c08",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "tamamo"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 21,
+      "request_id": "cast_018_jin_chan",
+      "path": "art/concepts/complete/cast_018_jin_chan.png",
+      "sha256": "68428defca84bff01d87334b79cd4b99f2ffeb70e84779382a5673cd53d70719",
+      "job_id": "00e805eb-8af3-4891-9a1e-77bfe8efdef2",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "jin_chan"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 22,
+      "request_id": "cast_019_rahu_ketu",
+      "path": "art/concepts/complete/cast_019_rahu_ketu.png",
+      "sha256": "0e9ce94678d646388331f773b867379939832ffd64f2fde4e1865c0b0afdfddc",
+      "job_id": "f272069f-409f-42ef-8b82-ea9b190cc923",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "rahu_ketu"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 23,
+      "request_id": "cast_020_archon",
+      "path": "art/concepts/complete/cast_020_archon.png",
+      "sha256": "02153815b138e298f8a5b29dcdc9a90962de626dd85c5bf6b71073e5c5f76d99",
+      "job_id": "a5bbedd4-0c6d-45d9-90df-10a0d37fd184",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "archon"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 24,
+      "request_id": "cast_021_house",
+      "path": "art/concepts/complete/cast_021_house.png",
+      "sha256": "e32b3ac351aca2c046aace067dc548305845670f1a28c5ec6aa8f4c38cf01a5c",
+      "job_id": "5ce8c5d6-8270-46a7-bf4f-06ae545415b3",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "house"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 25,
+      "request_id": "cast_022_thale",
+      "path": "art/concepts/complete/cast_022_thale.png",
+      "sha256": "091557edfd9a19654b41ff39b4302723c1f38cfdb6069910991f110d3a412f4d",
+      "job_id": "be682f39-c2f6-4e6d-8bea-bb0fb7f2f8c3",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "thale"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 26,
+      "request_id": "cast_023_enma",
+      "path": "art/concepts/complete/cast_023_enma.png",
+      "sha256": "653d67abaa8e8896bdf954f4575aa909356645b1b9b534987b5e14003a5d1093",
+      "job_id": "eab14378-2c73-4bf9-b2b0-d91c64096c0a",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "enma"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 27,
+      "request_id": "cast_024_judge_cui",
+      "path": "art/concepts/complete/cast_024_judge_cui.png",
+      "sha256": "f17e8bc4ece24271ad0e00c5345f47b16ef7134f141ead52ee03ba9ac28837ad",
+      "job_id": "d222b67e-9565-4bf0-bc68-267f94733ce2",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "judge_cui"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 28,
+      "request_id": "cast_025_chitragupta",
+      "path": "art/concepts/complete/cast_025_chitragupta.png",
+      "sha256": "587155bf4d71661787639a40ffc0789c576e08489ed34f791c9b9ff967d3a20a",
+      "job_id": "2201b6f5-3b8c-45d0-ad8e-054322c21b3d",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "chitragupta"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 29,
+      "request_id": "cast_026_moirai",
+      "path": "art/concepts/complete/cast_026_moirai.png",
+      "sha256": "82981f422e7e66378954f3fa37d47acace9fd120882449c6fcbe5a504573fe3d",
+      "job_id": "02da8f22-c380-4911-a2ec-cb66621199e2",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "moirai",
+        "clotho",
+        "lachesis",
+        "atropos"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 30,
+      "request_id": "cast_027_stranger",
+      "path": "art/concepts/complete/cast_027_stranger.png",
+      "sha256": "e259016f7b994a9e5e1b79bbb8f19427f160bb957c4810ab075f64a850be93ea",
+      "job_id": "6d43ff8e-6c75-4882-b95b-beba3b05ca41",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "stranger"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 31,
+      "request_id": "cast_028_oxhead_horseface",
+      "path": "art/concepts/complete/cast_028_oxhead_horseface.png",
+      "sha256": "7880dae62c9cc9bd2e4b302a317a5ea473abf2e8f12e85cc668cc2f2dc4b04a5",
+      "job_id": "3e3c92d9-fd5e-4781-b99e-222d24976d83",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "oxhead_horseface",
+        "ox_head",
+        "horse_face"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 32,
+      "request_id": "cast_029_hap",
+      "path": "art/concepts/complete/cast_029_hap.png",
+      "sha256": "43124a5579d780e0b751f2bbc5454c82ea0553cae8eedd5da27e45cb62ff4584",
+      "job_id": "d9ab046c-e120-45b1-9438-e0f6b44f83d5",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "hap"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 33,
+      "request_id": "cast_030_ama",
+      "path": "art/concepts/complete/cast_030_ama.png",
+      "sha256": "88cb16fbdf9b51400ae626037be805bdf0f57b63e60581e2c92055802b0fb35a",
+      "job_id": "d93929f4-dad4-4615-a719-c23be2ef1054",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "ama"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 34,
+      "request_id": "cast_031_tobi",
+      "path": "art/concepts/complete/cast_031_tobi.png",
+      "sha256": "ad18c7ee86d151a6fd1ccf9a84ab88f5fe0963d4e7469c88b34987d238094a96",
+      "job_id": "b7e7dd03-7ccf-4c33-bdc9-9a550d7877d2",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "tobi"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 35,
+      "request_id": "cast_032_brother_nought",
+      "path": "art/concepts/complete/cast_032_brother_nought.png",
+      "sha256": "712043dba67554f7de2c073603fa03e0206b1b47d0f9c8ef308f645b23c89aee",
+      "job_id": "e95a96e5-a967-433e-94e1-cd6abf970ba0",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "brother_nought"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 36,
+      "request_id": "cast_033_livia",
+      "path": "art/concepts/complete/cast_033_livia.png",
+      "sha256": "c18fa8ad08cef348bb29baa22f74ddfa94dc7a8ca52addd1d4bbced898bb4b53",
+      "job_id": "ed1367da-012e-421f-a76f-3ee89e1c17cf",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "livia"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 37,
+      "request_id": "cast_034_gus",
+      "path": "art/concepts/complete/cast_034_gus.png",
+      "sha256": "a21f88ef53b09cc440d3d5f1494380c309cb66e4f220505e073a2fef83eedf25",
+      "job_id": "4dfd7791-7c8c-4039-8760-0878ae8c1e92",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "gus"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 38,
+      "request_id": "cast_035_ivo_marr",
+      "path": "art/concepts/complete/cast_035_ivo_marr.png",
+      "sha256": "a74585dee26217f72cb2730cd43419983ab5232d3141d59fa7da497164768eca",
+      "job_id": "f937c129-195d-4c16-8e26-b8e70ade45b6",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "ivo_marr"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 39,
+      "request_id": "cast_036_ofuku",
+      "path": "art/concepts/complete/cast_036_ofuku.png",
+      "sha256": "6845e2d1fe05d4b340fccc166e0b25ec2ea3d0e7ca8aceec300d4780387bf79e",
+      "job_id": "8645abbd-8fb2-4612-99b2-0efb095e5fd0",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "ofuku"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 40,
+      "request_id": "cast_037_tetsu",
+      "path": "art/concepts/complete/cast_037_tetsu.png",
+      "sha256": "cd4fd2a652221aafe2fbefb2fbc0d04ed734bca207180d0c33dc01e774bd6f5b",
+      "job_id": "1a1bb632-7b7f-47d2-9117-ec64843f9b01",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "tetsu"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 41,
+      "request_id": "cast_038_ao",
+      "path": "art/concepts/complete/cast_038_ao.png",
+      "sha256": "27bee69895b3a7a2533f41e8b6a8cef5a66b0723ad57880e02fffbad6f95e989",
+      "job_id": "7a7aec6b-9a31-46f8-b16f-5c4fb9beec54",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "ao"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 42,
+      "request_id": "cast_039_aka",
+      "path": "art/concepts/complete/cast_039_aka.png",
+      "sha256": "f4a9b0234ac078c98e8e619341c58ca12472c5ee8659ac43019940754276b4f1",
+      "job_id": "7ba2d14d-e28e-4e27-a8e8-7803d6d5160f",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "aka"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 43,
+      "request_id": "cast_040_little_lantern",
+      "path": "art/concepts/complete/cast_040_little_lantern.png",
+      "sha256": "2131dfd57897f11964a7f2dcac08aa2f3d63ecb046aa4689850b625ff4e9ab39",
+      "job_id": "c56640d2-2c1b-4fc6-b0d1-034f5bf5f7e6",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "little_lantern"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 44,
+      "request_id": "cast_041_vidya_rao",
+      "path": "art/concepts/complete/cast_041_vidya_rao.png",
+      "sha256": "0d02c044ecc07d81d9dbb4d332354381be02a0f35dca0d6b8032c6a20314f124",
+      "job_id": "ae1a883a-7dfc-468a-bb3a-f429c9bf909c",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "vidya_rao"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 45,
+      "request_id": "cast_042_meera",
+      "path": "art/concepts/complete/cast_042_meera.png",
+      "sha256": "c106d1318255473770f991c6d2d50a8f56fd0b7a68cdfb844d90180bbaeab5cb",
+      "job_id": "45385b5e-513f-4e6b-bb9d-557d0c9e24bb",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "meera"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 46,
+      "request_id": "cast_043_baital",
+      "path": "art/concepts/complete/cast_043_baital.png",
+      "sha256": "e46b441cd1784940c5e691ab7ad3d0425e626d4abb02d4f15b8a135adc9326b0",
+      "job_id": "20106fc7-ee54-4000-bde1-7a4c3cf972f6",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "baital"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 47,
+      "request_id": "cast_044_kallisto",
+      "path": "art/concepts/complete/cast_044_kallisto.png",
+      "sha256": "08d0fbd3d5c07101c3db6851a30502c072706f99aab9daabf3a534f6f2c8269b",
+      "job_id": "6a872930-dcae-4c5f-ac13-605e54acd512",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "kallisto"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 48,
+      "request_id": "cast_045_niko",
+      "path": "art/concepts/complete/cast_045_niko.png",
+      "sha256": "1718876830d6610946cf97b5bcfab095ba63f736d78268d7796872c9b9de5b4b",
+      "job_id": "770b2ad3-a39e-41fe-b9ba-02d8a0c5f147",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "niko"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 49,
+      "request_id": "cast_046_penny",
+      "path": "art/concepts/complete/cast_046_penny.png",
+      "sha256": "c9900410b6bd0a3688dbeb8f7658b5faba8aa6ff99d882963180ecedce10a9ba",
+      "job_id": "9672b8bf-9547-4224-b936-c8b6a9eac2dc",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "penny"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 50,
+      "request_id": "cast_047_sheriff_vance",
+      "path": "art/concepts/complete/cast_047_sheriff_vance.png",
+      "sha256": "85554d2eee7bc277a99c5774b14371d773988ae6b367f1ec8e6ae965bdc4ca58",
+      "job_id": "b0713a49-2b38-45c4-9bf5-105585a1567c",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "sheriff_vance"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 51,
+      "request_id": "cast_048_f_collector",
+      "path": "art/concepts/complete/cast_048_f_collector.png",
+      "sha256": "02acada79aafd2e8462fc141bc2242aaf29d37a64bfb5ff1a767835e38e833f5",
+      "job_id": "e06e6b39-a045-40f9-ac56-28a64d0fbe97",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "f_collector",
+        "collector"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 52,
+      "request_id": "cast_049_f_ledger_priest",
+      "path": "art/concepts/complete/cast_049_f_ledger_priest.png",
+      "sha256": "20b6ef76e1010422e1355c0dcc6a4c95dab39e42db15155b0c9d3db3fb0d169c",
+      "job_id": "893410b1-29a2-4699-9723-25cec6d495c5",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "f_ledger_priest"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 53,
+      "request_id": "cast_050_f_auditor",
+      "path": "art/concepts/complete/cast_050_f_auditor.png",
+      "sha256": "14fa09e27d23f3c3b2448d6466339625009dccac5d35db3c8a51699d1f8291b6",
+      "job_id": "c387baf3-519a-4703-b835-3c83b96ef7a8",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "f_auditor"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 54,
+      "request_id": "cast_051_f_broker",
+      "path": "art/concepts/complete/cast_051_f_broker.png",
+      "sha256": "2c6bac12522232875a0105407e60d06efdb6ee6f1600bb638bfc7082910ef86d",
+      "job_id": "6fa51aae-d6c9-4b10-bcaa-8a9f6be70534",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "f_broker"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 55,
+      "request_id": "cast_052_f_charmpunk",
+      "path": "art/concepts/complete/cast_052_f_charmpunk.png",
+      "sha256": "e8b30d282e57400c261f98b1eaaf7194aadcd7057a300bf5af3ef1c54e80add3",
+      "job_id": "2bd89b39-6f74-429b-80b1-e2d2529b787e",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "f_charmpunk"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 56,
+      "request_id": "cast_053_f_remainder",
+      "path": "art/concepts/complete/cast_053_f_remainder.png",
+      "sha256": "c14c828fadcd77b6d1633548cbe884841c8607e25cc716cd8c7cfbbd633221ed",
+      "job_id": "0813e5d0-b78d-4e5c-b0d5-166c491d6e21",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "f_remainder"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 57,
+      "request_id": "cast_054_f_synod",
+      "path": "art/concepts/complete/cast_054_f_synod.png",
+      "sha256": "64a759eefff9c8fe2971760de8f9e10801eb6f701c28c2b9fcb21d65c21ffb14",
+      "job_id": "e53b0caf-f062-4c58-b64f-ab41d51131c5",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "f_synod",
+        "composite_knight"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 58,
+      "request_id": "cast_055_f_dealer",
+      "path": "art/concepts/complete/cast_055_f_dealer.png",
+      "sha256": "2d7bdfc3b8992fcd144efda175edb407ecc8e286c6739ec514ca812aa9e6d0c1",
+      "job_id": "d2ab10d9-190f-423a-a103-0c7325dcc30a",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "f_dealer"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 59,
+      "request_id": "cast_056_f_pilgrim",
+      "path": "art/concepts/complete/cast_056_f_pilgrim.png",
+      "sha256": "27484003bdcdd7b83ede0905f9a59fadf65ca1e67eb73fdfee011ecd4d1650b8",
+      "job_id": "f49f0d4b-890b-4e5d-9b8b-fbcf8762af0e",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "f_pilgrim"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 60,
+      "request_id": "cast_057_debt_hound",
+      "path": "art/concepts/complete/cast_057_debt_hound.png",
+      "sha256": "827acc8ac29c46f3c1c8bb691bd4716e0f2c4aab8cb96cd5488f29f6ae0d68d4",
+      "job_id": "2f621f6b-26b6-488d-93fd-309ddc012c8a",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "debt_hound"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 61,
+      "request_id": "cast_058_noiseling",
+      "path": "art/concepts/complete/cast_058_noiseling.png",
+      "sha256": "a55702dbdacca58d7a63df983384e58e65ee41b7f05f47320bbb630d21ad4c65",
+      "job_id": "24edb749-941f-47e9-9c02-7911124c3529",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "noiseling"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 62,
+      "request_id": "cast_059_chochin_obake",
+      "path": "art/concepts/complete/cast_059_chochin_obake.png",
+      "sha256": "ab60b125e41810e80a1965b2d71dc9d9bae0fd2b42777f0e35b731dd720d7e3d",
+      "job_id": "67c1328a-9a0c-4502-8e33-9b49ba57687c",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "chochin_obake"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 63,
+      "request_id": "cast_060_kasa_obake",
+      "path": "art/concepts/complete/cast_060_kasa_obake.png",
+      "sha256": "1bb32f83c0592c2e4d20d0a928268fad83fb5e94f9f5250c95380fddcf34a594",
+      "job_id": "e0f7f5fd-09b3-4132-a856-1376cce90f94",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "kasa_obake"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 64,
+      "request_id": "cast_061_kappa",
+      "path": "art/concepts/complete/cast_061_kappa.png",
+      "sha256": "8bc1e6722d68aee2f89e212e4817500b7d6101302ac21f12d59737b636ce6dbf",
+      "job_id": "2d42b6ed-fc4c-4a26-b375-696b14cb2201",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "kappa"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 65,
+      "request_id": "cast_062_oni_enforcer",
+      "path": "art/concepts/complete/cast_062_oni_enforcer.png",
+      "sha256": "23b9c27656b1bf3b8d44868a7dfb254a5dea85e94663340bb6aebba25b4a7a15",
+      "job_id": "614ceef5-8d33-4f7b-b9e9-6d76ad8af662",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "oni_enforcer"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 66,
+      "request_id": "cast_063_abacus_golem",
+      "path": "art/concepts/complete/cast_063_abacus_golem.png",
+      "sha256": "edc176d78a38db7958e01ce5e5bdc40e70a75b74f9d4de47c0b87b512a819f3d",
+      "job_id": "2371b573-8cd0-4437-9f22-3f75adf222e2",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "abacus_golem"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 67,
+      "request_id": "cast_064_debt_junk",
+      "path": "art/concepts/complete/cast_064_debt_junk.png",
+      "sha256": "d5a94dad9f3feac7d5cf3154e4002fa122392cc9a525c4c4d88ff4b16118a8c9",
+      "job_id": "d4300325-d980-4bc8-9f12-10b903a8cb24",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "debt_junk"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 68,
+      "request_id": "cast_065_golden_koi",
+      "path": "art/concepts/complete/cast_065_golden_koi.png",
+      "sha256": "5d90b43b34fcd487f436545f391711c84058733e85261a55ad06f0f3ffc7c872",
+      "job_id": "1cf56d82-3582-4a8e-81a2-6710160bcb97",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "golden_koi"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 69,
+      "request_id": "cast_066_hungry_ghost",
+      "path": "art/concepts/complete/cast_066_hungry_ghost.png",
+      "sha256": "8b1619ed1520cbff6a888a90b795acfa437a9d653d726800fa8ef99fb846b253",
+      "job_id": "f606d29f-9839-45cc-b4d8-e8dc9a0f8d74",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "hungry_ghost"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 70,
+      "request_id": "cast_067_jiangshi",
+      "path": "art/concepts/complete/cast_067_jiangshi.png",
+      "sha256": "3436e8731a2499399d70e4520238501917431b47eb015e2df9270f72774ba7c0",
+      "job_id": "0ec00919-2dd6-4cbf-910c-706553512e62",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "jiangshi"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 71,
+      "request_id": "cast_068_vetala",
+      "path": "art/concepts/complete/cast_068_vetala.png",
+      "sha256": "398e3673d4c81175eea96243d9087f0d4a1ee6d63adbf0306f5ed68092475ecd",
+      "job_id": "cf9abdeb-24a2-4a7b-ab8c-53a01f122b1e",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "vetala"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 72,
+      "request_id": "cast_069_yantra_guardian",
+      "path": "art/concepts/complete/cast_069_yantra_guardian.png",
+      "sha256": "f452d7716a7a73704316a7b9e7403209fda49735c1780b1edc81ab71259d84e7",
+      "job_id": "7a00f98a-fc5e-442a-9e54-bc8793e37fca",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "yantra_guardian"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 73,
+      "request_id": "cast_070_monsoon_naga",
+      "path": "art/concepts/complete/cast_070_monsoon_naga.png",
+      "sha256": "bc5ffcb4c67f3ccddf0e2298892c35e6fdd9764ac7217dc10e1dc208f0ec25a2",
+      "job_id": "b2b23b4f-2594-4810-8fb1-8236d38626af",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "monsoon_naga"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 74,
+      "request_id": "cast_071_bronze_automaton",
+      "path": "art/concepts/complete/cast_071_bronze_automaton.png",
+      "sha256": "983b83e998b3665f06e024011cd86f289eb6e2c2bc07cd62ddf9f61f3cfe8b5d",
+      "job_id": "69f6a778-0318-4d9e-b553-787e60d9fe3f",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "bronze_automaton"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 75,
+      "request_id": "cast_072_harpy",
+      "path": "art/concepts/complete/cast_072_harpy.png",
+      "sha256": "93ea7fd669cd53d660c69faff35ee39b3040e2db5791c6c75b51634903d1a72e",
+      "job_id": "71f65638-7978-46b3-bc08-aa64de48656a",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "harpy"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 76,
+      "request_id": "cast_073_siren",
+      "path": "art/concepts/complete/cast_073_siren.png",
+      "sha256": "750a39558dcf5030cbf4d62721ee6ff29e65a4f64774a8a96aefaae21e06a7cb",
+      "job_id": "3d7aa0b4-1e3b-4460-8372-08353271b781",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "siren"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 77,
+      "request_id": "cast_074_card_sharp_automaton",
+      "path": "art/concepts/complete/cast_074_card_sharp_automaton.png",
+      "sha256": "1bec2a59272bf29fe7ffa7f4dbf7b50c81023024d8cb87901d3b9a278920f0cd",
+      "job_id": "0a636a77-799f-4948-891d-c48de4607de2",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "card_sharp_automaton"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 78,
+      "request_id": "cast_075_tumbleweed_golem",
+      "path": "art/concepts/complete/cast_075_tumbleweed_golem.png",
+      "sha256": "8ec272b09492e98a285609cbf1a4d0b928c45b44b0710ba410079ff3a9176b99",
+      "job_id": "f1c09dac-ddc7-46e5-870e-c404fec57ddc",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "tumbleweed_golem"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 79,
+      "request_id": "cast_076_loop_echo",
+      "path": "art/concepts/complete/cast_076_loop_echo.png",
+      "sha256": "cd992b5bba538211daec6b4d472210f49ff7d4d94280be702a0d227d06228952",
+      "job_id": "587e923b-5a18-4029-9bf2-7cb62bcefb85",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "loop_echo"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 80,
+      "request_id": "cast_077_collector_captain",
+      "path": "art/concepts/complete/cast_077_collector_captain.png",
+      "sha256": "63f0122717e9a4f7cdd3eef3642ce8e4f7a44346922c2c1eefae69b0327a5b00",
+      "job_id": "b7ee3df6-dfc8-4c84-90f8-06d04288620c",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "collector_captain"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 81,
+      "request_id": "cast_078_hungry_ghost_swarm",
+      "path": "art/concepts/complete/cast_078_hungry_ghost_swarm.png",
+      "sha256": "6c8267e65f0ff995d3ecee582078d675da07be3b3149854e9211af103b15849b",
+      "job_id": "9a897f53-e008-4c05-ba29-da412f70acc7",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "hungry_ghost_swarm"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 82,
+      "request_id": "cast_079_basilica_surveyor",
+      "path": "art/concepts/complete/cast_079_basilica_surveyor.png",
+      "sha256": "4b9a1146271dc8d2cef964492bdc423d561868d8038a086a3fc0d803b740de41",
+      "job_id": "4e0419cb-18dd-4897-a76a-81c3fdf99f05",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "basilica_surveyor"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 83,
+      "request_id": "cast_080_harpy_queen",
+      "path": "art/concepts/complete/cast_080_harpy_queen.png",
+      "sha256": "476e4f2870f02826f5bb798fa1de04dbc555bb6e9417190a892588f8b3a74d42",
+      "job_id": "0802bf57-9df5-4562-84a2-0ebc22431e7c",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "harpy_queen"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 84,
+      "request_id": "cast_081_headless_horseman",
+      "path": "art/concepts/complete/cast_081_headless_horseman.png",
+      "sha256": "421fecf3a4fbb6151076fab752829f42412116793e00e3d1ee2cd153e343cc18",
+      "job_id": "372f4bd7-cb42-40c9-ac44-665c0cf8865c",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "headless_horseman"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 85,
+      "request_id": "cast_082_ghost_train",
+      "path": "art/concepts/complete/cast_082_ghost_train.png",
+      "sha256": "be2e78e939380b3d848493c532a236f785bb92cd2b241ad7734e11aaf5f17249",
+      "job_id": "597c7c39-7d71-4971-93ee-841241624114",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "ghost_train"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 86,
+      "request_id": "cast_083_noise_storm",
+      "path": "art/concepts/complete/cast_083_noise_storm.png",
+      "sha256": "7999d8964c27c938bac5c1540e455ba7a75830497c0259a2124ef3a791291e44",
+      "job_id": "4da3bf80-d802-401f-b791-47808a897c90",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "noise_storm"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 87,
+      "request_id": "cast_084_default",
+      "path": "art/concepts/complete/cast_084_default.png",
+      "sha256": "3e558018c2ee4dcd8e053a43638c9015d6ee2593a5de8de76c433149e44a4954",
+      "job_id": "7d3fa459-160e-4d70-ae1e-cf0bd5ef8c8f",
+      "kind": "character_turnaround",
+      "catalog_ids": [
+        "default"
+      ],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 88,
+      "request_id": "env_meridian",
+      "path": "art/concepts/complete/env_meridian.png",
+      "sha256": "452df20be5beb814b1e0e7346a5d86a874a7833222157539d898f930e82ac57a",
+      "job_id": "be68ad59-1821-43b2-a32d-0eba40074000",
+      "kind": "environment_three_view",
+      "catalog_ids": [],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 89,
+      "request_id": "env_hyakki",
+      "path": "art/concepts/complete/env_hyakki.png",
+      "sha256": "2856264bc78df918d2d9e051f301274cc0c341b0c830b057c8d2a5405951ec9b",
+      "job_id": "fb625eda-d8ac-4d7b-a827-7cd8b7dceede",
+      "kind": "environment_three_view",
+      "catalog_ids": [],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 90,
+      "request_id": "env_river",
+      "path": "art/concepts/complete/env_river.png",
+      "sha256": "d39e20f7dd0c102623bdcd8b6fb3f64621e81a8b760ac993de0676b0e6a46aae",
+      "job_id": "8ee77044-4724-4b05-91ca-44c8cbcc7eff",
+      "kind": "environment_three_view",
+      "catalog_ids": [],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 91,
+      "request_id": "env_sunyapura",
+      "path": "art/concepts/complete/env_sunyapura.png",
+      "sha256": "123706fe39be07dd994fa6b3bd17afd3eafdbc8d948debc96cf7834277d2d375",
+      "job_id": "0f1f23e3-cb34-4510-a509-046b03aed733",
+      "kind": "environment_three_view",
+      "catalog_ids": [],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 92,
+      "request_id": "env_kroton",
+      "path": "art/concepts/complete/env_kroton.png",
+      "sha256": "d19b5f4405357661f78ad2d4edaef96dbae8334ba50ef9057141d483fc1f8646",
+      "job_id": "5f111203-73dc-4e88-8bd4-1fe4acd2e228",
+      "kind": "environment_three_view",
+      "catalog_ids": [],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 93,
+      "request_id": "env_crossroads",
+      "path": "art/concepts/complete/env_crossroads.png",
+      "sha256": "bdab2100d1e90f2bb7c210c6f4dbb7d715f36aa361c36db9bc2926e4103e4541",
+      "job_id": "01510f12-8dad-4b81-9650-41072b85de1d",
+      "kind": "environment_three_view",
+      "catalog_ids": [],
+      "initial_manifest_hash_match": true
+    },
+    {
+      "page": 94,
+      "request_id": "env_basilica",
+      "path": "art/concepts/complete/env_basilica.png",
+      "sha256": "53cf5a6b631d9ad3384b760e4d22bad81452e0bc7afd32dce30d2ea8792619f1",
+      "job_id": "4418caff-072e-42aa-9600-02162c4e6c28",
+      "kind": "environment_three_view",
+      "catalog_ids": [],
+      "initial_manifest_hash_match": true
+    }
+  ],
+  "pdf_sha256": "decde163c02dc295beb3046da534d8df5c0505520ea5addcc6cd75836d4d9147",
+  "bytes": 71040297
+}

@@ -1,0 +1,2405 @@
+{
+  "schema_version": 1,
+  "evidence_scope": "Authored development dossiers and cast coverage, not completed prose or approved new artwork",
+  "source_sha256": "c15a8eab5ef671f18ff796271425a79126eece001b68dd0d6cb2a519aaf0c8e1",
+  "scene_ledger_sha256": "428f1b452cc9a333b56c31b71bf24c116ccc09c7d67c3916afbbbd7b70e47ffc",
+  "profiles": [
+    {
+      "name": "Nil",
+      "want": "A repair apprenticeship and an unrenegotiated bed",
+      "fear": "That uncertainty makes them disposable",
+      "mistaken_belief": "Being the correct useful answer will secure belonging",
+      "competence": "Notices channels, mechanical faults and precise inconsistencies",
+      "harm_or_cost": "Overstates a tentative comparison and freezes a cooperative reserve; must correct it publicly",
+      "decisive_chapters": "1,4,16,17,26,43,49",
+      "independent_relationship": "Vesper's concealment makes trust costly; Maeve learns to ask instead of fixing them",
+      "voice": "Short concrete questions; silently counts under stress; becomes more direct when refusing; never a walking equation glossary",
+      "private_life": "Keeps usable screws and likes the first clean click of a repaired mechanism",
+      "end_state": "Chooses paid apprenticeship rather than office, retains name and bodily autonomy, accepts limits to what repair can return",
+      "chapter_ids": [
+        1,
+        4,
+        16,
+        17,
+        26,
+        43,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Vesper",
+      "want": "Keep the new group alive without letting it examine her past",
+      "fear": "That honesty will end the relationships she relies on",
+      "mistaken_belief": "Protection and charm can substitute for accountability",
+      "competence": "Reads tells, plans exits, handles an actual loaded seven-chamber weapon",
+      "harm_or_cost": "Her rigged hand harmed Mara; disclosure may cost companionship and restitution cannot purchase forgiveness",
+      "decisive_chapters": "5,20,35,40,41",
+      "independent_relationship": "Fibi asks her to leave; Mara refuses reunion; she must obey both rather than perform redemption",
+      "voice": "Drawling wagers and deflections; jokes stop when a victim names a fact; plain verbs in testimony",
+      "private_life": "Cleans the cylinder after rain and keeps losing at games she insists were practice",
+      "end_state": "Gives testimony and restitution, accepts a fair loss, remains answerable and is not universally forgiven",
+      "chapter_ids": [
+        5,
+        20,
+        35,
+        40,
+        41
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Maeve",
+      "want": "Make her family's failed craft useful again",
+      "fear": "That asking reveals she cannot solve everything",
+      "mistaken_belief": "A technically excellent repair is necessarily a kindness",
+      "competence": "Forge tolerances, load-bearing fittings and patient practical instruction",
+      "harm_or_cost": "Removes Hina's valued patch without permission and must undo her own competent work",
+      "decisive_chapters": "6,7,10,33,35",
+      "independent_relationship": "Hina contradicts her repair instinct; she learns to work under another person's brief",
+      "voice": "Concrete material verbs, occasional three-part lists; exasperation is physical rather than a continuous joke",
+      "private_life": "Saves failed test pieces and labels why they failed instead of selling them",
+      "end_state": "Forges the requested fitting, keeps the failed pieces, helps teach rather than claiming Nil as a creation",
+      "chapter_ids": [
+        6,
+        7,
+        10,
+        33,
+        35
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Hina",
+      "want": "Have a future that includes ordinary wishes and recognition",
+      "fear": "Fading and being treated as a provisional imitation",
+      "mistaken_belief": "Court certification or turning100 will finally make her worthy of care",
+      "competence": "Remembers shrine routes, object vows and social debts others overlook",
+      "harm_or_cost": "Her desperation makes Tamamo's coercive offer tempting; being loved does not let her command anyone to stay unchanged",
+      "decisive_chapters": "9,10,12,13,14,49",
+      "independent_relationship": "Ofuku's care includes disagreement; Maeve's patch mistake gives Hina a concrete boundary to defend",
+      "voice": "Formal flourishes collapse into childish excitement; short unadorned sentences when truly frightened",
+      "private_life": "Has strong preferences about umbrella storage and which familiar patch faces the door",
+      "end_state": "Claims personhood at99, participates in care for others, celebrates100 only after the year jump",
+      "chapter_ids": [
+        9,
+        10,
+        12,
+        13,
+        14,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Jinling",
+      "want": "Keep shelter and credit functioning while ending predatory claims",
+      "fear": "A panic that destroys workers' wages and gives her father justification",
+      "mistaken_belief": "A benevolent owner can correct injustice privately without sharing power",
+      "competence": "Contract comparison, reserve liquidity, negotiation and hidden copies",
+      "harm_or_cost": "Her charity preserves hierarchy and Nil's error occurs under her protection; she must expose her own risk and surrender sole oversight",
+      "decisive_chapters": "15,16,17,20,21,43",
+      "independent_relationship": "Shunya wants publication she considers financially dangerous; depositors distrust both her and her father",
+      "voice": "Polished conditional offers and playful interest language; becomes exact about whose funds are at risk",
+      "private_life": "Checks staff wages before entertaining guests and likes tea properly cooled rather than theatrically expensive",
+      "end_state": "Funds bounded relief from surplus and accepts contested worker/depositor oversight, not an instant moral crown",
+      "chapter_ids": [
+        15,
+        16,
+        17,
+        20,
+        21,
+        43
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Bai Si",
+      "want": "Keep a count that does not abandon people when records disagree",
+      "fear": "That his careful life's work helped conceal actual lives",
+      "mistaken_belief": "A clean official total is more respectful than unresolved testimony",
+      "competence": "Witness comparison, funeral routes, patient preservation of counter-records",
+      "harm_or_cost": "Must acknowledge omissions without making dead people specimens for his guilt",
+      "decisive_chapters": "17,18,19,26,33",
+      "independent_relationship": "Prima's official logs conflict with living testimony; Kallisto's River-born worker preserves Wen through craft",
+      "voice": "Few words, careful names, genuine pauses; avoids decorative death aphorisms",
+      "private_life": "Trims lamp wicks and repairs a carrying strap; four lanterns have practical weight",
+      "end_state": "Preserves disputed names and uncertainty, smiles at a particular remembered person, does not declare grief solved",
+      "chapter_ids": [
+        17,
+        18,
+        19,
+        26,
+        33
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Shunya",
+      "want": "Understand the Deficit and publish a defensible contribution",
+      "fear": "Being wrong after asking others to take personal risks",
+      "mistaken_belief": "Equal-looking deficits must encode interchangeable possibilities",
+      "competence": "Instrument calibration, independent comparison and falsifiable modelling",
+      "harm_or_cost": "Her initial model fails timing; professional ambition can overrun consent or expose private accounts",
+      "decisive_chapters": "22,23,24,26,28",
+      "independent_relationship": "Jinling disputes publication; Vidya challenges her assumptions without withdrawing employment",
+      "voice": "Thinks in provisional clauses and revises aloud; explains one example before terminology; loses fluency when personally ashamed",
+      "private_life": "Has to negotiate paid instrument time and washes ink from cuffs badly",
+      "end_state": "Retains the failed model in the appendix and accepts limited revocable co-authorship rather than owning a discovery-person",
+      "chapter_ids": [
+        22,
+        23,
+        24,
+        26,
+        28
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Prima",
+      "want": "Protect a city through the institution that trained her",
+      "fear": "Losing colleagues, shelter and the identity that made her useful",
+      "mistaken_belief": "A temporary lawful exclusion cannot make her responsible for its consequences",
+      "competence": "Shield placement, evacuation discipline, route logs and geometric limits",
+      "harm_or_cost": "Previously denied a family passage; defection does not erase the record or earn Kallisto's immediate welcome",
+      "decisive_chapters": "29,30,31,32,35",
+      "independent_relationship": "Kallisto directs repairs and testimony; Bai Si challenges the belief that a log exhausts the truth",
+      "voice": "Formal recitation under pressure, then increasingly personal subjects and active verbs; earnestness need not be stupidity",
+      "private_life": "Knows the roster of people on her watch and folds the former uniform instead of pretending it never existed",
+      "end_state": "Testifies, works under residents' direction and saves the teacher without restoring his authority",
+      "chapter_ids": [
+        29,
+        30,
+        31,
+        32,
+        35
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Fibi",
+      "want": "Choose a road beyond the casino and train as a surveyor",
+      "fear": "Another dawn controlled by someone else's promise",
+      "mistaken_belief": "Only perfectly repeating familiar routines can keep her safe enough to choose",
+      "competence": "Remembers iterations, detects deviations and reads a disclosed game quickly",
+      "harm_or_cost": "The loop has made anticipation exhausting; she may refuse a conversation without supplying a cheerful alternative",
+      "decisive_chapters": "37,38,39,40,41,49",
+      "independent_relationship": "Vesper must leave when asked; the House's familial protection is not permission; Vance corroborates rather than owns recollections",
+      "voice": "Fast anticipation in familiar scenes, counting breath when distressed; slows when she has no remembered script",
+      "private_life": "Draws unfinished road maps on permitted record paper and wants to find out where an uncharted road actually goes",
+      "end_state": "Ends the clause with informed consent, keeps her memories private when desired and departs with fatigue and plans rather than an instant cure",
+      "chapter_ids": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Varro",
+      "want": "Obtain effective care for Livia",
+      "fear": "Being unable to protect her after abandoning his office",
+      "mistaken_belief": "Harming another debtor can be justified as one last necessary collection",
+      "competence": "Understands warrant routes, jar custody and the office's practical weak points",
+      "harm_or_cost": "His seizures have victims; Nil's mercy does not excuse them and Livia rejects his proposed bargain",
+      "decisive_chapters": "7,42,49",
+      "independent_relationship": "Livia refuses the exemption he wants to purchase; Nought insists care is not contingent on Varro serving the party",
+      "voice": "Clipped claim language and commands; after removal of the mask he still struggles to ask instead of order",
+      "private_life": "Maintains jar latches obsessively and has kept an undelivered repair for his sister's window",
+      "end_state": "A late guest who offers restitution and later works at the shelter without replacing Livia's decisions",
+      "chapter_ids": [
+        7,
+        42,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Livia",
+      "want": "Receive treatment without another family paying through a seizure",
+      "fear": "That her illness will always be used to justify violence she rejects",
+      "mistaken_belief": "Keeping disagreement quiet will spare Varro pain",
+      "competence": "Tracks symptoms, correspondence and what promised care actually supplies",
+      "harm_or_cost": "Her refusal strains a relationship on which her transport currently depends; she cannot simply walk out alone",
+      "decisive_chapters": "6,21,42,49",
+      "independent_relationship": "Varro must hear no; Gus and Nought coordinate with her instructions rather than treating her as cargo",
+      "voice": "Specific observations, dry impatience at euphemisms, questions addressed to the clinician rather than through her brother",
+      "private_life": "Keeps a date-marked symptom log and requests a view of ordinary street movement",
+      "end_state": "Consents to medical transfer and co-runs the shelter with authority to disagree; no magical instant cure",
+      "chapter_ids": [
+        6,
+        21,
+        42,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Thale",
+      "want": "Prevent catastrophic loss by making allocation predictable",
+      "fear": "Another street lost while he could have intervened",
+      "mistaken_belief": "Only concentrated executive control can make safety dependable",
+      "competence": "Emergency logistics, records and real evidence of protected-route benefits",
+      "harm_or_cost": "Rejects decentralization, conceals costs and knowingly attempts to erase Nil and freeze future choice",
+      "decisive_chapters": "4,21,28,46,47,48,49",
+      "independent_relationship": "Ivo's loyalty changes into testimony; the Board's rejected proposal makes concealment a choice; beneficiaries also have claims",
+      "voice": "Calm complete sentences, names concrete benefits, avoids cartoon threats; becomes directive when consent would limit power",
+      "private_life": "Cooks a single dinner and performs small useful tasks without witnesses; tenderness does not cancel policy",
+      "end_state": "Surrenders executive control, preserves records and faces public proceedings; survival is not acquittal",
+      "chapter_ids": [
+        4,
+        21,
+        28,
+        46,
+        47,
+        48,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Hap",
+      "want": "Participate in possibility again",
+      "fear": "Extinguished chance and repetition without choice",
+      "mistaken_belief": "Surprise is sufficiently good to justify uneven dealing",
+      "competence": "Can perceive possibility through the shared substrate but cannot fix ordinary material scarcity",
+      "harm_or_cost": "Its former unfairness harmed people; release cannot restore unaccountable divine allocation",
+      "decisive_chapters": "7,14,21,28,35,42,45,49",
+      "independent_relationship": "Nil demands an answer about those harmed by free chance; local keepers retain identities and are not Hap's disguises",
+      "voice": "Playful brief questions in dreams; admits limits directly after45; never an omniscient plot lecturer",
+      "private_life": "Dream forms vary but dice eyes recur; physical captivity is withheld until45",
+      "end_state": "Freed participation subject to disclosed channels and other people's refusal; neither ruler nor guaranteed benevolence",
+      "chapter_ids": [
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        45,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Ama",
+      "want": "Deliver paid work and keep Tobi safe without accepting a false debt",
+      "fear": "A final seizure that prevents ordinary transport and care",
+      "mistaken_belief": "An honest receipt will automatically make an official listen",
+      "competence": "Skilled mending, saved materials and clear chronology of her own payment",
+      "harm_or_cost": "Defending the receipt exposes her vulnerability in public, but she does not become merely grateful scenery",
+      "decisive_chapters": "1,2,49",
+      "independent_relationship": "Tobi carries real responsibility but is still a child; Baker risks assistance without owning the rescue",
+      "voice": "Measured practical questions; insists on dates and copies; affection shown through ordinary instructions",
+      "private_life": "Collects usable thread and checks a repaired seam before sending it out",
+      "end_state": "Keeps her work and receipt, participates in the Wards' witness network and does not owe Nil lifelong service",
+      "chapter_ids": [
+        1,
+        2,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Tobi",
+      "want": "Help Ama deliver work and be taken seriously",
+      "fear": "Not understanding danger adults suddenly stop explaining",
+      "mistaken_belief": "A clever shortcut or carrying something heavy proves he can handle every task",
+      "competence": "Observes hands and changes in adult posture; knows local stairs",
+      "harm_or_cost": "Needs protection and can misunderstand the reason adults withhold information",
+      "decisive_chapters": "1,2,49",
+      "independent_relationship": "Ama permits useful responsibility; Baker's bun handoff is an ordinary gift, not a prophecy",
+      "voice": "Solemn literal jokes, specific questions and occasional unfinished speech when frightened",
+      "private_life": "Collects bottle caps and changes his mind about jobs without shame",
+      "end_state": "Remains a child; renews an already completed Naming in the epilogue rather than belatedly turning seven",
+      "chapter_ids": [
+        1,
+        2,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Baker",
+      "want": "Keep the stall open and neighbours fed without losing its stock",
+      "fear": "Official attention that closes the livelihood others rely on",
+      "mistaken_belief": "Small quiet help can always remain politically invisible",
+      "competence": "Baking, price judgement, noticing hunger and a practical lead to Gus",
+      "harm_or_cost": "Helping the family and paying the unfinished bowl bargain risk scrutiny; no obligation to become a resistance saint",
+      "decisive_chapters": "1,2",
+      "independent_relationship": "Ama is a working neighbour; Tobi receives the bun as a courier of care, not a mascot",
+      "voice": "Brisk dry exchanges about actual food and work; no uniform speech about fate",
+      "private_life": "Separates damaged stock, keeps water and bowls useful, notices weather through the oven schedule",
+      "end_state": "Continues ordinary work; the stall supplies witness contact rather than a magical endless free meal",
+      "chapter_ids": [
+        1,
+        2
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Collector",
+      "want": "Execute a warrant without a discrepancy reaching a supervisor",
+      "fear": "Being blamed for an office's mismatched forms",
+      "mistaken_belief": "Procedure separates responsibility for a harmful outcome from the person enacting it",
+      "competence": "Case seals, authorized routes and the difference between old and new stamps",
+      "harm_or_cost": "Continues the seizure despite seeing the mismatch; calls a Hound when NaN exceeds his category",
+      "decisive_chapters": "1,2",
+      "independent_relationship": "Ama is a credible claimant he chooses not to hear; Varro illustrates another form of the same office, not this man's secret identity",
+      "voice": "Polite passive constructions and narrow questions; no need to shout to threaten",
+      "private_life": "Dries his papers carefully and checks a worn stamp by touch",
+      "end_state": "Retained as a witnessed agent in the disputed seizure record; not silently killed or redeemed by being procedural",
+      "chapter_ids": [
+        1,
+        2
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Debt Hound",
+      "want": "Follow its programmed warrant target and route restrictions",
+      "fear": "No personal fear: a machine's limits are not motives",
+      "mistaken_belief": "No belief or human moral transformation is attributed to it",
+      "competence": "Four stamp feet, reserve vessel, muzzle and a readable signal path",
+      "harm_or_cost": "Its machinery can injure people and damage repairs; defeating it does not heal or punish a living dog",
+      "decisive_chapters": "2,3,5,6",
+      "independent_relationship": "Collector command and service maintenance, not pack loyalty",
+      "voice": "Mechanical sounds and explicit public notices; no inner monologue",
+      "private_life": "Requires fuel, latches and repairs rather than supernatural emotional hunger",
+      "end_state": "Evaded or mechanically disabled as scheduled; no creature-death melodrama",
+      "chapter_ids": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "actor_type": "machine"
+    },
+    {
+      "name": "cart resident",
+      "want": "Save the washing and keep a neighbour's lane passable",
+      "fear": "A broken cart or official penalty she cannot afford",
+      "mistaken_belief": "Remaining outside a dispute guarantees safety",
+      "competence": "Knows cart balance, gate reach and the courtyard's narrow clearances",
+      "harm_or_cost": "Moving the linen cart risks equipment and stock; help is finite and physical",
+      "decisive_chapters": "3",
+      "independent_relationship": "Her work supports neighbours including Baker; her decision is not an order from Nil",
+      "voice": "Short urgent instructions followed by a specific complaint about damaged washing",
+      "private_life": "Checks wheels and rations dry space under the eaves",
+      "end_state": "Becomes a possible witness through the Wards network; not transported into the travelling party",
+      "chapter_ids": [
+        3
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Nought",
+      "want": "Keep a place where shelter does not require spiritual or financial surrender",
+      "fear": "That his old institutional habits will turn care into another test",
+      "mistaken_belief": "A benevolent guide can recognize what another person should choose",
+      "competence": "Basic first aid, old record practice and a distributed shelter network",
+      "harm_or_cost": "Must disclose the Naming's connection risk and accept Nil leaving; cannot trade shelter for cooperation",
+      "decisive_chapters": "3,4,21,42,49",
+      "independent_relationship": "Gus coordinates material transport; Ofuku is an independent keeper, not his subordinate; Livia directs her own care",
+      "voice": "Warm concrete offers with tired humour; direct warnings instead of mysterious instructions",
+      "private_life": "Moves a leaking pan, repairs a chair and shares food without performing a sermon",
+      "end_state": "Continues shelter and witness work; knows the outlawed tradition but not the physical cage before its discovery",
+      "chapter_ids": [
+        3,
+        4,
+        21,
+        42,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Gus",
+      "want": "Keep a repair trade solvent and eventually revisit his Crossroads home",
+      "fear": "A bad guarantee or courier failure hurting someone who trusted him",
+      "mistaken_belief": "A personal favour can remain separate from the system that prices it",
+      "competence": "Straps, charm frames, source checks and paid courier contacts",
+      "harm_or_cost": "Uses limited funds and reputation for care; must not be everywhere at once to resolve a plot gap",
+      "decisive_chapters": "6,21,42",
+      "independent_relationship": "Nought shares logistics; Maeve can dispute a repair price; Livia's log outranks an exemption slogan",
+      "voice": "Haggles about parts and labour, shifts to plain dates and routes for medical transport",
+      "private_life": "Records what each repair actually does and refuses counterfeit guarantees",
+      "end_state": "Coordinates Meridian dispatches from established contacts; homecoming is not an unexplained teleport to every hub",
+      "chapter_ids": [
+        6,
+        21,
+        42
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Ivo",
+      "want": "Make a correction that cannot be quietly withdrawn",
+      "fear": "That public testimony will expose his own years of compliance",
+      "mistaken_belief": "Copies alone discharge responsibility without action",
+      "competence": "Archive routing, independent copy chains and internal service access",
+      "harm_or_cost": "Supplying the rejected proposal and opening the passage puts his position and safety at risk",
+      "decisive_chapters": "4,20,21,44,46,49",
+      "independent_relationship": "Thale is a superior he once admired; workers need the records more than his claim of good intentions",
+      "voice": "Careful qualifiers and exact document names; active first-person testimony when he defects",
+      "private_life": "Preserves counter-copies rather than collecting secret knowledge for its own sake",
+      "end_state": "Defects through an earned route, testifies under the same review he enables and receives no automatic immunity",
+      "chapter_ids": [
+        4,
+        20,
+        21,
+        44,
+        46,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Tetsu",
+      "want": "Complete a safe paid crossing and keep distance from former enforcement",
+      "fear": "That passengers will confuse leaving an office with undoing its harms",
+      "mistaken_belief": "Silence about the past can protect everyone from repeating it",
+      "competence": "Hull maintenance, currents, knots and fee records",
+      "harm_or_cost": "A delay costs passengers time; the old uniform seam exposes a past he cannot erase",
+      "decisive_chapters": "8,14",
+      "independent_relationship": "Ofuku's shrine route depends on ferry access; former Collector colleagues still recognize his workmanship",
+      "voice": "Sparse useful instructions, little appetite for dramatic confession",
+      "private_life": "Checks rope before taking money and repairs a line before discussing its symbolism",
+      "end_state": "Keeps the local route and witness address open; partial disclosure does not claim absolution",
+      "chapter_ids": [
+        8,
+        14
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Ofuku",
+      "want": "Keep care possible for old objects and visitors with conflicting needs",
+      "fear": "Having to decide what cannot be repaired this season",
+      "mistaken_belief": "Keeping a familiar form is always the kindest preservation",
+      "competence": "Vow care, storage, budgeting scarce repair labour and local witness copies",
+      "harm_or_cost": "Must permit Hina's disagreement and distribute attention beyond a beloved companion",
+      "decisive_chapters": "10,14,49",
+      "independent_relationship": "Hina can argue over storage and departure; Tetsu's access limits affect the queue",
+      "voice": "Practical elderly impatience, specific memories and occasional unfinished chores rather than endless wisdom",
+      "private_life": "Paints one daruma eye for a concrete visitor and keeps a repair list",
+      "end_state": "An elderly human keeper who shares local stewardship without becoming an oracle for Nil's origin",
+      "chapter_ids": [
+        10,
+        14,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Enma",
+      "want": "Preserve an account that rulers cannot force him to falsify",
+      "fear": "An exception becoming permission to declare anyone nonexistent",
+      "mistaken_belief": "A complete ledger is equivalent to complete knowledge",
+      "competence": "Defines a safe trial and certifies exactly what his own record shows",
+      "harm_or_cost": "Must name the limits of his jurisdiction when Nil has no entry",
+      "decisive_chapters": "11,14",
+      "independent_relationship": "Ofuku preserves a counter-copy; Judge Cui later supplies independent evidence, not a redundant copy of Enma's authority",
+      "voice": "Formal precise scope; refuses a stronger conclusion than the evidence supports",
+      "private_life": "Inspects bindings and returns a book to its place after a difficult hearing",
+      "end_state": "Certifies absence from his record without judging Nil soulless; keeper survives",
+      "chapter_ids": [
+        11,
+        14
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Ao",
+      "want": "Keep Tamamo and the court's dependents protected",
+      "fear": "A rapid change abandoning people the court actually shelters",
+      "mistaken_belief": "Court continuity is the same as safety",
+      "competence": "Paired foxfire coordination and palace access rules",
+      "harm_or_cost": "Can obstruct refugees while calling it protection",
+      "decisive_chapters": "12,13,14",
+      "independent_relationship": "Aka disagrees over the promise; neither twin speaks as half of a single mind",
+      "voice": "Measured paired replies, begins with obligations before doubts",
+      "private_life": "Checks the route and messages before serving a court ritual",
+      "end_state": "Accepts a witnessed care agreement while retaining loyalty to people beyond Tamamo",
+      "chapter_ids": [
+        12,
+        13,
+        14
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Aka",
+      "want": "Allow a changing future without betraying dependents",
+      "fear": "Being blamed for a collapse after challenging the court",
+      "mistaken_belief": "Revealing a contradiction automatically provides a practical replacement",
+      "competence": "Detects illusion edges and listens to unofficial reports",
+      "harm_or_cost": "Doubt can leave Ao carrying all immediate responsibility",
+      "decisive_chapters": "12,13,14",
+      "independent_relationship": "Ao demands a care plan rather than a clever objection; Hina makes the price personal",
+      "voice": "Sharper interruptions and questions that break the paired cadence when stakes rise",
+      "private_life": "Revises a message rather than pretending an old promise never existed",
+      "end_state": "Shares the new route work; one tail and opposite-side ponytail remain the same identity",
+      "chapter_ids": [
+        12,
+        13,
+        14
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Tamamo",
+      "want": "Stop the fading of people for whom she feels responsible",
+      "fear": "Presiding over another disappearance",
+      "mistaken_belief": "Permanence imposed on someone is preferable to a future in which they may be lost",
+      "competence": "Court negotiation, real shelter infrastructure and bounded illusions",
+      "harm_or_cost": "Offers Nil's surrender as a price others would pay; genuine fear does not excuse coercion",
+      "decisive_chapters": "12,13,14",
+      "independent_relationship": "Ao and Aka are retainers with differing views; Ofuku's practical care challenges the court's monopoly",
+      "voice": "Ceremonial warmth with carefully limited offers; drops ornament when admitting a loss",
+      "private_life": "Maintains actual restoration rosters instead of grieving only in a throne room",
+      "end_state": "Survives defeat, yields monopoly access and participates in contested stewardship without becoming instantly harmless",
+      "chapter_ids": [
+        12,
+        13,
+        14
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Little Lantern",
+      "want": "Reliable shelter and a future that is not priced as message speed",
+      "fear": "That accepting help means losing freedom to leave",
+      "mistaken_belief": "A stolen object is the only leverage adults respect",
+      "competence": "Harbour routes, accurate delivery and recognizing a changed instruction",
+      "harm_or_cost": "Stealing the charm risks trust even when he returns it with information",
+      "decisive_chapters": "15,21,49",
+      "independent_relationship": "Jinling must offer ongoing care through explicit agreement, not acquire him with a bounty",
+      "voice": "Quick concrete bargains and observations about routes; not an exposition child who knows every secret",
+      "private_life": "Keeps delivery fees separately from other people's deposits",
+      "end_state": "Receives stable care with his participation in the arrangement; household belonging is not an ownership transfer",
+      "chapter_ids": [
+        15,
+        21,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Jin Chan",
+      "want": "Keep credit flowing under the Exchange he controls",
+      "fear": "A run that proves his methods cannot protect his own family",
+      "mistaken_belief": "Only private ownership with decisive power can prevent financial collapse",
+      "competence": "Prices risk, manages inventory and knows whose claims can delay others",
+      "harm_or_cost": "Predatory exclusions and hidden debits benefit his office; losing an Audit does not pay everyone's debts",
+      "decisive_chapters": "20,21,49",
+      "independent_relationship": "Jinling hears his fear but rejects inheriting sole authority; depositors have claims independent of their family",
+      "voice": "Jovial calculation becomes defensive accounting; avoids a generic miser sneer",
+      "private_life": "Reads warehouse reports and notices a delayed shipment before entertaining petitioners",
+      "end_state": "Lives under review after losing monopoly control; relinquishment does not erase legal obligations",
+      "chapter_ids": [
+        20,
+        21,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Ox-Head",
+      "want": "Keep dangerous crossings bounded and coordinated",
+      "fear": "A hurried exception becoming harm to another traveller",
+      "mistaken_belief": "Only simultaneous formal compliance can prove cooperation",
+      "competence": "Physical gate timing and stated trial objectives",
+      "harm_or_cost": "Must provide refusal and cancellation rather than force worship through injury",
+      "decisive_chapters": "18",
+      "independent_relationship": "Horse-Face can challenge an unsafe interpretation of their shared rule",
+      "voice": "Brief paired conditions, no taunting at the dead",
+      "private_life": "Maintains a crossing mechanism that must function for ordinary travellers",
+      "end_state": "Bows when the objective is met and remains a keeper, not a corpse or a recruited weapon",
+      "chapter_ids": [
+        18
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Horse-Face",
+      "want": "Bring travellers through a valid trial without separating vulnerable parties",
+      "fear": "Rules being applied one person at a time to defeat their purpose",
+      "mistaken_belief": "An explicit rule always anticipates every circumstance",
+      "competence": "Watches timing and communicates the paired condition",
+      "harm_or_cost": "Has to clarify an ambiguous instruction before enforcing it",
+      "decisive_chapters": "18",
+      "independent_relationship": "Ox-Head shares responsibility; neither silently corrects the other's error after the fact",
+      "voice": "Precise restatement and confirmation rather than identical twin dialogue",
+      "private_life": "Checks the return route as carefully as the entry",
+      "end_state": "Recognizes the completed cooperation and preserves the trial record",
+      "chapter_ids": [
+        18
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Judge Cui",
+      "want": "Permit a correction without destroying its evidence",
+      "fear": "That a beautiful new account will erase someone whose copy is inconvenient",
+      "mistaken_belief": "A valid amendment can be certified without considering who retains access",
+      "competence": "Brush rules, witnesses and counter-record preservation",
+      "harm_or_cost": "Must refuse an unsafe shortcut even when Nil's cause is sympathetic",
+      "decisive_chapters": "19",
+      "independent_relationship": "Bai Si brings disagreement; Enma's independent jurisdiction limits any universal answer",
+      "voice": "Careful verbs distinguishing erase, amend and preserve",
+      "private_life": "Cleans and rests the brush between claims instead of performing ceaseless magic",
+      "end_state": "Authorizes bounded Rewrite and preserves the counter-record; revered role is not an enemy target",
+      "chapter_ids": [
+        19
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Wen",
+      "want": "During life, make a ferry rope someone else could trust",
+      "fear": "A failed splice injuring a passenger",
+      "mistaken_belief": "His life is not reduced to a moral lesson inferred from his death",
+      "competence": "Rope craft survives in a work knot and dated testimony",
+      "harm_or_cost": "He is dead; a correct count cannot return his future to his family",
+      "decisive_chapters": "17,18,26,33",
+      "independent_relationship": "Descendants and River-born workers preserve craft without pretending to be current eyewitnesses of an ancient death",
+      "voice": "Quoted work instructions and preserved testimony only; no omniscient ghost explaining Nil",
+      "private_life": "Specific repairs and a maker's knot identify a life beyond the missing fraction",
+      "end_state": "A disputed life is recorded accurately and remembered; no resurrection or lantern ownership",
+      "chapter_ids": [
+        17,
+        18,
+        26,
+        33
+      ],
+      "actor_type": "remembered_deceased"
+    },
+    {
+      "name": "Vidya Rao",
+      "want": "Finish a defensible catalogue and keep the observatory operating",
+      "fear": "Political suppression and an unsupported result destroying trust",
+      "mistaken_belief": "Protecting a promising student requires smoothing away their public mistakes",
+      "competence": "Independent measurement, calibration and signed dispatches",
+      "harm_or_cost": "Must retain Shunya's failed model and pay instrument crews even when publication is dangerous",
+      "decisive_chapters": "22,24,27,28,49",
+      "independent_relationship": "Shunya can outgrow his model; Meera's private record is not his departmental property",
+      "voice": "Patient examples and exact observations; will say he does not know",
+      "private_life": "Schedules instruments around maintenance, weather and the crew's wages",
+      "end_state": "Publishes bounded measurements and a failed-test appendix without claiming Nil's personal data",
+      "chapter_ids": [
+        22,
+        24,
+        27,
+        28,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Meera",
+      "want": "Recover her brother's record and keep control of what is shared",
+      "fear": "That scholars will turn a loss into evidence she cannot retrieve",
+      "mistaken_belief": "A complete record may answer every unresolved feeling",
+      "competence": "Diving lines, depth limits, return planning and retrieval documentation",
+      "harm_or_cost": "Risk is physical and paid; agreeing to retrieval is not blanket publication consent",
+      "decisive_chapters": "22,23,24,49",
+      "independent_relationship": "Shunya needs her permission; Vidya's institutional archive must return the private original",
+      "voice": "Specific depth and safety instructions; grief changes the subject rather than becoming an explanatory speech",
+      "private_life": "Checks lamp seals and does not enter water because a protagonist is impatient",
+      "end_state": "Receives the record, permits a limited comparison and keeps grief without an invented cure",
+      "chapter_ids": [
+        22,
+        23,
+        24,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Chitragupta",
+      "want": "Keep deeds legible without converting a person into a verdict",
+      "fear": "A new measurement reproducing an older erasure",
+      "mistaken_belief": "Recording more detail necessarily makes a record exhaustive",
+      "competence": "Compares regional meanings and defines a nonlethal record trial",
+      "harm_or_cost": "Must distinguish his account's limits from a claim to own the subject",
+      "decisive_chapters": "24,25",
+      "independent_relationship": "Shunya's hypothesis is examined rather than blessed; Meera's record has an owner",
+      "voice": "Formal distinctions grounded in a particular entry, not a lecture on an entire real religion",
+      "private_life": "Preserves a counter-copy and the unanswered question beside it",
+      "end_state": "Supplies independent evidence without becoming Hap in disguise or a defeated enemy",
+      "chapter_ids": [
+        24,
+        25
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Kallisto",
+      "want": "Safe access and authority for the residents maintaining the city",
+      "fear": "A celebrated outsider leaving residents with broken routes and reprisals",
+      "mistaken_belief": "Immediate unity is always necessary to win a hearing",
+      "competence": "Organizes labour, local knowledge, witnesses and practical evacuation",
+      "harm_or_cost": "Can pressure dissenting residents to accept one plan; must record their disagreement",
+      "decisive_chapters": "30,31,33,35,43,49",
+      "independent_relationship": "Prima owes testimony before trust; Maeve works under local repair priorities",
+      "voice": "Names a task, responsible person and deadline; anger is specific rather than constant rhetoric",
+      "private_life": "Checks a support before accepting a speech about the upper city",
+      "end_state": "Residents govern reopened routes and can challenge the proposed transition rather than thank the party and disappear",
+      "chapter_ids": [
+        30,
+        31,
+        33,
+        35,
+        43,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Niko",
+      "want": "Do something useful in a city that overlooks him",
+      "fear": "Being treated as a joke whenever a task fails",
+      "mistaken_belief": "Being a hero means taking a risk alone",
+      "competence": "Knows goats and narrow routes adults do not use",
+      "harm_or_cost": "His mistakes must not turn actual falls or children in danger into recurring slapstick",
+      "decisive_chapters": "29,30,31",
+      "independent_relationship": "Kallisto can assign safe useful work; Prima must respect a child's information without handing him a soldier's duty",
+      "voice": "Eager specific claims, often corrected by an escaped goat rather than by contempt",
+      "private_life": "Counts animals and learns where a weak terrace edge really leads",
+      "end_state": "Helps identify a safe route under adult responsibility and remains a child",
+      "chapter_ids": [
+        29,
+        30,
+        31
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Clotho",
+      "want": "Establish a sequence everyone understands before acting",
+      "fear": "An interrupted order that traps the next participant",
+      "mistaken_belief": "An elegant sequence remains safe without checking comprehension",
+      "competence": "Spinning and observable ordered trials",
+      "harm_or_cost": "Must restart an unclear instruction rather than blame a traveller for misreading",
+      "decisive_chapters": "32",
+      "independent_relationship": "Lachesis checks the relationships the sequence assumes; Atropos defines its ending boundary",
+      "voice": "Measured instructions with one explicit example",
+      "private_life": "Adjusts tension before asking someone to put a hand near the wheel",
+      "end_state": "Certifies a bounded trial, not authority over the party's entire future",
+      "chapter_ids": [
+        32
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Lachesis",
+      "want": "Measure a shared obligation without ranking lives",
+      "fear": "Measurement being used to claim a person's ownership",
+      "mistaken_belief": "Participants who agree to a trial agree to every later use of its record",
+      "competence": "Measured thread, witnessed limits and record custody",
+      "harm_or_cost": "Must separate trial consent from the finale's later request",
+      "decisive_chapters": "32,35,43,49",
+      "independent_relationship": "Prima and Nil reason through a disagreement; Clotho cannot substitute compliance for permission",
+      "voice": "Questions about scope, followed by a precise statement of what the strand records",
+      "private_life": "Repairs a measuring mark rather than secretly moving it",
+      "end_state": "Releases the witnessed thread with limits; Prima retains authority over final use",
+      "chapter_ids": [
+        32,
+        35,
+        43,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Atropos",
+      "want": "Make a real ending possible without disguised coercion",
+      "fear": "A costly choice being passed off as voluntary because alternatives were hidden",
+      "mistaken_belief": "A sacrifice appears more honest when it hurts more",
+      "competence": "States permitted substitutions and closure conditions",
+      "harm_or_cost": "Must provide the expendable ribbon explicitly and never consume a protected proof or person",
+      "decisive_chapters": "32",
+      "independent_relationship": "Clotho's sequence and Lachesis's record need a declared end, not an arbitrary severing",
+      "voice": "Plain questions and unromantic descriptions of consequences",
+      "private_life": "Keeps discarded test ribbon separate from live records",
+      "end_state": "Accepts a bounded material cost, no demanded companion death or erased evidence",
+      "chapter_ids": [
+        32
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Archon",
+      "want": "Preserve the ranked city and the authority that maintains it",
+      "fear": "Admission that excluded residents built the stability he claims",
+      "mistaken_belief": "Numerical qualification can establish political worth",
+      "competence": "Knows geometric machinery and the institution's access rules",
+      "harm_or_cost": "His exclusions and school order endanger children; saving him does not restore his office",
+      "decisive_chapters": "29,30,34,35,49",
+      "independent_relationship": "Prima was a sincere student, not an idiot he deceived in every lesson; Kallisto's witnesses challenge his jurisdiction",
+      "voice": "Didactic complete assertions; cites a real working structure before applying its false moral conclusion",
+      "private_life": "Inspects a functioning shelter while refusing to recognize who was excluded from it",
+      "end_state": "Survives under witness custody and public review after losing monopoly power",
+      "chapter_ids": [
+        29,
+        30,
+        34,
+        35,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Stranger",
+      "want": "Make a declared bargain possible to refuse",
+      "fear": "A signature obtained through hidden terms being called an agreement",
+      "mistaken_belief": "A formally fair offer always accounts for unequal bargaining power",
+      "competence": "Discloses stakes and teaches a bounded Deal without cheating",
+      "harm_or_cost": "Must allow the exhausted party to decline rather than make entry conditional on submission",
+      "decisive_chapters": "36",
+      "independent_relationship": "Vesper knows fair play requires exposure of her own methods; the House offers the contrasting imposed contract",
+      "voice": "Few words, asks what the traveller thinks they are offering",
+      "private_life": "Sets down the book so both parties can see the same page",
+      "end_state": "Remains a keeper of bounded terms rather than a villain revealed by a trick",
+      "chapter_ids": [
+        36
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Penny",
+      "want": "Leave the railway without losing the record of the nights",
+      "fear": "That spending a token will erase what she has kept",
+      "mistaken_belief": "A count by itself can settle the obligation holding her",
+      "competence": "Recognizes authorized counters and the sequence of repeated departures",
+      "harm_or_cost": "Tokens are nonspendable records, not a source of newly created money",
+      "decisive_chapters": "38,41,49",
+      "independent_relationship": "Vance checks the count against case markers; Fibi can contradict Penny's remembered sequence",
+      "voice": "Patient recurring phrases interrupted by exact corrections",
+      "private_life": "Sorts tokens by worn edges, not increasing magical purchasing power",
+      "end_state": "The clause's cancellation permits departure; no literal extra currency must be minted to free her",
+      "chapter_ids": [
+        38,
+        41,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Vance",
+      "want": "Make a charge stick against property power without inventing evidence",
+      "fear": "Losing public authority and leaving staff less protected",
+      "mistaken_belief": "One impeccable case file can act without witnesses who are allowed to disagree",
+      "competence": "Separates case records, property claims and signed testimony",
+      "harm_or_cost": "Her office relies on House credit and retained markers; she must disclose those dependencies",
+      "decisive_chapters": "38,39,40,41,49",
+      "independent_relationship": "Penny corroborates but does not replace Fibi; staff can dispute her proposed settlement",
+      "voice": "Specific questions, dates and contradictions; no all-knowing frontier drawl",
+      "private_life": "Notches authorized case markers and keeps ordinary wage complaints in the same office",
+      "end_state": "Preserves cancellation and restitution evidence and accepts public oversight rather than simply arresting away an economy",
+      "chapter_ids": [
+        38,
+        39,
+        40,
+        41,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "House",
+      "want": "Keep Fibi safe while retaining the property network that defines his competence",
+      "fear": "Losing her and discovering that protection caused the harm",
+      "mistaken_belief": "Buying protection entitles him to control its beneficiary",
+      "competence": "Contracts, funding, bounded rewinds and real staff logistics",
+      "harm_or_cost": "Commissioned the protection when Fibi was15; continuing control at18 drains her and employees depend on his assets",
+      "decisive_chapters": "39,40,41,49",
+      "independent_relationship": "Fibi's refusal limits family authority; Vance and staff hold independent claims he cannot settle with affection",
+      "voice": "Affable offers with conditions; uses family terms to evade a precise consent question",
+      "private_life": "Knows the cost of a replacement felt table and ignores an excluded person's larger cost",
+      "end_state": "Lives after relinquishing the claim; signs the cancellation and faces wage/property proceedings",
+      "chapter_ids": [
+        39,
+        40,
+        41,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    },
+    {
+      "name": "Mara",
+      "want": "Have her family's chosen restitution recognized without performing forgiveness",
+      "fear": "That Vesper will turn her survival into a redemption story",
+      "mistaken_belief": "She is not required to have a corrective flaw to justify refusing contact",
+      "competence": "Works with a mutual-aid office and can direct how her statement and family fund are handled",
+      "harm_or_cost": "Injury, disrupted schooling and displacement remain consequences; no image of recovery cancels them",
+      "decisive_chapters": "20,35,40,49",
+      "independent_relationship": "Her family and colleagues exist independently of Vesper; Fibi need not mediate a reunion",
+      "voice": "Direct boundaries and concrete requests; no required cathartic speech to the protagonist",
+      "private_life": "Has work shifts and education outside the scene about what happened to her",
+      "end_state": "Chooses the terms of contact, receives directed restitution and is not obliged to forgive",
+      "chapter_ids": [
+        20,
+        35,
+        40,
+        49
+      ],
+      "actor_type": "person_or_supernatural_person"
+    }
+  ],
+  "groups": {
+    "House staff": "Casino employees with independent wage/property claims",
+    "Synod guards": "Institutional staff; obedience is not a universal personal motive",
+    "all eight core companions": "Vesper,Maeve,Hina,Jinling,Bai Si,Shunya,Prima,Fibi",
+    "children": "Age-appropriate residents; no mandatory fighting role",
+    "companions": "Current travel roster, not a three-member combat limit",
+    "courier": "Paid carrier on the established dispatch route",
+    "depositors": "Reserve claimants distinct from the Exchange owner",
+    "dock witnesses": "Cooperative residents retaining their own testimony",
+    "guards": "Assigned security personnel with actual orders and physical limits",
+    "regional councils": "Distinct provisional local bodies, not one global mind",
+    "regional delegates": "Specific limited representatives whose mandates are recorded",
+    "surveyors": "Basilica operators with permits and machinery, not celestial figures",
+    "witness": "Custodian of a particular statement, not omniscient narration",
+    "workers": "Skilled residents with varied wages, obligations and political positions"
+  },
+  "aliases": {
+    "Ivo by record": "Ivo",
+    "Livia by letter": "Livia",
+    "Nought by letter": "Nought"
+  },
+  "cast_coverage": [
+    {
+      "chapter": 1,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 1,
+      "label": "Baker",
+      "canonical": "Baker",
+      "kind": "profile"
+    },
+    {
+      "chapter": 1,
+      "label": "Ama",
+      "canonical": "Ama",
+      "kind": "profile"
+    },
+    {
+      "chapter": 1,
+      "label": "Tobi",
+      "canonical": "Tobi",
+      "kind": "profile"
+    },
+    {
+      "chapter": 1,
+      "label": "Collector",
+      "canonical": "Collector",
+      "kind": "profile"
+    },
+    {
+      "chapter": 2,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 2,
+      "label": "Ama",
+      "canonical": "Ama",
+      "kind": "profile"
+    },
+    {
+      "chapter": 2,
+      "label": "Tobi",
+      "canonical": "Tobi",
+      "kind": "profile"
+    },
+    {
+      "chapter": 2,
+      "label": "Collector",
+      "canonical": "Collector",
+      "kind": "profile"
+    },
+    {
+      "chapter": 2,
+      "label": "Baker",
+      "canonical": "Baker",
+      "kind": "profile"
+    },
+    {
+      "chapter": 2,
+      "label": "Debt Hound",
+      "canonical": "Debt Hound",
+      "kind": "profile"
+    },
+    {
+      "chapter": 3,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 3,
+      "label": "cart resident",
+      "canonical": "cart resident",
+      "kind": "profile"
+    },
+    {
+      "chapter": 3,
+      "label": "Nought",
+      "canonical": "Nought",
+      "kind": "profile"
+    },
+    {
+      "chapter": 3,
+      "label": "Debt Hound",
+      "canonical": "Debt Hound",
+      "kind": "profile"
+    },
+    {
+      "chapter": 4,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 4,
+      "label": "Nought",
+      "canonical": "Nought",
+      "kind": "profile"
+    },
+    {
+      "chapter": 4,
+      "label": "Ivo",
+      "canonical": "Ivo",
+      "kind": "profile"
+    },
+    {
+      "chapter": 4,
+      "label": "Thale",
+      "canonical": "Thale",
+      "kind": "profile"
+    },
+    {
+      "chapter": 5,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 5,
+      "label": "Nought",
+      "canonical": "Nought",
+      "kind": "profile"
+    },
+    {
+      "chapter": 5,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 5,
+      "label": "Debt Hound",
+      "canonical": "Debt Hound",
+      "kind": "profile"
+    },
+    {
+      "chapter": 6,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 6,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 6,
+      "label": "Gus",
+      "canonical": "Gus",
+      "kind": "profile"
+    },
+    {
+      "chapter": 6,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 6,
+      "label": "Livia",
+      "canonical": "Livia",
+      "kind": "profile"
+    },
+    {
+      "chapter": 7,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 7,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 7,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 7,
+      "label": "Varro",
+      "canonical": "Varro",
+      "kind": "profile"
+    },
+    {
+      "chapter": 8,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 8,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 8,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 8,
+      "label": "Tetsu",
+      "canonical": "Tetsu",
+      "kind": "profile"
+    },
+    {
+      "chapter": 9,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 9,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 9,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 9,
+      "label": "Hina",
+      "canonical": "Hina",
+      "kind": "profile"
+    },
+    {
+      "chapter": 10,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 10,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 10,
+      "label": "Hina",
+      "canonical": "Hina",
+      "kind": "profile"
+    },
+    {
+      "chapter": 10,
+      "label": "Ofuku",
+      "canonical": "Ofuku",
+      "kind": "profile"
+    },
+    {
+      "chapter": 10,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 11,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 11,
+      "label": "Hina",
+      "canonical": "Hina",
+      "kind": "profile"
+    },
+    {
+      "chapter": 11,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 11,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 11,
+      "label": "Enma",
+      "canonical": "Enma",
+      "kind": "profile"
+    },
+    {
+      "chapter": 12,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 12,
+      "label": "Hina",
+      "canonical": "Hina",
+      "kind": "profile"
+    },
+    {
+      "chapter": 12,
+      "label": "Ao",
+      "canonical": "Ao",
+      "kind": "profile"
+    },
+    {
+      "chapter": 12,
+      "label": "Aka",
+      "canonical": "Aka",
+      "kind": "profile"
+    },
+    {
+      "chapter": 12,
+      "label": "Tamamo",
+      "canonical": "Tamamo",
+      "kind": "profile"
+    },
+    {
+      "chapter": 13,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 13,
+      "label": "Hina",
+      "canonical": "Hina",
+      "kind": "profile"
+    },
+    {
+      "chapter": 13,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 13,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 13,
+      "label": "Tamamo",
+      "canonical": "Tamamo",
+      "kind": "profile"
+    },
+    {
+      "chapter": 13,
+      "label": "Ao",
+      "canonical": "Ao",
+      "kind": "profile"
+    },
+    {
+      "chapter": 13,
+      "label": "Aka",
+      "canonical": "Aka",
+      "kind": "profile"
+    },
+    {
+      "chapter": 14,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 14,
+      "label": "Hina",
+      "canonical": "Hina",
+      "kind": "profile"
+    },
+    {
+      "chapter": 14,
+      "label": "Ofuku",
+      "canonical": "Ofuku",
+      "kind": "profile"
+    },
+    {
+      "chapter": 14,
+      "label": "Tamamo",
+      "canonical": "Tamamo",
+      "kind": "profile"
+    },
+    {
+      "chapter": 14,
+      "label": "Tetsu",
+      "canonical": "Tetsu",
+      "kind": "profile"
+    },
+    {
+      "chapter": 15,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 15,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 15,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 15,
+      "label": "Hina",
+      "canonical": "Hina",
+      "kind": "profile"
+    },
+    {
+      "chapter": 15,
+      "label": "Jinling",
+      "canonical": "Jinling",
+      "kind": "profile"
+    },
+    {
+      "chapter": 15,
+      "label": "Little Lantern",
+      "canonical": "Little Lantern",
+      "kind": "profile"
+    },
+    {
+      "chapter": 16,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 16,
+      "label": "Jinling",
+      "canonical": "Jinling",
+      "kind": "profile"
+    },
+    {
+      "chapter": 16,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 16,
+      "label": "dock witnesses",
+      "canonical": "dock witnesses",
+      "kind": "group"
+    },
+    {
+      "chapter": 17,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 17,
+      "label": "Jinling",
+      "canonical": "Jinling",
+      "kind": "profile"
+    },
+    {
+      "chapter": 17,
+      "label": "Bai Si",
+      "canonical": "Bai Si",
+      "kind": "profile"
+    },
+    {
+      "chapter": 17,
+      "label": "dock witnesses",
+      "canonical": "dock witnesses",
+      "kind": "group"
+    },
+    {
+      "chapter": 18,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 18,
+      "label": "Bai Si",
+      "canonical": "Bai Si",
+      "kind": "profile"
+    },
+    {
+      "chapter": 18,
+      "label": "Jinling",
+      "canonical": "Jinling",
+      "kind": "profile"
+    },
+    {
+      "chapter": 18,
+      "label": "Ox-Head",
+      "canonical": "Ox-Head",
+      "kind": "profile"
+    },
+    {
+      "chapter": 18,
+      "label": "Horse-Face",
+      "canonical": "Horse-Face",
+      "kind": "profile"
+    },
+    {
+      "chapter": 18,
+      "label": "witness",
+      "canonical": "witness",
+      "kind": "group"
+    },
+    {
+      "chapter": 19,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 19,
+      "label": "Bai Si",
+      "canonical": "Bai Si",
+      "kind": "profile"
+    },
+    {
+      "chapter": 19,
+      "label": "Jinling",
+      "canonical": "Jinling",
+      "kind": "profile"
+    },
+    {
+      "chapter": 19,
+      "label": "Judge Cui",
+      "canonical": "Judge Cui",
+      "kind": "profile"
+    },
+    {
+      "chapter": 20,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 20,
+      "label": "Jinling",
+      "canonical": "Jinling",
+      "kind": "profile"
+    },
+    {
+      "chapter": 20,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 20,
+      "label": "Bai Si",
+      "canonical": "Bai Si",
+      "kind": "profile"
+    },
+    {
+      "chapter": 20,
+      "label": "Jin Chan",
+      "canonical": "Jin Chan",
+      "kind": "profile"
+    },
+    {
+      "chapter": 21,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 21,
+      "label": "Jinling",
+      "canonical": "Jinling",
+      "kind": "profile"
+    },
+    {
+      "chapter": 21,
+      "label": "workers",
+      "canonical": "workers",
+      "kind": "group"
+    },
+    {
+      "chapter": 21,
+      "label": "depositors",
+      "canonical": "depositors",
+      "kind": "group"
+    },
+    {
+      "chapter": 21,
+      "label": "Nought by letter",
+      "canonical": "Nought",
+      "kind": "indirect_record"
+    },
+    {
+      "chapter": 21,
+      "label": "Ivo by record",
+      "canonical": "Ivo",
+      "kind": "indirect_record"
+    },
+    {
+      "chapter": 22,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 22,
+      "label": "Shunya",
+      "canonical": "Shunya",
+      "kind": "profile"
+    },
+    {
+      "chapter": 22,
+      "label": "Vidya Rao",
+      "canonical": "Vidya Rao",
+      "kind": "profile"
+    },
+    {
+      "chapter": 22,
+      "label": "Meera",
+      "canonical": "Meera",
+      "kind": "profile"
+    },
+    {
+      "chapter": 22,
+      "label": "Jinling",
+      "canonical": "Jinling",
+      "kind": "profile"
+    },
+    {
+      "chapter": 23,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 23,
+      "label": "Meera",
+      "canonical": "Meera",
+      "kind": "profile"
+    },
+    {
+      "chapter": 23,
+      "label": "Shunya",
+      "canonical": "Shunya",
+      "kind": "profile"
+    },
+    {
+      "chapter": 23,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 23,
+      "label": "Bai Si",
+      "canonical": "Bai Si",
+      "kind": "profile"
+    },
+    {
+      "chapter": 24,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 24,
+      "label": "Shunya",
+      "canonical": "Shunya",
+      "kind": "profile"
+    },
+    {
+      "chapter": 24,
+      "label": "Vidya Rao",
+      "canonical": "Vidya Rao",
+      "kind": "profile"
+    },
+    {
+      "chapter": 24,
+      "label": "Chitragupta",
+      "canonical": "Chitragupta",
+      "kind": "profile"
+    },
+    {
+      "chapter": 25,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 25,
+      "label": "Shunya",
+      "canonical": "Shunya",
+      "kind": "profile"
+    },
+    {
+      "chapter": 25,
+      "label": "Bai Si",
+      "canonical": "Bai Si",
+      "kind": "profile"
+    },
+    {
+      "chapter": 25,
+      "label": "Jinling",
+      "canonical": "Jinling",
+      "kind": "profile"
+    },
+    {
+      "chapter": 25,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 26,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 26,
+      "label": "Shunya",
+      "canonical": "Shunya",
+      "kind": "profile"
+    },
+    {
+      "chapter": 26,
+      "label": "Bai Si",
+      "canonical": "Bai Si",
+      "kind": "profile"
+    },
+    {
+      "chapter": 26,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 26,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 27,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 27,
+      "label": "Shunya",
+      "canonical": "Shunya",
+      "kind": "profile"
+    },
+    {
+      "chapter": 27,
+      "label": "Vidya Rao",
+      "canonical": "Vidya Rao",
+      "kind": "profile"
+    },
+    {
+      "chapter": 27,
+      "label": "surveyors",
+      "canonical": "surveyors",
+      "kind": "group"
+    },
+    {
+      "chapter": 27,
+      "label": "companions",
+      "canonical": "companions",
+      "kind": "group"
+    },
+    {
+      "chapter": 28,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 28,
+      "label": "Shunya",
+      "canonical": "Shunya",
+      "kind": "profile"
+    },
+    {
+      "chapter": 28,
+      "label": "Jinling",
+      "canonical": "Jinling",
+      "kind": "profile"
+    },
+    {
+      "chapter": 28,
+      "label": "Vidya Rao",
+      "canonical": "Vidya Rao",
+      "kind": "profile"
+    },
+    {
+      "chapter": 28,
+      "label": "courier",
+      "canonical": "courier",
+      "kind": "group"
+    },
+    {
+      "chapter": 29,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 29,
+      "label": "Prima",
+      "canonical": "Prima",
+      "kind": "profile"
+    },
+    {
+      "chapter": 29,
+      "label": "Synod guards",
+      "canonical": "Synod guards",
+      "kind": "group"
+    },
+    {
+      "chapter": 29,
+      "label": "Niko",
+      "canonical": "Niko",
+      "kind": "profile"
+    },
+    {
+      "chapter": 30,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 30,
+      "label": "Prima",
+      "canonical": "Prima",
+      "kind": "profile"
+    },
+    {
+      "chapter": 30,
+      "label": "Kallisto",
+      "canonical": "Kallisto",
+      "kind": "profile"
+    },
+    {
+      "chapter": 30,
+      "label": "workers",
+      "canonical": "workers",
+      "kind": "group"
+    },
+    {
+      "chapter": 30,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 31,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 31,
+      "label": "Prima",
+      "canonical": "Prima",
+      "kind": "profile"
+    },
+    {
+      "chapter": 31,
+      "label": "Kallisto",
+      "canonical": "Kallisto",
+      "kind": "profile"
+    },
+    {
+      "chapter": 31,
+      "label": "children",
+      "canonical": "children",
+      "kind": "group"
+    },
+    {
+      "chapter": 31,
+      "label": "workers",
+      "canonical": "workers",
+      "kind": "group"
+    },
+    {
+      "chapter": 32,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 32,
+      "label": "Prima",
+      "canonical": "Prima",
+      "kind": "profile"
+    },
+    {
+      "chapter": 32,
+      "label": "Clotho",
+      "canonical": "Clotho",
+      "kind": "profile"
+    },
+    {
+      "chapter": 32,
+      "label": "Lachesis",
+      "canonical": "Lachesis",
+      "kind": "profile"
+    },
+    {
+      "chapter": 32,
+      "label": "Atropos",
+      "canonical": "Atropos",
+      "kind": "profile"
+    },
+    {
+      "chapter": 32,
+      "label": "companions",
+      "canonical": "companions",
+      "kind": "group"
+    },
+    {
+      "chapter": 33,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 33,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 33,
+      "label": "Bai Si",
+      "canonical": "Bai Si",
+      "kind": "profile"
+    },
+    {
+      "chapter": 33,
+      "label": "Kallisto",
+      "canonical": "Kallisto",
+      "kind": "profile"
+    },
+    {
+      "chapter": 33,
+      "label": "Prima",
+      "canonical": "Prima",
+      "kind": "profile"
+    },
+    {
+      "chapter": 34,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 34,
+      "label": "Prima",
+      "canonical": "Prima",
+      "kind": "profile"
+    },
+    {
+      "chapter": 34,
+      "label": "Archon",
+      "canonical": "Archon",
+      "kind": "profile"
+    },
+    {
+      "chapter": 34,
+      "label": "Kallisto",
+      "canonical": "Kallisto",
+      "kind": "profile"
+    },
+    {
+      "chapter": 34,
+      "label": "companions",
+      "canonical": "companions",
+      "kind": "group"
+    },
+    {
+      "chapter": 35,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 35,
+      "label": "Prima",
+      "canonical": "Prima",
+      "kind": "profile"
+    },
+    {
+      "chapter": 35,
+      "label": "Maeve",
+      "canonical": "Maeve",
+      "kind": "profile"
+    },
+    {
+      "chapter": 35,
+      "label": "Archon",
+      "canonical": "Archon",
+      "kind": "profile"
+    },
+    {
+      "chapter": 35,
+      "label": "Kallisto",
+      "canonical": "Kallisto",
+      "kind": "profile"
+    },
+    {
+      "chapter": 35,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 36,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 36,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 36,
+      "label": "Stranger",
+      "canonical": "Stranger",
+      "kind": "profile"
+    },
+    {
+      "chapter": 36,
+      "label": "companions",
+      "canonical": "companions",
+      "kind": "group"
+    },
+    {
+      "chapter": 37,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 37,
+      "label": "Fibi",
+      "canonical": "Fibi",
+      "kind": "profile"
+    },
+    {
+      "chapter": 37,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 37,
+      "label": "House staff",
+      "canonical": "House staff",
+      "kind": "group"
+    },
+    {
+      "chapter": 38,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 38,
+      "label": "Fibi",
+      "canonical": "Fibi",
+      "kind": "profile"
+    },
+    {
+      "chapter": 38,
+      "label": "Penny",
+      "canonical": "Penny",
+      "kind": "profile"
+    },
+    {
+      "chapter": 38,
+      "label": "Vance",
+      "canonical": "Vance",
+      "kind": "profile"
+    },
+    {
+      "chapter": 39,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 39,
+      "label": "Fibi",
+      "canonical": "Fibi",
+      "kind": "profile"
+    },
+    {
+      "chapter": 39,
+      "label": "House",
+      "canonical": "House",
+      "kind": "profile"
+    },
+    {
+      "chapter": 39,
+      "label": "Vance",
+      "canonical": "Vance",
+      "kind": "profile"
+    },
+    {
+      "chapter": 39,
+      "label": "Jinling",
+      "canonical": "Jinling",
+      "kind": "profile"
+    },
+    {
+      "chapter": 40,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 40,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 40,
+      "label": "Fibi",
+      "canonical": "Fibi",
+      "kind": "profile"
+    },
+    {
+      "chapter": 40,
+      "label": "Mara",
+      "canonical": "Mara",
+      "kind": "profile"
+    },
+    {
+      "chapter": 40,
+      "label": "Vance",
+      "canonical": "Vance",
+      "kind": "profile"
+    },
+    {
+      "chapter": 40,
+      "label": "House",
+      "canonical": "House",
+      "kind": "profile"
+    },
+    {
+      "chapter": 41,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 41,
+      "label": "Fibi",
+      "canonical": "Fibi",
+      "kind": "profile"
+    },
+    {
+      "chapter": 41,
+      "label": "House",
+      "canonical": "House",
+      "kind": "profile"
+    },
+    {
+      "chapter": 41,
+      "label": "Vance",
+      "canonical": "Vance",
+      "kind": "profile"
+    },
+    {
+      "chapter": 41,
+      "label": "companions",
+      "canonical": "companions",
+      "kind": "group"
+    },
+    {
+      "chapter": 42,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 42,
+      "label": "Fibi",
+      "canonical": "Fibi",
+      "kind": "profile"
+    },
+    {
+      "chapter": 42,
+      "label": "Vesper",
+      "canonical": "Vesper",
+      "kind": "profile"
+    },
+    {
+      "chapter": 42,
+      "label": "Varro",
+      "canonical": "Varro",
+      "kind": "profile"
+    },
+    {
+      "chapter": 42,
+      "label": "Livia by letter",
+      "canonical": "Livia",
+      "kind": "indirect_record"
+    },
+    {
+      "chapter": 42,
+      "label": "Gus",
+      "canonical": "Gus",
+      "kind": "profile"
+    },
+    {
+      "chapter": 42,
+      "label": "Nought",
+      "canonical": "Nought",
+      "kind": "profile"
+    },
+    {
+      "chapter": 43,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 43,
+      "label": "all eight core companions",
+      "canonical": "all eight core companions",
+      "kind": "group"
+    },
+    {
+      "chapter": 43,
+      "label": "Varro",
+      "canonical": "Varro",
+      "kind": "profile"
+    },
+    {
+      "chapter": 43,
+      "label": "regional delegates",
+      "canonical": "regional delegates",
+      "kind": "group"
+    },
+    {
+      "chapter": 44,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 44,
+      "label": "companions",
+      "canonical": "companions",
+      "kind": "group"
+    },
+    {
+      "chapter": 44,
+      "label": "Ivo",
+      "canonical": "Ivo",
+      "kind": "profile"
+    },
+    {
+      "chapter": 44,
+      "label": "guards",
+      "canonical": "guards",
+      "kind": "group"
+    },
+    {
+      "chapter": 45,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 45,
+      "label": "companions",
+      "canonical": "companions",
+      "kind": "group"
+    },
+    {
+      "chapter": 45,
+      "label": "Hap",
+      "canonical": "Hap",
+      "kind": "profile"
+    },
+    {
+      "chapter": 45,
+      "label": "Ivo",
+      "canonical": "Ivo",
+      "kind": "profile"
+    },
+    {
+      "chapter": 46,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 46,
+      "label": "Thale",
+      "canonical": "Thale",
+      "kind": "profile"
+    },
+    {
+      "chapter": 46,
+      "label": "Ivo",
+      "canonical": "Ivo",
+      "kind": "profile"
+    },
+    {
+      "chapter": 46,
+      "label": "Jinling",
+      "canonical": "Jinling",
+      "kind": "profile"
+    },
+    {
+      "chapter": 46,
+      "label": "Shunya",
+      "canonical": "Shunya",
+      "kind": "profile"
+    },
+    {
+      "chapter": 47,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 47,
+      "label": "Thale",
+      "canonical": "Thale",
+      "kind": "profile"
+    },
+    {
+      "chapter": 47,
+      "label": "companions",
+      "canonical": "companions",
+      "kind": "group"
+    },
+    {
+      "chapter": 48,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 48,
+      "label": "Thale",
+      "canonical": "Thale",
+      "kind": "profile"
+    },
+    {
+      "chapter": 48,
+      "label": "all eight core companions",
+      "canonical": "all eight core companions",
+      "kind": "group"
+    },
+    {
+      "chapter": 48,
+      "label": "Ivo",
+      "canonical": "Ivo",
+      "kind": "profile"
+    },
+    {
+      "chapter": 49,
+      "label": "Nil",
+      "canonical": "Nil",
+      "kind": "profile"
+    },
+    {
+      "chapter": 49,
+      "label": "companions",
+      "canonical": "companions",
+      "kind": "group"
+    },
+    {
+      "chapter": 49,
+      "label": "regional councils",
+      "canonical": "regional councils",
+      "kind": "group"
+    },
+    {
+      "chapter": 49,
+      "label": "Livia",
+      "canonical": "Livia",
+      "kind": "profile"
+    },
+    {
+      "chapter": 49,
+      "label": "Varro",
+      "canonical": "Varro",
+      "kind": "profile"
+    },
+    {
+      "chapter": 49,
+      "label": "Hap",
+      "canonical": "Hap",
+      "kind": "profile"
+    },
+    {
+      "chapter": 49,
+      "label": "Thale",
+      "canonical": "Thale",
+      "kind": "profile"
+    }
+  ]
+}

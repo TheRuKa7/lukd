@@ -6,7 +6,7 @@ Updated 7 November 2026 under [DECISIONS.md](DECISIONS.md). **Specified location
 
 ---
 
-## Meridian Undercity (Prologue) and the Basilica (Finale)
+## Meridian Undercity (Prologue)
 - **Inspired by:** a cosmopolitan modern capital; the immigrant quarters of every great port city.
 - **Geography:** a plateau city; the Undercity is stacked in the drains and cliffs beneath it, with the Basilica's tower rising from the plateau's heart.
 - **Districts:** the Remainder Wards (Remainder + Charmpunk) · the Charm Bazaar (pure Charmpunk) · the Exchange Terraces (Gilded Fortune over Ledgerism) · the Basilica Ring (pure Ledgerism).
@@ -73,6 +73,17 @@ Updated 7 November 2026 under [DECISIONS.md](DECISIONS.md). **Specified location
 - **Reel object:** a giant slot machine.
 - **Human conflict / decision:** protecting someone can become refusing their right to change. Fibi predicts repeated local routines, not prior meetings with newly arriving NIL. She consents to cancelling the fatal contract.
 - **Ordinary life:** a diner changing a recipe, motel plumbing, a sheriff tired of an identical joke. Iteration 1,597 follows 1,596 completed local repeats; outside time advances only the anchored night. Motel, contract and dawn supply Fibi's four pre-finale stages.
+
+## The Basilica, the Closed Hand (Finale)
+- **Inspired by:** the game's invented accounting institution: cathedral-like civic machinery, layered archives and a bureaucracy built around seized plural ledgers. It is not a replica of a real sacred site.
+- **Geography:** the raised Meridian plateau above the Wards; guarded exterior courts lead through a ritual gate to interior archives, the nave and the Even Hand engine. The capital outside and the institution inside are distinct spaces.
+- **Key locations:** Upper Gate with seven sockets · Ivo Marr's service passage around the inner trap · archive galleries containing regional ledgers · nave · the Even Hand engine's closed brass fist around Hap · Thale's private workroom and modest meal table.
+- **Little things:** stitched archive bindings, replacement gear teeth, a clerk's cooling tea, maintenance tags and ordinary workers changing shifts. The building's scale comes from accumulated labour as well as power.
+- **Sound:** measured relay clicks, air through old ducts, distant ledger-priest voices and an uneven pulse from the engine. Silence becomes more unsettling as Fixed Fate suppresses chance.
+- **Institutional pressure:** exterior guards recalled by Thale do not unlock the ritual gate. Six acquired Seals plus NIL's chosen resonance open that gate; Ivo then bypasses only the separate interior service trap. No one helper solves all three obstacles.
+- **Reel object:** the Even Hand's brass channels; stopped wheels in Fixed Fate become a visible arrangement problem. Exact Civic, resonance and Audit readouts retain distinct frames.
+- **Human conflict / decision:** competent protection financed by concealed harm versus a repair that preserves plural choices. Thale inherited the old institution, discovered Hap in TR999 and chose its new Fixed Fate programme; present responsibility does not require claiming he built the ancient cage.
+- **Ordinary life:** archive staff eat beside unfinished petitions; a mechanic knows which obsolete parts still hold the floor; Ivo decides to correct a record at a personal cost. Rain Alley, Ama/Tobi and Gus's Bazaar belong to the Wards outside, not the nave. The final quiet is a choice about what this institution becomes.
 
 ## The Far Lands (expansions)
 Uncommitted research directions only: Norse North · Kemet · Long Count · Anansi's Coast · House of Wisdom. No stage, content count or release promise. Establish primary sources, explicit cultural-risk boundaries and throughput before design; AI source-checks cannot be labelled native expertise or consultation. Sensitive unsupported imagery is removed/fictionalized. No human finishing dependency is assumed under AI-only production.
